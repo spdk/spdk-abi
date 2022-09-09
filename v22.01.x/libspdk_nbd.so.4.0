@@ -1,0 +1,287 @@
+<abi-corpus version='2.0' soname='libspdk_nbd.so.4.0'>
+  <elf-needed>
+    <dependency name='libspdk_log.so.4.1'/>
+    <dependency name='libspdk_util.so.4.1'/>
+    <dependency name='libspdk_thread.so.6.1'/>
+    <dependency name='libspdk_json.so.3.3'/>
+    <dependency name='libspdk_jsonrpc.so.3.0'/>
+    <dependency name='libspdk_rpc.so.3.0'/>
+    <dependency name='libspdk_bdev.so.8.1'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+  <elf-function-symbols>
+    <elf-symbol name='spdk_nbd_fini' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_nbd_get_path' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_nbd_init' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_nbd_start' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_nbd_stop' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_nbd_write_config_json' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-function-symbols>
+  <abi-instr address-size='64' path='nbd.c' language='LANG_C99'>
+    <type-decl name='bool' size-in-bits='8' id='c894953d'/>
+    <type-decl name='char' size-in-bits='8' id='a84c031d'/>
+    <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='64' id='8e100159'>
+      <subrange length='8' type-id='7359adad' id='56e0c0b1'/>
+    </array-type-def>
+    <class-decl name='spdk_bdev' is-struct='yes' visibility='default' is-declaration-only='yes' id='f6507fdd'/>
+    <class-decl name='spdk_bdev_desc' is-struct='yes' visibility='default' is-declaration-only='yes' id='43454627'/>
+    <class-decl name='spdk_interrupt' is-struct='yes' visibility='default' is-declaration-only='yes' id='b9eb5d13'/>
+    <class-decl name='spdk_io_channel' is-struct='yes' visibility='default' is-declaration-only='yes' id='8de5f3c0'/>
+    <class-decl name='spdk_json_write_ctx' is-struct='yes' visibility='default' is-declaration-only='yes' id='2ae61988'/>
+    <class-decl name='spdk_poller' is-struct='yes' visibility='default' is-declaration-only='yes' id='8921c3fe'/>
+    <type-decl name='int' size-in-bits='32' id='95e97e5e'/>
+    <type-decl name='long long unsigned int' size-in-bits='64' id='3a47d82b'/>
+    <type-decl name='unnamed-enum-underlying-type-32' is-anonymous='yes' size-in-bits='32' alignment-in-bits='32' id='9cac1fee'/>
+    <type-decl name='unsigned int' size-in-bits='32' id='f0981eeb'/>
+    <type-decl name='unsigned long int' size-in-bits='64' id='7359adad'/>
+    <type-decl name='void' id='48b5725f'/>
+    <typedef-decl name='spdk_bdev_io_wait_cb' type-id='b7f9d8e6' id='065af103'/>
+    <class-decl name='spdk_bdev_io_wait_entry' size-in-bits='320' is-struct='yes' visibility='default' id='56e41d71'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='bdev' type-id='7b7cfb3d' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='cb_fn' type-id='065af103' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='cb_arg' type-id='eaa32e2f' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='link' type-id='e7f43f72' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f72'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqe_next' type-id='2c737c29' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqe_prev' type-id='fccc38b9' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <typedef-decl name='spdk_nbd_fini_cb' type-id='b7f9d8e6' id='2b3b85c6'/>
+    <typedef-decl name='spdk_nbd_start_cb' type-id='2262fa44' id='7b122a72'/>
+    <enum-decl name='nbd_io_state_t' id='b5426610'>
+      <underlying-type type-id='9cac1fee'/>
+      <enumerator name='NBD_IO_RECV_REQ' value='0'/>
+      <enumerator name='NBD_IO_RECV_PAYLOAD' value='1'/>
+      <enumerator name='NBD_IO_XMIT_RESP' value='2'/>
+      <enumerator name='NBD_IO_XMIT_PAYLOAD' value='3'/>
+    </enum-decl>
+    <class-decl name='nbd_io' size-in-bits='1088' is-struct='yes' visibility='default' id='34ec712c'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='nbd' type-id='e4abd86e' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='state' type-id='b5426610' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='payload' type-id='eaa32e2f' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='payload_size' type-id='8f92235e' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='224'>
+        <var-decl name='req' type-id='270e3b01' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='resp' type-id='3200f484' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='offset' type-id='8f92235e' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='bdev_io_wait' type-id='56e41d71' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='960'>
+        <var-decl name='tailq' type-id='e7f43f73' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__1' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f73'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqe_next' type-id='a6741cea' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqe_prev' type-id='c8c94240' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_nbd_disk' size-in-bits='1344' is-struct='yes' visibility='default' id='f91298e8'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='bdev' type-id='7b7cfb3d' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='bdev_desc' type-id='0094857f' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='ch' type-id='a7e01876' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='dev_fd' type-id='95e97e5e' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='nbd_path' type-id='26a90f95' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='kernel_sp_fd' type-id='95e97e5e' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='352'>
+        <var-decl name='spdk_sp_fd' type-id='95e97e5e' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='nbd_poller' type-id='bf13de54' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='intr' type-id='aaf85c13' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='interrupt_mode' type-id='c894953d' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='544'>
+        <var-decl name='buf_align' type-id='8f92235e' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='retry_poller' type-id='bf13de54' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='retry_count' type-id='95e97e5e' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='672'>
+        <var-decl name='has_nbd_pthread' type-id='c894953d' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='704'>
+        <var-decl name='io_in_recv' type-id='a6741cea' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='768'>
+        <var-decl name='received_io_list' type-id='e7f43f74' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='896'>
+        <var-decl name='executed_io_list' type-id='e7f43f74' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1024'>
+        <var-decl name='processing_io_list' type-id='e7f43f74' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1152'>
+        <var-decl name='is_started' type-id='c894953d' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1160'>
+        <var-decl name='is_closing' type-id='c894953d' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1184'>
+        <var-decl name='io_count' type-id='95e97e5e' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1216'>
+        <var-decl name='tailq' type-id='e7f43f75' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__2' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f74'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqh_first' type-id='a6741cea' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqh_last' type-id='c8c94240' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__5' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f75'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqe_next' type-id='e4abd86e' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqe_prev' type-id='3e85730c' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <typedef-decl name='__u32' type-id='f0981eeb' id='3f1a6b60'/>
+    <typedef-decl name='__u64' type-id='3a47d82b' id='d3130597'/>
+    <typedef-decl name='uint32_t' type-id='62f1140c' id='8f92235e'/>
+    <typedef-decl name='__uint32_t' type-id='f0981eeb' id='62f1140c'/>
+    <class-decl name='nbd_request' size-in-bits='224' is-struct='yes' visibility='default' id='270e3b01'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='magic' type-id='78a133c2' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='type' type-id='78a133c2' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='handle' type-id='8e100159' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='from' type-id='0899c7ad' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='len' type-id='78a133c2' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='nbd_reply' size-in-bits='128' is-struct='yes' visibility='default' id='3200f484'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='magic' type-id='78a133c2' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='error' type-id='78a133c2' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='handle' type-id='8e100159' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <typedef-decl name='__be32' type-id='3f1a6b60' id='78a133c2'/>
+    <typedef-decl name='__be64' type-id='d3130597' id='0899c7ad'/>
+    <pointer-type-def type-id='a84c031d' size-in-bits='64' id='26a90f95'/>
+    <qualified-type-def type-id='a84c031d' const='yes' id='9b45d938'/>
+    <pointer-type-def type-id='9b45d938' size-in-bits='64' id='80f4b756'/>
+    <pointer-type-def type-id='34ec712c' size-in-bits='64' id='a6741cea'/>
+    <pointer-type-def type-id='a6741cea' size-in-bits='64' id='c8c94240'/>
+    <pointer-type-def type-id='f6507fdd' size-in-bits='64' id='7b7cfb3d'/>
+    <pointer-type-def type-id='43454627' size-in-bits='64' id='0094857f'/>
+    <pointer-type-def type-id='56e41d71' size-in-bits='64' id='2c737c29'/>
+    <pointer-type-def type-id='2c737c29' size-in-bits='64' id='fccc38b9'/>
+    <pointer-type-def type-id='b9eb5d13' size-in-bits='64' id='aaf85c13'/>
+    <pointer-type-def type-id='8de5f3c0' size-in-bits='64' id='a7e01876'/>
+    <pointer-type-def type-id='2ae61988' size-in-bits='64' id='b8e14bfe'/>
+    <pointer-type-def type-id='f91298e8' size-in-bits='64' id='e4abd86e'/>
+    <pointer-type-def type-id='e4abd86e' size-in-bits='64' id='3e85730c'/>
+    <pointer-type-def type-id='8921c3fe' size-in-bits='64' id='bf13de54'/>
+    <pointer-type-def type-id='c5c76c9c' size-in-bits='64' id='b7f9d8e6'/>
+    <pointer-type-def type-id='0d00e9d2' size-in-bits='64' id='2262fa44'/>
+    <pointer-type-def type-id='48b5725f' size-in-bits='64' id='eaa32e2f'/>
+    <class-decl name='spdk_bdev' is-struct='yes' visibility='default' is-declaration-only='yes' id='f6507fdd'/>
+    <class-decl name='spdk_bdev_desc' is-struct='yes' visibility='default' is-declaration-only='yes' id='43454627'/>
+    <class-decl name='spdk_interrupt' is-struct='yes' visibility='default' is-declaration-only='yes' id='b9eb5d13'/>
+    <class-decl name='spdk_io_channel' is-struct='yes' visibility='default' is-declaration-only='yes' id='8de5f3c0'/>
+    <class-decl name='spdk_json_write_ctx' is-struct='yes' visibility='default' is-declaration-only='yes' id='2ae61988'/>
+    <class-decl name='spdk_poller' is-struct='yes' visibility='default' is-declaration-only='yes' id='8921c3fe'/>
+    <function-decl name='spdk_nbd_init' mangled-name='spdk_nbd_init' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nbd_init'>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_nbd_fini' mangled-name='spdk_nbd_fini' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nbd_fini'>
+      <parameter type-id='2b3b85c6' name='cb_fn'/>
+      <parameter type-id='eaa32e2f' name='cb_arg'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_nbd_write_config_json' mangled-name='spdk_nbd_write_config_json' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nbd_write_config_json'>
+      <parameter type-id='b8e14bfe' name='w'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_nbd_stop' mangled-name='spdk_nbd_stop' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nbd_stop'>
+      <parameter type-id='e4abd86e' name='nbd'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_nbd_start' mangled-name='spdk_nbd_start' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nbd_start'>
+      <parameter type-id='80f4b756' name='bdev_name'/>
+      <parameter type-id='80f4b756' name='nbd_path'/>
+      <parameter type-id='7b122a72' name='cb_fn'/>
+      <parameter type-id='eaa32e2f' name='cb_arg'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_nbd_get_path' mangled-name='spdk_nbd_get_path' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nbd_get_path'>
+      <parameter type-id='e4abd86e' name='nbd'/>
+      <return type-id='80f4b756'/>
+    </function-decl>
+    <function-type size-in-bits='64' id='c5c76c9c'>
+      <parameter type-id='eaa32e2f'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+    <function-type size-in-bits='64' id='0d00e9d2'>
+      <parameter type-id='eaa32e2f'/>
+      <parameter type-id='e4abd86e'/>
+      <parameter type-id='95e97e5e'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+  </abi-instr>
+</abi-corpus>

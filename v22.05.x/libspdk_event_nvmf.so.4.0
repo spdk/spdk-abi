@@ -1,0 +1,78 @@
+<abi-corpus version='2.0' soname='libspdk_event_nvmf.so.4.0'>
+  <elf-needed>
+    <dependency name='libspdk_init.so.2.0'/>
+    <dependency name='libspdk_nvmf.so.12.0'/>
+    <dependency name='libspdk_event_bdev.so.4.0'/>
+    <dependency name='libspdk_event_scheduler.so.2.0'/>
+    <dependency name='libspdk_event_sock.so.3.0'/>
+    <dependency name='libspdk_thread.so.7.0'/>
+    <dependency name='libspdk_log.so.5.0'/>
+    <dependency name='libspdk_bdev.so.9.0'/>
+    <dependency name='libspdk_util.so.5.0'/>
+    <dependency name='libspdk_json.so.4.0'/>
+    <dependency name='libspdk_jsonrpc.so.4.0'/>
+    <dependency name='libspdk_rpc.so.4.0'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+  <abi-instr address-size='64' path='nvmf_tgt.c' language='LANG_C99'>
+    <type-decl name='bool' size-in-bits='8' id='c894953d'/>
+    <type-decl name='char' size-in-bits='8' id='a84c031d'/>
+    <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='2056' id='cd5f2f4f'>
+      <subrange length='257' type-id='7359adad' id='72e246d7'/>
+    </array-type-def>
+    <class-decl name='spdk_nvmf_tgt' is-struct='yes' visibility='default' is-declaration-only='yes' id='d37dc7a7'/>
+    <array-type-def dimensions='1' type-id='149c6638' size-in-bits='48' id='45439f56'>
+      <subrange length='3' type-id='7359adad' id='56f209d2'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='1024' id='c768f32d'>
+      <subrange length='128' type-id='7359adad' id='1eb1687a'/>
+    </array-type-def>
+    <type-decl name='unnamed-enum-underlying-type-32' is-anonymous='yes' size-in-bits='32' alignment-in-bits='32' id='9cac1fee'/>
+    <type-decl name='unsigned char' size-in-bits='8' id='002ac4a6'/>
+    <type-decl name='unsigned int' size-in-bits='32' id='f0981eeb'/>
+    <type-decl name='unsigned long int' size-in-bits='64' id='7359adad'/>
+    <type-decl name='unsigned short int' size-in-bits='16' id='8efea9e5'/>
+    <class-decl name='spdk_cpuset' size-in-bits='3080' is-struct='yes' visibility='default' id='aec5215a'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='str' type-id='cd5f2f4f' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2056'>
+        <var-decl name='cpus' type-id='c768f32d' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <enum-decl name='spdk_nvmf_tgt_discovery_filter' id='54074f88'>
+      <underlying-type type-id='9cac1fee'/>
+      <enumerator name='SPDK_NVMF_TGT_DISCOVERY_MATCH_ANY' value='0'/>
+      <enumerator name='SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_TYPE' value='1'/>
+      <enumerator name='SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_ADDRESS' value='2'/>
+      <enumerator name='SPDK_NVMF_TGT_DISCOVERY_MATCH_TRANSPORT_SVCID' value='4'/>
+    </enum-decl>
+    <class-decl name='spdk_nvmf_admin_passthru_conf' size-in-bits='8' is-struct='yes' visibility='default' id='4a264757'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='identify_ctrlr' type-id='c894953d' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_nvmf_tgt_conf' size-in-bits='64' is-struct='yes' visibility='default' id='2dba7f0e'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='admin_passthru' type-id='4a264757' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='discovery_filter' type-id='54074f88' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <typedef-decl name='uint8_t' type-id='c51d6389' id='b96825af'/>
+    <typedef-decl name='uint16_t' type-id='253c2d2a' id='149c6638'/>
+    <typedef-decl name='uint32_t' type-id='62f1140c' id='8f92235e'/>
+    <typedef-decl name='__uint8_t' type-id='002ac4a6' id='c51d6389'/>
+    <typedef-decl name='__uint16_t' type-id='8efea9e5' id='253c2d2a'/>
+    <typedef-decl name='__uint32_t' type-id='f0981eeb' id='62f1140c'/>
+    <pointer-type-def type-id='aec5215a' size-in-bits='64' id='d5319498'/>
+    <pointer-type-def type-id='d37dc7a7' size-in-bits='64' id='690b38cf'/>
+    <class-decl name='spdk_nvmf_tgt' is-struct='yes' visibility='default' is-declaration-only='yes' id='d37dc7a7'/>
+    <var-decl name='g_spdk_nvmf_tgt_conf' type-id='2dba7f0e' visibility='default'/>
+    <var-decl name='g_spdk_nvmf_tgt_max_subsystems' type-id='8f92235e' visibility='default'/>
+    <var-decl name='g_spdk_nvmf_tgt_crdt' type-id='45439f56' visibility='default'/>
+    <var-decl name='g_spdk_nvmf_tgt' type-id='690b38cf' visibility='default'/>
+    <var-decl name='g_poll_groups_mask' type-id='d5319498' visibility='default'/>
+  </abi-instr>
+</abi-corpus>

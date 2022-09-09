@@ -1,0 +1,372 @@
+<abi-corpus version='2.0' soname='libspdk_accel.so.8.0'>
+  <elf-needed>
+    <dependency name='libspdk_log.so.4.1'/>
+    <dependency name='libspdk_util.so.4.1'/>
+    <dependency name='libspdk_thread.so.6.1'/>
+    <dependency name='libspdk_json.so.3.3'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+  <elf-function-symbols>
+    <elf-symbol name='spdk_accel_engine_finish' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_accel_engine_get_io_channel' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_accel_engine_initialize' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_accel_engine_module_finish' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_accel_get_capabilities' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_accel_hw_engine_register' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_accel_module_list_add' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_accel_submit_compare' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_accel_submit_copy' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_accel_submit_copy_crc32c' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_accel_submit_copy_crc32cv' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_accel_submit_crc32c' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_accel_submit_crc32cv' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_accel_submit_dualcast' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_accel_submit_fill' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_accel_task_complete' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_accel_write_config_json' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-function-symbols>
+  <abi-instr address-size='64' path='accel_engine.c' language='LANG_C99'>
+    <class-decl name='spdk_io_channel' is-struct='yes' visibility='default' is-declaration-only='yes' id='8de5f3c0'/>
+    <class-decl name='spdk_json_write_ctx' is-struct='yes' visibility='default' is-declaration-only='yes' id='2ae61988'/>
+    <type-decl name='int' size-in-bits='32' id='95e97e5e'/>
+    <type-decl name='unnamed-enum-underlying-type-32' is-anonymous='yes' size-in-bits='32' alignment-in-bits='32' id='9cac1fee'/>
+    <type-decl name='unsigned char' size-in-bits='8' id='002ac4a6'/>
+    <type-decl name='unsigned int' size-in-bits='32' id='f0981eeb'/>
+    <type-decl name='unsigned long int' size-in-bits='64' id='7359adad'/>
+    <type-decl name='void' id='48b5725f'/>
+    <typedef-decl name='spdk_accel_completion_cb' type-id='1ed1e4cd' id='e2a47d34'/>
+    <typedef-decl name='spdk_accel_fini_cb' type-id='b7f9d8e6' id='e5aecfa2'/>
+    <class-decl name='accel_io_channel' size-in-bits='384' is-struct='yes' visibility='default' id='7d858f4c'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='engine' type-id='3228235b' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='engine_ch' type-id='a7e01876' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='sw_engine_ch' type-id='a7e01876' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='task_pool_base' type-id='eaa32e2f' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='task_pool' type-id='e7f43f72' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__1' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f72'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqh_first' type-id='10ebab0a' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqh_last' type-id='c2fe6360' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <enum-decl name='accel_opcode' id='83b0f1c7'>
+      <underlying-type type-id='9cac1fee'/>
+      <enumerator name='ACCEL_OPCODE_MEMMOVE' value='0'/>
+      <enumerator name='ACCEL_OPCODE_MEMFILL' value='1'/>
+      <enumerator name='ACCEL_OPCODE_COMPARE' value='2'/>
+      <enumerator name='ACCEL_OPCODE_BATCH' value='3'/>
+      <enumerator name='ACCEL_OPCODE_CRC32C' value='4'/>
+      <enumerator name='ACCEL_OPCODE_DUALCAST' value='5'/>
+      <enumerator name='ACCEL_OPCODE_COPY_CRC32C' value='6'/>
+    </enum-decl>
+    <class-decl name='spdk_accel_task' size-in-bits='832' is-struct='yes' visibility='default' id='a817e78c'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='accel_ch' type-id='4d4d5eba' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='cb_fn' type-id='e2a47d34' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='cb_arg' type-id='eaa32e2f' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='' type-id='ac5ab595' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='' type-id='ac5ab596' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='' type-id='ac5ab597' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='crc_dst' type-id='90421557' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='op_code' type-id='83b0f1c7' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='nbytes' type-id='9c313c2d' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='status' type-id='95e97e5e' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='704'>
+        <var-decl name='link' type-id='e7f43f73' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <union-decl name='__anonymous_union__' size-in-bits='128' is-anonymous='yes' visibility='default' id='ac5ab595'>
+      <data-member access='public'>
+        <var-decl name='v' type-id='e7f43f74' visibility='default'/>
+      </data-member>
+      <data-member access='public'>
+        <var-decl name='src' type-id='eaa32e2f' visibility='default'/>
+      </data-member>
+    </union-decl>
+    <class-decl name='__anonymous_struct__2' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f74'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='iovs' type-id='cc4b1be9' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='iovcnt' type-id='8f92235e' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <union-decl name='__anonymous_union__1' size-in-bits='64' is-anonymous='yes' visibility='default' id='ac5ab596'>
+      <data-member access='public'>
+        <var-decl name='dst' type-id='eaa32e2f' visibility='default'/>
+      </data-member>
+      <data-member access='public'>
+        <var-decl name='src2' type-id='eaa32e2f' visibility='default'/>
+      </data-member>
+    </union-decl>
+    <union-decl name='__anonymous_union__2' size-in-bits='64' is-anonymous='yes' visibility='default' id='ac5ab597'>
+      <data-member access='public'>
+        <var-decl name='dst2' type-id='eaa32e2f' visibility='default'/>
+      </data-member>
+      <data-member access='public'>
+        <var-decl name='seed' type-id='8f92235e' visibility='default'/>
+      </data-member>
+      <data-member access='public'>
+        <var-decl name='fill_pattern' type-id='9c313c2d' visibility='default'/>
+      </data-member>
+    </union-decl>
+    <class-decl name='__anonymous_struct__3' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f73'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqe_next' type-id='10ebab0a' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqe_prev' type-id='c2fe6360' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_accel_engine' size-in-bits='256' is-struct='yes' visibility='default' id='ba12cf5b'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='capabilities' type-id='9c313c2d' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='get_capabilities' type-id='3de02472' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='get_io_channel' type-id='94a5300d' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='submit_tasks' type-id='17aa1e6d' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_accel_module_if' size-in-bits='384' is-struct='yes' visibility='default' id='c7a04c81'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='module_init' type-id='1db260e5' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='module_fini' type-id='b7f9d8e6' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='write_config_json' type-id='582528d7' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='get_ctx_size' type-id='b2161495' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='tailq' type-id='e7f43f75' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f75'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqe_next' type-id='b78a11b9' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqe_prev' type-id='8159aa69' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <typedef-decl name='uint8_t' type-id='c51d6389' id='b96825af'/>
+    <typedef-decl name='uint32_t' type-id='62f1140c' id='8f92235e'/>
+    <typedef-decl name='uint64_t' type-id='8910171f' id='9c313c2d'/>
+    <typedef-decl name='__uint8_t' type-id='002ac4a6' id='c51d6389'/>
+    <typedef-decl name='__uint32_t' type-id='f0981eeb' id='62f1140c'/>
+    <typedef-decl name='__uint64_t' type-id='7359adad' id='8910171f'/>
+    <class-decl name='iovec' size-in-bits='128' is-struct='yes' visibility='default' id='0f042891'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='iov_base' type-id='eaa32e2f' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='iov_len' type-id='b59d7dce' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <typedef-decl name='size_t' type-id='7359adad' id='b59d7dce'/>
+    <pointer-type-def type-id='7d858f4c' size-in-bits='64' id='4d4d5eba'/>
+    <pointer-type-def type-id='276427e1' size-in-bits='64' id='1db260e5'/>
+    <pointer-type-def type-id='2a0300f1' size-in-bits='64' id='17aa1e6d'/>
+    <pointer-type-def type-id='0f042891' size-in-bits='64' id='cc4b1be9'/>
+    <pointer-type-def type-id='ba12cf5b' size-in-bits='64' id='3228235b'/>
+    <pointer-type-def type-id='c7a04c81' size-in-bits='64' id='b78a11b9'/>
+    <pointer-type-def type-id='b78a11b9' size-in-bits='64' id='8159aa69'/>
+    <pointer-type-def type-id='a817e78c' size-in-bits='64' id='10ebab0a'/>
+    <pointer-type-def type-id='10ebab0a' size-in-bits='64' id='c2fe6360'/>
+    <pointer-type-def type-id='8de5f3c0' size-in-bits='64' id='a7e01876'/>
+    <pointer-type-def type-id='e76af571' size-in-bits='64' id='94a5300d'/>
+    <pointer-type-def type-id='2ae61988' size-in-bits='64' id='b8e14bfe'/>
+    <pointer-type-def type-id='865cc949' size-in-bits='64' id='b2161495'/>
+    <pointer-type-def type-id='87c73498' size-in-bits='64' id='3de02472'/>
+    <pointer-type-def type-id='8f92235e' size-in-bits='64' id='90421557'/>
+    <pointer-type-def type-id='9ed8cfeb' size-in-bits='64' id='582528d7'/>
+    <pointer-type-def type-id='c5c76c9c' size-in-bits='64' id='b7f9d8e6'/>
+    <pointer-type-def type-id='2922fb19' size-in-bits='64' id='1ed1e4cd'/>
+    <pointer-type-def type-id='48b5725f' size-in-bits='64' id='eaa32e2f'/>
+    <class-decl name='spdk_io_channel' is-struct='yes' visibility='default' is-declaration-only='yes' id='8de5f3c0'/>
+    <class-decl name='spdk_json_write_ctx' is-struct='yes' visibility='default' is-declaration-only='yes' id='2ae61988'/>
+    <function-decl name='spdk_accel_hw_engine_register' mangled-name='spdk_accel_hw_engine_register' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_hw_engine_register'>
+      <parameter type-id='3228235b' name='accel_engine'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_accel_task_complete' mangled-name='spdk_accel_task_complete' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_task_complete'>
+      <parameter type-id='10ebab0a' name='accel_task'/>
+      <parameter type-id='95e97e5e' name='status'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_accel_get_capabilities' mangled-name='spdk_accel_get_capabilities' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_get_capabilities'>
+      <parameter type-id='a7e01876' name='ch'/>
+      <return type-id='9c313c2d'/>
+    </function-decl>
+    <function-decl name='spdk_accel_submit_copy' mangled-name='spdk_accel_submit_copy' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_copy'>
+      <parameter type-id='a7e01876' name='ch'/>
+      <parameter type-id='eaa32e2f' name='dst'/>
+      <parameter type-id='eaa32e2f' name='src'/>
+      <parameter type-id='9c313c2d' name='nbytes'/>
+      <parameter type-id='e2a47d34' name='cb_fn'/>
+      <parameter type-id='eaa32e2f' name='cb_arg'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_accel_submit_dualcast' mangled-name='spdk_accel_submit_dualcast' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_dualcast'>
+      <parameter type-id='a7e01876' name='ch'/>
+      <parameter type-id='eaa32e2f' name='dst1'/>
+      <parameter type-id='eaa32e2f' name='dst2'/>
+      <parameter type-id='eaa32e2f' name='src'/>
+      <parameter type-id='9c313c2d' name='nbytes'/>
+      <parameter type-id='e2a47d34' name='cb_fn'/>
+      <parameter type-id='eaa32e2f' name='cb_arg'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_accel_submit_compare' mangled-name='spdk_accel_submit_compare' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_compare'>
+      <parameter type-id='a7e01876' name='ch'/>
+      <parameter type-id='eaa32e2f' name='src1'/>
+      <parameter type-id='eaa32e2f' name='src2'/>
+      <parameter type-id='9c313c2d' name='nbytes'/>
+      <parameter type-id='e2a47d34' name='cb_fn'/>
+      <parameter type-id='eaa32e2f' name='cb_arg'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_accel_submit_fill' mangled-name='spdk_accel_submit_fill' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_fill'>
+      <parameter type-id='a7e01876' name='ch'/>
+      <parameter type-id='eaa32e2f' name='dst'/>
+      <parameter type-id='b96825af' name='fill'/>
+      <parameter type-id='9c313c2d' name='nbytes'/>
+      <parameter type-id='e2a47d34' name='cb_fn'/>
+      <parameter type-id='eaa32e2f' name='cb_arg'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_accel_submit_crc32c' mangled-name='spdk_accel_submit_crc32c' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_crc32c'>
+      <parameter type-id='a7e01876' name='ch'/>
+      <parameter type-id='90421557' name='crc_dst'/>
+      <parameter type-id='eaa32e2f' name='src'/>
+      <parameter type-id='8f92235e' name='seed'/>
+      <parameter type-id='9c313c2d' name='nbytes'/>
+      <parameter type-id='e2a47d34' name='cb_fn'/>
+      <parameter type-id='eaa32e2f' name='cb_arg'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_accel_submit_crc32cv' mangled-name='spdk_accel_submit_crc32cv' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_crc32cv'>
+      <parameter type-id='a7e01876' name='ch'/>
+      <parameter type-id='90421557' name='crc_dst'/>
+      <parameter type-id='cc4b1be9' name='iov'/>
+      <parameter type-id='8f92235e' name='iov_cnt'/>
+      <parameter type-id='8f92235e' name='seed'/>
+      <parameter type-id='e2a47d34' name='cb_fn'/>
+      <parameter type-id='eaa32e2f' name='cb_arg'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_accel_submit_copy_crc32c' mangled-name='spdk_accel_submit_copy_crc32c' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_copy_crc32c'>
+      <parameter type-id='a7e01876' name='ch'/>
+      <parameter type-id='eaa32e2f' name='dst'/>
+      <parameter type-id='eaa32e2f' name='src'/>
+      <parameter type-id='90421557' name='crc_dst'/>
+      <parameter type-id='8f92235e' name='seed'/>
+      <parameter type-id='9c313c2d' name='nbytes'/>
+      <parameter type-id='e2a47d34' name='cb_fn'/>
+      <parameter type-id='eaa32e2f' name='cb_arg'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_accel_submit_copy_crc32cv' mangled-name='spdk_accel_submit_copy_crc32cv' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_copy_crc32cv'>
+      <parameter type-id='a7e01876' name='ch'/>
+      <parameter type-id='eaa32e2f' name='dst'/>
+      <parameter type-id='cc4b1be9' name='src_iovs'/>
+      <parameter type-id='8f92235e' name='iov_cnt'/>
+      <parameter type-id='90421557' name='crc_dst'/>
+      <parameter type-id='8f92235e' name='seed'/>
+      <parameter type-id='e2a47d34' name='cb_fn'/>
+      <parameter type-id='eaa32e2f' name='cb_arg'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_accel_module_list_add' mangled-name='spdk_accel_module_list_add' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_module_list_add'>
+      <parameter type-id='b78a11b9' name='accel_module'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_accel_engine_get_io_channel' mangled-name='spdk_accel_engine_get_io_channel' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_engine_get_io_channel'>
+      <return type-id='a7e01876'/>
+    </function-decl>
+    <function-decl name='spdk_accel_engine_initialize' mangled-name='spdk_accel_engine_initialize' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_engine_initialize'>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_accel_write_config_json' mangled-name='spdk_accel_write_config_json' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_write_config_json'>
+      <parameter type-id='b8e14bfe' name='w'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_accel_engine_module_finish' mangled-name='spdk_accel_engine_module_finish' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_engine_module_finish'>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_accel_engine_finish' mangled-name='spdk_accel_engine_finish' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_engine_finish'>
+      <parameter type-id='e5aecfa2' name='cb_fn'/>
+      <parameter type-id='eaa32e2f' name='cb_arg'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-type size-in-bits='64' id='276427e1'>
+      <return type-id='95e97e5e'/>
+    </function-type>
+    <function-type size-in-bits='64' id='2a0300f1'>
+      <parameter type-id='a7e01876'/>
+      <parameter type-id='10ebab0a'/>
+      <return type-id='95e97e5e'/>
+    </function-type>
+    <function-type size-in-bits='64' id='e76af571'>
+      <return type-id='a7e01876'/>
+    </function-type>
+    <function-type size-in-bits='64' id='865cc949'>
+      <return type-id='b59d7dce'/>
+    </function-type>
+    <function-type size-in-bits='64' id='87c73498'>
+      <return type-id='9c313c2d'/>
+    </function-type>
+    <function-type size-in-bits='64' id='9ed8cfeb'>
+      <parameter type-id='b8e14bfe' name='w'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+    <function-type size-in-bits='64' id='c5c76c9c'>
+      <parameter type-id='eaa32e2f'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+    <function-type size-in-bits='64' id='2922fb19'>
+      <parameter type-id='eaa32e2f'/>
+      <parameter type-id='95e97e5e'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+  </abi-instr>
+</abi-corpus>
