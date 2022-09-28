@@ -1,0 +1,1390 @@
+<abi-corpus version='2.0' soname='libspdk_trace_parser.so.3.0'>
+  <elf-needed>
+    <dependency name='libspdk_log.so.5.0'/>
+    <dependency name='libstdc++.so.6'/>
+    <dependency name='libgcc_s.so.1'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+  <elf-function-symbols>
+    <elf-symbol name='spdk_trace_parser_cleanup' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_trace_parser_get_entry_count' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_trace_parser_get_flags' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_trace_parser_get_tsc_offset' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_trace_parser_init' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_trace_parser_next_entry' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-function-symbols>
+  <abi-instr address-size='64' path='trace.cpp' language='LANG_C_plus_plus_11'>
+    <array-type-def dimensions='1' type-id='e7f43f72' size-in-bits='256' id='4cb10997'>
+      <subrange length='16' type-id='7359adad' id='848d0938'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='ac5ab595' size-in-bits='16384' id='f3a20598'>
+      <subrange length='8' type-id='7359adad' id='56e0c0b1'/>
+    </array-type-def>
+    <type-decl name='bool' size-in-bits='8' id='c894953d'/>
+    <type-decl name='char' size-in-bits='8' id='a84c031d'/>
+    <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='112' id='f01a039e'>
+      <subrange length='14' type-id='7359adad' id='48882d96'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='192' id='6653bb13'>
+      <subrange length='24' type-id='7359adad' id='fdd3342b'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='2048' id='d1617432'>
+      <subrange length='256' type-id='7359adad' id='36e5b9fa'/>
+    </array-type-def>
+    <type-decl name='int' size-in-bits='32' id='95e97e5e'/>
+    <array-type-def dimensions='1' type-id='be4f2eca' size-in-bits='212992' id='38a4336b'>
+      <subrange length='256' type-id='7359adad' id='36e5b9fa'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='e60ad0bd' size-in-bits='1024' id='b82d72d1'>
+      <subrange length='8' type-id='7359adad' id='56e0c0b1'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='8f64032a' size-in-bits='infinite' id='27d73de2'>
+      <subrange length='infinite' type-id='7359adad' id='031f2035'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='0bd4cb79' size-in-bits='4096' id='9fd81fb6'>
+      <subrange length='256' type-id='7359adad' id='36e5b9fa'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='ba7adcbd' size-in-bits='4096' id='5895b92a'>
+      <subrange length='256' type-id='7359adad' id='36e5b9fa'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='40439314' size-in-bits='1556480' id='5592008d'>
+      <subrange length='1024' type-id='7359adad' id='c60446f8'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='9c313c2d' size-in-bits='65536' id='4dee7a71'>
+      <subrange length='1024' type-id='7359adad' id='c60446f8'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='9c313c2d' size-in-bits='8256' id='88063d40'>
+      <subrange length='129' type-id='7359adad' id='5aadf557'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='9c313c2d' size-in-bits='1024' id='b316cf0d'>
+      <subrange length='16' type-id='7359adad' id='848d0938'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='176' id='3d43e61c'>
+      <subrange length='22' type-id='7359adad' id='41cf2209'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='64' id='13339fda'>
+      <subrange length='8' type-id='7359adad' id='56e0c0b1'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='infinite' id='048fe7bc'>
+      <subrange length='infinite' type-id='7359adad' id='031f2035'/>
+    </array-type-def>
+    <type-decl name='unnamed-enum-underlying-type-32' is-anonymous='yes' size-in-bits='32' alignment-in-bits='32' id='9cac1fee'/>
+    <type-decl name='unsigned char' size-in-bits='8' id='002ac4a6'/>
+    <array-type-def dimensions='1' type-id='002ac4a6' size-in-bits='128' id='92a46553'>
+      <subrange length='16' type-id='7359adad' id='848d0938'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='002ac4a6' size-in-bits='192' id='25108e54'>
+      <subrange length='24' type-id='7359adad' id='fdd3342b'/>
+    </array-type-def>
+    <type-decl name='unsigned int' size-in-bits='32' id='f0981eeb'/>
+    <type-decl name='unsigned long int' size-in-bits='64' id='7359adad'/>
+    <type-decl name='unsigned short int' size-in-bits='16' id='8efea9e5'/>
+    <type-decl name='void' id='48b5725f'/>
+    <class-decl name='spdk_trace_entry' size-in-bits='256' is-struct='yes' visibility='default' id='8f64032a'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tsc' type-id='9c313c2d' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tpoint_id' type-id='149c6638' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='80'>
+        <var-decl name='poller_id' type-id='149c6638' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='size' type-id='8f92235e' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='object_id' type-id='9c313c2d' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='args' type-id='13339fda' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_trace_entry_buffer' size-in-bits='256' is-struct='yes' visibility='default' id='fcade665'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tsc' type-id='9c313c2d' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tpoint_id' type-id='149c6638' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='80'>
+        <var-decl name='data' type-id='3d43e61c' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_trace_owner' size-in-bits='16' is-struct='yes' visibility='default' id='ba7adcbd'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='type' type-id='b96825af' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='8'>
+        <var-decl name='id_prefix' type-id='a84c031d' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_trace_object' size-in-bits='16' is-struct='yes' visibility='default' id='0bd4cb79'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='type' type-id='b96825af' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='8'>
+        <var-decl name='id_prefix' type-id='a84c031d' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_trace_argument' size-in-bits='128' is-struct='yes' visibility='default' id='e60ad0bd'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='f01a039e' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='112'>
+        <var-decl name='type' type-id='b96825af' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='120'>
+        <var-decl name='size' type-id='b96825af' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_trace_tpoint' size-in-bits='1520' is-struct='yes' visibility='default' id='40439314'>
+      <member-type access='public'>
+        <class-decl name='__anonymous_struct__' size-in-bits='16' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f72'>
+          <data-member access='public' layout-offset-in-bits='0'>
+            <var-decl name='object_type' type-id='b96825af' visibility='default'/>
+          </data-member>
+          <data-member access='public' layout-offset-in-bits='8'>
+            <var-decl name='arg_index' type-id='b96825af' visibility='default'/>
+          </data-member>
+        </class-decl>
+      </member-type>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='6653bb13' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='tpoint_id' type-id='149c6638' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='208'>
+        <var-decl name='owner_type' type-id='b96825af' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='216'>
+        <var-decl name='object_type' type-id='b96825af' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='224'>
+        <var-decl name='new_object' type-id='b96825af' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='232'>
+        <var-decl name='num_args' type-id='b96825af' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='240'>
+        <var-decl name='args' type-id='b82d72d1' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1264'>
+        <var-decl name='related_objects' type-id='4cb10997' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_trace_history' size-in-bits='65728' is-struct='yes' visibility='default' id='df924bc2'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='lcore' type-id='95e97e5e' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='num_entries' type-id='9c313c2d' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='tpoint_count' type-id='4dee7a71' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='65664'>
+        <var-decl name='next_entry' type-id='9c313c2d' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='65728'>
+        <var-decl name='entries' type-id='27d73de2' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_trace_flags' size-in-bits='1574016' is-struct='yes' visibility='default' id='ad19717d'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tsc_rate' type-id='9c313c2d' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tpoint_mask' type-id='b316cf0d' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1088'>
+        <var-decl name='owner' type-id='5895b92a' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='5184'>
+        <var-decl name='object' type-id='9fd81fb6' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='9280'>
+        <var-decl name='tpoint' type-id='5592008d' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1565760'>
+        <var-decl name='lcore_history_offsets' type-id='88063d40' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_trace_histories' size-in-bits='1574016' is-struct='yes' visibility='default' id='b02e5352'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='flags' type-id='ad19717d' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1574016'>
+        <var-decl name='per_lcore_history' type-id='048fe7bc' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_trace_parser_opts' size-in-bits='128' is-struct='yes' visibility='default' id='2483749c'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='filename' type-id='80f4b756' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='mode' type-id='95e97e5e' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='lcore' type-id='149c6638' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_trace_parser_entry' size-in-bits='16768' is-struct='yes' visibility='default' id='a0078a86'>
+      <member-type access='public'>
+        <union-decl name='__anonymous_union__' size-in-bits='2048' is-anonymous='yes' visibility='default' id='ac5ab595'>
+          <data-member access='public'>
+            <var-decl name='integer' type-id='9c313c2d' visibility='default'/>
+          </data-member>
+          <data-member access='public'>
+            <var-decl name='pointer' type-id='eaa32e2f' visibility='default'/>
+          </data-member>
+          <data-member access='public'>
+            <var-decl name='string' type-id='d1617432' visibility='default'/>
+          </data-member>
+        </union-decl>
+      </member-type>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='entry' type-id='fa7ac988' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='object_index' type-id='9c313c2d' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='object_start' type-id='9c313c2d' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='lcore' type-id='149c6638' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='related_index' type-id='9c313c2d' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='related_type' type-id='b96825af' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='args' type-id='f3a20598' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='entry_key' size-in-bits='128' is-struct='yes' visibility='default' id='d5f43fcb'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='lcore' type-id='149c6638' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tsc' type-id='9c313c2d' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='compare_entry_key' size-in-bits='8' visibility='default' id='07bb2877'/>
+    <typedef-decl name='entry_map' type-id='564cd87e' id='e0169a79'/>
+    <class-decl name='argument_context' size-in-bits='256' is-struct='yes' visibility='default' id='6133b99a'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='entry' type-id='fa7ac988' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='buffer' type-id='84dd8065' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='lcore' type-id='149c6638' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='offset' type-id='b59d7dce' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='object_stats' size-in-bits='832' is-struct='yes' visibility='default' id='be4f2eca'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='index' type-id='5dfabd08' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='start' type-id='5dfabd08' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='768'>
+        <var-decl name='counter' type-id='9c313c2d' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_trace_parser' size-in-bits='213696' is-struct='yes' visibility='default' id='f521e795'>
+      <data-member access='private' layout-offset-in-bits='0'>
+        <var-decl name='_histories' type-id='ef0ac650' visibility='default'/>
+      </data-member>
+      <data-member access='private' layout-offset-in-bits='64'>
+        <var-decl name='_map_size' type-id='b59d7dce' visibility='default'/>
+      </data-member>
+      <data-member access='private' layout-offset-in-bits='128'>
+        <var-decl name='_fd' type-id='95e97e5e' visibility='default'/>
+      </data-member>
+      <data-member access='private' layout-offset-in-bits='192'>
+        <var-decl name='_tsc_offset' type-id='9c313c2d' visibility='default'/>
+      </data-member>
+      <data-member access='private' layout-offset-in-bits='256'>
+        <var-decl name='_entries' type-id='e0169a79' visibility='default'/>
+      </data-member>
+      <data-member access='private' layout-offset-in-bits='640'>
+        <var-decl name='_iter' type-id='12013bed' visibility='default'/>
+      </data-member>
+      <data-member access='private' layout-offset-in-bits='704'>
+        <var-decl name='_stats' type-id='38a4336b' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <typedef-decl name='uint8_t' type-id='c51d6389' id='b96825af'/>
+    <typedef-decl name='uint16_t' type-id='253c2d2a' id='149c6638'/>
+    <typedef-decl name='uint32_t' type-id='62f1140c' id='8f92235e'/>
+    <typedef-decl name='uint64_t' type-id='8910171f' id='9c313c2d'/>
+    <typedef-decl name='__uint8_t' type-id='002ac4a6' id='c51d6389'/>
+    <typedef-decl name='__uint16_t' type-id='8efea9e5' id='253c2d2a'/>
+    <typedef-decl name='__uint32_t' type-id='f0981eeb' id='62f1140c'/>
+    <typedef-decl name='__uint64_t' type-id='7359adad' id='8910171f'/>
+    <typedef-decl name='size_t' type-id='7359adad' id='b59d7dce'/>
+    <pointer-type-def type-id='bb1958c5' size-in-bits='64' id='49468975'/>
+    <qualified-type-def type-id='49468975' const='yes' id='04b098ea'/>
+    <pointer-type-def type-id='5d1a4b34' size-in-bits='64' id='908c5ac2'/>
+    <qualified-type-def type-id='908c5ac2' const='yes' id='a8ddaa4d'/>
+    <pointer-type-def type-id='fb789376' size-in-bits='64' id='a785e13c'/>
+    <qualified-type-def type-id='a785e13c' const='yes' id='41889127'/>
+    <pointer-type-def type-id='bcbd2e77' size-in-bits='64' id='721c387f'/>
+    <qualified-type-def type-id='721c387f' const='yes' id='9486328c'/>
+    <pointer-type-def type-id='6dcae302' size-in-bits='64' id='f4d398e0'/>
+    <pointer-type-def type-id='9ba352d3' size-in-bits='64' id='e211b0f3'/>
+    <pointer-type-def type-id='6133b99a' size-in-bits='64' id='e2ad54c8'/>
+    <qualified-type-def type-id='e2ad54c8' const='yes' id='2c162d1b'/>
+    <qualified-type-def type-id='bb1958c5' const='yes' id='4560118e'/>
+    <pointer-type-def type-id='4560118e' size-in-bits='64' id='da3bc52c'/>
+    <qualified-type-def type-id='da3bc52c' const='yes' id='fc463fd7'/>
+    <qualified-type-def type-id='5d1a4b34' const='yes' id='b64ae9b7'/>
+    <pointer-type-def type-id='b64ae9b7' size-in-bits='64' id='94edc227'/>
+    <qualified-type-def type-id='94edc227' const='yes' id='5daeab14'/>
+    <qualified-type-def type-id='fb789376' const='yes' id='c3302fd5'/>
+    <reference-type-def kind='lvalue' type-id='c3302fd5' size-in-bits='64' id='37db7b89'/>
+    <pointer-type-def type-id='c3302fd5' size-in-bits='64' id='43db8e6d'/>
+    <qualified-type-def type-id='43db8e6d' const='yes' id='b03c0cc2'/>
+    <qualified-type-def type-id='bcbd2e77' const='yes' id='d51ff284'/>
+    <reference-type-def kind='lvalue' type-id='d51ff284' size-in-bits='64' id='234af506'/>
+    <pointer-type-def type-id='d51ff284' size-in-bits='64' id='2f4b07ea'/>
+    <qualified-type-def type-id='2f4b07ea' const='yes' id='375135b5'/>
+    <qualified-type-def type-id='6dcae302' const='yes' id='0b83d6cb'/>
+    <reference-type-def kind='lvalue' type-id='0b83d6cb' size-in-bits='64' id='0d8b5717'/>
+    <pointer-type-def type-id='0b83d6cb' size-in-bits='64' id='018b4433'/>
+    <qualified-type-def type-id='9ba352d3' const='yes' id='378d3e2e'/>
+    <reference-type-def kind='lvalue' type-id='378d3e2e' size-in-bits='64' id='7b58a698'/>
+    <pointer-type-def type-id='378d3e2e' size-in-bits='64' id='7758a04c'/>
+    <qualified-type-def type-id='a84c031d' const='yes' id='9b45d938'/>
+    <pointer-type-def type-id='9b45d938' size-in-bits='64' id='80f4b756'/>
+    <qualified-type-def type-id='07bb2877' const='yes' id='cab9b9f4'/>
+    <reference-type-def kind='lvalue' type-id='cab9b9f4' size-in-bits='64' id='f45f8596'/>
+    <pointer-type-def type-id='cab9b9f4' size-in-bits='64' id='005f987a'/>
+    <qualified-type-def type-id='005f987a' const='yes' id='924b92c5'/>
+    <qualified-type-def type-id='d5f43fcb' const='yes' id='646fb874'/>
+    <reference-type-def kind='lvalue' type-id='646fb874' size-in-bits='64' id='6ddf2916'/>
+    <qualified-type-def type-id='95e97e5e' const='yes' id='2448a865'/>
+    <qualified-type-def type-id='e60ad0bd' const='yes' id='1a25b0ee'/>
+    <pointer-type-def type-id='1a25b0ee' size-in-bits='64' id='ed55448c'/>
+    <qualified-type-def type-id='ad19717d' const='yes' id='aa07b284'/>
+    <pointer-type-def type-id='aa07b284' size-in-bits='64' id='581e47ea'/>
+    <qualified-type-def type-id='f521e795' const='yes' id='f6a35ab2'/>
+    <reference-type-def kind='lvalue' type-id='f6a35ab2' size-in-bits='64' id='d72796fc'/>
+    <pointer-type-def type-id='f6a35ab2' size-in-bits='64' id='db279d48'/>
+    <qualified-type-def type-id='db279d48' const='yes' id='e97a319b'/>
+    <qualified-type-def type-id='2483749c' const='yes' id='cece7305'/>
+    <pointer-type-def type-id='cece7305' size-in-bits='64' id='bdff52fd'/>
+    <qualified-type-def type-id='c1dd2ae2' const='yes' id='00e07e2f'/>
+    <reference-type-def kind='lvalue' type-id='00e07e2f' size-in-bits='64' id='6a66682b'/>
+    <qualified-type-def type-id='b30c599f' const='yes' id='9f1f9c10'/>
+    <reference-type-def kind='lvalue' type-id='9f1f9c10' size-in-bits='64' id='b4c2e902'/>
+    <qualified-type-def type-id='7adca8a9' const='yes' id='db1eafb4'/>
+    <reference-type-def kind='lvalue' type-id='db1eafb4' size-in-bits='64' id='834e62d6'/>
+    <pointer-type-def type-id='db1eafb4' size-in-bits='64' id='8f4e75ba'/>
+    <qualified-type-def type-id='8f4e75ba' const='yes' id='27fe7885'/>
+    <qualified-type-def type-id='bebe2b57' const='yes' id='4c9634c7'/>
+    <reference-type-def kind='lvalue' type-id='4c9634c7' size-in-bits='64' id='71753e33'/>
+    <qualified-type-def type-id='f3411a74' const='yes' id='a4e0fda5'/>
+    <reference-type-def kind='lvalue' type-id='a4e0fda5' size-in-bits='64' id='112f1539'/>
+    <qualified-type-def type-id='cb7879ce' const='yes' id='7611f09e'/>
+    <reference-type-def kind='lvalue' type-id='7611f09e' size-in-bits='64' id='963df1a8'/>
+    <qualified-type-def type-id='1e7ff968' const='yes' id='03b0c5d8'/>
+    <reference-type-def kind='lvalue' type-id='03b0c5d8' size-in-bits='64' id='cd47aeda'/>
+    <qualified-type-def type-id='20bdeb40' const='yes' id='cd2666ef'/>
+    <reference-type-def kind='lvalue' type-id='cd2666ef' size-in-bits='64' id='bc73ce6b'/>
+    <pointer-type-def type-id='cd2666ef' size-in-bits='64' id='b873c81f'/>
+    <qualified-type-def type-id='b873c81f' const='yes' id='942f25ac'/>
+    <qualified-type-def type-id='aa3ac926' const='yes' id='b123da56'/>
+    <reference-type-def kind='lvalue' type-id='b123da56' size-in-bits='64' id='4b70de50'/>
+    <qualified-type-def type-id='f8bc52f5' const='yes' id='26fb4c9c'/>
+    <reference-type-def kind='lvalue' type-id='26fb4c9c' size-in-bits='64' id='1799c8ce'/>
+    <qualified-type-def type-id='5364a5fd' const='yes' id='e0df860d'/>
+    <reference-type-def kind='lvalue' type-id='e0df860d' size-in-bits='64' id='2ae035b1'/>
+    <qualified-type-def type-id='8734f923' const='yes' id='18269b53'/>
+    <reference-type-def kind='lvalue' type-id='18269b53' size-in-bits='64' id='79c6b92f'/>
+    <qualified-type-def type-id='40a578f4' const='yes' id='7bd7659d'/>
+    <pointer-type-def type-id='7bd7659d' size-in-bits='64' id='ab151f15'/>
+    <qualified-type-def type-id='ab151f15' const='yes' id='8d6df90a'/>
+    <qualified-type-def type-id='d60ee707' const='yes' id='c2544877'/>
+    <reference-type-def kind='lvalue' type-id='c2544877' size-in-bits='64' id='3badd783'/>
+    <qualified-type-def type-id='1a59d551' const='yes' id='6aee91bc'/>
+    <pointer-type-def type-id='6aee91bc' size-in-bits='64' id='eb8f2f22'/>
+    <qualified-type-def type-id='eb8f2f22' const='yes' id='0716642d'/>
+    <qualified-type-def type-id='600aa8f2' const='yes' id='02d17022'/>
+    <reference-type-def kind='lvalue' type-id='02d17022' size-in-bits='64' id='73b3564c'/>
+    <qualified-type-def type-id='89de54d0' const='yes' id='129e2221'/>
+    <pointer-type-def type-id='129e2221' size-in-bits='64' id='59ef9751'/>
+    <qualified-type-def type-id='59ef9751' const='yes' id='747907ae'/>
+    <qualified-type-def type-id='37b02dac' const='yes' id='50148d1c'/>
+    <qualified-type-def type-id='001b43d5' const='yes' id='a36ef308'/>
+    <pointer-type-def type-id='a36ef308' size-in-bits='64' id='69a8be86'/>
+    <qualified-type-def type-id='69a8be86' const='yes' id='20dd5139'/>
+    <qualified-type-def type-id='312ef80b' const='yes' id='382be97b'/>
+    <qualified-type-def type-id='26cc3c3a' const='yes' id='be17d63b'/>
+    <reference-type-def kind='lvalue' type-id='be17d63b' size-in-bits='64' id='5c860fa7'/>
+    <qualified-type-def type-id='a8684024' const='yes' id='f2ad8f01'/>
+    <reference-type-def kind='lvalue' type-id='f2ad8f01' size-in-bits='64' id='2e385a65'/>
+    <qualified-type-def type-id='cfbc4742' const='yes' id='067d7e3f'/>
+    <reference-type-def kind='lvalue' type-id='067d7e3f' size-in-bits='64' id='508d815b'/>
+    <pointer-type-def type-id='067d7e3f' size-in-bits='64' id='4c8d7b0f'/>
+    <qualified-type-def type-id='4c8d7b0f' const='yes' id='7218b11c'/>
+    <qualified-type-def type-id='dc627593' const='yes' id='43fcd6aa'/>
+    <reference-type-def kind='lvalue' type-id='43fcd6aa' size-in-bits='64' id='9305be64'/>
+    <pointer-type-def type-id='43fcd6aa' size-in-bits='64' id='8705ab80'/>
+    <qualified-type-def type-id='8705ab80' const='yes' id='2f3a67d3'/>
+    <qualified-type-def type-id='2ca858ff' const='yes' id='2704f2e0'/>
+    <pointer-type-def type-id='2704f2e0' size-in-bits='64' id='36ca33fe'/>
+    <qualified-type-def type-id='f2d1eb1a' const='yes' id='94809d95'/>
+    <pointer-type-def type-id='94809d95' size-in-bits='64' id='857853ad'/>
+    <qualified-type-def type-id='857853ad' const='yes' id='e6680382'/>
+    <qualified-type-def type-id='f0f48e9b' const='yes' id='dafb7f84'/>
+    <pointer-type-def type-id='dafb7f84' size-in-bits='64' id='67e9feea'/>
+    <qualified-type-def type-id='67e9feea' const='yes' id='ad4074b5'/>
+    <qualified-type-def type-id='ef181cf4' const='yes' id='d9b2b0ad'/>
+    <reference-type-def kind='lvalue' type-id='d9b2b0ad' size-in-bits='64' id='3f4bead1'/>
+    <qualified-type-def type-id='57e06795' const='yes' id='cbcc168e'/>
+    <reference-type-def kind='lvalue' type-id='cbcc168e' size-in-bits='64' id='7a47aa78'/>
+    <qualified-type-def type-id='3229087d' const='yes' id='72cac236'/>
+    <reference-type-def kind='lvalue' type-id='72cac236' size-in-bits='64' id='c52f7f30'/>
+    <qualified-type-def type-id='1aca97fc' const='yes' id='a5714451'/>
+    <reference-type-def kind='lvalue' type-id='a5714451' size-in-bits='64' id='e84ec755'/>
+    <qualified-type-def type-id='491f11f1' const='yes' id='bf32a5d8'/>
+    <reference-type-def kind='lvalue' type-id='bf32a5d8' size-in-bits='64' id='fabb4eda'/>
+    <qualified-type-def type-id='7fe5c78a' const='yes' id='8e1a1207'/>
+    <reference-type-def kind='lvalue' type-id='8e1a1207' size-in-bits='64' id='d40a89f3'/>
+    <qualified-type-def type-id='4e87fa5c' const='yes' id='401e840b'/>
+    <reference-type-def kind='lvalue' type-id='401e840b' size-in-bits='64' id='1d0a12d7'/>
+    <qualified-type-def type-id='8e4e5a31' const='yes' id='ba97c0ae'/>
+    <reference-type-def kind='lvalue' type-id='ba97c0ae' size-in-bits='64' id='44e41618'/>
+    <qualified-type-def type-id='5d54b644' const='yes' id='db38e0d5'/>
+    <reference-type-def kind='lvalue' type-id='db38e0d5' size-in-bits='64' id='0d8a1e89'/>
+    <qualified-type-def type-id='81564a21' const='yes' id='2905f744'/>
+    <reference-type-def kind='lvalue' type-id='2905f744' size-in-bits='64' id='f6646f46'/>
+    <qualified-type-def type-id='1dda43b1' const='yes' id='ae543081'/>
+    <reference-type-def kind='lvalue' type-id='ae543081' size-in-bits='64' id='158896e5'/>
+    <qualified-type-def type-id='dbfececc' const='yes' id='ef2fb25c'/>
+    <reference-type-def kind='lvalue' type-id='ef2fb25c' size-in-bits='64' id='0215f60e'/>
+    <qualified-type-def type-id='79beb047' const='yes' id='de3dbab7'/>
+    <reference-type-def kind='lvalue' type-id='de3dbab7' size-in-bits='64' id='6c2cb243'/>
+    <qualified-type-def type-id='ae2c72f6' const='yes' id='efa83166'/>
+    <reference-type-def kind='lvalue' type-id='efa83166' size-in-bits='64' id='85c587c0'/>
+    <qualified-type-def type-id='f5f48c97' const='yes' id='2181eeae'/>
+    <pointer-type-def type-id='2181eeae' size-in-bits='64' id='438a79cc'/>
+    <qualified-type-def type-id='49a160da' const='yes' id='4b512c31'/>
+    <pointer-type-def type-id='4b512c31' size-in-bits='64' id='abc86e81'/>
+    <qualified-type-def type-id='125a41c9' const='yes' id='e9cc9674'/>
+    <pointer-type-def type-id='e9cc9674' size-in-bits='64' id='6b10b5fa'/>
+    <qualified-type-def type-id='41f6eaf7' const='yes' id='badd00aa'/>
+    <reference-type-def kind='lvalue' type-id='badd00aa' size-in-bits='64' id='b5e7dc64'/>
+    <pointer-type-def type-id='badd00aa' size-in-bits='64' id='a9e7c980'/>
+    <qualified-type-def type-id='a9e7c980' const='yes' id='3e1b95d3'/>
+    <qualified-type-def type-id='564cd87e' const='yes' id='d4b6dc37'/>
+    <reference-type-def kind='lvalue' type-id='d4b6dc37' size-in-bits='64' id='ecdc6ec3'/>
+    <pointer-type-def type-id='d4b6dc37' size-in-bits='64' id='f8dc81a7'/>
+    <qualified-type-def type-id='f8dc81a7' const='yes' id='812b6e94'/>
+    <qualified-type-def type-id='951523e5' const='yes' id='5bde6fd5'/>
+    <reference-type-def kind='lvalue' type-id='5bde6fd5' size-in-bits='64' id='922a3b89'/>
+    <qualified-type-def type-id='d4e0188b' const='yes' id='bcce5d1b'/>
+    <reference-type-def kind='lvalue' type-id='bcce5d1b' size-in-bits='64' id='75dcc707'/>
+    <qualified-type-def type-id='bf829651' const='yes' id='9d1472a1'/>
+    <reference-type-def kind='lvalue' type-id='9d1472a1' size-in-bits='64' id='ce304a85'/>
+    <qualified-type-def type-id='a64dadf1' const='yes' id='4a5792e1'/>
+    <reference-type-def kind='lvalue' type-id='4a5792e1' size-in-bits='64' id='cedc0f45'/>
+    <qualified-type-def type-id='5dfabd08' const='yes' id='97eaf9cf'/>
+    <reference-type-def kind='lvalue' type-id='97eaf9cf' size-in-bits='64' id='0fe769cb'/>
+    <pointer-type-def type-id='97eaf9cf' size-in-bits='64' id='0be7637f'/>
+    <qualified-type-def type-id='0be7637f' const='yes' id='78a0058c'/>
+    <qualified-type-def type-id='d9fdcf7d' const='yes' id='6260282d'/>
+    <reference-type-def kind='lvalue' type-id='6260282d' size-in-bits='64' id='e85f0951'/>
+    <qualified-type-def type-id='ae98cea3' const='yes' id='6caf4ef3'/>
+    <reference-type-def kind='lvalue' type-id='6caf4ef3' size-in-bits='64' id='ecf9194f'/>
+    <qualified-type-def type-id='6a1daac9' const='yes' id='977053d9'/>
+    <reference-type-def kind='lvalue' type-id='977053d9' size-in-bits='64' id='64d43a6d'/>
+    <qualified-type-def type-id='c05a8af9' const='yes' id='d30e04e9'/>
+    <reference-type-def kind='lvalue' type-id='d30e04e9' size-in-bits='64' id='0e1191dd'/>
+    <qualified-type-def type-id='6631f622' const='yes' id='640abc61'/>
+    <reference-type-def kind='lvalue' type-id='640abc61' size-in-bits='64' id='c3e663c5'/>
+    <pointer-type-def type-id='640abc61' size-in-bits='64' id='c7e66a11'/>
+    <qualified-type-def type-id='36f403cb' const='yes' id='f0468de8'/>
+    <reference-type-def kind='lvalue' type-id='f0468de8' size-in-bits='64' id='0d113b4a'/>
+    <pointer-type-def type-id='f0468de8' size-in-bits='64' id='01112866'/>
+    <qualified-type-def type-id='51f53c2c' const='yes' id='da433c17'/>
+    <reference-type-def kind='lvalue' type-id='da433c17' size-in-bits='64' id='c8d7c123'/>
+    <qualified-type-def type-id='fba62bd1' const='yes' id='041ae184'/>
+    <reference-type-def kind='lvalue' type-id='041ae184' size-in-bits='64' id='18513206'/>
+    <qualified-type-def type-id='309c17fa' const='yes' id='e541cbcd'/>
+    <reference-type-def kind='lvalue' type-id='e541cbcd' size-in-bits='64' id='d19402f1'/>
+    <qualified-type-def type-id='243959fb' const='yes' id='9592696e'/>
+    <reference-type-def kind='lvalue' type-id='9592696e' size-in-bits='64' id='bd7bbc58'/>
+    <qualified-type-def type-id='7359adad' const='yes' id='9cbd1c16'/>
+    <reference-type-def kind='lvalue' type-id='9cbd1c16' size-in-bits='64' id='edb35f90'/>
+    <reference-type-def kind='lvalue' type-id='d5f43fcb' size-in-bits='64' id='ea9772bf'/>
+    <reference-type-def kind='rvalue' type-id='d5f43fcb' size-in-bits='64' id='e56966db'/>
+    <pointer-type-def type-id='d5f43fcb' size-in-bits='64' id='ee97790b'/>
+    <qualified-type-def type-id='ee97790b' const='yes' id='0e53bd40'/>
+    <pointer-type-def type-id='be4f2eca' size-in-bits='64' id='9b212168'/>
+    <qualified-type-def type-id='9b212168' const='yes' id='624e5abb'/>
+    <pointer-type-def type-id='8f64032a' size-in-bits='64' id='fa7ac988'/>
+    <pointer-type-def type-id='fcade665' size-in-bits='64' id='84dd8065'/>
+    <pointer-type-def type-id='b02e5352' size-in-bits='64' id='ef0ac650'/>
+    <pointer-type-def type-id='df924bc2' size-in-bits='64' id='96e305e0'/>
+    <reference-type-def kind='lvalue' type-id='f521e795' size-in-bits='64' id='0faf6611'/>
+    <pointer-type-def type-id='f521e795' size-in-bits='64' id='0baf5fc5'/>
+    <qualified-type-def type-id='0baf5fc5' const='yes' id='cc3f1eba'/>
+    <pointer-type-def type-id='a0078a86' size-in-bits='64' id='a8e16cac'/>
+    <reference-type-def kind='lvalue' type-id='c1dd2ae2' size-in-bits='64' id='5e6dae04'/>
+    <reference-type-def kind='rvalue' type-id='c1dd2ae2' size-in-bits='64' id='c8a91f86'/>
+    <pointer-type-def type-id='c1dd2ae2' size-in-bits='64' id='526d9b20'/>
+    <qualified-type-def type-id='526d9b20' const='yes' id='ab6fcc73'/>
+    <reference-type-def kind='lvalue' type-id='b30c599f' size-in-bits='64' id='7d1e27d3'/>
+    <reference-type-def kind='rvalue' type-id='b30c599f' size-in-bits='64' id='eb78e6af'/>
+    <pointer-type-def type-id='b30c599f' size-in-bits='64' id='891e3ab7'/>
+    <qualified-type-def type-id='891e3ab7' const='yes' id='06bc1ae4'/>
+    <reference-type-def kind='lvalue' type-id='7adca8a9' size-in-bits='64' id='0d98fb65'/>
+    <reference-type-def kind='rvalue' type-id='7adca8a9' size-in-bits='64' id='aad38a79'/>
+    <pointer-type-def type-id='7adca8a9' size-in-bits='64' id='119901b1'/>
+    <qualified-type-def type-id='119901b1' const='yes' id='4d34968e'/>
+    <reference-type-def kind='lvalue' type-id='b559fdc1' size-in-bits='64' id='1c9a73cc'/>
+    <reference-type-def kind='lvalue' type-id='bebe2b57' size-in-bits='64' id='8b1ac0f6'/>
+    <reference-type-def kind='rvalue' type-id='bebe2b57' size-in-bits='64' id='cb1d8770'/>
+    <reference-type-def kind='rvalue' type-id='f3411a74' size-in-bits='64' id='d3deae78'/>
+    <pointer-type-def type-id='f3411a74' size-in-bits='64' id='934b7c42'/>
+    <qualified-type-def type-id='934b7c42' const='yes' id='dd97bfcd'/>
+    <reference-type-def kind='lvalue' type-id='20bdeb40' size-in-bits='64' id='4e00811a'/>
+    <reference-type-def kind='rvalue' type-id='20bdeb40' size-in-bits='64' id='06cb7174'/>
+    <pointer-type-def type-id='20bdeb40' size-in-bits='64' id='42006e36'/>
+    <qualified-type-def type-id='42006e36' const='yes' id='3454d529'/>
+    <reference-type-def kind='lvalue' type-id='7c432b08' size-in-bits='64' id='ee90fd91'/>
+    <reference-type-def kind='lvalue' type-id='aa3ac926' size-in-bits='64' id='06b86dd7'/>
+    <reference-type-def kind='rvalue' type-id='aa3ac926' size-in-bits='64' id='85551263'/>
+    <reference-type-def kind='rvalue' type-id='f8bc52f5' size-in-bits='64' id='a0420a65'/>
+    <pointer-type-def type-id='f8bc52f5' size-in-bits='64' id='cd4b18b5'/>
+    <qualified-type-def type-id='cd4b18b5' const='yes' id='d8c407aa'/>
+    <pointer-type-def type-id='40a578f4' size-in-bits='64' id='db7893a2'/>
+    <qualified-type-def type-id='db7893a2' const='yes' id='ef90a4ad'/>
+    <reference-type-def kind='lvalue' type-id='d4345210' size-in-bits='64' id='40cd7263'/>
+    <pointer-type-def type-id='1a59d551' size-in-bits='64' id='fe252dd9'/>
+    <qualified-type-def type-id='fe252dd9' const='yes' id='1d3e3cf6'/>
+    <reference-type-def kind='lvalue' type-id='9b60a747' size-in-bits='64' id='331f94f6'/>
+    <reference-type-def kind='lvalue' type-id='8477a284' size-in-bits='64' id='ad8c5e4e'/>
+    <reference-type-def kind='rvalue' type-id='8477a284' size-in-bits='64' id='9bf89db8'/>
+    <pointer-type-def type-id='8477a284' size-in-bits='64' id='a98c5802'/>
+    <qualified-type-def type-id='a98c5802' const='yes' id='3d15510d'/>
+    <pointer-type-def type-id='89de54d0' size-in-bits='64' id='38b1eac6'/>
+    <qualified-type-def type-id='38b1eac6' const='yes' id='5723ccf9'/>
+    <reference-type-def kind='lvalue' type-id='37b02dac' size-in-bits='64' id='b92f3ba7'/>
+    <pointer-type-def type-id='001b43d5' size-in-bits='64' id='a9ceb8d5'/>
+    <qualified-type-def type-id='a9ceb8d5' const='yes' id='cbed694a'/>
+    <reference-type-def kind='lvalue' type-id='312ef80b' size-in-bits='64' id='b4d3bb72'/>
+    <reference-type-def kind='rvalue' type-id='26cc3c3a' size-in-bits='64' id='5d7049ce'/>
+    <pointer-type-def type-id='26cc3c3a' size-in-bits='64' id='0a1f6de8'/>
+    <qualified-type-def type-id='0a1f6de8' const='yes' id='19f6433b'/>
+    <reference-type-def kind='rvalue' type-id='a8684024' size-in-bits='64' id='32a79808'/>
+    <pointer-type-def type-id='a8684024' size-in-bits='64' id='78bb26b2'/>
+    <qualified-type-def type-id='78bb26b2' const='yes' id='fd8fd13d'/>
+    <reference-type-def kind='lvalue' type-id='cfbc4742' size-in-bits='64' id='6a5b5314'/>
+    <pointer-type-def type-id='cfbc4742' size-in-bits='64' id='5e5b4030'/>
+    <qualified-type-def type-id='5e5b4030' const='yes' id='e42c15c3'/>
+    <reference-type-def kind='lvalue' type-id='5e5b4030' size-in-bits='64' id='9fa5e2a2'/>
+    <reference-type-def kind='lvalue' type-id='dc627593' size-in-bits='64' id='a7fe5867'/>
+    <pointer-type-def type-id='dc627593' size-in-bits='64' id='9bfe4583'/>
+    <qualified-type-def type-id='9bfe4583' const='yes' id='f166a798'/>
+    <reference-type-def kind='lvalue' type-id='9bfe4583' size-in-bits='64' id='3647a2bf'/>
+    <pointer-type-def type-id='2ca858ff' size-in-bits='64' id='458526d7'/>
+    <qualified-type-def type-id='458526d7' const='yes' id='748f0c84'/>
+    <reference-type-def kind='lvalue' type-id='748f0c84' size-in-bits='64' id='1f30e306'/>
+    <reference-type-def kind='lvalue' type-id='458526d7' size-in-bits='64' id='619c4d63'/>
+    <reference-type-def kind='lvalue' type-id='ef181cf4' size-in-bits='64' id='8586767e'/>
+    <reference-type-def kind='rvalue' type-id='ef181cf4' size-in-bits='64' id='8aac4c88'/>
+    <pointer-type-def type-id='ef181cf4' size-in-bits='64' id='81867032'/>
+    <qualified-type-def type-id='81867032' const='yes' id='16b4cebd'/>
+    <reference-type-def kind='lvalue' type-id='57e06795' size-in-bits='64' id='53ca3131'/>
+    <reference-type-def kind='rvalue' type-id='57e06795' size-in-bits='64' id='fe4b4735'/>
+    <pointer-type-def type-id='57e06795' size-in-bits='64' id='4fca2ae5'/>
+    <qualified-type-def type-id='4fca2ae5' const='yes' id='388861da'/>
+    <reference-type-def kind='rvalue' type-id='3229087d' size-in-bits='64' id='30df0d8d'/>
+    <pointer-type-def type-id='3229087d' size-in-bits='64' id='5592bb5d'/>
+    <reference-type-def kind='lvalue' type-id='1aca97fc' size-in-bits='64' id='5297f076'/>
+    <pointer-type-def type-id='1aca97fc' size-in-bits='64' id='5e98035a'/>
+    <reference-type-def kind='lvalue' type-id='491f11f1' size-in-bits='64' id='946cfaed'/>
+    <pointer-type-def type-id='491f11f1' size-in-bits='64' id='886ce809'/>
+    <reference-type-def kind='lvalue' type-id='7fe5c78a' size-in-bits='64' id='e4657adc'/>
+    <pointer-type-def type-id='7fe5c78a' size-in-bits='64' id='e8658128'/>
+    <pointer-type-def type-id='877b9d80' size-in-bits='64' id='f4e10746'/>
+    <reference-type-def kind='lvalue' type-id='4e87fa5c' size-in-bits='64' id='187b6146'/>
+    <pointer-type-def type-id='4e87fa5c' size-in-bits='64' id='247b742a'/>
+    <qualified-type-def type-id='247b742a' const='yes' id='8cbdd375'/>
+    <reference-type-def kind='lvalue' type-id='8e4e5a31' size-in-bits='64' id='6c49031d'/>
+    <pointer-type-def type-id='8e4e5a31' size-in-bits='64' id='6048f039'/>
+    <qualified-type-def type-id='6048f039' const='yes' id='361ee1d6'/>
+    <reference-type-def kind='lvalue' type-id='5d54b644' size-in-bits='64' id='9a70e81e'/>
+    <pointer-type-def type-id='5d54b644' size-in-bits='64' id='9670e1d2'/>
+    <reference-type-def kind='lvalue' type-id='81564a21' size-in-bits='64' id='a945422d'/>
+    <pointer-type-def type-id='81564a21' size-in-bits='64' id='9d452f49'/>
+    <pointer-type-def type-id='2e6e78cf' size-in-bits='64' id='c9b03237'/>
+    <reference-type-def kind='lvalue' type-id='1dda43b1' size-in-bits='64' id='acf2f6c0'/>
+    <reference-type-def kind='lvalue' type-id='dbfececc' size-in-bits='64' id='9e76ad9f'/>
+    <reference-type-def kind='lvalue' type-id='79beb047' size-in-bits='64' id='50325424'/>
+    <reference-type-def kind='lvalue' type-id='ae2c72f6' size-in-bits='64' id='104f6113'/>
+    <pointer-type-def type-id='f5f48c97' size-in-bits='64' id='f1cccbbf'/>
+    <reference-type-def kind='lvalue' type-id='564cd87e' size-in-bits='64' id='cb99f430'/>
+    <reference-type-def kind='rvalue' type-id='564cd87e' size-in-bits='64' id='995b3ea2'/>
+    <pointer-type-def type-id='564cd87e' size-in-bits='64' id='d79a0714'/>
+    <qualified-type-def type-id='d79a0714' const='yes' id='46cd695f'/>
+    <reference-type-def kind='rvalue' type-id='d4e0188b' size-in-bits='64' id='1ff3cc46'/>
+    <reference-type-def kind='lvalue' type-id='bf829651' size-in-bits='64' id='7e1aeba0'/>
+    <reference-type-def kind='rvalue' type-id='a64dadf1' size-in-bits='64' id='1f07f598'/>
+    <reference-type-def kind='lvalue' type-id='5dfabd08' size-in-bits='64' id='1e53dab2'/>
+    <reference-type-def kind='rvalue' type-id='5dfabd08' size-in-bits='64' id='520116fc'/>
+    <pointer-type-def type-id='5dfabd08' size-in-bits='64' id='2253e0fe'/>
+    <qualified-type-def type-id='2253e0fe' const='yes' id='bb6e56f1'/>
+    <reference-type-def kind='rvalue' type-id='ae98cea3' size-in-bits='64' id='3f8bd7d0'/>
+    <reference-type-def kind='lvalue' type-id='6a1daac9' size-in-bits='64' id='91526562'/>
+    <reference-type-def kind='rvalue' type-id='c05a8af9' size-in-bits='64' id='3ab37e4a'/>
+    <reference-type-def kind='lvalue' type-id='6631f622' size-in-bits='64' id='0391b614'/>
+    <reference-type-def kind='rvalue' type-id='6631f622' size-in-bits='64' id='d061d0b6'/>
+    <pointer-type-def type-id='6631f622' size-in-bits='64' id='f791a330'/>
+    <qualified-type-def type-id='f791a330' const='yes' id='429760c3'/>
+    <reference-type-def kind='lvalue' type-id='09a82d0e' size-in-bits='64' id='8735eba5'/>
+    <reference-type-def kind='lvalue' type-id='36f403cb' size-in-bits='64' id='aece834f'/>
+    <reference-type-def kind='rvalue' type-id='36f403cb' size-in-bits='64' id='9818de4b'/>
+    <pointer-type-def type-id='36f403cb' size-in-bits='64' id='b2ce899b'/>
+    <qualified-type-def type-id='b2ce899b' const='yes' id='086d6f90'/>
+    <reference-type-def kind='lvalue' type-id='c48ee337' size-in-bits='64' id='e4d59062'/>
+    <reference-type-def kind='lvalue' type-id='51f53c2c' size-in-bits='64' id='e9bc0b96'/>
+    <reference-type-def kind='rvalue' type-id='51f53c2c' size-in-bits='64' id='a3066610'/>
+    <pointer-type-def type-id='51f53c2c' size-in-bits='64' id='f5bc1e7a'/>
+    <qualified-type-def type-id='f5bc1e7a' const='yes' id='fc93e8c5'/>
+    <pointer-type-def type-id='fba62bd1' size-in-bits='64' id='c6143639'/>
+    <reference-type-def kind='lvalue' type-id='5f547296' size-in-bits='64' id='853139c8'/>
+    <reference-type-def kind='rvalue' type-id='5f547296' size-in-bits='64' id='9a7e31aa'/>
+    <pointer-type-def type-id='5f547296' size-in-bits='64' id='8131337c'/>
+    <reference-type-def kind='lvalue' type-id='309c17fa' size-in-bits='64' id='32df85ec'/>
+    <reference-type-def kind='rvalue' type-id='309c17fa' size-in-bits='64' id='dfdf9cfe'/>
+    <pointer-type-def type-id='309c17fa' size-in-bits='64' id='36df8c38'/>
+    <qualified-type-def type-id='36df8c38' const='yes' id='576d494b'/>
+    <reference-type-def kind='lvalue' type-id='243959fb' size-in-bits='64' id='909e12bf'/>
+    <reference-type-def kind='rvalue' type-id='243959fb' size-in-bits='64' id='41d746db'/>
+    <pointer-type-def type-id='243959fb' size-in-bits='64' id='949e190b'/>
+    <qualified-type-def type-id='949e190b' const='yes' id='0f255d40'/>
+    <pointer-type-def type-id='48b5725f' size-in-bits='64' id='eaa32e2f'/>
+    <function-decl name='spdk_trace_parser_init' mangled-name='spdk_trace_parser_init' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_trace_parser_init'>
+      <parameter type-id='bdff52fd' name='opts'/>
+      <return type-id='0baf5fc5'/>
+    </function-decl>
+    <function-decl name='spdk_trace_parser_cleanup' mangled-name='spdk_trace_parser_cleanup' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_trace_parser_cleanup'>
+      <parameter type-id='0baf5fc5' name='parser'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_trace_parser_get_flags' mangled-name='spdk_trace_parser_get_flags' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_trace_parser_get_flags'>
+      <parameter type-id='db279d48' name='parser'/>
+      <return type-id='581e47ea'/>
+    </function-decl>
+    <function-decl name='spdk_trace_parser_get_tsc_offset' mangled-name='spdk_trace_parser_get_tsc_offset' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_trace_parser_get_tsc_offset'>
+      <parameter type-id='db279d48' name='parser'/>
+      <return type-id='9c313c2d'/>
+    </function-decl>
+    <function-decl name='spdk_trace_parser_next_entry' mangled-name='spdk_trace_parser_next_entry' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_trace_parser_next_entry'>
+      <parameter type-id='0baf5fc5' name='parser'/>
+      <parameter type-id='a8e16cac' name='entry'/>
+      <return type-id='c894953d'/>
+    </function-decl>
+    <function-decl name='spdk_trace_parser_get_entry_count' mangled-name='spdk_trace_parser_get_entry_count' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_trace_parser_get_entry_count'>
+      <parameter type-id='db279d48' name='parser'/>
+      <parameter type-id='149c6638' name='lcore'/>
+      <return type-id='9c313c2d'/>
+    </function-decl>
+    <namespace-decl name='std'>
+      <class-decl name='allocator_traits&lt;std::allocator&lt;std::_Rb_tree_node&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt; &gt; &gt; &gt;' size-in-bits='8' is-struct='yes' visibility='default' id='ea12f894'>
+        <member-type access='public'>
+          <typedef-decl name='allocator_type' type-id='4e87fa5c' id='1dda43b1'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='pointer' type-id='5e5b4030' id='eede6c48'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='const_void_pointer' type-id='eaa32e2f' id='a644794f'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='size_type' type-id='7a51dc7f' id='864cf8ff'/>
+        </member-type>
+      </class-decl>
+      <class-decl name='allocator_traits&lt;std::allocator&lt;std::_Rb_tree_node&lt;std::pair&lt;long unsigned int const, long unsigned int&gt; &gt; &gt; &gt;' size-in-bits='8' is-struct='yes' visibility='default' id='6caa0bd1'>
+        <member-type access='public'>
+          <typedef-decl name='allocator_type' type-id='8e4e5a31' id='dbfececc'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='pointer' type-id='9bfe4583' id='90b5876b'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='const_void_pointer' type-id='eaa32e2f' id='6641ab0e'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='size_type' type-id='7a51dc7f' id='66b29fcc'/>
+        </member-type>
+      </class-decl>
+      <class-decl name='allocator_traits&lt;std::allocator&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt; &gt; &gt;' size-in-bits='8' is-struct='yes' visibility='default' id='81f2a7e8'>
+        <member-type access='public'>
+          <typedef-decl name='allocator_type' type-id='5d54b644' id='79beb047'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='pointer' type-id='f791a330' id='d9c93502'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='const_void_pointer' type-id='eaa32e2f' id='566d11e5'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='size_type' type-id='7a51dc7f' id='90b5ab39'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='rebind_alloc' type-id='4e87fa5c' id='f6f35155'/>
+        </member-type>
+      </class-decl>
+      <class-decl name='allocator_traits&lt;std::allocator&lt;std::pair&lt;long unsigned int const, long unsigned int&gt; &gt; &gt;' size-in-bits='8' is-struct='yes' visibility='default' id='f1bdfad5'>
+        <member-type access='public'>
+          <typedef-decl name='allocator_type' type-id='81564a21' id='ae2c72f6'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='pointer' type-id='b2ce899b' id='b5780f69'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='const_void_pointer' type-id='eaa32e2f' id='8e91d8c8'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='size_type' type-id='7a51dc7f' id='5473bbe2'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='rebind_alloc' type-id='8e4e5a31' id='eb3ed2c4'/>
+        </member-type>
+      </class-decl>
+      <class-decl name='allocator&lt;std::_Rb_tree_node&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt; &gt; &gt;' size-in-bits='8' visibility='default' id='4e87fa5c'>
+        <base-class access='public' layout-offset-in-bits='0' type-id='fb789376'/>
+      </class-decl>
+      <class-decl name='allocator&lt;std::_Rb_tree_node&lt;std::pair&lt;long unsigned int const, long unsigned int&gt; &gt; &gt;' size-in-bits='8' visibility='default' id='8e4e5a31'>
+        <base-class access='public' layout-offset-in-bits='0' type-id='bcbd2e77'/>
+      </class-decl>
+      <class-decl name='allocator&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt; &gt;' size-in-bits='8' visibility='default' id='5d54b644'>
+        <base-class access='public' layout-offset-in-bits='0' type-id='6dcae302'/>
+      </class-decl>
+      <class-decl name='allocator&lt;std::pair&lt;long unsigned int const, long unsigned int&gt; &gt;' size-in-bits='8' visibility='default' id='81564a21'>
+        <base-class access='public' layout-offset-in-bits='0' type-id='9ba352d3'/>
+      </class-decl>
+      <class-decl name='unary_function&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt;, const entry_key&gt;' size-in-bits='8' is-struct='yes' visibility='default' id='9e7204b0'/>
+      <class-decl name='unary_function&lt;std::pair&lt;long unsigned int const, long unsigned int&gt;, long unsigned int const&gt;' size-in-bits='8' is-struct='yes' visibility='default' id='d575b19d'/>
+      <class-decl name='binary_function&lt;long unsigned int, long unsigned int, bool&gt;' size-in-bits='8' is-struct='yes' visibility='default' id='c2980c96'/>
+      <class-decl name='less&lt;long unsigned int&gt;' size-in-bits='8' is-struct='yes' visibility='default' id='41f6eaf7'>
+        <base-class access='public' layout-offset-in-bits='0' type-id='c2980c96'/>
+      </class-decl>
+      <class-decl name='_Select1st&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt; &gt;' size-in-bits='8' is-struct='yes' visibility='default' id='f2d1eb1a'>
+        <base-class access='public' layout-offset-in-bits='0' type-id='9e7204b0'/>
+      </class-decl>
+      <class-decl name='_Select1st&lt;std::pair&lt;long unsigned int const, long unsigned int&gt; &gt;' size-in-bits='8' is-struct='yes' visibility='default' id='f0f48e9b'>
+        <base-class access='public' layout-offset-in-bits='0' type-id='d575b19d'/>
+      </class-decl>
+      <class-decl name='map&lt;entry_key, spdk_trace_entry*, compare_entry_key, std::allocator&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt; &gt; &gt;' size-in-bits='384' visibility='default' id='564cd87e'>
+        <member-type access='public'>
+          <typedef-decl name='key_type' type-id='d5f43fcb' id='d4e0188b'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='mapped_type' type-id='fa7ac988' id='bf829651'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='value_type' type-id='6631f622' id='a64dadf1'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='key_compare' type-id='07bb2877' id='1e52bdf2'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='allocator_type' type-id='5d54b644' id='951523e5'/>
+        </member-type>
+        <member-type access='private'>
+          <typedef-decl name='_Rep_type' type-id='7adca8a9' id='bdfd52cc'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='iterator' type-id='28bb3bea' id='12013bed'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='const_iterator' type-id='801b91de' id='1d1a6dbd'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='size_type' type-id='ee9a4a2a' id='a7f1076b'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='reverse_iterator' type-id='ec18b861' id='cfcfe24e'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='const_reverse_iterator' type-id='66d5119d' id='a2537b7e'/>
+        </member-type>
+        <member-type access='private'>
+          <class-decl name='value_compare' visibility='default' is-declaration-only='yes' id='4e25078b'/>
+        </member-type>
+        <data-member access='private' layout-offset-in-bits='0'>
+          <var-decl name='_M_t' type-id='bdfd52cc' visibility='default'/>
+        </data-member>
+      </class-decl>
+      <class-decl name='map&lt;long unsigned int, long unsigned int, std::less&lt;long unsigned int&gt;, std::allocator&lt;std::pair&lt;long unsigned int const, long unsigned int&gt; &gt; &gt;' size-in-bits='384' visibility='default' id='5dfabd08'>
+        <member-type access='public'>
+          <typedef-decl name='key_type' type-id='7359adad' id='ae98cea3'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='mapped_type' type-id='7359adad' id='6a1daac9'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='value_type' type-id='36f403cb' id='c05a8af9'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='key_compare' type-id='41f6eaf7' id='bfe8552a'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='allocator_type' type-id='81564a21' id='d9fdcf7d'/>
+        </member-type>
+        <member-type access='private'>
+          <typedef-decl name='_Rep_type' type-id='20bdeb40' id='cd249b64'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='iterator' type-id='55a36625' id='7d073ba5'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='const_iterator' type-id='304ccf65' id='b6e5f8e5'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='size_type' type-id='4f729d53' id='d19bb5d3'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='reverse_iterator' type-id='e4e74996' id='6a804f16'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='const_reverse_iterator' type-id='0e6eabd6' id='78138556'/>
+        </member-type>
+        <member-type access='private'>
+          <class-decl name='value_compare' visibility='default' is-declaration-only='yes' id='32089e3d'/>
+        </member-type>
+        <data-member access='private' layout-offset-in-bits='0'>
+          <var-decl name='_M_t' type-id='cd249b64' visibility='default'/>
+        </data-member>
+      </class-decl>
+      <class-decl name='piecewise_construct_t' size-in-bits='8' is-struct='yes' visibility='default' id='fba62bd1'/>
+      <class-decl name='__pair_base&lt;const entry_key, spdk_trace_entry*&gt;' size-in-bits='8' visibility='default' id='1aca97fc'/>
+      <class-decl name='__pair_base&lt;long unsigned int const, long unsigned int&gt;' size-in-bits='8' visibility='default' id='491f11f1'/>
+      <class-decl name='__pair_base&lt;std::_Rb_tree_node_base*, std::_Rb_tree_node_base*&gt;' size-in-bits='8' visibility='default' id='7fe5c78a'/>
+      <class-decl name='pair&lt;const entry_key, spdk_trace_entry*&gt;' size-in-bits='192' is-struct='yes' visibility='default' id='6631f622'>
+        <base-class access='private' layout-offset-in-bits='0' type-id='1aca97fc'/>
+        <member-type access='public'>
+          <typedef-decl name='first_type' type-id='646fb874' id='09a82d0e'/>
+        </member-type>
+        <data-member access='public' layout-offset-in-bits='0'>
+          <var-decl name='first' type-id='646fb874' visibility='default'/>
+        </data-member>
+        <data-member access='public' layout-offset-in-bits='128'>
+          <var-decl name='second' type-id='fa7ac988' visibility='default'/>
+        </data-member>
+      </class-decl>
+      <class-decl name='pair&lt;long unsigned int const, long unsigned int&gt;' size-in-bits='128' is-struct='yes' visibility='default' id='36f403cb'>
+        <base-class access='private' layout-offset-in-bits='0' type-id='491f11f1'/>
+        <member-type access='public'>
+          <typedef-decl name='first_type' type-id='9cbd1c16' id='c48ee337'/>
+        </member-type>
+        <data-member access='public' layout-offset-in-bits='0'>
+          <var-decl name='first' type-id='9cbd1c16' visibility='default'/>
+        </data-member>
+        <data-member access='public' layout-offset-in-bits='64'>
+          <var-decl name='second' type-id='7359adad' visibility='default'/>
+        </data-member>
+      </class-decl>
+      <class-decl name='pair&lt;std::_Rb_tree_node_base*, std::_Rb_tree_node_base*&gt;' size-in-bits='128' is-struct='yes' visibility='default' id='51f53c2c'>
+        <base-class access='private' layout-offset-in-bits='0' type-id='7fe5c78a'/>
+        <data-member access='public' layout-offset-in-bits='0'>
+          <var-decl name='first' type-id='458526d7' visibility='default'/>
+        </data-member>
+        <data-member access='public' layout-offset-in-bits='64'>
+          <var-decl name='second' type-id='458526d7' visibility='default'/>
+        </data-member>
+      </class-decl>
+      <enum-decl name='_Rb_tree_color' id='0891700f'>
+        <underlying-type type-id='9cac1fee'/>
+        <enumerator name='_S_red' value='0'/>
+        <enumerator name='_S_black' value='1'/>
+      </enum-decl>
+      <class-decl name='_Rb_tree_node_base' size-in-bits='256' is-struct='yes' visibility='default' id='2ca858ff'>
+        <member-type access='public'>
+          <typedef-decl name='_Base_ptr' type-id='458526d7' id='6ecaf455'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='_Const_Base_ptr' type-id='36ca33fe' id='c6c7ecd9'/>
+        </member-type>
+        <data-member access='public' layout-offset-in-bits='0'>
+          <var-decl name='_M_color' type-id='0891700f' visibility='default'/>
+        </data-member>
+        <data-member access='public' layout-offset-in-bits='64'>
+          <var-decl name='_M_parent' type-id='6ecaf455' visibility='default'/>
+        </data-member>
+        <data-member access='public' layout-offset-in-bits='128'>
+          <var-decl name='_M_left' type-id='6ecaf455' visibility='default'/>
+        </data-member>
+        <data-member access='public' layout-offset-in-bits='192'>
+          <var-decl name='_M_right' type-id='6ecaf455' visibility='default'/>
+        </data-member>
+      </class-decl>
+      <class-decl name='_Rb_tree_key_compare&lt;compare_entry_key&gt;' size-in-bits='8' is-struct='yes' visibility='default' id='26cc3c3a'>
+        <data-member access='public' layout-offset-in-bits='0'>
+          <var-decl name='_M_key_compare' type-id='07bb2877' visibility='default'/>
+        </data-member>
+      </class-decl>
+      <class-decl name='_Rb_tree_key_compare&lt;std::less&lt;long unsigned int&gt; &gt;' size-in-bits='8' is-struct='yes' visibility='default' id='a8684024'>
+        <data-member access='public' layout-offset-in-bits='0'>
+          <var-decl name='_M_key_compare' type-id='41f6eaf7' visibility='default'/>
+        </data-member>
+      </class-decl>
+      <class-decl name='_Rb_tree_header' size-in-bits='320' is-struct='yes' visibility='default' id='8477a284'>
+        <data-member access='public' layout-offset-in-bits='0'>
+          <var-decl name='_M_header' type-id='2ca858ff' visibility='default'/>
+        </data-member>
+        <data-member access='public' layout-offset-in-bits='256'>
+          <var-decl name='_M_node_count' type-id='7a51dc7f' visibility='default'/>
+        </data-member>
+      </class-decl>
+      <class-decl name='_Rb_tree_node&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt; &gt;' size-in-bits='448' is-struct='yes' visibility='default' id='cfbc4742'>
+        <base-class access='public' layout-offset-in-bits='0' type-id='2ca858ff'/>
+        <data-member access='public' layout-offset-in-bits='256'>
+          <var-decl name='_M_storage' type-id='bb1958c5' visibility='default'/>
+        </data-member>
+      </class-decl>
+      <class-decl name='_Rb_tree_node&lt;std::pair&lt;long unsigned int const, long unsigned int&gt; &gt;' size-in-bits='384' is-struct='yes' visibility='default' id='dc627593'>
+        <base-class access='public' layout-offset-in-bits='0' type-id='2ca858ff'/>
+        <data-member access='public' layout-offset-in-bits='256'>
+          <var-decl name='_M_storage' type-id='5d1a4b34' visibility='default'/>
+        </data-member>
+      </class-decl>
+      <class-decl name='_Rb_tree_iterator&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt; &gt;' size-in-bits='64' is-struct='yes' visibility='default' id='89de54d0'>
+        <member-type access='public'>
+          <typedef-decl name='reference' type-id='0391b614' id='12de816e'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='pointer' type-id='f791a330' id='125e2c9e'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='_Self' type-id='89de54d0' id='37b02dac'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='_Base_ptr' type-id='6ecaf455' id='3818d152'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='_Link_type' type-id='5e5b4030' id='ceec4adf'/>
+        </member-type>
+        <data-member access='public' layout-offset-in-bits='0'>
+          <var-decl name='_M_node' type-id='3818d152' visibility='default'/>
+        </data-member>
+      </class-decl>
+      <class-decl name='_Rb_tree_iterator&lt;std::pair&lt;long unsigned int const, long unsigned int&gt; &gt;' size-in-bits='64' is-struct='yes' visibility='default' id='001b43d5'>
+        <member-type access='public'>
+          <typedef-decl name='reference' type-id='aece834f' id='155b3e69'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='pointer' type-id='b2ce899b' id='79e4059d'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='_Self' type-id='001b43d5' id='312ef80b'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='_Base_ptr' type-id='6ecaf455' id='33a8714d'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='_Link_type' type-id='9bfe4583' id='94c0264e'/>
+        </member-type>
+        <data-member access='public' layout-offset-in-bits='0'>
+          <var-decl name='_M_node' type-id='33a8714d' visibility='default'/>
+        </data-member>
+      </class-decl>
+      <class-decl name='_Rb_tree_const_iterator&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt; &gt;' size-in-bits='64' is-struct='yes' visibility='default' id='40a578f4'>
+        <member-type access='public'>
+          <typedef-decl name='reference' type-id='c3e663c5' id='997c9c72'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='pointer' type-id='c7e66a11' id='c02e44c2'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='iterator' type-id='89de54d0' id='d60ee707'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='_Self' type-id='40a578f4' id='d4345210'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='_Base_ptr' type-id='c6c7ecd9' id='c1575f26'/>
+        </member-type>
+        <data-member access='public' layout-offset-in-bits='0'>
+          <var-decl name='_M_node' type-id='c1575f26' visibility='default'/>
+        </data-member>
+      </class-decl>
+      <class-decl name='_Rb_tree_const_iterator&lt;std::pair&lt;long unsigned int const, long unsigned int&gt; &gt;' size-in-bits='64' is-struct='yes' visibility='default' id='1a59d551'>
+        <member-type access='public'>
+          <typedef-decl name='reference' type-id='0d113b4a' id='ad5fc4a5'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='pointer' type-id='01112866' id='fbbb9149'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='iterator' type-id='001b43d5' id='600aa8f2'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='_Self' type-id='1a59d551' id='9b60a747'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='_Base_ptr' type-id='c6c7ecd9' id='3786fc59'/>
+        </member-type>
+        <data-member access='public' layout-offset-in-bits='0'>
+          <var-decl name='_M_node' type-id='3786fc59' visibility='default'/>
+        </data-member>
+      </class-decl>
+      <class-decl name='_Rb_tree&lt;entry_key, std::pair&lt;const entry_key, spdk_trace_entry*&gt;, std::_Select1st&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt; &gt;, compare_entry_key, std::allocator&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt; &gt; &gt;' size-in-bits='384' visibility='default' id='7adca8a9'>
+        <member-type access='private'>
+          <typedef-decl name='_Node_allocator' type-id='59fee72e' id='bebe2b57'/>
+        </member-type>
+        <member-type access='protected'>
+          <typedef-decl name='_Base_ptr' type-id='458526d7' id='b559fdc1'/>
+        </member-type>
+        <member-type access='protected'>
+          <typedef-decl name='_Const_Base_ptr' type-id='36ca33fe' id='0c5579f5'/>
+        </member-type>
+        <member-type access='protected'>
+          <typedef-decl name='_Link_type' type-id='5e5b4030' id='6cb9fd6a'/>
+        </member-type>
+        <member-type access='protected'>
+          <typedef-decl name='_Const_Link_type' type-id='4c8d7b0f' id='8f93d0f6'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='key_type' type-id='d5f43fcb' id='1e7ff968'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='size_type' type-id='7a51dc7f' id='ee9a4a2a'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='allocator_type' type-id='5d54b644' id='cb7879ce'/>
+        </member-type>
+        <member-type access='protected'>
+          <class-decl name='_Rb_tree_impl&lt;compare_entry_key, true&gt;' size-in-bits='384' is-struct='yes' visibility='default' id='f3411a74'>
+            <base-class access='public' layout-offset-in-bits='0' type-id='4e87fa5c'/>
+            <base-class access='public' layout-offset-in-bits='0' type-id='26cc3c3a'/>
+            <base-class access='public' layout-offset-in-bits='64' type-id='8477a284'/>
+          </class-decl>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='iterator' type-id='89de54d0' id='28bb3bea'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='const_iterator' type-id='40a578f4' id='801b91de'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='reverse_iterator' type-id='7401112e' id='ec18b861'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='const_reverse_iterator' type-id='e6c9c4da' id='66d5119d'/>
+        </member-type>
+        <data-member access='protected' layout-offset-in-bits='0'>
+          <var-decl name='_M_impl' type-id='f3411a74' visibility='default'/>
+        </data-member>
+      </class-decl>
+      <class-decl name='_Rb_tree&lt;long unsigned int, std::pair&lt;long unsigned int const, long unsigned int&gt;, std::_Select1st&lt;std::pair&lt;long unsigned int const, long unsigned int&gt; &gt;, std::less&lt;long unsigned int&gt;, std::allocator&lt;std::pair&lt;long unsigned int const, long unsigned int&gt; &gt; &gt;' size-in-bits='384' visibility='default' id='20bdeb40'>
+        <member-type access='private'>
+          <typedef-decl name='_Node_allocator' type-id='1540d2eb' id='aa3ac926'/>
+        </member-type>
+        <member-type access='protected'>
+          <typedef-decl name='_Base_ptr' type-id='458526d7' id='7c432b08'/>
+        </member-type>
+        <member-type access='protected'>
+          <typedef-decl name='_Const_Base_ptr' type-id='36ca33fe' id='2905d914'/>
+        </member-type>
+        <member-type access='protected'>
+          <typedef-decl name='_Link_type' type-id='9bfe4583' id='7395a675'/>
+        </member-type>
+        <member-type access='protected'>
+          <typedef-decl name='_Const_Link_type' type-id='8705ab80' id='0e48ba59'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='key_type' type-id='7359adad' id='8734f923'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='size_type' type-id='7a51dc7f' id='4f729d53'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='allocator_type' type-id='81564a21' id='5364a5fd'/>
+        </member-type>
+        <member-type access='protected'>
+          <class-decl name='_Rb_tree_impl&lt;std::less&lt;long unsigned int&gt;, true&gt;' size-in-bits='384' is-struct='yes' visibility='default' id='f8bc52f5'>
+            <base-class access='public' layout-offset-in-bits='0' type-id='8e4e5a31'/>
+            <base-class access='public' layout-offset-in-bits='0' type-id='a8684024'/>
+            <base-class access='public' layout-offset-in-bits='64' type-id='8477a284'/>
+          </class-decl>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='iterator' type-id='001b43d5' id='55a36625'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='const_iterator' type-id='1a59d551' id='304ccf65'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='reverse_iterator' type-id='5b90e0bf' id='e4e74996'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='const_reverse_iterator' type-id='48924c73' id='0e6eabd6'/>
+        </member-type>
+        <data-member access='protected' layout-offset-in-bits='0'>
+          <var-decl name='_M_impl' type-id='f8bc52f5' visibility='default'/>
+        </data-member>
+      </class-decl>
+      <class-decl name='allocator_arg_t' size-in-bits='8' is-struct='yes' visibility='default' id='2e6e78cf'/>
+      <class-decl name='__uses_alloc_base' size-in-bits='8' is-struct='yes' visibility='default' id='396ba9fa'/>
+      <class-decl name='__uses_alloc0' size-in-bits='8' is-struct='yes' visibility='default' id='58e1b2a6'>
+        <base-class access='public' layout-offset-in-bits='0' type-id='396ba9fa'/>
+        <member-type access='public'>
+          <class-decl name='_Sink' size-in-bits='8' is-struct='yes' visibility='default' id='877b9d80'/>
+        </member-type>
+        <data-member access='public' layout-offset-in-bits='0'>
+          <var-decl name='_M_a' type-id='877b9d80' visibility='default'/>
+        </data-member>
+      </class-decl>
+      <class-decl name='_Head_base&lt;0, entry_key&amp;&amp;, false&gt;' size-in-bits='64' is-struct='yes' visibility='default' id='c1dd2ae2'>
+        <data-member access='public' layout-offset-in-bits='0'>
+          <var-decl name='_M_head_impl' type-id='e56966db' visibility='default'/>
+        </data-member>
+      </class-decl>
+      <class-decl name='_Head_base&lt;0, long unsigned int const&amp;, false&gt;' size-in-bits='64' is-struct='yes' visibility='default' id='b30c599f'>
+        <data-member access='public' layout-offset-in-bits='0'>
+          <var-decl name='_M_head_impl' type-id='edb35f90' visibility='default'/>
+        </data-member>
+      </class-decl>
+      <class-decl name='_Tuple_impl&lt;0, entry_key&amp;&amp;&gt;' size-in-bits='64' is-struct='yes' visibility='default' id='ef181cf4'>
+        <base-class access='private' layout-offset-in-bits='0' type-id='c1dd2ae2'/>
+      </class-decl>
+      <class-decl name='_Tuple_impl&lt;0, long unsigned int const&amp;&gt;' size-in-bits='64' is-struct='yes' visibility='default' id='57e06795'>
+        <base-class access='private' layout-offset-in-bits='0' type-id='b30c599f'/>
+      </class-decl>
+      <class-decl name='tuple&lt;entry_key&amp;&amp;&gt;' size-in-bits='64' visibility='default' id='309c17fa'>
+        <base-class access='public' layout-offset-in-bits='0' type-id='ef181cf4'/>
+      </class-decl>
+      <class-decl name='tuple&lt;long unsigned int const&amp;&gt;' size-in-bits='64' visibility='default' id='243959fb'>
+        <base-class access='public' layout-offset-in-bits='0' type-id='57e06795'/>
+      </class-decl>
+      <class-decl name='tuple&lt;&gt;' size-in-bits='8' visibility='default' id='5f547296'/>
+      <class-decl name='integral_constant&lt;bool, false&gt;' size-in-bits='8' is-struct='yes' visibility='default' id='49a160da'>
+        <member-type access='public'>
+          <typedef-decl name='value_type' type-id='c894953d' id='4a3e1ffb'/>
+        </member-type>
+      </class-decl>
+      <class-decl name='integral_constant&lt;bool, true&gt;' size-in-bits='8' is-struct='yes' visibility='default' id='125a41c9'>
+        <member-type access='public'>
+          <typedef-decl name='value_type' type-id='c894953d' id='a6b89c4a'/>
+        </member-type>
+      </class-decl>
+      <typedef-decl name='true_type' type-id='125a41c9' id='35a623b6'/>
+      <typedef-decl name='false_type' type-id='49a160da' id='f4e344b5'/>
+      <class-decl name='conditional&lt;true, const std::pair&lt;std::_Rb_tree_node_base*, std::_Rb_tree_node_base*&gt;&amp;, const std::__nonesuch&amp;&gt;' size-in-bits='8' is-struct='yes' visibility='default' id='ecd3d52d'>
+        <member-type access='public'>
+          <typedef-decl name='type' type-id='c8d7c123' id='54216d40'/>
+        </member-type>
+      </class-decl>
+      <class-decl name='conditional&lt;true, const std::tuple&lt;entry_key&amp;&amp;&gt;&amp;, const std::__nonesuch&amp;&gt;' size-in-bits='8' is-struct='yes' visibility='default' id='e78e13eb'>
+        <member-type access='public'>
+          <typedef-decl name='type' type-id='d19402f1' id='01b1bd82'/>
+        </member-type>
+      </class-decl>
+      <class-decl name='conditional&lt;true, std::pair&lt;std::_Rb_tree_node_base*, std::_Rb_tree_node_base*&gt;&amp;&amp;, std::__nonesuch&amp;&amp;&gt;' size-in-bits='8' is-struct='yes' visibility='default' id='39e63009'>
+        <member-type access='public'>
+          <typedef-decl name='type' type-id='a3066610' id='79a20dfc'/>
+        </member-type>
+      </class-decl>
+      <class-decl name='conditional&lt;true, std::tuple&lt;entry_key&amp;&amp;&gt;&amp;&amp;, std::__nonesuch&amp;&amp;&gt;' size-in-bits='8' is-struct='yes' visibility='default' id='019b3f1f'>
+        <member-type access='public'>
+          <typedef-decl name='type' type-id='dfdf9cfe' id='61a6994e'/>
+        </member-type>
+      </class-decl>
+      <class-decl name='conditional&lt;false, const std::pair&lt;const entry_key, spdk_trace_entry*&gt;&amp;, const std::__nonesuch&amp;&gt;' size-in-bits='8' is-struct='yes' visibility='default' id='da5942b2'>
+        <member-type access='public'>
+          <typedef-decl name='type' type-id='c52f7f30' id='8c2f6639'/>
+        </member-type>
+      </class-decl>
+      <class-decl name='conditional&lt;false, const std::pair&lt;long unsigned int const, long unsigned int&gt;&amp;, const std::__nonesuch&amp;&gt;' size-in-bits='8' is-struct='yes' visibility='default' id='5bf39987'>
+        <member-type access='public'>
+          <typedef-decl name='type' type-id='c52f7f30' id='ef4780b8'/>
+        </member-type>
+      </class-decl>
+      <class-decl name='conditional&lt;false, const std::tuple&lt;long unsigned int const&amp;&gt;&amp;, const std::__nonesuch&amp;&gt;' size-in-bits='8' is-struct='yes' visibility='default' id='d79bc6b9'>
+        <member-type access='public'>
+          <typedef-decl name='type' type-id='c52f7f30' id='e86900e8'/>
+        </member-type>
+      </class-decl>
+      <class-decl name='conditional&lt;false, std::pair&lt;const entry_key, spdk_trace_entry*&gt;&amp;&amp;, std::__nonesuch&amp;&amp;&gt;' size-in-bits='8' is-struct='yes' visibility='default' id='dbd1b892'>
+        <member-type access='public'>
+          <typedef-decl name='type' type-id='30df0d8d' id='561c73b1'/>
+        </member-type>
+      </class-decl>
+      <class-decl name='conditional&lt;false, std::pair&lt;long unsigned int const, long unsigned int&gt;&amp;&amp;, std::__nonesuch&amp;&amp;&gt;' size-in-bits='8' is-struct='yes' visibility='default' id='f904281b'>
+        <member-type access='public'>
+          <typedef-decl name='type' type-id='30df0d8d' id='515bcd7c'/>
+        </member-type>
+      </class-decl>
+      <class-decl name='conditional&lt;false, std::tuple&lt;long unsigned int const&amp;&gt;&amp;&amp;, std::__nonesuch&amp;&amp;&gt;' size-in-bits='8' is-struct='yes' visibility='default' id='6c807313'>
+        <member-type access='public'>
+          <typedef-decl name='type' type-id='30df0d8d' id='27afb236'/>
+        </member-type>
+      </class-decl>
+      <class-decl name='__nonesuchbase' size-in-bits='8' is-struct='yes' visibility='default' id='d4306650'/>
+      <class-decl name='__nonesuch' size-in-bits='8' is-struct='yes' visibility='default' id='3229087d'>
+        <base-class access='private' layout-offset-in-bits='0' type-id='d4306650'/>
+      </class-decl>
+      <class-decl name='_Index_tuple&lt;0&gt;' size-in-bits='8' is-struct='yes' visibility='default' id='7e2fde62'/>
+      <class-decl name='_Index_tuple&lt;&gt;' size-in-bits='8' is-struct='yes' visibility='default' id='e9c5aa42'/>
+      <typedef-decl name='size_t' type-id='7359adad' id='7a51dc7f'/>
+      <class-decl name='exception' visibility='default' is-declaration-only='yes' id='f5f48c97'>
+        <member-function access='public' destructor='yes' vtable-offset='-1'>
+          <function-decl name='~exception' mangled-name='_ZNSt9exceptionD0Ev' visibility='default' binding='global' size-in-bits='64'>
+            <parameter type-id='f1cccbbf' is-artificial='yes'/>
+            <parameter type-id='95e97e5e' is-artificial='yes'/>
+            <return type-id='48b5725f'/>
+          </function-decl>
+        </member-function>
+        <member-function access='public' destructor='yes' vtable-offset='-1'>
+          <function-decl name='~exception' mangled-name='_ZNSt9exceptionD1Ev' visibility='default' binding='global' size-in-bits='64'>
+            <parameter type-id='f1cccbbf' is-artificial='yes'/>
+            <parameter type-id='95e97e5e' is-artificial='yes'/>
+            <return type-id='48b5725f'/>
+          </function-decl>
+        </member-function>
+        <member-function access='public' destructor='yes' vtable-offset='-1'>
+          <function-decl name='~exception' mangled-name='_ZNSt9exceptionD4Ev' visibility='default' binding='global' size-in-bits='64'>
+            <parameter type-id='f1cccbbf' is-artificial='yes'/>
+            <parameter type-id='95e97e5e' is-artificial='yes'/>
+            <return type-id='48b5725f'/>
+          </function-decl>
+        </member-function>
+        <member-function access='public' const='yes' vtable-offset='2'>
+          <function-decl name='what' mangled-name='_ZNKSt9exception4whatEv' visibility='default' binding='global' size-in-bits='64'>
+            <parameter type-id='438a79cc' is-artificial='yes'/>
+            <return type-id='80f4b756'/>
+          </function-decl>
+        </member-function>
+      </class-decl>
+      <class-decl name='initializer_list&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt; &gt;' visibility='default' is-declaration-only='yes' id='7016883c'/>
+      <class-decl name='initializer_list&lt;std::pair&lt;long unsigned int const, long unsigned int&gt; &gt;' visibility='default' is-declaration-only='yes' id='8a992349'/>
+      <class-decl name='pair&lt;std::_Rb_tree_const_iterator&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt; &gt;, std::_Rb_tree_const_iterator&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt; &gt; &gt;' is-struct='yes' visibility='default' is-declaration-only='yes' id='b0c4b568'/>
+      <class-decl name='pair&lt;std::_Rb_tree_const_iterator&lt;std::pair&lt;long unsigned int const, long unsigned int&gt; &gt;, std::_Rb_tree_const_iterator&lt;std::pair&lt;long unsigned int const, long unsigned int&gt; &gt; &gt;' is-struct='yes' visibility='default' is-declaration-only='yes' id='d193b900'/>
+      <class-decl name='pair&lt;std::_Rb_tree_iterator&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt; &gt;, bool&gt;' is-struct='yes' visibility='default' is-declaration-only='yes' id='c5eaf743'/>
+      <class-decl name='pair&lt;std::_Rb_tree_iterator&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt; &gt;, std::_Rb_tree_iterator&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt; &gt; &gt;' is-struct='yes' visibility='default' is-declaration-only='yes' id='909ef038'/>
+      <class-decl name='pair&lt;std::_Rb_tree_iterator&lt;std::pair&lt;long unsigned int const, long unsigned int&gt; &gt;, bool&gt;' is-struct='yes' visibility='default' is-declaration-only='yes' id='e9cf0fac'/>
+      <class-decl name='pair&lt;std::_Rb_tree_iterator&lt;std::pair&lt;long unsigned int const, long unsigned int&gt; &gt;, std::_Rb_tree_iterator&lt;std::pair&lt;long unsigned int const, long unsigned int&gt; &gt; &gt;' is-struct='yes' visibility='default' is-declaration-only='yes' id='1cb3c080'/>
+      <class-decl name='reverse_iterator&lt;std::_Rb_tree_const_iterator&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt; &gt; &gt;' visibility='default' is-declaration-only='yes' id='e6c9c4da'/>
+      <class-decl name='reverse_iterator&lt;std::_Rb_tree_const_iterator&lt;std::pair&lt;long unsigned int const, long unsigned int&gt; &gt; &gt;' visibility='default' is-declaration-only='yes' id='48924c73'/>
+      <class-decl name='reverse_iterator&lt;std::_Rb_tree_iterator&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt; &gt; &gt;' visibility='default' is-declaration-only='yes' id='7401112e'/>
+      <class-decl name='reverse_iterator&lt;std::_Rb_tree_iterator&lt;std::pair&lt;long unsigned int const, long unsigned int&gt; &gt; &gt;' visibility='default' is-declaration-only='yes' id='5b90e0bf'/>
+    </namespace-decl>
+    <namespace-decl name='__gnu_cxx'>
+      <class-decl name='__aligned_membuf&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt; &gt;' size-in-bits='192' is-struct='yes' visibility='default' id='bb1958c5'>
+        <data-member access='public' layout-offset-in-bits='0'>
+          <var-decl name='_M_storage' type-id='25108e54' visibility='default'/>
+        </data-member>
+      </class-decl>
+      <class-decl name='__aligned_membuf&lt;std::pair&lt;long unsigned int const, long unsigned int&gt; &gt;' size-in-bits='128' is-struct='yes' visibility='default' id='5d1a4b34'>
+        <data-member access='public' layout-offset-in-bits='0'>
+          <var-decl name='_M_storage' type-id='92a46553' visibility='default'/>
+        </data-member>
+      </class-decl>
+      <class-decl name='__alloc_traits&lt;std::allocator&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt; &gt;, std::pair&lt;const entry_key, spdk_trace_entry*&gt; &gt;' size-in-bits='8' is-struct='yes' visibility='default' id='869ad4ca'>
+        <base-class access='public' layout-offset-in-bits='0' type-id='81f2a7e8'/>
+        <member-type access='public'>
+          <class-decl name='rebind&lt;std::_Rb_tree_node&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt; &gt; &gt;' size-in-bits='8' is-struct='yes' visibility='default' id='f2b9368d'>
+            <member-type access='public'>
+              <typedef-decl name='other' type-id='f6f35155' id='59fee72e'/>
+            </member-type>
+          </class-decl>
+        </member-type>
+      </class-decl>
+      <class-decl name='__alloc_traits&lt;std::allocator&lt;std::pair&lt;long unsigned int const, long unsigned int&gt; &gt;, std::pair&lt;long unsigned int const, long unsigned int&gt; &gt;' size-in-bits='8' is-struct='yes' visibility='default' id='3fdf41cc'>
+        <base-class access='public' layout-offset-in-bits='0' type-id='f1bdfad5'/>
+        <member-type access='public'>
+          <class-decl name='rebind&lt;std::_Rb_tree_node&lt;std::pair&lt;long unsigned int const, long unsigned int&gt; &gt; &gt;' size-in-bits='8' is-struct='yes' visibility='default' id='57f8638e'>
+            <member-type access='public'>
+              <typedef-decl name='other' type-id='eb3ed2c4' id='1540d2eb'/>
+            </member-type>
+          </class-decl>
+        </member-type>
+      </class-decl>
+      <class-decl name='new_allocator&lt;std::_Rb_tree_node&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt; &gt; &gt;' size-in-bits='8' visibility='default' id='fb789376'>
+        <member-type access='public'>
+          <typedef-decl name='size_type' type-id='7a51dc7f' id='31e83f21'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='pointer' type-id='5e5b4030' id='7951be3a'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='const_pointer' type-id='4c8d7b0f' id='d956e78e'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='reference' type-id='6a5b5314' id='f600e90a'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='const_reference' type-id='508d815b' id='3a4cbcfe'/>
+        </member-type>
+      </class-decl>
+      <class-decl name='new_allocator&lt;std::_Rb_tree_node&lt;std::pair&lt;long unsigned int const, long unsigned int&gt; &gt; &gt;' size-in-bits='8' visibility='default' id='bcbd2e77'>
+        <member-type access='public'>
+          <typedef-decl name='size_type' type-id='7a51dc7f' id='7bec3e7a'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='pointer' type-id='9bfe4583' id='13d963f1'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='const_pointer' type-id='8705ab80' id='04a98e5d'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='reference' type-id='a7fe5867' id='910c148d'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='const_reference' type-id='9305be64' id='bc22ab29'/>
+        </member-type>
+      </class-decl>
+      <class-decl name='new_allocator&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt; &gt;' size-in-bits='8' visibility='default' id='6dcae302'>
+        <member-type access='public'>
+          <typedef-decl name='size_type' type-id='7a51dc7f' id='b7286a57'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='pointer' type-id='f791a330' id='782a8bf0'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='const_pointer' type-id='c7e66a11' id='4467fc20'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='reference' type-id='0391b614' id='2c9b7330'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='const_reference' type-id='c3e663c5' id='69613a80'/>
+        </member-type>
+      </class-decl>
+      <class-decl name='new_allocator&lt;std::pair&lt;long unsigned int const, long unsigned int&gt; &gt;' size-in-bits='8' visibility='default' id='9ba352d3'>
+        <member-type access='public'>
+          <typedef-decl name='size_type' type-id='7a51dc7f' id='acfc2074'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='pointer' type-id='b2ce899b' id='c2922803'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='const_pointer' type-id='01112866' id='680676a3'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='reference' type-id='aece834f' id='0c2d3117'/>
+        </member-type>
+        <member-type access='public'>
+          <typedef-decl name='const_reference' type-id='0d113b4a' id='a6449ab7'/>
+        </member-type>
+      </class-decl>
+    </namespace-decl>
+  </abi-instr>
+</abi-corpus>

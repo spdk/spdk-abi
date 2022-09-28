@@ -1,0 +1,59 @@
+<abi-corpus version='2.0' soname='libspdk_blobfs_bdev.so.4.0'>
+  <elf-needed>
+    <dependency name='libspdk_log.so.5.0'/>
+    <dependency name='libspdk_util.so.5.1'/>
+    <dependency name='libspdk_json.so.4.0'/>
+    <dependency name='libspdk_jsonrpc.so.4.0'/>
+    <dependency name='libspdk_rpc.so.4.1'/>
+    <dependency name='libspdk_bdev.so.10.0'/>
+    <dependency name='libspdk_thread.so.7.0'/>
+    <dependency name='libspdk_blob_bdev.so.8.0'/>
+    <dependency name='libspdk_blobfs.so.7.0'/>
+    <dependency name='libspdk_event.so.11.0'/>
+    <dependency name='libc.so.6'/>
+    <dependency name='ld-linux-x86-64.so.2'/>
+  </elf-needed>
+  <elf-function-symbols>
+    <elf-symbol name='spdk_blobfs_bdev_create' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_blobfs_bdev_detect' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_blobfs_bdev_mount' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-function-symbols>
+  <abi-instr address-size='64' path='blobfs_bdev.c' language='LANG_C99'>
+    <type-decl name='char' size-in-bits='8' id='a84c031d'/>
+    <type-decl name='int' size-in-bits='32' id='95e97e5e'/>
+    <type-decl name='unsigned int' size-in-bits='32' id='f0981eeb'/>
+    <type-decl name='void' id='48b5725f'/>
+    <typedef-decl name='spdk_blobfs_bdev_op_complete' type-id='1ed1e4cd' id='be15c971'/>
+    <typedef-decl name='uint32_t' type-id='62f1140c' id='8f92235e'/>
+    <typedef-decl name='__uint32_t' type-id='f0981eeb' id='62f1140c'/>
+    <qualified-type-def type-id='a84c031d' const='yes' id='9b45d938'/>
+    <pointer-type-def type-id='9b45d938' size-in-bits='64' id='80f4b756'/>
+    <pointer-type-def type-id='2922fb19' size-in-bits='64' id='1ed1e4cd'/>
+    <pointer-type-def type-id='48b5725f' size-in-bits='64' id='eaa32e2f'/>
+    <function-decl name='spdk_blobfs_bdev_detect' mangled-name='spdk_blobfs_bdev_detect' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_blobfs_bdev_detect'>
+      <parameter type-id='80f4b756' name='bdev_name'/>
+      <parameter type-id='be15c971' name='cb_fn'/>
+      <parameter type-id='eaa32e2f' name='cb_arg'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_blobfs_bdev_create' mangled-name='spdk_blobfs_bdev_create' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_blobfs_bdev_create'>
+      <parameter type-id='80f4b756' name='bdev_name'/>
+      <parameter type-id='8f92235e' name='cluster_sz'/>
+      <parameter type-id='be15c971' name='cb_fn'/>
+      <parameter type-id='eaa32e2f' name='cb_arg'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_blobfs_bdev_mount' mangled-name='spdk_blobfs_bdev_mount' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_blobfs_bdev_mount'>
+      <parameter type-id='80f4b756' name='bdev_name'/>
+      <parameter type-id='80f4b756' name='mountpoint'/>
+      <parameter type-id='be15c971' name='cb_fn'/>
+      <parameter type-id='eaa32e2f' name='cb_arg'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-type size-in-bits='64' id='2922fb19'>
+      <parameter type-id='eaa32e2f'/>
+      <parameter type-id='95e97e5e'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+  </abi-instr>
+</abi-corpus>

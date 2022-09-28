@@ -1,0 +1,13 @@
+<abi-corpus version='2.0' soname='libspdk_accel_iaa.so.1.0'>
+  <elf-needed>
+    <dependency name='libspdk_log.so.5.0'/>
+    <dependency name='libspdk_idxd.so.9.0'/>
+    <dependency name='libspdk_thread.so.7.0'/>
+    <dependency name='libspdk_json.so.4.0'/>
+    <dependency name='libspdk_jsonrpc.so.4.0'/>
+    <dependency name='libspdk_rpc.so.4.1'/>
+    <dependency name='libspdk_accel.so.10.0'/>
+    <dependency name='libspdk_trace.so.7.0'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+</abi-corpus>
