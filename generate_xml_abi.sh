@@ -31,6 +31,9 @@ gitc checkout $version
 spdk_hash=$(gitc rev-parse HEAD)
 gitc submodule update --init
 
+gitc config --local user.name "spdk"
+gitc config --local user.email "hotpatch@spdk.io"
+
 # We have to cherry pick changes to properly build libs under the older releases
 if ((gcc_version >= 11)); then
 	if [[ "$version" =~ "22.05" ]]; then
