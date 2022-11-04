@@ -7,9 +7,12 @@ git_repo_spdk="https://github.com/spdk/spdk.git"
 
 function usage() {
 	script_name=./`basename "$0"`
-	echo "Generate XML representation of the SPDK libraries for abi tests."
-	echo "Usage: $script_name <spdk_tag>"
-	echo "Example: $script_name v22.09"
+	echo "Generate XML representation of the SPDK libraries for ABI tests."
+	echo "Usage: $script_name <spdk_tag> [output_dir]"
+	echo "spdk_tag      SPDK release tag"
+	echo "output_dir    Location of resulting XML files. Default: ./\$spdk_tag.x"
+	echo "Example:"
+	echo "$script_name v22.09 /path/for/generated/xmls"
 	exit 0
 }
 
@@ -22,6 +25,7 @@ case $version in
 	v[0-9][0-9]\.[0-9][0-9]*) true ;;
 	*) usage ;;
 esac
+xml_dir=$2
 
 # Clone a fresh spdk repository everytime the script is run
 [[ -d "$rootdir" ]] && rm -rf "$rootdir"
@@ -83,8 +87,10 @@ $rootdir/configure $config_params
 
 $MAKE -C $rootdir $MAKEFLAGS
 
-branch=$(echo $version | grep -Eo 'v[0-9][0-9]\.[0-9][0-9]') branch="${branch}.x"
-xml_dir="$rootdir/../$branch"
+if [[ -z $xml_dir ]]; then
+	branch=$(echo $version | grep -Eo 'v[0-9][0-9]\.[0-9][0-9]') branch="${branch}.x"
+	xml_dir="$rootdir/../$branch"
+fi
 
 if [[ -d "$xml_dir" ]]; then
 	rm -rf "$xml_dir"
