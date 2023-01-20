@@ -1,0 +1,12 @@
+<abi-corpus version='2.1' soname='libspdk_bdev_passthru.so.4.0'>
+  <elf-needed>
+    <dependency name='libspdk_log.so.5.1'/>
+    <dependency name='libspdk_util.so.5.2'/>
+    <dependency name='libspdk_json.so.4.1'/>
+    <dependency name='libspdk_jsonrpc.so.4.0'/>
+    <dependency name='libspdk_rpc.so.4.2'/>
+    <dependency name='libspdk_bdev.so.11.0'/>
+    <dependency name='libspdk_thread.so.7.1'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+</abi-corpus>
