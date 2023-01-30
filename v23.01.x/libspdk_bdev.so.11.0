@@ -323,7 +323,7 @@
         <var-decl name='module' type-id='b509a840' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='__bdev_internal_fields' size-in-bits='2048' is-struct='yes' visibility='default' id='0dc6d312'>
+    <class-decl name='__bdev_internal_fields' size-in-bits='2112' is-struct='yes' visibility='default' id='0dc6d312'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='qos' type-id='c0bd1bdf' visibility='default'/>
       </data-member>
@@ -349,57 +349,60 @@
         <var-decl name='unregister_ctx' type-id='eaa32e2f' visibility='default'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='unregister_td' type-id='f8fcfe66' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
         <var-decl name='open_descs' type-id='e7f43f72' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='640'>
+      <data-member access='public' layout-offset-in-bits='704'>
         <var-decl name='link' type-id='e7f43f73' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='768'>
+      <data-member access='public' layout-offset-in-bits='832'>
         <var-decl name='reset_in_progress' type-id='378e9c1c' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='832'>
+      <data-member access='public' layout-offset-in-bits='896'>
         <var-decl name='qd_poller' type-id='bf13de54' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='896'>
+      <data-member access='public' layout-offset-in-bits='960'>
         <var-decl name='qd_desc' type-id='0094857f' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='960'>
+      <data-member access='public' layout-offset-in-bits='1024'>
         <var-decl name='period' type-id='9c313c2d' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='1024'>
+      <data-member access='public' layout-offset-in-bits='1088'>
         <var-decl name='new_period' type-id='9c313c2d' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='1088'>
+      <data-member access='public' layout-offset-in-bits='1152'>
         <var-decl name='temporary_queue_depth' type-id='9c313c2d' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='1152'>
+      <data-member access='public' layout-offset-in-bits='1216'>
         <var-decl name='measured_queue_depth' type-id='9c313c2d' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='1216'>
+      <data-member access='public' layout-offset-in-bits='1280'>
         <var-decl name='io_time' type-id='9c313c2d' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='1280'>
+      <data-member access='public' layout-offset-in-bits='1344'>
         <var-decl name='weighted_io_time' type-id='9c313c2d' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='1344'>
+      <data-member access='public' layout-offset-in-bits='1408'>
         <var-decl name='stat' type-id='08cc63f9' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='1408'>
+      <data-member access='public' layout-offset-in-bits='1472'>
         <var-decl name='qd_poll_in_progress' type-id='c894953d' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='1416'>
+      <data-member access='public' layout-offset-in-bits='1480'>
         <var-decl name='histogram_enabled' type-id='c894953d' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='1424'>
+      <data-member access='public' layout-offset-in-bits='1488'>
         <var-decl name='histogram_in_progress' type-id='c894953d' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='1472'>
+      <data-member access='public' layout-offset-in-bits='1536'>
         <var-decl name='locked_ranges' type-id='905ae936' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='1600'>
+      <data-member access='public' layout-offset-in-bits='1664'>
         <var-decl name='pending_locked_ranges' type-id='905ae936' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='1728'>
+      <data-member access='public' layout-offset-in-bits='1792'>
         <var-decl name='bdev_name' type-id='5baf3205' visibility='default'/>
       </data-member>
     </class-decl>
@@ -551,7 +554,7 @@
         <var-decl name='tailq' type-id='e7f43f78' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_bdev' size-in-bits='3584' is-struct='yes' visibility='default' id='f6507fdd'>
+    <class-decl name='spdk_bdev' size-in-bits='3648' is-struct='yes' visibility='default' id='f6507fdd'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='ctxt' type-id='eaa32e2f' visibility='default'/>
       </data-member>
@@ -3625,6 +3628,7 @@
     <pointer-type-def type-id='2099fa15' size-in-bits='64' id='7cdde6d5'/>
     <class-decl name='spdk_io_channel' is-struct='yes' visibility='default' is-declaration-only='yes' id='8de5f3c1'/>
     <class-decl name='spdk_poller' is-struct='yes' visibility='default' is-declaration-only='yes' id='8921c3ff'/>
+    <class-decl name='spdk_thread' is-struct='yes' visibility='default' is-declaration-only='yes' id='ef0f6b11'/>
     <function-decl name='spdk_bdev_get_zone_size' mangled-name='spdk_bdev_get_zone_size' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_zone_size'>
       <parameter type-id='2ed9d900' name='bdev'/>
       <return type-id='9c313c2d'/>
@@ -3723,14 +3727,14 @@
     </function-decl>
   </abi-instr>
   <abi-instr address-size='64' path='part.c' language='LANG_C99'>
-    <class-decl name='bdev_part_internal_fields' size-in-bits='3712' is-struct='yes' visibility='default' id='a0706784'>
+    <class-decl name='bdev_part_internal_fields' size-in-bits='3776' is-struct='yes' visibility='default' id='a0706784'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='bdev' type-id='f6507fdd' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='3584'>
+      <data-member access='public' layout-offset-in-bits='3648'>
         <var-decl name='base' type-id='948e8325' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='3648'>
+      <data-member access='public' layout-offset-in-bits='3712'>
         <var-decl name='offset_blocks' type-id='9c313c2d' visibility='default'/>
       </data-member>
     </class-decl>
@@ -3742,7 +3746,7 @@
         <var-decl name='tqh_last' type-id='7fb6a947' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_bdev_part' size-in-bits='3840' is-struct='yes' visibility='default' id='5d5897ff'>
+    <class-decl name='spdk_bdev_part' size-in-bits='3904' is-struct='yes' visibility='default' id='5d5897ff'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='tailq' type-id='e7f43fb9' visibility='default'/>
       </data-member>
@@ -3823,7 +3827,6 @@
     <pointer-type-def type-id='948e8325' size-in-bits='64' id='eb58509d'/>
     <pointer-type-def type-id='424b838b' size-in-bits='64' id='5f7b130b'/>
     <pointer-type-def type-id='c039af2e' size-in-bits='64' id='debb4ee8'/>
-    <class-decl name='spdk_thread' is-struct='yes' visibility='default' is-declaration-only='yes' id='ef0f6b11'/>
     <function-decl name='spdk_bdev_part_base_get_bdev' mangled-name='spdk_bdev_part_base_get_bdev' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_part_base_get_bdev'>
       <parameter type-id='948e8325' name='part_base'/>
       <return type-id='7b7cfb3d'/>

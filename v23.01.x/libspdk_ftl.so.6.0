@@ -178,7 +178,7 @@
         <var-decl name='module' type-id='b509a840' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='__bdev_internal_fields' size-in-bits='2048' is-struct='yes' visibility='default' id='0dc6d312'>
+    <class-decl name='__bdev_internal_fields' size-in-bits='2112' is-struct='yes' visibility='default' id='0dc6d312'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='qos' type-id='c0bd1bdf' visibility='default'/>
       </data-member>
@@ -204,57 +204,60 @@
         <var-decl name='unregister_ctx' type-id='eaa32e2f' visibility='default'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='unregister_td' type-id='f8fcfe66' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
         <var-decl name='open_descs' type-id='e7f43f72' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='640'>
+      <data-member access='public' layout-offset-in-bits='704'>
         <var-decl name='link' type-id='e7f43f73' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='768'>
+      <data-member access='public' layout-offset-in-bits='832'>
         <var-decl name='reset_in_progress' type-id='378e9c1c' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='832'>
+      <data-member access='public' layout-offset-in-bits='896'>
         <var-decl name='qd_poller' type-id='bf13de54' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='896'>
+      <data-member access='public' layout-offset-in-bits='960'>
         <var-decl name='qd_desc' type-id='0094857f' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='960'>
+      <data-member access='public' layout-offset-in-bits='1024'>
         <var-decl name='period' type-id='9c313c2d' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='1024'>
+      <data-member access='public' layout-offset-in-bits='1088'>
         <var-decl name='new_period' type-id='9c313c2d' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='1088'>
+      <data-member access='public' layout-offset-in-bits='1152'>
         <var-decl name='temporary_queue_depth' type-id='9c313c2d' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='1152'>
+      <data-member access='public' layout-offset-in-bits='1216'>
         <var-decl name='measured_queue_depth' type-id='9c313c2d' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='1216'>
+      <data-member access='public' layout-offset-in-bits='1280'>
         <var-decl name='io_time' type-id='9c313c2d' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='1280'>
+      <data-member access='public' layout-offset-in-bits='1344'>
         <var-decl name='weighted_io_time' type-id='9c313c2d' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='1344'>
+      <data-member access='public' layout-offset-in-bits='1408'>
         <var-decl name='stat' type-id='08cc63f9' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='1408'>
+      <data-member access='public' layout-offset-in-bits='1472'>
         <var-decl name='qd_poll_in_progress' type-id='c894953d' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='1416'>
+      <data-member access='public' layout-offset-in-bits='1480'>
         <var-decl name='histogram_enabled' type-id='c894953d' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='1424'>
+      <data-member access='public' layout-offset-in-bits='1488'>
         <var-decl name='histogram_in_progress' type-id='c894953d' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='1472'>
+      <data-member access='public' layout-offset-in-bits='1536'>
         <var-decl name='locked_ranges' type-id='905ae936' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='1600'>
+      <data-member access='public' layout-offset-in-bits='1664'>
         <var-decl name='pending_locked_ranges' type-id='905ae936' visibility='default'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='1728'>
+      <data-member access='public' layout-offset-in-bits='1792'>
         <var-decl name='bdev_name' type-id='5baf3205' visibility='default'/>
       </data-member>
     </class-decl>
@@ -1198,7 +1201,7 @@
         <var-decl name='tqh_last' type-id='a8ae5764' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_bdev' size-in-bits='3584' is-struct='yes' visibility='default' id='f6507fdd'>
+    <class-decl name='spdk_bdev' size-in-bits='3648' is-struct='yes' visibility='default' id='f6507fdd'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='ctxt' type-id='eaa32e2f' visibility='default'/>
       </data-member>
