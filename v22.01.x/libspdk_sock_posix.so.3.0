@@ -1,8 +1,0 @@
-<abi-corpus version='2.0' soname='libspdk_sock_posix.so.3.0'>
-  <elf-needed>
-    <dependency name='libspdk_log.so.4.1'/>
-    <dependency name='libspdk_sock.so.5.0'/>
-    <dependency name='libspdk_util.so.4.1'/>
-    <dependency name='libc.so.6'/>
-  </elf-needed>
-</abi-corpus>
