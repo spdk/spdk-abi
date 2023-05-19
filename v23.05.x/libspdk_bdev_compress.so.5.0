@@ -1,0 +1,14 @@
+<abi-corpus version='2.1' soname='libspdk_bdev_compress.so.5.0'>
+  <elf-needed>
+    <dependency name='libspdk_log.so.6.0'/>
+    <dependency name='libspdk_util.so.6.0'/>
+    <dependency name='libspdk_json.so.5.0'/>
+    <dependency name='libspdk_jsonrpc.so.5.0'/>
+    <dependency name='libspdk_rpc.so.5.0'/>
+    <dependency name='libspdk_bdev.so.12.0'/>
+    <dependency name='libspdk_thread.so.8.0'/>
+    <dependency name='libspdk_reduce.so.5.0'/>
+    <dependency name='libspdk_accel.so.12.0'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+</abi-corpus>
