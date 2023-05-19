@@ -118,7 +118,6 @@
       <enumerator name='IBV_WC_BIND_MW' value='5'/>
       <enumerator name='IBV_WC_LOCAL_INV' value='6'/>
       <enumerator name='IBV_WC_TSO' value='7'/>
-      <enumerator name='IBV_WC_ATOMIC_WRITE' value='9'/>
       <enumerator name='IBV_WC_RECV' value='128'/>
       <enumerator name='IBV_WC_RECV_RDMA_WITH_IMM' value='129'/>
       <enumerator name='IBV_WC_TM_ADD' value='130'/>
@@ -171,7 +170,6 @@
       <enumerator name='IBV_WR_SEND_WITH_INV' value='9'/>
       <enumerator name='IBV_WR_TSO' value='10'/>
       <enumerator name='IBV_WR_DRIVER1' value='11'/>
-      <enumerator name='IBV_WR_ATOMIC_WRITE' value='15'/>
     </enum-decl>
     <enum-decl name='rdma_cm_event_type' id='05dc1927'>
       <underlying-type type-id='9cac1fee'/>

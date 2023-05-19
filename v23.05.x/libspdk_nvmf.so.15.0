@@ -5248,7 +5248,6 @@
       <enumerator name='IBV_WC_BIND_MW' value='5'/>
       <enumerator name='IBV_WC_LOCAL_INV' value='6'/>
       <enumerator name='IBV_WC_TSO' value='7'/>
-      <enumerator name='IBV_WC_ATOMIC_WRITE' value='9'/>
       <enumerator name='IBV_WC_RECV' value='128'/>
       <enumerator name='IBV_WC_RECV_RDMA_WITH_IMM' value='129'/>
       <enumerator name='IBV_WC_TM_ADD' value='130'/>
@@ -5301,7 +5300,6 @@
       <enumerator name='IBV_WR_SEND_WITH_INV' value='9'/>
       <enumerator name='IBV_WR_TSO' value='10'/>
       <enumerator name='IBV_WR_DRIVER1' value='11'/>
-      <enumerator name='IBV_WR_ATOMIC_WRITE' value='15'/>
     </enum-decl>
     <type-decl name='long long int' size-in-bits='64' id='95e97e61'/>
     <class-decl name='__pthread_cond_s' size-in-bits='384' is-struct='yes' visibility='default' id='c987b47c'>
