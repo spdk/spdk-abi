@@ -6,7 +6,7 @@
 
 set -e
 
-rootdir=$(readlink -f $(dirname $0))/spdk
+spdk_dir="$(readlink -f $(dirname $0))/spdk"
 gcc_version=$(gcc -dumpversion) gcc_version=${gcc_version%%.*}
 git_repo_spdk="https://github.com/spdk/spdk.git"
 
@@ -48,12 +48,12 @@ case $version in
 esac
 
 function gitc() {
-	git -C "$rootdir" "$@"
+	git -C "$spdk_dir" "$@"
 }
 
 # Clone a fresh spdk repository everytime the script is run
-[[ -d "$rootdir" ]] && rm -rf "$rootdir"
-git clone $git_repo_spdk $rootdir
+[[ -d "$spdk_dir" ]] && rm -rf "$spdk_dir"
+git clone $git_repo_spdk $spdk_dir
 
 gitc checkout $version
 spdk_hash=$(gitc rev-parse HEAD)
@@ -99,7 +99,7 @@ SPDK_TEST_VFIOUSER=1
 SPDK_TEST_XNVME=1
 
 # Set output_dir variable before sourcing autotest_common.sh, to prevent creation of that directory.
-output_dir=none source $rootdir/test/common/autotest_common.sh
+rootdir="$spdk_dir" output_dir=none source $spdk_dir/test/common/autotest_common.sh
 config_params=$(get_config_params)
 config_params=$(echo $config_params | sed 's/--enable-coverage//g')
 config_params+=" --without-fio --disable-tests --disable-unit-tests --disable-apps --disable-examples"
@@ -107,15 +107,15 @@ config_params+=" --with-shared --disable-werror"
 # Configure sets incorrect default path for the ocf while using --with-ocf flag and being out of the SPDK repo
 # The path must be provided to avoid directory missing error
 # GH issue #2735
-config_params+=" --with-ocf=$rootdir/ocf"
+config_params+=" --with-ocf=$spdk_dir/ocf"
 
-$rootdir/configure $config_params
+$spdk_dir/configure $config_params
 
-$MAKE -C $rootdir $MAKEFLAGS
+$MAKE -C $spdk_dir $MAKEFLAGS
 
 if [[ -z $xml_dir ]]; then
 	branch=$(echo $version | grep -Eo 'v[0-9][0-9]\.[0-9][0-9]') branch="${branch}.x"
-	xml_dir="$rootdir/../$branch"
+	xml_dir="$spdk_dir/../$branch"
 fi
 
 if [[ -d "$xml_dir" ]]; then
@@ -125,7 +125,7 @@ fi
 # Copy headers from spdk/include to spdk-abi that are necessary for abidiff
 # Skip config.h that is created during configure
 mkdir -p "$xml_dir/include/"
-cp -r "$rootdir/include/"{spdk,spdk_internal} "$xml_dir/include/"
+cp -r "$spdk_dir/include/"{spdk,spdk_internal} "$xml_dir/include/"
 rm "$xml_dir/include/spdk/config.h"
 
 echo $spdk_hash > "$xml_dir/revision"
@@ -134,7 +134,7 @@ abidw_params="--type-id-style hash --drop-private-types --drop-undefined-syms"
 abidw_params+=" --no-architecture --no-comp-dir-path --no-show-locs"
 abidw_params+=" --no-corpus-path"
 
-for object in "$rootdir"/build/lib/libspdk_*.so; do
+for object in "$spdk_dir"/build/lib/libspdk_*.so; do
 	libname=$(readlink $object)
 	libso=$(basename $object)
 	abidw "$object" $abidw_params --out-file "$xml_dir/$libname"
@@ -142,4 +142,4 @@ for object in "$rootdir"/build/lib/libspdk_*.so; do
 done
 
 # Cleaning
-rm -rf $rootdir
+rm -rf $spdk_dir
