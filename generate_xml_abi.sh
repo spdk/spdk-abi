@@ -11,26 +11,45 @@ gcc_version=$(gcc -dumpversion) gcc_version=${gcc_version%%.*}
 git_repo_spdk="https://github.com/spdk/spdk.git"
 
 function usage() {
-	script_name=./`basename "$0"`
+	script_name="$(basename $0)"
 	echo "Generate XML representation of the SPDK libraries for ABI tests."
-	echo "Usage: $script_name <spdk_tag> [xml_dir]"
-	echo "spdk_tag      SPDK release tag"
-	echo "xml_dir       Location of resulting XML files. Default: ./\$spdk_tag.x"
+	echo "Usage: $script_name -t <spdk_tag>"
+	echo "    -t                SPDK release tag"
+	echo "    -x                Location of resulting XML files. Default: ./\$spdk_tag.x"
+	echo "    -h                Print this help"
 	echo "Example:"
-	echo "$script_name v22.09 /path/for/generated/xmls"
+	echo "$script_name -t v22.09 -x /path/for/generated/xmls"
 	exit 0
 }
+
+function error() {
+	printf "%s\n\n" "$1" >&2
+	usage
+	return 1
+}
+
+# Parse input arguments #
+while getopts 'ht:x:' optchar; do
+	case "$optchar" in
+		h)
+			usage
+			exit 0
+			;;
+		t) version="$OPTARG" ;;
+		x) xml_dir="$OPTARG" ;;
+		*) error ;;
+	esac
+done
+
+case $version in
+	v[0-9][0-9]\.[0-9][0-9]*) true ;;
+	"") error "SPDK tag (-t) argument is required" ;;
+	*) error "Incorrectly formatted SPDK tag (-t)" ;;
+esac
 
 function gitc() {
 	git -C "$rootdir" "$@"
 }
-
-version=$1
-case $version in
-	v[0-9][0-9]\.[0-9][0-9]*) true ;;
-	*) usage ;;
-esac
-xml_dir=$2
 
 # Clone a fresh spdk repository everytime the script is run
 [[ -d "$rootdir" ]] && rm -rf "$rootdir"
