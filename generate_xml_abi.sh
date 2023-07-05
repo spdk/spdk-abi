@@ -13,9 +13,9 @@ git_repo_spdk="https://github.com/spdk/spdk.git"
 function usage() {
 	script_name=./`basename "$0"`
 	echo "Generate XML representation of the SPDK libraries for ABI tests."
-	echo "Usage: $script_name <spdk_tag> [output_dir]"
+	echo "Usage: $script_name <spdk_tag> [xml_dir]"
 	echo "spdk_tag      SPDK release tag"
-	echo "output_dir    Location of resulting XML files. Default: ./\$spdk_tag.x"
+	echo "xml_dir       Location of resulting XML files. Default: ./\$spdk_tag.x"
 	echo "Example:"
 	echo "$script_name v22.09 /path/for/generated/xmls"
 	exit 0
@@ -79,6 +79,7 @@ SPDK_TEST_URING=1
 SPDK_TEST_VFIOUSER=1
 SPDK_TEST_XNVME=1
 
+# Set output_dir variable before sourcing autotest_common.sh, to prevent creation of that directory.
 output_dir=none source $rootdir/test/common/autotest_common.sh
 config_params=$(get_config_params)
 config_params=$(echo $config_params | sed 's/--enable-coverage//g')
