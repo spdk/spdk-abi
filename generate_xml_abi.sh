@@ -7,6 +7,9 @@
 set -e
 
 spdk_dir="$(readlink -f $(dirname $0))/spdk"
+user_dir=false
+force_checkout=true
+force_build=true
 
 function usage() {
 	script_name="$(basename $0)"
@@ -14,7 +17,11 @@ function usage() {
 	echo "Usage: $script_name -t <spdk_tag>"
 	echo "    -t                SPDK release tag"
 	echo "    -x                Location of resulting XML files. Default: ./\$spdk_tag.x"
-	echo "    -h                Print this help"
+	echo "    --spdk-path       Use SPDK from specified path. By default does not"
+	echo "                      checkout or build SPDK in that path"
+	echo "    --force-checkout  Forces checkout to SPDK release tag"
+	echo "    --force-build     Rebuilds SPDK according to predefined config"
+	echo "    -h, --help        Print this help"
 	echo "Example:"
 	echo "$script_name -t v22.09 -x /path/for/generated/xmls"
 	exit 0
@@ -27,8 +34,25 @@ function error() {
 }
 
 # Parse input arguments #
-while getopts 'ht:x:' optchar; do
+while getopts 'ht:x:-:' optchar; do
 	case "$optchar" in
+		-)
+			case "$OPTARG" in
+				help)
+					usage
+					exit 0
+					;;
+				spdk-path=*)
+					spdk_dir="$(readlink -f ${OPTARG#*=})"
+					user_dir=true
+					force_checkout=false
+					force_build=false
+					;;
+				force-checkout) force_checkout=true ;;
+				force-build) force_build=true ;;
+				*) error ;;
+			esac
+			;;
 		h)
 			usage
 			exit 0
@@ -49,67 +73,78 @@ function gitc() {
 	git -C "$spdk_dir" "$@"
 }
 
-# Clone a fresh spdk repository everytime the script is run
-[[ -d "$spdk_dir" ]] && rm -rf "$spdk_dir"
-git clone "https://github.com/spdk/spdk.git" $spdk_dir
-
-gitc checkout $version
-gitc submodule update --init
-
-gitc config --local user.name "spdk"
-gitc config --local user.email "hotpatch@spdk.io"
-
-# We have to cherry pick changes to properly build libs under the older releases
-gcc_version=$(gcc -dumpversion) gcc_version=${gcc_version%%.*}
-if ((gcc_version >= 11)); then
-	if [[ "$version" =~ "22.05" ]]; then
-		# https://review.spdk.io/gerrit/c/spdk/spdk/+/13404
-		gitc cherry-pick 713506d5da4676b9f900ae59963f6eb50ecdba36
-	elif [[ "$version" =~ "22.01" ]]; then
-		# https://review.spdk.io/gerrit/c/spdk/spdk/+/13505
-		gitc cherry-pick e255d79af097318e8f29c700a4639041f912a28c
-		# https://review.spdk.io/gerrit/c/spdk/spdk/+/13506
-		gitc cherry-pick a12cc7e4b9fb30f32dfb9afa1d5852128972b3e1
-	fi
+if ! $user_dir; then
+	# Clone a fresh spdk repository everytime the script is run
+	[[ -d "$spdk_dir" ]] && rm -rf "$spdk_dir"
+	git clone "https://github.com/spdk/spdk.git" $spdk_dir
 fi
-# Make sure submodules point at proper commits after cherry-picks are applied
-gitc submodule update
 
-# Hardcoded configure flags to keep backwards/forwards compatibility of the script.
-# When SPDK_TEST_* variable has no handling in get_config_params(), then script will still work.
-SPDK_TEST_BLOCKDEV=1
-SPDK_TEST_PMDK=1
-SPDK_TEST_ISAL=1
-SPDK_TEST_REDUCE=1
-SPDK_TEST_VBDEV_COMPRESS=1
-SPDK_TEST_CRYPTO=1
-SPDK_TEST_FTL=1
-SPDK_TEST_OCF=1
-SPDK_TEST_RAID5=1
-SPDK_TEST_RBD=1
-SPDK_TEST_NVME_PMR=1
-SPDK_TEST_NVME_SCC=1
-SPDK_TEST_NVME_BP=1
-SPDK_TEST_NVME_CUSE=1
-SPDK_TEST_BLOBFS=1
-SPDK_TEST_URING=1
-SPDK_TEST_VFIOUSER=1
-SPDK_TEST_XNVME=1
+if $force_checkout; then
+	gitc checkout $version
+	gitc submodule update --init
 
-# Set output_dir variable before sourcing autotest_common.sh, to prevent creation of that directory.
-rootdir="$spdk_dir" output_dir=none source $spdk_dir/test/common/autotest_common.sh
-config_params=$(get_config_params)
-config_params=$(echo $config_params | sed 's/--enable-coverage//g')
-config_params+=" --without-fio --disable-tests --disable-unit-tests --disable-apps --disable-examples"
-config_params+=" --with-shared --disable-werror"
-# Configure sets incorrect default path for the ocf while using --with-ocf flag and being out of the SPDK repo
-# The path must be provided to avoid directory missing error
-# GH issue #2735
-config_params+=" --with-ocf=$spdk_dir/ocf"
+	gitc config --local user.name "spdk"
+	gitc config --local user.email "hotpatch@spdk.io"
 
-$spdk_dir/configure $config_params
+	# We have to cherry pick changes to properly build libs under the older releases
+	gcc_version=$(gcc -dumpversion) gcc_version=${gcc_version%%.*}
+	if ((gcc_version >= 11)); then
+		if [[ "$version" =~ "22.05" ]]; then
+			# https://review.spdk.io/gerrit/c/spdk/spdk/+/13404
+			gitc cherry-pick 713506d5da4676b9f900ae59963f6eb50ecdba36
+		elif [[ "$version" =~ "22.01" ]]; then
+			# https://review.spdk.io/gerrit/c/spdk/spdk/+/13505
+			gitc cherry-pick e255d79af097318e8f29c700a4639041f912a28c
+			# https://review.spdk.io/gerrit/c/spdk/spdk/+/13506
+			gitc cherry-pick a12cc7e4b9fb30f32dfb9afa1d5852128972b3e1
+		fi
+	fi
+	# Make sure submodules point at proper commits after cherry-picks are applied
+	gitc submodule update
+fi
 
-$MAKE -C $spdk_dir $MAKEFLAGS
+if $force_build; then
+	# Hardcoded configure flags to keep backwards/forwards compatibility of the script.
+	# When SPDK_TEST_* variable has no handling in get_config_params(), then script will still work.
+	SPDK_TEST_BLOCKDEV=1
+	SPDK_TEST_PMDK=1
+	SPDK_TEST_ISAL=1
+	SPDK_TEST_REDUCE=1
+	SPDK_TEST_VBDEV_COMPRESS=1
+	SPDK_TEST_CRYPTO=1
+	SPDK_TEST_FTL=1
+	SPDK_TEST_OCF=1
+	SPDK_TEST_RAID5=1
+	SPDK_TEST_RBD=1
+	SPDK_TEST_NVME_PMR=1
+	SPDK_TEST_NVME_SCC=1
+	SPDK_TEST_NVME_BP=1
+	SPDK_TEST_NVME_CUSE=1
+	SPDK_TEST_BLOBFS=1
+	SPDK_TEST_URING=1
+	SPDK_TEST_VFIOUSER=1
+	SPDK_TEST_XNVME=1
+
+	# Set output_dir variable before sourcing autotest_common.sh, to prevent creation of that directory.
+	rootdir="$spdk_dir" output_dir=none source $spdk_dir/test/common/autotest_common.sh
+	config_params=$(get_config_params)
+	config_params=$(echo $config_params | sed 's/--enable-coverage//g')
+	config_params+=" --without-fio --disable-tests --disable-unit-tests --disable-apps --disable-examples"
+	config_params+=" --with-shared --disable-werror"
+	# Configure sets incorrect default path for the ocf while using --with-ocf flag and being out of the SPDK repo
+	# The path must be provided to avoid directory missing error
+	# GH issue #2735
+	config_params+=" --with-ocf=$spdk_dir/ocf"
+
+	$MAKE -C $spdk_dir clean || :
+
+	$spdk_dir/configure $config_params
+
+	$MAKE -C $spdk_dir $MAKEFLAGS
+elif [[ ! -d "$spdk_dir/build" ]]; then
+       echo "Please build SPDK in $spdk_dir first, or use --force-build."
+       exit 1
+fi
 
 if [[ -z $xml_dir ]]; then
 	branch=$(echo $version | grep -Eo 'v[0-9][0-9]\.[0-9][0-9]') branch="${branch}.x"
@@ -124,7 +159,7 @@ fi
 # Skip config.h that is created during configure
 mkdir -p "$xml_dir/include/"
 cp -r "$spdk_dir/include/"{spdk,spdk_internal} "$xml_dir/include/"
-rm "$xml_dir/include/spdk/config.h"
+rm -f "$xml_dir/include/spdk/config.h"
 
 echo "$(gitc rev-parse HEAD)" > "$xml_dir/revision"
 
@@ -139,5 +174,7 @@ for object in "$spdk_dir"/build/lib/libspdk_*.so; do
 	ln -s "$libname" "$xml_dir/$libso"
 done
 
-# Cleaning
-rm -rf $spdk_dir
+if ! $user_dir; then
+	# Cleaning
+	rm -rf $spdk_dir
+fi
