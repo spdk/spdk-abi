@@ -7,8 +7,6 @@
 set -e
 
 spdk_dir="$(readlink -f $(dirname $0))/spdk"
-gcc_version=$(gcc -dumpversion) gcc_version=${gcc_version%%.*}
-git_repo_spdk="https://github.com/spdk/spdk.git"
 
 function usage() {
 	script_name="$(basename $0)"
@@ -53,16 +51,16 @@ function gitc() {
 
 # Clone a fresh spdk repository everytime the script is run
 [[ -d "$spdk_dir" ]] && rm -rf "$spdk_dir"
-git clone $git_repo_spdk $spdk_dir
+git clone "https://github.com/spdk/spdk.git" $spdk_dir
 
 gitc checkout $version
-spdk_hash=$(gitc rev-parse HEAD)
 gitc submodule update --init
 
 gitc config --local user.name "spdk"
 gitc config --local user.email "hotpatch@spdk.io"
 
 # We have to cherry pick changes to properly build libs under the older releases
+gcc_version=$(gcc -dumpversion) gcc_version=${gcc_version%%.*}
 if ((gcc_version >= 11)); then
 	if [[ "$version" =~ "22.05" ]]; then
 		# https://review.spdk.io/gerrit/c/spdk/spdk/+/13404
@@ -128,7 +126,7 @@ mkdir -p "$xml_dir/include/"
 cp -r "$spdk_dir/include/"{spdk,spdk_internal} "$xml_dir/include/"
 rm "$xml_dir/include/spdk/config.h"
 
-echo $spdk_hash > "$xml_dir/revision"
+echo "$(gitc rev-parse HEAD)" > "$xml_dir/revision"
 
 abidw_params="--type-id-style hash --drop-private-types --drop-undefined-syms"
 abidw_params+=" --no-architecture --no-comp-dir-path --no-show-locs"
