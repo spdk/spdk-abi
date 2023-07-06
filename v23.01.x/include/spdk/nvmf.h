@@ -1,7 +1,7 @@
 /*   SPDX-License-Identifier: BSD-3-Clause
  *   Copyright (C) 2016 Intel Corporation. All rights reserved.
  *   Copyright (c) 2018-2021 Mellanox Technologies LTD. All rights reserved.
- *   Copyright (c) 2021 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+ *   Copyright (c) 2021, 2023 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
  */
 
 /** \file
@@ -291,17 +291,23 @@ typedef void (*nvmf_qpair_disconnect_cb)(void *ctx);
  * Disconnect an NVMe-oF qpair
  *
  * \param qpair The NVMe-oF qpair to disconnect.
- * \param cb_fn The function to call upon completion of the disconnect.
- * \param ctx The context to pass to the callback function.
+ * \param cb_fn Deprecated, will be removed in v23.09. The function to call upon completion of the disconnect.
+ * \param ctx Deprecated, will be removed in v23.09. The context to pass to the callback function.
  *
  * \return 0 upon success.
  * \return -ENOMEM if the function specific context could not be allocated.
+ * \return -EINPROGRESS if the qpair is already in the process of disconnect.
  */
 int spdk_nvmf_qpair_disconnect(struct spdk_nvmf_qpair *qpair, nvmf_qpair_disconnect_cb cb_fn,
 			       void *ctx);
 
 /**
  * Get the peer's transport ID for this queue pair.
+ *
+ * This function will first zero the trid structure, and then fill
+ * in the relevant trid fields to identify the listener. The relevant
+ * fields will depend on the transport, but the subnqn will never
+ * be a relevant field for purposes of this function.
  *
  * \param qpair The NVMe-oF qpair
  * \param trid Output parameter that will contain the transport id.
@@ -315,6 +321,11 @@ int spdk_nvmf_qpair_get_peer_trid(struct spdk_nvmf_qpair *qpair,
 /**
  * Get the local transport ID for this queue pair.
  *
+ * This function will first zero the trid structure, and then fill
+ * in the relevant trid fields to identify the listener. The relevant
+ * fields will depend on the transport, but the subnqn will never
+ * be a relevant field for purposes of this function.
+ *
  * \param qpair The NVMe-oF qpair
  * \param trid Output parameter that will contain the transport id.
  *
@@ -326,6 +337,11 @@ int spdk_nvmf_qpair_get_local_trid(struct spdk_nvmf_qpair *qpair,
 
 /**
  * Get the associated listener transport ID for this queue pair.
+ *
+ * This function will first zero the trid structure, and then fill
+ * in the relevant trid fields to identify the listener. The relevant
+ * fields will depend on the transport, but the subnqn will never
+ * be a relevant field for purposes of this function.
  *
  * \param qpair The NVMe-oF qpair
  * \param trid Output parameter that will contain the transport id.
@@ -1144,8 +1160,12 @@ spdk_nvmf_transport_stop_listen(struct spdk_nvmf_transport *transport,
  * qpairs that are connected to the specified listener. Because
  * this function disconnects the qpairs, it has to be asynchronous.
  *
+ * The subsystem is matched using the subsystem parameter, not the
+ * subnqn field in the trid.
+ *
  * \param transport The transport associated with the listen address.
- * \param trid The address to stop listening at.
+ * \param trid The address to stop listening at. subnqn must be an empty
+ *             string.
  * \param subsystem The subsystem to match for qpairs with the specified
  *                  trid. If NULL, it will disconnect all qpairs with the
  *                  specified trid.
