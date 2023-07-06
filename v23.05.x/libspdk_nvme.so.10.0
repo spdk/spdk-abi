@@ -2732,6 +2732,9 @@
       <data-member access='public' layout-offset-in-bits='102'>
         <var-decl name='abort_dnr' type-id='b96825af' visibility='default'/>
       </data-member>
+      <data-member access='public' layout-offset-in-bits='103'>
+        <var-decl name='destroy_in_progress' type-id='b96825af' visibility='default'/>
+      </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
         <var-decl name='trtype' type-id='8cd337c8' visibility='default'/>
       </data-member>
