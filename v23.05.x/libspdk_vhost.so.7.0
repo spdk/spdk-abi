@@ -41,16 +41,10 @@
     </function-decl>
   </abi-instr>
   <abi-instr address-size='64' path='vhost.c' language='LANG_C99'>
-    <type-decl name='bool' size-in-bits='8' id='c894953d'/>
     <type-decl name='char' size-in-bits='8' id='a84c031d'/>
     <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='2056' id='cd5f2f4f'>
       <subrange length='257' type-id='f0981eeb' id='72e246d7'/>
     </array-type-def>
-    <enum-decl name='vhost_backend_type' id='d33184bc'>
-      <underlying-type type-id='9cac1fee'/>
-      <enumerator name='VHOST_BACKEND_BLK' value='0'/>
-      <enumerator name='VHOST_BACKEND_SCSI' value='1'/>
-    </enum-decl>
     <type-decl name='int' size-in-bits='32' id='95e97e5e'/>
     <class-decl name='spdk_cpuset' size-in-bits='3080' is-struct='yes' visibility='default' id='aec5215a'>
       <data-member access='public' layout-offset-in-bits='0'>
@@ -60,111 +54,28 @@
         <var-decl name='cpus' type-id='c768f32d' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_vhost_dev' size-in-bits='704' is-struct='yes' visibility='default' id='4e8a23c0'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='name' type-id='26a90f95' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='path' type-id='26a90f95' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='thread' type-id='f8fcfe66' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='virtio_features' type-id='9c313c2d' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='disabled_features' type-id='9c313c2d' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='320'>
-        <var-decl name='protocol_features' type-id='9c313c2d' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='384'>
-        <var-decl name='packed_ring_recovery' type-id='c894953d' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='448'>
-        <var-decl name='backend' type-id='b7db1e6c' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='512'>
-        <var-decl name='ctxt' type-id='eaa32e2f' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='576'>
-        <var-decl name='tailq' type-id='e7f43f72' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='spdk_vhost_dev_backend' size-in-bits='512' is-struct='yes' visibility='default' id='3d671967'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='type' type-id='d33184bc' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='vhost_get_config' type-id='a6f67305' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='vhost_set_config' type-id='bf09993d' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='dump_info_json' type-id='4abd9d34' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='write_config_json' type-id='4abd9d34' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='320'>
-        <var-decl name='remove_device' type-id='7b272674' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='384'>
-        <var-decl name='set_coalescing' type-id='8d14f4cc' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='448'>
-        <var-decl name='get_coalescing' type-id='18c974ab' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f72'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='tqe_next' type-id='05d247e6' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='tqe_prev' type-id='f6070624' visibility='default'/>
-      </data-member>
-    </class-decl>
     <typedef-decl name='__uint32_t' type-id='f0981eec' id='62f1140c'/>
-    <typedef-decl name='__uint64_t' type-id='f0981eeb' id='8910171f'/>
     <typedef-decl name='__uint8_t' type-id='002ac4a6' id='c51d6389'/>
     <typedef-decl name='spdk_vhost_fini_cb' type-id='953b12f8' id='c30658ee'/>
     <typedef-decl name='spdk_vhost_init_cb' type-id='03347643' id='e7e0eab8'/>
     <typedef-decl name='uint32_t' type-id='62f1140c' id='8f92235e'/>
-    <typedef-decl name='uint64_t' type-id='8910171f' id='9c313c2d'/>
     <typedef-decl name='uint8_t' type-id='c51d6389' id='b96825af'/>
     <array-type-def dimensions='1' type-id='b96825af' size-in-bits='1024' id='c768f32d'>
       <subrange length='128' type-id='f0981eeb' id='1eb1687a'/>
     </array-type-def>
-    <type-decl name='unnamed-enum-underlying-type-32' is-anonymous='yes' size-in-bits='32' alignment-in-bits='32' id='9cac1fee'/>
     <type-decl name='unsigned char' size-in-bits='8' id='002ac4a6'/>
     <type-decl name='unsigned int' size-in-bits='32' id='f0981eec'/>
     <type-decl name='unsigned long int' size-in-bits='64' id='f0981eeb'/>
-    <pointer-type-def type-id='a84c031d' size-in-bits='64' id='26a90f95'/>
     <qualified-type-def type-id='a84c031d' const='yes' id='9b45d938'/>
     <pointer-type-def type-id='9b45d938' size-in-bits='64' id='80f4b756'/>
     <qualified-type-def type-id='aec5215a' const='yes' id='04ae283d'/>
     <pointer-type-def type-id='04ae283d' size-in-bits='64' id='75291c35'/>
-    <qualified-type-def type-id='3d671967' const='yes' id='6b901b4e'/>
-    <pointer-type-def type-id='6b901b4e' size-in-bits='64' id='b7db1e6c'/>
-    <pointer-type-def type-id='a93a8ffa' size-in-bits='64' id='7b272674'/>
-    <pointer-type-def type-id='78f78582' size-in-bits='64' id='8d14f4cc'/>
-    <pointer-type-def type-id='d7fd8b69' size-in-bits='64' id='a6f67305'/>
-    <pointer-type-def type-id='f1273651' size-in-bits='64' id='bf09993d'/>
     <pointer-type-def type-id='2ae61988' size-in-bits='64' id='b8e14bfe'/>
-    <pointer-type-def type-id='ef0f6b10' size-in-bits='64' id='f8fcfe66'/>
     <pointer-type-def type-id='4e8a23c0' size-in-bits='64' id='05d247e6'/>
-    <pointer-type-def type-id='05d247e6' size-in-bits='64' id='f6070624'/>
     <pointer-type-def type-id='8f92235e' size-in-bits='64' id='90421557'/>
-    <pointer-type-def type-id='b96825af' size-in-bits='64' id='ae3e8ca6'/>
     <pointer-type-def type-id='ee076206' size-in-bits='64' id='953b12f8'/>
     <pointer-type-def type-id='f712e2b7' size-in-bits='64' id='03347643'/>
-    <pointer-type-def type-id='9b4d63a2' size-in-bits='64' id='4abd9d34'/>
-    <pointer-type-def type-id='186b3747' size-in-bits='64' id='18c974ab'/>
-    <pointer-type-def type-id='48b5725f' size-in-bits='64' id='eaa32e2f'/>
     <class-decl name='spdk_json_write_ctx' is-struct='yes' visibility='default' is-declaration-only='yes' id='2ae61988'/>
-    <class-decl name='spdk_thread' is-struct='yes' visibility='default' is-declaration-only='yes' id='ef0f6b10'/>
     <type-decl name='void' id='48b5725f'/>
     <function-decl name='spdk_vhost_dev_next' mangled-name='spdk_vhost_dev_next' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_vhost_dev_next'>
       <parameter type-id='05d247e6' name='vdev'/>
@@ -231,46 +142,12 @@
       <parameter type-id='b8e14bfe' name='w'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-type size-in-bits='64' id='a93a8ffa'>
-      <parameter type-id='05d247e6'/>
-      <return type-id='95e97e5e'/>
-    </function-type>
-    <function-type size-in-bits='64' id='d7fd8b69'>
-      <parameter type-id='05d247e6'/>
-      <parameter type-id='ae3e8ca6'/>
-      <parameter type-id='8f92235e'/>
-      <return type-id='95e97e5e'/>
-    </function-type>
-    <function-type size-in-bits='64' id='f1273651'>
-      <parameter type-id='05d247e6'/>
-      <parameter type-id='ae3e8ca6'/>
-      <parameter type-id='8f92235e'/>
-      <parameter type-id='8f92235e'/>
-      <parameter type-id='8f92235e'/>
-      <return type-id='95e97e5e'/>
-    </function-type>
-    <function-type size-in-bits='64' id='78f78582'>
-      <parameter type-id='05d247e6'/>
-      <parameter type-id='8f92235e'/>
-      <parameter type-id='8f92235e'/>
-      <return type-id='95e97e5e'/>
-    </function-type>
+    <class-decl name='spdk_vhost_dev' is-struct='yes' visibility='default' is-declaration-only='yes' id='4e8a23c0'/>
     <function-type size-in-bits='64' id='ee076206'>
       <return type-id='48b5725f'/>
     </function-type>
     <function-type size-in-bits='64' id='f712e2b7'>
       <parameter type-id='95e97e5e'/>
-      <return type-id='48b5725f'/>
-    </function-type>
-    <function-type size-in-bits='64' id='9b4d63a2'>
-      <parameter type-id='05d247e6'/>
-      <parameter type-id='b8e14bfe'/>
-      <return type-id='48b5725f'/>
-    </function-type>
-    <function-type size-in-bits='64' id='186b3747'>
-      <parameter type-id='05d247e6'/>
-      <parameter type-id='90421557'/>
-      <parameter type-id='90421557'/>
       <return type-id='48b5725f'/>
     </function-type>
   </abi-instr>
@@ -300,6 +177,7 @@
         <var-decl name='type' type-id='18f471ce' visibility='default'/>
       </data-member>
     </class-decl>
+    <type-decl name='unnamed-enum-underlying-type-32' is-anonymous='yes' size-in-bits='32' alignment-in-bits='32' id='9cac1fee'/>
     <qualified-type-def type-id='9fc5272e' const='yes' id='f6adfac1'/>
     <pointer-type-def type-id='f6adfac1' size-in-bits='64' id='3ee1fff1'/>
     <function-decl name='spdk_vhost_blk_construct' mangled-name='spdk_vhost_blk_construct' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_vhost_blk_construct'>
@@ -315,6 +193,7 @@
     <typedef-decl name='spdk_vhost_event_fn' type-id='453d8496' id='f068ad8b'/>
     <pointer-type-def type-id='81637ba4' size-in-bits='64' id='453d8496'/>
     <pointer-type-def type-id='74e6cc2e' size-in-bits='64' id='491ccef4'/>
+    <pointer-type-def type-id='48b5725f' size-in-bits='64' id='eaa32e2f'/>
     <class-decl name='spdk_scsi_dev' is-struct='yes' visibility='default' is-declaration-only='yes' id='74e6cc2e'/>
     <function-decl name='spdk_vhost_scsi_dev_construct' mangled-name='spdk_vhost_scsi_dev_construct' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_vhost_scsi_dev_construct'>
       <parameter type-id='80f4b756' name='name'/>

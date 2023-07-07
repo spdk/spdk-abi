@@ -28,22 +28,6 @@
         <var-decl name='ctx' type-id='e3204322' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_notify_type' size-in-bits='1152' is-struct='yes' visibility='default' id='26f50572'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='name' type-id='e3204322' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='1024'>
-        <var-decl name='tailq' type-id='e7f43f72' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f72'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='tqe_next' type-id='15d4afc0' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='tqe_prev' type-id='47d0ed5e' visibility='default'/>
-      </data-member>
-    </class-decl>
     <typedef-decl name='__uint64_t' type-id='f0981eeb' id='8910171f'/>
     <typedef-decl name='spdk_notify_foreach_event_cb' type-id='18a696d3' id='62550714'/>
     <typedef-decl name='spdk_notify_foreach_type_cb' type-id='7a267d61' id='c2b1bfe4'/>
@@ -58,9 +42,9 @@
     <pointer-type-def type-id='f99d0ec5' size-in-bits='64' id='7a267d61'/>
     <pointer-type-def type-id='288cbaa7' size-in-bits='64' id='18a696d3'/>
     <pointer-type-def type-id='26f50572' size-in-bits='64' id='15d4afc0'/>
-    <pointer-type-def type-id='15d4afc0' size-in-bits='64' id='47d0ed5e'/>
     <pointer-type-def type-id='48b5725f' size-in-bits='64' id='eaa32e2f'/>
     <type-decl name='void' id='48b5725f'/>
+    <class-decl name='spdk_notify_type' is-struct='yes' visibility='default' is-declaration-only='yes' id='26f50572'/>
     <function-decl name='spdk_notify_type_register' mangled-name='spdk_notify_type_register' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_notify_type_register'>
       <parameter type-id='80f4b756' name='type'/>
       <return type-id='15d4afc0'/>

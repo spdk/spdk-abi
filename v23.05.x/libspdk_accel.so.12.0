@@ -58,9 +58,6 @@
     <elf-symbol name='spdk_accel_write_config_json' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
   </elf-function-symbols>
   <abi-instr address-size='64' path='accel.c' language='LANG_C99'>
-    <array-type-def dimensions='1' type-id='cc30f505' size-in-bits='2112' id='8f8ca15f'>
-      <subrange length='11' type-id='f0981eeb' id='847bc017'/>
-    </array-type-def>
     <type-decl name='bool' size-in-bits='8' id='c894953d'/>
     <type-decl name='char' size-in-bits='8' id='a84c031d'/>
     <enum-decl name='accel_opcode' id='83b0f1c7'>
@@ -78,27 +75,6 @@
       <enumerator name='ACCEL_OPC_XOR' value='10'/>
       <enumerator name='ACCEL_OPC_LAST' value='11'/>
     </enum-decl>
-    <enum-decl name='accel_sequence_state' id='dbe46f66'>
-      <underlying-type type-id='9cac1fee'/>
-      <enumerator name='ACCEL_SEQUENCE_STATE_INIT' value='0'/>
-      <enumerator name='ACCEL_SEQUENCE_STATE_CHECK_VIRTBUF' value='1'/>
-      <enumerator name='ACCEL_SEQUENCE_STATE_AWAIT_VIRTBUF' value='2'/>
-      <enumerator name='ACCEL_SEQUENCE_STATE_CHECK_BOUNCEBUF' value='3'/>
-      <enumerator name='ACCEL_SEQUENCE_STATE_AWAIT_BOUNCEBUF' value='4'/>
-      <enumerator name='ACCEL_SEQUENCE_STATE_PULL_DATA' value='5'/>
-      <enumerator name='ACCEL_SEQUENCE_STATE_AWAIT_PULL_DATA' value='6'/>
-      <enumerator name='ACCEL_SEQUENCE_STATE_EXEC_TASK' value='7'/>
-      <enumerator name='ACCEL_SEQUENCE_STATE_AWAIT_TASK' value='8'/>
-      <enumerator name='ACCEL_SEQUENCE_STATE_COMPLETE_TASK' value='9'/>
-      <enumerator name='ACCEL_SEQUENCE_STATE_NEXT_TASK' value='10'/>
-      <enumerator name='ACCEL_SEQUENCE_STATE_PUSH_DATA' value='11'/>
-      <enumerator name='ACCEL_SEQUENCE_STATE_AWAIT_PUSH_DATA' value='12'/>
-      <enumerator name='ACCEL_SEQUENCE_STATE_DRIVER_EXEC' value='13'/>
-      <enumerator name='ACCEL_SEQUENCE_STATE_DRIVER_AWAIT_TASK' value='14'/>
-      <enumerator name='ACCEL_SEQUENCE_STATE_DRIVER_COMPLETE' value='15'/>
-      <enumerator name='ACCEL_SEQUENCE_STATE_ERROR' value='16'/>
-      <enumerator name='ACCEL_SEQUENCE_STATE_MAX' value='17'/>
-    </enum-decl>
     <enum-decl name='spdk_accel_crypto_tweak_mode' id='404aa5de'>
       <underlying-type type-id='9cac1fee'/>
       <enumerator name='SPDK_ACCEL_CRYPTO_TWEAK_MODE_SIMPLE_LBA' value='0'/>
@@ -111,91 +87,6 @@
     <array-type-def dimensions='1' type-id='0f042891' size-in-bits='768' id='c6867c77'>
       <subrange length='6' type-id='f0981eeb' id='52fa524b'/>
     </array-type-def>
-    <array-type-def dimensions='1' type-id='a7e01876' size-in-bits='704' id='e43f940c'>
-      <subrange length='11' type-id='f0981eeb' id='847bc017'/>
-    </array-type-def>
-    <class-decl name='accel_buffer' size-in-bits='640' is-struct='yes' visibility='default' id='640c1be6'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='seq' type-id='d4aefa7e' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='buf' type-id='eaa32e2f' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='len' type-id='9c313c2d' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='iobuf' type-id='71e32ba2' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='384'>
-        <var-decl name='cb_fn' type-id='4208e346' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='448'>
-        <var-decl name='cb_ctx' type-id='eaa32e2f' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='512'>
-        <var-decl name='link' type-id='e7f43f72' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='accel_io_channel' size-in-bits='4416' is-struct='yes' visibility='default' id='7d858f4c'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='module_ch' type-id='e43f940c' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='704'>
-        <var-decl name='task_pool_base' type-id='eaa32e2f' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='768'>
-        <var-decl name='seq_pool_base' type-id='d4aefa7e' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='832'>
-        <var-decl name='buf_pool_base' type-id='124c0d9c' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='896'>
-        <var-decl name='task_pool' type-id='e7f43f73' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='1024'>
-        <var-decl name='seq_pool' type-id='e7f43f74' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='1152'>
-        <var-decl name='buf_pool' type-id='e7f43f75' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='1280'>
-        <var-decl name='iobuf' type-id='e8e2ad7d' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='2176'>
-        <var-decl name='stats' type-id='49823047' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='accel_operation_stats' size-in-bits='192' is-struct='yes' visibility='default' id='cc30f505'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='executed' type-id='9c313c2d' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='failed' type-id='9c313c2d' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='num_bytes' type-id='9c313c2d' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='accel_sequence_tasks' size-in-bits='128' is-struct='yes' visibility='default' id='44c3ff9c'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='tqh_first' type-id='10ebab0a' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='tqh_last' type-id='c2fe6360' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='accel_stats' size-in-bits='2240' is-struct='yes' visibility='default' id='49823047'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='operations' type-id='8f8ca15f' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='2112'>
-        <var-decl name='sequence_executed' type-id='9c313c2d' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='2176'>
-        <var-decl name='sequence_failed' type-id='9c313c2d' visibility='default'/>
-      </data-member>
-    </class-decl>
     <class-decl name='iovec' size-in-bits='128' is-struct='yes' visibility='default' id='0f042891'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='iov_base' type-id='eaa32e2f' visibility='default'/>
@@ -247,7 +138,7 @@
         <var-decl name='param' type-id='ee9bdf6b' visibility='default'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='768'>
-        <var-decl name='link' type-id='e7f43f76' visibility='default'/>
+        <var-decl name='link' type-id='e7f43f72' visibility='default'/>
       </data-member>
     </class-decl>
     <class-decl name='spdk_accel_crypto_key_create_param' size-in-bits='320' is-struct='yes' visibility='default' id='ee9bdf6b'>
@@ -275,7 +166,7 @@
         <var-decl name='execute_sequence' type-id='cf7ea326' visibility='default'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='tailq' type-id='e7f43f77' visibility='default'/>
+        <var-decl name='tailq' type-id='e7f43f73' visibility='default'/>
       </data-member>
     </class-decl>
     <class-decl name='spdk_accel_module_if' size-in-bits='896' is-struct='yes' visibility='default' id='c7a04c81'>
@@ -316,7 +207,7 @@
         <var-decl name='get_memory_domains' type-id='4966e857' visibility='default'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='768'>
-        <var-decl name='tailq' type-id='e7f43f78' visibility='default'/>
+        <var-decl name='tailq' type-id='e7f43f74' visibility='default'/>
       </data-member>
     </class-decl>
     <class-decl name='spdk_accel_opcode_stats' size-in-bits='192' is-struct='yes' visibility='default' id='9f6466ab'>
@@ -348,38 +239,6 @@
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
         <var-decl name='buf_count' type-id='8f92235e' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='spdk_accel_sequence' size-in-bits='832' is-struct='yes' visibility='default' id='e2580b88'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='ch' type-id='4d4d5eba' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='tasks' type-id='44c3ff9c' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='completed' type-id='44c3ff9c' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='320'>
-        <var-decl name='bounce_bufs' type-id='e7f43f75' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='448'>
-        <var-decl name='state' type-id='dbe46f66' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='480'>
-        <var-decl name='status' type-id='95e97e5e' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='512'>
-        <var-decl name='in_process_sequence' type-id='c894953d' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='576'>
-        <var-decl name='cb_fn' type-id='e2a47d34' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='640'>
-        <var-decl name='cb_arg' type-id='eaa32e2f' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='704'>
-        <var-decl name='link' type-id='e7f43f79' visibility='default'/>
       </data-member>
     </class-decl>
     <class-decl name='spdk_accel_task' size-in-bits='3072' is-struct='yes' visibility='default' id='a817e78c'>
@@ -426,7 +285,7 @@
         <var-decl name='' type-id='ac5ab598' visibility='default'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1088'>
-        <var-decl name='bounce' type-id='e7f43f7a' visibility='default'/>
+        <var-decl name='bounce' type-id='e7f43f75' visibility='default'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1856'>
         <var-decl name='op_code' type-id='83b0f1c7' visibility='default'/>
@@ -444,95 +303,13 @@
         <var-decl name='aux_iovs' type-id='c6867c77' visibility='default'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='2816'>
-        <var-decl name='link' type-id='e7f43f7b' visibility='default'/>
+        <var-decl name='link' type-id='e7f43f76' visibility='default'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='2944'>
-        <var-decl name='seq_link' type-id='e7f43f7b' visibility='default'/>
+        <var-decl name='seq_link' type-id='e7f43f76' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_iobuf_buffer' size-in-bits='64' is-struct='yes' visibility='default' id='9321bf74'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='stailq' type-id='e7f43f7c' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='spdk_iobuf_buffer_stailq_t' size-in-bits='128' is-struct='yes' naming-typedef-id='306e7691' visibility='default' id='79110b08'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='stqh_first' type-id='136d6f32' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='stqh_last' type-id='ad45e2c8' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='spdk_iobuf_channel' size-in-bits='896' is-struct='yes' visibility='default' id='e8e2ad7d'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='small' type-id='88eba988' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='384'>
-        <var-decl name='large' type-id='88eba988' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='768'>
-        <var-decl name='module' type-id='eaa32e2f' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='832'>
-        <var-decl name='parent' type-id='a7e01876' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='spdk_iobuf_entry' size-in-bits='192' is-struct='yes' visibility='default' id='71e32ba2'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='cb_fn' type-id='8b006695' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='module' type-id='eaa32e2f' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='stailq' type-id='e7f43f7d' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='spdk_iobuf_entry_stailq_t' size-in-bits='128' is-struct='yes' naming-typedef-id='da6a25d9' visibility='default' id='ce92b0c6'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='stqh_first' type-id='29210180' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='stqh_last' type-id='68f59e9e' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='spdk_iobuf_pool' size-in-bits='384' is-struct='yes' visibility='default' id='88eba988'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='pool' type-id='b2192338' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='cache' type-id='306e7691' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='cache_count' type-id='8f92235e' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='224'>
-        <var-decl name='cache_size' type-id='8f92235e' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='queue' type-id='49599bfc' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='320'>
-        <var-decl name='bufsize' type-id='8f92235e' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='__anonymous_struct__1' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f72'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='tqe_next' type-id='124c0d9c' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='tqe_prev' type-id='83b99582' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='__anonymous_struct__14' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f75'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='tqh_first' type-id='124c0d9c' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='tqh_last' type-id='83b99582' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='__anonymous_struct__3' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f7e'>
+    <class-decl name='__anonymous_struct__1' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f77'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='iovs' type-id='cc4b1be9' visibility='default'/>
       </data-member>
@@ -540,7 +317,7 @@
         <var-decl name='iovcnt' type-id='8f92235e' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__10' size-in-bits='768' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f7a'>
+    <class-decl name='__anonymous_struct__7' size-in-bits='768' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f75'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='s' type-id='213755d0' visibility='default'/>
       </data-member>
@@ -548,7 +325,7 @@
         <var-decl name='d' type-id='213755d0' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__9' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f76'>
+    <class-decl name='__anonymous_struct__6' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f72'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='tqe_next' type-id='043cb572' visibility='default'/>
       </data-member>
@@ -556,7 +333,7 @@
         <var-decl name='tqe_prev' type-id='03917988' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__18' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f77'>
+    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f73'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='tqe_next' type-id='2fb8c007' visibility='default'/>
       </data-member>
@@ -564,7 +341,7 @@
         <var-decl name='tqe_prev' type-id='4cd686d7' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__8' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f78'>
+    <class-decl name='__anonymous_struct__10' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f74'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='tqe_next' type-id='b78a11b9' visibility='default'/>
       </data-member>
@@ -572,23 +349,7 @@
         <var-decl name='tqe_prev' type-id='8159aa69' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__17' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f79'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='tqe_next' type-id='d4aefa7e' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='tqe_prev' type-id='2374123c' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='__anonymous_struct__13' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f74'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='tqh_first' type-id='d4aefa7e' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='tqh_last' type-id='2374123c' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='__anonymous_struct__11' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f7b'>
+    <class-decl name='__anonymous_struct__8' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f76'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='tqe_next' type-id='10ebab0a' visibility='default'/>
       </data-member>
@@ -596,25 +357,7 @@
         <var-decl name='tqe_prev' type-id='c2fe6360' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__2' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f73'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='tqh_first' type-id='10ebab0a' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='tqh_last' type-id='c2fe6360' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='__anonymous_struct__16' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f7c'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='stqe_next' type-id='136d6f32' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='__anonymous_struct__' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f7d'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='stqe_next' type-id='29210180' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='__anonymous_struct__4' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f7f'>
+    <class-decl name='__anonymous_struct__2' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f78'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='srcs' type-id='63e171df' visibility='default'/>
       </data-member>
@@ -630,15 +373,12 @@
     <typedef-decl name='spdk_accel_fini_cb' type-id='b7f9d8e6' id='e5aecfa2'/>
     <typedef-decl name='spdk_accel_sequence_get_buf_cb' type-id='e34b5a87' id='4208e346'/>
     <typedef-decl name='spdk_accel_step_cb' type-id='b7f9d8e6' id='e7d92aa4'/>
-    <typedef-decl name='spdk_iobuf_buffer_stailq_t' type-id='79110b08' id='306e7691'/>
-    <typedef-decl name='spdk_iobuf_entry_stailq_t' type-id='ce92b0c6' id='da6a25d9'/>
-    <typedef-decl name='spdk_iobuf_get_cb' type-id='fa35b1b9' id='8b006695'/>
     <typedef-decl name='uint32_t' type-id='62f1140c' id='8f92235e'/>
     <typedef-decl name='uint64_t' type-id='8910171f' id='9c313c2d'/>
     <typedef-decl name='uint8_t' type-id='c51d6389' id='b96825af'/>
     <union-decl name='__anonymous_union__2' size-in-bits='128' is-anonymous='yes' visibility='default' id='ac5ab597'>
       <data-member access='public'>
-        <var-decl name='d2' type-id='e7f43f7e' visibility='default'/>
+        <var-decl name='d2' type-id='e7f43f77' visibility='default'/>
       </data-member>
       <data-member access='public'>
         <var-decl name='seed' type-id='8f92235e' visibility='default'/>
@@ -652,18 +392,18 @@
     </union-decl>
     <union-decl name='__anonymous_union__1' size-in-bits='128' is-anonymous='yes' visibility='default' id='ac5ab596'>
       <data-member access='public'>
-        <var-decl name='d' type-id='e7f43f7e' visibility='default'/>
+        <var-decl name='d' type-id='e7f43f77' visibility='default'/>
       </data-member>
       <data-member access='public'>
-        <var-decl name='s2' type-id='e7f43f7e' visibility='default'/>
+        <var-decl name='s2' type-id='e7f43f77' visibility='default'/>
       </data-member>
     </union-decl>
     <union-decl name='__anonymous_union__' size-in-bits='128' is-anonymous='yes' visibility='default' id='ac5ab595'>
       <data-member access='public'>
-        <var-decl name='s' type-id='e7f43f7e' visibility='default'/>
+        <var-decl name='s' type-id='e7f43f77' visibility='default'/>
       </data-member>
       <data-member access='public'>
-        <var-decl name='nsrcs' type-id='e7f43f7f' visibility='default'/>
+        <var-decl name='nsrcs' type-id='e7f43f78' visibility='default'/>
       </data-member>
     </union-decl>
     <union-decl name='__anonymous_union__3' size-in-bits='64' is-anonymous='yes' visibility='default' id='ac5ab598'>
@@ -681,8 +421,6 @@
     <type-decl name='unsigned char' size-in-bits='8' id='002ac4a6'/>
     <type-decl name='unsigned int' size-in-bits='32' id='f0981eec'/>
     <type-decl name='unsigned long int' size-in-bits='64' id='f0981eeb'/>
-    <pointer-type-def type-id='640c1be6' size-in-bits='64' id='124c0d9c'/>
-    <pointer-type-def type-id='124c0d9c' size-in-bits='64' id='83b99582'/>
     <pointer-type-def type-id='7d858f4c' size-in-bits='64' id='4d4d5eba'/>
     <pointer-type-def type-id='6aeec1b6' size-in-bits='64' id='161d0d48'/>
     <pointer-type-def type-id='315e4d09' size-in-bits='64' id='bb2251e5'/>
@@ -714,20 +452,13 @@
     <pointer-type-def type-id='10ebab0a' size-in-bits='64' id='c2fe6360'/>
     <pointer-type-def type-id='8de5f3c0' size-in-bits='64' id='a7e01876'/>
     <pointer-type-def type-id='e76af571' size-in-bits='64' id='94a5300d'/>
-    <pointer-type-def type-id='9321bf74' size-in-bits='64' id='136d6f32'/>
-    <pointer-type-def type-id='136d6f32' size-in-bits='64' id='ad45e2c8'/>
-    <pointer-type-def type-id='71e32ba2' size-in-bits='64' id='29210180'/>
-    <pointer-type-def type-id='29210180' size-in-bits='64' id='68f59e9e'/>
-    <pointer-type-def type-id='da6a25d9' size-in-bits='64' id='49599bfc'/>
     <pointer-type-def type-id='2ae61988' size-in-bits='64' id='b8e14bfe'/>
     <pointer-type-def type-id='3e1ba880' size-in-bits='64' id='e5ecc906'/>
     <pointer-type-def type-id='e5ecc906' size-in-bits='64' id='1fc0b044'/>
-    <pointer-type-def type-id='f749e2ba' size-in-bits='64' id='b2192338'/>
     <pointer-type-def type-id='ae2eaa42' size-in-bits='64' id='0838a534'/>
     <pointer-type-def type-id='8f92235e' size-in-bits='64' id='90421557'/>
     <pointer-type-def type-id='0070a5eb' size-in-bits='64' id='701e506f'/>
     <pointer-type-def type-id='44410d43' size-in-bits='64' id='e34b5a87'/>
-    <pointer-type-def type-id='84d13285' size-in-bits='64' id='fa35b1b9'/>
     <pointer-type-def type-id='9ed8cfeb' size-in-bits='64' id='582528d7'/>
     <pointer-type-def type-id='c5c76c9c' size-in-bits='64' id='b7f9d8e6'/>
     <pointer-type-def type-id='2922fb19' size-in-bits='64' id='1ed1e4cd'/>
@@ -736,8 +467,9 @@
     <class-decl name='spdk_io_channel' is-struct='yes' visibility='default' is-declaration-only='yes' id='8de5f3c0'/>
     <class-decl name='spdk_json_write_ctx' is-struct='yes' visibility='default' is-declaration-only='yes' id='2ae61988'/>
     <class-decl name='spdk_memory_domain' is-struct='yes' visibility='default' is-declaration-only='yes' id='3e1ba880'/>
-    <class-decl name='spdk_ring' is-struct='yes' visibility='default' is-declaration-only='yes' id='f749e2ba'/>
     <type-decl name='void' id='48b5725f'/>
+    <class-decl name='accel_io_channel' is-struct='yes' visibility='default' is-declaration-only='yes' id='7d858f4c'/>
+    <class-decl name='spdk_accel_sequence' is-struct='yes' visibility='default' is-declaration-only='yes' id='e2580b88'/>
     <function-decl name='spdk_accel_get_opc_module_name' mangled-name='spdk_accel_get_opc_module_name' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_get_opc_module_name'>
       <parameter type-id='83b0f1c7' name='opcode'/>
       <parameter type-id='7d3cd834' name='module_name'/>
@@ -1149,13 +881,8 @@
       <parameter type-id='eaa32e2f'/>
       <return type-id='48b5725f'/>
     </function-type>
-    <function-type size-in-bits='64' id='84d13285'>
-      <parameter type-id='29210180'/>
-      <parameter type-id='eaa32e2f'/>
-      <return type-id='48b5725f'/>
-    </function-type>
     <function-type size-in-bits='64' id='9ed8cfeb'>
-      <parameter type-id='b8e14bfe'/>
+      <parameter type-id='b8e14bfe' name='w'/>
       <return type-id='48b5725f'/>
     </function-type>
     <function-type size-in-bits='64' id='c5c76c9c'>

@@ -29,20 +29,6 @@
     <elf-symbol name='spdk_jsonrpc_server_shutdown' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
   </elf-function-symbols>
   <abi-instr address-size='64' path='jsonrpc_client.c' language='LANG_C99'>
-    <class-decl name='spdk_jsonrpc_client_request' size-in-bits='256' is-struct='yes' visibility='default' id='658455c7'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='send_buf_size' type-id='b59d7dce' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='send_len' type-id='b59d7dce' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='send_offset' type-id='b59d7dce' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='send_buf' type-id='ae3e8ca6' visibility='default'/>
-      </data-member>
-    </class-decl>
     <typedef-decl name='__int32_t' type-id='95e97e5e' id='33f57a65'/>
     <typedef-decl name='int32_t' type-id='33f57a65' id='3ff5601b'/>
     <pointer-type-def type-id='658455c7' size-in-bits='64' id='63dc953f'/>
@@ -58,34 +44,9 @@
       <parameter type-id='b8e14bfe' name='w'/>
       <return type-id='48b5725f'/>
     </function-decl>
+    <class-decl name='spdk_jsonrpc_client_request' is-struct='yes' visibility='default' is-declaration-only='yes' id='658455c7'/>
   </abi-instr>
   <abi-instr address-size='64' path='jsonrpc_client_tcp.c' language='LANG_C99'>
-    <array-type-def dimensions='1' type-id='9fc5272e' size-in-bits='infinite' id='0484418e'>
-      <subrange length='infinite' type-id='f0981eeb' id='031f2035'/>
-    </array-type-def>
-    <class-decl name='spdk_jsonrpc_client' size-in-bits='384' is-struct='yes' visibility='default' id='9d9bbaf1'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='sockfd' type-id='95e97e5e' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='32'>
-        <var-decl name='connected' type-id='c894953d' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='recv_buf_size' type-id='b59d7dce' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='recv_offset' type-id='b59d7dce' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='recv_buf' type-id='26a90f95' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='resp' type-id='93a7bedb' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='320'>
-        <var-decl name='request' type-id='63dc953f' visibility='default'/>
-      </data-member>
-    </class-decl>
     <class-decl name='spdk_jsonrpc_client_response' size-in-bits='256' is-struct='yes' visibility='default' id='1361d8dd'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='version' type-id='8505e504' visibility='default'/>
@@ -100,27 +61,9 @@
         <var-decl name='error' type-id='8505e504' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_jsonrpc_client_response_internal' size-in-bits='448' is-struct='yes' visibility='default' id='ac333e5b'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='jsonrpc' type-id='1361d8dd' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='ready' type-id='c894953d' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='320'>
-        <var-decl name='buf' type-id='ae3e8ca6' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='384'>
-        <var-decl name='values_cnt' type-id='b59d7dce' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='448'>
-        <var-decl name='values' type-id='0484418e' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <pointer-type-def type-id='a84c031d' size-in-bits='64' id='26a90f95'/>
+    <pointer-type-def type-id='9fc5272e' size-in-bits='64' id='8505e504'/>
     <pointer-type-def type-id='9d9bbaf1' size-in-bits='64' id='6137db59'/>
     <pointer-type-def type-id='1361d8dd' size-in-bits='64' id='f9dbe2ed'/>
-    <pointer-type-def type-id='ac333e5b' size-in-bits='64' id='93a7bedb'/>
     <function-decl name='spdk_jsonrpc_client_connect' mangled-name='spdk_jsonrpc_client_connect' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_jsonrpc_client_connect'>
       <parameter type-id='80f4b756' name='addr'/>
       <parameter type-id='95e97e5e' name='addr_family'/>
@@ -155,192 +98,22 @@
       <parameter type-id='f9dbe2ed' name='resp'/>
       <return type-id='48b5725f'/>
     </function-decl>
+    <class-decl name='spdk_jsonrpc_client' is-struct='yes' visibility='default' is-declaration-only='yes' id='9d9bbaf1'/>
   </abi-instr>
   <abi-instr address-size='64' path='jsonrpc_server.c' language='LANG_C99'>
     <type-decl name='bool' size-in-bits='8' id='c894953d'/>
     <type-decl name='char' size-in-bits='8' id='a84c031d'/>
-    <enum-decl name='spdk_json_val_type' id='18f471ce'>
-      <underlying-type type-id='9cac1fee'/>
-      <enumerator name='SPDK_JSON_VAL_INVALID' value='0'/>
-      <enumerator name='SPDK_JSON_VAL_NULL' value='2'/>
-      <enumerator name='SPDK_JSON_VAL_TRUE' value='4'/>
-      <enumerator name='SPDK_JSON_VAL_FALSE' value='8'/>
-      <enumerator name='SPDK_JSON_VAL_NUMBER' value='16'/>
-      <enumerator name='SPDK_JSON_VAL_STRING' value='32'/>
-      <enumerator name='SPDK_JSON_VAL_ARRAY_BEGIN' value='64'/>
-      <enumerator name='SPDK_JSON_VAL_ARRAY_END' value='128'/>
-      <enumerator name='SPDK_JSON_VAL_OBJECT_BEGIN' value='256'/>
-      <enumerator name='SPDK_JSON_VAL_OBJECT_END' value='512'/>
-      <enumerator name='SPDK_JSON_VAL_NAME' value='1024'/>
-    </enum-decl>
     <type-decl name='int' size-in-bits='32' id='95e97e5e'/>
-    <array-type-def dimensions='1' type-id='c4c192e4' size-in-bits='16822272' id='3dba9e4e'>
-      <subrange length='64' type-id='f0981eeb' id='b10be967'/>
-    </array-type-def>
-    <class-decl name='spdk_json_val' size-in-bits='128' is-struct='yes' visibility='default' id='9fc5272e'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='start' type-id='eaa32e2f' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='len' type-id='8f92235e' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='96'>
-        <var-decl name='type' type-id='18f471ce' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='spdk_jsonrpc_request' size-in-bits='704' is-struct='yes' visibility='default' id='1c42476f'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='conn' type-id='7923cb22' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='id' type-id='3ee1fff1' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='send_buf_size' type-id='b59d7dce' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='send_len' type-id='b59d7dce' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='send_offset' type-id='b59d7dce' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='320'>
-        <var-decl name='recv_buffer' type-id='ae3e8ca6' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='384'>
-        <var-decl name='values' type-id='8505e504' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='448'>
-        <var-decl name='values_cnt' type-id='b59d7dce' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='512'>
-        <var-decl name='send_buf' type-id='ae3e8ca6' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='576'>
-        <var-decl name='response' type-id='b8e14bfe' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='640'>
-        <var-decl name='link' type-id='e7f43f72' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='spdk_jsonrpc_server' size-in-bits='16822656' is-struct='yes' visibility='default' id='79c1ff35'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='sockfd' type-id='95e97e5e' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='handle_request' type-id='3effb642' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='free_conns' type-id='e7f43f73' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='conns' type-id='e7f43f73' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='384'>
-        <var-decl name='conns_array' type-id='3dba9e4e' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='spdk_jsonrpc_server_conn' size-in-bits='262848' is-struct='yes' visibility='default' id='c4c192e4'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='server' type-id='3c05c735' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='sockfd' type-id='95e97e5e' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='96'>
-        <var-decl name='closed' type-id='c894953d' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='recv_len' type-id='b59d7dce' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='recv_buf' type-id='b09cebc6' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='262336'>
-        <var-decl name='outstanding_requests' type-id='8f92235e' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='262368'>
-        <var-decl name='queue_lock' type-id='6d44fa69' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='262400'>
-        <var-decl name='send_queue' type-id='e7f43f74' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='262528'>
-        <var-decl name='send_request' type-id='42a6b637' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='262592'>
-        <var-decl name='close_cb' type-id='36baf675' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='262656'>
-        <var-decl name='close_cb_ctx' type-id='eaa32e2f' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='262720'>
-        <var-decl name='link' type-id='e7f43f75' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='__anonymous_struct__4' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f72'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='stqe_next' type-id='42a6b637' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='__anonymous_struct__2' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f74'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='stqh_first' type-id='42a6b637' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='stqh_last' type-id='0970afa7' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='__anonymous_struct__3' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f75'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='tqe_next' type-id='7923cb22' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='tqe_prev' type-id='bb589d98' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f73'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='tqh_first' type-id='7923cb22' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='tqh_last' type-id='bb589d98' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <typedef-decl name='__uint32_t' type-id='f0981eec' id='62f1140c'/>
-    <typedef-decl name='__uint8_t' type-id='002ac4a6' id='c51d6389'/>
-    <typedef-decl name='pthread_spinlock_t' type-id='e024ff18' id='6d44fa69'/>
-    <typedef-decl name='size_t' type-id='f0981eeb' id='b59d7dce'/>
-    <typedef-decl name='spdk_jsonrpc_conn_closed_fn' type-id='6ebf3e6f' id='36baf675'/>
-    <typedef-decl name='spdk_jsonrpc_handle_request_fn' type-id='6bd53efe' id='3effb642'/>
-    <typedef-decl name='uint32_t' type-id='62f1140c' id='8f92235e'/>
-    <typedef-decl name='uint8_t' type-id='c51d6389' id='b96825af'/>
-    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='262144' id='b09cebc6'>
-      <subrange length='32768' type-id='f0981eeb' id='0b048505'/>
-    </array-type-def>
-    <type-decl name='unnamed-enum-underlying-type-32' is-anonymous='yes' size-in-bits='32' alignment-in-bits='32' id='9cac1fee'/>
-    <type-decl name='unsigned char' size-in-bits='8' id='002ac4a6'/>
-    <type-decl name='unsigned int' size-in-bits='32' id='f0981eec'/>
-    <type-decl name='unsigned long int' size-in-bits='64' id='f0981eeb'/>
     <qualified-type-def type-id='a84c031d' const='yes' id='9b45d938'/>
     <pointer-type-def type-id='9b45d938' size-in-bits='64' id='80f4b756'/>
-    <qualified-type-def type-id='9fc5272e' const='yes' id='f6adfac1'/>
-    <pointer-type-def type-id='f6adfac1' size-in-bits='64' id='3ee1fff1'/>
-    <pointer-type-def type-id='9fc5272e' size-in-bits='64' id='8505e504'/>
     <pointer-type-def type-id='2ae61989' size-in-bits='64' id='b8e14bfe'/>
     <pointer-type-def type-id='1c42476f' size-in-bits='64' id='42a6b637'/>
-    <pointer-type-def type-id='42a6b637' size-in-bits='64' id='0970afa7'/>
-    <pointer-type-def type-id='79c1ff35' size-in-bits='64' id='3c05c735'/>
     <pointer-type-def type-id='c4c192e4' size-in-bits='64' id='7923cb22'/>
-    <pointer-type-def type-id='7923cb22' size-in-bits='64' id='bb589d98'/>
-    <pointer-type-def type-id='b96825af' size-in-bits='64' id='ae3e8ca6'/>
-    <pointer-type-def type-id='fef343e4' size-in-bits='64' id='6bd53efe'/>
-    <pointer-type-def type-id='953077c3' size-in-bits='64' id='6ebf3e6f'/>
-    <pointer-type-def type-id='48b5725f' size-in-bits='64' id='eaa32e2f'/>
-    <qualified-type-def type-id='95e97e5e' volatile='yes' id='e024ff18'/>
     <class-decl name='spdk_json_write_ctx' is-struct='yes' visibility='default' is-declaration-only='yes' id='2ae61989'/>
     <type-decl name='variadic parameter type' id='2c1145c5'/>
     <type-decl name='void' id='48b5725f'/>
+    <class-decl name='spdk_jsonrpc_request' is-struct='yes' visibility='default' is-declaration-only='yes' id='1c42476f'/>
+    <class-decl name='spdk_jsonrpc_server_conn' is-struct='yes' visibility='default' is-declaration-only='yes' id='c4c192e4'/>
     <function-decl name='spdk_jsonrpc_get_conn' mangled-name='spdk_jsonrpc_get_conn' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_jsonrpc_get_conn'>
       <parameter type-id='42a6b637' name='request'/>
       <return type-id='7923cb22'/>
@@ -372,22 +145,25 @@
       <parameter is-variadic='yes'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-type size-in-bits='64' id='fef343e4'>
-      <parameter type-id='42a6b637'/>
-      <parameter type-id='3ee1fff1'/>
-      <parameter type-id='3ee1fff1'/>
-      <return type-id='48b5725f'/>
-    </function-type>
-    <function-type size-in-bits='64' id='953077c3'>
-      <parameter type-id='7923cb22'/>
-      <parameter type-id='eaa32e2f'/>
-      <return type-id='48b5725f'/>
-    </function-type>
   </abi-instr>
   <abi-instr address-size='64' path='jsonrpc_server_tcp.c' language='LANG_C99'>
     <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='112' id='f01a039e'>
       <subrange length='14' type-id='f0981eeb' id='48882d96'/>
     </array-type-def>
+    <enum-decl name='spdk_json_val_type' id='18f471ce'>
+      <underlying-type type-id='9cac1fee'/>
+      <enumerator name='SPDK_JSON_VAL_INVALID' value='0'/>
+      <enumerator name='SPDK_JSON_VAL_NULL' value='2'/>
+      <enumerator name='SPDK_JSON_VAL_TRUE' value='4'/>
+      <enumerator name='SPDK_JSON_VAL_FALSE' value='8'/>
+      <enumerator name='SPDK_JSON_VAL_NUMBER' value='16'/>
+      <enumerator name='SPDK_JSON_VAL_STRING' value='32'/>
+      <enumerator name='SPDK_JSON_VAL_ARRAY_BEGIN' value='64'/>
+      <enumerator name='SPDK_JSON_VAL_ARRAY_END' value='128'/>
+      <enumerator name='SPDK_JSON_VAL_OBJECT_BEGIN' value='256'/>
+      <enumerator name='SPDK_JSON_VAL_OBJECT_END' value='512'/>
+      <enumerator name='SPDK_JSON_VAL_NAME' value='1024'/>
+    </enum-decl>
     <class-decl name='sockaddr' size-in-bits='128' is-struct='yes' visibility='default' id='5221b18a'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='sa_family' type-id='376fda66' visibility='default'/>
@@ -396,11 +172,36 @@
         <var-decl name='sa_data' type-id='f01a039e' visibility='default'/>
       </data-member>
     </class-decl>
+    <class-decl name='spdk_json_val' size-in-bits='128' is-struct='yes' visibility='default' id='9fc5272e'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='start' type-id='eaa32e2f' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='len' type-id='8f92235e' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='type' type-id='18f471ce' visibility='default'/>
+      </data-member>
+    </class-decl>
     <typedef-decl name='__socklen_t' type-id='f0981eec' id='83f97a0a'/>
+    <typedef-decl name='__uint32_t' type-id='f0981eec' id='62f1140c'/>
     <typedef-decl name='sa_family_t' type-id='f0981eed' id='376fda66'/>
     <typedef-decl name='socklen_t' type-id='83f97a0a' id='6b2697b0'/>
+    <typedef-decl name='spdk_jsonrpc_conn_closed_fn' type-id='6ebf3e6f' id='36baf675'/>
+    <typedef-decl name='spdk_jsonrpc_handle_request_fn' type-id='6bd53efe' id='3effb642'/>
+    <typedef-decl name='uint32_t' type-id='62f1140c' id='8f92235e'/>
+    <type-decl name='unnamed-enum-underlying-type-32' is-anonymous='yes' size-in-bits='32' alignment-in-bits='32' id='9cac1fee'/>
+    <type-decl name='unsigned int' size-in-bits='32' id='f0981eec'/>
+    <type-decl name='unsigned long int' size-in-bits='64' id='f0981eeb'/>
     <type-decl name='unsigned short int' size-in-bits='16' id='f0981eed'/>
+    <qualified-type-def type-id='9fc5272e' const='yes' id='f6adfac1'/>
+    <pointer-type-def type-id='f6adfac1' size-in-bits='64' id='3ee1fff1'/>
     <pointer-type-def type-id='5221b18a' size-in-bits='64' id='5c0abad8'/>
+    <pointer-type-def type-id='79c1ff35' size-in-bits='64' id='3c05c735'/>
+    <pointer-type-def type-id='fef343e4' size-in-bits='64' id='6bd53efe'/>
+    <pointer-type-def type-id='953077c3' size-in-bits='64' id='6ebf3e6f'/>
+    <pointer-type-def type-id='48b5725f' size-in-bits='64' id='eaa32e2f'/>
+    <class-decl name='spdk_jsonrpc_server' is-struct='yes' visibility='default' is-declaration-only='yes' id='79c1ff35'/>
     <function-decl name='spdk_jsonrpc_server_listen' mangled-name='spdk_jsonrpc_server_listen' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_jsonrpc_server_listen'>
       <parameter type-id='95e97e5e' name='domain'/>
       <parameter type-id='95e97e5e' name='protocol'/>
@@ -429,5 +230,16 @@
       <parameter type-id='3c05c735' name='server'/>
       <return type-id='95e97e5e'/>
     </function-decl>
+    <function-type size-in-bits='64' id='fef343e4'>
+      <parameter type-id='42a6b637'/>
+      <parameter type-id='3ee1fff1'/>
+      <parameter type-id='3ee1fff1'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+    <function-type size-in-bits='64' id='953077c3'>
+      <parameter type-id='7923cb22'/>
+      <parameter type-id='eaa32e2f'/>
+      <return type-id='48b5725f'/>
+    </function-type>
   </abi-instr>
 </abi-corpus>

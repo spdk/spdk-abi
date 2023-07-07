@@ -1201,26 +1201,6 @@
         <var-decl name='priority' type-id='95e97e5e' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_rdma_mem_map' size-in-bits='384' is-struct='yes' visibility='default' id='009893db'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='map' type-id='73c19462' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='pd' type-id='18028d25' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='hooks' type-id='bbb9af9a' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='ref_count' type-id='8f92235e' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='224'>
-        <var-decl name='role' type-id='3c67efeb' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='link' type-id='e7f43f72' visibility='default'/>
-      </data-member>
-    </class-decl>
     <class-decl name='spdk_rdma_memory_translation' size-in-bits='128' is-struct='yes' visibility='default' id='e7cd340a'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='mr_or_key' type-id='c473586b' visibility='default'/>
@@ -1306,7 +1286,7 @@
         <var-decl name='doorbell_updates' type-id='9c313c2d' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__7' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f73'>
+    <class-decl name='__anonymous_struct__7' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f72'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='subnet_prefix' type-id='0899c7ad' visibility='default'/>
       </data-member>
@@ -1314,7 +1294,7 @@
         <var-decl name='interface_id' type-id='0899c7ad' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__3' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f74'>
+    <class-decl name='__anonymous_struct__3' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f73'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='ah' type-id='f3cfd12e' visibility='default'/>
       </data-member>
@@ -1325,7 +1305,7 @@
         <var-decl name='remote_qkey' type-id='8f92235e' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__5' size-in-bits='384' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f75'>
+    <class-decl name='__anonymous_struct__5' size-in-bits='384' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f74'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='mw' type-id='a13133b1' visibility='default'/>
       </data-member>
@@ -1336,20 +1316,12 @@
         <var-decl name='bind_info' type-id='fab191d2' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__8' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f72'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='le_next' type-id='fb008a0b' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='le_prev' type-id='42d971f3' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='__anonymous_struct__4' size-in-bits='32' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f76'>
+    <class-decl name='__anonymous_struct__4' size-in-bits='32' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f75'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='remote_srqn' type-id='8f92235e' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__1' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f77'>
+    <class-decl name='__anonymous_struct__1' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f76'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='remote_addr' type-id='9c313c2d' visibility='default'/>
       </data-member>
@@ -1357,7 +1329,7 @@
         <var-decl name='rkey' type-id='8f92235e' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__2' size-in-bits='256' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f78'>
+    <class-decl name='__anonymous_struct__2' size-in-bits='256' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f77'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='remote_addr' type-id='9c313c2d' visibility='default'/>
       </data-member>
@@ -1371,7 +1343,7 @@
         <var-decl name='rkey' type-id='8f92235e' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f79'>
+    <class-decl name='__anonymous_struct__' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f78'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='__low' type-id='f0981eec' visibility='default'/>
       </data-member>
@@ -1379,7 +1351,7 @@
         <var-decl name='__high' type-id='f0981eec' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__6' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f7a'>
+    <class-decl name='__anonymous_struct__6' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f79'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='hdr' type-id='eaa32e2f' visibility='default'/>
       </data-member>
@@ -1426,7 +1398,7 @@
         <var-decl name='__value64' type-id='f0981eee' visibility='default'/>
       </data-member>
       <data-member access='public'>
-        <var-decl name='__value32' type-id='e7f43f79' visibility='default'/>
+        <var-decl name='__value32' type-id='e7f43f78' visibility='default'/>
       </data-member>
     </union-decl>
     <union-decl name='ibv_gid' size-in-bits='128' visibility='default' id='9c3d32dc'>
@@ -1434,7 +1406,7 @@
         <var-decl name='raw' type-id='fa9986a5' visibility='default'/>
       </data-member>
       <data-member access='public'>
-        <var-decl name='global' type-id='e7f43f73' visibility='default'/>
+        <var-decl name='global' type-id='e7f43f72' visibility='default'/>
       </data-member>
     </union-decl>
     <union-decl name='pthread_cond_t' size-in-bits='384' naming-typedef-id='62fab762' visibility='default' id='cbb12c12'>
@@ -1526,26 +1498,26 @@
     </union-decl>
     <union-decl name='__anonymous_union__4' size-in-bits='384' is-anonymous='yes' visibility='default' id='ac5ab598'>
       <data-member access='public'>
-        <var-decl name='bind_mw' type-id='e7f43f75' visibility='default'/>
+        <var-decl name='bind_mw' type-id='e7f43f74' visibility='default'/>
       </data-member>
       <data-member access='public'>
-        <var-decl name='tso' type-id='e7f43f7a' visibility='default'/>
+        <var-decl name='tso' type-id='e7f43f79' visibility='default'/>
       </data-member>
     </union-decl>
     <union-decl name='__anonymous_union__3' size-in-bits='32' is-anonymous='yes' visibility='default' id='ac5ab597'>
       <data-member access='public'>
-        <var-decl name='xrc' type-id='e7f43f76' visibility='default'/>
+        <var-decl name='xrc' type-id='e7f43f75' visibility='default'/>
       </data-member>
     </union-decl>
     <union-decl name='__anonymous_union__2' size-in-bits='256' is-anonymous='yes' visibility='default' id='ac5ab596'>
       <data-member access='public'>
-        <var-decl name='rdma' type-id='e7f43f77' visibility='default'/>
+        <var-decl name='rdma' type-id='e7f43f76' visibility='default'/>
       </data-member>
       <data-member access='public'>
-        <var-decl name='atomic' type-id='e7f43f78' visibility='default'/>
+        <var-decl name='atomic' type-id='e7f43f77' visibility='default'/>
       </data-member>
       <data-member access='public'>
-        <var-decl name='ud' type-id='e7f43f74' visibility='default'/>
+        <var-decl name='ud' type-id='e7f43f73' visibility='default'/>
       </data-member>
     </union-decl>
     <union-decl name='__anonymous_union__6' size-in-bits='128' is-anonymous='yes' visibility='default' id='ac5ab59a'>
@@ -1609,7 +1581,6 @@
     <pointer-type-def type-id='cb0529dd' size-in-bits='64' id='94404dad'/>
     <pointer-type-def type-id='9c92e232' size-in-bits='64' id='0765c610'/>
     <pointer-type-def type-id='8620115a' size-in-bits='64' id='24eb1268'/>
-    <pointer-type-def type-id='ba933a44' size-in-bits='64' id='73c19462'/>
     <pointer-type-def type-id='b43759ec' size-in-bits='64' id='bbb9af9a'/>
     <pointer-type-def type-id='009893db' size-in-bits='64' id='fb008a0b'/>
     <pointer-type-def type-id='fb008a0b' size-in-bits='64' id='42d971f3'/>
@@ -1625,8 +1596,8 @@
     <pointer-type-def type-id='48b5725f' size-in-bits='64' id='eaa32e2f'/>
     <pointer-type-def type-id='afb1917e' size-in-bits='64' id='0cfacb48'/>
     <class-decl name='_compat_ibv_port_attr' is-struct='yes' visibility='default' is-declaration-only='yes' id='eb9f9168'/>
-    <class-decl name='spdk_mem_map' is-struct='yes' visibility='default' is-declaration-only='yes' id='ba933a44'/>
     <type-decl name='void' id='48b5725f'/>
+    <class-decl name='spdk_rdma_mem_map' is-struct='yes' visibility='default' is-declaration-only='yes' id='009893db'/>
     <function-decl name='spdk_rdma_create_mem_map' mangled-name='spdk_rdma_create_mem_map' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_rdma_create_mem_map'>
       <parameter type-id='18028d25' name='pd'/>
       <parameter type-id='bbb9af9a' name='hooks'/>

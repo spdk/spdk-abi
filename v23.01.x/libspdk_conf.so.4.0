@@ -26,63 +26,16 @@
     <type-decl name='bool' size-in-bits='8' id='c894953d'/>
     <type-decl name='char' size-in-bits='8' id='a84c031d'/>
     <type-decl name='int' size-in-bits='32' id='95e97e5e'/>
-    <class-decl name='spdk_conf' size-in-bits='256' is-struct='yes' visibility='default' id='fb82eca6'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='file' type-id='26a90f95' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='current_section' type-id='4582c934' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='section' type-id='4582c934' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='merge_sections' type-id='c894953d' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='spdk_conf_item' size-in-bits='192' is-struct='yes' visibility='default' id='91c6855c'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='next' type-id='fbd97e6a' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='key' type-id='26a90f95' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='val' type-id='74ff11fe' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='spdk_conf_section' size-in-bits='256' is-struct='yes' visibility='default' id='4611d1ce'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='next' type-id='4582c934' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='name' type-id='26a90f95' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='num' type-id='95e97e5e' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='item' type-id='fbd97e6a' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='spdk_conf_value' size-in-bits='128' is-struct='yes' visibility='default' id='4b90bad8'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='next' type-id='74ff11fe' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='value' type-id='26a90f95' visibility='default'/>
-      </data-member>
-    </class-decl>
     <pointer-type-def type-id='a84c031d' size-in-bits='64' id='26a90f95'/>
     <qualified-type-def type-id='a84c031d' const='yes' id='9b45d938'/>
     <pointer-type-def type-id='9b45d938' size-in-bits='64' id='80f4b756'/>
     <qualified-type-def type-id='4611d1ce' const='yes' id='568e44c1'/>
     <pointer-type-def type-id='568e44c1' size-in-bits='64' id='2cf67df1'/>
     <pointer-type-def type-id='fb82eca6' size-in-bits='64' id='e310b6cc'/>
-    <pointer-type-def type-id='91c6855c' size-in-bits='64' id='fbd97e6a'/>
     <pointer-type-def type-id='4611d1ce' size-in-bits='64' id='4582c934'/>
-    <pointer-type-def type-id='4b90bad8' size-in-bits='64' id='74ff11fe'/>
     <type-decl name='void' id='48b5725f'/>
+    <class-decl name='spdk_conf_section' is-struct='yes' visibility='default' is-declaration-only='yes' id='4611d1ce'/>
+    <class-decl name='spdk_conf' is-struct='yes' visibility='default' is-declaration-only='yes' id='fb82eca6'/>
     <function-decl name='spdk_conf_allocate' mangled-name='spdk_conf_allocate' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_conf_allocate'>
       <return type-id='e310b6cc'/>
     </function-decl>

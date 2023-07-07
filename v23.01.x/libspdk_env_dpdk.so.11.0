@@ -583,90 +583,11 @@
     </function-decl>
   </abi-instr>
   <abi-instr address-size='64' path='memory.c' language='LANG_C99'>
-    <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='320' id='36c46961'>
-      <subrange length='40' type-id='f0981eeb' id='8f80b239'/>
-    </array-type-def>
     <enum-decl name='spdk_mem_map_notify_action' id='4c36f7b6'>
       <underlying-type type-id='9cac1fee'/>
       <enumerator name='SPDK_MEM_MAP_NOTIFY_REGISTER' value='0'/>
       <enumerator name='SPDK_MEM_MAP_NOTIFY_UNREGISTER' value='1'/>
     </enum-decl>
-    <array-type-def dimensions='1' type-id='5f40038e' size-in-bits='16777216' id='61210451'>
-      <subrange length='262144' type-id='f0981eeb' id='67de4cb2'/>
-    </array-type-def>
-    <array-type-def dimensions='1' type-id='3711b4af' size-in-bits='32768' id='502803d3'>
-      <subrange length='512' type-id='f0981eeb' id='c11630dd'/>
-    </array-type-def>
-    <type-decl name='short int' size-in-bits='16' id='95e97e60'/>
-    <class-decl name='__pthread_internal_list' size-in-bits='128' is-struct='yes' visibility='default' id='0e01899c'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='__prev' type-id='4d98cd5a' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='__next' type-id='4d98cd5a' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='__pthread_mutex_s' size-in-bits='320' is-struct='yes' visibility='default' id='4c734837'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='__lock' type-id='95e97e5e' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='32'>
-        <var-decl name='__count' type-id='f0981eed' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='__owner' type-id='95e97e5e' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='96'>
-        <var-decl name='__nusers' type-id='f0981eed' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='__kind' type-id='95e97e5e' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='160'>
-        <var-decl name='__spins' type-id='95e97e60' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='176'>
-        <var-decl name='__elision' type-id='95e97e60' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='__list' type-id='518fb49c' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='map_1gb' size-in-bits='32768' is-struct='yes' visibility='default' id='831232c8'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='map' type-id='502803d3' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='map_256tb' size-in-bits='16777216' is-struct='yes' visibility='default' id='fa55d80d'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='map' type-id='61210451' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='map_2mb' size-in-bits='64' is-struct='yes' visibility='default' id='3711b4af'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='translation_2mb' type-id='9c313c2d' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='spdk_mem_map' size-in-bits='16777920' is-struct='yes' visibility='default' id='ba933a44'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='map_256tb' type-id='fa55d80d' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='16777216'>
-        <var-decl name='mutex' type-id='7a6844eb' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='16777536'>
-        <var-decl name='default_translation' type-id='9c313c2d' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='16777600'>
-        <var-decl name='ops' type-id='23691567' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='16777728'>
-        <var-decl name='cb_ctx' type-id='eaa32e2f' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='16777792'>
-        <var-decl name='tailq' type-id='e7f43f72' visibility='default'/>
-      </data-member>
-    </class-decl>
     <class-decl name='spdk_mem_map_ops' size-in-bits='128' is-struct='yes' visibility='default' id='23691567'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='notify_cb' type-id='3d8a3989' visibility='default'/>
@@ -675,39 +596,17 @@
         <var-decl name='are_contiguous' type-id='8cf6f4bf' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f72'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='tqe_next' type-id='73c19462' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='tqe_prev' type-id='81bc6d58' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <typedef-decl name='__pthread_list_t' type-id='0e01899c' id='518fb49c'/>
-    <typedef-decl name='pthread_mutex_t' type-id='70681f9b' id='7a6844eb'/>
     <typedef-decl name='spdk_mem_map_contiguous_translations' type-id='0f094131' id='8cf6f4bf'/>
     <typedef-decl name='spdk_mem_map_notify_cb' type-id='bc7911b1' id='3d8a3989'/>
-    <union-decl name='pthread_mutex_t' size-in-bits='320' naming-typedef-id='7a6844eb' visibility='default' id='70681f9b'>
-      <data-member access='public'>
-        <var-decl name='__data' type-id='4c734837' visibility='default'/>
-      </data-member>
-      <data-member access='public'>
-        <var-decl name='__size' type-id='36c46961' visibility='default'/>
-      </data-member>
-      <data-member access='public'>
-        <var-decl name='__align' type-id='95e97e5f' visibility='default'/>
-      </data-member>
-    </union-decl>
-    <pointer-type-def type-id='0e01899c' size-in-bits='64' id='4d98cd5a'/>
     <qualified-type-def type-id='ba933a44' const='yes' id='36a99011'/>
     <pointer-type-def type-id='36a99011' size-in-bits='64' id='47ee0ce1'/>
     <qualified-type-def type-id='23691567' const='yes' id='a2fd39ea'/>
     <pointer-type-def type-id='a2fd39ea' size-in-bits='64' id='54a1e940'/>
     <pointer-type-def type-id='888809fd' size-in-bits='64' id='0f094131'/>
     <pointer-type-def type-id='9c62c91d' size-in-bits='64' id='bc7911b1'/>
-    <pointer-type-def type-id='831232c8' size-in-bits='64' id='5f40038e'/>
     <pointer-type-def type-id='ba933a44' size-in-bits='64' id='73c19462'/>
     <pointer-type-def type-id='73c19462' size-in-bits='64' id='81bc6d58'/>
+    <class-decl name='spdk_mem_map' is-struct='yes' visibility='default' is-declaration-only='yes' id='ba933a44'/>
     <function-decl name='spdk_mem_map_alloc' mangled-name='spdk_mem_map_alloc' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_mem_map_alloc'>
       <parameter type-id='9c313c2d' name='default_translation'/>
       <parameter type-id='54a1e940' name='ops'/>
@@ -792,7 +691,7 @@
         <var-decl name='removed' type-id='c894953d' visibility='default'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='tailq' type-id='e7f43f73' visibility='default'/>
+        <var-decl name='tailq' type-id='e7f43f72' visibility='default'/>
       </data-member>
     </class-decl>
     <class-decl name='spdk_pci_addr' size-in-bits='64' is-struct='yes' visibility='default' id='ec72f59a'>
@@ -855,33 +754,7 @@
         <var-decl name='detach_cb' type-id='ce0b566a' visibility='default'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='tailq' type-id='e7f43f74' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='spdk_pci_driver' size-in-bits='2560' is-struct='yes' visibility='default' id='469e1bd7'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='driver_buf' type-id='62946659' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='2048'>
-        <var-decl name='driver' type-id='f627881a' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='2112'>
-        <var-decl name='name' type-id='80f4b756' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='2176'>
-        <var-decl name='id_table' type-id='0691a753' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='2240'>
-        <var-decl name='drv_flags' type-id='8f92235e' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='2304'>
-        <var-decl name='cb_fn' type-id='963d1819' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='2368'>
-        <var-decl name='cb_arg' type-id='eaa32e2f' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='2432'>
-        <var-decl name='tailq' type-id='e7f43f75' visibility='default'/>
+        <var-decl name='tailq' type-id='e7f43f73' visibility='default'/>
       </data-member>
     </class-decl>
     <class-decl name='spdk_pci_id' size-in-bits='96' is-struct='yes' visibility='default' id='a41463d8'>
@@ -901,7 +774,7 @@
         <var-decl name='subdevice_id' type-id='149c6638' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__1' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f73'>
+    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f72'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='tqe_next' type-id='efc5406b' visibility='default'/>
       </data-member>
@@ -909,7 +782,7 @@
         <var-decl name='tqe_prev' type-id='b4842653' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__2' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f74'>
+    <class-decl name='__anonymous_struct__1' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f73'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='tqe_next' type-id='35ee3f91' visibility='default'/>
       </data-member>
@@ -917,49 +790,33 @@
         <var-decl name='tqe_prev' type-id='a10e5361' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f75'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='tqe_next' type-id='a10bedff' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='tqe_prev' type-id='5ac7664f' visibility='default'/>
-      </data-member>
-    </class-decl>
     <typedef-decl name='__uint16_t' type-id='f0981eec' id='253c2d2a'/>
     <typedef-decl name='__uint8_t' type-id='002ac4a6' id='c51d6389'/>
     <typedef-decl name='spdk_pci_enum_cb' type-id='5761ccbf' id='963d1819'/>
     <typedef-decl name='uint16_t' type-id='253c2d2a' id='149c6638'/>
     <typedef-decl name='uint8_t' type-id='c51d6389' id='b96825af'/>
-    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='2048' id='62946659'>
-      <subrange length='256' type-id='f0981eeb' id='36e5b9fa'/>
-    </array-type-def>
     <type-decl name='unsigned char' size-in-bits='8' id='002ac4a6'/>
     <qualified-type-def type-id='ec72f59a' const='yes' id='e81a0cd5'/>
     <pointer-type-def type-id='e81a0cd5' size-in-bits='64' id='6002756d'/>
     <qualified-type-def type-id='86ef9a2b' const='yes' id='a69f6a68'/>
     <pointer-type-def type-id='a69f6a68' size-in-bits='64' id='8ef445e6'/>
-    <qualified-type-def type-id='a41463d8' const='yes' id='d0365b6b'/>
-    <pointer-type-def type-id='d0365b6b' size-in-bits='64' id='0691a753'/>
     <pointer-type-def type-id='630f2781' size-in-bits='64' id='e3c341c5'/>
     <pointer-type-def type-id='8adce621' size-in-bits='64' id='f6f849ad'/>
     <pointer-type-def type-id='223019a1' size-in-bits='64' id='0f552895'/>
     <pointer-type-def type-id='39eb7efb' size-in-bits='64' id='d0a508c7'/>
     <pointer-type-def type-id='7c9d37e3' size-in-bits='64' id='5761ccbf'/>
-    <pointer-type-def type-id='14fd6a7c' size-in-bits='64' id='f627881a'/>
     <pointer-type-def type-id='ec72f59a' size-in-bits='64' id='a714fad8'/>
     <pointer-type-def type-id='86ef9a2b' size-in-bits='64' id='efc5406b'/>
     <pointer-type-def type-id='efc5406b' size-in-bits='64' id='b4842653'/>
     <pointer-type-def type-id='dec91549' size-in-bits='64' id='35ee3f91'/>
     <pointer-type-def type-id='35ee3f91' size-in-bits='64' id='a10e5361'/>
     <pointer-type-def type-id='469e1bd7' size-in-bits='64' id='a10bedff'/>
-    <pointer-type-def type-id='a10bedff' size-in-bits='64' id='5ac7664f'/>
     <pointer-type-def type-id='a41463d8' size-in-bits='64' id='1f08f56e'/>
     <pointer-type-def type-id='149c6638' size-in-bits='64' id='8a121f49'/>
     <pointer-type-def type-id='8f92235e' size-in-bits='64' id='90421557'/>
     <pointer-type-def type-id='b96825af' size-in-bits='64' id='ae3e8ca6'/>
     <pointer-type-def type-id='8382c070' size-in-bits='64' id='ce0b566a'/>
     <pointer-type-def type-id='28bf3cba' size-in-bits='64' id='6c70ec84'/>
-    <class-decl name='rte_pci_driver' is-struct='yes' visibility='default' is-declaration-only='yes' id='14fd6a7c'/>
     <function-decl name='spdk_pci_driver_register' mangled-name='spdk_pci_driver_register' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_pci_driver_register'>
       <parameter type-id='80f4b756' name='name'/>
       <parameter type-id='1f08f56e' name='id_table'/>
@@ -1170,6 +1027,7 @@
       <parameter type-id='a714fad8' name='pci_addr'/>
       <return type-id='95e97e5e'/>
     </function-decl>
+    <class-decl name='spdk_pci_driver' is-struct='yes' visibility='default' is-declaration-only='yes' id='469e1bd7'/>
     <function-type size-in-bits='64' id='630f2781'>
       <parameter type-id='6002756d'/>
       <return type-id='95e97e5e'/>
@@ -1235,21 +1093,25 @@
     </function-decl>
   </abi-instr>
   <abi-instr address-size='64' path='pci_idxd.c' language='LANG_C99'>
+    <class-decl name='spdk_pci_driver' is-struct='yes' visibility='default' is-declaration-only='yes' id='469e1bd8'/>
     <function-decl name='spdk_pci_idxd_get_driver' mangled-name='spdk_pci_idxd_get_driver' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_pci_idxd_get_driver'>
       <return type-id='a10bedff'/>
     </function-decl>
   </abi-instr>
   <abi-instr address-size='64' path='pci_ioat.c' language='LANG_C99'>
+    <class-decl name='spdk_pci_driver' is-struct='yes' visibility='default' is-declaration-only='yes' id='469e1bd9'/>
     <function-decl name='spdk_pci_ioat_get_driver' mangled-name='spdk_pci_ioat_get_driver' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_pci_ioat_get_driver'>
       <return type-id='a10bedff'/>
     </function-decl>
   </abi-instr>
   <abi-instr address-size='64' path='pci_virtio.c' language='LANG_C99'>
+    <class-decl name='spdk_pci_driver' is-struct='yes' visibility='default' is-declaration-only='yes' id='469e1bda'/>
     <function-decl name='spdk_pci_virtio_get_driver' mangled-name='spdk_pci_virtio_get_driver' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_pci_virtio_get_driver'>
       <return type-id='a10bedff'/>
     </function-decl>
   </abi-instr>
   <abi-instr address-size='64' path='pci_vmd.c' language='LANG_C99'>
+    <class-decl name='spdk_pci_driver' is-struct='yes' visibility='default' is-declaration-only='yes' id='469e1bdb'/>
     <function-decl name='spdk_pci_vmd_get_driver' mangled-name='spdk_pci_vmd_get_driver' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_pci_vmd_get_driver'>
       <return type-id='a10bedff'/>
     </function-decl>

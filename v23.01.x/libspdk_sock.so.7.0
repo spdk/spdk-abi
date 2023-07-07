@@ -335,20 +335,6 @@
         <var-decl name='impl_opts_size' type-id='b59d7dce' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_sock_placement_id_entry' size-in-bits='192' is-struct='yes' visibility='default' id='0baf3933'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='placement_id' type-id='95e97e5e' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='32'>
-        <var-decl name='ref' type-id='8f92235e' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='group' type-id='ad1df54b' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='link' type-id='e7f43f7b' visibility='default'/>
-      </data-member>
-    </class-decl>
     <class-decl name='spdk_sock_request' size-in-bits='448' is-struct='yes' visibility='default' id='6ddea8d2'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='cb_fn' type-id='1ed1e4cd' visibility='default'/>
@@ -395,11 +381,6 @@
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
         <var-decl name='stqh_last' type-id='e72947b3' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='__anonymous_struct__10' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f7b'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='stqe_next' type-id='90ef5363' visibility='default'/>
       </data-member>
     </class-decl>
     <class-decl name='__anonymous_struct__9' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f7a'>
@@ -512,6 +493,7 @@
     <pointer-type-def type-id='48b5725f' size-in-bits='64' id='eaa32e2f'/>
     <class-decl name='spdk_json_write_ctx' is-struct='yes' visibility='default' is-declaration-only='yes' id='2ae61988'/>
     <type-decl name='void' id='48b5725f'/>
+    <class-decl name='spdk_sock_placement_id_entry' is-struct='yes' visibility='default' is-declaration-only='yes' id='0baf3933'/>
     <function-decl name='spdk_sock_map_insert' mangled-name='spdk_sock_map_insert' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_map_insert'>
       <parameter type-id='046fb729' name='map'/>
       <parameter type-id='95e97e5e' name='placement_id'/>

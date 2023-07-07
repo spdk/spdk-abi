@@ -39,32 +39,6 @@
         <var-decl name='iov_len' type-id='b59d7dce' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_memory_domain' size-in-bits='576' is-struct='yes' visibility='default' id='3e1ba880'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='type' type-id='26ce2e0f' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='pull_cb' type-id='e64189f6' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='push_cb' type-id='8e19cbfd' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='translate_cb' type-id='8054d482' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='memzero_cb' type-id='23f1d9ff' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='320'>
-        <var-decl name='link' type-id='e7f43f72' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='448'>
-        <var-decl name='ctx' type-id='c39a030c' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='512'>
-        <var-decl name='id' type-id='26a90f95' visibility='default'/>
-      </data-member>
-    </class-decl>
     <class-decl name='spdk_memory_domain_ctx' size-in-bits='128' is-struct='yes' visibility='default' id='baa327a6'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='size' type-id='b59d7dce' visibility='default'/>
@@ -101,15 +75,7 @@
         <var-decl name='' type-id='ac5ab596' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__2' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f72'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='tqe_next' type-id='e5ecc906' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='tqe_prev' type-id='1fc0b044' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='__anonymous_struct__1' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f73'>
+    <class-decl name='__anonymous_struct__1' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f72'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='lkey' type-id='8f92235e' visibility='default'/>
       </data-member>
@@ -117,7 +83,7 @@
         <var-decl name='rkey' type-id='8f92235e' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f74'>
+    <class-decl name='__anonymous_struct__' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f73'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='ibv_qp' type-id='eaa32e2f' visibility='default'/>
       </data-member>
@@ -133,18 +99,17 @@
     <typedef-decl name='uint32_t' type-id='62f1140c' id='8f92235e'/>
     <union-decl name='__anonymous_union__1' size-in-bits='64' is-anonymous='yes' visibility='default' id='ac5ab596'>
       <data-member access='public'>
-        <var-decl name='rdma' type-id='e7f43f73' visibility='default'/>
+        <var-decl name='rdma' type-id='e7f43f72' visibility='default'/>
       </data-member>
     </union-decl>
     <union-decl name='__anonymous_union__' size-in-bits='64' is-anonymous='yes' visibility='default' id='ac5ab595'>
       <data-member access='public'>
-        <var-decl name='rdma' type-id='e7f43f74' visibility='default'/>
+        <var-decl name='rdma' type-id='e7f43f73' visibility='default'/>
       </data-member>
     </union-decl>
     <type-decl name='unnamed-enum-underlying-type-32' is-anonymous='yes' size-in-bits='32' alignment-in-bits='32' id='9cac1fee'/>
     <type-decl name='unsigned int' size-in-bits='32' id='f0981eeb'/>
     <type-decl name='unsigned long int' size-in-bits='64' id='f0981eec'/>
-    <pointer-type-def type-id='a84c031d' size-in-bits='64' id='26a90f95'/>
     <qualified-type-def type-id='a84c031d' const='yes' id='9b45d938'/>
     <pointer-type-def type-id='9b45d938' size-in-bits='64' id='80f4b756'/>
     <pointer-type-def type-id='8144021e' size-in-bits='64' id='8b000850'/>
@@ -159,6 +124,7 @@
     <pointer-type-def type-id='2922fb19' size-in-bits='64' id='1ed1e4cd'/>
     <pointer-type-def type-id='48b5725f' size-in-bits='64' id='eaa32e2f'/>
     <type-decl name='void' id='48b5725f'/>
+    <class-decl name='spdk_memory_domain' is-struct='yes' visibility='default' is-declaration-only='yes' id='3e1ba880'/>
     <function-decl name='spdk_memory_domain_create' mangled-name='spdk_memory_domain_create' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_memory_domain_create'>
       <parameter type-id='1fc0b044' name='_domain'/>
       <parameter type-id='26ce2e0f' name='type'/>
@@ -253,33 +219,33 @@
       <return type-id='e5ecc906'/>
     </function-decl>
     <function-type size-in-bits='64' id='8144021e'>
-      <parameter type-id='e5ecc906'/>
-      <parameter type-id='eaa32e2f'/>
-      <parameter type-id='cc4b1be9'/>
-      <parameter type-id='8f92235e'/>
-      <parameter type-id='cc4b1be9'/>
-      <parameter type-id='8f92235e'/>
-      <parameter type-id='de59bad4'/>
-      <parameter type-id='eaa32e2f'/>
+      <parameter type-id='e5ecc906' name='dst_domain'/>
+      <parameter type-id='eaa32e2f' name='dst_domain_ctx'/>
+      <parameter type-id='cc4b1be9' name='dst_iov'/>
+      <parameter type-id='8f92235e' name='dst_iovcnt'/>
+      <parameter type-id='cc4b1be9' name='src_iov'/>
+      <parameter type-id='8f92235e' name='src_iovcnt'/>
+      <parameter type-id='de59bad4' name='cpl_cb'/>
+      <parameter type-id='eaa32e2f' name='cpl_cb_arg'/>
       <return type-id='95e97e5e'/>
     </function-type>
     <function-type size-in-bits='64' id='a78d43c8'>
-      <parameter type-id='e5ecc906'/>
-      <parameter type-id='eaa32e2f'/>
-      <parameter type-id='cc4b1be9'/>
-      <parameter type-id='8f92235e'/>
-      <parameter type-id='de59bad4'/>
-      <parameter type-id='eaa32e2f'/>
+      <parameter type-id='e5ecc906' name='domain'/>
+      <parameter type-id='eaa32e2f' name='domain_ctx'/>
+      <parameter type-id='cc4b1be9' name='iov'/>
+      <parameter type-id='8f92235e' name='iovcnt'/>
+      <parameter type-id='de59bad4' name='cpl_cb'/>
+      <parameter type-id='eaa32e2f' name='cpl_cb_arg'/>
       <return type-id='95e97e5e'/>
     </function-type>
     <function-type size-in-bits='64' id='314ee1dd'>
-      <parameter type-id='e5ecc906'/>
-      <parameter type-id='eaa32e2f'/>
-      <parameter type-id='e5ecc906'/>
-      <parameter type-id='c2c04d78'/>
-      <parameter type-id='eaa32e2f'/>
-      <parameter type-id='b59d7dce'/>
-      <parameter type-id='00eab8b6'/>
+      <parameter type-id='e5ecc906' name='src_domain'/>
+      <parameter type-id='eaa32e2f' name='src_domain_ctx'/>
+      <parameter type-id='e5ecc906' name='dst_domain'/>
+      <parameter type-id='c2c04d78' name='dst_domain_ctx'/>
+      <parameter type-id='eaa32e2f' name='addr'/>
+      <parameter type-id='b59d7dce' name='len'/>
+      <parameter type-id='00eab8b6' name='result'/>
       <return type-id='95e97e5e'/>
     </function-type>
     <function-type size-in-bits='64' id='2922fb19'>

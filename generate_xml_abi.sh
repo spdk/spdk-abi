@@ -166,6 +166,7 @@ echo "$(gitc rev-parse HEAD)" > "$xml_dir/revision"
 abidw_params="--type-id-style hash --drop-private-types --drop-undefined-syms"
 abidw_params+=" --no-architecture --no-comp-dir-path --no-show-locs"
 abidw_params+=" --no-corpus-path"
+abidw_params+=" --headers-dir $xml_dir/include/"
 
 for object in "$spdk_dir"/build/lib/libspdk_*.so; do
 	libname=$(readlink $object)

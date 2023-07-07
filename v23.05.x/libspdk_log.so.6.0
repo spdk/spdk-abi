@@ -246,49 +246,6 @@
     </function-type>
   </abi-instr>
   <abi-instr address-size='64' path='log_deprecated.c' language='LANG_C99'>
-    <array-type-def dimensions='1' type-id='9b45d938' size-in-bits='128' id='8d43b1f5'>
-      <subrange length='16' type-id='f0981eeb' id='848d0938'/>
-    </array-type-def>
-    <array-type-def dimensions='1' type-id='9b45d938' size-in-bits='256' id='639bec1b'>
-      <subrange length='32' type-id='f0981eeb' id='ae5bde82'/>
-    </array-type-def>
-    <array-type-def dimensions='1' type-id='9b45d938' size-in-bits='512' id='c779cdc2'>
-      <subrange length='64' type-id='f0981eeb' id='b10be967'/>
-    </array-type-def>
-    <class-decl name='spdk_deprecation' size-in-bits='1280' is-struct='yes' visibility='default' id='9eea344e'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='tag' type-id='639bec1b' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='desc' type-id='c779cdc2' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='768'>
-        <var-decl name='remove' type-id='8d43b1f5' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='896'>
-        <var-decl name='link' type-id='e7f43f72' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='1024'>
-        <var-decl name='hits' type-id='9c313c2d' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='1088'>
-        <var-decl name='interval' type-id='9c313c2d' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='1152'>
-        <var-decl name='deferred' type-id='8f92235e' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='1216'>
-        <var-decl name='last_log' type-id='9c313c2d' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f72'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='tqe_next' type-id='e1c4d514' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='tqe_prev' type-id='a6dbb09a' visibility='default'/>
-      </data-member>
-    </class-decl>
     <typedef-decl name='__uint32_t' type-id='f0981eed' id='62f1140c'/>
     <typedef-decl name='__uint64_t' type-id='f0981eeb' id='8910171f'/>
     <typedef-decl name='spdk_log_for_each_deprecation_fn' type-id='f3b880d6' id='2a1ead45'/>
@@ -299,6 +256,7 @@
     <pointer-type-def type-id='ddc88dac' size-in-bits='64' id='f3b880d6'/>
     <pointer-type-def type-id='9eea344e' size-in-bits='64' id='e1c4d514'/>
     <pointer-type-def type-id='e1c4d514' size-in-bits='64' id='a6dbb09a'/>
+    <class-decl name='spdk_deprecation' is-struct='yes' visibility='default' is-declaration-only='yes' id='9eea344e'/>
     <function-decl name='spdk_log_deprecation_register' mangled-name='spdk_log_deprecation_register' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_log_deprecation_register'>
       <parameter type-id='80f4b756' name='tag'/>
       <parameter type-id='80f4b756' name='description'/>
@@ -344,7 +302,7 @@
   <abi-instr address-size='64' path='log_flags.c' language='LANG_C99'>
     <class-decl name='spdk_log_flag' size-in-bits='256' is-struct='yes' visibility='default' id='c29bb739'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='tailq' type-id='e7f43f73' visibility='default'/>
+        <var-decl name='tailq' type-id='e7f43f72' visibility='default'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
         <var-decl name='name' type-id='80f4b756' visibility='default'/>
@@ -353,7 +311,7 @@
         <var-decl name='enabled' type-id='c894953d' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f73'>
+    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f72'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='tqe_next' type-id='ce203111' visibility='default'/>
       </data-member>

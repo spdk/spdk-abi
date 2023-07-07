@@ -75,14 +75,6 @@
         <var-decl name='rbh_root' type-id='a16313d5' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='degraded_lvols' size-in-bits='128' is-struct='yes' visibility='default' id='c571c8e6'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='tqh_first' type-id='b1c2c545' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='tqh_last' type-id='449ccdbd' visibility='default'/>
-      </data-member>
-    </class-decl>
     <class-decl name='iovec' size-in-bits='128' is-struct='yes' visibility='default' id='0f042891'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='iov_base' type-id='eaa32e2f' visibility='default'/>
@@ -275,23 +267,6 @@
         <var-decl name='thread' type-id='f8fcfe66' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_lvs_degraded_lvol_set' size-in-bits='512' is-struct='yes' visibility='default' id='d2ba3c35'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='lvol_store' type-id='4c655657' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='esnap_id' type-id='eaa32e2f' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='id_len' type-id='8f92235e' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='lvols' type-id='c571c8e6' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='320'>
-        <var-decl name='node' type-id='e7f43f75' visibility='default'/>
-      </data-member>
-    </class-decl>
     <class-decl name='spdk_lvs_opts' size-in-bits='704' is-struct='yes' visibility='default' id='3543c05e'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='cluster_sz' type-id='8f92235e' visibility='default'/>
@@ -317,7 +292,7 @@
         <var-decl name='u' type-id='ac5ab595' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__5' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f72'>
+    <class-decl name='__anonymous_struct__4' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f72'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='tqe_next' type-id='b1c2c545' visibility='default'/>
       </data-member>
@@ -339,17 +314,6 @@
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
         <var-decl name='tqe_prev' type-id='c08726c7' visibility='default'/>
-      </data-member>
-    </class-decl>
-    <class-decl name='__anonymous_struct__4' size-in-bits='192' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f75'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='rbe_left' type-id='a16313d5' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='rbe_right' type-id='a16313d5' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='rbe_parent' type-id='a16313d5' visibility='default'/>
       </data-member>
     </class-decl>
     <typedef-decl name='__uint32_t' type-id='f0981eec' id='62f1140c'/>
@@ -432,6 +396,7 @@
     <class-decl name='spdk_memory_domain' is-struct='yes' visibility='default' is-declaration-only='yes' id='3e1ba880'/>
     <class-decl name='spdk_thread' is-struct='yes' visibility='default' is-declaration-only='yes' id='ef0f6b10'/>
     <type-decl name='void' id='48b5725f'/>
+    <class-decl name='spdk_lvs_degraded_lvol_set' is-struct='yes' visibility='default' is-declaration-only='yes' id='d2ba3c35'/>
     <function-decl name='spdk_lvol_open' mangled-name='spdk_lvol_open' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_lvol_open'>
       <parameter type-id='b1c2c545' name='lvol'/>
       <parameter type-id='7c4e9e6e' name='cb_fn'/>

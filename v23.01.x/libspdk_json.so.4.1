@@ -327,47 +327,16 @@
         <var-decl name='reg_save_area' type-id='eaa32e2f' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_json_write_ctx' size-in-bits='33088' is-struct='yes' visibility='default' id='2ae61988'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='write_cb' type-id='f0a32ff7' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='cb_ctx' type-id='eaa32e2f' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='flags' type-id='8f92235e' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='160'>
-        <var-decl name='indent' type-id='8f92235e' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='new_indent' type-id='c894953d' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='200'>
-        <var-decl name='first_value' type-id='c894953d' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='208'>
-        <var-decl name='failed' type-id='c894953d' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='buf_filled' type-id='b59d7dce' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='320'>
-        <var-decl name='buf' type-id='2b55acb1' visibility='default'/>
-      </data-member>
-    </class-decl>
     <typedef-decl name='__int64_t' type-id='95e97e5e' id='0c9942d2'/>
     <typedef-decl name='int64_t' type-id='0c9942d2' id='9da381c4'/>
     <typedef-decl name='spdk_json_write_cb' type-id='40a3f6a3' id='f0a32ff7'/>
-    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='32768' id='2b55acb1'>
-      <subrange length='4096' type-id='f0981eec' id='bc1b5ddc'/>
-    </array-type-def>
     <pointer-type-def type-id='d5027220' size-in-bits='64' id='b7f2d5e6'/>
     <qualified-type-def type-id='149c6638' const='yes' id='b01a5ac8'/>
     <pointer-type-def type-id='b01a5ac8' size-in-bits='64' id='1b7d11c6'/>
     <pointer-type-def type-id='ca4f66ef' size-in-bits='64' id='40a3f6a3'/>
     <pointer-type-def type-id='2ae61988' size-in-bits='64' id='b8e14bfe'/>
     <type-decl name='variadic parameter type' id='2c1145c5'/>
+    <class-decl name='spdk_json_write_ctx' is-struct='yes' visibility='default' is-declaration-only='yes' id='2ae61988'/>
     <function-decl name='spdk_json_write_begin' mangled-name='spdk_json_write_begin' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_begin'>
       <parameter type-id='f0a32ff7' name='write_cb'/>
       <parameter type-id='eaa32e2f' name='cb_ctx'/>

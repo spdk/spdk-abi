@@ -25,20 +25,7 @@
     <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='2048' id='d1617432'>
       <subrange length='256' type-id='f0981eeb' id='36e5b9fa'/>
     </array-type-def>
-    <class-decl name='compare_entry_key' size-in-bits='8' visibility='default' id='07bb2877'>
-      <member-function access='public' const='yes'>
-        <function-decl name='operator()' mangled-name='_ZNK17compare_entry_keyclERK9entry_keyS2_' visibility='default' binding='global' size-in-bits='64'>
-          <parameter type-id='005f987a' is-artificial='yes'/>
-          <parameter type-id='6ddf2916'/>
-          <parameter type-id='6ddf2916'/>
-          <return type-id='c894953d'/>
-        </function-decl>
-      </member-function>
-    </class-decl>
     <type-decl name='int' size-in-bits='32' id='95e97e5e'/>
-    <array-type-def dimensions='1' type-id='be4f2eca' size-in-bits='212992' id='38a4336b'>
-      <subrange length='256' type-id='f0981eeb' id='36e5b9fa'/>
-    </array-type-def>
     <array-type-def dimensions='1' type-id='e60ad0bd' size-in-bits='1024' id='b82d72d1'>
       <subrange length='8' type-id='f0981eeb' id='56e0c0b1'/>
     </array-type-def>
@@ -60,83 +47,6 @@
     <array-type-def dimensions='1' type-id='40439314' size-in-bits='1556480' id='5592008d'>
       <subrange length='1024' type-id='f0981eeb' id='c60446f8'/>
     </array-type-def>
-    <class-decl name='argument_context' size-in-bits='256' is-struct='yes' visibility='default' id='6133b99a'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='entry' type-id='fa7ac988' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='buffer' type-id='84dd8065' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='lcore' type-id='149c6638' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='offset' type-id='b59d7dce' visibility='default'/>
-      </data-member>
-      <member-function access='public' constructor='yes'>
-        <function-decl name='argument_context' mangled-name='_ZN16argument_contextC4EP16spdk_trace_entryt' visibility='default' binding='global' size-in-bits='64'>
-          <parameter type-id='e2ad54c8' is-artificial='yes'/>
-          <parameter type-id='fa7ac988'/>
-          <parameter type-id='149c6638'/>
-          <return type-id='48b5725f'/>
-        </function-decl>
-      </member-function>
-      <member-function access='public' constructor='yes'>
-        <function-decl name='argument_context' mangled-name='_ZN16argument_contextC2EP16spdk_trace_entryt' visibility='default' binding='global' size-in-bits='64'>
-          <parameter type-id='e2ad54c8' is-artificial='yes'/>
-          <parameter type-id='fa7ac988'/>
-          <parameter type-id='149c6638'/>
-          <return type-id='48b5725f'/>
-        </function-decl>
-      </member-function>
-    </class-decl>
-    <class-decl name='entry_key' size-in-bits='128' is-struct='yes' visibility='default' id='d5f43fcb'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='lcore' type-id='149c6638' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='tsc' type-id='9c313c2d' visibility='default'/>
-      </data-member>
-      <member-function access='public' constructor='yes'>
-        <function-decl name='entry_key' mangled-name='_ZN9entry_keyC4Etm' visibility='default' binding='global' size-in-bits='64'>
-          <parameter type-id='ee97790b' is-artificial='yes'/>
-          <parameter type-id='149c6638'/>
-          <parameter type-id='9c313c2d'/>
-          <return type-id='48b5725f'/>
-        </function-decl>
-      </member-function>
-      <member-function access='public' constructor='yes'>
-        <function-decl name='entry_key' mangled-name='_ZN9entry_keyC2Etm' visibility='default' binding='global' size-in-bits='64'>
-          <parameter type-id='ee97790b' is-artificial='yes'/>
-          <parameter type-id='149c6638'/>
-          <parameter type-id='9c313c2d'/>
-          <return type-id='48b5725f'/>
-        </function-decl>
-      </member-function>
-    </class-decl>
-    <class-decl name='object_stats' size-in-bits='832' is-struct='yes' visibility='default' id='be4f2eca'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='index' type-id='5dfabd08' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='384'>
-        <var-decl name='start' type-id='5dfabd08' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='768'>
-        <var-decl name='counter' type-id='9c313c2d' visibility='default'/>
-      </data-member>
-      <member-function access='public' constructor='yes'>
-        <function-decl name='object_stats' mangled-name='_ZN12object_statsC4Ev' visibility='default' binding='global' size-in-bits='64'>
-          <parameter type-id='9b212168' is-artificial='yes'/>
-          <return type-id='48b5725f'/>
-        </function-decl>
-      </member-function>
-      <member-function access='public' constructor='yes'>
-        <function-decl name='object_stats' mangled-name='_ZN12object_statsC2Ev' visibility='default' binding='global' size-in-bits='64'>
-          <parameter type-id='9b212168' is-artificial='yes'/>
-          <return type-id='48b5725f'/>
-        </function-decl>
-      </member-function>
-    </class-decl>
     <class-decl name='spdk_trace_argument' size-in-bits='128' is-struct='yes' visibility='default' id='e60ad0bd'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='name' type-id='f01a039e' visibility='default'/>
@@ -199,14 +109,6 @@
         <var-decl name='lcore_history_offsets' type-id='88063d40' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_trace_histories' size-in-bits='1574016' is-struct='yes' visibility='default' id='b02e5352'>
-      <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='flags' type-id='ad19717d' visibility='default'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='1574016'>
-        <var-decl name='per_lcore_history' type-id='048fe7bc' visibility='default'/>
-      </data-member>
-    </class-decl>
     <class-decl name='spdk_trace_history' size-in-bits='65728' is-struct='yes' visibility='default' id='df924bc2'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='lcore' type-id='95e97e5e' visibility='default'/>
@@ -239,122 +141,6 @@
       <data-member access='public' layout-offset-in-bits='8'>
         <var-decl name='id_prefix' type-id='a84c031d' visibility='default'/>
       </data-member>
-    </class-decl>
-    <class-decl name='spdk_trace_parser' size-in-bits='213696' is-struct='yes' visibility='default' id='f521e795'>
-      <data-member access='private' layout-offset-in-bits='0'>
-        <var-decl name='_histories' type-id='ef0ac650' visibility='default'/>
-      </data-member>
-      <data-member access='private' layout-offset-in-bits='64'>
-        <var-decl name='_map_size' type-id='b59d7dce' visibility='default'/>
-      </data-member>
-      <data-member access='private' layout-offset-in-bits='128'>
-        <var-decl name='_fd' type-id='95e97e5e' visibility='default'/>
-      </data-member>
-      <data-member access='private' layout-offset-in-bits='192'>
-        <var-decl name='_tsc_offset' type-id='9c313c2d' visibility='default'/>
-      </data-member>
-      <data-member access='private' layout-offset-in-bits='256'>
-        <var-decl name='_entries' type-id='e0169a79' visibility='default'/>
-      </data-member>
-      <data-member access='private' layout-offset-in-bits='640'>
-        <var-decl name='_iter' type-id='12013bed' visibility='default'/>
-      </data-member>
-      <data-member access='private' layout-offset-in-bits='704'>
-        <var-decl name='_stats' type-id='38a4336b' visibility='default'/>
-      </data-member>
-      <member-function access='public' destructor='yes'>
-        <function-decl name='~spdk_trace_parser' mangled-name='_ZN17spdk_trace_parserD4Ev' visibility='default' binding='global' size-in-bits='64'>
-          <parameter type-id='0baf5fc5' is-artificial='yes'/>
-          <parameter type-id='95e97e5e' is-artificial='yes'/>
-          <return type-id='48b5725f'/>
-        </function-decl>
-      </member-function>
-      <member-function access='public' destructor='yes'>
-        <function-decl name='~spdk_trace_parser' mangled-name='_ZN17spdk_trace_parserD2Ev' visibility='default' binding='global' size-in-bits='64'>
-          <parameter type-id='0baf5fc5' is-artificial='yes'/>
-          <parameter type-id='95e97e5e' is-artificial='yes'/>
-          <return type-id='48b5725f'/>
-        </function-decl>
-      </member-function>
-      <member-function access='public' constructor='yes'>
-        <function-decl name='spdk_trace_parser' mangled-name='_ZN17spdk_trace_parserC4EPK22spdk_trace_parser_opts' visibility='default' binding='global' size-in-bits='64'>
-          <parameter type-id='0baf5fc5' is-artificial='yes'/>
-          <parameter type-id='bdff52fd'/>
-          <return type-id='48b5725f'/>
-        </function-decl>
-      </member-function>
-      <member-function access='public' constructor='yes'>
-        <function-decl name='spdk_trace_parser' mangled-name='_ZN17spdk_trace_parserC2EPK22spdk_trace_parser_opts' visibility='default' binding='global' size-in-bits='64'>
-          <parameter type-id='0baf5fc5' is-artificial='yes'/>
-          <parameter type-id='bdff52fd'/>
-          <return type-id='48b5725f'/>
-        </function-decl>
-      </member-function>
-      <member-function access='private'>
-        <function-decl name='cleanup' mangled-name='_ZN17spdk_trace_parser7cleanupEv' visibility='default' binding='global' size-in-bits='64'>
-          <parameter type-id='0baf5fc5' is-artificial='yes'/>
-          <return type-id='48b5725f'/>
-        </function-decl>
-      </member-function>
-      <member-function access='private'>
-        <function-decl name='init' mangled-name='_ZN17spdk_trace_parser4initEPK22spdk_trace_parser_opts' visibility='default' binding='global' size-in-bits='64'>
-          <parameter type-id='0baf5fc5' is-artificial='yes'/>
-          <parameter type-id='bdff52fd'/>
-          <return type-id='c894953d'/>
-        </function-decl>
-      </member-function>
-      <member-function access='private'>
-        <function-decl name='populate_events' mangled-name='_ZN17spdk_trace_parser15populate_eventsEP18spdk_trace_historyi' visibility='default' binding='global' size-in-bits='64'>
-          <parameter type-id='0baf5fc5' is-artificial='yes'/>
-          <parameter type-id='96e305e0'/>
-          <parameter type-id='95e97e5e'/>
-          <return type-id='48b5725f'/>
-        </function-decl>
-      </member-function>
-      <member-function access='public'>
-        <function-decl name='next_entry' mangled-name='_ZN17spdk_trace_parser10next_entryEP23spdk_trace_parser_entry' visibility='default' binding='global' size-in-bits='64'>
-          <parameter type-id='0baf5fc5' is-artificial='yes'/>
-          <parameter type-id='a8e16cac'/>
-          <return type-id='c894953d'/>
-        </function-decl>
-      </member-function>
-      <member-function access='private'>
-        <function-decl name='build_arg' mangled-name='_ZN17spdk_trace_parser9build_argEP16argument_contextPK19spdk_trace_argumentiP23spdk_trace_parser_entry' visibility='default' binding='global' size-in-bits='64'>
-          <parameter type-id='0baf5fc5' is-artificial='yes'/>
-          <parameter type-id='e2ad54c8'/>
-          <parameter type-id='ed55448c'/>
-          <parameter type-id='95e97e5e'/>
-          <parameter type-id='a8e16cac'/>
-          <return type-id='c894953d'/>
-        </function-decl>
-      </member-function>
-      <member-function access='private'>
-        <function-decl name='get_next_buffer' mangled-name='_ZN17spdk_trace_parser15get_next_bufferEP23spdk_trace_entry_buffert' visibility='default' binding='global' size-in-bits='64'>
-          <parameter type-id='0baf5fc5' is-artificial='yes'/>
-          <parameter type-id='84dd8065'/>
-          <parameter type-id='149c6638'/>
-          <return type-id='84dd8065'/>
-        </function-decl>
-      </member-function>
-      <member-function access='public' const='yes'>
-        <function-decl name='entry_count' mangled-name='_ZNK17spdk_trace_parser11entry_countEt' visibility='default' binding='global' size-in-bits='64'>
-          <parameter type-id='db279d48' is-artificial='yes'/>
-          <parameter type-id='149c6638'/>
-          <return type-id='9c313c2d'/>
-        </function-decl>
-      </member-function>
-      <member-function access='public' const='yes'>
-        <function-decl name='tsc_offset' mangled-name='_ZNK17spdk_trace_parser10tsc_offsetEv' visibility='default' binding='global' size-in-bits='64'>
-          <parameter type-id='db279d48' is-artificial='yes'/>
-          <return type-id='9c313c2d'/>
-        </function-decl>
-      </member-function>
-      <member-function access='public' const='yes'>
-        <function-decl name='flags' mangled-name='_ZNK17spdk_trace_parser5flagsEv' visibility='default' binding='global' size-in-bits='64'>
-          <parameter type-id='db279d48' is-artificial='yes'/>
-          <return type-id='581e47ea'/>
-        </function-decl>
-      </member-function>
     </class-decl>
     <class-decl name='spdk_trace_parser_entry' size-in-bits='16768' is-struct='yes' visibility='default' id='a0078a86'>
       <member-type access='public'>
@@ -443,8 +229,6 @@
     <typedef-decl name='__uint32_t' type-id='f0981eed' id='62f1140c'/>
     <typedef-decl name='__uint64_t' type-id='f0981eeb' id='8910171f'/>
     <typedef-decl name='__uint8_t' type-id='002ac4a6' id='c51d6389'/>
-    <typedef-decl name='entry_map' type-id='564cd87e' id='e0169a79'/>
-    <typedef-decl name='size_t' type-id='f0981eeb' id='b59d7dce'/>
     <typedef-decl name='uint16_t' type-id='253c2d2a' id='149c6638'/>
     <typedef-decl name='uint32_t' type-id='62f1140c' id='8f92235e'/>
     <typedef-decl name='uint64_t' type-id='8910171f' id='9c313c2d'/>
@@ -463,9 +247,6 @@
     </array-type-def>
     <array-type-def dimensions='1' type-id='b96825af' size-in-bits='64' id='13339fda'>
       <subrange length='8' type-id='f0981eeb' id='56e0c0b1'/>
-    </array-type-def>
-    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='infinite' id='048fe7bc'>
-      <subrange length='infinite' type-id='f0981eeb' id='031f2035'/>
     </array-type-def>
     <type-decl name='unnamed-enum-underlying-type-32' is-anonymous='yes' size-in-bits='32' alignment-in-bits='32' id='9cac1fee'/>
     <type-decl name='unsigned char' size-in-bits='8' id='002ac4a6'/>
@@ -497,7 +278,6 @@
     <qualified-type-def type-id='ad19717d' const='yes' id='aa07b284'/>
     <pointer-type-def type-id='aa07b284' size-in-bits='64' id='581e47ea'/>
     <qualified-type-def type-id='f521e795' const='yes' id='f6a35ab2'/>
-    <reference-type-def kind='lvalue' type-id='f6a35ab2' size-in-bits='64' id='d72796fc'/>
     <pointer-type-def type-id='f6a35ab2' size-in-bits='64' id='db279d48'/>
     <qualified-type-def type-id='2483749c' const='yes' id='cece7305'/>
     <pointer-type-def type-id='cece7305' size-in-bits='64' id='bdff52fd'/>
@@ -654,9 +434,7 @@
     <pointer-type-def type-id='be4f2eca' size-in-bits='64' id='9b212168'/>
     <pointer-type-def type-id='8f64032a' size-in-bits='64' id='fa7ac988'/>
     <pointer-type-def type-id='fcade665' size-in-bits='64' id='84dd8065'/>
-    <pointer-type-def type-id='b02e5352' size-in-bits='64' id='ef0ac650'/>
     <pointer-type-def type-id='df924bc2' size-in-bits='64' id='96e305e0'/>
-    <reference-type-def kind='lvalue' type-id='f521e795' size-in-bits='64' id='0faf6611'/>
     <pointer-type-def type-id='f521e795' size-in-bits='64' id='0baf5fc5'/>
     <pointer-type-def type-id='a0078a86' size-in-bits='64' id='a8e16cac'/>
     <reference-type-def kind='lvalue' type-id='c1dd2ae2' size-in-bits='64' id='5e6dae04'/>
@@ -777,6 +555,161 @@
     <pointer-type-def type-id='243959fb' size-in-bits='64' id='949e190b'/>
     <pointer-type-def type-id='48b5725f' size-in-bits='64' id='eaa32e2f'/>
     <type-decl name='void' id='48b5725f'/>
+    <class-decl name='entry_key' is-struct='yes' visibility='default' is-declaration-only='yes' id='d5f43fcb'>
+      <member-function access='public' constructor='yes'>
+        <function-decl name='entry_key' mangled-name='_ZN9entry_keyC4Etm' visibility='default' binding='global' size-in-bits='64'>
+          <parameter type-id='ee97790b' is-artificial='yes'/>
+          <parameter type-id='149c6638'/>
+          <parameter type-id='9c313c2d'/>
+          <return type-id='48b5725f'/>
+        </function-decl>
+      </member-function>
+      <member-function access='public' constructor='yes'>
+        <function-decl name='entry_key' mangled-name='_ZN9entry_keyC2Etm' visibility='default' binding='global' size-in-bits='64'>
+          <parameter type-id='ee97790b' is-artificial='yes'/>
+          <parameter type-id='149c6638'/>
+          <parameter type-id='9c313c2d'/>
+          <return type-id='48b5725f'/>
+        </function-decl>
+      </member-function>
+    </class-decl>
+    <class-decl name='compare_entry_key' visibility='default' is-declaration-only='yes' id='07bb2877'>
+      <member-function access='public' const='yes'>
+        <function-decl name='operator()' mangled-name='_ZNK17compare_entry_keyclERK9entry_keyS2_' visibility='default' binding='global' size-in-bits='64'>
+          <parameter type-id='005f987a' is-artificial='yes'/>
+          <parameter type-id='6ddf2916'/>
+          <parameter type-id='6ddf2916'/>
+          <return type-id='c894953d'/>
+        </function-decl>
+      </member-function>
+    </class-decl>
+    <class-decl name='argument_context' is-struct='yes' visibility='default' is-declaration-only='yes' id='6133b99a'>
+      <member-function access='public' constructor='yes'>
+        <function-decl name='argument_context' mangled-name='_ZN16argument_contextC4EP16spdk_trace_entryt' visibility='default' binding='global' size-in-bits='64'>
+          <parameter type-id='e2ad54c8' is-artificial='yes'/>
+          <parameter type-id='fa7ac988'/>
+          <parameter type-id='149c6638'/>
+          <return type-id='48b5725f'/>
+        </function-decl>
+      </member-function>
+      <member-function access='public' constructor='yes'>
+        <function-decl name='argument_context' mangled-name='_ZN16argument_contextC2EP16spdk_trace_entryt' visibility='default' binding='global' size-in-bits='64'>
+          <parameter type-id='e2ad54c8' is-artificial='yes'/>
+          <parameter type-id='fa7ac988'/>
+          <parameter type-id='149c6638'/>
+          <return type-id='48b5725f'/>
+        </function-decl>
+      </member-function>
+    </class-decl>
+    <class-decl name='object_stats' is-struct='yes' visibility='default' is-declaration-only='yes' id='be4f2eca'>
+      <member-function access='public' constructor='yes'>
+        <function-decl name='object_stats' mangled-name='_ZN12object_statsC4Ev' visibility='default' binding='global' size-in-bits='64'>
+          <parameter type-id='9b212168' is-artificial='yes'/>
+          <return type-id='48b5725f'/>
+        </function-decl>
+      </member-function>
+      <member-function access='public' constructor='yes'>
+        <function-decl name='object_stats' mangled-name='_ZN12object_statsC2Ev' visibility='default' binding='global' size-in-bits='64'>
+          <parameter type-id='9b212168' is-artificial='yes'/>
+          <return type-id='48b5725f'/>
+        </function-decl>
+      </member-function>
+    </class-decl>
+    <class-decl name='spdk_trace_parser' is-struct='yes' visibility='default' is-declaration-only='yes' id='f521e795'>
+      <member-function access='public' destructor='yes'>
+        <function-decl name='~spdk_trace_parser' mangled-name='_ZN17spdk_trace_parserD4Ev' visibility='default' binding='global' size-in-bits='64'>
+          <parameter type-id='0baf5fc5' is-artificial='yes'/>
+          <parameter type-id='95e97e5e' is-artificial='yes'/>
+          <return type-id='48b5725f'/>
+        </function-decl>
+      </member-function>
+      <member-function access='public' destructor='yes'>
+        <function-decl name='~spdk_trace_parser' mangled-name='_ZN17spdk_trace_parserD2Ev' visibility='default' binding='global' size-in-bits='64'>
+          <parameter type-id='0baf5fc5' is-artificial='yes'/>
+          <parameter type-id='95e97e5e' is-artificial='yes'/>
+          <return type-id='48b5725f'/>
+        </function-decl>
+      </member-function>
+      <member-function access='public' constructor='yes'>
+        <function-decl name='spdk_trace_parser' mangled-name='_ZN17spdk_trace_parserC4EPK22spdk_trace_parser_opts' visibility='default' binding='global' size-in-bits='64'>
+          <parameter type-id='0baf5fc5' is-artificial='yes'/>
+          <parameter type-id='bdff52fd'/>
+          <return type-id='48b5725f'/>
+        </function-decl>
+      </member-function>
+      <member-function access='public' constructor='yes'>
+        <function-decl name='spdk_trace_parser' mangled-name='_ZN17spdk_trace_parserC2EPK22spdk_trace_parser_opts' visibility='default' binding='global' size-in-bits='64'>
+          <parameter type-id='0baf5fc5' is-artificial='yes'/>
+          <parameter type-id='bdff52fd'/>
+          <return type-id='48b5725f'/>
+        </function-decl>
+      </member-function>
+      <member-function access='private'>
+        <function-decl name='cleanup' mangled-name='_ZN17spdk_trace_parser7cleanupEv' visibility='default' binding='global' size-in-bits='64'>
+          <parameter type-id='0baf5fc5' is-artificial='yes'/>
+          <return type-id='48b5725f'/>
+        </function-decl>
+      </member-function>
+      <member-function access='private'>
+        <function-decl name='init' mangled-name='_ZN17spdk_trace_parser4initEPK22spdk_trace_parser_opts' visibility='default' binding='global' size-in-bits='64'>
+          <parameter type-id='0baf5fc5' is-artificial='yes'/>
+          <parameter type-id='bdff52fd'/>
+          <return type-id='c894953d'/>
+        </function-decl>
+      </member-function>
+      <member-function access='private'>
+        <function-decl name='populate_events' mangled-name='_ZN17spdk_trace_parser15populate_eventsEP18spdk_trace_historyi' visibility='default' binding='global' size-in-bits='64'>
+          <parameter type-id='0baf5fc5' is-artificial='yes'/>
+          <parameter type-id='96e305e0'/>
+          <parameter type-id='95e97e5e'/>
+          <return type-id='48b5725f'/>
+        </function-decl>
+      </member-function>
+      <member-function access='public'>
+        <function-decl name='next_entry' mangled-name='_ZN17spdk_trace_parser10next_entryEP23spdk_trace_parser_entry' visibility='default' binding='global' size-in-bits='64'>
+          <parameter type-id='0baf5fc5' is-artificial='yes'/>
+          <parameter type-id='a8e16cac'/>
+          <return type-id='c894953d'/>
+        </function-decl>
+      </member-function>
+      <member-function access='private'>
+        <function-decl name='build_arg' mangled-name='_ZN17spdk_trace_parser9build_argEP16argument_contextPK19spdk_trace_argumentiP23spdk_trace_parser_entry' visibility='default' binding='global' size-in-bits='64'>
+          <parameter type-id='0baf5fc5' is-artificial='yes'/>
+          <parameter type-id='e2ad54c8'/>
+          <parameter type-id='ed55448c'/>
+          <parameter type-id='95e97e5e'/>
+          <parameter type-id='a8e16cac'/>
+          <return type-id='c894953d'/>
+        </function-decl>
+      </member-function>
+      <member-function access='private'>
+        <function-decl name='get_next_buffer' mangled-name='_ZN17spdk_trace_parser15get_next_bufferEP23spdk_trace_entry_buffert' visibility='default' binding='global' size-in-bits='64'>
+          <parameter type-id='0baf5fc5' is-artificial='yes'/>
+          <parameter type-id='84dd8065'/>
+          <parameter type-id='149c6638'/>
+          <return type-id='84dd8065'/>
+        </function-decl>
+      </member-function>
+      <member-function access='public' const='yes'>
+        <function-decl name='entry_count' mangled-name='_ZNK17spdk_trace_parser11entry_countEt' visibility='default' binding='global' size-in-bits='64'>
+          <parameter type-id='db279d48' is-artificial='yes'/>
+          <parameter type-id='149c6638'/>
+          <return type-id='9c313c2d'/>
+        </function-decl>
+      </member-function>
+      <member-function access='public' const='yes'>
+        <function-decl name='tsc_offset' mangled-name='_ZNK17spdk_trace_parser10tsc_offsetEv' visibility='default' binding='global' size-in-bits='64'>
+          <parameter type-id='db279d48' is-artificial='yes'/>
+          <return type-id='9c313c2d'/>
+        </function-decl>
+      </member-function>
+      <member-function access='public' const='yes'>
+        <function-decl name='flags' mangled-name='_ZNK17spdk_trace_parser5flagsEv' visibility='default' binding='global' size-in-bits='64'>
+          <parameter type-id='db279d48' is-artificial='yes'/>
+          <return type-id='581e47ea'/>
+        </function-decl>
+      </member-function>
+    </class-decl>
     <function-decl name='spdk_trace_parser_init' mangled-name='spdk_trace_parser_init' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_trace_parser_init'>
       <parameter type-id='bdff52fd' name='opts'/>
       <return type-id='0baf5fc5'/>
