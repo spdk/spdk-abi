@@ -20,18 +20,18 @@
       <subrange length='128' type-id='f0981eeb' id='1eb1687a'/>
     </array-type-def>
     <type-decl name='int' size-in-bits='32' id='95e97e5e'/>
-    <class-decl name='spdk_notify_event' size-in-bits='2048' is-struct='yes' visibility='default' id='d4a92d5e'>
+    <class-decl name='spdk_notify_event' size-in-bits='2048' is-struct='yes' visibility='default' filepath='notify.h' line='27' column='1' id='d4a92d5e'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='type' type-id='e3204322' visibility='default'/>
+        <var-decl name='type' type-id='e3204322' visibility='default' filepath='notify.h' line='28' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1024'>
-        <var-decl name='ctx' type-id='e3204322' visibility='default'/>
+        <var-decl name='ctx' type-id='e3204322' visibility='default' filepath='notify.h' line='29' column='1'/>
       </data-member>
     </class-decl>
-    <typedef-decl name='__uint64_t' type-id='f0981eeb' id='8910171f'/>
-    <typedef-decl name='spdk_notify_foreach_event_cb' type-id='18a696d3' id='62550714'/>
-    <typedef-decl name='spdk_notify_foreach_type_cb' type-id='7a267d61' id='c2b1bfe4'/>
-    <typedef-decl name='uint64_t' type-id='8910171f' id='9c313c2d'/>
+    <typedef-decl name='__uint64_t' type-id='f0981eeb' filepath='types.h' line='45' column='1' id='8910171f'/>
+    <typedef-decl name='spdk_notify_foreach_event_cb' type-id='18a696d3' filepath='notify.h' line='40' column='1' id='62550714'/>
+    <typedef-decl name='spdk_notify_foreach_type_cb' type-id='7a267d61' filepath='notify.h' line='22' column='1' id='c2b1bfe4'/>
+    <typedef-decl name='uint64_t' type-id='8910171f' filepath='stdint-uintn.h' line='27' column='1' id='9c313c2d'/>
     <type-decl name='unsigned long int' size-in-bits='64' id='f0981eeb'/>
     <qualified-type-def type-id='a84c031d' const='yes' id='9b45d938'/>
     <pointer-type-def type-id='9b45d938' size-in-bits='64' id='80f4b756'/>
@@ -44,30 +44,30 @@
     <pointer-type-def type-id='26f50572' size-in-bits='64' id='15d4afc0'/>
     <pointer-type-def type-id='48b5725f' size-in-bits='64' id='eaa32e2f'/>
     <type-decl name='void' id='48b5725f'/>
-    <class-decl name='spdk_notify_type' is-struct='yes' visibility='default' is-declaration-only='yes' id='26f50572'/>
-    <function-decl name='spdk_notify_type_register' mangled-name='spdk_notify_type_register' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_notify_type_register'>
-      <parameter type-id='80f4b756' name='type'/>
+    <class-decl name='spdk_notify_type' is-struct='yes' visibility='default' filepath='notify.c' line='18' column='1' is-declaration-only='yes' id='26f50572'/>
+    <function-decl name='spdk_notify_type_register' mangled-name='spdk_notify_type_register' filepath='notify.c' line='30' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_notify_type_register'>
+      <parameter type-id='80f4b756' name='type' filepath='notify.c' line='30' column='1'/>
       <return type-id='15d4afc0'/>
     </function-decl>
-    <function-decl name='spdk_notify_type_get_name' mangled-name='spdk_notify_type_get_name' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_notify_type_get_name'>
-      <parameter type-id='2beb50fb' name='type'/>
+    <function-decl name='spdk_notify_type_get_name' mangled-name='spdk_notify_type_get_name' filepath='notify.c' line='64' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_notify_type_get_name'>
+      <parameter type-id='2beb50fb' name='type' filepath='notify.c' line='64' column='1'/>
       <return type-id='80f4b756'/>
     </function-decl>
-    <function-decl name='spdk_notify_foreach_type' mangled-name='spdk_notify_foreach_type' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_notify_foreach_type'>
-      <parameter type-id='c2b1bfe4' name='cb'/>
-      <parameter type-id='eaa32e2f' name='ctx'/>
+    <function-decl name='spdk_notify_foreach_type' mangled-name='spdk_notify_foreach_type' filepath='notify.c' line='71' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_notify_foreach_type'>
+      <parameter type-id='c2b1bfe4' name='cb' filepath='notify.c' line='71' column='1'/>
+      <parameter type-id='eaa32e2f' name='ctx' filepath='notify.c' line='71' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_notify_send' mangled-name='spdk_notify_send' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_notify_send'>
-      <parameter type-id='80f4b756' name='type'/>
-      <parameter type-id='80f4b756' name='ctx'/>
+    <function-decl name='spdk_notify_send' mangled-name='spdk_notify_send' filepath='notify.c' line='85' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_notify_send'>
+      <parameter type-id='80f4b756' name='type' filepath='notify.c' line='85' column='1'/>
+      <parameter type-id='80f4b756' name='ctx' filepath='notify.c' line='85' column='1'/>
       <return type-id='9c313c2d'/>
     </function-decl>
-    <function-decl name='spdk_notify_foreach_event' mangled-name='spdk_notify_foreach_event' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_notify_foreach_event'>
-      <parameter type-id='9c313c2d' name='start_idx'/>
-      <parameter type-id='9c313c2d' name='max'/>
-      <parameter type-id='62550714' name='cb_fn'/>
-      <parameter type-id='eaa32e2f' name='ctx'/>
+    <function-decl name='spdk_notify_foreach_event' mangled-name='spdk_notify_foreach_event' filepath='notify.c' line='103' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_notify_foreach_event'>
+      <parameter type-id='9c313c2d' name='start_idx' filepath='notify.c' line='103' column='1'/>
+      <parameter type-id='9c313c2d' name='max' filepath='notify.c' line='103' column='1'/>
+      <parameter type-id='62550714' name='cb_fn' filepath='notify.c' line='104' column='1'/>
+      <parameter type-id='eaa32e2f' name='ctx' filepath='notify.c' line='104' column='1'/>
       <return type-id='9c313c2d'/>
     </function-decl>
     <function-type size-in-bits='64' id='f99d0ec5'>

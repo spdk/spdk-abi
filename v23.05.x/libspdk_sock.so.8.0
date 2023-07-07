@@ -59,435 +59,435 @@
     <type-decl name='int' size-in-bits='32' id='95e97e5e'/>
     <type-decl name='long int' size-in-bits='64' id='95e97e5f'/>
     <type-decl name='short int' size-in-bits='16' id='95e97e60'/>
-    <class-decl name='__pthread_internal_list' size-in-bits='128' is-struct='yes' visibility='default' id='0e01899c'>
+    <class-decl name='__pthread_internal_list' size-in-bits='128' is-struct='yes' visibility='default' filepath='thread-shared-types.h' line='51' column='1' id='0e01899c'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='__prev' type-id='4d98cd5a' visibility='default'/>
+        <var-decl name='__prev' type-id='4d98cd5a' visibility='default' filepath='thread-shared-types.h' line='53' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='__next' type-id='4d98cd5a' visibility='default'/>
+        <var-decl name='__next' type-id='4d98cd5a' visibility='default' filepath='thread-shared-types.h' line='54' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__pthread_mutex_s' size-in-bits='320' is-struct='yes' visibility='default' id='4c734837'>
+    <class-decl name='__pthread_mutex_s' size-in-bits='320' is-struct='yes' visibility='default' filepath='struct_mutex.h' line='22' column='1' id='4c734837'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='__lock' type-id='95e97e5e' visibility='default'/>
+        <var-decl name='__lock' type-id='95e97e5e' visibility='default' filepath='struct_mutex.h' line='24' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='32'>
-        <var-decl name='__count' type-id='f0981eec' visibility='default'/>
+        <var-decl name='__count' type-id='f0981eec' visibility='default' filepath='struct_mutex.h' line='25' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='__owner' type-id='95e97e5e' visibility='default'/>
+        <var-decl name='__owner' type-id='95e97e5e' visibility='default' filepath='struct_mutex.h' line='26' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='96'>
-        <var-decl name='__nusers' type-id='f0981eec' visibility='default'/>
+        <var-decl name='__nusers' type-id='f0981eec' visibility='default' filepath='struct_mutex.h' line='28' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='__kind' type-id='95e97e5e' visibility='default'/>
+        <var-decl name='__kind' type-id='95e97e5e' visibility='default' filepath='struct_mutex.h' line='32' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='160'>
-        <var-decl name='__spins' type-id='95e97e60' visibility='default'/>
+        <var-decl name='__spins' type-id='95e97e60' visibility='default' filepath='struct_mutex.h' line='34' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='176'>
-        <var-decl name='__elision' type-id='95e97e60' visibility='default'/>
+        <var-decl name='__elision' type-id='95e97e60' visibility='default' filepath='struct_mutex.h' line='35' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='__list' type-id='518fb49c' visibility='default'/>
+        <var-decl name='__list' type-id='518fb49c' visibility='default' filepath='struct_mutex.h' line='36' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__sock_request_internal' size-in-bits='256' is-struct='yes' visibility='default' id='683903f3'>
+    <class-decl name='__sock_request_internal' size-in-bits='256' is-struct='yes' visibility='default' filepath='sock.h' line='49' column='1' id='683903f3'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='link' type-id='e7f43f72' visibility='default'/>
+        <var-decl name='link' type-id='e7f43f72' visibility='default' filepath='sock.h' line='50' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='curr_list' type-id='eaa32e2f' visibility='default'/>
+        <var-decl name='curr_list' type-id='eaa32e2f' visibility='default' filepath='sock.h' line='52' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='offset' type-id='8f92235e' visibility='default'/>
+        <var-decl name='offset' type-id='8f92235e' visibility='default' filepath='sock.h' line='54' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='224'>
-        <var-decl name='is_zcopy' type-id='c894953d' visibility='default'/>
+        <var-decl name='is_zcopy' type-id='c894953d' visibility='default' filepath='sock.h' line='57' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='iovec' size-in-bits='128' is-struct='yes' visibility='default' id='0f042891'>
+    <class-decl name='iovec' size-in-bits='128' is-struct='yes' visibility='default' filepath='struct_iovec.h' line='26' column='1' id='0f042891'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='iov_base' type-id='eaa32e2f' visibility='default'/>
+        <var-decl name='iov_base' type-id='eaa32e2f' visibility='default' filepath='struct_iovec.h' line='28' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='iov_len' type-id='b59d7dce' visibility='default'/>
+        <var-decl name='iov_len' type-id='b59d7dce' visibility='default' filepath='struct_iovec.h' line='29' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_net_impl' size-in-bits='1856' is-struct='yes' visibility='default' id='7828460a'>
+    <class-decl name='spdk_net_impl' size-in-bits='1856' is-struct='yes' visibility='default' filepath='sock.h' line='75' column='1' id='7828460a'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='name' type-id='80f4b756' visibility='default'/>
+        <var-decl name='name' type-id='80f4b756' visibility='default' filepath='sock.h' line='76' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='priority' type-id='95e97e5e' visibility='default'/>
+        <var-decl name='priority' type-id='95e97e5e' visibility='default' filepath='sock.h' line='77' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='getaddr' type-id='b9fe6bd8' visibility='default'/>
+        <var-decl name='getaddr' type-id='b9fe6bd8' visibility='default' filepath='sock.h' line='79' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='connect' type-id='98ea3c17' visibility='default'/>
+        <var-decl name='connect' type-id='98ea3c17' visibility='default' filepath='sock.h' line='81' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='listen' type-id='98ea3c17' visibility='default'/>
+        <var-decl name='listen' type-id='98ea3c17' visibility='default' filepath='sock.h' line='82' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='320'>
-        <var-decl name='accept' type-id='d781846a' visibility='default'/>
+        <var-decl name='accept' type-id='d781846a' visibility='default' filepath='sock.h' line='83' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='384'>
-        <var-decl name='close' type-id='ff5e8dca' visibility='default'/>
+        <var-decl name='close' type-id='ff5e8dca' visibility='default' filepath='sock.h' line='84' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='448'>
-        <var-decl name='recv' type-id='a417871e' visibility='default'/>
+        <var-decl name='recv' type-id='a417871e' visibility='default' filepath='sock.h' line='85' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='512'>
-        <var-decl name='readv' type-id='da0f7949' visibility='default'/>
+        <var-decl name='readv' type-id='da0f7949' visibility='default' filepath='sock.h' line='86' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='576'>
-        <var-decl name='writev' type-id='da0f7949' visibility='default'/>
+        <var-decl name='writev' type-id='da0f7949' visibility='default' filepath='sock.h' line='87' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='640'>
-        <var-decl name='recv_next' type-id='b22ae6ce' visibility='default'/>
+        <var-decl name='recv_next' type-id='b22ae6ce' visibility='default' filepath='sock.h' line='89' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='704'>
-        <var-decl name='writev_async' type-id='9a013802' visibility='default'/>
+        <var-decl name='writev_async' type-id='9a013802' visibility='default' filepath='sock.h' line='90' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='768'>
-        <var-decl name='readv_async' type-id='9a013802' visibility='default'/>
+        <var-decl name='readv_async' type-id='9a013802' visibility='default' filepath='sock.h' line='91' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='832'>
-        <var-decl name='flush' type-id='ff5e8dca' visibility='default'/>
+        <var-decl name='flush' type-id='ff5e8dca' visibility='default' filepath='sock.h' line='92' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='896'>
-        <var-decl name='set_recvlowat' type-id='2969e6b1' visibility='default'/>
+        <var-decl name='set_recvlowat' type-id='2969e6b1' visibility='default' filepath='sock.h' line='94' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='960'>
-        <var-decl name='set_recvbuf' type-id='2969e6b1' visibility='default'/>
+        <var-decl name='set_recvbuf' type-id='2969e6b1' visibility='default' filepath='sock.h' line='95' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1024'>
-        <var-decl name='set_sendbuf' type-id='2969e6b1' visibility='default'/>
+        <var-decl name='set_sendbuf' type-id='2969e6b1' visibility='default' filepath='sock.h' line='96' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1088'>
-        <var-decl name='is_ipv6' type-id='e0b2e255' visibility='default'/>
+        <var-decl name='is_ipv6' type-id='e0b2e255' visibility='default' filepath='sock.h' line='98' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1152'>
-        <var-decl name='is_ipv4' type-id='e0b2e255' visibility='default'/>
+        <var-decl name='is_ipv4' type-id='e0b2e255' visibility='default' filepath='sock.h' line='99' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1216'>
-        <var-decl name='is_connected' type-id='e0b2e255' visibility='default'/>
+        <var-decl name='is_connected' type-id='e0b2e255' visibility='default' filepath='sock.h' line='100' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1280'>
-        <var-decl name='group_impl_get_optimal' type-id='846bb243' visibility='default'/>
+        <var-decl name='group_impl_get_optimal' type-id='846bb243' visibility='default' filepath='sock.h' line='102' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1344'>
-        <var-decl name='group_impl_create' type-id='e75ea894' visibility='default'/>
+        <var-decl name='group_impl_create' type-id='e75ea894' visibility='default' filepath='sock.h' line='104' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1408'>
-        <var-decl name='group_impl_add_sock' type-id='4cbbe7ce' visibility='default'/>
+        <var-decl name='group_impl_add_sock' type-id='4cbbe7ce' visibility='default' filepath='sock.h' line='105' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1472'>
-        <var-decl name='group_impl_remove_sock' type-id='4cbbe7ce' visibility='default'/>
+        <var-decl name='group_impl_remove_sock' type-id='4cbbe7ce' visibility='default' filepath='sock.h' line='106' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1536'>
-        <var-decl name='group_impl_poll' type-id='d5e7854d' visibility='default'/>
+        <var-decl name='group_impl_poll' type-id='d5e7854d' visibility='default' filepath='sock.h' line='107' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1600'>
-        <var-decl name='group_impl_close' type-id='bdf450ad' visibility='default'/>
+        <var-decl name='group_impl_close' type-id='bdf450ad' visibility='default' filepath='sock.h' line='109' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1664'>
-        <var-decl name='get_opts' type-id='2c5bde4e' visibility='default'/>
+        <var-decl name='get_opts' type-id='2c5bde4e' visibility='default' filepath='sock.h' line='111' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1728'>
-        <var-decl name='set_opts' type-id='9a46f87f' visibility='default'/>
+        <var-decl name='set_opts' type-id='9a46f87f' visibility='default' filepath='sock.h' line='112' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1792'>
-        <var-decl name='link' type-id='e7f43f73' visibility='default'/>
+        <var-decl name='link' type-id='e7f43f73' visibility='default' filepath='sock.h' line='114' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_sock' size-in-bits='1792' is-struct='yes' visibility='default' id='2fd26578'>
+    <class-decl name='spdk_sock' size-in-bits='1792' is-struct='yes' visibility='default' filepath='sock.h' line='31' column='1' id='2fd26578'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='net_impl' type-id='5dabfc38' visibility='default'/>
+        <var-decl name='net_impl' type-id='5dabfc38' visibility='default' filepath='sock.h' line='32' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='opts' type-id='635566cb' visibility='default'/>
+        <var-decl name='opts' type-id='635566cb' visibility='default' filepath='sock.h' line='33' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='384'>
-        <var-decl name='group_impl' type-id='ad1df54b' visibility='default'/>
+        <var-decl name='group_impl' type-id='ad1df54b' visibility='default' filepath='sock.h' line='34' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='448'>
-        <var-decl name='link' type-id='e7f43f74' visibility='default'/>
+        <var-decl name='link' type-id='e7f43f74' visibility='default' filepath='sock.h' line='35' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='576'>
-        <var-decl name='queued_reqs' type-id='e7f43f75' visibility='default'/>
+        <var-decl name='queued_reqs' type-id='e7f43f75' visibility='default' filepath='sock.h' line='37' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='704'>
-        <var-decl name='pending_reqs' type-id='e7f43f75' visibility='default'/>
+        <var-decl name='pending_reqs' type-id='e7f43f75' visibility='default' filepath='sock.h' line='38' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='832'>
-        <var-decl name='read_req' type-id='7fb90480' visibility='default'/>
+        <var-decl name='read_req' type-id='7fb90480' visibility='default' filepath='sock.h' line='39' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='896'>
-        <var-decl name='queued_iovcnt' type-id='95e97e5e' visibility='default'/>
+        <var-decl name='queued_iovcnt' type-id='95e97e5e' visibility='default' filepath='sock.h' line='40' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='928'>
-        <var-decl name='cb_cnt' type-id='95e97e5e' visibility='default'/>
+        <var-decl name='cb_cnt' type-id='95e97e5e' visibility='default' filepath='sock.h' line='41' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='960'>
-        <var-decl name='cb_fn' type-id='f24fbecd' visibility='default'/>
+        <var-decl name='cb_fn' type-id='f24fbecd' visibility='default' filepath='sock.h' line='42' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1024'>
-        <var-decl name='cb_arg' type-id='eaa32e2f' visibility='default'/>
+        <var-decl name='cb_arg' type-id='eaa32e2f' visibility='default' filepath='sock.h' line='43' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1088'>
-        <var-decl name='flags' type-id='e7f43f76' visibility='default'/>
+        <var-decl name='flags' type-id='e7f43f76' visibility='default' filepath='sock.h' line='47' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1152'>
-        <var-decl name='impl_opts' type-id='14471ec6' visibility='default'/>
+        <var-decl name='impl_opts' type-id='14471ec6' visibility='default' filepath='sock.h' line='48' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_sock_group' size-in-bits='320' is-struct='yes' visibility='default' id='9baacbac'>
+    <class-decl name='spdk_sock_group' size-in-bits='320' is-struct='yes' visibility='default' filepath='sock.h' line='57' column='1' id='9baacbac'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='group_impls' type-id='e7f43f77' visibility='default'/>
+        <var-decl name='group_impls' type-id='e7f43f77' visibility='default' filepath='sock.h' line='58' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='pool' type-id='e7f43f78' visibility='default'/>
+        <var-decl name='pool' type-id='e7f43f78' visibility='default' filepath='sock.h' line='59' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='ctx' type-id='eaa32e2f' visibility='default'/>
+        <var-decl name='ctx' type-id='eaa32e2f' visibility='default' filepath='sock.h' line='60' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_sock_group_impl' size-in-bits='320' is-struct='yes' visibility='default' id='00ed2c8b'>
+    <class-decl name='spdk_sock_group_impl' size-in-bits='320' is-struct='yes' visibility='default' filepath='sock.h' line='63' column='1' id='00ed2c8b'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='net_impl' type-id='5dabfc38' visibility='default'/>
+        <var-decl name='net_impl' type-id='5dabfc38' visibility='default' filepath='sock.h' line='64' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='group' type-id='becb7f9a' visibility='default'/>
+        <var-decl name='group' type-id='becb7f9a' visibility='default' filepath='sock.h' line='65' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='socks' type-id='e7f43f79' visibility='default'/>
+        <var-decl name='socks' type-id='e7f43f79' visibility='default' filepath='sock.h' line='66' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='link' type-id='e7f43f7a' visibility='default'/>
+        <var-decl name='link' type-id='e7f43f7a' visibility='default' filepath='sock.h' line='67' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_sock_group_provided_buf' size-in-bits='192' is-struct='yes' visibility='default' id='b9665878'>
+    <class-decl name='spdk_sock_group_provided_buf' size-in-bits='192' is-struct='yes' visibility='default' filepath='sock.h' line='51' column='1' id='b9665878'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='len' type-id='b59d7dce' visibility='default'/>
+        <var-decl name='len' type-id='b59d7dce' visibility='default' filepath='sock.h' line='52' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='ctx' type-id='eaa32e2f' visibility='default'/>
+        <var-decl name='ctx' type-id='eaa32e2f' visibility='default' filepath='sock.h' line='53' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='link' type-id='e7f43f7b' visibility='default'/>
+        <var-decl name='link' type-id='e7f43f7b' visibility='default' filepath='sock.h' line='54' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_sock_impl_opts' size-in-bits='640' is-struct='yes' visibility='default' id='14471ec6'>
+    <class-decl name='spdk_sock_impl_opts' size-in-bits='640' is-struct='yes' visibility='default' filepath='sock.h' line='84' column='1' id='14471ec6'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='recv_buf_size' type-id='8f92235e' visibility='default'/>
+        <var-decl name='recv_buf_size' type-id='8f92235e' visibility='default' filepath='sock.h' line='88' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='32'>
-        <var-decl name='send_buf_size' type-id='8f92235e' visibility='default'/>
+        <var-decl name='send_buf_size' type-id='8f92235e' visibility='default' filepath='sock.h' line='93' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='enable_recv_pipe' type-id='c894953d' visibility='default'/>
+        <var-decl name='enable_recv_pipe' type-id='c894953d' visibility='default' filepath='sock.h' line='98' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='72'>
-        <var-decl name='enable_zerocopy_send' type-id='c894953d' visibility='default'/>
+        <var-decl name='enable_zerocopy_send' type-id='c894953d' visibility='default' filepath='sock.h' line='104' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='80'>
-        <var-decl name='enable_quickack' type-id='c894953d' visibility='default'/>
+        <var-decl name='enable_quickack' type-id='c894953d' visibility='default' filepath='sock.h' line='109' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='96'>
-        <var-decl name='enable_placement_id' type-id='8f92235e' visibility='default'/>
+        <var-decl name='enable_placement_id' type-id='8f92235e' visibility='default' filepath='sock.h' line='115' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='enable_zerocopy_send_server' type-id='c894953d' visibility='default'/>
+        <var-decl name='enable_zerocopy_send_server' type-id='c894953d' visibility='default' filepath='sock.h' line='120' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='136'>
-        <var-decl name='enable_zerocopy_send_client' type-id='c894953d' visibility='default'/>
+        <var-decl name='enable_zerocopy_send_client' type-id='c894953d' visibility='default' filepath='sock.h' line='125' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='160'>
-        <var-decl name='zerocopy_threshold' type-id='8f92235e' visibility='default'/>
+        <var-decl name='zerocopy_threshold' type-id='8f92235e' visibility='default' filepath='sock.h' line='131' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='tls_version' type-id='8f92235e' visibility='default'/>
+        <var-decl name='tls_version' type-id='8f92235e' visibility='default' filepath='sock.h' line='136' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='224'>
-        <var-decl name='enable_ktls' type-id='c894953d' visibility='default'/>
+        <var-decl name='enable_ktls' type-id='c894953d' visibility='default' filepath='sock.h' line='141' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='psk_key' type-id='ae3e8ca6' visibility='default'/>
+        <var-decl name='psk_key' type-id='ae3e8ca6' visibility='default' filepath='sock.h' line='146' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='320'>
-        <var-decl name='psk_key_size' type-id='8f92235e' visibility='default'/>
+        <var-decl name='psk_key_size' type-id='8f92235e' visibility='default' filepath='sock.h' line='151' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='384'>
-        <var-decl name='psk_identity' type-id='26a90f95' visibility='default'/>
+        <var-decl name='psk_identity' type-id='26a90f95' visibility='default' filepath='sock.h' line='156' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='448'>
-        <var-decl name='get_key' type-id='7885dec3' visibility='default'/>
+        <var-decl name='get_key' type-id='7885dec3' visibility='default' filepath='sock.h' line='169' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='512'>
-        <var-decl name='get_key_ctx' type-id='eaa32e2f' visibility='default'/>
+        <var-decl name='get_key_ctx' type-id='eaa32e2f' visibility='default' filepath='sock.h' line='175' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='576'>
-        <var-decl name='tls_cipher_suites' type-id='80f4b756' visibility='default'/>
+        <var-decl name='tls_cipher_suites' type-id='80f4b756' visibility='default' filepath='sock.h' line='185' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_sock_map' size-in-bits='448' is-struct='yes' visibility='default' id='a3b1dfd1'>
+    <class-decl name='spdk_sock_map' size-in-bits='448' is-struct='yes' visibility='default' filepath='sock.h' line='70' column='1' id='a3b1dfd1'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='entries' type-id='e7f43f7c' visibility='default'/>
+        <var-decl name='entries' type-id='e7f43f7c' visibility='default' filepath='sock.h' line='71' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='mtx' type-id='7a6844eb' visibility='default'/>
+        <var-decl name='mtx' type-id='7a6844eb' visibility='default' filepath='sock.h' line='72' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_sock_opts' size-in-bits='320' is-struct='yes' visibility='default' id='635566cb'>
+    <class-decl name='spdk_sock_opts' size-in-bits='320' is-struct='yes' visibility='default' filepath='sock.h' line='194' column='1' id='635566cb'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='opts_size' type-id='b59d7dce' visibility='default'/>
+        <var-decl name='opts_size' type-id='b59d7dce' visibility='default' filepath='sock.h' line='200' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='priority' type-id='95e97e5e' visibility='default'/>
+        <var-decl name='priority' type-id='95e97e5e' visibility='default' filepath='sock.h' line='205' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='96'>
-        <var-decl name='zcopy' type-id='c894953d' visibility='default'/>
+        <var-decl name='zcopy' type-id='c894953d' visibility='default' filepath='sock.h' line='210' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='104'>
-        <var-decl name='reserved13' type-id='d3490169' visibility='default'/>
+        <var-decl name='reserved13' type-id='d3490169' visibility='default' filepath='sock.h' line='213' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='ack_timeout' type-id='8f92235e' visibility='default'/>
+        <var-decl name='ack_timeout' type-id='8f92235e' visibility='default' filepath='sock.h' line='218' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='160'>
-        <var-decl name='reserved' type-id='d351502e' visibility='default'/>
+        <var-decl name='reserved' type-id='d351502e' visibility='default' filepath='sock.h' line='221' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='impl_opts' type-id='276545ec' visibility='default'/>
+        <var-decl name='impl_opts' type-id='276545ec' visibility='default' filepath='sock.h' line='228' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='impl_opts_size' type-id='b59d7dce' visibility='default'/>
+        <var-decl name='impl_opts_size' type-id='b59d7dce' visibility='default' filepath='sock.h' line='233' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_sock_request' size-in-bits='448' is-struct='yes' visibility='default' id='6ddea8d2'>
+    <class-decl name='spdk_sock_request' size-in-bits='448' is-struct='yes' visibility='default' filepath='sock.h' line='36' column='1' id='6ddea8d2'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='cb_fn' type-id='1ed1e4cd' visibility='default'/>
+        <var-decl name='cb_fn' type-id='1ed1e4cd' visibility='default' filepath='sock.h' line='43' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='cb_arg' type-id='eaa32e2f' visibility='default'/>
+        <var-decl name='cb_arg' type-id='eaa32e2f' visibility='default' filepath='sock.h' line='44' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='internal' type-id='683903f3' visibility='default'/>
+        <var-decl name='internal' type-id='683903f3' visibility='default' filepath='sock.h' line='58' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='384'>
-        <var-decl name='iovcnt' type-id='95e97e5e' visibility='default'/>
+        <var-decl name='iovcnt' type-id='95e97e5e' visibility='default' filepath='sock.h' line='60' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__10' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f73'>
+    <class-decl name='__anonymous_struct__10' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' filepath='sock.h' line='114' column='1' id='e7f43f73'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='stqe_next' type-id='5dabfc38' visibility='default'/>
+        <var-decl name='stqe_next' type-id='5dabfc38' visibility='default' filepath='sock.h' line='114' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__5' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f74'>
+    <class-decl name='__anonymous_struct__5' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='sock.h' line='35' column='1' id='e7f43f74'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='tqe_next' type-id='2301d53e' visibility='default'/>
+        <var-decl name='tqe_next' type-id='2301d53e' visibility='default' filepath='sock.h' line='35' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='tqe_prev' type-id='2fe26e7c' visibility='default'/>
+        <var-decl name='tqe_prev' type-id='2fe26e7c' visibility='default' filepath='sock.h' line='35' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__3' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f79'>
+    <class-decl name='__anonymous_struct__3' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='sock.h' line='66' column='1' id='e7f43f79'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='tqh_first' type-id='2301d53e' visibility='default'/>
+        <var-decl name='tqh_first' type-id='2301d53e' visibility='default' filepath='sock.h' line='66' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='tqh_last' type-id='2fe26e7c' visibility='default'/>
+        <var-decl name='tqh_last' type-id='2fe26e7c' visibility='default' filepath='sock.h' line='66' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__4' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f7a'>
+    <class-decl name='__anonymous_struct__4' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' filepath='sock.h' line='67' column='1' id='e7f43f7a'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='stqe_next' type-id='ad1df54b' visibility='default'/>
+        <var-decl name='stqe_next' type-id='ad1df54b' visibility='default' filepath='sock.h' line='67' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f77'>
+    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='sock.h' line='58' column='1' id='e7f43f77'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='stqh_first' type-id='ad1df54b' visibility='default'/>
+        <var-decl name='stqh_first' type-id='ad1df54b' visibility='default' filepath='sock.h' line='58' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='stqh_last' type-id='e72947b3' visibility='default'/>
+        <var-decl name='stqh_last' type-id='e72947b3' visibility='default' filepath='sock.h' line='58' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__2' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f7b'>
+    <class-decl name='__anonymous_struct__2' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' filepath='sock.h' line='54' column='1' id='e7f43f7b'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='stqe_next' type-id='8142ca8e' visibility='default'/>
+        <var-decl name='stqe_next' type-id='8142ca8e' visibility='default' filepath='sock.h' line='54' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__1' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f78'>
+    <class-decl name='__anonymous_struct__1' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='sock.h' line='59' column='1' id='e7f43f78'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='stqh_first' type-id='8142ca8e' visibility='default'/>
+        <var-decl name='stqh_first' type-id='8142ca8e' visibility='default' filepath='sock.h' line='59' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='stqh_last' type-id='2025002c' visibility='default'/>
+        <var-decl name='stqh_last' type-id='2025002c' visibility='default' filepath='sock.h' line='59' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__11' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f7c'>
+    <class-decl name='__anonymous_struct__11' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='sock.h' line='71' column='1' id='e7f43f7c'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='stqh_first' type-id='90ef5363' visibility='default'/>
+        <var-decl name='stqh_first' type-id='90ef5363' visibility='default' filepath='sock.h' line='71' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='stqh_last' type-id='71c01beb' visibility='default'/>
+        <var-decl name='stqh_last' type-id='71c01beb' visibility='default' filepath='sock.h' line='71' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__7' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f72'>
+    <class-decl name='__anonymous_struct__7' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='sock.h' line='50' column='1' id='e7f43f72'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='tqe_next' type-id='7fb90480' visibility='default'/>
+        <var-decl name='tqe_next' type-id='7fb90480' visibility='default' filepath='sock.h' line='50' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='tqe_prev' type-id='ba42579e' visibility='default'/>
+        <var-decl name='tqe_prev' type-id='ba42579e' visibility='default' filepath='sock.h' line='50' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__6' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f75'>
+    <class-decl name='__anonymous_struct__6' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='sock.h' line='37' column='1' id='e7f43f75'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='tqh_first' type-id='7fb90480' visibility='default'/>
+        <var-decl name='tqh_first' type-id='7fb90480' visibility='default' filepath='sock.h' line='37' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='tqh_last' type-id='ba42579e' visibility='default'/>
+        <var-decl name='tqh_last' type-id='ba42579e' visibility='default' filepath='sock.h' line='37' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__9' size-in-bits='8' is-struct='yes' is-anonymous='yes' visibility='default' id='e7f43f76'>
+    <class-decl name='__anonymous_struct__9' size-in-bits='8' is-struct='yes' is-anonymous='yes' visibility='default' filepath='sock.h' line='44' column='1' id='e7f43f76'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='closed' type-id='b96825af' visibility='default'/>
+        <var-decl name='closed' type-id='b96825af' visibility='default' filepath='sock.h' line='45' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1'>
-        <var-decl name='reserved' type-id='b96825af' visibility='default'/>
+        <var-decl name='reserved' type-id='b96825af' visibility='default' filepath='sock.h' line='46' column='1'/>
       </data-member>
     </class-decl>
-    <typedef-decl name='__pthread_list_t' type-id='0e01899c' id='518fb49c'/>
-    <typedef-decl name='__ssize_t' type-id='95e97e5f' id='41060289'/>
-    <typedef-decl name='__uint16_t' type-id='f0981eed' id='253c2d2a'/>
-    <typedef-decl name='__uint32_t' type-id='f0981eec' id='62f1140c'/>
-    <typedef-decl name='__uint8_t' type-id='002ac4a6' id='c51d6389'/>
-    <typedef-decl name='pthread_mutex_t' type-id='70681f9b' id='7a6844eb'/>
-    <typedef-decl name='size_t' type-id='f0981eeb' id='b59d7dce'/>
-    <typedef-decl name='spdk_sock_cb' type-id='71e5033a' id='f24fbecd'/>
-    <typedef-decl name='ssize_t' type-id='41060289' id='79a0948f'/>
-    <typedef-decl name='uint16_t' type-id='253c2d2a' id='149c6638'/>
-    <typedef-decl name='uint32_t' type-id='62f1140c' id='8f92235e'/>
-    <typedef-decl name='uint8_t' type-id='c51d6389' id='b96825af'/>
+    <typedef-decl name='__pthread_list_t' type-id='0e01899c' filepath='thread-shared-types.h' line='55' column='1' id='518fb49c'/>
+    <typedef-decl name='__ssize_t' type-id='95e97e5f' filepath='types.h' line='194' column='1' id='41060289'/>
+    <typedef-decl name='__uint16_t' type-id='f0981eed' filepath='types.h' line='40' column='1' id='253c2d2a'/>
+    <typedef-decl name='__uint32_t' type-id='f0981eec' filepath='types.h' line='42' column='1' id='62f1140c'/>
+    <typedef-decl name='__uint8_t' type-id='002ac4a6' filepath='types.h' line='38' column='1' id='c51d6389'/>
+    <typedef-decl name='pthread_mutex_t' type-id='70681f9b' filepath='pthreadtypes.h' line='72' column='1' id='7a6844eb'/>
+    <typedef-decl name='size_t' type-id='f0981eeb' filepath='stddef.h' line='214' column='1' id='b59d7dce'/>
+    <typedef-decl name='spdk_sock_cb' type-id='71e5033a' filepath='sock.h' line='500' column='1' id='f24fbecd'/>
+    <typedef-decl name='ssize_t' type-id='41060289' filepath='stdio.h' line='77' column='1' id='79a0948f'/>
+    <typedef-decl name='uint16_t' type-id='253c2d2a' filepath='stdint-uintn.h' line='25' column='1' id='149c6638'/>
+    <typedef-decl name='uint32_t' type-id='62f1140c' filepath='stdint-uintn.h' line='26' column='1' id='8f92235e'/>
+    <typedef-decl name='uint8_t' type-id='c51d6389' filepath='stdint-uintn.h' line='24' column='1' id='b96825af'/>
     <array-type-def dimensions='1' type-id='b96825af' size-in-bits='24' id='d3490169'>
       <subrange length='3' type-id='f0981eeb' id='56f209d2'/>
     </array-type-def>
     <array-type-def dimensions='1' type-id='b96825af' size-in-bits='32' id='d351502e'>
       <subrange length='4' type-id='f0981eeb' id='16fe7105'/>
     </array-type-def>
-    <union-decl name='pthread_mutex_t' size-in-bits='320' naming-typedef-id='7a6844eb' visibility='default' id='70681f9b'>
+    <union-decl name='pthread_mutex_t' size-in-bits='320' naming-typedef-id='7a6844eb' visibility='default' filepath='pthreadtypes.h' line='67' column='1' id='70681f9b'>
       <data-member access='public'>
-        <var-decl name='__data' type-id='4c734837' visibility='default'/>
+        <var-decl name='__data' type-id='4c734837' visibility='default' filepath='pthreadtypes.h' line='69' column='1'/>
       </data-member>
       <data-member access='public'>
-        <var-decl name='__size' type-id='36c46961' visibility='default'/>
+        <var-decl name='__size' type-id='36c46961' visibility='default' filepath='pthreadtypes.h' line='70' column='1'/>
       </data-member>
       <data-member access='public'>
-        <var-decl name='__align' type-id='95e97e5f' visibility='default'/>
+        <var-decl name='__align' type-id='95e97e5f' visibility='default' filepath='pthreadtypes.h' line='71' column='1'/>
       </data-member>
     </union-decl>
     <type-decl name='unsigned char' size-in-bits='8' id='002ac4a6'/>
@@ -546,223 +546,223 @@
     <pointer-type-def type-id='eaa32e2f' size-in-bits='64' id='63e171df'/>
     <class-decl name='spdk_json_write_ctx' is-struct='yes' visibility='default' is-declaration-only='yes' id='2ae61988'/>
     <type-decl name='void' id='48b5725f'/>
-    <class-decl name='spdk_sock_placement_id_entry' is-struct='yes' visibility='default' is-declaration-only='yes' id='0baf3933'/>
-    <function-decl name='spdk_sock_map_insert' mangled-name='spdk_sock_map_insert' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_map_insert'>
-      <parameter type-id='046fb729' name='map'/>
-      <parameter type-id='95e97e5e' name='placement_id'/>
-      <parameter type-id='ad1df54b' name='group'/>
+    <class-decl name='spdk_sock_placement_id_entry' is-struct='yes' visibility='default' filepath='sock.c' line='24' column='1' is-declaration-only='yes' id='0baf3933'/>
+    <function-decl name='spdk_sock_map_insert' mangled-name='spdk_sock_map_insert' filepath='sock.c' line='64' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_map_insert'>
+      <parameter type-id='046fb729' name='map' filepath='sock.c' line='64' column='1'/>
+      <parameter type-id='95e97e5e' name='placement_id' filepath='sock.c' line='64' column='1'/>
+      <parameter type-id='ad1df54b' name='group' filepath='sock.c' line='65' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_map_release' mangled-name='spdk_sock_map_release' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_map_release'>
-      <parameter type-id='046fb729' name='map'/>
-      <parameter type-id='95e97e5e' name='placement_id'/>
+    <function-decl name='spdk_sock_map_release' mangled-name='spdk_sock_map_release' filepath='sock.c' line='107' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_map_release'>
+      <parameter type-id='046fb729' name='map' filepath='sock.c' line='107' column='1'/>
+      <parameter type-id='95e97e5e' name='placement_id' filepath='sock.c' line='107' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_sock_map_lookup' mangled-name='spdk_sock_map_lookup' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_map_lookup'>
-      <parameter type-id='046fb729' name='map'/>
-      <parameter type-id='95e97e5e' name='placement_id'/>
-      <parameter type-id='e72947b3' name='group'/>
-      <parameter type-id='ad1df54b' name='hint'/>
+    <function-decl name='spdk_sock_map_lookup' mangled-name='spdk_sock_map_lookup' filepath='sock.c' line='128' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_map_lookup'>
+      <parameter type-id='046fb729' name='map' filepath='sock.c' line='128' column='1'/>
+      <parameter type-id='95e97e5e' name='placement_id' filepath='sock.c' line='128' column='1'/>
+      <parameter type-id='e72947b3' name='group' filepath='sock.c' line='129' column='1'/>
+      <parameter type-id='ad1df54b' name='hint' filepath='sock.c' line='129' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_map_cleanup' mangled-name='spdk_sock_map_cleanup' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_map_cleanup'>
-      <parameter type-id='046fb729' name='map'/>
+    <function-decl name='spdk_sock_map_cleanup' mangled-name='spdk_sock_map_cleanup' filepath='sock.c' line='169' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_map_cleanup'>
+      <parameter type-id='046fb729' name='map' filepath='sock.c' line='169' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_sock_map_find_free' mangled-name='spdk_sock_map_find_free' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_map_find_free'>
-      <parameter type-id='046fb729' name='map'/>
+    <function-decl name='spdk_sock_map_find_free' mangled-name='spdk_sock_map_find_free' filepath='sock.c' line='182' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_map_find_free'>
+      <parameter type-id='046fb729' name='map' filepath='sock.c' line='182' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_get_optimal_sock_group' mangled-name='spdk_sock_get_optimal_sock_group' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_get_optimal_sock_group'>
-      <parameter type-id='2301d53e' name='sock'/>
-      <parameter type-id='0a5a0210' name='group'/>
-      <parameter type-id='becb7f9a' name='hint'/>
+    <function-decl name='spdk_sock_get_optimal_sock_group' mangled-name='spdk_sock_get_optimal_sock_group' filepath='sock.c' line='201' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_get_optimal_sock_group'>
+      <parameter type-id='2301d53e' name='sock' filepath='sock.c' line='201' column='1'/>
+      <parameter type-id='0a5a0210' name='group' filepath='sock.c' line='201' column='1'/>
+      <parameter type-id='becb7f9a' name='hint' filepath='sock.c' line='202' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_getaddr' mangled-name='spdk_sock_getaddr' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_getaddr'>
-      <parameter type-id='2301d53e' name='sock'/>
-      <parameter type-id='26a90f95' name='saddr'/>
-      <parameter type-id='95e97e5e' name='slen'/>
-      <parameter type-id='8a121f49' name='sport'/>
-      <parameter type-id='26a90f95' name='caddr'/>
-      <parameter type-id='95e97e5e' name='clen'/>
-      <parameter type-id='8a121f49' name='cport'/>
+    <function-decl name='spdk_sock_getaddr' mangled-name='spdk_sock_getaddr' filepath='sock.c' line='226' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_getaddr'>
+      <parameter type-id='2301d53e' name='sock' filepath='sock.c' line='226' column='1'/>
+      <parameter type-id='26a90f95' name='saddr' filepath='sock.c' line='226' column='1'/>
+      <parameter type-id='95e97e5e' name='slen' filepath='sock.c' line='226' column='1'/>
+      <parameter type-id='8a121f49' name='sport' filepath='sock.c' line='226' column='1'/>
+      <parameter type-id='26a90f95' name='caddr' filepath='sock.c' line='227' column='1'/>
+      <parameter type-id='95e97e5e' name='clen' filepath='sock.c' line='227' column='1'/>
+      <parameter type-id='8a121f49' name='cport' filepath='sock.c' line='227' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_get_impl_name' mangled-name='spdk_sock_get_impl_name' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_get_impl_name'>
-      <parameter type-id='2301d53e' name='sock'/>
+    <function-decl name='spdk_sock_get_impl_name' mangled-name='spdk_sock_get_impl_name' filepath='sock.c' line='233' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_get_impl_name'>
+      <parameter type-id='2301d53e' name='sock' filepath='sock.c' line='233' column='1'/>
       <return type-id='80f4b756'/>
     </function-decl>
-    <function-decl name='spdk_sock_get_default_opts' mangled-name='spdk_sock_get_default_opts' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_get_default_opts'>
-      <parameter type-id='839e448b' name='opts'/>
+    <function-decl name='spdk_sock_get_default_opts' mangled-name='spdk_sock_get_default_opts' filepath='sock.c' line='239' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_get_default_opts'>
+      <parameter type-id='839e448b' name='opts' filepath='sock.c' line='239' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_sock_connect' mangled-name='spdk_sock_connect' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_connect'>
-      <parameter type-id='80f4b756' name='ip'/>
-      <parameter type-id='95e97e5e' name='port'/>
-      <parameter type-id='80f4b756' name='impl_name'/>
+    <function-decl name='spdk_sock_connect' mangled-name='spdk_sock_connect' filepath='sock.c' line='301' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_connect'>
+      <parameter type-id='80f4b756' name='ip' filepath='sock.c' line='301' column='1'/>
+      <parameter type-id='95e97e5e' name='port' filepath='sock.c' line='301' column='1'/>
+      <parameter type-id='80f4b756' name='impl_name' filepath='sock.c' line='301' column='1'/>
       <return type-id='2301d53e'/>
     </function-decl>
-    <function-decl name='spdk_sock_connect_ext' mangled-name='spdk_sock_connect_ext' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_connect_ext'>
-      <parameter type-id='80f4b756' name='ip'/>
-      <parameter type-id='95e97e5e' name='port'/>
-      <parameter type-id='80f4b756' name='_impl_name'/>
-      <parameter type-id='839e448b' name='opts'/>
+    <function-decl name='spdk_sock_connect_ext' mangled-name='spdk_sock_connect_ext' filepath='sock.c' line='311' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_connect_ext'>
+      <parameter type-id='80f4b756' name='ip' filepath='sock.c' line='311' column='1'/>
+      <parameter type-id='95e97e5e' name='port' filepath='sock.c' line='311' column='1'/>
+      <parameter type-id='80f4b756' name='_impl_name' filepath='sock.c' line='311' column='1'/>
+      <parameter type-id='839e448b' name='opts' filepath='sock.c' line='311' column='1'/>
       <return type-id='2301d53e'/>
     </function-decl>
-    <function-decl name='spdk_sock_listen' mangled-name='spdk_sock_listen' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_listen'>
-      <parameter type-id='80f4b756' name='ip'/>
-      <parameter type-id='95e97e5e' name='port'/>
-      <parameter type-id='80f4b756' name='impl_name'/>
+    <function-decl name='spdk_sock_listen' mangled-name='spdk_sock_listen' filepath='sock.c' line='355' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_listen'>
+      <parameter type-id='80f4b756' name='ip' filepath='sock.c' line='355' column='1'/>
+      <parameter type-id='95e97e5e' name='port' filepath='sock.c' line='355' column='1'/>
+      <parameter type-id='80f4b756' name='impl_name' filepath='sock.c' line='355' column='1'/>
       <return type-id='2301d53e'/>
     </function-decl>
-    <function-decl name='spdk_sock_listen_ext' mangled-name='spdk_sock_listen_ext' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_listen_ext'>
-      <parameter type-id='80f4b756' name='ip'/>
-      <parameter type-id='95e97e5e' name='port'/>
-      <parameter type-id='80f4b756' name='_impl_name'/>
-      <parameter type-id='839e448b' name='opts'/>
+    <function-decl name='spdk_sock_listen_ext' mangled-name='spdk_sock_listen_ext' filepath='sock.c' line='365' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_listen_ext'>
+      <parameter type-id='80f4b756' name='ip' filepath='sock.c' line='365' column='1'/>
+      <parameter type-id='95e97e5e' name='port' filepath='sock.c' line='365' column='1'/>
+      <parameter type-id='80f4b756' name='_impl_name' filepath='sock.c' line='365' column='1'/>
+      <parameter type-id='839e448b' name='opts' filepath='sock.c' line='365' column='1'/>
       <return type-id='2301d53e'/>
     </function-decl>
-    <function-decl name='spdk_sock_accept' mangled-name='spdk_sock_accept' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_accept'>
-      <parameter type-id='2301d53e' name='sock'/>
+    <function-decl name='spdk_sock_accept' mangled-name='spdk_sock_accept' filepath='sock.c' line='408' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_accept'>
+      <parameter type-id='2301d53e' name='sock' filepath='sock.c' line='408' column='1'/>
       <return type-id='2301d53e'/>
     </function-decl>
-    <function-decl name='spdk_sock_close' mangled-name='spdk_sock_close' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_close'>
-      <parameter type-id='2fe26e7c' name='_sock'/>
+    <function-decl name='spdk_sock_close' mangled-name='spdk_sock_close' filepath='sock.c' line='426' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_close'>
+      <parameter type-id='2fe26e7c' name='_sock' filepath='sock.c' line='426' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_recv' mangled-name='spdk_sock_recv' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_recv'>
-      <parameter type-id='2301d53e' name='sock'/>
-      <parameter type-id='eaa32e2f' name='buf'/>
-      <parameter type-id='b59d7dce' name='len'/>
+    <function-decl name='spdk_sock_recv' mangled-name='spdk_sock_recv' filepath='sock.c' line='457' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_recv'>
+      <parameter type-id='2301d53e' name='sock' filepath='sock.c' line='457' column='1'/>
+      <parameter type-id='eaa32e2f' name='buf' filepath='sock.c' line='457' column='1'/>
+      <parameter type-id='b59d7dce' name='len' filepath='sock.c' line='457' column='1'/>
       <return type-id='79a0948f'/>
     </function-decl>
-    <function-decl name='spdk_sock_readv' mangled-name='spdk_sock_readv' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_readv'>
-      <parameter type-id='2301d53e' name='sock'/>
-      <parameter type-id='cc4b1be9' name='iov'/>
-      <parameter type-id='95e97e5e' name='iovcnt'/>
+    <function-decl name='spdk_sock_readv' mangled-name='spdk_sock_readv' filepath='sock.c' line='468' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_readv'>
+      <parameter type-id='2301d53e' name='sock' filepath='sock.c' line='468' column='1'/>
+      <parameter type-id='cc4b1be9' name='iov' filepath='sock.c' line='468' column='1'/>
+      <parameter type-id='95e97e5e' name='iovcnt' filepath='sock.c' line='468' column='1'/>
       <return type-id='79a0948f'/>
     </function-decl>
-    <function-decl name='spdk_sock_writev' mangled-name='spdk_sock_writev' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_writev'>
-      <parameter type-id='2301d53e' name='sock'/>
-      <parameter type-id='cc4b1be9' name='iov'/>
-      <parameter type-id='95e97e5e' name='iovcnt'/>
+    <function-decl name='spdk_sock_writev' mangled-name='spdk_sock_writev' filepath='sock.c' line='479' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_writev'>
+      <parameter type-id='2301d53e' name='sock' filepath='sock.c' line='479' column='1'/>
+      <parameter type-id='cc4b1be9' name='iov' filepath='sock.c' line='479' column='1'/>
+      <parameter type-id='95e97e5e' name='iovcnt' filepath='sock.c' line='479' column='1'/>
       <return type-id='79a0948f'/>
     </function-decl>
-    <function-decl name='spdk_sock_writev_async' mangled-name='spdk_sock_writev_async' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_writev_async'>
-      <parameter type-id='2301d53e' name='sock'/>
-      <parameter type-id='7fb90480' name='req'/>
+    <function-decl name='spdk_sock_writev_async' mangled-name='spdk_sock_writev_async' filepath='sock.c' line='490' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_writev_async'>
+      <parameter type-id='2301d53e' name='sock' filepath='sock.c' line='490' column='1'/>
+      <parameter type-id='7fb90480' name='req' filepath='sock.c' line='490' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_sock_recv_next' mangled-name='spdk_sock_recv_next' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_recv_next'>
-      <parameter type-id='2301d53e' name='sock'/>
-      <parameter type-id='63e171df' name='buf'/>
-      <parameter type-id='63e171df' name='ctx'/>
+    <function-decl name='spdk_sock_recv_next' mangled-name='spdk_sock_recv_next' filepath='sock.c' line='503' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_recv_next'>
+      <parameter type-id='2301d53e' name='sock' filepath='sock.c' line='503' column='1'/>
+      <parameter type-id='63e171df' name='buf' filepath='sock.c' line='503' column='1'/>
+      <parameter type-id='63e171df' name='ctx' filepath='sock.c' line='503' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_flush' mangled-name='spdk_sock_flush' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_flush'>
-      <parameter type-id='2301d53e' name='sock'/>
+    <function-decl name='spdk_sock_flush' mangled-name='spdk_sock_flush' filepath='sock.c' line='519' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_flush'>
+      <parameter type-id='2301d53e' name='sock' filepath='sock.c' line='519' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_set_recvlowat' mangled-name='spdk_sock_set_recvlowat' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_set_recvlowat'>
-      <parameter type-id='2301d53e' name='sock'/>
-      <parameter type-id='95e97e5e' name='nbytes'/>
+    <function-decl name='spdk_sock_set_recvlowat' mangled-name='spdk_sock_set_recvlowat' filepath='sock.c' line='530' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_set_recvlowat'>
+      <parameter type-id='2301d53e' name='sock' filepath='sock.c' line='530' column='1'/>
+      <parameter type-id='95e97e5e' name='nbytes' filepath='sock.c' line='530' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_set_recvbuf' mangled-name='spdk_sock_set_recvbuf' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_set_recvbuf'>
-      <parameter type-id='2301d53e' name='sock'/>
-      <parameter type-id='95e97e5e' name='sz'/>
+    <function-decl name='spdk_sock_set_recvbuf' mangled-name='spdk_sock_set_recvbuf' filepath='sock.c' line='536' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_set_recvbuf'>
+      <parameter type-id='2301d53e' name='sock' filepath='sock.c' line='536' column='1'/>
+      <parameter type-id='95e97e5e' name='sz' filepath='sock.c' line='536' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_set_sendbuf' mangled-name='spdk_sock_set_sendbuf' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_set_sendbuf'>
-      <parameter type-id='2301d53e' name='sock'/>
-      <parameter type-id='95e97e5e' name='sz'/>
+    <function-decl name='spdk_sock_set_sendbuf' mangled-name='spdk_sock_set_sendbuf' filepath='sock.c' line='542' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_set_sendbuf'>
+      <parameter type-id='2301d53e' name='sock' filepath='sock.c' line='542' column='1'/>
+      <parameter type-id='95e97e5e' name='sz' filepath='sock.c' line='542' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_is_ipv6' mangled-name='spdk_sock_is_ipv6' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_is_ipv6'>
-      <parameter type-id='2301d53e' name='sock'/>
+    <function-decl name='spdk_sock_is_ipv6' mangled-name='spdk_sock_is_ipv6' filepath='sock.c' line='548' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_is_ipv6'>
+      <parameter type-id='2301d53e' name='sock' filepath='sock.c' line='548' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_sock_is_ipv4' mangled-name='spdk_sock_is_ipv4' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_is_ipv4'>
-      <parameter type-id='2301d53e' name='sock'/>
+    <function-decl name='spdk_sock_is_ipv4' mangled-name='spdk_sock_is_ipv4' filepath='sock.c' line='554' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_is_ipv4'>
+      <parameter type-id='2301d53e' name='sock' filepath='sock.c' line='554' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_sock_is_connected' mangled-name='spdk_sock_is_connected' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_is_connected'>
-      <parameter type-id='2301d53e' name='sock'/>
+    <function-decl name='spdk_sock_is_connected' mangled-name='spdk_sock_is_connected' filepath='sock.c' line='560' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_is_connected'>
+      <parameter type-id='2301d53e' name='sock' filepath='sock.c' line='560' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_sock_group_create' mangled-name='spdk_sock_group_create' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_create'>
-      <parameter type-id='eaa32e2f' name='ctx'/>
+    <function-decl name='spdk_sock_group_create' mangled-name='spdk_sock_group_create' filepath='sock.c' line='566' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_create'>
+      <parameter type-id='eaa32e2f' name='ctx' filepath='sock.c' line='566' column='1'/>
       <return type-id='becb7f9a'/>
     </function-decl>
-    <function-decl name='spdk_sock_group_get_ctx' mangled-name='spdk_sock_group_get_ctx' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_get_ctx'>
-      <parameter type-id='becb7f9a' name='group'/>
+    <function-decl name='spdk_sock_group_get_ctx' mangled-name='spdk_sock_group_get_ctx' filepath='sock.c' line='596' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_get_ctx'>
+      <parameter type-id='becb7f9a' name='group' filepath='sock.c' line='596' column='1'/>
       <return type-id='eaa32e2f'/>
     </function-decl>
-    <function-decl name='spdk_sock_group_add_sock' mangled-name='spdk_sock_group_add_sock' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_add_sock'>
-      <parameter type-id='becb7f9a' name='group'/>
-      <parameter type-id='2301d53e' name='sock'/>
-      <parameter type-id='f24fbecd' name='cb_fn'/>
-      <parameter type-id='eaa32e2f' name='cb_arg'/>
+    <function-decl name='spdk_sock_group_add_sock' mangled-name='spdk_sock_group_add_sock' filepath='sock.c' line='606' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_add_sock'>
+      <parameter type-id='becb7f9a' name='group' filepath='sock.c' line='606' column='1'/>
+      <parameter type-id='2301d53e' name='sock' filepath='sock.c' line='606' column='1'/>
+      <parameter type-id='f24fbecd' name='cb_fn' filepath='sock.c' line='607' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='sock.c' line='607' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_group_remove_sock' mangled-name='spdk_sock_group_remove_sock' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_remove_sock'>
-      <parameter type-id='becb7f9a' name='group'/>
-      <parameter type-id='2301d53e' name='sock'/>
+    <function-decl name='spdk_sock_group_remove_sock' mangled-name='spdk_sock_group_remove_sock' filepath='sock.c' line='645' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_remove_sock'>
+      <parameter type-id='becb7f9a' name='group' filepath='sock.c' line='645' column='1'/>
+      <parameter type-id='2301d53e' name='sock' filepath='sock.c' line='645' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_group_provide_buf' mangled-name='spdk_sock_group_provide_buf' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_provide_buf'>
-      <parameter type-id='becb7f9a' name='group'/>
-      <parameter type-id='eaa32e2f' name='buf'/>
-      <parameter type-id='b59d7dce' name='len'/>
-      <parameter type-id='eaa32e2f' name='ctx'/>
+    <function-decl name='spdk_sock_group_provide_buf' mangled-name='spdk_sock_group_provide_buf' filepath='sock.c' line='670' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_provide_buf'>
+      <parameter type-id='becb7f9a' name='group' filepath='sock.c' line='670' column='1'/>
+      <parameter type-id='eaa32e2f' name='buf' filepath='sock.c' line='670' column='1'/>
+      <parameter type-id='b59d7dce' name='len' filepath='sock.c' line='670' column='1'/>
+      <parameter type-id='eaa32e2f' name='ctx' filepath='sock.c' line='670' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_group_get_buf' mangled-name='spdk_sock_group_get_buf' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_get_buf'>
-      <parameter type-id='becb7f9a' name='group'/>
-      <parameter type-id='63e171df' name='buf'/>
-      <parameter type-id='63e171df' name='ctx'/>
+    <function-decl name='spdk_sock_group_get_buf' mangled-name='spdk_sock_group_get_buf' filepath='sock.c' line='684' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_get_buf'>
+      <parameter type-id='becb7f9a' name='group' filepath='sock.c' line='684' column='1'/>
+      <parameter type-id='63e171df' name='buf' filepath='sock.c' line='684' column='1'/>
+      <parameter type-id='63e171df' name='ctx' filepath='sock.c' line='684' column='1'/>
       <return type-id='b59d7dce'/>
     </function-decl>
-    <function-decl name='spdk_sock_group_poll' mangled-name='spdk_sock_group_poll' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_poll'>
-      <parameter type-id='becb7f9a' name='group'/>
+    <function-decl name='spdk_sock_group_poll' mangled-name='spdk_sock_group_poll' filepath='sock.c' line='701' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_poll'>
+      <parameter type-id='becb7f9a' name='group' filepath='sock.c' line='701' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_group_poll_count' mangled-name='spdk_sock_group_poll_count' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_poll_count'>
-      <parameter type-id='becb7f9a' name='group'/>
-      <parameter type-id='95e97e5e' name='max_events'/>
+    <function-decl name='spdk_sock_group_poll_count' mangled-name='spdk_sock_group_poll_count' filepath='sock.c' line='733' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_poll_count'>
+      <parameter type-id='becb7f9a' name='group' filepath='sock.c' line='733' column='1'/>
+      <parameter type-id='95e97e5e' name='max_events' filepath='sock.c' line='733' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_group_close' mangled-name='spdk_sock_group_close' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_close'>
-      <parameter type-id='0a5a0210' name='group'/>
+    <function-decl name='spdk_sock_group_close' mangled-name='spdk_sock_group_close' filepath='sock.c' line='766' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_close'>
+      <parameter type-id='0a5a0210' name='group' filepath='sock.c' line='766' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_impl_get_opts' mangled-name='spdk_sock_impl_get_opts' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_impl_get_opts'>
-      <parameter type-id='80f4b756' name='impl_name'/>
-      <parameter type-id='276545ec' name='opts'/>
-      <parameter type-id='78c01427' name='len'/>
+    <function-decl name='spdk_sock_impl_get_opts' mangled-name='spdk_sock_impl_get_opts' filepath='sock.c' line='812' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_impl_get_opts'>
+      <parameter type-id='80f4b756' name='impl_name' filepath='sock.c' line='812' column='1'/>
+      <parameter type-id='276545ec' name='opts' filepath='sock.c' line='812' column='1'/>
+      <parameter type-id='78c01427' name='len' filepath='sock.c' line='812' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_impl_set_opts' mangled-name='spdk_sock_impl_set_opts' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_impl_set_opts'>
-      <parameter type-id='80f4b756' name='impl_name'/>
-      <parameter type-id='9d126465' name='opts'/>
-      <parameter type-id='b59d7dce' name='len'/>
+    <function-decl name='spdk_sock_impl_set_opts' mangled-name='spdk_sock_impl_set_opts' filepath='sock.c' line='836' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_impl_set_opts'>
+      <parameter type-id='80f4b756' name='impl_name' filepath='sock.c' line='836' column='1'/>
+      <parameter type-id='9d126465' name='opts' filepath='sock.c' line='836' column='1'/>
+      <parameter type-id='b59d7dce' name='len' filepath='sock.c' line='836' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_write_config_json' mangled-name='spdk_sock_write_config_json' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_write_config_json'>
-      <parameter type-id='b8e14bfe' name='w'/>
+    <function-decl name='spdk_sock_write_config_json' mangled-name='spdk_sock_write_config_json' filepath='sock.c' line='860' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_write_config_json'>
+      <parameter type-id='b8e14bfe' name='w' filepath='sock.c' line='860' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_net_impl_register' mangled-name='spdk_net_impl_register' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_net_impl_register'>
-      <parameter type-id='5dabfc38' name='impl'/>
-      <parameter type-id='95e97e5e' name='priority'/>
+    <function-decl name='spdk_net_impl_register' mangled-name='spdk_net_impl_register' filepath='sock.c' line='911' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_net_impl_register'>
+      <parameter type-id='5dabfc38' name='impl' filepath='sock.c' line='911' column='1'/>
+      <parameter type-id='95e97e5e' name='priority' filepath='sock.c' line='911' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_sock_set_default_impl' mangled-name='spdk_sock_set_default_impl' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_set_default_impl'>
-      <parameter type-id='80f4b756' name='impl_name'/>
+    <function-decl name='spdk_sock_set_default_impl' mangled-name='spdk_sock_set_default_impl' filepath='sock.c' line='932' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_set_default_impl'>
+      <parameter type-id='80f4b756' name='impl_name' filepath='sock.c' line='932' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_get_default_impl' mangled-name='spdk_sock_get_default_impl' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_get_default_impl'>
+    <function-decl name='spdk_sock_get_default_impl' mangled-name='spdk_sock_get_default_impl' filepath='sock.c' line='964' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_get_default_impl'>
       <return type-id='80f4b756'/>
     </function-decl>
     <function-type size-in-bits='64' id='8f332899'>

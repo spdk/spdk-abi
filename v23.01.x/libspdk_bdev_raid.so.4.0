@@ -10,7 +10,7 @@
     <dependency name='libc.so.6'/>
   </elf-needed>
   <abi-instr address-size='64' path='bdev_raid.c' language='LANG_C99'>
-    <class-decl name='raid_all_tailq' is-struct='yes' visibility='default' is-declaration-only='yes' id='db7aa6cf'/>
-    <var-decl name='g_raid_bdev_list' type-id='db7aa6cf' visibility='default'/>
+    <class-decl name='raid_all_tailq' is-struct='yes' visibility='default' filepath='bdev_raid.h' line='163' column='1' is-declaration-only='yes' id='db7aa6cf'/>
+    <var-decl name='g_raid_bdev_list' type-id='db7aa6cf' visibility='default' filepath='bdev_raid.h' line='165' column='1'/>
   </abi-instr>
 </abi-corpus>

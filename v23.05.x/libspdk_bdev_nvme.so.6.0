@@ -21,51 +21,51 @@
     <type-decl name='int' size-in-bits='32' id='95e97e5e'/>
     <type-decl name='long int' size-in-bits='64' id='95e97e5f'/>
     <type-decl name='short int' size-in-bits='16' id='95e97e60'/>
-    <class-decl name='__pthread_internal_list' size-in-bits='128' is-struct='yes' visibility='default' id='0e01899c'>
+    <class-decl name='__pthread_internal_list' size-in-bits='128' is-struct='yes' visibility='default' filepath='thread-shared-types.h' line='51' column='1' id='0e01899c'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='__prev' type-id='4d98cd5a' visibility='default'/>
+        <var-decl name='__prev' type-id='4d98cd5a' visibility='default' filepath='thread-shared-types.h' line='53' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='__next' type-id='4d98cd5a' visibility='default'/>
+        <var-decl name='__next' type-id='4d98cd5a' visibility='default' filepath='thread-shared-types.h' line='54' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__pthread_mutex_s' size-in-bits='320' is-struct='yes' visibility='default' id='4c734837'>
+    <class-decl name='__pthread_mutex_s' size-in-bits='320' is-struct='yes' visibility='default' filepath='struct_mutex.h' line='22' column='1' id='4c734837'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='__lock' type-id='95e97e5e' visibility='default'/>
+        <var-decl name='__lock' type-id='95e97e5e' visibility='default' filepath='struct_mutex.h' line='24' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='32'>
-        <var-decl name='__count' type-id='f0981eec' visibility='default'/>
+        <var-decl name='__count' type-id='f0981eec' visibility='default' filepath='struct_mutex.h' line='25' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='__owner' type-id='95e97e5e' visibility='default'/>
+        <var-decl name='__owner' type-id='95e97e5e' visibility='default' filepath='struct_mutex.h' line='26' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='96'>
-        <var-decl name='__nusers' type-id='f0981eec' visibility='default'/>
+        <var-decl name='__nusers' type-id='f0981eec' visibility='default' filepath='struct_mutex.h' line='28' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='__kind' type-id='95e97e5e' visibility='default'/>
+        <var-decl name='__kind' type-id='95e97e5e' visibility='default' filepath='struct_mutex.h' line='32' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='160'>
-        <var-decl name='__spins' type-id='95e97e60' visibility='default'/>
+        <var-decl name='__spins' type-id='95e97e60' visibility='default' filepath='struct_mutex.h' line='34' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='176'>
-        <var-decl name='__elision' type-id='95e97e60' visibility='default'/>
+        <var-decl name='__elision' type-id='95e97e60' visibility='default' filepath='struct_mutex.h' line='35' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='__list' type-id='518fb49c' visibility='default'/>
+        <var-decl name='__list' type-id='518fb49c' visibility='default' filepath='struct_mutex.h' line='36' column='1'/>
       </data-member>
     </class-decl>
-    <typedef-decl name='__pthread_list_t' type-id='0e01899c' id='518fb49c'/>
-    <typedef-decl name='pthread_mutex_t' type-id='70681f9b' id='7a6844eb'/>
-    <union-decl name='pthread_mutex_t' size-in-bits='320' naming-typedef-id='7a6844eb' visibility='default' id='70681f9b'>
+    <typedef-decl name='__pthread_list_t' type-id='0e01899c' filepath='thread-shared-types.h' line='55' column='1' id='518fb49c'/>
+    <typedef-decl name='pthread_mutex_t' type-id='70681f9b' filepath='pthreadtypes.h' line='72' column='1' id='7a6844eb'/>
+    <union-decl name='pthread_mutex_t' size-in-bits='320' naming-typedef-id='7a6844eb' visibility='default' filepath='pthreadtypes.h' line='67' column='1' id='70681f9b'>
       <data-member access='public'>
-        <var-decl name='__data' type-id='4c734837' visibility='default'/>
+        <var-decl name='__data' type-id='4c734837' visibility='default' filepath='pthreadtypes.h' line='69' column='1'/>
       </data-member>
       <data-member access='public'>
-        <var-decl name='__size' type-id='36c46961' visibility='default'/>
+        <var-decl name='__size' type-id='36c46961' visibility='default' filepath='pthreadtypes.h' line='70' column='1'/>
       </data-member>
       <data-member access='public'>
-        <var-decl name='__align' type-id='95e97e5f' visibility='default'/>
+        <var-decl name='__align' type-id='95e97e5f' visibility='default' filepath='pthreadtypes.h' line='71' column='1'/>
       </data-member>
     </union-decl>
     <type-decl name='unsigned int' size-in-bits='32' id='f0981eec'/>
@@ -73,10 +73,10 @@
     <pointer-type-def type-id='0e01899c' size-in-bits='64' id='4d98cd5a'/>
     <pointer-type-def type-id='ef0f6b10' size-in-bits='64' id='f8fcfe66'/>
     <class-decl name='spdk_thread' is-struct='yes' visibility='default' is-declaration-only='yes' id='ef0f6b10'/>
-    <class-decl name='nvme_bdev_ctrlrs' is-struct='yes' visibility='default' is-declaration-only='yes' id='a4fd6fcc'/>
-    <var-decl name='g_nvme_bdev_ctrlrs' type-id='a4fd6fcc' visibility='default'/>
-    <var-decl name='g_bdev_nvme_mutex' type-id='7a6844eb' visibility='default'/>
-    <var-decl name='g_bdev_nvme_module_finish' type-id='c894953d' visibility='default'/>
-    <var-decl name='g_bdev_nvme_init_thread' type-id='f8fcfe66' visibility='default'/>
+    <class-decl name='nvme_bdev_ctrlrs' is-struct='yes' visibility='default' filepath='bdev_nvme.h' line='18' column='1' is-declaration-only='yes' id='a4fd6fcc'/>
+    <var-decl name='g_nvme_bdev_ctrlrs' type-id='a4fd6fcc' visibility='default' filepath='bdev_nvme.h' line='19' column='1'/>
+    <var-decl name='g_bdev_nvme_mutex' type-id='7a6844eb' visibility='default' filepath='bdev_nvme.h' line='20' column='1'/>
+    <var-decl name='g_bdev_nvme_module_finish' type-id='c894953d' visibility='default' filepath='bdev_nvme.h' line='21' column='1'/>
+    <var-decl name='g_bdev_nvme_init_thread' type-id='f8fcfe66' visibility='default' filepath='bdev_nvme.h' line='22' column='1'/>
   </abi-instr>
 </abi-corpus>

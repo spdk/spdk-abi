@@ -19,20 +19,20 @@
     <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='2056' id='cd5f2f4f'>
       <subrange length='257' type-id='f0981eeb' id='72e246d7'/>
     </array-type-def>
-    <class-decl name='spdk_cpuset' size-in-bits='3080' is-struct='yes' visibility='default' id='aec5215a'>
+    <class-decl name='spdk_cpuset' size-in-bits='3080' is-struct='yes' visibility='default' filepath='cpuset.h' line='25' column='1' id='aec5215a'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='str' type-id='cd5f2f4f' visibility='default'/>
+        <var-decl name='str' type-id='cd5f2f4f' visibility='default' filepath='cpuset.h' line='26' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='2056'>
-        <var-decl name='cpus' type-id='c768f32d' visibility='default'/>
+        <var-decl name='cpus' type-id='c768f32d' visibility='default' filepath='cpuset.h' line='27' column='1'/>
       </data-member>
     </class-decl>
-    <typedef-decl name='__uint16_t' type-id='f0981eec' id='253c2d2a'/>
-    <typedef-decl name='__uint32_t' type-id='f0981eed' id='62f1140c'/>
-    <typedef-decl name='__uint8_t' type-id='002ac4a6' id='c51d6389'/>
-    <typedef-decl name='uint16_t' type-id='253c2d2a' id='149c6638'/>
-    <typedef-decl name='uint32_t' type-id='62f1140c' id='8f92235e'/>
-    <typedef-decl name='uint8_t' type-id='c51d6389' id='b96825af'/>
+    <typedef-decl name='__uint16_t' type-id='f0981eec' filepath='types.h' line='40' column='1' id='253c2d2a'/>
+    <typedef-decl name='__uint32_t' type-id='f0981eed' filepath='types.h' line='42' column='1' id='62f1140c'/>
+    <typedef-decl name='__uint8_t' type-id='002ac4a6' filepath='types.h' line='38' column='1' id='c51d6389'/>
+    <typedef-decl name='uint16_t' type-id='253c2d2a' filepath='stdint-uintn.h' line='25' column='1' id='149c6638'/>
+    <typedef-decl name='uint32_t' type-id='62f1140c' filepath='stdint-uintn.h' line='26' column='1' id='8f92235e'/>
+    <typedef-decl name='uint8_t' type-id='c51d6389' filepath='stdint-uintn.h' line='24' column='1' id='b96825af'/>
     <array-type-def dimensions='1' type-id='149c6638' size-in-bits='48' id='45439f56'>
       <subrange length='3' type-id='f0981eeb' id='56f209d2'/>
     </array-type-def>
@@ -46,11 +46,11 @@
     <pointer-type-def type-id='aec5215a' size-in-bits='64' id='d5319498'/>
     <pointer-type-def type-id='d37dc7a7' size-in-bits='64' id='690b38cf'/>
     <class-decl name='spdk_nvmf_tgt' is-struct='yes' visibility='default' is-declaration-only='yes' id='d37dc7a7'/>
-    <class-decl name='spdk_nvmf_tgt_conf' is-struct='yes' visibility='default' is-declaration-only='yes' id='2dba7f0e'/>
-    <var-decl name='g_spdk_nvmf_tgt_conf' type-id='2dba7f0e' visibility='default'/>
-    <var-decl name='g_spdk_nvmf_tgt_max_subsystems' type-id='8f92235e' visibility='default'/>
-    <var-decl name='g_spdk_nvmf_tgt_crdt' type-id='45439f56' visibility='default'/>
-    <var-decl name='g_spdk_nvmf_tgt' type-id='690b38cf' visibility='default'/>
-    <var-decl name='g_poll_groups_mask' type-id='d5319498' visibility='default'/>
+    <class-decl name='spdk_nvmf_tgt_conf' is-struct='yes' visibility='default' filepath='event_nvmf.h' line='22' column='1' is-declaration-only='yes' id='2dba7f0e'/>
+    <var-decl name='g_spdk_nvmf_tgt_conf' type-id='2dba7f0e' visibility='default' filepath='event_nvmf.h' line='27' column='1'/>
+    <var-decl name='g_spdk_nvmf_tgt_max_subsystems' type-id='8f92235e' visibility='default' filepath='event_nvmf.h' line='29' column='1'/>
+    <var-decl name='g_spdk_nvmf_tgt_crdt' type-id='45439f56' visibility='default' filepath='event_nvmf.h' line='30' column='1'/>
+    <var-decl name='g_spdk_nvmf_tgt' type-id='690b38cf' visibility='default' filepath='event_nvmf.h' line='32' column='1'/>
+    <var-decl name='g_poll_groups_mask' type-id='d5319498' visibility='default' filepath='event_nvmf.h' line='34' column='1'/>
   </abi-instr>
 </abi-corpus>

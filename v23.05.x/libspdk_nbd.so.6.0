@@ -20,8 +20,8 @@
   <abi-instr address-size='64' path='nbd.c' language='LANG_C99'>
     <type-decl name='char' size-in-bits='8' id='a84c031d'/>
     <type-decl name='int' size-in-bits='32' id='95e97e5e'/>
-    <typedef-decl name='spdk_nbd_fini_cb' type-id='b7f9d8e6' id='2b3b85c6'/>
-    <typedef-decl name='spdk_nbd_start_cb' type-id='2262fa44' id='7b122a72'/>
+    <typedef-decl name='spdk_nbd_fini_cb' type-id='b7f9d8e6' filepath='nbd.h' line='20' column='1' id='2b3b85c6'/>
+    <typedef-decl name='spdk_nbd_start_cb' type-id='2262fa44' filepath='nbd.h' line='41' column='1' id='7b122a72'/>
     <qualified-type-def type-id='a84c031d' const='yes' id='9b45d938'/>
     <pointer-type-def type-id='9b45d938' size-in-bits='64' id='80f4b756'/>
     <pointer-type-def type-id='2ae61988' size-in-bits='64' id='b8e14bfe'/>
@@ -31,32 +31,32 @@
     <pointer-type-def type-id='48b5725f' size-in-bits='64' id='eaa32e2f'/>
     <class-decl name='spdk_json_write_ctx' is-struct='yes' visibility='default' is-declaration-only='yes' id='2ae61988'/>
     <type-decl name='void' id='48b5725f'/>
-    <class-decl name='spdk_nbd_disk' is-struct='yes' visibility='default' is-declaration-only='yes' id='f91298e8'/>
-    <function-decl name='spdk_nbd_init' mangled-name='spdk_nbd_init' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nbd_init'>
+    <class-decl name='spdk_nbd_disk' is-struct='yes' visibility='default' filepath='nbd.c' line='62' column='1' is-declaration-only='yes' id='f91298e8'/>
+    <function-decl name='spdk_nbd_init' mangled-name='spdk_nbd_init' filepath='nbd.c' line='107' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nbd_init'>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nbd_fini' mangled-name='spdk_nbd_fini' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nbd_fini'>
-      <parameter type-id='2b3b85c6' name='cb_fn'/>
-      <parameter type-id='eaa32e2f' name='cb_arg'/>
+    <function-decl name='spdk_nbd_fini' mangled-name='spdk_nbd_fini' filepath='nbd.c' line='135' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nbd_fini'>
+      <parameter type-id='2b3b85c6' name='cb_fn' filepath='nbd.c' line='135' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='nbd.c' line='135' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_nbd_write_config_json' mangled-name='spdk_nbd_write_config_json' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nbd_write_config_json'>
-      <parameter type-id='b8e14bfe' name='w'/>
+    <function-decl name='spdk_nbd_write_config_json' mangled-name='spdk_nbd_write_config_json' filepath='nbd.c' line='214' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nbd_write_config_json'>
+      <parameter type-id='b8e14bfe' name='w' filepath='nbd.c' line='214' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_nbd_stop' mangled-name='spdk_nbd_stop' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nbd_stop'>
-      <parameter type-id='e4abd86e' name='nbd'/>
+    <function-decl name='spdk_nbd_stop' mangled-name='spdk_nbd_stop' filepath='nbd.c' line='380' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nbd_stop'>
+      <parameter type-id='e4abd86e' name='nbd' filepath='nbd.c' line='380' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nbd_start' mangled-name='spdk_nbd_start' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nbd_start'>
-      <parameter type-id='80f4b756' name='bdev_name'/>
-      <parameter type-id='80f4b756' name='nbd_path'/>
-      <parameter type-id='7b122a72' name='cb_fn'/>
-      <parameter type-id='eaa32e2f' name='cb_arg'/>
+    <function-decl name='spdk_nbd_start' mangled-name='spdk_nbd_start' filepath='nbd.c' line='1048' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nbd_start'>
+      <parameter type-id='80f4b756' name='bdev_name' filepath='nbd.c' line='1048' column='1'/>
+      <parameter type-id='80f4b756' name='nbd_path' filepath='nbd.c' line='1048' column='1'/>
+      <parameter type-id='7b122a72' name='cb_fn' filepath='nbd.c' line='1049' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='nbd.c' line='1049' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_nbd_get_path' mangled-name='spdk_nbd_get_path' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nbd_get_path'>
-      <parameter type-id='e4abd86e' name='nbd'/>
+    <function-decl name='spdk_nbd_get_path' mangled-name='spdk_nbd_get_path' filepath='nbd.c' line='1140' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nbd_get_path'>
+      <parameter type-id='e4abd86e' name='nbd' filepath='nbd.c' line='1140' column='1'/>
       <return type-id='80f4b756'/>
     </function-decl>
     <function-type size-in-bits='64' id='c5c76c9c'>
