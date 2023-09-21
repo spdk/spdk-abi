@@ -1,0 +1,13 @@
+<abi-corpus version='2.1' soname='libspdk_bdev_uring.so.5.0'>
+  <elf-needed>
+    <dependency name='liburing.so.2'/>
+    <dependency name='libspdk_log.so.6.1'/>
+    <dependency name='libspdk_util.so.7.0'/>
+    <dependency name='libspdk_json.so.5.0'/>
+    <dependency name='libspdk_jsonrpc.so.5.1'/>
+    <dependency name='libspdk_rpc.so.5.0'/>
+    <dependency name='libspdk_bdev.so.13.0'/>
+    <dependency name='libspdk_thread.so.8.1'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+</abi-corpus>

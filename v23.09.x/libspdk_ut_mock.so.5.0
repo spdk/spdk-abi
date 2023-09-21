@@ -1,0 +1,34 @@
+<abi-corpus version='2.1' soname='libspdk_ut_mock.so.5.0'>
+  <elf-needed>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+  <abi-instr address-size='64' path='mock.c' language='LANG_C99'>
+    <type-decl name='bool' size-in-bits='8' id='c894953d'/>
+    <type-decl name='char' size-in-bits='8' id='a84c031d'/>
+    <type-decl name='int' size-in-bits='32' id='95e97e5e'/>
+    <type-decl name='long int' size-in-bits='64' id='95e97e5f'/>
+    <typedef-decl name='__ssize_t' type-id='95e97e5f' filepath='types.h' line='194' column='1' id='41060289'/>
+    <typedef-decl name='ssize_t' type-id='41060289' filepath='stdio.h' line='77' column='1' id='79a0948f'/>
+    <pointer-type-def type-id='a84c031d' size-in-bits='64' id='26a90f95'/>
+    <pointer-type-def type-id='ee076206' size-in-bits='64' id='953b12f8'/>
+    <pointer-type-def type-id='48b5725f' size-in-bits='64' id='eaa32e2f'/>
+    <type-decl name='void' id='48b5725f'/>
+    <var-decl name='ut_calloc_mocked' type-id='c894953d' visibility='default' filepath='mock.h' line='87' column='1'/>
+    <var-decl name='ut_calloc' type-id='eaa32e2f' visibility='default' filepath='mock.h' line='87' column='1'/>
+    <var-decl name='ut_pthread_mutex_init_mocked' type-id='c894953d' visibility='default' filepath='mock.h' line='89' column='1'/>
+    <var-decl name='ut_pthread_mutex_init' type-id='95e97e5e' visibility='default' filepath='mock.h' line='89' column='1'/>
+    <var-decl name='ut_pthread_mutexattr_init_mocked' type-id='c894953d' visibility='default' filepath='mock.h' line='92' column='1'/>
+    <var-decl name='ut_pthread_mutexattr_init' type-id='95e97e5e' visibility='default' filepath='mock.h' line='92' column='1'/>
+    <var-decl name='ut_recvmsg_mocked' type-id='c894953d' visibility='default' filepath='mock.h' line='95' column='1'/>
+    <var-decl name='ut_recvmsg' type-id='79a0948f' visibility='default' filepath='mock.h' line='95' column='1'/>
+    <var-decl name='ut_sendmsg_mocked' type-id='c894953d' visibility='default' filepath='mock.h' line='97' column='1'/>
+    <var-decl name='ut_sendmsg' type-id='79a0948f' visibility='default' filepath='mock.h' line='97' column='1'/>
+    <var-decl name='ut_writev_mocked' type-id='c894953d' visibility='default' filepath='mock.h' line='99' column='1'/>
+    <var-decl name='ut_writev' type-id='79a0948f' visibility='default' filepath='mock.h' line='99' column='1'/>
+    <var-decl name='g_unlink_path' type-id='26a90f95' visibility='default' filepath='mock.h' line='102' column='1'/>
+    <var-decl name='g_unlink_callback' type-id='953b12f8' visibility='default' filepath='mock.h' line='103' column='1'/>
+    <function-type size-in-bits='64' id='ee076206'>
+      <return type-id='48b5725f'/>
+    </function-type>
+  </abi-instr>
+</abi-corpus>

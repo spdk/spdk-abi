@@ -1,0 +1,10 @@
+<abi-corpus version='2.1' soname='libspdk_scheduler_dynamic.so.3.0'>
+  <elf-needed>
+    <dependency name='libspdk_event.so.12.0'/>
+    <dependency name='libspdk_log.so.6.1'/>
+    <dependency name='libspdk_thread.so.8.1'/>
+    <dependency name='libspdk_util.so.7.0'/>
+    <dependency name='libspdk_json.so.5.0'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+</abi-corpus>
