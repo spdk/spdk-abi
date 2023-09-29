@@ -1891,7 +1891,7 @@
     <typedef-decl name='spdk_bdev_quiesce_cb' type-id='1ed1e4cd' filepath='bdev_module.h' line='1694' column='1' id='40a6f2e4'/>
     <typedef-decl name='spdk_bdev_unregister_cb' type-id='1ed1e4cd' filepath='bdev_module.h' line='297' column='1' id='10afdbb3'/>
     <typedef-decl name='spdk_bdev_wait_for_examine_cb' type-id='b7f9d8e6' filepath='bdev.h' line='241' column='1' id='0cadf036'/>
-    <typedef-decl name='spdk_dif_type_t' type-id='388e2dcf' filepath='bdev.c' line='4686' column='1' id='82daf048'/>
+    <typedef-decl name='spdk_dif_type_t' type-id='388e2dcf' filepath='bdev.c' line='4683' column='1' id='82daf048'/>
     <typedef-decl name='spdk_for_each_bdev_fn' type-id='dcd53af5' filepath='bdev.h' line='446' column='1' id='8e1b2c43'/>
     <typedef-decl name='spdk_iobuf_get_cb' type-id='fa35b1b9' filepath='thread.h' line='998' column='1' id='8b006695'/>
     <typedef-decl name='uint16_t' type-id='253c2d2a' filepath='stdint-uintn.h' line='25' column='1' id='149c6638'/>
@@ -2402,942 +2402,942 @@
     <class-decl name='spdk_spinlock_internal' is-struct='yes' visibility='default' is-declaration-only='yes' id='2e6655e1'/>
     <class-decl name='spdk_thread' is-struct='yes' visibility='default' is-declaration-only='yes' id='ef0f6b10'/>
     <type-decl name='void' id='48b5725f'/>
-    <class-decl name='lba_range' is-struct='yes' visibility='default' filepath='bdev.c' line='138' column='1' is-declaration-only='yes' id='55c06e10'/>
-    <class-decl name='spdk_bdev_qos' is-struct='yes' visibility='default' filepath='bdev.c' line='186' column='1' is-declaration-only='yes' id='eb57c427'/>
-    <class-decl name='spdk_bdev_channel' is-struct='yes' visibility='default' filepath='bdev.c' line='265' column='1' is-declaration-only='yes' id='b8a34da1'/>
-    <class-decl name='spdk_bdev_desc' is-struct='yes' visibility='default' filepath='bdev.c' line='325' column='1' is-declaration-only='yes' id='43454627'/>
-    <class-decl name='spdk_bdev_channel_iter' is-struct='yes' visibility='default' filepath='bdev.c' line='362' column='1' is-declaration-only='yes' id='8b0b3e5c'/>
-    <class-decl name='spdk_bdev_io_error_stat' is-struct='yes' visibility='default' filepath='bdev.c' line='369' column='1' is-declaration-only='yes' id='50304e26'/>
-    <function-decl name='spdk_bdev_get_opts' mangled-name='spdk_bdev_get_opts' filepath='bdev.c' line='434' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_opts'>
-      <parameter type-id='f495ac72' name='opts' filepath='bdev.c' line='434' column='1'/>
-      <parameter type-id='b59d7dce' name='opts_size' filepath='bdev.c' line='434' column='1'/>
+    <class-decl name='lba_range' is-struct='yes' visibility='default' filepath='bdev.c' line='136' column='1' is-declaration-only='yes' id='55c06e10'/>
+    <class-decl name='spdk_bdev_qos' is-struct='yes' visibility='default' filepath='bdev.c' line='184' column='1' is-declaration-only='yes' id='eb57c427'/>
+    <class-decl name='spdk_bdev_channel' is-struct='yes' visibility='default' filepath='bdev.c' line='263' column='1' is-declaration-only='yes' id='b8a34da1'/>
+    <class-decl name='spdk_bdev_desc' is-struct='yes' visibility='default' filepath='bdev.c' line='323' column='1' is-declaration-only='yes' id='43454627'/>
+    <class-decl name='spdk_bdev_channel_iter' is-struct='yes' visibility='default' filepath='bdev.c' line='360' column='1' is-declaration-only='yes' id='8b0b3e5c'/>
+    <class-decl name='spdk_bdev_io_error_stat' is-struct='yes' visibility='default' filepath='bdev.c' line='367' column='1' is-declaration-only='yes' id='50304e26'/>
+    <function-decl name='spdk_bdev_get_opts' mangled-name='spdk_bdev_get_opts' filepath='bdev.c' line='432' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_opts'>
+      <parameter type-id='f495ac72' name='opts' filepath='bdev.c' line='432' column='1'/>
+      <parameter type-id='b59d7dce' name='opts_size' filepath='bdev.c' line='432' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_set_opts' mangled-name='spdk_bdev_set_opts' filepath='bdev.c' line='465' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_set_opts'>
-      <parameter type-id='f495ac72' name='opts' filepath='bdev.c' line='465' column='1'/>
+    <function-decl name='spdk_bdev_set_opts' mangled-name='spdk_bdev_set_opts' filepath='bdev.c' line='463' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_set_opts'>
+      <parameter type-id='f495ac72' name='opts' filepath='bdev.c' line='463' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_by_name' mangled-name='spdk_bdev_get_by_name' filepath='bdev.c' line='525' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_by_name'>
-      <parameter type-id='80f4b756' name='bdev_name' filepath='bdev.c' line='525' column='1'/>
+    <function-decl name='spdk_bdev_get_by_name' mangled-name='spdk_bdev_get_by_name' filepath='bdev.c' line='523' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_by_name'>
+      <parameter type-id='80f4b756' name='bdev_name' filepath='bdev.c' line='523' column='1'/>
       <return type-id='7b7cfb3d'/>
     </function-decl>
-    <function-decl name='spdk_bdev_wait_for_examine' mangled-name='spdk_bdev_wait_for_examine' filepath='bdev.c' line='593' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_wait_for_examine'>
-      <parameter type-id='0cadf036' name='cb_fn' filepath='bdev.c' line='593' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='593' column='1'/>
+    <function-decl name='spdk_bdev_wait_for_examine' mangled-name='spdk_bdev_wait_for_examine' filepath='bdev.c' line='591' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_wait_for_examine'>
+      <parameter type-id='0cadf036' name='cb_fn' filepath='bdev.c' line='591' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='591' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_examine' mangled-name='spdk_bdev_examine' filepath='bdev.c' line='774' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_examine'>
-      <parameter type-id='80f4b756' name='name' filepath='bdev.c' line='774' column='1'/>
+    <function-decl name='spdk_bdev_examine' mangled-name='spdk_bdev_examine' filepath='bdev.c' line='772' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_examine'>
+      <parameter type-id='80f4b756' name='name' filepath='bdev.c' line='772' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_first' mangled-name='spdk_bdev_first' filepath='bdev.c' line='829' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_first'>
+    <function-decl name='spdk_bdev_first' mangled-name='spdk_bdev_first' filepath='bdev.c' line='827' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_first'>
       <return type-id='7b7cfb3d'/>
     </function-decl>
-    <function-decl name='spdk_bdev_next' mangled-name='spdk_bdev_next' filepath='bdev.c' line='842' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_next'>
-      <parameter type-id='7b7cfb3d' name='prev' filepath='bdev.c' line='842' column='1'/>
+    <function-decl name='spdk_bdev_next' mangled-name='spdk_bdev_next' filepath='bdev.c' line='840' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_next'>
+      <parameter type-id='7b7cfb3d' name='prev' filepath='bdev.c' line='840' column='1'/>
       <return type-id='7b7cfb3d'/>
     </function-decl>
-    <function-decl name='spdk_bdev_first_leaf' mangled-name='spdk_bdev_first_leaf' filepath='bdev.c' line='869' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_first_leaf'>
+    <function-decl name='spdk_bdev_first_leaf' mangled-name='spdk_bdev_first_leaf' filepath='bdev.c' line='867' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_first_leaf'>
       <return type-id='7b7cfb3d'/>
     </function-decl>
-    <function-decl name='spdk_bdev_next_leaf' mangled-name='spdk_bdev_next_leaf' filepath='bdev.c' line='883' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_next_leaf'>
-      <parameter type-id='7b7cfb3d' name='prev' filepath='bdev.c' line='883' column='1'/>
+    <function-decl name='spdk_bdev_next_leaf' mangled-name='spdk_bdev_next_leaf' filepath='bdev.c' line='881' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_next_leaf'>
+      <parameter type-id='7b7cfb3d' name='prev' filepath='bdev.c' line='881' column='1'/>
       <return type-id='7b7cfb3d'/>
     </function-decl>
-    <function-decl name='spdk_bdev_io_set_buf' mangled-name='spdk_bdev_io_set_buf' filepath='bdev.c' line='938' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_set_buf'>
-      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='938' column='1'/>
-      <parameter type-id='eaa32e2f' name='buf' filepath='bdev.c' line='938' column='1'/>
-      <parameter type-id='b59d7dce' name='len' filepath='bdev.c' line='938' column='1'/>
+    <function-decl name='spdk_bdev_io_set_buf' mangled-name='spdk_bdev_io_set_buf' filepath='bdev.c' line='936' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_set_buf'>
+      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='936' column='1'/>
+      <parameter type-id='eaa32e2f' name='buf' filepath='bdev.c' line='936' column='1'/>
+      <parameter type-id='b59d7dce' name='len' filepath='bdev.c' line='936' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_io_set_md_buf' mangled-name='spdk_bdev_io_set_md_buf' filepath='bdev.c' line='957' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_set_md_buf'>
-      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='957' column='1'/>
-      <parameter type-id='eaa32e2f' name='md_buf' filepath='bdev.c' line='957' column='1'/>
-      <parameter type-id='b59d7dce' name='len' filepath='bdev.c' line='957' column='1'/>
+    <function-decl name='spdk_bdev_io_set_md_buf' mangled-name='spdk_bdev_io_set_md_buf' filepath='bdev.c' line='955' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_set_md_buf'>
+      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='955' column='1'/>
+      <parameter type-id='eaa32e2f' name='md_buf' filepath='bdev.c' line='955' column='1'/>
+      <parameter type-id='b59d7dce' name='len' filepath='bdev.c' line='955' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_io_put_aux_buf' mangled-name='spdk_bdev_io_put_aux_buf' filepath='bdev.c' line='1399' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_put_aux_buf'>
-      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='1399' column='1'/>
-      <parameter type-id='eaa32e2f' name='buf' filepath='bdev.c' line='1399' column='1'/>
+    <function-decl name='spdk_bdev_io_put_aux_buf' mangled-name='spdk_bdev_io_put_aux_buf' filepath='bdev.c' line='1397' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_put_aux_buf'>
+      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='1397' column='1'/>
+      <parameter type-id='eaa32e2f' name='buf' filepath='bdev.c' line='1397' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_io_get_buf' mangled-name='spdk_bdev_io_get_buf' filepath='bdev.c' line='1731' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_get_buf'>
-      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='1731' column='1'/>
-      <parameter type-id='cb1f5f5e' name='cb' filepath='bdev.c' line='1731' column='1'/>
-      <parameter type-id='9c313c2d' name='len' filepath='bdev.c' line='1731' column='1'/>
+    <function-decl name='spdk_bdev_io_get_buf' mangled-name='spdk_bdev_io_get_buf' filepath='bdev.c' line='1729' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_get_buf'>
+      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='1729' column='1'/>
+      <parameter type-id='cb1f5f5e' name='cb' filepath='bdev.c' line='1729' column='1'/>
+      <parameter type-id='9c313c2d' name='len' filepath='bdev.c' line='1729' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_io_get_aux_buf' mangled-name='spdk_bdev_io_get_aux_buf' filepath='bdev.c' line='1787' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_get_aux_buf'>
-      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='1787' column='1'/>
-      <parameter type-id='030e7a71' name='cb' filepath='bdev.c' line='1787' column='1'/>
+    <function-decl name='spdk_bdev_io_get_aux_buf' mangled-name='spdk_bdev_io_get_aux_buf' filepath='bdev.c' line='1785' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_get_aux_buf'>
+      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='1785' column='1'/>
+      <parameter type-id='030e7a71' name='cb' filepath='bdev.c' line='1785' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_subsystem_config_json' mangled-name='spdk_bdev_subsystem_config_json' filepath='bdev.c' line='1841' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_subsystem_config_json'>
-      <parameter type-id='b8e14bfe' name='w' filepath='bdev.c' line='1841' column='1'/>
+    <function-decl name='spdk_bdev_subsystem_config_json' mangled-name='spdk_bdev_subsystem_config_json' filepath='bdev.c' line='1839' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_subsystem_config_json'>
+      <parameter type-id='b8e14bfe' name='w' filepath='bdev.c' line='1839' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_module_init_done' mangled-name='spdk_bdev_module_init_done' filepath='bdev.c' line='2021' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_module_init_done'>
-      <parameter type-id='b509a840' name='module' filepath='bdev.c' line='2021' column='1'/>
+    <function-decl name='spdk_bdev_module_init_done' mangled-name='spdk_bdev_module_init_done' filepath='bdev.c' line='2019' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_module_init_done'>
+      <parameter type-id='b509a840' name='module' filepath='bdev.c' line='2019' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_module_examine_done' mangled-name='spdk_bdev_module_examine_done' filepath='bdev.c' line='2028' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_module_examine_done'>
-      <parameter type-id='b509a840' name='module' filepath='bdev.c' line='2028' column='1'/>
+    <function-decl name='spdk_bdev_module_examine_done' mangled-name='spdk_bdev_module_examine_done' filepath='bdev.c' line='2026' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_module_examine_done'>
+      <parameter type-id='b509a840' name='module' filepath='bdev.c' line='2026' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_initialize' mangled-name='spdk_bdev_initialize' filepath='bdev.c' line='2078' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_initialize'>
-      <parameter type-id='549b7513' name='cb_fn' filepath='bdev.c' line='2078' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='2078' column='1'/>
+    <function-decl name='spdk_bdev_initialize' mangled-name='spdk_bdev_initialize' filepath='bdev.c' line='2076' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_initialize'>
+      <parameter type-id='549b7513' name='cb_fn' filepath='bdev.c' line='2076' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='2076' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_module_fini_done' mangled-name='spdk_bdev_module_fini_done' filepath='bdev.c' line='2217' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_module_fini_done'>
+    <function-decl name='spdk_bdev_module_fini_done' mangled-name='spdk_bdev_module_fini_done' filepath='bdev.c' line='2214' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_module_fini_done'>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_module_fini_start_done' mangled-name='spdk_bdev_module_fini_start_done' filepath='bdev.c' line='2329' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_module_fini_start_done'>
+    <function-decl name='spdk_bdev_module_fini_start_done' mangled-name='spdk_bdev_module_fini_start_done' filepath='bdev.c' line='2326' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_module_fini_start_done'>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_finish' mangled-name='spdk_bdev_finish' filepath='bdev.c' line='2347' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_finish'>
-      <parameter type-id='c0b39e85' name='cb_fn' filepath='bdev.c' line='2347' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='2347' column='1'/>
+    <function-decl name='spdk_bdev_finish' mangled-name='spdk_bdev_finish' filepath='bdev.c' line='2344' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_finish'>
+      <parameter type-id='c0b39e85' name='cb_fn' filepath='bdev.c' line='2344' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='2344' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_free_io' mangled-name='spdk_bdev_free_io' filepath='bdev.c' line='2391' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_free_io'>
-      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='2391' column='1'/>
+    <function-decl name='spdk_bdev_free_io' mangled-name='spdk_bdev_free_io' filepath='bdev.c' line='2388' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_free_io'>
+      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='2388' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_io_type_supported' mangled-name='spdk_bdev_io_type_supported' filepath='bdev.c' line='3569' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_type_supported'>
-      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='3569' column='1'/>
-      <parameter type-id='9cd6c10c' name='io_type' filepath='bdev.c' line='3569' column='1'/>
+    <function-decl name='spdk_bdev_io_type_supported' mangled-name='spdk_bdev_io_type_supported' filepath='bdev.c' line='3566' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_type_supported'>
+      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='3566' column='1'/>
+      <parameter type-id='9cd6c10c' name='io_type' filepath='bdev.c' line='3566' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_bdev_io_get_submit_tsc' mangled-name='spdk_bdev_io_get_submit_tsc' filepath='bdev.c' line='3590' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_get_submit_tsc'>
-      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='3590' column='1'/>
+    <function-decl name='spdk_bdev_io_get_submit_tsc' mangled-name='spdk_bdev_io_get_submit_tsc' filepath='bdev.c' line='3587' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_get_submit_tsc'>
+      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='3587' column='1'/>
       <return type-id='9c313c2d'/>
     </function-decl>
-    <function-decl name='spdk_bdev_dump_info_json' mangled-name='spdk_bdev_dump_info_json' filepath='bdev.c' line='3596' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_dump_info_json'>
-      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='3596' column='1'/>
-      <parameter type-id='b8e14bfe' name='w' filepath='bdev.c' line='3596' column='1'/>
+    <function-decl name='spdk_bdev_dump_info_json' mangled-name='spdk_bdev_dump_info_json' filepath='bdev.c' line='3593' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_dump_info_json'>
+      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='3593' column='1'/>
+      <parameter type-id='b8e14bfe' name='w' filepath='bdev.c' line='3593' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_set_timeout' mangled-name='spdk_bdev_set_timeout' filepath='bdev.c' line='3864' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_set_timeout'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='3864' column='1'/>
-      <parameter type-id='9c313c2d' name='timeout_in_sec' filepath='bdev.c' line='3864' column='1'/>
-      <parameter type-id='85d4a35d' name='cb_fn' filepath='bdev.c' line='3865' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='3865' column='1'/>
+    <function-decl name='spdk_bdev_set_timeout' mangled-name='spdk_bdev_set_timeout' filepath='bdev.c' line='3861' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_set_timeout'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='3861' column='1'/>
+      <parameter type-id='9c313c2d' name='timeout_in_sec' filepath='bdev.c' line='3861' column='1'/>
+      <parameter type-id='85d4a35d' name='cb_fn' filepath='bdev.c' line='3862' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='3862' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_add_io_stat' mangled-name='spdk_bdev_add_io_stat' filepath='bdev.c' line='4197' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_add_io_stat'>
-      <parameter type-id='08cc63f9' name='total' filepath='bdev.c' line='4197' column='1'/>
-      <parameter type-id='08cc63f9' name='add' filepath='bdev.c' line='4197' column='1'/>
+    <function-decl name='spdk_bdev_add_io_stat' mangled-name='spdk_bdev_add_io_stat' filepath='bdev.c' line='4194' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_add_io_stat'>
+      <parameter type-id='08cc63f9' name='total' filepath='bdev.c' line='4194' column='1'/>
+      <parameter type-id='08cc63f9' name='add' filepath='bdev.c' line='4194' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_reset_io_stat' mangled-name='spdk_bdev_reset_io_stat' filepath='bdev.c' line='4249' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_reset_io_stat'>
-      <parameter type-id='08cc63f9' name='stat' filepath='bdev.c' line='4249' column='1'/>
-      <parameter type-id='c463dc5d' name='mode' filepath='bdev.c' line='4249' column='1'/>
+    <function-decl name='spdk_bdev_reset_io_stat' mangled-name='spdk_bdev_reset_io_stat' filepath='bdev.c' line='4246' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_reset_io_stat'>
+      <parameter type-id='08cc63f9' name='stat' filepath='bdev.c' line='4246' column='1'/>
+      <parameter type-id='c463dc5d' name='mode' filepath='bdev.c' line='4246' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_dump_io_stat_json' mangled-name='spdk_bdev_dump_io_stat_json' filepath='bdev.c' line='4317' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_dump_io_stat_json'>
-      <parameter type-id='08cc63f9' name='stat' filepath='bdev.c' line='4317' column='1'/>
-      <parameter type-id='b8e14bfe' name='w' filepath='bdev.c' line='4317' column='1'/>
+    <function-decl name='spdk_bdev_dump_io_stat_json' mangled-name='spdk_bdev_dump_io_stat_json' filepath='bdev.c' line='4314' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_dump_io_stat_json'>
+      <parameter type-id='08cc63f9' name='stat' filepath='bdev.c' line='4314' column='1'/>
+      <parameter type-id='b8e14bfe' name='w' filepath='bdev.c' line='4314' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_alias_add' mangled-name='spdk_bdev_alias_add' filepath='bdev.c' line='4445' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_alias_add'>
-      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='4445' column='1'/>
-      <parameter type-id='80f4b756' name='alias' filepath='bdev.c' line='4445' column='1'/>
+    <function-decl name='spdk_bdev_alias_add' mangled-name='spdk_bdev_alias_add' filepath='bdev.c' line='4442' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_alias_add'>
+      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='4442' column='1'/>
+      <parameter type-id='80f4b756' name='alias' filepath='bdev.c' line='4442' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_alias_del' mangled-name='spdk_bdev_alias_del' filepath='bdev.c' line='4491' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_alias_del'>
-      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='4491' column='1'/>
-      <parameter type-id='80f4b756' name='alias' filepath='bdev.c' line='4491' column='1'/>
+    <function-decl name='spdk_bdev_alias_del' mangled-name='spdk_bdev_alias_del' filepath='bdev.c' line='4488' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_alias_del'>
+      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='4488' column='1'/>
+      <parameter type-id='80f4b756' name='alias' filepath='bdev.c' line='4488' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_alias_del_all' mangled-name='spdk_bdev_alias_del_all' filepath='bdev.c' line='4504' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_alias_del_all'>
-      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='4504' column='1'/>
+    <function-decl name='spdk_bdev_alias_del_all' mangled-name='spdk_bdev_alias_del_all' filepath='bdev.c' line='4501' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_alias_del_all'>
+      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='4501' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_io_channel' mangled-name='spdk_bdev_get_io_channel' filepath='bdev.c' line='4516' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_io_channel'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='4516' column='1'/>
+    <function-decl name='spdk_bdev_get_io_channel' mangled-name='spdk_bdev_get_io_channel' filepath='bdev.c' line='4513' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_io_channel'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='4513' column='1'/>
       <return type-id='a7e01876'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_module_ctx' mangled-name='spdk_bdev_get_module_ctx' filepath='bdev.c' line='4522' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_module_ctx'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='4522' column='1'/>
+    <function-decl name='spdk_bdev_get_module_ctx' mangled-name='spdk_bdev_get_module_ctx' filepath='bdev.c' line='4519' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_module_ctx'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='4519' column='1'/>
       <return type-id='eaa32e2f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_module_name' mangled-name='spdk_bdev_get_module_name' filepath='bdev.c' line='4535' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_module_name'>
-      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4535' column='1'/>
+    <function-decl name='spdk_bdev_get_module_name' mangled-name='spdk_bdev_get_module_name' filepath='bdev.c' line='4532' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_module_name'>
+      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4532' column='1'/>
       <return type-id='80f4b756'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_name' mangled-name='spdk_bdev_get_name' filepath='bdev.c' line='4541' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_name'>
-      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4541' column='1'/>
+    <function-decl name='spdk_bdev_get_name' mangled-name='spdk_bdev_get_name' filepath='bdev.c' line='4538' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_name'>
+      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4538' column='1'/>
       <return type-id='80f4b756'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_product_name' mangled-name='spdk_bdev_get_product_name' filepath='bdev.c' line='4547' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_product_name'>
-      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4547' column='1'/>
+    <function-decl name='spdk_bdev_get_product_name' mangled-name='spdk_bdev_get_product_name' filepath='bdev.c' line='4544' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_product_name'>
+      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4544' column='1'/>
       <return type-id='80f4b756'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_aliases' mangled-name='spdk_bdev_get_aliases' filepath='bdev.c' line='4553' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_aliases'>
-      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4553' column='1'/>
+    <function-decl name='spdk_bdev_get_aliases' mangled-name='spdk_bdev_get_aliases' filepath='bdev.c' line='4550' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_aliases'>
+      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4550' column='1'/>
       <return type-id='3ab97220'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_block_size' mangled-name='spdk_bdev_get_block_size' filepath='bdev.c' line='4559' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_block_size'>
-      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4559' column='1'/>
+    <function-decl name='spdk_bdev_get_block_size' mangled-name='spdk_bdev_get_block_size' filepath='bdev.c' line='4556' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_block_size'>
+      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4556' column='1'/>
       <return type-id='8f92235e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_write_unit_size' mangled-name='spdk_bdev_get_write_unit_size' filepath='bdev.c' line='4565' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_write_unit_size'>
-      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4565' column='1'/>
+    <function-decl name='spdk_bdev_get_write_unit_size' mangled-name='spdk_bdev_get_write_unit_size' filepath='bdev.c' line='4562' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_write_unit_size'>
+      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4562' column='1'/>
       <return type-id='8f92235e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_num_blocks' mangled-name='spdk_bdev_get_num_blocks' filepath='bdev.c' line='4571' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_num_blocks'>
-      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4571' column='1'/>
+    <function-decl name='spdk_bdev_get_num_blocks' mangled-name='spdk_bdev_get_num_blocks' filepath='bdev.c' line='4568' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_num_blocks'>
+      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4568' column='1'/>
       <return type-id='9c313c2d'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_qos_rpc_type' mangled-name='spdk_bdev_get_qos_rpc_type' filepath='bdev.c' line='4577' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_qos_rpc_type'>
-      <parameter type-id='3270d5b4' name='type' filepath='bdev.c' line='4577' column='1'/>
+    <function-decl name='spdk_bdev_get_qos_rpc_type' mangled-name='spdk_bdev_get_qos_rpc_type' filepath='bdev.c' line='4574' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_qos_rpc_type'>
+      <parameter type-id='3270d5b4' name='type' filepath='bdev.c' line='4574' column='1'/>
       <return type-id='80f4b756'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_qos_rate_limits' mangled-name='spdk_bdev_get_qos_rate_limits' filepath='bdev.c' line='4583' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_qos_rate_limits'>
-      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='4583' column='1'/>
-      <parameter type-id='5d6479ae' name='limits' filepath='bdev.c' line='4583' column='1'/>
+    <function-decl name='spdk_bdev_get_qos_rate_limits' mangled-name='spdk_bdev_get_qos_rate_limits' filepath='bdev.c' line='4580' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_qos_rate_limits'>
+      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='4580' column='1'/>
+      <parameter type-id='5d6479ae' name='limits' filepath='bdev.c' line='4580' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_buf_align' mangled-name='spdk_bdev_get_buf_align' filepath='bdev.c' line='4606' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_buf_align'>
-      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4606' column='1'/>
+    <function-decl name='spdk_bdev_get_buf_align' mangled-name='spdk_bdev_get_buf_align' filepath='bdev.c' line='4603' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_buf_align'>
+      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4603' column='1'/>
       <return type-id='b59d7dce'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_optimal_io_boundary' mangled-name='spdk_bdev_get_optimal_io_boundary' filepath='bdev.c' line='4612' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_optimal_io_boundary'>
-      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4612' column='1'/>
+    <function-decl name='spdk_bdev_get_optimal_io_boundary' mangled-name='spdk_bdev_get_optimal_io_boundary' filepath='bdev.c' line='4609' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_optimal_io_boundary'>
+      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4609' column='1'/>
       <return type-id='8f92235e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_has_write_cache' mangled-name='spdk_bdev_has_write_cache' filepath='bdev.c' line='4618' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_has_write_cache'>
-      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4618' column='1'/>
+    <function-decl name='spdk_bdev_has_write_cache' mangled-name='spdk_bdev_has_write_cache' filepath='bdev.c' line='4615' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_has_write_cache'>
+      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4615' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_uuid' mangled-name='spdk_bdev_get_uuid' filepath='bdev.c' line='4624' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_uuid'>
-      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4624' column='1'/>
+    <function-decl name='spdk_bdev_get_uuid' mangled-name='spdk_bdev_get_uuid' filepath='bdev.c' line='4621' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_uuid'>
+      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4621' column='1'/>
       <return type-id='c2482856'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_acwu' mangled-name='spdk_bdev_get_acwu' filepath='bdev.c' line='4630' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_acwu'>
-      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4630' column='1'/>
+    <function-decl name='spdk_bdev_get_acwu' mangled-name='spdk_bdev_get_acwu' filepath='bdev.c' line='4627' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_acwu'>
+      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4627' column='1'/>
       <return type-id='149c6638'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_md_size' mangled-name='spdk_bdev_get_md_size' filepath='bdev.c' line='4636' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_md_size'>
-      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4636' column='1'/>
+    <function-decl name='spdk_bdev_get_md_size' mangled-name='spdk_bdev_get_md_size' filepath='bdev.c' line='4633' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_md_size'>
+      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4633' column='1'/>
       <return type-id='8f92235e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_is_md_interleaved' mangled-name='spdk_bdev_is_md_interleaved' filepath='bdev.c' line='4642' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_is_md_interleaved'>
-      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4642' column='1'/>
+    <function-decl name='spdk_bdev_is_md_interleaved' mangled-name='spdk_bdev_is_md_interleaved' filepath='bdev.c' line='4639' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_is_md_interleaved'>
+      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4639' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_bdev_is_md_separate' mangled-name='spdk_bdev_is_md_separate' filepath='bdev.c' line='4648' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_is_md_separate'>
-      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4648' column='1'/>
+    <function-decl name='spdk_bdev_is_md_separate' mangled-name='spdk_bdev_is_md_separate' filepath='bdev.c' line='4645' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_is_md_separate'>
+      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4645' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_bdev_is_zoned' mangled-name='spdk_bdev_is_zoned' filepath='bdev.c' line='4654' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_is_zoned'>
-      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4654' column='1'/>
+    <function-decl name='spdk_bdev_is_zoned' mangled-name='spdk_bdev_is_zoned' filepath='bdev.c' line='4651' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_is_zoned'>
+      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4651' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_data_block_size' mangled-name='spdk_bdev_get_data_block_size' filepath='bdev.c' line='4660' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_data_block_size'>
-      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4660' column='1'/>
+    <function-decl name='spdk_bdev_get_data_block_size' mangled-name='spdk_bdev_get_data_block_size' filepath='bdev.c' line='4657' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_data_block_size'>
+      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4657' column='1'/>
       <return type-id='8f92235e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_physical_block_size' mangled-name='spdk_bdev_get_physical_block_size' filepath='bdev.c' line='4670' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_physical_block_size'>
-      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4670' column='1'/>
+    <function-decl name='spdk_bdev_get_physical_block_size' mangled-name='spdk_bdev_get_physical_block_size' filepath='bdev.c' line='4667' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_physical_block_size'>
+      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4667' column='1'/>
       <return type-id='8f92235e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_dif_type' mangled-name='spdk_bdev_get_dif_type' filepath='bdev.c' line='4689' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_dif_type'>
-      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4689' column='1'/>
+    <function-decl name='spdk_bdev_get_dif_type' mangled-name='spdk_bdev_get_dif_type' filepath='bdev.c' line='4686' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_dif_type'>
+      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4686' column='1'/>
       <return type-id='82daf048'/>
     </function-decl>
-    <function-decl name='spdk_bdev_is_dif_head_of_md' mangled-name='spdk_bdev_is_dif_head_of_md' filepath='bdev.c' line='4699' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_is_dif_head_of_md'>
-      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4699' column='1'/>
+    <function-decl name='spdk_bdev_is_dif_head_of_md' mangled-name='spdk_bdev_is_dif_head_of_md' filepath='bdev.c' line='4696' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_is_dif_head_of_md'>
+      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4696' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_bdev_is_dif_check_enabled' mangled-name='spdk_bdev_is_dif_check_enabled' filepath='bdev.c' line='4709' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_is_dif_check_enabled'>
-      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4709' column='1'/>
-      <parameter type-id='91a2c9e2' name='check_type' filepath='bdev.c' line='4710' column='1'/>
+    <function-decl name='spdk_bdev_is_dif_check_enabled' mangled-name='spdk_bdev_is_dif_check_enabled' filepath='bdev.c' line='4706' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_is_dif_check_enabled'>
+      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4706' column='1'/>
+      <parameter type-id='91a2c9e2' name='check_type' filepath='bdev.c' line='4707' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_max_copy' mangled-name='spdk_bdev_get_max_copy' filepath='bdev.c' line='4741' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_max_copy'>
-      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4741' column='1'/>
+    <function-decl name='spdk_bdev_get_max_copy' mangled-name='spdk_bdev_get_max_copy' filepath='bdev.c' line='4738' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_max_copy'>
+      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4738' column='1'/>
       <return type-id='8f92235e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_qd' mangled-name='spdk_bdev_get_qd' filepath='bdev.c' line='4747' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_qd'>
-      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4747' column='1'/>
+    <function-decl name='spdk_bdev_get_qd' mangled-name='spdk_bdev_get_qd' filepath='bdev.c' line='4744' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_qd'>
+      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4744' column='1'/>
       <return type-id='9c313c2d'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_qd_sampling_period' mangled-name='spdk_bdev_get_qd_sampling_period' filepath='bdev.c' line='4753' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_qd_sampling_period'>
-      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4753' column='1'/>
+    <function-decl name='spdk_bdev_get_qd_sampling_period' mangled-name='spdk_bdev_get_qd_sampling_period' filepath='bdev.c' line='4750' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_qd_sampling_period'>
+      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4750' column='1'/>
       <return type-id='9c313c2d'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_weighted_io_time' mangled-name='spdk_bdev_get_weighted_io_time' filepath='bdev.c' line='4759' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_weighted_io_time'>
-      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4759' column='1'/>
+    <function-decl name='spdk_bdev_get_weighted_io_time' mangled-name='spdk_bdev_get_weighted_io_time' filepath='bdev.c' line='4756' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_weighted_io_time'>
+      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4756' column='1'/>
       <return type-id='9c313c2d'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_io_time' mangled-name='spdk_bdev_get_io_time' filepath='bdev.c' line='4765' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_io_time'>
-      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4765' column='1'/>
+    <function-decl name='spdk_bdev_get_io_time' mangled-name='spdk_bdev_get_io_time' filepath='bdev.c' line='4762' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_io_time'>
+      <parameter type-id='2ed9d900' name='bdev' filepath='bdev.c' line='4762' column='1'/>
       <return type-id='9c313c2d'/>
     </function-decl>
-    <function-decl name='spdk_bdev_set_qd_sampling_period' mangled-name='spdk_bdev_set_qd_sampling_period' filepath='bdev.c' line='4840' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_set_qd_sampling_period'>
-      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='4840' column='1'/>
-      <parameter type-id='9c313c2d' name='period' filepath='bdev.c' line='4840' column='1'/>
+    <function-decl name='spdk_bdev_set_qd_sampling_period' mangled-name='spdk_bdev_set_qd_sampling_period' filepath='bdev.c' line='4837' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_set_qd_sampling_period'>
+      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='4837' column='1'/>
+      <parameter type-id='9c313c2d' name='period' filepath='bdev.c' line='4837' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_current_qd' mangled-name='spdk_bdev_get_current_qd' filepath='bdev.c' line='4900' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_current_qd'>
-      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='4900' column='1'/>
-      <parameter type-id='9ffc5ccb' name='cb_fn' filepath='bdev.c' line='4900' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='4901' column='1'/>
+    <function-decl name='spdk_bdev_get_current_qd' mangled-name='spdk_bdev_get_current_qd' filepath='bdev.c' line='4897' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_current_qd'>
+      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='4897' column='1'/>
+      <parameter type-id='9ffc5ccb' name='cb_fn' filepath='bdev.c' line='4897' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='4898' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_notify_blockcnt_change' mangled-name='spdk_bdev_notify_blockcnt_change' filepath='bdev.c' line='4962' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_notify_blockcnt_change'>
-      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='4962' column='1'/>
-      <parameter type-id='9c313c2d' name='size' filepath='bdev.c' line='4962' column='1'/>
+    <function-decl name='spdk_bdev_notify_blockcnt_change' mangled-name='spdk_bdev_notify_blockcnt_change' filepath='bdev.c' line='4959' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_notify_blockcnt_change'>
+      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='4959' column='1'/>
+      <parameter type-id='9c313c2d' name='size' filepath='bdev.c' line='4959' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_seek_data' mangled-name='spdk_bdev_seek_data' filepath='bdev.c' line='5090' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_seek_data'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5090' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5090' column='1'/>
-      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5091' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5092' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5092' column='1'/>
+    <function-decl name='spdk_bdev_seek_data' mangled-name='spdk_bdev_seek_data' filepath='bdev.c' line='5087' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_seek_data'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5087' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5087' column='1'/>
+      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5088' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5089' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5089' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_seek_hole' mangled-name='spdk_bdev_seek_hole' filepath='bdev.c' line='5098' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_seek_hole'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5098' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5098' column='1'/>
-      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5099' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5100' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5100' column='1'/>
+    <function-decl name='spdk_bdev_seek_hole' mangled-name='spdk_bdev_seek_hole' filepath='bdev.c' line='5095' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_seek_hole'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5095' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5095' column='1'/>
+      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5096' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5097' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5097' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_io_get_seek_offset' mangled-name='spdk_bdev_io_get_seek_offset' filepath='bdev.c' line='5106' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_get_seek_offset'>
-      <parameter type-id='95eae837' name='bdev_io' filepath='bdev.c' line='5106' column='1'/>
+    <function-decl name='spdk_bdev_io_get_seek_offset' mangled-name='spdk_bdev_io_get_seek_offset' filepath='bdev.c' line='5103' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_get_seek_offset'>
+      <parameter type-id='95eae837' name='bdev_io' filepath='bdev.c' line='5103' column='1'/>
       <return type-id='9c313c2d'/>
     </function-decl>
-    <function-decl name='spdk_bdev_read' mangled-name='spdk_bdev_read' filepath='bdev.c' line='5149' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_read'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5149' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5149' column='1'/>
-      <parameter type-id='eaa32e2f' name='buf' filepath='bdev.c' line='5150' column='1'/>
-      <parameter type-id='9c313c2d' name='offset' filepath='bdev.c' line='5150' column='1'/>
-      <parameter type-id='9c313c2d' name='nbytes' filepath='bdev.c' line='5150' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5151' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5151' column='1'/>
+    <function-decl name='spdk_bdev_read' mangled-name='spdk_bdev_read' filepath='bdev.c' line='5146' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_read'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5146' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5146' column='1'/>
+      <parameter type-id='eaa32e2f' name='buf' filepath='bdev.c' line='5147' column='1'/>
+      <parameter type-id='9c313c2d' name='offset' filepath='bdev.c' line='5147' column='1'/>
+      <parameter type-id='9c313c2d' name='nbytes' filepath='bdev.c' line='5147' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5148' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5148' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_read_blocks' mangled-name='spdk_bdev_read_blocks' filepath='bdev.c' line='5164' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_read_blocks'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5164' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5164' column='1'/>
-      <parameter type-id='eaa32e2f' name='buf' filepath='bdev.c' line='5165' column='1'/>
-      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5165' column='1'/>
-      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5165' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5166' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5166' column='1'/>
+    <function-decl name='spdk_bdev_read_blocks' mangled-name='spdk_bdev_read_blocks' filepath='bdev.c' line='5161' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_read_blocks'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5161' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5161' column='1'/>
+      <parameter type-id='eaa32e2f' name='buf' filepath='bdev.c' line='5162' column='1'/>
+      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5162' column='1'/>
+      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5162' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5163' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5163' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_read_blocks_with_md' mangled-name='spdk_bdev_read_blocks_with_md' filepath='bdev.c' line='5172' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_read_blocks_with_md'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5172' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5172' column='1'/>
-      <parameter type-id='eaa32e2f' name='buf' filepath='bdev.c' line='5173' column='1'/>
-      <parameter type-id='eaa32e2f' name='md_buf' filepath='bdev.c' line='5173' column='1'/>
-      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5173' column='1'/>
-      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5173' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5174' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5174' column='1'/>
+    <function-decl name='spdk_bdev_read_blocks_with_md' mangled-name='spdk_bdev_read_blocks_with_md' filepath='bdev.c' line='5169' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_read_blocks_with_md'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5169' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5169' column='1'/>
+      <parameter type-id='eaa32e2f' name='buf' filepath='bdev.c' line='5170' column='1'/>
+      <parameter type-id='eaa32e2f' name='md_buf' filepath='bdev.c' line='5170' column='1'/>
+      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5170' column='1'/>
+      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5170' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5171' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5171' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_readv' mangled-name='spdk_bdev_readv' filepath='bdev.c' line='5193' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_readv'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5193' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5193' column='1'/>
-      <parameter type-id='cc4b1be9' name='iov' filepath='bdev.c' line='5194' column='1'/>
-      <parameter type-id='95e97e5e' name='iovcnt' filepath='bdev.c' line='5194' column='1'/>
-      <parameter type-id='9c313c2d' name='offset' filepath='bdev.c' line='5195' column='1'/>
-      <parameter type-id='9c313c2d' name='nbytes' filepath='bdev.c' line='5195' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5196' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5196' column='1'/>
+    <function-decl name='spdk_bdev_readv' mangled-name='spdk_bdev_readv' filepath='bdev.c' line='5190' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_readv'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5190' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5190' column='1'/>
+      <parameter type-id='cc4b1be9' name='iov' filepath='bdev.c' line='5191' column='1'/>
+      <parameter type-id='95e97e5e' name='iovcnt' filepath='bdev.c' line='5191' column='1'/>
+      <parameter type-id='9c313c2d' name='offset' filepath='bdev.c' line='5192' column='1'/>
+      <parameter type-id='9c313c2d' name='nbytes' filepath='bdev.c' line='5192' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5193' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5193' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_readv_blocks' mangled-name='spdk_bdev_readv_blocks' filepath='bdev.c' line='5251' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_readv_blocks'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5251' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5251' column='1'/>
-      <parameter type-id='cc4b1be9' name='iov' filepath='bdev.c' line='5252' column='1'/>
-      <parameter type-id='95e97e5e' name='iovcnt' filepath='bdev.c' line='5252' column='1'/>
-      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5253' column='1'/>
-      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5253' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5254' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5254' column='1'/>
+    <function-decl name='spdk_bdev_readv_blocks' mangled-name='spdk_bdev_readv_blocks' filepath='bdev.c' line='5248' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_readv_blocks'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5248' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5248' column='1'/>
+      <parameter type-id='cc4b1be9' name='iov' filepath='bdev.c' line='5249' column='1'/>
+      <parameter type-id='95e97e5e' name='iovcnt' filepath='bdev.c' line='5249' column='1'/>
+      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5250' column='1'/>
+      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5250' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5251' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5251' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_readv_blocks_with_md' mangled-name='spdk_bdev_readv_blocks_with_md' filepath='bdev.c' line='5261' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_readv_blocks_with_md'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5261' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5261' column='1'/>
-      <parameter type-id='cc4b1be9' name='iov' filepath='bdev.c' line='5262' column='1'/>
-      <parameter type-id='95e97e5e' name='iovcnt' filepath='bdev.c' line='5262' column='1'/>
-      <parameter type-id='eaa32e2f' name='md_buf' filepath='bdev.c' line='5262' column='1'/>
-      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5263' column='1'/>
-      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5263' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5264' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5264' column='1'/>
+    <function-decl name='spdk_bdev_readv_blocks_with_md' mangled-name='spdk_bdev_readv_blocks_with_md' filepath='bdev.c' line='5258' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_readv_blocks_with_md'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5258' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5258' column='1'/>
+      <parameter type-id='cc4b1be9' name='iov' filepath='bdev.c' line='5259' column='1'/>
+      <parameter type-id='95e97e5e' name='iovcnt' filepath='bdev.c' line='5259' column='1'/>
+      <parameter type-id='eaa32e2f' name='md_buf' filepath='bdev.c' line='5259' column='1'/>
+      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5260' column='1'/>
+      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5260' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5261' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5261' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_readv_blocks_ext' mangled-name='spdk_bdev_readv_blocks_ext' filepath='bdev.c' line='5294' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_readv_blocks_ext'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5294' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5294' column='1'/>
-      <parameter type-id='cc4b1be9' name='iov' filepath='bdev.c' line='5295' column='1'/>
-      <parameter type-id='95e97e5e' name='iovcnt' filepath='bdev.c' line='5295' column='1'/>
-      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5296' column='1'/>
-      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5296' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5297' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5297' column='1'/>
-      <parameter type-id='faf6ec89' name='opts' filepath='bdev.c' line='5298' column='1'/>
+    <function-decl name='spdk_bdev_readv_blocks_ext' mangled-name='spdk_bdev_readv_blocks_ext' filepath='bdev.c' line='5291' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_readv_blocks_ext'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5291' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5291' column='1'/>
+      <parameter type-id='cc4b1be9' name='iov' filepath='bdev.c' line='5292' column='1'/>
+      <parameter type-id='95e97e5e' name='iovcnt' filepath='bdev.c' line='5292' column='1'/>
+      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5293' column='1'/>
+      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5293' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5294' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5294' column='1'/>
+      <parameter type-id='faf6ec89' name='opts' filepath='bdev.c' line='5295' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_write' mangled-name='spdk_bdev_write' filepath='bdev.c' line='5367' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_write'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5367' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5367' column='1'/>
-      <parameter type-id='eaa32e2f' name='buf' filepath='bdev.c' line='5368' column='1'/>
-      <parameter type-id='9c313c2d' name='offset' filepath='bdev.c' line='5368' column='1'/>
-      <parameter type-id='9c313c2d' name='nbytes' filepath='bdev.c' line='5368' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5369' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5369' column='1'/>
+    <function-decl name='spdk_bdev_write' mangled-name='spdk_bdev_write' filepath='bdev.c' line='5364' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_write'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5364' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5364' column='1'/>
+      <parameter type-id='eaa32e2f' name='buf' filepath='bdev.c' line='5365' column='1'/>
+      <parameter type-id='9c313c2d' name='offset' filepath='bdev.c' line='5365' column='1'/>
+      <parameter type-id='9c313c2d' name='nbytes' filepath='bdev.c' line='5365' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5366' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5366' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_write_blocks' mangled-name='spdk_bdev_write_blocks' filepath='bdev.c' line='5382' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_write_blocks'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5382' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5382' column='1'/>
-      <parameter type-id='eaa32e2f' name='buf' filepath='bdev.c' line='5383' column='1'/>
-      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5383' column='1'/>
-      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5383' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5384' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5384' column='1'/>
+    <function-decl name='spdk_bdev_write_blocks' mangled-name='spdk_bdev_write_blocks' filepath='bdev.c' line='5379' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_write_blocks'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5379' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5379' column='1'/>
+      <parameter type-id='eaa32e2f' name='buf' filepath='bdev.c' line='5380' column='1'/>
+      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5380' column='1'/>
+      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5380' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5381' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5381' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_write_blocks_with_md' mangled-name='spdk_bdev_write_blocks_with_md' filepath='bdev.c' line='5391' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_write_blocks_with_md'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5391' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5391' column='1'/>
-      <parameter type-id='eaa32e2f' name='buf' filepath='bdev.c' line='5392' column='1'/>
-      <parameter type-id='eaa32e2f' name='md_buf' filepath='bdev.c' line='5392' column='1'/>
-      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5392' column='1'/>
-      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5392' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5393' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5393' column='1'/>
+    <function-decl name='spdk_bdev_write_blocks_with_md' mangled-name='spdk_bdev_write_blocks_with_md' filepath='bdev.c' line='5388' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_write_blocks_with_md'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5388' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5388' column='1'/>
+      <parameter type-id='eaa32e2f' name='buf' filepath='bdev.c' line='5389' column='1'/>
+      <parameter type-id='eaa32e2f' name='md_buf' filepath='bdev.c' line='5389' column='1'/>
+      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5389' column='1'/>
+      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5389' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5390' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5390' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_writev' mangled-name='spdk_bdev_writev' filepath='bdev.c' line='5459' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_writev'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5459' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5459' column='1'/>
-      <parameter type-id='cc4b1be9' name='iov' filepath='bdev.c' line='5460' column='1'/>
-      <parameter type-id='95e97e5e' name='iovcnt' filepath='bdev.c' line='5460' column='1'/>
-      <parameter type-id='9c313c2d' name='offset' filepath='bdev.c' line='5461' column='1'/>
-      <parameter type-id='9c313c2d' name='len' filepath='bdev.c' line='5461' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5462' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5462' column='1'/>
+    <function-decl name='spdk_bdev_writev' mangled-name='spdk_bdev_writev' filepath='bdev.c' line='5456' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_writev'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5456' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5456' column='1'/>
+      <parameter type-id='cc4b1be9' name='iov' filepath='bdev.c' line='5457' column='1'/>
+      <parameter type-id='95e97e5e' name='iovcnt' filepath='bdev.c' line='5457' column='1'/>
+      <parameter type-id='9c313c2d' name='offset' filepath='bdev.c' line='5458' column='1'/>
+      <parameter type-id='9c313c2d' name='len' filepath='bdev.c' line='5458' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5459' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5459' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_writev_blocks' mangled-name='spdk_bdev_writev_blocks' filepath='bdev.c' line='5475' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_writev_blocks'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5475' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5475' column='1'/>
-      <parameter type-id='cc4b1be9' name='iov' filepath='bdev.c' line='5476' column='1'/>
-      <parameter type-id='95e97e5e' name='iovcnt' filepath='bdev.c' line='5476' column='1'/>
-      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5477' column='1'/>
-      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5477' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5478' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5478' column='1'/>
+    <function-decl name='spdk_bdev_writev_blocks' mangled-name='spdk_bdev_writev_blocks' filepath='bdev.c' line='5472' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_writev_blocks'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5472' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5472' column='1'/>
+      <parameter type-id='cc4b1be9' name='iov' filepath='bdev.c' line='5473' column='1'/>
+      <parameter type-id='95e97e5e' name='iovcnt' filepath='bdev.c' line='5473' column='1'/>
+      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5474' column='1'/>
+      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5474' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5475' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5475' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_writev_blocks_with_md' mangled-name='spdk_bdev_writev_blocks_with_md' filepath='bdev.c' line='5485' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_writev_blocks_with_md'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5485' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5485' column='1'/>
-      <parameter type-id='cc4b1be9' name='iov' filepath='bdev.c' line='5486' column='1'/>
-      <parameter type-id='95e97e5e' name='iovcnt' filepath='bdev.c' line='5486' column='1'/>
-      <parameter type-id='eaa32e2f' name='md_buf' filepath='bdev.c' line='5486' column='1'/>
-      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5487' column='1'/>
-      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5487' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5488' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5488' column='1'/>
+    <function-decl name='spdk_bdev_writev_blocks_with_md' mangled-name='spdk_bdev_writev_blocks_with_md' filepath='bdev.c' line='5482' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_writev_blocks_with_md'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5482' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5482' column='1'/>
+      <parameter type-id='cc4b1be9' name='iov' filepath='bdev.c' line='5483' column='1'/>
+      <parameter type-id='95e97e5e' name='iovcnt' filepath='bdev.c' line='5483' column='1'/>
+      <parameter type-id='eaa32e2f' name='md_buf' filepath='bdev.c' line='5483' column='1'/>
+      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5484' column='1'/>
+      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5484' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5485' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5485' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_writev_blocks_ext' mangled-name='spdk_bdev_writev_blocks_ext' filepath='bdev.c' line='5503' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_writev_blocks_ext'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5503' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5503' column='1'/>
-      <parameter type-id='cc4b1be9' name='iov' filepath='bdev.c' line='5504' column='1'/>
-      <parameter type-id='95e97e5e' name='iovcnt' filepath='bdev.c' line='5504' column='1'/>
-      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5505' column='1'/>
-      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5505' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5506' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5506' column='1'/>
-      <parameter type-id='faf6ec89' name='opts' filepath='bdev.c' line='5507' column='1'/>
+    <function-decl name='spdk_bdev_writev_blocks_ext' mangled-name='spdk_bdev_writev_blocks_ext' filepath='bdev.c' line='5500' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_writev_blocks_ext'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5500' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5500' column='1'/>
+      <parameter type-id='cc4b1be9' name='iov' filepath='bdev.c' line='5501' column='1'/>
+      <parameter type-id='95e97e5e' name='iovcnt' filepath='bdev.c' line='5501' column='1'/>
+      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5502' column='1'/>
+      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5502' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5503' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5503' column='1'/>
+      <parameter type-id='faf6ec89' name='opts' filepath='bdev.c' line='5504' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_comparev_blocks' mangled-name='spdk_bdev_comparev_blocks' filepath='bdev.c' line='5637' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_comparev_blocks'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5637' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5637' column='1'/>
-      <parameter type-id='cc4b1be9' name='iov' filepath='bdev.c' line='5638' column='1'/>
-      <parameter type-id='95e97e5e' name='iovcnt' filepath='bdev.c' line='5638' column='1'/>
-      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5639' column='1'/>
-      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5639' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5640' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5640' column='1'/>
+    <function-decl name='spdk_bdev_comparev_blocks' mangled-name='spdk_bdev_comparev_blocks' filepath='bdev.c' line='5634' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_comparev_blocks'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5634' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5634' column='1'/>
+      <parameter type-id='cc4b1be9' name='iov' filepath='bdev.c' line='5635' column='1'/>
+      <parameter type-id='95e97e5e' name='iovcnt' filepath='bdev.c' line='5635' column='1'/>
+      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5636' column='1'/>
+      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5636' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5637' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5637' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_comparev_blocks_with_md' mangled-name='spdk_bdev_comparev_blocks_with_md' filepath='bdev.c' line='5647' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_comparev_blocks_with_md'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5647' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5647' column='1'/>
-      <parameter type-id='cc4b1be9' name='iov' filepath='bdev.c' line='5648' column='1'/>
-      <parameter type-id='95e97e5e' name='iovcnt' filepath='bdev.c' line='5648' column='1'/>
-      <parameter type-id='eaa32e2f' name='md_buf' filepath='bdev.c' line='5648' column='1'/>
-      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5649' column='1'/>
-      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5649' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5650' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5650' column='1'/>
+    <function-decl name='spdk_bdev_comparev_blocks_with_md' mangled-name='spdk_bdev_comparev_blocks_with_md' filepath='bdev.c' line='5644' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_comparev_blocks_with_md'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5644' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5644' column='1'/>
+      <parameter type-id='cc4b1be9' name='iov' filepath='bdev.c' line='5645' column='1'/>
+      <parameter type-id='95e97e5e' name='iovcnt' filepath='bdev.c' line='5645' column='1'/>
+      <parameter type-id='eaa32e2f' name='md_buf' filepath='bdev.c' line='5645' column='1'/>
+      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5646' column='1'/>
+      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5646' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5647' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5647' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_compare_blocks' mangled-name='spdk_bdev_compare_blocks' filepath='bdev.c' line='5708' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_compare_blocks'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5708' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5708' column='1'/>
-      <parameter type-id='eaa32e2f' name='buf' filepath='bdev.c' line='5709' column='1'/>
-      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5709' column='1'/>
-      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5709' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5710' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5710' column='1'/>
+    <function-decl name='spdk_bdev_compare_blocks' mangled-name='spdk_bdev_compare_blocks' filepath='bdev.c' line='5705' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_compare_blocks'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5705' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5705' column='1'/>
+      <parameter type-id='eaa32e2f' name='buf' filepath='bdev.c' line='5706' column='1'/>
+      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5706' column='1'/>
+      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5706' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5707' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5707' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_compare_blocks_with_md' mangled-name='spdk_bdev_compare_blocks_with_md' filepath='bdev.c' line='5717' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_compare_blocks_with_md'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5717' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5717' column='1'/>
-      <parameter type-id='eaa32e2f' name='buf' filepath='bdev.c' line='5718' column='1'/>
-      <parameter type-id='eaa32e2f' name='md_buf' filepath='bdev.c' line='5718' column='1'/>
-      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5718' column='1'/>
-      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5718' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5719' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5719' column='1'/>
+    <function-decl name='spdk_bdev_compare_blocks_with_md' mangled-name='spdk_bdev_compare_blocks_with_md' filepath='bdev.c' line='5714' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_compare_blocks_with_md'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5714' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5714' column='1'/>
+      <parameter type-id='eaa32e2f' name='buf' filepath='bdev.c' line='5715' column='1'/>
+      <parameter type-id='eaa32e2f' name='md_buf' filepath='bdev.c' line='5715' column='1'/>
+      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5715' column='1'/>
+      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5715' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5716' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5716' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_comparev_and_writev_blocks' mangled-name='spdk_bdev_comparev_and_writev_blocks' filepath='bdev.c' line='5843' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_comparev_and_writev_blocks'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5843' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5843' column='1'/>
-      <parameter type-id='cc4b1be9' name='compare_iov' filepath='bdev.c' line='5844' column='1'/>
-      <parameter type-id='95e97e5e' name='compare_iovcnt' filepath='bdev.c' line='5844' column='1'/>
-      <parameter type-id='cc4b1be9' name='write_iov' filepath='bdev.c' line='5845' column='1'/>
-      <parameter type-id='95e97e5e' name='write_iovcnt' filepath='bdev.c' line='5845' column='1'/>
-      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5846' column='1'/>
-      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5846' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5847' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5847' column='1'/>
+    <function-decl name='spdk_bdev_comparev_and_writev_blocks' mangled-name='spdk_bdev_comparev_and_writev_blocks' filepath='bdev.c' line='5840' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_comparev_and_writev_blocks'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5840' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5840' column='1'/>
+      <parameter type-id='cc4b1be9' name='compare_iov' filepath='bdev.c' line='5841' column='1'/>
+      <parameter type-id='95e97e5e' name='compare_iovcnt' filepath='bdev.c' line='5841' column='1'/>
+      <parameter type-id='cc4b1be9' name='write_iov' filepath='bdev.c' line='5842' column='1'/>
+      <parameter type-id='95e97e5e' name='write_iovcnt' filepath='bdev.c' line='5842' column='1'/>
+      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5843' column='1'/>
+      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5843' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5844' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5844' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_zcopy_start' mangled-name='spdk_bdev_zcopy_start' filepath='bdev.c' line='5895' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_zcopy_start'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5895' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5895' column='1'/>
-      <parameter type-id='cc4b1be9' name='iov' filepath='bdev.c' line='5896' column='1'/>
-      <parameter type-id='95e97e5e' name='iovcnt' filepath='bdev.c' line='5896' column='1'/>
-      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5897' column='1'/>
-      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5897' column='1'/>
-      <parameter type-id='c894953d' name='populate' filepath='bdev.c' line='5898' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5899' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5899' column='1'/>
+    <function-decl name='spdk_bdev_zcopy_start' mangled-name='spdk_bdev_zcopy_start' filepath='bdev.c' line='5892' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_zcopy_start'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5892' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5892' column='1'/>
+      <parameter type-id='cc4b1be9' name='iov' filepath='bdev.c' line='5893' column='1'/>
+      <parameter type-id='95e97e5e' name='iovcnt' filepath='bdev.c' line='5893' column='1'/>
+      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5894' column='1'/>
+      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5894' column='1'/>
+      <parameter type-id='c894953d' name='populate' filepath='bdev.c' line='5895' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5896' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5896' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_zcopy_end' mangled-name='spdk_bdev_zcopy_end' filepath='bdev.c' line='5944' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_zcopy_end'>
-      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='5944' column='1'/>
-      <parameter type-id='c894953d' name='commit' filepath='bdev.c' line='5944' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5945' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5945' column='1'/>
+    <function-decl name='spdk_bdev_zcopy_end' mangled-name='spdk_bdev_zcopy_end' filepath='bdev.c' line='5941' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_zcopy_end'>
+      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='5941' column='1'/>
+      <parameter type-id='c894953d' name='commit' filepath='bdev.c' line='5941' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5942' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5942' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_write_zeroes' mangled-name='spdk_bdev_write_zeroes' filepath='bdev.c' line='5963' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_write_zeroes'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5963' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5963' column='1'/>
-      <parameter type-id='9c313c2d' name='offset' filepath='bdev.c' line='5964' column='1'/>
-      <parameter type-id='9c313c2d' name='len' filepath='bdev.c' line='5964' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5965' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5965' column='1'/>
+    <function-decl name='spdk_bdev_write_zeroes' mangled-name='spdk_bdev_write_zeroes' filepath='bdev.c' line='5960' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_write_zeroes'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5960' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5960' column='1'/>
+      <parameter type-id='9c313c2d' name='offset' filepath='bdev.c' line='5961' column='1'/>
+      <parameter type-id='9c313c2d' name='len' filepath='bdev.c' line='5961' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5962' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5962' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_write_zeroes_blocks' mangled-name='spdk_bdev_write_zeroes_blocks' filepath='bdev.c' line='5978' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_write_zeroes_blocks'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5978' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5978' column='1'/>
-      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5979' column='1'/>
-      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5979' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5980' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5980' column='1'/>
+    <function-decl name='spdk_bdev_write_zeroes_blocks' mangled-name='spdk_bdev_write_zeroes_blocks' filepath='bdev.c' line='5975' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_write_zeroes_blocks'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='5975' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='5975' column='1'/>
+      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='5976' column='1'/>
+      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='5976' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='5977' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='5977' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_unmap' mangled-name='spdk_bdev_unmap' filepath='bdev.c' line='6033' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_unmap'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='6033' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='6033' column='1'/>
-      <parameter type-id='9c313c2d' name='offset' filepath='bdev.c' line='6034' column='1'/>
-      <parameter type-id='9c313c2d' name='nbytes' filepath='bdev.c' line='6034' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='6035' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='6035' column='1'/>
+    <function-decl name='spdk_bdev_unmap' mangled-name='spdk_bdev_unmap' filepath='bdev.c' line='6030' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_unmap'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='6030' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='6030' column='1'/>
+      <parameter type-id='9c313c2d' name='offset' filepath='bdev.c' line='6031' column='1'/>
+      <parameter type-id='9c313c2d' name='nbytes' filepath='bdev.c' line='6031' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='6032' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='6032' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_unmap_blocks' mangled-name='spdk_bdev_unmap_blocks' filepath='bdev.c' line='6048' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_unmap_blocks'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='6048' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='6048' column='1'/>
-      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='6049' column='1'/>
-      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='6049' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='6050' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='6050' column='1'/>
+    <function-decl name='spdk_bdev_unmap_blocks' mangled-name='spdk_bdev_unmap_blocks' filepath='bdev.c' line='6045' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_unmap_blocks'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='6045' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='6045' column='1'/>
+      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='6046' column='1'/>
+      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='6046' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='6047' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='6047' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_flush' mangled-name='spdk_bdev_flush' filepath='bdev.c' line='6095' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_flush'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='6095' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='6095' column='1'/>
-      <parameter type-id='9c313c2d' name='offset' filepath='bdev.c' line='6096' column='1'/>
-      <parameter type-id='9c313c2d' name='length' filepath='bdev.c' line='6096' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='6097' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='6097' column='1'/>
+    <function-decl name='spdk_bdev_flush' mangled-name='spdk_bdev_flush' filepath='bdev.c' line='6092' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_flush'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='6092' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='6092' column='1'/>
+      <parameter type-id='9c313c2d' name='offset' filepath='bdev.c' line='6093' column='1'/>
+      <parameter type-id='9c313c2d' name='length' filepath='bdev.c' line='6093' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='6094' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='6094' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_flush_blocks' mangled-name='spdk_bdev_flush_blocks' filepath='bdev.c' line='6110' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_flush_blocks'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='6110' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='6110' column='1'/>
-      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='6111' column='1'/>
-      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='6111' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='6112' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='6112' column='1'/>
+    <function-decl name='spdk_bdev_flush_blocks' mangled-name='spdk_bdev_flush_blocks' filepath='bdev.c' line='6107' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_flush_blocks'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='6107' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='6107' column='1'/>
+      <parameter type-id='9c313c2d' name='offset_blocks' filepath='bdev.c' line='6108' column='1'/>
+      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='6108' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='6109' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='6109' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_reset' mangled-name='spdk_bdev_reset' filepath='bdev.c' line='6312' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_reset'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='6312' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='6312' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='6313' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='6313' column='1'/>
+    <function-decl name='spdk_bdev_reset' mangled-name='spdk_bdev_reset' filepath='bdev.c' line='6309' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_reset'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='6309' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='6309' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='6310' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='6310' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_io_stat' mangled-name='spdk_bdev_get_io_stat' filepath='bdev.c' line='6344' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_io_stat'>
-      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='6344' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='6344' column='1'/>
-      <parameter type-id='08cc63f9' name='stat' filepath='bdev.c' line='6345' column='1'/>
+    <function-decl name='spdk_bdev_get_io_stat' mangled-name='spdk_bdev_get_io_stat' filepath='bdev.c' line='6341' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_io_stat'>
+      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='6341' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='6341' column='1'/>
+      <parameter type-id='08cc63f9' name='stat' filepath='bdev.c' line='6342' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_device_stat' mangled-name='spdk_bdev_get_device_stat' filepath='bdev.c' line='6374' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_device_stat'>
-      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='6374' column='1'/>
-      <parameter type-id='08cc63f9' name='stat' filepath='bdev.c' line='6374' column='1'/>
-      <parameter type-id='75d8d625' name='cb' filepath='bdev.c' line='6375' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='6375' column='1'/>
+    <function-decl name='spdk_bdev_get_device_stat' mangled-name='spdk_bdev_get_device_stat' filepath='bdev.c' line='6371' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_device_stat'>
+      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='6371' column='1'/>
+      <parameter type-id='08cc63f9' name='stat' filepath='bdev.c' line='6371' column='1'/>
+      <parameter type-id='75d8d625' name='cb' filepath='bdev.c' line='6372' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='6372' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_nvme_admin_passthru' mangled-name='spdk_bdev_nvme_admin_passthru' filepath='bdev.c' line='6463' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_nvme_admin_passthru'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='6463' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='6463' column='1'/>
-      <parameter type-id='0cb9fb3c' name='cmd' filepath='bdev.c' line='6464' column='1'/>
-      <parameter type-id='eaa32e2f' name='buf' filepath='bdev.c' line='6464' column='1'/>
-      <parameter type-id='b59d7dce' name='nbytes' filepath='bdev.c' line='6464' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='6465' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='6465' column='1'/>
+    <function-decl name='spdk_bdev_nvme_admin_passthru' mangled-name='spdk_bdev_nvme_admin_passthru' filepath='bdev.c' line='6460' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_nvme_admin_passthru'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='6460' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='6460' column='1'/>
+      <parameter type-id='0cb9fb3c' name='cmd' filepath='bdev.c' line='6461' column='1'/>
+      <parameter type-id='eaa32e2f' name='buf' filepath='bdev.c' line='6461' column='1'/>
+      <parameter type-id='b59d7dce' name='nbytes' filepath='bdev.c' line='6461' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='6462' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='6462' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_nvme_io_passthru' mangled-name='spdk_bdev_nvme_io_passthru' filepath='bdev.c' line='6500' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_nvme_io_passthru'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='6500' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='6500' column='1'/>
-      <parameter type-id='0cb9fb3c' name='cmd' filepath='bdev.c' line='6501' column='1'/>
-      <parameter type-id='eaa32e2f' name='buf' filepath='bdev.c' line='6501' column='1'/>
-      <parameter type-id='b59d7dce' name='nbytes' filepath='bdev.c' line='6501' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='6502' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='6502' column='1'/>
+    <function-decl name='spdk_bdev_nvme_io_passthru' mangled-name='spdk_bdev_nvme_io_passthru' filepath='bdev.c' line='6497' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_nvme_io_passthru'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='6497' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='6497' column='1'/>
+      <parameter type-id='0cb9fb3c' name='cmd' filepath='bdev.c' line='6498' column='1'/>
+      <parameter type-id='eaa32e2f' name='buf' filepath='bdev.c' line='6498' column='1'/>
+      <parameter type-id='b59d7dce' name='nbytes' filepath='bdev.c' line='6498' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='6499' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='6499' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_nvme_io_passthru_md' mangled-name='spdk_bdev_nvme_io_passthru_md' filepath='bdev.c' line='6542' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_nvme_io_passthru_md'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='6542' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='6542' column='1'/>
-      <parameter type-id='0cb9fb3c' name='cmd' filepath='bdev.c' line='6543' column='1'/>
-      <parameter type-id='eaa32e2f' name='buf' filepath='bdev.c' line='6543' column='1'/>
-      <parameter type-id='b59d7dce' name='nbytes' filepath='bdev.c' line='6543' column='1'/>
-      <parameter type-id='eaa32e2f' name='md_buf' filepath='bdev.c' line='6543' column='1'/>
-      <parameter type-id='b59d7dce' name='md_len' filepath='bdev.c' line='6543' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='6544' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='6544' column='1'/>
+    <function-decl name='spdk_bdev_nvme_io_passthru_md' mangled-name='spdk_bdev_nvme_io_passthru_md' filepath='bdev.c' line='6539' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_nvme_io_passthru_md'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='6539' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='6539' column='1'/>
+      <parameter type-id='0cb9fb3c' name='cmd' filepath='bdev.c' line='6540' column='1'/>
+      <parameter type-id='eaa32e2f' name='buf' filepath='bdev.c' line='6540' column='1'/>
+      <parameter type-id='b59d7dce' name='nbytes' filepath='bdev.c' line='6540' column='1'/>
+      <parameter type-id='eaa32e2f' name='md_buf' filepath='bdev.c' line='6540' column='1'/>
+      <parameter type-id='b59d7dce' name='md_len' filepath='bdev.c' line='6540' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='6541' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='6541' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_abort' mangled-name='spdk_bdev_abort' filepath='bdev.c' line='6786' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_abort'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='6786' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='6786' column='1'/>
-      <parameter type-id='eaa32e2f' name='bio_cb_arg' filepath='bdev.c' line='6787' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='6788' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='6788' column='1'/>
+    <function-decl name='spdk_bdev_abort' mangled-name='spdk_bdev_abort' filepath='bdev.c' line='6783' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_abort'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='6783' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='6783' column='1'/>
+      <parameter type-id='eaa32e2f' name='bio_cb_arg' filepath='bdev.c' line='6784' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='6785' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='6785' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_queue_io_wait' mangled-name='spdk_bdev_queue_io_wait' filepath='bdev.c' line='6826' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_queue_io_wait'>
-      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='6826' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='6826' column='1'/>
-      <parameter type-id='2c737c29' name='entry' filepath='bdev.c' line='6827' column='1'/>
+    <function-decl name='spdk_bdev_queue_io_wait' mangled-name='spdk_bdev_queue_io_wait' filepath='bdev.c' line='6823' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_queue_io_wait'>
+      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='6823' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='6823' column='1'/>
+      <parameter type-id='2c737c29' name='entry' filepath='bdev.c' line='6824' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_io_complete' mangled-name='spdk_bdev_io_complete' filepath='bdev.c' line='7082' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_complete'>
-      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='7082' column='1'/>
-      <parameter type-id='11906e0e' name='status' filepath='bdev.c' line='7082' column='1'/>
+    <function-decl name='spdk_bdev_io_complete' mangled-name='spdk_bdev_io_complete' filepath='bdev.c' line='7079' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_complete'>
+      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='7079' column='1'/>
+      <parameter type-id='11906e0e' name='status' filepath='bdev.c' line='7079' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_io_complete_scsi_status' mangled-name='spdk_bdev_io_complete_scsi_status' filepath='bdev.c' line='7138' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_complete_scsi_status'>
-      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='7138' column='1'/>
-      <parameter type-id='aabad29c' name='sc' filepath='bdev.c' line='7138' column='1'/>
-      <parameter type-id='00418730' name='sk' filepath='bdev.c' line='7139' column='1'/>
-      <parameter type-id='b96825af' name='asc' filepath='bdev.c' line='7139' column='1'/>
-      <parameter type-id='b96825af' name='ascq' filepath='bdev.c' line='7139' column='1'/>
+    <function-decl name='spdk_bdev_io_complete_scsi_status' mangled-name='spdk_bdev_io_complete_scsi_status' filepath='bdev.c' line='7135' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_complete_scsi_status'>
+      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='7135' column='1'/>
+      <parameter type-id='aabad29c' name='sc' filepath='bdev.c' line='7135' column='1'/>
+      <parameter type-id='00418730' name='sk' filepath='bdev.c' line='7136' column='1'/>
+      <parameter type-id='b96825af' name='asc' filepath='bdev.c' line='7136' column='1'/>
+      <parameter type-id='b96825af' name='ascq' filepath='bdev.c' line='7136' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_io_get_scsi_status' mangled-name='spdk_bdev_io_get_scsi_status' filepath='bdev.c' line='7157' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_get_scsi_status'>
-      <parameter type-id='95eae837' name='bdev_io' filepath='bdev.c' line='7157' column='1'/>
-      <parameter type-id='7292109c' name='sc' filepath='bdev.c' line='7158' column='1'/>
-      <parameter type-id='7292109c' name='sk' filepath='bdev.c' line='7158' column='1'/>
-      <parameter type-id='7292109c' name='asc' filepath='bdev.c' line='7158' column='1'/>
-      <parameter type-id='7292109c' name='ascq' filepath='bdev.c' line='7158' column='1'/>
+    <function-decl name='spdk_bdev_io_get_scsi_status' mangled-name='spdk_bdev_io_get_scsi_status' filepath='bdev.c' line='7154' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_get_scsi_status'>
+      <parameter type-id='95eae837' name='bdev_io' filepath='bdev.c' line='7154' column='1'/>
+      <parameter type-id='7292109c' name='sc' filepath='bdev.c' line='7155' column='1'/>
+      <parameter type-id='7292109c' name='sk' filepath='bdev.c' line='7155' column='1'/>
+      <parameter type-id='7292109c' name='asc' filepath='bdev.c' line='7155' column='1'/>
+      <parameter type-id='7292109c' name='ascq' filepath='bdev.c' line='7155' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_io_complete_aio_status' mangled-name='spdk_bdev_io_complete_aio_status' filepath='bdev.c' line='7191' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_complete_aio_status'>
-      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='7191' column='1'/>
-      <parameter type-id='95e97e5e' name='aio_result' filepath='bdev.c' line='7191' column='1'/>
+    <function-decl name='spdk_bdev_io_complete_aio_status' mangled-name='spdk_bdev_io_complete_aio_status' filepath='bdev.c' line='7188' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_complete_aio_status'>
+      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='7188' column='1'/>
+      <parameter type-id='95e97e5e' name='aio_result' filepath='bdev.c' line='7188' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_io_get_aio_status' mangled-name='spdk_bdev_io_get_aio_status' filepath='bdev.c' line='7207' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_get_aio_status'>
-      <parameter type-id='95eae837' name='bdev_io' filepath='bdev.c' line='7207' column='1'/>
-      <parameter type-id='7292109c' name='aio_result' filepath='bdev.c' line='7207' column='1'/>
+    <function-decl name='spdk_bdev_io_get_aio_status' mangled-name='spdk_bdev_io_get_aio_status' filepath='bdev.c' line='7204' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_get_aio_status'>
+      <parameter type-id='95eae837' name='bdev_io' filepath='bdev.c' line='7204' column='1'/>
+      <parameter type-id='7292109c' name='aio_result' filepath='bdev.c' line='7204' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_io_complete_nvme_status' mangled-name='spdk_bdev_io_complete_nvme_status' filepath='bdev.c' line='7221' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_complete_nvme_status'>
-      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='7221' column='1'/>
-      <parameter type-id='8f92235e' name='cdw0' filepath='bdev.c' line='7221' column='1'/>
-      <parameter type-id='95e97e5e' name='sct' filepath='bdev.c' line='7221' column='1'/>
-      <parameter type-id='95e97e5e' name='sc' filepath='bdev.c' line='7221' column='1'/>
+    <function-decl name='spdk_bdev_io_complete_nvme_status' mangled-name='spdk_bdev_io_complete_nvme_status' filepath='bdev.c' line='7218' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_complete_nvme_status'>
+      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='7218' column='1'/>
+      <parameter type-id='8f92235e' name='cdw0' filepath='bdev.c' line='7218' column='1'/>
+      <parameter type-id='95e97e5e' name='sct' filepath='bdev.c' line='7218' column='1'/>
+      <parameter type-id='95e97e5e' name='sc' filepath='bdev.c' line='7218' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_io_get_nvme_status' mangled-name='spdk_bdev_io_get_nvme_status' filepath='bdev.c' line='7241' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_get_nvme_status'>
-      <parameter type-id='95eae837' name='bdev_io' filepath='bdev.c' line='7241' column='1'/>
-      <parameter type-id='90421557' name='cdw0' filepath='bdev.c' line='7241' column='1'/>
-      <parameter type-id='7292109c' name='sct' filepath='bdev.c' line='7241' column='1'/>
-      <parameter type-id='7292109c' name='sc' filepath='bdev.c' line='7241' column='1'/>
+    <function-decl name='spdk_bdev_io_get_nvme_status' mangled-name='spdk_bdev_io_get_nvme_status' filepath='bdev.c' line='7238' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_get_nvme_status'>
+      <parameter type-id='95eae837' name='bdev_io' filepath='bdev.c' line='7238' column='1'/>
+      <parameter type-id='90421557' name='cdw0' filepath='bdev.c' line='7238' column='1'/>
+      <parameter type-id='7292109c' name='sct' filepath='bdev.c' line='7238' column='1'/>
+      <parameter type-id='7292109c' name='sc' filepath='bdev.c' line='7238' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_io_get_nvme_fused_status' mangled-name='spdk_bdev_io_get_nvme_fused_status' filepath='bdev.c' line='7276' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_get_nvme_fused_status'>
-      <parameter type-id='95eae837' name='bdev_io' filepath='bdev.c' line='7276' column='1'/>
-      <parameter type-id='90421557' name='cdw0' filepath='bdev.c' line='7276' column='1'/>
-      <parameter type-id='7292109c' name='first_sct' filepath='bdev.c' line='7277' column='1'/>
-      <parameter type-id='7292109c' name='first_sc' filepath='bdev.c' line='7277' column='1'/>
-      <parameter type-id='7292109c' name='second_sct' filepath='bdev.c' line='7277' column='1'/>
-      <parameter type-id='7292109c' name='second_sc' filepath='bdev.c' line='7277' column='1'/>
+    <function-decl name='spdk_bdev_io_get_nvme_fused_status' mangled-name='spdk_bdev_io_get_nvme_fused_status' filepath='bdev.c' line='7273' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_get_nvme_fused_status'>
+      <parameter type-id='95eae837' name='bdev_io' filepath='bdev.c' line='7273' column='1'/>
+      <parameter type-id='90421557' name='cdw0' filepath='bdev.c' line='7273' column='1'/>
+      <parameter type-id='7292109c' name='first_sct' filepath='bdev.c' line='7274' column='1'/>
+      <parameter type-id='7292109c' name='first_sc' filepath='bdev.c' line='7274' column='1'/>
+      <parameter type-id='7292109c' name='second_sct' filepath='bdev.c' line='7274' column='1'/>
+      <parameter type-id='7292109c' name='second_sc' filepath='bdev.c' line='7274' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_io_get_thread' mangled-name='spdk_bdev_io_get_thread' filepath='bdev.c' line='7329' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_get_thread'>
-      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='7329' column='1'/>
+    <function-decl name='spdk_bdev_io_get_thread' mangled-name='spdk_bdev_io_get_thread' filepath='bdev.c' line='7326' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_get_thread'>
+      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='7326' column='1'/>
       <return type-id='f8fcfe66'/>
     </function-decl>
-    <function-decl name='spdk_bdev_io_get_io_channel' mangled-name='spdk_bdev_io_get_io_channel' filepath='bdev.c' line='7335' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_get_io_channel'>
-      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='7335' column='1'/>
+    <function-decl name='spdk_bdev_io_get_io_channel' mangled-name='spdk_bdev_io_get_io_channel' filepath='bdev.c' line='7332' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_get_io_channel'>
+      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='7332' column='1'/>
       <return type-id='a7e01876'/>
     </function-decl>
-    <function-decl name='spdk_bdev_destruct_done' mangled-name='spdk_bdev_destruct_done' filepath='bdev.c' line='7514' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_destruct_done'>
-      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='7514' column='1'/>
-      <parameter type-id='95e97e5e' name='bdeverrno' filepath='bdev.c' line='7514' column='1'/>
+    <function-decl name='spdk_bdev_destruct_done' mangled-name='spdk_bdev_destruct_done' filepath='bdev.c' line='7511' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_destruct_done'>
+      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='7511' column='1'/>
+      <parameter type-id='95e97e5e' name='bdeverrno' filepath='bdev.c' line='7511' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_unregister' mangled-name='spdk_bdev_unregister' filepath='bdev.c' line='7610' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_unregister'>
-      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='7610' column='1'/>
-      <parameter type-id='10afdbb3' name='cb_fn' filepath='bdev.c' line='7610' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='7610' column='1'/>
+    <function-decl name='spdk_bdev_unregister' mangled-name='spdk_bdev_unregister' filepath='bdev.c' line='7607' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_unregister'>
+      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='7607' column='1'/>
+      <parameter type-id='10afdbb3' name='cb_fn' filepath='bdev.c' line='7607' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='7607' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_unregister_by_name' mangled-name='spdk_bdev_unregister_by_name' filepath='bdev.c' line='7650' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_unregister_by_name'>
-      <parameter type-id='80f4b756' name='bdev_name' filepath='bdev.c' line='7650' column='1'/>
-      <parameter type-id='b509a840' name='module' filepath='bdev.c' line='7650' column='1'/>
-      <parameter type-id='10afdbb3' name='cb_fn' filepath='bdev.c' line='7651' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='7651' column='1'/>
+    <function-decl name='spdk_bdev_unregister_by_name' mangled-name='spdk_bdev_unregister_by_name' filepath='bdev.c' line='7647' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_unregister_by_name'>
+      <parameter type-id='80f4b756' name='bdev_name' filepath='bdev.c' line='7647' column='1'/>
+      <parameter type-id='b509a840' name='module' filepath='bdev.c' line='7647' column='1'/>
+      <parameter type-id='10afdbb3' name='cb_fn' filepath='bdev.c' line='7648' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='7648' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_open_ext' mangled-name='spdk_bdev_open_ext' filepath='bdev.c' line='7863' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_open_ext'>
-      <parameter type-id='80f4b756' name='bdev_name' filepath='bdev.c' line='7863' column='1'/>
-      <parameter type-id='c894953d' name='write' filepath='bdev.c' line='7863' column='1'/>
-      <parameter type-id='3de10a34' name='event_cb' filepath='bdev.c' line='7863' column='1'/>
-      <parameter type-id='eaa32e2f' name='event_ctx' filepath='bdev.c' line='7864' column='1'/>
-      <parameter type-id='3ecde4cf' name='_desc' filepath='bdev.c' line='7864' column='1'/>
+    <function-decl name='spdk_bdev_open_ext' mangled-name='spdk_bdev_open_ext' filepath='bdev.c' line='7860' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_open_ext'>
+      <parameter type-id='80f4b756' name='bdev_name' filepath='bdev.c' line='7860' column='1'/>
+      <parameter type-id='c894953d' name='write' filepath='bdev.c' line='7860' column='1'/>
+      <parameter type-id='3de10a34' name='event_cb' filepath='bdev.c' line='7860' column='1'/>
+      <parameter type-id='eaa32e2f' name='event_ctx' filepath='bdev.c' line='7861' column='1'/>
+      <parameter type-id='3ecde4cf' name='_desc' filepath='bdev.c' line='7861' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_open_async' mangled-name='spdk_bdev_open_async' filepath='bdev.c' line='8032' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_open_async'>
-      <parameter type-id='80f4b756' name='bdev_name' filepath='bdev.c' line='8032' column='1'/>
-      <parameter type-id='c894953d' name='write' filepath='bdev.c' line='8032' column='1'/>
-      <parameter type-id='3de10a34' name='event_cb' filepath='bdev.c' line='8032' column='1'/>
-      <parameter type-id='eaa32e2f' name='event_ctx' filepath='bdev.c' line='8033' column='1'/>
-      <parameter type-id='f85a6e52' name='opts' filepath='bdev.c' line='8033' column='1'/>
-      <parameter type-id='832c5abb' name='open_cb' filepath='bdev.c' line='8034' column='1'/>
-      <parameter type-id='eaa32e2f' name='open_cb_arg' filepath='bdev.c' line='8034' column='1'/>
+    <function-decl name='spdk_bdev_open_async' mangled-name='spdk_bdev_open_async' filepath='bdev.c' line='8029' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_open_async'>
+      <parameter type-id='80f4b756' name='bdev_name' filepath='bdev.c' line='8029' column='1'/>
+      <parameter type-id='c894953d' name='write' filepath='bdev.c' line='8029' column='1'/>
+      <parameter type-id='3de10a34' name='event_cb' filepath='bdev.c' line='8029' column='1'/>
+      <parameter type-id='eaa32e2f' name='event_ctx' filepath='bdev.c' line='8030' column='1'/>
+      <parameter type-id='f85a6e52' name='opts' filepath='bdev.c' line='8030' column='1'/>
+      <parameter type-id='832c5abb' name='open_cb' filepath='bdev.c' line='8031' column='1'/>
+      <parameter type-id='eaa32e2f' name='open_cb_arg' filepath='bdev.c' line='8031' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_close' mangled-name='spdk_bdev_close' filepath='bdev.c' line='8146' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_close'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='8146' column='1'/>
+    <function-decl name='spdk_bdev_close' mangled-name='spdk_bdev_close' filepath='bdev.c' line='8143' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_close'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='8143' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_register' mangled-name='spdk_bdev_register' filepath='bdev.c' line='8180' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_register'>
-      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='8180' column='1'/>
+    <function-decl name='spdk_bdev_register' mangled-name='spdk_bdev_register' filepath='bdev.c' line='8177' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_register'>
+      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='8177' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_module_claim_bdev' mangled-name='spdk_bdev_module_claim_bdev' filepath='bdev.c' line='8224' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_module_claim_bdev'>
-      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='8224' column='1'/>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='8224' column='1'/>
-      <parameter type-id='b509a840' name='module' filepath='bdev.c' line='8225' column='1'/>
+    <function-decl name='spdk_bdev_module_claim_bdev' mangled-name='spdk_bdev_module_claim_bdev' filepath='bdev.c' line='8221' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_module_claim_bdev'>
+      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='8221' column='1'/>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='8221' column='1'/>
+      <parameter type-id='b509a840' name='module' filepath='bdev.c' line='8222' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_module_release_bdev' mangled-name='spdk_bdev_module_release_bdev' filepath='bdev.c' line='8247' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_module_release_bdev'>
-      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='8247' column='1'/>
+    <function-decl name='spdk_bdev_module_release_bdev' mangled-name='spdk_bdev_module_release_bdev' filepath='bdev.c' line='8244' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_module_release_bdev'>
+      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='8244' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_claim_get_name' mangled-name='spdk_bdev_claim_get_name' filepath='bdev.c' line='8264' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_claim_get_name'>
-      <parameter type-id='e323b446' name='type' filepath='bdev.c' line='8264' column='1'/>
+    <function-decl name='spdk_bdev_claim_get_name' mangled-name='spdk_bdev_claim_get_name' filepath='bdev.c' line='8261' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_claim_get_name'>
+      <parameter type-id='e323b446' name='type' filepath='bdev.c' line='8261' column='1'/>
       <return type-id='80f4b756'/>
     </function-decl>
-    <function-decl name='spdk_bdev_claim_opts_init' mangled-name='spdk_bdev_claim_opts_init' filepath='bdev.c' line='8312' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_claim_opts_init'>
-      <parameter type-id='d1fbfd3d' name='opts' filepath='bdev.c' line='8312' column='1'/>
-      <parameter type-id='b59d7dce' name='size' filepath='bdev.c' line='8312' column='1'/>
+    <function-decl name='spdk_bdev_claim_opts_init' mangled-name='spdk_bdev_claim_opts_init' filepath='bdev.c' line='8309' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_claim_opts_init'>
+      <parameter type-id='d1fbfd3d' name='opts' filepath='bdev.c' line='8309' column='1'/>
+      <parameter type-id='b59d7dce' name='size' filepath='bdev.c' line='8309' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_module_claim_bdev_desc' mangled-name='spdk_bdev_module_claim_bdev_desc' filepath='bdev.c' line='8533' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_module_claim_bdev_desc'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='8533' column='1'/>
-      <parameter type-id='e323b446' name='type' filepath='bdev.c' line='8533' column='1'/>
-      <parameter type-id='d1fbfd3d' name='_opts' filepath='bdev.c' line='8534' column='1'/>
-      <parameter type-id='b509a840' name='module' filepath='bdev.c' line='8535' column='1'/>
+    <function-decl name='spdk_bdev_module_claim_bdev_desc' mangled-name='spdk_bdev_module_claim_bdev_desc' filepath='bdev.c' line='8530' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_module_claim_bdev_desc'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='8530' column='1'/>
+      <parameter type-id='e323b446' name='type' filepath='bdev.c' line='8530' column='1'/>
+      <parameter type-id='d1fbfd3d' name='_opts' filepath='bdev.c' line='8531' column='1'/>
+      <parameter type-id='b509a840' name='module' filepath='bdev.c' line='8532' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_desc_get_bdev' mangled-name='spdk_bdev_desc_get_bdev' filepath='bdev.c' line='8634' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_desc_get_bdev'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='8634' column='1'/>
+    <function-decl name='spdk_bdev_desc_get_bdev' mangled-name='spdk_bdev_desc_get_bdev' filepath='bdev.c' line='8631' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_desc_get_bdev'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='8631' column='1'/>
       <return type-id='7b7cfb3d'/>
     </function-decl>
-    <function-decl name='spdk_for_each_bdev' mangled-name='spdk_for_each_bdev' filepath='bdev.c' line='8641' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_for_each_bdev'>
-      <parameter type-id='eaa32e2f' name='ctx' filepath='bdev.c' line='8641' column='1'/>
-      <parameter type-id='8e1b2c43' name='fn' filepath='bdev.c' line='8641' column='1'/>
+    <function-decl name='spdk_for_each_bdev' mangled-name='spdk_for_each_bdev' filepath='bdev.c' line='8638' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_for_each_bdev'>
+      <parameter type-id='eaa32e2f' name='ctx' filepath='bdev.c' line='8638' column='1'/>
+      <parameter type-id='8e1b2c43' name='fn' filepath='bdev.c' line='8638' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_for_each_bdev_leaf' mangled-name='spdk_for_each_bdev_leaf' filepath='bdev.c' line='8685' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_for_each_bdev_leaf'>
-      <parameter type-id='eaa32e2f' name='ctx' filepath='bdev.c' line='8685' column='1'/>
-      <parameter type-id='8e1b2c43' name='fn' filepath='bdev.c' line='8685' column='1'/>
+    <function-decl name='spdk_for_each_bdev_leaf' mangled-name='spdk_for_each_bdev_leaf' filepath='bdev.c' line='8682' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_for_each_bdev_leaf'>
+      <parameter type-id='eaa32e2f' name='ctx' filepath='bdev.c' line='8682' column='1'/>
+      <parameter type-id='8e1b2c43' name='fn' filepath='bdev.c' line='8682' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_io_get_iovec' mangled-name='spdk_bdev_io_get_iovec' filepath='bdev.c' line='8729' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_get_iovec'>
-      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='8729' column='1'/>
-      <parameter type-id='5d3cb3f9' name='iovp' filepath='bdev.c' line='8729' column='1'/>
-      <parameter type-id='7292109c' name='iovcntp' filepath='bdev.c' line='8729' column='1'/>
+    <function-decl name='spdk_bdev_io_get_iovec' mangled-name='spdk_bdev_io_get_iovec' filepath='bdev.c' line='8726' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_get_iovec'>
+      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='8726' column='1'/>
+      <parameter type-id='5d3cb3f9' name='iovp' filepath='bdev.c' line='8726' column='1'/>
+      <parameter type-id='7292109c' name='iovcntp' filepath='bdev.c' line='8726' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_io_get_md_buf' mangled-name='spdk_bdev_io_get_md_buf' filepath='bdev.c' line='8760' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_get_md_buf'>
-      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='8760' column='1'/>
+    <function-decl name='spdk_bdev_io_get_md_buf' mangled-name='spdk_bdev_io_get_md_buf' filepath='bdev.c' line='8757' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_get_md_buf'>
+      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='8757' column='1'/>
       <return type-id='eaa32e2f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_io_get_cb_arg' mangled-name='spdk_bdev_io_get_cb_arg' filepath='bdev.c' line='8779' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_get_cb_arg'>
-      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='8779' column='1'/>
+    <function-decl name='spdk_bdev_io_get_cb_arg' mangled-name='spdk_bdev_io_get_cb_arg' filepath='bdev.c' line='8776' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_io_get_cb_arg'>
+      <parameter type-id='378e9c1c' name='bdev_io' filepath='bdev.c' line='8776' column='1'/>
       <return type-id='eaa32e2f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_module_list_add' mangled-name='spdk_bdev_module_list_add' filepath='bdev.c' line='8790' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_module_list_add'>
-      <parameter type-id='b509a840' name='bdev_module' filepath='bdev.c' line='8790' column='1'/>
+    <function-decl name='spdk_bdev_module_list_add' mangled-name='spdk_bdev_module_list_add' filepath='bdev.c' line='8787' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_module_list_add'>
+      <parameter type-id='b509a840' name='bdev_module' filepath='bdev.c' line='8787' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_module_list_find' mangled-name='spdk_bdev_module_list_find' filepath='bdev.c' line='8814' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_module_list_find'>
-      <parameter type-id='80f4b756' name='name' filepath='bdev.c' line='8814' column='1'/>
+    <function-decl name='spdk_bdev_module_list_find' mangled-name='spdk_bdev_module_list_find' filepath='bdev.c' line='8811' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_module_list_find'>
+      <parameter type-id='80f4b756' name='name' filepath='bdev.c' line='8811' column='1'/>
       <return type-id='b509a840'/>
     </function-decl>
-    <function-decl name='spdk_bdev_set_qos_rate_limits' mangled-name='spdk_bdev_set_qos_rate_limits' filepath='bdev.c' line='8993' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_set_qos_rate_limits'>
-      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='8993' column='1'/>
-      <parameter type-id='5d6479ae' name='limits' filepath='bdev.c' line='8993' column='1'/>
-      <parameter type-id='1ed1e4cd' name='cb_fn' filepath='bdev.c' line='8994' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='8994' column='1'/>
+    <function-decl name='spdk_bdev_set_qos_rate_limits' mangled-name='spdk_bdev_set_qos_rate_limits' filepath='bdev.c' line='8990' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_set_qos_rate_limits'>
+      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='8990' column='1'/>
+      <parameter type-id='5d6479ae' name='limits' filepath='bdev.c' line='8990' column='1'/>
+      <parameter type-id='1ed1e4cd' name='cb_fn' filepath='bdev.c' line='8991' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='8991' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_histogram_enable' mangled-name='spdk_bdev_histogram_enable' filepath='bdev.c' line='9169' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_histogram_enable'>
-      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='9169' column='1'/>
-      <parameter type-id='7598a612' name='cb_fn' filepath='bdev.c' line='9169' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='9170' column='1'/>
-      <parameter type-id='c894953d' name='enable' filepath='bdev.c' line='9170' column='1'/>
+    <function-decl name='spdk_bdev_histogram_enable' mangled-name='spdk_bdev_histogram_enable' filepath='bdev.c' line='9166' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_histogram_enable'>
+      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='9166' column='1'/>
+      <parameter type-id='7598a612' name='cb_fn' filepath='bdev.c' line='9166' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='9167' column='1'/>
+      <parameter type-id='c894953d' name='enable' filepath='bdev.c' line='9167' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_histogram_get' mangled-name='spdk_bdev_histogram_get' filepath='bdev.c' line='9243' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_histogram_get'>
-      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='9243' column='1'/>
-      <parameter type-id='72176057' name='histogram' filepath='bdev.c' line='9243' column='1'/>
-      <parameter type-id='fb45a108' name='cb_fn' filepath='bdev.c' line='9244' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='9245' column='1'/>
+    <function-decl name='spdk_bdev_histogram_get' mangled-name='spdk_bdev_histogram_get' filepath='bdev.c' line='9240' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_histogram_get'>
+      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='9240' column='1'/>
+      <parameter type-id='72176057' name='histogram' filepath='bdev.c' line='9240' column='1'/>
+      <parameter type-id='fb45a108' name='cb_fn' filepath='bdev.c' line='9241' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='9242' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_channel_get_histogram' mangled-name='spdk_bdev_channel_get_histogram' filepath='bdev.c' line='9266' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_channel_get_histogram'>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='9266' column='1'/>
-      <parameter type-id='fb45a108' name='cb_fn' filepath='bdev.c' line='9266' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='9267' column='1'/>
+    <function-decl name='spdk_bdev_channel_get_histogram' mangled-name='spdk_bdev_channel_get_histogram' filepath='bdev.c' line='9263' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_channel_get_histogram'>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='9263' column='1'/>
+      <parameter type-id='fb45a108' name='cb_fn' filepath='bdev.c' line='9263' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='9264' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_media_events' mangled-name='spdk_bdev_get_media_events' filepath='bdev.c' line='9281' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_media_events'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='9281' column='1'/>
-      <parameter type-id='5ed322e1' name='events' filepath='bdev.c' line='9281' column='1'/>
-      <parameter type-id='b59d7dce' name='max_events' filepath='bdev.c' line='9282' column='1'/>
+    <function-decl name='spdk_bdev_get_media_events' mangled-name='spdk_bdev_get_media_events' filepath='bdev.c' line='9278' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_media_events'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='9278' column='1'/>
+      <parameter type-id='5ed322e1' name='events' filepath='bdev.c' line='9278' column='1'/>
+      <parameter type-id='b59d7dce' name='max_events' filepath='bdev.c' line='9279' column='1'/>
       <return type-id='b59d7dce'/>
     </function-decl>
-    <function-decl name='spdk_bdev_push_media_events' mangled-name='spdk_bdev_push_media_events' filepath='bdev.c' line='9302' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_push_media_events'>
-      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='9302' column='1'/>
-      <parameter type-id='42b59544' name='events' filepath='bdev.c' line='9302' column='1'/>
-      <parameter type-id='b59d7dce' name='num_events' filepath='bdev.c' line='9303' column='1'/>
+    <function-decl name='spdk_bdev_push_media_events' mangled-name='spdk_bdev_push_media_events' filepath='bdev.c' line='9299' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_push_media_events'>
+      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='9299' column='1'/>
+      <parameter type-id='42b59544' name='events' filepath='bdev.c' line='9299' column='1'/>
+      <parameter type-id='b59d7dce' name='num_events' filepath='bdev.c' line='9300' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_notify_media_management' mangled-name='spdk_bdev_notify_media_management' filepath='bdev.c' line='9350' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_notify_media_management'>
-      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='9350' column='1'/>
+    <function-decl name='spdk_bdev_notify_media_management' mangled-name='spdk_bdev_notify_media_management' filepath='bdev.c' line='9347' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_notify_media_management'>
+      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='9347' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_quiesce' mangled-name='spdk_bdev_quiesce' filepath='bdev.c' line='9818' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_quiesce'>
-      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='9818' column='1'/>
-      <parameter type-id='b509a840' name='module' filepath='bdev.c' line='9818' column='1'/>
-      <parameter type-id='40a6f2e4' name='cb_fn' filepath='bdev.c' line='9819' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='9819' column='1'/>
+    <function-decl name='spdk_bdev_quiesce' mangled-name='spdk_bdev_quiesce' filepath='bdev.c' line='9815' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_quiesce'>
+      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='9815' column='1'/>
+      <parameter type-id='b509a840' name='module' filepath='bdev.c' line='9815' column='1'/>
+      <parameter type-id='40a6f2e4' name='cb_fn' filepath='bdev.c' line='9816' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='9816' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_unquiesce' mangled-name='spdk_bdev_unquiesce' filepath='bdev.c' line='9825' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_unquiesce'>
-      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='9825' column='1'/>
-      <parameter type-id='b509a840' name='module' filepath='bdev.c' line='9825' column='1'/>
-      <parameter type-id='40a6f2e4' name='cb_fn' filepath='bdev.c' line='9826' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='9826' column='1'/>
+    <function-decl name='spdk_bdev_unquiesce' mangled-name='spdk_bdev_unquiesce' filepath='bdev.c' line='9822' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_unquiesce'>
+      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='9822' column='1'/>
+      <parameter type-id='b509a840' name='module' filepath='bdev.c' line='9822' column='1'/>
+      <parameter type-id='40a6f2e4' name='cb_fn' filepath='bdev.c' line='9823' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='9823' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_quiesce_range' mangled-name='spdk_bdev_quiesce_range' filepath='bdev.c' line='9832' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_quiesce_range'>
-      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='9832' column='1'/>
-      <parameter type-id='b509a840' name='module' filepath='bdev.c' line='9832' column='1'/>
-      <parameter type-id='9c313c2d' name='offset' filepath='bdev.c' line='9833' column='1'/>
-      <parameter type-id='9c313c2d' name='length' filepath='bdev.c' line='9833' column='1'/>
-      <parameter type-id='40a6f2e4' name='cb_fn' filepath='bdev.c' line='9834' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='9834' column='1'/>
+    <function-decl name='spdk_bdev_quiesce_range' mangled-name='spdk_bdev_quiesce_range' filepath='bdev.c' line='9829' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_quiesce_range'>
+      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='9829' column='1'/>
+      <parameter type-id='b509a840' name='module' filepath='bdev.c' line='9829' column='1'/>
+      <parameter type-id='9c313c2d' name='offset' filepath='bdev.c' line='9830' column='1'/>
+      <parameter type-id='9c313c2d' name='length' filepath='bdev.c' line='9830' column='1'/>
+      <parameter type-id='40a6f2e4' name='cb_fn' filepath='bdev.c' line='9831' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='9831' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_unquiesce_range' mangled-name='spdk_bdev_unquiesce_range' filepath='bdev.c' line='9840' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_unquiesce_range'>
-      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='9840' column='1'/>
-      <parameter type-id='b509a840' name='module' filepath='bdev.c' line='9840' column='1'/>
-      <parameter type-id='9c313c2d' name='offset' filepath='bdev.c' line='9841' column='1'/>
-      <parameter type-id='9c313c2d' name='length' filepath='bdev.c' line='9841' column='1'/>
-      <parameter type-id='40a6f2e4' name='cb_fn' filepath='bdev.c' line='9842' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='9842' column='1'/>
+    <function-decl name='spdk_bdev_unquiesce_range' mangled-name='spdk_bdev_unquiesce_range' filepath='bdev.c' line='9837' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_unquiesce_range'>
+      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='9837' column='1'/>
+      <parameter type-id='b509a840' name='module' filepath='bdev.c' line='9837' column='1'/>
+      <parameter type-id='9c313c2d' name='offset' filepath='bdev.c' line='9838' column='1'/>
+      <parameter type-id='9c313c2d' name='length' filepath='bdev.c' line='9838' column='1'/>
+      <parameter type-id='40a6f2e4' name='cb_fn' filepath='bdev.c' line='9839' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='9839' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_get_memory_domains' mangled-name='spdk_bdev_get_memory_domains' filepath='bdev.c' line='9848' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_memory_domains'>
-      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='9848' column='1'/>
-      <parameter type-id='1fc0b044' name='domains' filepath='bdev.c' line='9848' column='1'/>
-      <parameter type-id='95e97e5e' name='array_size' filepath='bdev.c' line='9849' column='1'/>
+    <function-decl name='spdk_bdev_get_memory_domains' mangled-name='spdk_bdev_get_memory_domains' filepath='bdev.c' line='9845' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_get_memory_domains'>
+      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='9845' column='1'/>
+      <parameter type-id='1fc0b044' name='domains' filepath='bdev.c' line='9845' column='1'/>
+      <parameter type-id='95e97e5e' name='array_size' filepath='bdev.c' line='9846' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_for_each_bdev_io' mangled-name='spdk_bdev_for_each_bdev_io' filepath='bdev.c' line='9898' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_for_each_bdev_io'>
-      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='9898' column='1'/>
-      <parameter type-id='eaa32e2f' name='_ctx' filepath='bdev.c' line='9898' column='1'/>
-      <parameter type-id='767f193c' name='fn' filepath='bdev.c' line='9898' column='1'/>
-      <parameter type-id='2a89b26d' name='cb' filepath='bdev.c' line='9899' column='1'/>
+    <function-decl name='spdk_bdev_for_each_bdev_io' mangled-name='spdk_bdev_for_each_bdev_io' filepath='bdev.c' line='9895' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_for_each_bdev_io'>
+      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='9895' column='1'/>
+      <parameter type-id='eaa32e2f' name='_ctx' filepath='bdev.c' line='9895' column='1'/>
+      <parameter type-id='767f193c' name='fn' filepath='bdev.c' line='9895' column='1'/>
+      <parameter type-id='2a89b26d' name='cb' filepath='bdev.c' line='9896' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_for_each_channel_continue' mangled-name='spdk_bdev_for_each_channel_continue' filepath='bdev.c' line='9921' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_for_each_channel_continue'>
-      <parameter type-id='1616ecea' name='iter' filepath='bdev.c' line='9921' column='1'/>
-      <parameter type-id='95e97e5e' name='status' filepath='bdev.c' line='9921' column='1'/>
+    <function-decl name='spdk_bdev_for_each_channel_continue' mangled-name='spdk_bdev_for_each_channel_continue' filepath='bdev.c' line='9918' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_for_each_channel_continue'>
+      <parameter type-id='1616ecea' name='iter' filepath='bdev.c' line='9918' column='1'/>
+      <parameter type-id='95e97e5e' name='status' filepath='bdev.c' line='9918' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_for_each_channel' mangled-name='spdk_bdev_for_each_channel' filepath='bdev.c' line='9958' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_for_each_channel'>
-      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='9958' column='1'/>
-      <parameter type-id='8dfa98e0' name='fn' filepath='bdev.c' line='9958' column='1'/>
-      <parameter type-id='eaa32e2f' name='ctx' filepath='bdev.c' line='9959' column='1'/>
-      <parameter type-id='6877d703' name='cpl' filepath='bdev.c' line='9959' column='1'/>
+    <function-decl name='spdk_bdev_for_each_channel' mangled-name='spdk_bdev_for_each_channel' filepath='bdev.c' line='9955' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_for_each_channel'>
+      <parameter type-id='7b7cfb3d' name='bdev' filepath='bdev.c' line='9955' column='1'/>
+      <parameter type-id='8dfa98e0' name='fn' filepath='bdev.c' line='9955' column='1'/>
+      <parameter type-id='eaa32e2f' name='ctx' filepath='bdev.c' line='9956' column='1'/>
+      <parameter type-id='6877d703' name='cpl' filepath='bdev.c' line='9956' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_copy_blocks' mangled-name='spdk_bdev_copy_blocks' filepath='bdev.c' line='10065' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_copy_blocks'>
-      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='10065' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='10065' column='1'/>
-      <parameter type-id='9c313c2d' name='dst_offset_blocks' filepath='bdev.c' line='10066' column='1'/>
-      <parameter type-id='9c313c2d' name='src_offset_blocks' filepath='bdev.c' line='10066' column='1'/>
-      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='10066' column='1'/>
-      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='10067' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='10067' column='1'/>
+    <function-decl name='spdk_bdev_copy_blocks' mangled-name='spdk_bdev_copy_blocks' filepath='bdev.c' line='10062' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_copy_blocks'>
+      <parameter type-id='0094857f' name='desc' filepath='bdev.c' line='10062' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='bdev.c' line='10062' column='1'/>
+      <parameter type-id='9c313c2d' name='dst_offset_blocks' filepath='bdev.c' line='10063' column='1'/>
+      <parameter type-id='9c313c2d' name='src_offset_blocks' filepath='bdev.c' line='10063' column='1'/>
+      <parameter type-id='9c313c2d' name='num_blocks' filepath='bdev.c' line='10063' column='1'/>
+      <parameter type-id='a720f07e' name='cb' filepath='bdev.c' line='10064' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev.c' line='10064' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
     <function-type size-in-bits='64' id='083b2f99'>
