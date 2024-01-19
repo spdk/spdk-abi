@@ -1,0 +1,9 @@
+<abi-corpus version='2.2' soname='libspdk_event_iscsi.so.5.0'>
+  <elf-needed>
+    <dependency name='libspdk_init.so.4.0'/>
+    <dependency name='libspdk_iscsi.so.7.0'/>
+    <dependency name='libspdk_event_scheduler.so.3.0'/>
+    <dependency name='libspdk_event_scsi.so.5.0'/>
+    <dependency name='libspdk_event_sock.so.4.0'/>
+  </elf-needed>
+</abi-corpus>

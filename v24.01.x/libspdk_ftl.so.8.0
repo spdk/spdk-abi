@@ -1,0 +1,368 @@
+<abi-corpus version='2.2' soname='libspdk_ftl.so.8.0'>
+  <elf-needed>
+    <dependency name='libspdk_log.so.6.1'/>
+    <dependency name='libspdk_util.so.8.0'/>
+    <dependency name='libspdk_thread.so.9.0'/>
+    <dependency name='libspdk_bdev.so.14.0'/>
+    <dependency name='libspdk_trace.so.9.0'/>
+    <dependency name='libspdk_json.so.5.1'/>
+    <dependency name='libspdk_jsonrpc.so.5.1'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+  <elf-function-symbols>
+    <elf-symbol name='spdk_ftl_conf_copy' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_ftl_conf_deinit' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_ftl_dev_free' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_ftl_dev_get_attrs' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_ftl_dev_get_conf' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_ftl_dev_init' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_ftl_dev_set_fast_shutdown' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_ftl_fini' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_ftl_get_default_conf' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_ftl_get_io_channel' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_ftl_get_properties' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_ftl_get_stats' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_ftl_init' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_ftl_io_size' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_ftl_readv' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_ftl_set_property' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_ftl_unmap' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_ftl_writev' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-function-symbols>
+  <abi-instr address-size='64' path='ftl_core.c' language='LANG_C11'>
+    <type-decl name='bool' size-in-bits='8' id='c894953d'/>
+    <array-type-def dimensions='1' type-id='096b0b42' size-in-bits='3840' id='e60e29c6'>
+      <subrange length='6' lower-bound='0' upper-bound='5' type-id='f0981eeb' id='52fa524b'/>
+    </array-type-def>
+    <type-decl name='int' size-in-bits='32' id='95e97e5e'/>
+    <class-decl name='ftl_stats' size-in-bits='4160' is-struct='yes' visibility='default' filepath='ftl.h' line='58' column='1' id='36f74cd1'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='limits' type-id='85c64d26' visibility='default' filepath='ftl.h' line='64' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='io_activity_total' type-id='9c313c2d' visibility='default' filepath='ftl.h' line='70' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='entries' type-id='e60e29c6' visibility='default' filepath='ftl.h' line='72' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='ftl_stats_entry' size-in-bits='640' is-struct='yes' visibility='default' filepath='ftl.h' line='43' column='1' id='096b0b42'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='read' type-id='2ce53abd' visibility='default' filepath='ftl.h' line='44' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='write' type-id='2ce53abd' visibility='default' filepath='ftl.h' line='45' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='ftl_stats_error' size-in-bits='192' is-struct='yes' visibility='default' filepath='ftl.h' line='31' column='1' id='652a872c'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='media' type-id='9c313c2d' visibility='default' filepath='ftl.h' line='32' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='crc' type-id='9c313c2d' visibility='default' filepath='ftl.h' line='33' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='other' type-id='9c313c2d' visibility='default' filepath='ftl.h' line='34' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='ftl_stats_group' size-in-bits='320' is-struct='yes' visibility='default' filepath='ftl.h' line='37' column='1' id='2ce53abd'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='ios' type-id='9c313c2d' visibility='default' filepath='ftl.h' line='38' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='blocks' type-id='9c313c2d' visibility='default' filepath='ftl.h' line='39' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='errors' type-id='652a872c' visibility='default' filepath='ftl.h' line='40' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='iovec' size-in-bits='128' is-struct='yes' visibility='default' filepath='struct_iovec.h' line='26' column='1' id='0f042891'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='iov_base' type-id='eaa32e2f' visibility='default' filepath='struct_iovec.h' line='28' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='iov_len' type-id='b59d7dce' visibility='default' filepath='struct_iovec.h' line='29' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_ftl_attrs' size-in-bits='192' is-struct='yes' visibility='default' filepath='ftl.h' line='163' column='1' id='aa6cb391'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='num_blocks' type-id='9c313c2d' visibility='default' filepath='ftl.h' line='165' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='block_size' type-id='9c313c2d' visibility='default' filepath='ftl.h' line='167' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='optimum_io_size' type-id='9c313c2d' visibility='default' filepath='ftl.h' line='169' column='1'/>
+      </data-member>
+    </class-decl>
+    <typedef-decl name='__uint64_t' type-id='f0981eeb' filepath='types.h' line='45' column='1' id='8910171f'/>
+    <typedef-decl name='size_t' type-id='f0981eeb' filepath='stddef.h' line='214' column='1' id='b59d7dce'/>
+    <typedef-decl name='spdk_ftl_fn' type-id='1ed1e4cd' filepath='ftl.h' line='172' column='1' id='19dafce4'/>
+    <typedef-decl name='spdk_ftl_stats_fn' type-id='a43892b2' filepath='ftl.h' line='75' column='1' id='cb4ea0c8'/>
+    <typedef-decl name='uint64_t' type-id='8910171f' filepath='stdint-uintn.h' line='27' column='1' id='9c313c2d'/>
+    <array-type-def dimensions='1' type-id='9c313c2d' size-in-bits='256' id='85c64d26'>
+      <subrange length='4' lower-bound='0' upper-bound='3' type-id='f0981eeb' id='16fe7105'/>
+    </array-type-def>
+    <type-decl name='unsigned long int' size-in-bits='64' id='f0981eeb'/>
+    <pointer-type-def type-id='36f74cd1' size-in-bits='64' id='463fc3a9'/>
+    <pointer-type-def type-id='0f042891' size-in-bits='64' id='cc4b1be9'/>
+    <pointer-type-def type-id='aa6cb391' size-in-bits='64' id='cdbd9bf9'/>
+    <pointer-type-def type-id='c6068e88' size-in-bits='64' id='a43892b2'/>
+    <pointer-type-def type-id='2922fb19' size-in-bits='64' id='1ed1e4cd'/>
+    <qualified-type-def type-id='2379e16e' const='yes' id='28b05667'/>
+    <pointer-type-def type-id='28b05667' size-in-bits='64' id='5a97db37'/>
+    <pointer-type-def type-id='7bf9465a' size-in-bits='64' id='36f8a0e8'/>
+    <pointer-type-def type-id='2379e16e' size-in-bits='64' id='5c15bda4'/>
+    <pointer-type-def type-id='8de5f3c0' size-in-bits='64' id='a7e01876'/>
+    <class-decl name='spdk_io_channel' is-struct='yes' visibility='default' is-declaration-only='yes' id='8de5f3c0'/>
+    <function-decl name='spdk_ftl_io_size' mangled-name='spdk_ftl_io_size' filepath='ftl_core.c' line='24' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_ftl_io_size'>
+      <return type-id='b59d7dce'/>
+    </function-decl>
+    <function-decl name='spdk_ftl_dev_get_attrs' mangled-name='spdk_ftl_dev_get_attrs' filepath='ftl_core.c' line='303' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_ftl_dev_get_attrs'>
+      <parameter type-id='5a97db37' name='dev' filepath='ftl_core.c' line='303' column='1'/>
+      <parameter type-id='cdbd9bf9' name='attrs' filepath='ftl_core.c' line='303' column='1'/>
+      <parameter type-id='b59d7dce' name='attrs_size' filepath='ftl_core.c' line='304' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_ftl_writev' mangled-name='spdk_ftl_writev' filepath='ftl_core.c' line='388' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_ftl_writev'>
+      <parameter type-id='5c15bda4' name='dev' filepath='ftl_core.c' line='388' column='1'/>
+      <parameter type-id='36f8a0e8' name='io' filepath='ftl_core.c' line='388' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='ftl_core.c' line='388' column='1'/>
+      <parameter type-id='9c313c2d' name='lba' filepath='ftl_core.c' line='389' column='1'/>
+      <parameter type-id='9c313c2d' name='lba_cnt' filepath='ftl_core.c' line='389' column='1'/>
+      <parameter type-id='cc4b1be9' name='iov' filepath='ftl_core.c' line='389' column='1'/>
+      <parameter type-id='b59d7dce' name='iov_cnt' filepath='ftl_core.c' line='389' column='1'/>
+      <parameter type-id='19dafce4' name='cb_fn' filepath='ftl_core.c' line='389' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='ftl_core.c' line='390' column='1'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_ftl_readv' mangled-name='spdk_ftl_readv' filepath='ftl_core.c' line='421' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_ftl_readv'>
+      <parameter type-id='5c15bda4' name='dev' filepath='ftl_core.c' line='421' column='1'/>
+      <parameter type-id='36f8a0e8' name='io' filepath='ftl_core.c' line='421' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='ftl_core.c' line='421' column='1'/>
+      <parameter type-id='9c313c2d' name='lba' filepath='ftl_core.c' line='422' column='1'/>
+      <parameter type-id='9c313c2d' name='lba_cnt' filepath='ftl_core.c' line='422' column='1'/>
+      <parameter type-id='cc4b1be9' name='iov' filepath='ftl_core.c' line='422' column='1'/>
+      <parameter type-id='b59d7dce' name='iov_cnt' filepath='ftl_core.c' line='422' column='1'/>
+      <parameter type-id='19dafce4' name='cb_fn' filepath='ftl_core.c' line='422' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='ftl_core.c' line='422' column='1'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_ftl_unmap' mangled-name='spdk_ftl_unmap' filepath='ftl_core.c' line='467' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_ftl_unmap'>
+      <parameter type-id='5c15bda4' name='dev' filepath='ftl_core.c' line='467' column='1'/>
+      <parameter type-id='36f8a0e8' name='io' filepath='ftl_core.c' line='467' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='ftl_core.c' line='467' column='1'/>
+      <parameter type-id='9c313c2d' name='lba' filepath='ftl_core.c' line='468' column='1'/>
+      <parameter type-id='9c313c2d' name='lba_cnt' filepath='ftl_core.c' line='468' column='1'/>
+      <parameter type-id='19dafce4' name='cb_fn' filepath='ftl_core.c' line='468' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='ftl_core.c' line='468' column='1'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_ftl_init' mangled-name='spdk_ftl_init' filepath='ftl_core.c' line='727' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_ftl_init'>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_ftl_fini' mangled-name='spdk_ftl_fini' filepath='ftl_core.c' line='746' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_ftl_fini'>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_ftl_dev_set_fast_shutdown' mangled-name='spdk_ftl_dev_set_fast_shutdown' filepath='ftl_core.c' line='753' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_ftl_dev_set_fast_shutdown'>
+      <parameter type-id='5c15bda4' name='dev' filepath='ftl_core.c' line='753' column='1'/>
+      <parameter type-id='c894953d' name='fast_shutdown' filepath='ftl_core.c' line='753' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_ftl_get_io_channel' mangled-name='spdk_ftl_get_io_channel' filepath='ftl_core.c' line='794' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_ftl_get_io_channel'>
+      <parameter type-id='5c15bda4' name='dev' filepath='ftl_core.c' line='794' column='1'/>
+      <return type-id='a7e01876'/>
+    </function-decl>
+    <function-decl name='spdk_ftl_get_stats' mangled-name='spdk_ftl_get_stats' filepath='ftl_core.c' line='839' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_ftl_get_stats'>
+      <parameter type-id='5c15bda4' name='dev' filepath='ftl_core.c' line='839' column='1'/>
+      <parameter type-id='463fc3a9' name='stats' filepath='ftl_core.c' line='839' column='1'/>
+      <parameter type-id='cb4ea0c8' name='cb_fn' filepath='ftl_core.c' line='839' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='ftl_core.c' line='840' column='1'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <type-decl name='void' id='48b5725f'/>
+    <pointer-type-def type-id='48b5725f' id='eaa32e2f'/>
+    <var-decl name='g_ftl_write_buf' type-id='eaa32e2f' visibility='default' filepath='ftl_core.h' line='41' column='1'/>
+    <var-decl name='g_ftl_read_buf' type-id='eaa32e2f' visibility='default' filepath='ftl_core.h' line='42' column='1'/>
+    <class-decl name='spdk_ftl_dev' is-struct='yes' visibility='default' filepath='ftl_core.h' line='46' column='1' is-declaration-only='yes' id='2379e16e'/>
+    <class-decl name='ftl_io' is-struct='yes' visibility='default' filepath='ftl_io.h' line='58' column='1' is-declaration-only='yes' id='7bf9465a'/>
+    <function-type size-in-bits='64' id='c6068e88'>
+      <parameter type-id='463fc3a9'/>
+      <parameter type-id='eaa32e2f'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+    <function-type size-in-bits='64' id='2922fb19'>
+      <parameter type-id='eaa32e2f'/>
+      <parameter type-id='95e97e5e'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+  </abi-instr>
+  <abi-instr address-size='64' path='ftl_init.c' language='LANG_C11'>
+    <type-decl name='char' size-in-bits='8' id='a84c031d'/>
+    <array-type-def dimensions='1' type-id='b59d7dce' size-in-bits='256' id='314f9837'>
+      <subrange length='4' lower-bound='0' upper-bound='3' type-id='f0981eeb' id='16fe7105'/>
+    </array-type-def>
+    <class-decl name='spdk_ftl_conf' size-in-bits='1088' is-struct='yes' visibility='default' filepath='ftl.h' line='82' column='1' id='71e1eb61'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='26a90f95' visibility='default' filepath='ftl.h' line='84' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='uuid' type-id='429c70d3' visibility='default' filepath='ftl.h' line='87' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='overprovisioning' type-id='9c313c2d' visibility='default' filepath='ftl.h' line='90' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='l2p_dram_limit' type-id='b59d7dce' visibility='default' filepath='ftl.h' line='93' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='core_mask' type-id='26a90f95' visibility='default' filepath='ftl.h' line='96' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='user_io_pool_size' type-id='b59d7dce' visibility='default' filepath='ftl.h' line='99' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='limits' type-id='314f9837' visibility='default' filepath='ftl.h' line='102' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='704'>
+        <var-decl name='mode' type-id='8f92235e' visibility='default' filepath='ftl.h' line='105' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='736'>
+        <var-decl name='nv_cache' type-id='e7f43f72' visibility='default' filepath='ftl.h' line='113' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='800'>
+        <var-decl name='prep_upgrade_on_shutdown' type-id='c894953d' visibility='default' filepath='ftl.h' line='119' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='808'>
+        <var-decl name='verbose_mode' type-id='c894953d' visibility='default' filepath='ftl.h' line='127' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='816'>
+        <var-decl name='reserved' type-id='0f4b9e74' visibility='default' filepath='ftl.h' line='130' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='832'>
+        <var-decl name='base_bdev' type-id='26a90f95' visibility='default' filepath='ftl.h' line='133' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='896'>
+        <var-decl name='cache_bdev' type-id='26a90f95' visibility='default' filepath='ftl.h' line='136' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='960'>
+        <var-decl name='fast_shutdown' type-id='c894953d' visibility='default' filepath='ftl.h' line='139' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='968'>
+        <var-decl name='reserved2' type-id='d3538ec5' visibility='default' filepath='ftl.h' line='142' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1024'>
+        <var-decl name='conf_size' type-id='b59d7dce' visibility='default' filepath='ftl.h' line='149' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_uuid' size-in-bits='128' is-struct='yes' visibility='default' filepath='uuid.h' line='21' column='1' id='429c70d3'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='u' type-id='ac5ab595' visibility='default' filepath='uuid.h' line='24' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' filepath='ftl.h' line='107' column='1' id='e7f43f72'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='chunk_compaction_threshold' type-id='8f92235e' visibility='default' filepath='ftl.h' line='109' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='chunk_free_target' type-id='8f92235e' visibility='default' filepath='ftl.h' line='112' column='1'/>
+      </data-member>
+    </class-decl>
+    <typedef-decl name='__uint32_t' type-id='f0981eec' filepath='types.h' line='42' column='1' id='62f1140c'/>
+    <typedef-decl name='__uint8_t' type-id='002ac4a6' filepath='types.h' line='38' column='1' id='c51d6389'/>
+    <typedef-decl name='spdk_ftl_init_fn' type-id='0d15a3a8' filepath='ftl.h' line='173' column='1' id='f94ea377'/>
+    <typedef-decl name='uint32_t' type-id='62f1140c' filepath='stdint-uintn.h' line='26' column='1' id='8f92235e'/>
+    <typedef-decl name='uint8_t' type-id='c51d6389' filepath='stdint-uintn.h' line='24' column='1' id='b96825af'/>
+    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='128' id='fa9986a5'>
+      <subrange length='16' lower-bound='0' upper-bound='15' type-id='f0981eeb' id='848d0938'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='16' id='0f4b9e74'>
+      <subrange length='2' lower-bound='0' upper-bound='1' type-id='f0981eeb' id='52efc4ef'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='56' id='d3538ec5'>
+      <subrange length='7' lower-bound='0' upper-bound='6' type-id='f0981eeb' id='16fc326e'/>
+    </array-type-def>
+    <union-decl name='__anonymous_union__' size-in-bits='128' is-anonymous='yes' visibility='default' filepath='uuid.h' line='22' column='1' id='ac5ab595'>
+      <data-member access='public'>
+        <var-decl name='raw' type-id='fa9986a5' visibility='default' filepath='uuid.h' line='23' column='1'/>
+      </data-member>
+    </union-decl>
+    <type-decl name='unsigned char' size-in-bits='8' id='002ac4a6'/>
+    <type-decl name='unsigned int' size-in-bits='32' id='f0981eec'/>
+    <pointer-type-def type-id='a84c031d' size-in-bits='64' id='26a90f95'/>
+    <qualified-type-def type-id='71e1eb61' const='yes' id='8ca3f2c6'/>
+    <pointer-type-def type-id='8ca3f2c6' size-in-bits='64' id='52176984'/>
+    <pointer-type-def type-id='901f6dfe' size-in-bits='64' id='0d15a3a8'/>
+    <pointer-type-def type-id='2379e16e' size-in-bits='64' id='5c15bda5'/>
+    <function-decl name='spdk_ftl_dev_init' mangled-name='spdk_ftl_dev_init' filepath='ftl_init.c' line='165' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_ftl_dev_init'>
+      <parameter type-id='52176984' name='conf' filepath='ftl_init.c' line='165' column='1'/>
+      <parameter type-id='f94ea377' name='cb_fn' filepath='ftl_init.c' line='165' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='ftl_init.c' line='165' column='1'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_ftl_dev_free' mangled-name='spdk_ftl_dev_free' filepath='ftl_init.c' line='210' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_ftl_dev_free'>
+      <parameter type-id='5c15bda5' name='dev' filepath='ftl_init.c' line='210' column='1'/>
+      <parameter type-id='19dafce4' name='cb_fn' filepath='ftl_init.c' line='210' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='ftl_init.c' line='210' column='1'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-type size-in-bits='64' id='901f6dfe'>
+      <parameter type-id='5c15bda5'/>
+      <parameter type-id='eaa32e2f'/>
+      <parameter type-id='95e97e5e'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+  </abi-instr>
+  <abi-instr address-size='64' path='ftl_mngt_misc.c' language='LANG_C11'>
+    <qualified-type-def type-id='a84c031d' const='yes' id='9b45d938'/>
+    <pointer-type-def type-id='9b45d938' size-in-bits='64' id='80f4b756'/>
+    <pointer-type-def type-id='2379e16e' size-in-bits='64' id='5c15bda6'/>
+    <pointer-type-def type-id='1c42476f' size-in-bits='64' id='42a6b637'/>
+    <class-decl name='spdk_jsonrpc_request' is-struct='yes' visibility='default' is-declaration-only='yes' id='1c42476f'/>
+    <function-decl name='spdk_ftl_get_properties' mangled-name='spdk_ftl_get_properties' filepath='ftl_mngt_misc.c' line='363' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_ftl_get_properties'>
+      <parameter type-id='5c15bda6' name='dev' filepath='ftl_mngt_misc.c' line='363' column='1'/>
+      <parameter type-id='42a6b637' name='request' filepath='ftl_mngt_misc.c' line='363' column='1'/>
+      <parameter type-id='19dafce4' name='cb_fn' filepath='ftl_mngt_misc.c' line='364' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='ftl_mngt_misc.c' line='364' column='1'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_ftl_set_property' mangled-name='spdk_ftl_set_property' filepath='ftl_mngt_misc.c' line='459' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_ftl_set_property'>
+      <parameter type-id='5c15bda6' name='dev' filepath='ftl_mngt_misc.c' line='459' column='1'/>
+      <parameter type-id='80f4b756' name='property' filepath='ftl_mngt_misc.c' line='460' column='1'/>
+      <parameter type-id='80f4b756' name='value' filepath='ftl_mngt_misc.c' line='460' column='1'/>
+      <parameter type-id='b59d7dce' name='value_size' filepath='ftl_mngt_misc.c' line='460' column='1'/>
+      <parameter type-id='19dafce4' name='cb_fn' filepath='ftl_mngt_misc.c' line='461' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='ftl_mngt_misc.c' line='461' column='1'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+  </abi-instr>
+  <abi-instr address-size='64' path='ftl_bitmap.c' language='LANG_C11'>
+    <qualified-type-def type-id='b59d7dce' const='yes' id='d0fa5dde'/>
+    <var-decl name='ftl_bitmap_buffer_alignment' type-id='d0fa5dde' visibility='default' filepath='ftl_bitmap.h' line='16' column='1'/>
+  </abi-instr>
+  <abi-instr address-size='64' path='ftl_conf.c' language='LANG_C11'>
+    <pointer-type-def type-id='71e1eb61' size-in-bits='64' id='b95a3239'/>
+    <qualified-type-def type-id='2379e16e' const='yes' id='28b05668'/>
+    <pointer-type-def type-id='28b05668' size-in-bits='64' id='5a97db38'/>
+    <function-decl name='spdk_ftl_get_default_conf' mangled-name='spdk_ftl_get_default_conf' filepath='ftl_conf.c' line='35' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_ftl_get_default_conf'>
+      <parameter type-id='b95a3239' name='conf' filepath='ftl_conf.c' line='35' column='1'/>
+      <parameter type-id='b59d7dce' name='conf_size' filepath='ftl_conf.c' line='35' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_ftl_dev_get_conf' mangled-name='spdk_ftl_dev_get_conf' filepath='ftl_conf.c' line='45' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_ftl_dev_get_conf'>
+      <parameter type-id='5a97db38' name='dev' filepath='ftl_conf.c' line='45' column='1'/>
+      <parameter type-id='b95a3239' name='conf' filepath='ftl_conf.c' line='45' column='1'/>
+      <parameter type-id='b59d7dce' name='conf_size' filepath='ftl_conf.c' line='45' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_ftl_conf_copy' mangled-name='spdk_ftl_conf_copy' filepath='ftl_conf.c' line='55' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_ftl_conf_copy'>
+      <parameter type-id='b95a3239' name='dst' filepath='ftl_conf.c' line='55' column='1'/>
+      <parameter type-id='52176984' name='src' filepath='ftl_conf.c' line='55' column='1'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_ftl_conf_deinit' mangled-name='spdk_ftl_conf_deinit' filepath='ftl_conf.c' line='107' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_ftl_conf_deinit'>
+      <parameter type-id='b95a3239' name='conf' filepath='ftl_conf.c' line='107' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+  </abi-instr>
+</abi-corpus>
