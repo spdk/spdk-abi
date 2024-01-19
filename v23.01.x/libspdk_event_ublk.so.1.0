@@ -1,7 +1,0 @@
-<abi-corpus version='2.1' soname='libspdk_event_ublk.so.1.0'>
-  <elf-needed>
-    <dependency name='libspdk_init.so.2.0'/>
-    <dependency name='libspdk_ublk.so.1.0'/>
-    <dependency name='libspdk_event_bdev.so.4.0'/>
-  </elf-needed>
-</abi-corpus>
