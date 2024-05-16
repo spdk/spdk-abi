@@ -1,0 +1,117 @@
+<abi-corpus version='2.2' soname='libspdk_keyring_file.so.1.0'>
+  <elf-needed>
+    <dependency name='libspdk_log.so.7.0'/>
+    <dependency name='libspdk_keyring.so.1.0'/>
+    <dependency name='libspdk_util.so.9.0'/>
+    <dependency name='libspdk_json.so.6.0'/>
+    <dependency name='libspdk_jsonrpc.so.6.0'/>
+    <dependency name='libspdk_rpc.so.6.0'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+  <abi-instr address-size='64' path='keyring.c' language='LANG_C11'>
+    <type-decl name='char' size-in-bits='8' id='a84c031d'/>
+    <type-decl name='int' size-in-bits='32' id='95e97e5e'/>
+    <class-decl name='spdk_keyring_module' size-in-bits='768' is-struct='yes' visibility='default' filepath='keyring_module.h' line='46' column='1' id='d6593646'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='80f4b756' visibility='default' filepath='keyring_module.h' line='48' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='init' type-id='1db260e5' visibility='default' filepath='keyring_module.h' line='51' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='cleanup' type-id='953b12f8' visibility='default' filepath='keyring_module.h' line='53' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='write_config' type-id='582528d7' visibility='default' filepath='keyring_module.h' line='55' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='probe_key' type-id='70487b28' visibility='default' filepath='keyring_module.h' line='60' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='add_key' type-id='04b16505' visibility='default' filepath='keyring_module.h' line='62' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='remove_key' type-id='40152b9e' visibility='default' filepath='keyring_module.h' line='64' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='get_key' type-id='0cd560ac' visibility='default' filepath='keyring_module.h' line='66' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='get_ctx_size' type-id='0838a534' visibility='default' filepath='keyring_module.h' line='68' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='dump_info' type-id='70d21b15' visibility='default' filepath='keyring_module.h' line='73' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='tailq' type-id='e7f43f72' visibility='default' filepath='keyring_module.h' line='75' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='keyring_module.h' line='75' column='1' id='e7f43f72'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqe_next' type-id='5d18184c' visibility='default' filepath='keyring_module.h' line='75' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqe_prev' type-id='f2ee6892' visibility='default' filepath='keyring_module.h' line='75' column='1'/>
+      </data-member>
+    </class-decl>
+    <typedef-decl name='size_t' type-id='f0981eeb' filepath='stddef.h' line='214' column='1' id='b59d7dce'/>
+    <type-decl name='unsigned long int' size-in-bits='64' id='f0981eeb'/>
+    <qualified-type-def type-id='a84c031d' const='yes' id='9b45d938'/>
+    <pointer-type-def type-id='9b45d938' size-in-bits='64' id='80f4b756'/>
+    <pointer-type-def type-id='276427e1' size-in-bits='64' id='1db260e5'/>
+    <pointer-type-def type-id='5113b296' size-in-bits='64' id='70487b28'/>
+    <pointer-type-def type-id='8f88f819' size-in-bits='64' id='04b16505'/>
+    <pointer-type-def type-id='d94b591a' size-in-bits='64' id='0cd560ac'/>
+    <pointer-type-def type-id='d6593646' size-in-bits='64' id='5d18184c'/>
+    <pointer-type-def type-id='5d18184c' size-in-bits='64' id='f2ee6892'/>
+    <pointer-type-def type-id='ae2eaa42' size-in-bits='64' id='0838a534'/>
+    <pointer-type-def type-id='ee076206' size-in-bits='64' id='953b12f8'/>
+    <pointer-type-def type-id='9ed8cfeb' size-in-bits='64' id='582528d7'/>
+    <pointer-type-def type-id='9654e774' size-in-bits='64' id='40152b9e'/>
+    <pointer-type-def type-id='2fa02eb9' size-in-bits='64' id='70d21b15'/>
+    <pointer-type-def type-id='2ae61988' size-in-bits='64' id='b8e14bfe'/>
+    <pointer-type-def type-id='1bef703f' size-in-bits='64' id='f004afe7'/>
+    <class-decl name='spdk_json_write_ctx' is-struct='yes' visibility='default' is-declaration-only='yes' id='2ae61988'/>
+    <class-decl name='spdk_key' is-struct='yes' visibility='default' is-declaration-only='yes' id='1bef703f'/>
+    <var-decl name='g_keyring_file' type-id='d6593646' visibility='default' filepath='keyring_file.h' line='15' column='1'/>
+    <type-decl name='void' id='48b5725f'/>
+    <pointer-type-def type-id='48b5725f' id='eaa32e2f'/>
+    <function-type size-in-bits='64' id='276427e1'>
+      <return type-id='95e97e5e'/>
+    </function-type>
+    <function-type size-in-bits='64' id='5113b296'>
+      <parameter type-id='80f4b756'/>
+      <return type-id='95e97e5e'/>
+    </function-type>
+    <function-type size-in-bits='64' id='8f88f819'>
+      <parameter type-id='f004afe7'/>
+      <parameter type-id='eaa32e2f'/>
+      <return type-id='95e97e5e'/>
+    </function-type>
+    <function-type size-in-bits='64' id='d94b591a'>
+      <parameter type-id='f004afe7'/>
+      <parameter type-id='eaa32e2f'/>
+      <parameter type-id='95e97e5e'/>
+      <return type-id='95e97e5e'/>
+    </function-type>
+    <function-type size-in-bits='64' id='ae2eaa42'>
+      <return type-id='b59d7dce'/>
+    </function-type>
+    <function-type size-in-bits='64' id='ee076206'>
+      <return type-id='48b5725f'/>
+    </function-type>
+    <function-type size-in-bits='64' id='9ed8cfeb'>
+      <parameter type-id='b8e14bfe'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+    <function-type size-in-bits='64' id='9654e774'>
+      <parameter type-id='f004afe7'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+    <function-type size-in-bits='64' id='2fa02eb9'>
+      <parameter type-id='f004afe7'/>
+      <parameter type-id='b8e14bfe'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+  </abi-instr>
+</abi-corpus>
