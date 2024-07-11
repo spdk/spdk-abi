@@ -86,19 +86,6 @@ if $force_checkout; then
 	gitc config --local user.name "spdk"
 	gitc config --local user.email "hotpatch@spdk.io"
 
-	# We have to cherry pick changes to properly build libs under the older releases
-	gcc_version=$(gcc -dumpversion) gcc_version=${gcc_version%%.*}
-	if ((gcc_version >= 11)); then
-		if [[ "$version" =~ "22.05" ]]; then
-			# https://review.spdk.io/gerrit/c/spdk/spdk/+/13404
-			gitc cherry-pick 713506d5da4676b9f900ae59963f6eb50ecdba36
-		elif [[ "$version" =~ "22.01" ]]; then
-			# https://review.spdk.io/gerrit/c/spdk/spdk/+/13505
-			gitc cherry-pick e255d79af097318e8f29c700a4639041f912a28c
-			# https://review.spdk.io/gerrit/c/spdk/spdk/+/13506
-			gitc cherry-pick a12cc7e4b9fb30f32dfb9afa1d5852128972b3e1
-		fi
-	fi
 	# Make sure submodules point at proper commits after cherry-picks are applied
 	gitc submodule update
 fi
