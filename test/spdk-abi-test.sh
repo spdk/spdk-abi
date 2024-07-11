@@ -18,7 +18,7 @@ for branch in $(ls $rootdir | grep -Eo "${tag_pattern}\.x"); do
 
 	# Generate XML files and check if they differ from the user uploaded
 	$rootdir/generate_xml_abi.sh -t "$tag" -x "$rootdir/${branch}_test" \
-		--spdk-path="$repodir" --force-build --force-checkout
+		--spdk-path="$repodir" --force-build --force-checkout="$(< "$branch/revision")"
 	for lib in "$rootdir/${branch}_test"/libspdk_*.so; do
 		lib_name=$(basename "$lib")
 		if ! abidiff "$lib" "$rootdir/$branch/$lib_name"; then
