@@ -6,7 +6,8 @@
 
 set -e
 
-spdk_dir="$(readlink -f $(dirname $0))/spdk"
+rootdir=$(readlink -f "$(dirname "$0")")
+spdk_dir=$(readlink -f "$rootdir/spdk")
 user_dir=false
 force_checkout=true
 force_build=true
@@ -142,7 +143,7 @@ fi
 
 if [[ -z $xml_dir ]]; then
 	branch=$(echo $version | grep -Eo 'v[0-9][0-9]\.[0-9][0-9]') branch="${branch}.x"
-	xml_dir="$spdk_dir/../$branch"
+	xml_dir="$rootdir/$branch"
 fi
 
 if [[ -d "$xml_dir" ]]; then
