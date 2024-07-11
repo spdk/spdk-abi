@@ -10,18 +10,19 @@ spdk_dir="$(readlink -f $(dirname $0))/spdk"
 user_dir=false
 force_checkout=true
 force_build=true
+revision=
 
 function usage() {
 	script_name="$(basename $0)"
 	echo "Generate XML representation of the SPDK libraries for ABI tests."
 	echo "Usage: $script_name -t <spdk_tag>"
-	echo "    -t                SPDK release tag"
-	echo "    -x                Location of resulting XML files. Default: ./\$spdk_tag.x"
-	echo "    --spdk-path       Use SPDK from specified path. By default does not"
-	echo "                      checkout or build SPDK in that path"
-	echo "    --force-checkout  Forces checkout to SPDK release tag"
-	echo "    --force-build     Rebuilds SPDK according to predefined config"
-	echo "    -h, --help        Print this help"
+	echo "    -t                        SPDK release tag"
+	echo "    -x                        Location of resulting XML files. Default: ./\$spdk_tag.x"
+	echo "    --spdk-path               Use SPDK from specified path. By default does not"
+	echo "                              checkout or build SPDK in that path"
+	echo "    --force-checkout[=<rev>]  Force checkout to the release tag or a specific revision"
+	echo "    --force-build             Rebuilds SPDK according to predefined config"
+	echo "    -h, --help                Print this help"
 	echo "Example:"
 	echo "$script_name -t v22.09 -x /path/for/generated/xmls"
 	exit 0
@@ -49,6 +50,10 @@ while getopts 'ht:x:-:' optchar; do
 					force_build=false
 					;;
 				force-checkout) force_checkout=true ;;
+				force-checkout=*)
+					force_checkout=true
+					revision="${OPTARG#*=}"
+					;;
 				force-build) force_build=true ;;
 				*) error ;;
 			esac
@@ -73,6 +78,8 @@ function gitc() {
 	git -C "$spdk_dir" "$@"
 }
 
+[[ -z "$revision" ]] && revision="$version"
+
 if ! $user_dir; then
 	# Clone a fresh spdk repository everytime the script is run
 	[[ -d "$spdk_dir" ]] && rm -rf "$spdk_dir"
@@ -80,7 +87,7 @@ if ! $user_dir; then
 fi
 
 if $force_checkout; then
-	gitc checkout $version
+	gitc checkout "$revision"
 	gitc submodule update --init
 
 	gitc config --local user.name "spdk"
