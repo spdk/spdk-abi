@@ -467,13 +467,9 @@
     <reference-type-def kind='lvalue' type-id='57e06795' size-in-bits='64' id='53ca3131'/>
     <reference-type-def kind='rvalue' type-id='57e06795' size-in-bits='64' id='fe4b4735'/>
     <pointer-type-def type-id='57e06795' size-in-bits='64' id='4fca2ae5'/>
-    <reference-type-def kind='lvalue' type-id='4ab632f1' size-in-bits='64' id='bb6fe46d'/>
     <pointer-type-def type-id='4ab632f1' size-in-bits='64' id='af6fd189'/>
-    <reference-type-def kind='lvalue' type-id='c3ff6ed8' size-in-bits='64' id='eb00d102'/>
     <pointer-type-def type-id='c3ff6ed8' size-in-bits='64' id='ef00d74e'/>
-    <reference-type-def kind='lvalue' type-id='9d6bd61f' size-in-bits='64' id='7d9e7c73'/>
     <pointer-type-def type-id='9d6bd61f' size-in-bits='64' id='899e8f57'/>
-    <reference-type-def kind='lvalue' type-id='f305b04a' size-in-bits='64' id='d12babec'/>
     <pointer-type-def type-id='f305b04a' size-in-bits='64' id='d52bb238'/>
     <reference-type-def kind='rvalue' type-id='3229087d' size-in-bits='64' id='30df0d8d'/>
     <pointer-type-def type-id='3229087d' size-in-bits='64' id='5592bb5d'/>
@@ -1384,13 +1380,13 @@
           <typedef-decl name='size_type' type-id='b59d7dce' filepath='new_allocator.h' line='67' column='1' id='143a6b6e'/>
         </member-type>
         <member-function access='private' const='yes'>
-          <function-decl name='_M_max_size' mangled-name='_ZNKSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIK9entry_keyP16spdk_trace_entryEEE11_M_max_sizeEv' filepath='new_allocator.h' line='230' column='1' visibility='default' binding='global' size-in-bits='64'>
+          <function-decl name='_M_max_size' mangled-name='_ZNKSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIK9entry_keyP16spdk_trace_entryEEE11_M_max_sizeEv' filepath='new_allocator.h' line='226' column='1' visibility='default' binding='global' size-in-bits='64'>
             <parameter type-id='1dc818cc' is-artificial='yes'/>
             <return type-id='143a6b6e'/>
           </function-decl>
         </member-function>
         <member-function access='public'>
-          <function-decl name='construct&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt;, const std::piecewise_construct_t&amp;, std::tuple&lt;entry_key&amp;&amp;&gt;, std::tuple&lt;&gt; &gt;' mangled-name='_ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIK9entry_keyP16spdk_trace_entryEEE9constructIS6_JRKSt21piecewise_construct_tSt5tupleIJOS2_EESD_IJEEEEEvPT_DpOT0_' filepath='new_allocator.h' line='189' column='1' visibility='default' binding='global' size-in-bits='64'>
+          <function-decl name='construct&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt;, const std::piecewise_construct_t&amp;, std::tuple&lt;entry_key&amp;&amp;&gt;, std::tuple&lt;&gt; &gt;' mangled-name='_ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIK9entry_keyP16spdk_trace_entryEEE9constructIS6_JRKSt21piecewise_construct_tSt5tupleIJOS2_EESD_IJEEEEEvPT_DpOT0_' filepath='new_allocator.h' line='185' column='1' visibility='default' binding='global' size-in-bits='64'>
             <parameter type-id='af6fd189' is-artificial='yes'/>
             <parameter type-id='f791a330'/>
             <parameter type-id='18513206'/>
@@ -1400,7 +1396,7 @@
           </function-decl>
         </member-function>
         <member-function access='public'>
-          <function-decl name='allocate' mangled-name='_ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIK9entry_keyP16spdk_trace_entryEEE8allocateEmPKv' filepath='new_allocator.h' line='126' column='1' visibility='default' binding='global' size-in-bits='64'>
+          <function-decl name='allocate' mangled-name='_ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIK9entry_keyP16spdk_trace_entryEEE8allocateEmPKv' filepath='new_allocator.h' line='122' column='1' visibility='default' binding='global' size-in-bits='64'>
             <parameter type-id='af6fd189' is-artificial='yes'/>
             <parameter type-id='143a6b6e'/>
             <parameter type-id='eaa32e2f'/>
@@ -1408,7 +1404,7 @@
           </function-decl>
         </member-function>
         <member-function access='public'>
-          <function-decl name='deallocate' mangled-name='_ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIK9entry_keyP16spdk_trace_entryEEE10deallocateEPS7_m' filepath='new_allocator.h' line='156' column='1' visibility='default' binding='global' size-in-bits='64'>
+          <function-decl name='deallocate' mangled-name='_ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIK9entry_keyP16spdk_trace_entryEEE10deallocateEPS7_m' filepath='new_allocator.h' line='152' column='1' visibility='default' binding='global' size-in-bits='64'>
             <parameter type-id='af6fd189' is-artificial='yes'/>
             <parameter type-id='5e5b4030'/>
             <parameter type-id='143a6b6e'/>
@@ -1416,7 +1412,7 @@
           </function-decl>
         </member-function>
         <member-function access='public'>
-          <function-decl name='destroy&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt; &gt;' mangled-name='_ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIK9entry_keyP16spdk_trace_entryEEE7destroyIS6_EEvPT_' filepath='new_allocator.h' line='196' column='1' visibility='default' binding='global' size-in-bits='64'>
+          <function-decl name='destroy&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt; &gt;' mangled-name='_ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIK9entry_keyP16spdk_trace_entryEEE7destroyIS6_EEvPT_' filepath='new_allocator.h' line='192' column='1' visibility='default' binding='global' size-in-bits='64'>
             <parameter type-id='af6fd189' is-artificial='yes'/>
             <parameter type-id='f791a330'/>
             <return type-id='48b5725f'/>
@@ -1435,14 +1431,14 @@
           </function-decl>
         </member-function>
         <member-function access='public' destructor='yes'>
-          <function-decl name='~__new_allocator' mangled-name='_ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIK9entry_keyP16spdk_trace_entryEEED4Ev' filepath='new_allocator.h' line='104' column='1' visibility='default' binding='global' size-in-bits='64'>
+          <function-decl name='~__new_allocator' mangled-name='_ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIK9entry_keyP16spdk_trace_entryEEED4Ev' filepath='new_allocator.h' line='100' column='1' visibility='default' binding='global' size-in-bits='64'>
             <parameter type-id='af6fd189' is-artificial='yes'/>
             <parameter type-id='95e97e5e' is-artificial='yes'/>
             <return type-id='48b5725f'/>
           </function-decl>
         </member-function>
         <member-function access='public' destructor='yes'>
-          <function-decl name='~__new_allocator' mangled-name='_ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIK9entry_keyP16spdk_trace_entryEEED2Ev' filepath='new_allocator.h' line='104' column='1' visibility='default' binding='global' size-in-bits='64'>
+          <function-decl name='~__new_allocator' mangled-name='_ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIK9entry_keyP16spdk_trace_entryEEED2Ev' filepath='new_allocator.h' line='100' column='1' visibility='default' binding='global' size-in-bits='64'>
             <parameter type-id='af6fd189' is-artificial='yes'/>
             <parameter type-id='95e97e5e' is-artificial='yes'/>
             <return type-id='48b5725f'/>
@@ -1463,13 +1459,13 @@
           <typedef-decl name='reference' type-id='a7fe5867' filepath='new_allocator.h' line='72' column='1' id='3a142962'/>
         </member-type>
         <member-function access='private' const='yes'>
-          <function-decl name='_M_max_size' mangled-name='_ZNKSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKmmEEE11_M_max_sizeEv' filepath='new_allocator.h' line='230' column='1' visibility='default' binding='global' size-in-bits='64'>
+          <function-decl name='_M_max_size' mangled-name='_ZNKSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKmmEEE11_M_max_sizeEv' filepath='new_allocator.h' line='226' column='1' visibility='default' binding='global' size-in-bits='64'>
             <parameter type-id='1c764a0f' is-artificial='yes'/>
             <return type-id='143a6b6e'/>
           </function-decl>
         </member-function>
         <member-function access='public'>
-          <function-decl name='construct&lt;std::pair&lt;long unsigned int const, long unsigned int&gt;, const std::piecewise_construct_t&amp;, std::tuple&lt;long unsigned int const&amp;&gt;, std::tuple&lt;&gt; &gt;' mangled-name='_ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKmmEEE9constructIS3_JRKSt21piecewise_construct_tSt5tupleIJRS2_EESA_IJEEEEEvPT_DpOT0_' filepath='new_allocator.h' line='189' column='1' visibility='default' binding='global' size-in-bits='64'>
+          <function-decl name='construct&lt;std::pair&lt;long unsigned int const, long unsigned int&gt;, const std::piecewise_construct_t&amp;, std::tuple&lt;long unsigned int const&amp;&gt;, std::tuple&lt;&gt; &gt;' mangled-name='_ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKmmEEE9constructIS3_JRKSt21piecewise_construct_tSt5tupleIJRS2_EESA_IJEEEEEvPT_DpOT0_' filepath='new_allocator.h' line='185' column='1' visibility='default' binding='global' size-in-bits='64'>
             <parameter type-id='ef00d74e' is-artificial='yes'/>
             <parameter type-id='b2ce899b'/>
             <parameter type-id='18513206'/>
@@ -1479,7 +1475,7 @@
           </function-decl>
         </member-function>
         <member-function access='public'>
-          <function-decl name='allocate' mangled-name='_ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKmmEEE8allocateEmPKv' filepath='new_allocator.h' line='126' column='1' visibility='default' binding='global' size-in-bits='64'>
+          <function-decl name='allocate' mangled-name='_ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKmmEEE8allocateEmPKv' filepath='new_allocator.h' line='122' column='1' visibility='default' binding='global' size-in-bits='64'>
             <parameter type-id='ef00d74e' is-artificial='yes'/>
             <parameter type-id='143a6b6e'/>
             <parameter type-id='eaa32e2f'/>
@@ -1487,7 +1483,7 @@
           </function-decl>
         </member-function>
         <member-function access='public'>
-          <function-decl name='deallocate' mangled-name='_ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKmmEEE10deallocateEPS4_m' filepath='new_allocator.h' line='156' column='1' visibility='default' binding='global' size-in-bits='64'>
+          <function-decl name='deallocate' mangled-name='_ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKmmEEE10deallocateEPS4_m' filepath='new_allocator.h' line='152' column='1' visibility='default' binding='global' size-in-bits='64'>
             <parameter type-id='ef00d74e' is-artificial='yes'/>
             <parameter type-id='9bfe4583'/>
             <parameter type-id='143a6b6e'/>
@@ -1495,7 +1491,7 @@
           </function-decl>
         </member-function>
         <member-function access='public'>
-          <function-decl name='destroy&lt;std::pair&lt;long unsigned int const, long unsigned int&gt; &gt;' mangled-name='_ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKmmEEE7destroyIS3_EEvPT_' filepath='new_allocator.h' line='196' column='1' visibility='default' binding='global' size-in-bits='64'>
+          <function-decl name='destroy&lt;std::pair&lt;long unsigned int const, long unsigned int&gt; &gt;' mangled-name='_ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKmmEEE7destroyIS3_EEvPT_' filepath='new_allocator.h' line='192' column='1' visibility='default' binding='global' size-in-bits='64'>
             <parameter type-id='ef00d74e' is-artificial='yes'/>
             <parameter type-id='b2ce899b'/>
             <return type-id='48b5725f'/>
@@ -1514,14 +1510,14 @@
           </function-decl>
         </member-function>
         <member-function access='public' destructor='yes'>
-          <function-decl name='~__new_allocator' mangled-name='_ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKmmEEED4Ev' filepath='new_allocator.h' line='104' column='1' visibility='default' binding='global' size-in-bits='64'>
+          <function-decl name='~__new_allocator' mangled-name='_ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKmmEEED4Ev' filepath='new_allocator.h' line='100' column='1' visibility='default' binding='global' size-in-bits='64'>
             <parameter type-id='ef00d74e' is-artificial='yes'/>
             <parameter type-id='95e97e5e' is-artificial='yes'/>
             <return type-id='48b5725f'/>
           </function-decl>
         </member-function>
         <member-function access='public' destructor='yes'>
-          <function-decl name='~__new_allocator' mangled-name='_ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKmmEEED2Ev' filepath='new_allocator.h' line='104' column='1' visibility='default' binding='global' size-in-bits='64'>
+          <function-decl name='~__new_allocator' mangled-name='_ZNSt15__new_allocatorISt13_Rb_tree_nodeISt4pairIKmmEEED2Ev' filepath='new_allocator.h' line='100' column='1' visibility='default' binding='global' size-in-bits='64'>
             <parameter type-id='ef00d74e' is-artificial='yes'/>
             <parameter type-id='95e97e5e' is-artificial='yes'/>
             <return type-id='48b5725f'/>
@@ -2392,7 +2388,7 @@
           <typedef-decl name='const_void_pointer' type-id='eaa32e2f' filepath='alloc_traits.h' line='446' column='1' id='edcfac1c'/>
         </member-type>
         <member-function access='public' static='yes'>
-          <function-decl name='construct&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt;, const std::piecewise_construct_t&amp;, std::tuple&lt;entry_key&amp;&amp;&gt;, std::tuple&lt;&gt; &gt;' mangled-name='_ZNSt16allocator_traitsISaISt13_Rb_tree_nodeISt4pairIK9entry_keyP16spdk_trace_entryEEEE9constructIS6_JRKSt21piecewise_construct_tSt5tupleIJOS2_EESE_IJEEEEEvRS8_PT_DpOT0_' filepath='alloc_traits.h' line='533' column='1' visibility='default' binding='global' size-in-bits='64'>
+          <function-decl name='construct&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt;, const std::piecewise_construct_t&amp;, std::tuple&lt;entry_key&amp;&amp;&gt;, std::tuple&lt;&gt; &gt;' mangled-name='_ZNSt16allocator_traitsISaISt13_Rb_tree_nodeISt4pairIK9entry_keyP16spdk_trace_entryEEEE9constructIS6_JRKSt21piecewise_construct_tSt5tupleIJOS2_EESE_IJEEEEEvRS8_PT_DpOT0_' filepath='alloc_traits.h' line='532' column='1' visibility='default' binding='global' size-in-bits='64'>
             <parameter type-id='c9e2e7eb'/>
             <parameter type-id='f791a330'/>
             <parameter type-id='18513206'/>
@@ -2409,7 +2405,7 @@
           </function-decl>
         </member-function>
         <member-function access='public' static='yes'>
-          <function-decl name='deallocate' mangled-name='_ZNSt16allocator_traitsISaISt13_Rb_tree_nodeISt4pairIK9entry_keyP16spdk_trace_entryEEEE10deallocateERS8_PS7_m' filepath='alloc_traits.h' line='516' column='1' visibility='default' binding='global' size-in-bits='64'>
+          <function-decl name='deallocate' mangled-name='_ZNSt16allocator_traitsISaISt13_Rb_tree_nodeISt4pairIK9entry_keyP16spdk_trace_entryEEEE10deallocateERS8_PS7_m' filepath='alloc_traits.h' line='515' column='1' visibility='default' binding='global' size-in-bits='64'>
             <parameter type-id='c9e2e7eb'/>
             <parameter type-id='0504b995'/>
             <parameter type-id='143a6b6e'/>
@@ -2417,7 +2413,7 @@
           </function-decl>
         </member-function>
         <member-function access='public' static='yes'>
-          <function-decl name='destroy&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt; &gt;' mangled-name='_ZNSt16allocator_traitsISaISt13_Rb_tree_nodeISt4pairIK9entry_keyP16spdk_trace_entryEEEE7destroyIS6_EEvRS8_PT_' filepath='alloc_traits.h' line='554' column='1' visibility='default' binding='global' size-in-bits='64'>
+          <function-decl name='destroy&lt;std::pair&lt;const entry_key, spdk_trace_entry*&gt; &gt;' mangled-name='_ZNSt16allocator_traitsISaISt13_Rb_tree_nodeISt4pairIK9entry_keyP16spdk_trace_entryEEEE7destroyIS6_EEvRS8_PT_' filepath='alloc_traits.h' line='553' column='1' visibility='default' binding='global' size-in-bits='64'>
             <parameter type-id='c9e2e7eb'/>
             <parameter type-id='f791a330'/>
             <return type-id='48b5725f'/>
@@ -2432,7 +2428,7 @@
           <typedef-decl name='const_void_pointer' type-id='eaa32e2f' filepath='alloc_traits.h' line='446' column='1' id='edcfac1d'/>
         </member-type>
         <member-function access='public' static='yes'>
-          <function-decl name='construct&lt;std::pair&lt;long unsigned int const, long unsigned int&gt;, const std::piecewise_construct_t&amp;, std::tuple&lt;long unsigned int const&amp;&gt;, std::tuple&lt;&gt; &gt;' mangled-name='_ZNSt16allocator_traitsISaISt13_Rb_tree_nodeISt4pairIKmmEEEE9constructIS3_JRKSt21piecewise_construct_tSt5tupleIJRS2_EESB_IJEEEEEvRS5_PT_DpOT0_' filepath='alloc_traits.h' line='533' column='1' visibility='default' binding='global' size-in-bits='64'>
+          <function-decl name='construct&lt;std::pair&lt;long unsigned int const, long unsigned int&gt;, const std::piecewise_construct_t&amp;, std::tuple&lt;long unsigned int const&amp;&gt;, std::tuple&lt;&gt; &gt;' mangled-name='_ZNSt16allocator_traitsISaISt13_Rb_tree_nodeISt4pairIKmmEEEE9constructIS3_JRKSt21piecewise_construct_tSt5tupleIJRS2_EESB_IJEEEEEvRS5_PT_DpOT0_' filepath='alloc_traits.h' line='532' column='1' visibility='default' binding='global' size-in-bits='64'>
             <parameter type-id='c9e2e7ec'/>
             <parameter type-id='b2ce899b'/>
             <parameter type-id='18513206'/>
@@ -2449,7 +2445,7 @@
           </function-decl>
         </member-function>
         <member-function access='public' static='yes'>
-          <function-decl name='deallocate' mangled-name='_ZNSt16allocator_traitsISaISt13_Rb_tree_nodeISt4pairIKmmEEEE10deallocateERS5_PS4_m' filepath='alloc_traits.h' line='516' column='1' visibility='default' binding='global' size-in-bits='64'>
+          <function-decl name='deallocate' mangled-name='_ZNSt16allocator_traitsISaISt13_Rb_tree_nodeISt4pairIKmmEEEE10deallocateERS5_PS4_m' filepath='alloc_traits.h' line='515' column='1' visibility='default' binding='global' size-in-bits='64'>
             <parameter type-id='c9e2e7ec'/>
             <parameter type-id='0504b996'/>
             <parameter type-id='143a6b6e'/>
@@ -2457,7 +2453,7 @@
           </function-decl>
         </member-function>
         <member-function access='public' static='yes'>
-          <function-decl name='destroy&lt;std::pair&lt;long unsigned int const, long unsigned int&gt; &gt;' mangled-name='_ZNSt16allocator_traitsISaISt13_Rb_tree_nodeISt4pairIKmmEEEE7destroyIS3_EEvRS5_PT_' filepath='alloc_traits.h' line='554' column='1' visibility='default' binding='global' size-in-bits='64'>
+          <function-decl name='destroy&lt;std::pair&lt;long unsigned int const, long unsigned int&gt; &gt;' mangled-name='_ZNSt16allocator_traitsISaISt13_Rb_tree_nodeISt4pairIKmmEEEE7destroyIS3_EEvRS5_PT_' filepath='alloc_traits.h' line='553' column='1' visibility='default' binding='global' size-in-bits='64'>
             <parameter type-id='c9e2e7ec'/>
             <parameter type-id='b2ce899b'/>
             <return type-id='48b5725f'/>
@@ -2691,12 +2687,12 @@
       <typedef-decl name='__conditional_t' type-id='4d462c84' filepath='type_traits' line='134' column='1' id='434da072'/>
       <typedef-decl name='__conditional_t' type-id='4d462c89' filepath='type_traits' line='134' column='1' id='434da073'/>
       <typedef-decl name='__conditional_t' type-id='4d462c87' filepath='type_traits' line='134' column='1' id='434da074'/>
-      <typedef-decl name='__conditional_t' type-id='4d462c86' filepath='type_traits' line='134' column='1' id='434da075'/>
-      <typedef-decl name='__conditional_t' type-id='4d462c88' filepath='type_traits' line='134' column='1' id='434da076'/>
+      <typedef-decl name='__conditional_t' type-id='4d462c88' filepath='type_traits' line='134' column='1' id='434da075'/>
+      <typedef-decl name='__conditional_t' type-id='4d462c86' filepath='type_traits' line='134' column='1' id='434da076'/>
       <typedef-decl name='__type_identity_t' type-id='4d462c8a' filepath='type_traits' line='143' column='1' id='0e5eac42'/>
       <typedef-decl name='__type_identity_t' type-id='4d462c8b' filepath='type_traits' line='143' column='1' id='0e5eac43'/>
       <typedef-decl name='false_type' type-id='49a160da' filepath='type_traits' line='85' column='1' id='d103bda8'/>
-      <typedef-decl name='size_t' type-id='f0981eeb' filepath='c++config.h' line='2605' column='1' id='b59d7dce'/>
+      <typedef-decl name='size_t' type-id='f0981eeb' filepath='c++config.h' line='2593' column='1' id='b59d7dce'/>
       <typedef-decl name='true_type' type-id='125a41c9' filepath='type_traits' line='82' column='1' id='541cc161'/>
       <class-decl name='exception' visibility='default' is-declaration-only='yes' id='f5f48c97'>
         <member-function access='public' constructor='yes'>
