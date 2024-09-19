@@ -1,0 +1,10 @@
+<abi-corpus version='2.2' soname='libspdk_sock_uring.so.5.0'>
+  <elf-needed>
+    <dependency name='libspdk_log.so.7.0'/>
+    <dependency name='libspdk_sock.so.10.0'/>
+    <dependency name='libspdk_util.so.10.0'/>
+    <dependency name='libspdk_thread.so.10.1'/>
+    <dependency name='libspdk_trace.so.11.0'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+</abi-corpus>

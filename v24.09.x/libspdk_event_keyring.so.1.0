@@ -1,0 +1,7 @@
+<abi-corpus version='2.2' soname='libspdk_event_keyring.so.1.0'>
+  <elf-needed>
+    <dependency name='libspdk_init.so.6.0'/>
+    <dependency name='libspdk_json.so.6.0'/>
+    <dependency name='libspdk_keyring.so.2.0'/>
+  </elf-needed>
+</abi-corpus>

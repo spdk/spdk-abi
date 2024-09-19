@@ -1,0 +1,18 @@
+<abi-corpus version='2.2' soname='libspdk_bdev_ocf.so.6.0'>
+  <elf-needed>
+    <dependency name='libspdk_log.so.7.0'/>
+    <dependency name='libspdk_util.so.10.0'/>
+    <dependency name='libspdk_json.so.6.0'/>
+    <dependency name='libspdk_jsonrpc.so.6.0'/>
+    <dependency name='libspdk_rpc.so.6.0'/>
+    <dependency name='libspdk_bdev.so.16.0'/>
+    <dependency name='libspdk_thread.so.10.1'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+  <abi-instr address-size='64' path='ctx.c' language='LANG_C11'>
+    <pointer-type-def type-id='3c911ce9' size-in-bits='64' id='22584491'/>
+    <class-decl name='ocf_ctx' is-struct='yes' visibility='default' is-declaration-only='yes' id='3c911ce9'/>
+    <typedef-decl name='ocf_ctx_t' type-id='22584491' filepath='ocf_types.h' line='38' column='1' id='702ffe05'/>
+    <var-decl name='vbdev_ocf_ctx' type-id='702ffe05' visibility='default' filepath='ctx.h' line='13' column='1'/>
+  </abi-instr>
+</abi-corpus>

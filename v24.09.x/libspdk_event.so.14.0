@@ -1,0 +1,1103 @@
+<abi-corpus version='2.2' soname='libspdk_event.so.14.0'>
+  <elf-needed>
+    <dependency name='libspdk_log.so.7.0'/>
+    <dependency name='libspdk_util.so.10.0'/>
+    <dependency name='libspdk_thread.so.10.1'/>
+    <dependency name='libspdk_json.so.6.0'/>
+    <dependency name='libspdk_jsonrpc.so.6.0'/>
+    <dependency name='libspdk_rpc.so.6.0'/>
+    <dependency name='libspdk_trace.so.11.0'/>
+    <dependency name='libspdk_init.so.6.0'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+  <elf-function-symbols>
+    <elf-symbol name='spdk_app_fini' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_app_get_core_mask' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_app_get_shm_id' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_app_opts_init' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_app_parse_args' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_app_parse_core_mask' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_app_start' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_app_start_shutdown' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_app_stop' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_app_usage' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_event_allocate' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_event_call' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_for_each_reactor' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_framework_context_switch_monitor_enabled' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_framework_enable_context_switch_monitor' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_governor_get' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_governor_register' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_governor_set' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_reactor_get' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_reactor_set_interrupt_mode' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_reactors_fini' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_reactors_init' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_reactors_start' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_reactors_stop' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_scheduler_get' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_scheduler_get_period' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_scheduler_get_scheduling_lcore' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_scheduler_register' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_scheduler_set' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_scheduler_set_period' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_scheduler_set_scheduling_lcore' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-function-symbols>
+  <abi-instr address-size='64' path='app.c' language='LANG_C11'>
+    <type-decl name='bool' size-in-bits='8' id='c894953d'/>
+    <type-decl name='char' size-in-bits='8' id='a84c031d'/>
+    <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='8' id='89feb1ec'>
+      <subrange length='1' lower-bound='0' upper-bound='0' type-id='f0981eeb' id='52f813b4'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='160' id='664ac0b7'>
+      <subrange length='20' lower-bound='0' upper-bound='19' type-id='f0981eeb' id='fdca39cf'/>
+    </array-type-def>
+    <enum-decl name='spdk_app_parse_args_rvals' filepath='event.h' line='296' column='1' id='306d7417'>
+      <underlying-type type-id='9cac1fee'/>
+      <enumerator name='SPDK_APP_PARSE_ARGS_HELP' value='0'/>
+      <enumerator name='SPDK_APP_PARSE_ARGS_SUCCESS' value='1'/>
+      <enumerator name='SPDK_APP_PARSE_ARGS_FAIL' value='2'/>
+    </enum-decl>
+    <enum-decl name='spdk_log_level' filepath='log.h' line='52' column='1' id='4271cbce'>
+      <underlying-type type-id='9cac1fee'/>
+      <enumerator name='SPDK_LOG_DISABLED' value='-1'/>
+      <enumerator name='SPDK_LOG_ERROR' value='0'/>
+      <enumerator name='SPDK_LOG_WARN' value='1'/>
+      <enumerator name='SPDK_LOG_NOTICE' value='2'/>
+      <enumerator name='SPDK_LOG_INFO' value='3'/>
+      <enumerator name='SPDK_LOG_DEBUG' value='4'/>
+    </enum-decl>
+    <type-decl name='int' size-in-bits='32' id='95e97e5e'/>
+    <type-decl name='long int' size-in-bits='64' id='95e97e5f'/>
+    <type-decl name='signed char' size-in-bits='8' id='28577a57'/>
+    <class-decl name='_IO_FILE' size-in-bits='1728' is-struct='yes' visibility='default' filepath='struct_FILE.h' line='49' column='1' id='ec1ed955'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='_flags' type-id='95e97e5e' visibility='default' filepath='struct_FILE.h' line='51' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='_IO_read_ptr' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='54' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='_IO_read_end' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='55' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='_IO_read_base' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='56' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='_IO_write_base' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='57' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='_IO_write_ptr' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='58' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='_IO_write_end' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='59' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='_IO_buf_base' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='60' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='_IO_buf_end' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='61' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='_IO_save_base' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='64' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='_IO_backup_base' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='65' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='704'>
+        <var-decl name='_IO_save_end' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='66' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='768'>
+        <var-decl name='_markers' type-id='e4c6fa61' visibility='default' filepath='struct_FILE.h' line='68' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='832'>
+        <var-decl name='_chain' type-id='dca988a5' visibility='default' filepath='struct_FILE.h' line='70' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='896'>
+        <var-decl name='_fileno' type-id='95e97e5e' visibility='default' filepath='struct_FILE.h' line='72' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='928'>
+        <var-decl name='_flags2' type-id='95e97e5e' visibility='default' filepath='struct_FILE.h' line='73' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='960'>
+        <var-decl name='_old_offset' type-id='79989e9c' visibility='default' filepath='struct_FILE.h' line='74' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1024'>
+        <var-decl name='_cur_column' type-id='f0981eec' visibility='default' filepath='struct_FILE.h' line='77' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1040'>
+        <var-decl name='_vtable_offset' type-id='28577a57' visibility='default' filepath='struct_FILE.h' line='78' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1048'>
+        <var-decl name='_shortbuf' type-id='89feb1ec' visibility='default' filepath='struct_FILE.h' line='79' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1088'>
+        <var-decl name='_lock' type-id='cecf4ea7' visibility='default' filepath='struct_FILE.h' line='81' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1152'>
+        <var-decl name='_offset' type-id='724e4de6' visibility='default' filepath='struct_FILE.h' line='89' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1216'>
+        <var-decl name='_codecvt' type-id='570f8c59' visibility='default' filepath='struct_FILE.h' line='91' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1280'>
+        <var-decl name='_wide_data' type-id='c65a1f29' visibility='default' filepath='struct_FILE.h' line='92' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1344'>
+        <var-decl name='_freeres_list' type-id='dca988a5' visibility='default' filepath='struct_FILE.h' line='93' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1408'>
+        <var-decl name='_freeres_buf' type-id='eaa32e2f' visibility='default' filepath='struct_FILE.h' line='94' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1472'>
+        <var-decl name='__pad5' type-id='b59d7dce' visibility='default' filepath='struct_FILE.h' line='95' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1536'>
+        <var-decl name='_mode' type-id='95e97e5e' visibility='default' filepath='struct_FILE.h' line='96' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1568'>
+        <var-decl name='_unused2' type-id='664ac0b7' visibility='default' filepath='struct_FILE.h' line='98' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__va_list_tag' size-in-bits='192' is-struct='yes' visibility='default' id='d5027220'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='gp_offset' type-id='f0981eed' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='fp_offset' type-id='f0981eed' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='overflow_arg_area' type-id='eaa32e2f' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='reg_save_area' type-id='eaa32e2f' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='option' size-in-bits='256' is-struct='yes' visibility='default' filepath='getopt_ext.h' line='50' column='1' id='c2fcfcfc'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='80f4b756' visibility='default' filepath='getopt_ext.h' line='52' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='has_arg' type-id='95e97e5e' visibility='default' filepath='getopt_ext.h' line='55' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='flag' type-id='7292109c' visibility='default' filepath='getopt_ext.h' line='56' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='val' type-id='95e97e5e' visibility='default' filepath='getopt_ext.h' line='57' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_app_opts' size-in-bits='2024' is-struct='yes' visibility='default' filepath='event.h' line='63' column='1' id='5a40a4ca'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='80f4b756' visibility='default' filepath='event.h' line='64' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='json_config_file' type-id='80f4b756' visibility='default' filepath='event.h' line='65' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='json_config_ignore_errors' type-id='c894953d' visibility='default' filepath='event.h' line='66' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='136'>
+        <var-decl name='reserved17' type-id='d3538ec5' visibility='default' filepath='event.h' line='69' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='rpc_addr' type-id='80f4b756' visibility='default' filepath='event.h' line='70' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='reactor_mask' type-id='80f4b756' visibility='default' filepath='event.h' line='71' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='tpoint_group_mask' type-id='80f4b756' visibility='default' filepath='event.h' line='72' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='shm_id' type-id='95e97e5e' visibility='default' filepath='event.h' line='74' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='416'>
+        <var-decl name='reserved52' type-id='d351502e' visibility='default' filepath='event.h' line='77' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='shutdown_cb' type-id='87a01893' visibility='default' filepath='event.h' line='79' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='enable_coredump' type-id='c894953d' visibility='default' filepath='event.h' line='81' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='520'>
+        <var-decl name='reserved65' type-id='d3490169' visibility='default' filepath='event.h' line='84' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='544'>
+        <var-decl name='mem_channel' type-id='95e97e5e' visibility='default' filepath='event.h' line='86' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='main_core' type-id='95e97e5e' visibility='default' filepath='event.h' line='87' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='608'>
+        <var-decl name='mem_size' type-id='95e97e5e' visibility='default' filepath='event.h' line='88' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='no_pci' type-id='c894953d' visibility='default' filepath='event.h' line='89' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='648'>
+        <var-decl name='hugepage_single_segments' type-id='c894953d' visibility='default' filepath='event.h' line='90' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='656'>
+        <var-decl name='unlink_hugepage' type-id='c894953d' visibility='default' filepath='event.h' line='91' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='664'>
+        <var-decl name='no_huge' type-id='c894953d' visibility='default' filepath='event.h' line='92' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='672'>
+        <var-decl name='reserved84' type-id='d351502e' visibility='default' filepath='event.h' line='95' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='704'>
+        <var-decl name='hugedir' type-id='80f4b756' visibility='default' filepath='event.h' line='97' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='768'>
+        <var-decl name='print_level' type-id='4271cbce' visibility='default' filepath='event.h' line='98' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='800'>
+        <var-decl name='reserved100' type-id='d351502e' visibility='default' filepath='event.h' line='101' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='832'>
+        <var-decl name='num_pci_addr' type-id='b59d7dce' visibility='default' filepath='event.h' line='103' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='896'>
+        <var-decl name='pci_blocked' type-id='a714fad8' visibility='default' filepath='event.h' line='104' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='960'>
+        <var-decl name='pci_allowed' type-id='a714fad8' visibility='default' filepath='event.h' line='105' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1024'>
+        <var-decl name='iova_mode' type-id='80f4b756' visibility='default' filepath='event.h' line='106' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1088'>
+        <var-decl name='delay_subsystem_init' type-id='c894953d' visibility='default' filepath='event.h' line='111' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1096'>
+        <var-decl name='reserved137' type-id='d3538ec5' visibility='default' filepath='event.h' line='114' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1152'>
+        <var-decl name='num_entries' type-id='9c313c2d' visibility='default' filepath='event.h' line='117' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1216'>
+        <var-decl name='env_context' type-id='eaa32e2f' visibility='default' filepath='event.h' line='120' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1280'>
+        <var-decl name='log' type-id='c7712a73' visibility='default' filepath='event.h' line='125' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1344'>
+        <var-decl name='base_virtaddr' type-id='9c313c2d' visibility='default' filepath='event.h' line='127' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1408'>
+        <var-decl name='opts_size' type-id='b59d7dce' visibility='default' filepath='event.h' line='138' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1472'>
+        <var-decl name='disable_signal_handlers' type-id='c894953d' visibility='default' filepath='event.h' line='148' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1480'>
+        <var-decl name='interrupt_mode' type-id='c894953d' visibility='default' filepath='event.h' line='150' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1488'>
+        <var-decl name='enforce_numa' type-id='c894953d' visibility='default' filepath='event.h' line='152' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1496'>
+        <var-decl name='reserved187' type-id='0f4ddd0b' visibility='default' filepath='event.h' line='155' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1536'>
+        <var-decl name='msg_mempool_size' type-id='b59d7dce' visibility='default' filepath='event.h' line='162' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1600'>
+        <var-decl name='rpc_allowlist' type-id='7d3cd834' visibility='default' filepath='event.h' line='167' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1664'>
+        <var-decl name='vf_token' type-id='80f4b756' visibility='default' filepath='event.h' line='173' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1728'>
+        <var-decl name='lcore_map' type-id='80f4b756' visibility='default' filepath='event.h' line='178' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1792'>
+        <var-decl name='rpc_log_level' type-id='4271cbce' visibility='default' filepath='event.h' line='183' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1824'>
+        <var-decl name='rpc_log_file' type-id='822cd80b' visibility='default' filepath='event.h' line='188' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1888'>
+        <var-decl name='json_data' type-id='eaa32e2f' visibility='default' filepath='event.h' line='194' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1952'>
+        <var-decl name='json_data_size' type-id='b59d7dce' visibility='default' filepath='event.h' line='195' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2016'>
+        <var-decl name='disable_cpumask_locks' type-id='c894953d' visibility='default' filepath='event.h' line='200' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_pci_addr' size-in-bits='64' is-struct='yes' visibility='default' filepath='env.h' line='734' column='1' id='ec72f59a'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='domain' type-id='8f92235e' visibility='default' filepath='env.h' line='735' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='bus' type-id='b96825af' visibility='default' filepath='env.h' line='736' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='40'>
+        <var-decl name='dev' type-id='b96825af' visibility='default' filepath='env.h' line='737' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='48'>
+        <var-decl name='func' type-id='b96825af' visibility='default' filepath='env.h' line='738' column='1'/>
+      </data-member>
+    </class-decl>
+    <typedef-decl name='FILE' type-id='ec1ed955' filepath='FILE.h' line='7' column='1' id='aa12d1ba'/>
+    <typedef-decl name='_IO_lock_t' type-id='48b5725f' filepath='struct_FILE.h' line='43' column='1' id='bb4788fa'/>
+    <typedef-decl name='__off64_t' type-id='95e97e5f' filepath='types.h' line='153' column='1' id='724e4de6'/>
+    <typedef-decl name='__off_t' type-id='95e97e5f' filepath='types.h' line='152' column='1' id='79989e9c'/>
+    <typedef-decl name='__uint32_t' type-id='f0981eed' filepath='types.h' line='42' column='1' id='62f1140c'/>
+    <typedef-decl name='__uint64_t' type-id='f0981eeb' filepath='types.h' line='45' column='1' id='8910171f'/>
+    <typedef-decl name='__uint8_t' type-id='002ac4a6' filepath='types.h' line='38' column='1' id='c51d6389'/>
+    <typedef-decl name='logfunc' type-id='bba1f737' filepath='log.h' line='32' column='1' id='049770e8'/>
+    <typedef-decl name='size_t' type-id='f0981eeb' filepath='stddef.h' line='214' column='1' id='b59d7dce'/>
+    <typedef-decl name='spdk_app_parse_args_rvals_t' type-id='306d7417' filepath='event.h' line='301' column='1' id='cffec760'/>
+    <typedef-decl name='spdk_app_shutdown_cb' type-id='953b12f8' filepath='event.h' line='51' column='1' id='87a01893'/>
+    <typedef-decl name='spdk_msg_fn' type-id='b7f9d8e6' filepath='thread.h' line='90' column='1' id='de128c99'/>
+    <typedef-decl name='uint32_t' type-id='62f1140c' filepath='stdint-uintn.h' line='26' column='1' id='8f92235e'/>
+    <typedef-decl name='uint64_t' type-id='8910171f' filepath='stdint-uintn.h' line='27' column='1' id='9c313c2d'/>
+    <typedef-decl name='uint8_t' type-id='c51d6389' filepath='stdint-uintn.h' line='24' column='1' id='b96825af'/>
+    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='24' id='d3490169'>
+      <subrange length='3' lower-bound='0' upper-bound='2' type-id='f0981eeb' id='56f209d2'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='32' id='d351502e'>
+      <subrange length='4' lower-bound='0' upper-bound='3' type-id='f0981eeb' id='16fe7105'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='40' id='0f4ddd0b'>
+      <subrange length='5' lower-bound='0' upper-bound='4' type-id='f0981eeb' id='53010e10'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='56' id='d3538ec5'>
+      <subrange length='7' lower-bound='0' upper-bound='6' type-id='f0981eeb' id='16fc326e'/>
+    </array-type-def>
+    <type-decl name='unnamed-enum-underlying-type-32' is-anonymous='yes' size-in-bits='32' alignment-in-bits='32' id='9cac1fee'/>
+    <type-decl name='unsigned char' size-in-bits='8' id='002ac4a6'/>
+    <type-decl name='unsigned int' size-in-bits='32' id='f0981eed'/>
+    <type-decl name='unsigned long int' size-in-bits='64' id='f0981eeb'/>
+    <type-decl name='unsigned short int' size-in-bits='16' id='f0981eec'/>
+    <pointer-type-def type-id='aa12d1ba' size-in-bits='64' id='822cd80b'/>
+    <pointer-type-def type-id='ec1ed955' size-in-bits='64' id='dca988a5'/>
+    <pointer-type-def type-id='d5027220' size-in-bits='64' id='b7f2d5e6'/>
+    <pointer-type-def type-id='a84c031d' size-in-bits='64' id='26a90f95'/>
+    <pointer-type-def type-id='26a90f95' size-in-bits='64' id='9b23c9ad'/>
+    <qualified-type-def type-id='a84c031d' const='yes' id='9b45d938'/>
+    <pointer-type-def type-id='9b45d938' size-in-bits='64' id='80f4b756'/>
+    <pointer-type-def type-id='80f4b756' size-in-bits='64' id='7d3cd834'/>
+    <qualified-type-def type-id='95e97e5e' const='yes' id='2448a865'/>
+    <qualified-type-def type-id='c2fcfcfc' const='yes' id='c6b5b625'/>
+    <pointer-type-def type-id='c6b5b625' size-in-bits='64' id='df0d999d'/>
+    <pointer-type-def type-id='2c8a387a' size-in-bits='64' id='1056427c'/>
+    <pointer-type-def type-id='95e97e5e' size-in-bits='64' id='7292109c'/>
+    <pointer-type-def type-id='049770e8' size-in-bits='64' id='c7712a73'/>
+    <pointer-type-def type-id='5a40a4ca' size-in-bits='64' id='94aede68'/>
+    <pointer-type-def type-id='ec72f59a' size-in-bits='64' id='a714fad8'/>
+    <pointer-type-def type-id='ee076206' size-in-bits='64' id='953b12f8'/>
+    <pointer-type-def type-id='c5c76c9c' size-in-bits='64' id='b7f9d8e6'/>
+    <pointer-type-def type-id='a4036571' size-in-bits='64' id='570f8c59'/>
+    <pointer-type-def type-id='bb4788fa' size-in-bits='64' id='cecf4ea7'/>
+    <pointer-type-def type-id='010ae0b9' size-in-bits='64' id='e4c6fa61'/>
+    <pointer-type-def type-id='79bd3751' size-in-bits='64' id='c65a1f29'/>
+    <class-decl name='_IO_codecvt' is-struct='yes' visibility='default' is-declaration-only='yes' id='a4036571'/>
+    <class-decl name='_IO_marker' is-struct='yes' visibility='default' is-declaration-only='yes' id='010ae0b9'/>
+    <class-decl name='_IO_wide_data' is-struct='yes' visibility='default' is-declaration-only='yes' id='79bd3751'/>
+    <function-decl name='spdk_app_get_shm_id' mangled-name='spdk_app_get_shm_id' filepath='app.c' line='76' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_app_get_shm_id'>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_app_start_shutdown' mangled-name='spdk_app_start_shutdown' filepath='app.c' line='241' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_app_start_shutdown'>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_app_opts_init' mangled-name='spdk_app_opts_init' filepath='app.c' line='293' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_app_opts_init'>
+      <parameter type-id='94aede68' name='opts' filepath='app.c' line='293' column='1'/>
+      <parameter type-id='b59d7dce' name='opts_size' filepath='app.c' line='293' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_app_start' mangled-name='spdk_app_start' filepath='app.c' line='806' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_app_start'>
+      <parameter type-id='94aede68' name='opts_user' filepath='app.c' line='806' column='1'/>
+      <parameter type-id='de128c99' name='start_fn' filepath='app.c' line='806' column='1'/>
+      <parameter type-id='eaa32e2f' name='arg1' filepath='app.c' line='807' column='1'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_app_fini' mangled-name='spdk_app_fini' filepath='app.c' line='996' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_app_fini'>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_app_stop' mangled-name='spdk_app_stop' filepath='app.c' line='1058' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_app_stop'>
+      <parameter type-id='95e97e5e' name='rc' filepath='app.c' line='1058' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_app_parse_args' mangled-name='spdk_app_parse_args' filepath='app.c' line='1157' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_app_parse_args'>
+      <parameter type-id='95e97e5e' name='argc' filepath='app.c' line='1157' column='1'/>
+      <parameter type-id='9b23c9ad' name='argv' filepath='app.c' line='1157' column='1'/>
+      <parameter type-id='94aede68' name='opts' filepath='app.c' line='1157' column='1'/>
+      <parameter type-id='80f4b756' name='app_getopt_str' filepath='app.c' line='1158' column='1'/>
+      <parameter type-id='df0d999d' name='app_long_opts' filepath='app.c' line='1158' column='1'/>
+      <parameter type-id='1056427c' name='app_parse' filepath='app.c' line='1159' column='1'/>
+      <parameter type-id='953b12f8' name='app_usage' filepath='app.c' line='1160' column='1'/>
+      <return type-id='cffec760'/>
+    </function-decl>
+    <function-decl name='spdk_app_usage' mangled-name='spdk_app_usage' filepath='app.c' line='1485' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_app_usage'>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <type-decl name='void' id='48b5725f'/>
+    <pointer-type-def type-id='48b5725f' id='eaa32e2f'/>
+    <function-type size-in-bits='64' id='2c8a387a'>
+      <parameter type-id='95e97e5e'/>
+      <parameter type-id='26a90f95'/>
+      <return type-id='95e97e5e'/>
+    </function-type>
+    <function-type size-in-bits='64' id='ee076206'>
+      <return type-id='48b5725f'/>
+    </function-type>
+    <function-type size-in-bits='64' id='bba1f737'>
+      <parameter type-id='95e97e5e'/>
+      <parameter type-id='80f4b756'/>
+      <parameter type-id='2448a865'/>
+      <parameter type-id='80f4b756'/>
+      <parameter type-id='80f4b756'/>
+      <parameter type-id='b7f2d5e6'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+    <function-type size-in-bits='64' id='c5c76c9c'>
+      <parameter type-id='eaa32e2f'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+  </abi-instr>
+  <abi-instr address-size='64' path='reactor.c' language='LANG_C11'>
+    <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='2056' id='cd5f2f4f'>
+      <subrange length='257' lower-bound='0' upper-bound='256' type-id='f0981eeb' id='72e246d7'/>
+    </array-type-def>
+    <enum-decl name='spdk_json_val_type' filepath='json.h' line='21' column='1' id='18f471ce'>
+      <underlying-type type-id='9cac1fee'/>
+      <enumerator name='SPDK_JSON_VAL_INVALID' value='0'/>
+      <enumerator name='SPDK_JSON_VAL_NULL' value='2'/>
+      <enumerator name='SPDK_JSON_VAL_TRUE' value='4'/>
+      <enumerator name='SPDK_JSON_VAL_FALSE' value='8'/>
+      <enumerator name='SPDK_JSON_VAL_NUMBER' value='16'/>
+      <enumerator name='SPDK_JSON_VAL_STRING' value='32'/>
+      <enumerator name='SPDK_JSON_VAL_ARRAY_BEGIN' value='64'/>
+      <enumerator name='SPDK_JSON_VAL_ARRAY_END' value='128'/>
+      <enumerator name='SPDK_JSON_VAL_OBJECT_BEGIN' value='256'/>
+      <enumerator name='SPDK_JSON_VAL_OBJECT_END' value='512'/>
+      <enumerator name='SPDK_JSON_VAL_NAME' value='1024'/>
+    </enum-decl>
+    <class-decl name='rusage' size-in-bits='1152' is-struct='yes' visibility='default' filepath='struct_rusage.h' line='33' column='1' id='d638a840'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='ru_utime' type-id='2a693ac3' visibility='default' filepath='struct_rusage.h' line='36' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='ru_stime' type-id='2a693ac3' visibility='default' filepath='struct_rusage.h' line='38' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='' type-id='ac5ab595' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='' type-id='ac5ab596' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='' type-id='ac5ab597' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='' type-id='ac5ab598' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='' type-id='ac5ab599' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='' type-id='ac5ab59a' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='' type-id='ac5ab59b' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='704'>
+        <var-decl name='' type-id='ac5ab59c' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='768'>
+        <var-decl name='' type-id='ac5ab59d' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='832'>
+        <var-decl name='' type-id='ac5ab59e' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='896'>
+        <var-decl name='' type-id='ac5ab59f' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='960'>
+        <var-decl name='' type-id='ac5ab5a0' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1024'>
+        <var-decl name='' type-id='ac5ab5a1' visibility='default'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1088'>
+        <var-decl name='' type-id='ac5ab5a2' visibility='default'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_cpuset' size-in-bits='3080' is-struct='yes' visibility='default' filepath='cpuset.h' line='25' column='1' id='aec5215a'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='str' type-id='cd5f2f4f' visibility='default' filepath='cpuset.h' line='26' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2056'>
+        <var-decl name='cpus' type-id='c768f32d' visibility='default' filepath='cpuset.h' line='27' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_event' size-in-bits='256' is-struct='yes' visibility='default' filepath='event.h' line='20' column='1' id='6dfc2c68'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='lcore' type-id='8f92235e' visibility='default' filepath='event.h' line='21' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='fn' type-id='10517ed6' visibility='default' filepath='event.h' line='22' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='arg1' type-id='eaa32e2f' visibility='default' filepath='event.h' line='23' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='arg2' type-id='eaa32e2f' visibility='default' filepath='event.h' line='24' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_governor' size-in-bits='832' is-struct='yes' visibility='default' filepath='scheduler.h' line='34' column='1' id='a0f82e92'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='80f4b756' visibility='default' filepath='scheduler.h' line='35' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='get_core_avail_freqs' type-id='6f07d176' visibility='default' filepath='scheduler.h' line='48' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='get_core_curr_freq' type-id='17a94daa' visibility='default' filepath='scheduler.h' line='57' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='core_freq_up' type-id='f02a5e83' visibility='default' filepath='scheduler.h' line='66' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='core_freq_down' type-id='f02a5e83' visibility='default' filepath='scheduler.h' line='75' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='set_core_freq_max' type-id='f02a5e83' visibility='default' filepath='scheduler.h' line='84' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='set_core_freq_min' type-id='f02a5e83' visibility='default' filepath='scheduler.h' line='93' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='get_core_capabilities' type-id='3d4ca52d' visibility='default' filepath='scheduler.h' line='103' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='dump_info_json' type-id='eb9d423e' visibility='default' filepath='scheduler.h' line='111' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='init' type-id='1db260e5' visibility='default' filepath='scheduler.h' line='118' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='deinit' type-id='953b12f8' visibility='default' filepath='scheduler.h' line='123' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='704'>
+        <var-decl name='link' type-id='e7f43f72' visibility='default' filepath='scheduler.h' line='125' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_governor_capabilities' size-in-bits='8' is-struct='yes' visibility='default' filepath='scheduler.h' line='25' column='1' id='63a1fe5d'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='priority' type-id='c894953d' visibility='default' filepath='scheduler.h' line='26' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_json_val' size-in-bits='128' is-struct='yes' visibility='default' filepath='json.h' line='36' column='1' id='9fc5272e'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='start' type-id='eaa32e2f' visibility='default' filepath='json.h' line='49' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='len' type-id='8f92235e' visibility='default' filepath='json.h' line='62' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='type' type-id='18f471ce' visibility='default' filepath='json.h' line='67' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_lw_thread' size-in-bits='512' is-struct='yes' visibility='default' filepath='event.h' line='35' column='1' id='69d037f6'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='link' type-id='e7f43f73' visibility='default' filepath='event.h' line='36' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='tsc_start' type-id='9c313c2d' visibility='default' filepath='event.h' line='37' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='lcore' type-id='8f92235e' visibility='default' filepath='event.h' line='38' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='224'>
+        <var-decl name='resched' type-id='c894953d' visibility='default' filepath='event.h' line='39' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='total_stats' type-id='06899014' visibility='default' filepath='event.h' line='41' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='current_stats' type-id='06899014' visibility='default' filepath='event.h' line='43' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_reactor' size-in-bits='5632' is-struct='yes' visibility='default' filepath='event.h' line='53' column='1' id='31ac3ab6'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='threads' type-id='e7f43f74' visibility='default' filepath='event.h' line='55' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='thread_count' type-id='8f92235e' visibility='default' filepath='event.h' line='56' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='160'>
+        <var-decl name='lcore' type-id='8f92235e' visibility='default' filepath='event.h' line='59' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='flags' type-id='e7f43f75' visibility='default' filepath='event.h' line='64' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='tsc_last' type-id='9c313c2d' visibility='default' filepath='event.h' line='66' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='events' type-id='b2192338' visibility='default' filepath='event.h' line='68' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='events_fd' type-id='95e97e5e' visibility='default' filepath='event.h' line='69' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='rusage' type-id='d638a840' visibility='default' filepath='event.h' line='72' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1600'>
+        <var-decl name='last_rusage' type-id='9c313c2d' visibility='default' filepath='event.h' line='73' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1664'>
+        <var-decl name='busy_tsc' type-id='9c313c2d' visibility='default' filepath='event.h' line='75' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1728'>
+        <var-decl name='idle_tsc' type-id='9c313c2d' visibility='default' filepath='event.h' line='76' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1792'>
+        <var-decl name='notify_cpuset' type-id='aec5215a' visibility='default' filepath='event.h' line='79' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='4872'>
+        <var-decl name='in_interrupt' type-id='c894953d' visibility='default' filepath='event.h' line='81' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='4880'>
+        <var-decl name='set_interrupt_mode_in_progress' type-id='c894953d' visibility='default' filepath='event.h' line='82' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='4888'>
+        <var-decl name='new_in_interrupt' type-id='c894953d' visibility='default' filepath='event.h' line='83' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='4928'>
+        <var-decl name='set_interrupt_mode_cb_fn' type-id='472c805e' visibility='default' filepath='event.h' line='84' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='4992'>
+        <var-decl name='set_interrupt_mode_cb_arg' type-id='eaa32e2f' visibility='default' filepath='event.h' line='85' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='5056'>
+        <var-decl name='fgrp' type-id='eb7a8954' visibility='default' filepath='event.h' line='87' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='5120'>
+        <var-decl name='resched_fd' type-id='95e97e5e' visibility='default' filepath='event.h' line='88' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_scheduler' size-in-bits='512' is-struct='yes' visibility='default' filepath='scheduler.h' line='202' column='1' id='7b3bb32d'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='80f4b756' visibility='default' filepath='scheduler.h' line='203' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='init' type-id='1db260e5' visibility='default' filepath='scheduler.h' line='210' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='deinit' type-id='953b12f8' visibility='default' filepath='scheduler.h' line='215' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='balance' type-id='6490b8eb' visibility='default' filepath='scheduler.h' line='224' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='set_opts' type-id='ab2ef60d' visibility='default' filepath='scheduler.h' line='232' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='get_opts' type-id='582528d7' visibility='default' filepath='scheduler.h' line='239' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='link' type-id='e7f43f76' visibility='default' filepath='scheduler.h' line='241' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_scheduler_core_info' size-in-bits='512' is-struct='yes' visibility='default' filepath='scheduler.h' line='183' column='1' id='5cbe6f5a'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='total_idle_tsc' type-id='9c313c2d' visibility='default' filepath='scheduler.h' line='185' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='total_busy_tsc' type-id='9c313c2d' visibility='default' filepath='scheduler.h' line='186' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='current_idle_tsc' type-id='9c313c2d' visibility='default' filepath='scheduler.h' line='188' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='current_busy_tsc' type-id='9c313c2d' visibility='default' filepath='scheduler.h' line='189' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='lcore' type-id='8f92235e' visibility='default' filepath='scheduler.h' line='191' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='288'>
+        <var-decl name='threads_count' type-id='8f92235e' visibility='default' filepath='scheduler.h' line='192' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='interrupt_mode' type-id='c894953d' visibility='default' filepath='scheduler.h' line='193' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='thread_infos' type-id='85292a93' visibility='default' filepath='scheduler.h' line='194' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='isolated' type-id='c894953d' visibility='default' filepath='scheduler.h' line='195' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_scheduler_thread_info' size-in-bits='384' is-struct='yes' visibility='default' filepath='scheduler.h' line='171' column='1' id='6f51cdb3'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='lcore' type-id='8f92235e' visibility='default' filepath='scheduler.h' line='172' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='thread_id' type-id='9c313c2d' visibility='default' filepath='scheduler.h' line='173' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='total_stats' type-id='06899014' visibility='default' filepath='scheduler.h' line='175' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='current_stats' type-id='06899014' visibility='default' filepath='scheduler.h' line='177' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_thread_stats' size-in-bits='128' is-struct='yes' visibility='default' filepath='thread.h' line='478' column='1' id='06899014'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='busy_tsc' type-id='9c313c2d' visibility='default' filepath='thread.h' line='479' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='idle_tsc' type-id='9c313c2d' visibility='default' filepath='thread.h' line='480' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='timeval' size-in-bits='128' is-struct='yes' visibility='default' filepath='struct_timeval.h' line='8' column='1' id='2a693ac3'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tv_sec' type-id='65eda9c0' visibility='default' filepath='struct_timeval.h' line='14' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tv_usec' type-id='5b102a54' visibility='default' filepath='struct_timeval.h' line='15' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='scheduler.h' line='125' column='1' id='e7f43f72'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqe_next' type-id='c8ac65e0' visibility='default' filepath='scheduler.h' line='125' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqe_prev' type-id='b1643cfe' visibility='default' filepath='scheduler.h' line='125' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__2' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='event.h' line='36' column='1' id='e7f43f73'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqe_next' type-id='82e1fcbc' visibility='default' filepath='event.h' line='36' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqe_prev' type-id='9fc0a022' visibility='default' filepath='event.h' line='36' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__1' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='event.h' line='55' column='1' id='e7f43f74'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqh_first' type-id='82e1fcbc' visibility='default' filepath='event.h' line='55' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqh_last' type-id='9fc0a022' visibility='default' filepath='event.h' line='55' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__4' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='scheduler.h' line='241' column='1' id='e7f43f76'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqe_next' type-id='c4221ffd' visibility='default' filepath='scheduler.h' line='241' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqe_prev' type-id='98b81f75' visibility='default' filepath='scheduler.h' line='241' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__3' size-in-bits='32' is-struct='yes' is-anonymous='yes' visibility='default' filepath='event.h' line='61' column='1' id='e7f43f75'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='is_valid' type-id='8f92235e' visibility='default' filepath='event.h' line='62' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1'>
+        <var-decl name='reserved' type-id='8f92235e' visibility='default' filepath='event.h' line='63' column='1'/>
+      </data-member>
+    </class-decl>
+    <typedef-decl name='__suseconds_t' type-id='95e97e5f' filepath='types.h' line='162' column='1' id='5b102a54'/>
+    <typedef-decl name='__syscall_slong_t' type-id='95e97e5f' filepath='types.h' line='197' column='1' id='03085adc'/>
+    <typedef-decl name='__time_t' type-id='95e97e5f' filepath='types.h' line='160' column='1' id='65eda9c0'/>
+    <typedef-decl name='spdk_event_fn' type-id='debb4ee8' filepath='event.h' line='36' column='1' id='10517ed6'/>
+    <typedef-decl name='spdk_reactor_set_interrupt_mode_cb' type-id='debb4ee8' filepath='event.h' line='51' column='1' id='472c805e'/>
+    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='1024' id='c768f32d'>
+      <subrange length='128' lower-bound='0' upper-bound='127' type-id='f0981eeb' id='1eb1687a'/>
+    </array-type-def>
+    <union-decl name='__anonymous_union__2' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='struct_rusage.h' line='53' column='1' id='ac5ab597'>
+      <data-member access='public'>
+        <var-decl name='ru_idrss' type-id='95e97e5f' visibility='default' filepath='struct_rusage.h' line='55' column='1'/>
+      </data-member>
+      <data-member access='public'>
+        <var-decl name='__ru_idrss_word' type-id='03085adc' visibility='default' filepath='struct_rusage.h' line='56' column='1'/>
+      </data-member>
+    </union-decl>
+    <union-decl name='__anonymous_union__7' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='struct_rusage.h' line='85' column='1' id='ac5ab59c'>
+      <data-member access='public'>
+        <var-decl name='ru_inblock' type-id='95e97e5f' visibility='default' filepath='struct_rusage.h' line='87' column='1'/>
+      </data-member>
+      <data-member access='public'>
+        <var-decl name='__ru_inblock_word' type-id='03085adc' visibility='default' filepath='struct_rusage.h' line='88' column='1'/>
+      </data-member>
+    </union-decl>
+    <union-decl name='__anonymous_union__3' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='struct_rusage.h' line='59' column='1' id='ac5ab598'>
+      <data-member access='public'>
+        <var-decl name='ru_isrss' type-id='95e97e5f' visibility='default' filepath='struct_rusage.h' line='61' column='1'/>
+      </data-member>
+      <data-member access='public'>
+        <var-decl name='__ru_isrss_word' type-id='03085adc' visibility='default' filepath='struct_rusage.h' line='62' column='1'/>
+      </data-member>
+    </union-decl>
+    <union-decl name='__anonymous_union__1' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='struct_rusage.h' line='47' column='1' id='ac5ab596'>
+      <data-member access='public'>
+        <var-decl name='ru_ixrss' type-id='95e97e5f' visibility='default' filepath='struct_rusage.h' line='49' column='1'/>
+      </data-member>
+      <data-member access='public'>
+        <var-decl name='__ru_ixrss_word' type-id='03085adc' visibility='default' filepath='struct_rusage.h' line='50' column='1'/>
+      </data-member>
+    </union-decl>
+    <union-decl name='__anonymous_union__5' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='struct_rusage.h' line='72' column='1' id='ac5ab59a'>
+      <data-member access='public'>
+        <var-decl name='ru_majflt' type-id='95e97e5f' visibility='default' filepath='struct_rusage.h' line='74' column='1'/>
+      </data-member>
+      <data-member access='public'>
+        <var-decl name='__ru_majflt_word' type-id='03085adc' visibility='default' filepath='struct_rusage.h' line='75' column='1'/>
+      </data-member>
+    </union-decl>
+    <union-decl name='__anonymous_union__' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='struct_rusage.h' line='40' column='1' id='ac5ab595'>
+      <data-member access='public'>
+        <var-decl name='ru_maxrss' type-id='95e97e5f' visibility='default' filepath='struct_rusage.h' line='42' column='1'/>
+      </data-member>
+      <data-member access='public'>
+        <var-decl name='__ru_maxrss_word' type-id='03085adc' visibility='default' filepath='struct_rusage.h' line='43' column='1'/>
+      </data-member>
+    </union-decl>
+    <union-decl name='__anonymous_union__4' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='struct_rusage.h' line='66' column='1' id='ac5ab599'>
+      <data-member access='public'>
+        <var-decl name='ru_minflt' type-id='95e97e5f' visibility='default' filepath='struct_rusage.h' line='68' column='1'/>
+      </data-member>
+      <data-member access='public'>
+        <var-decl name='__ru_minflt_word' type-id='03085adc' visibility='default' filepath='struct_rusage.h' line='69' column='1'/>
+      </data-member>
+    </union-decl>
+    <union-decl name='__anonymous_union__10' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='struct_rusage.h' line='103' column='1' id='ac5ab59f'>
+      <data-member access='public'>
+        <var-decl name='ru_msgrcv' type-id='95e97e5f' visibility='default' filepath='struct_rusage.h' line='105' column='1'/>
+      </data-member>
+      <data-member access='public'>
+        <var-decl name='__ru_msgrcv_word' type-id='03085adc' visibility='default' filepath='struct_rusage.h' line='106' column='1'/>
+      </data-member>
+    </union-decl>
+    <union-decl name='__anonymous_union__9' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='struct_rusage.h' line='97' column='1' id='ac5ab59e'>
+      <data-member access='public'>
+        <var-decl name='ru_msgsnd' type-id='95e97e5f' visibility='default' filepath='struct_rusage.h' line='99' column='1'/>
+      </data-member>
+      <data-member access='public'>
+        <var-decl name='__ru_msgsnd_word' type-id='03085adc' visibility='default' filepath='struct_rusage.h' line='100' column='1'/>
+      </data-member>
+    </union-decl>
+    <union-decl name='__anonymous_union__13' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='struct_rusage.h' line='124' column='1' id='ac5ab5a2'>
+      <data-member access='public'>
+        <var-decl name='ru_nivcsw' type-id='95e97e5f' visibility='default' filepath='struct_rusage.h' line='126' column='1'/>
+      </data-member>
+      <data-member access='public'>
+        <var-decl name='__ru_nivcsw_word' type-id='03085adc' visibility='default' filepath='struct_rusage.h' line='127' column='1'/>
+      </data-member>
+    </union-decl>
+    <union-decl name='__anonymous_union__11' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='struct_rusage.h' line='109' column='1' id='ac5ab5a0'>
+      <data-member access='public'>
+        <var-decl name='ru_nsignals' type-id='95e97e5f' visibility='default' filepath='struct_rusage.h' line='111' column='1'/>
+      </data-member>
+      <data-member access='public'>
+        <var-decl name='__ru_nsignals_word' type-id='03085adc' visibility='default' filepath='struct_rusage.h' line='112' column='1'/>
+      </data-member>
+    </union-decl>
+    <union-decl name='__anonymous_union__6' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='struct_rusage.h' line='78' column='1' id='ac5ab59b'>
+      <data-member access='public'>
+        <var-decl name='ru_nswap' type-id='95e97e5f' visibility='default' filepath='struct_rusage.h' line='80' column='1'/>
+      </data-member>
+      <data-member access='public'>
+        <var-decl name='__ru_nswap_word' type-id='03085adc' visibility='default' filepath='struct_rusage.h' line='81' column='1'/>
+      </data-member>
+    </union-decl>
+    <union-decl name='__anonymous_union__12' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='struct_rusage.h' line='117' column='1' id='ac5ab5a1'>
+      <data-member access='public'>
+        <var-decl name='ru_nvcsw' type-id='95e97e5f' visibility='default' filepath='struct_rusage.h' line='119' column='1'/>
+      </data-member>
+      <data-member access='public'>
+        <var-decl name='__ru_nvcsw_word' type-id='03085adc' visibility='default' filepath='struct_rusage.h' line='120' column='1'/>
+      </data-member>
+    </union-decl>
+    <union-decl name='__anonymous_union__8' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='struct_rusage.h' line='91' column='1' id='ac5ab59d'>
+      <data-member access='public'>
+        <var-decl name='ru_oublock' type-id='95e97e5f' visibility='default' filepath='struct_rusage.h' line='93' column='1'/>
+      </data-member>
+      <data-member access='public'>
+        <var-decl name='__ru_oublock_word' type-id='03085adc' visibility='default' filepath='struct_rusage.h' line='94' column='1'/>
+      </data-member>
+    </union-decl>
+    <qualified-type-def type-id='aec5215a' const='yes' id='04ae283d'/>
+    <pointer-type-def type-id='04ae283d' size-in-bits='64' id='75291c35'/>
+    <qualified-type-def type-id='9fc5272e' const='yes' id='f6adfac1'/>
+    <pointer-type-def type-id='f6adfac1' size-in-bits='64' id='3ee1fff1'/>
+    <pointer-type-def type-id='276427e1' size-in-bits='64' id='1db260e5'/>
+    <pointer-type-def type-id='62443e49' size-in-bits='64' id='ab2ef60d'/>
+    <pointer-type-def type-id='ad11f404' size-in-bits='64' id='eb9d423e'/>
+    <pointer-type-def type-id='db7d07ef' size-in-bits='64' id='f02a5e83'/>
+    <pointer-type-def type-id='e0f8f0a9' size-in-bits='64' id='3d4ca52d'/>
+    <pointer-type-def type-id='aec5215a' size-in-bits='64' id='d5319498'/>
+    <pointer-type-def type-id='6dfc2c68' size-in-bits='64' id='8b2f776e'/>
+    <pointer-type-def type-id='a0f82e92' size-in-bits='64' id='c8ac65e0'/>
+    <pointer-type-def type-id='c8ac65e0' size-in-bits='64' id='b1643cfe'/>
+    <pointer-type-def type-id='63a1fe5d' size-in-bits='64' id='075c460d'/>
+    <pointer-type-def type-id='69d037f6' size-in-bits='64' id='82e1fcbc'/>
+    <pointer-type-def type-id='82e1fcbc' size-in-bits='64' id='9fc0a022'/>
+    <pointer-type-def type-id='31ac3ab6' size-in-bits='64' id='cbc6eb1c'/>
+    <pointer-type-def type-id='7b3bb32d' size-in-bits='64' id='c4221ffd'/>
+    <pointer-type-def type-id='c4221ffd' size-in-bits='64' id='98b81f75'/>
+    <pointer-type-def type-id='5cbe6f5a' size-in-bits='64' id='87700e08'/>
+    <pointer-type-def type-id='6f51cdb3' size-in-bits='64' id='85292a93'/>
+    <pointer-type-def type-id='32efe300' size-in-bits='64' id='17a94daa'/>
+    <pointer-type-def type-id='e496c744' size-in-bits='64' id='6f07d176'/>
+    <pointer-type-def type-id='8f92235e' size-in-bits='64' id='90421557'/>
+    <pointer-type-def type-id='9ed8cfeb' size-in-bits='64' id='582528d7'/>
+    <pointer-type-def type-id='14737c77' size-in-bits='64' id='6490b8eb'/>
+    <pointer-type-def type-id='c039af2e' size-in-bits='64' id='debb4ee8'/>
+    <pointer-type-def type-id='c8d12ece' size-in-bits='64' id='eb7a8954'/>
+    <pointer-type-def type-id='2ae61988' size-in-bits='64' id='b8e14bfe'/>
+    <pointer-type-def type-id='f749e2ba' size-in-bits='64' id='b2192338'/>
+    <class-decl name='spdk_fd_group' is-struct='yes' visibility='default' is-declaration-only='yes' id='c8d12ece'/>
+    <class-decl name='spdk_json_write_ctx' is-struct='yes' visibility='default' is-declaration-only='yes' id='2ae61988'/>
+    <class-decl name='spdk_ring' is-struct='yes' visibility='default' is-declaration-only='yes' id='f749e2ba'/>
+    <var-decl name='g_scheduling_in_progress' type-id='c894953d' visibility='default' filepath='event.h' line='99' column='1'/>
+    <function-decl name='spdk_scheduler_set' mangled-name='spdk_scheduler_set' filepath='reactor.c' line='79' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_scheduler_set'>
+      <parameter type-id='80f4b756' name='name' filepath='reactor.c' line='79' column='1'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_scheduler_get' mangled-name='spdk_scheduler_get' filepath='reactor.c' line='127' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_scheduler_get'>
+      <return type-id='c4221ffd'/>
+    </function-decl>
+    <function-decl name='spdk_scheduler_get_period' mangled-name='spdk_scheduler_get_period' filepath='reactor.c' line='133' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_scheduler_get_period'>
+      <return type-id='9c313c2d'/>
+    </function-decl>
+    <function-decl name='spdk_scheduler_set_period' mangled-name='spdk_scheduler_set_period' filepath='reactor.c' line='140' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_scheduler_set_period'>
+      <parameter type-id='9c313c2d' name='period' filepath='reactor.c' line='140' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_scheduler_register' mangled-name='spdk_scheduler_register' filepath='reactor.c' line='147' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_scheduler_register'>
+      <parameter type-id='c4221ffd' name='scheduler' filepath='reactor.c' line='147' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_scheduler_get_scheduling_lcore' mangled-name='spdk_scheduler_get_scheduling_lcore' filepath='reactor.c' line='159' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_scheduler_get_scheduling_lcore'>
+      <return type-id='8f92235e'/>
+    </function-decl>
+    <function-decl name='spdk_scheduler_set_scheduling_lcore' mangled-name='spdk_scheduler_set_scheduling_lcore' filepath='reactor.c' line='165' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_scheduler_set_scheduling_lcore'>
+      <parameter type-id='8f92235e' name='core' filepath='reactor.c' line='165' column='1'/>
+      <return type-id='c894953d'/>
+    </function-decl>
+    <function-decl name='spdk_reactor_get' mangled-name='spdk_reactor_get' filepath='reactor.c' line='244' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_reactor_get'>
+      <parameter type-id='8f92235e' name='lcore' filepath='reactor.c' line='244' column='1'/>
+      <return type-id='cbc6eb1c'/>
+    </function-decl>
+    <function-decl name='spdk_reactors_init' mangled-name='spdk_reactors_init' filepath='reactor.c' line='270' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_reactors_init'>
+      <parameter type-id='b59d7dce' name='msg_mempool_size' filepath='reactor.c' line='270' column='1'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_reactors_fini' mangled-name='spdk_reactors_fini' filepath='reactor.c' line='335' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_reactors_fini'>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_reactor_set_interrupt_mode' mangled-name='spdk_reactor_set_interrupt_mode' filepath='reactor.c' line='471' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_reactor_set_interrupt_mode'>
+      <parameter type-id='8f92235e' name='lcore' filepath='reactor.c' line='471' column='1'/>
+      <parameter type-id='c894953d' name='new_in_interrupt' filepath='reactor.c' line='471' column='1'/>
+      <parameter type-id='472c805e' name='cb_fn' filepath='reactor.c' line='472' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='reactor.c' line='472' column='1'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_event_allocate' mangled-name='spdk_event_allocate' filepath='reactor.c' line='526' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_event_allocate'>
+      <parameter type-id='8f92235e' name='lcore' filepath='reactor.c' line='526' column='1'/>
+      <parameter type-id='10517ed6' name='fn' filepath='reactor.c' line='526' column='1'/>
+      <parameter type-id='eaa32e2f' name='arg1' filepath='reactor.c' line='526' column='1'/>
+      <parameter type-id='eaa32e2f' name='arg2' filepath='reactor.c' line='526' column='1'/>
+      <return type-id='8b2f776e'/>
+    </function-decl>
+    <function-decl name='spdk_event_call' mangled-name='spdk_event_call' filepath='reactor.c' line='551' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_event_call'>
+      <parameter type-id='8b2f776e' name='event' filepath='reactor.c' line='551' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_framework_enable_context_switch_monitor' mangled-name='spdk_framework_enable_context_switch_monitor' filepath='reactor.c' line='675' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_framework_enable_context_switch_monitor'>
+      <parameter type-id='c894953d' name='enable' filepath='reactor.c' line='675' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_framework_context_switch_monitor_enabled' mangled-name='spdk_framework_context_switch_monitor_enabled' filepath='reactor.c' line='685' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_framework_context_switch_monitor_enabled'>
+      <return type-id='c894953d'/>
+    </function-decl>
+    <function-decl name='spdk_app_parse_core_mask' mangled-name='spdk_app_parse_core_mask' filepath='reactor.c' line='1066' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_app_parse_core_mask'>
+      <parameter type-id='80f4b756' name='mask' filepath='reactor.c' line='1066' column='1'/>
+      <parameter type-id='d5319498' name='cpumask' filepath='reactor.c' line='1066' column='1'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_app_get_core_mask' mangled-name='spdk_app_get_core_mask' filepath='reactor.c' line='1083' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_app_get_core_mask'>
+      <return type-id='75291c35'/>
+    </function-decl>
+    <function-decl name='spdk_reactors_start' mangled-name='spdk_reactors_start' filepath='reactor.c' line='1089' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_reactors_start'>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_reactors_stop' mangled-name='spdk_reactors_stop' filepath='reactor.c' line='1163' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_reactors_stop'>
+      <parameter type-id='eaa32e2f' name='arg1' filepath='reactor.c' line='1163' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_for_each_reactor' mangled-name='spdk_for_each_reactor' filepath='reactor.c' line='1400' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_for_each_reactor'>
+      <parameter type-id='10517ed6' name='fn' filepath='reactor.c' line='1400' column='1'/>
+      <parameter type-id='eaa32e2f' name='arg1' filepath='reactor.c' line='1400' column='1'/>
+      <parameter type-id='eaa32e2f' name='arg2' filepath='reactor.c' line='1400' column='1'/>
+      <parameter type-id='10517ed6' name='cpl' filepath='reactor.c' line='1400' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_governor_set' mangled-name='spdk_governor_set' filepath='reactor.c' line='1551' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_governor_set'>
+      <parameter type-id='80f4b756' name='name' filepath='reactor.c' line='1551' column='1'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_governor_get' mangled-name='spdk_governor_get' filepath='reactor.c' line='1586' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_governor_get'>
+      <return type-id='c8ac65e0'/>
+    </function-decl>
+    <function-decl name='spdk_governor_register' mangled-name='spdk_governor_register' filepath='reactor.c' line='1592' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_governor_register'>
+      <parameter type-id='c8ac65e0' name='governor' filepath='reactor.c' line='1592' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-type size-in-bits='64' id='62443e49'>
+      <parameter type-id='3ee1fff1'/>
+      <return type-id='95e97e5e'/>
+    </function-type>
+    <function-type size-in-bits='64' id='ad11f404'>
+      <parameter type-id='b8e14bfe'/>
+      <return type-id='95e97e5e'/>
+    </function-type>
+    <function-type size-in-bits='64' id='db7d07ef'>
+      <parameter type-id='8f92235e'/>
+      <return type-id='95e97e5e'/>
+    </function-type>
+    <function-type size-in-bits='64' id='e0f8f0a9'>
+      <parameter type-id='8f92235e'/>
+      <parameter type-id='075c460d'/>
+      <return type-id='95e97e5e'/>
+    </function-type>
+    <function-type size-in-bits='64' id='32efe300'>
+      <parameter type-id='8f92235e'/>
+      <return type-id='8f92235e'/>
+    </function-type>
+    <function-type size-in-bits='64' id='e496c744'>
+      <parameter type-id='8f92235e'/>
+      <parameter type-id='90421557'/>
+      <parameter type-id='8f92235e'/>
+      <return type-id='8f92235e'/>
+    </function-type>
+    <function-type size-in-bits='64' id='9ed8cfeb'>
+      <parameter type-id='b8e14bfe'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+    <function-type size-in-bits='64' id='14737c77'>
+      <parameter type-id='87700e08'/>
+      <parameter type-id='8f92235e'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+    <function-type size-in-bits='64' id='c039af2e'>
+      <parameter type-id='eaa32e2f'/>
+      <parameter type-id='eaa32e2f'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+    <function-type size-in-bits='64' id='276427e1'>
+      <return type-id='95e97e5e'/>
+    </function-type>
+  </abi-instr>
+</abi-corpus>

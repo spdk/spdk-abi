@@ -1,0 +1,267 @@
+<abi-corpus version='2.2' soname='libspdk_reduce.so.7.0'>
+  <elf-needed>
+    <dependency name='libspdk_log.so.7.0'/>
+    <dependency name='libspdk_util.so.10.0'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+  <elf-function-symbols>
+    <elf-symbol name='spdk_reduce_vol_destroy' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_reduce_vol_get_params' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_reduce_vol_get_pm_path' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_reduce_vol_get_uuid' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_reduce_vol_init' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_reduce_vol_load' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_reduce_vol_print_info' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_reduce_vol_readv' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_reduce_vol_unload' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_reduce_vol_writev' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-function-symbols>
+  <abi-instr address-size='64' path='reduce.c' language='LANG_C11'>
+    <type-decl name='bool' size-in-bits='8' id='c894953d'/>
+    <type-decl name='char' size-in-bits='8' id='a84c031d'/>
+    <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='unknown' id='e84913bd'>
+      <subrange length='unknown' lower-bound='0' upper-bound='-1' type-id='f0981eeb' id='031f2035'/>
+    </array-type-def>
+    <enum-decl name='spdk_reduce_backing_io_type' filepath='reduce.h' line='103' column='1' id='b9dee981'>
+      <underlying-type type-id='9cac1fee'/>
+      <enumerator name='SPDK_REDUCE_BACKING_IO_WRITE' value='0'/>
+      <enumerator name='SPDK_REDUCE_BACKING_IO_READ' value='1'/>
+      <enumerator name='SPDK_REDUCE_BACKING_IO_UNMAP' value='2'/>
+    </enum-decl>
+    <type-decl name='int' size-in-bits='32' id='95e97e5e'/>
+    <class-decl name='iovec' size-in-bits='128' is-struct='yes' visibility='default' filepath='struct_iovec.h' line='26' column='1' id='0f042891'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='iov_base' type-id='eaa32e2f' visibility='default' filepath='struct_iovec.h' line='28' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='iov_len' type-id='b59d7dce' visibility='default' filepath='struct_iovec.h' line='29' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_reduce_backing_dev' size-in-bits='384' is-struct='yes' visibility='default' filepath='reduce.h' line='120' column='1' id='cac77be0'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='submit_backing_io' type-id='46bf1594' visibility='default' filepath='reduce.h' line='121' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='compress' type-id='a0eaa756' visibility='default' filepath='reduce.h' line='123' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='decompress' type-id='a0eaa756' visibility='default' filepath='reduce.h' line='128' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='blockcnt' type-id='9c313c2d' visibility='default' filepath='reduce.h' line='133' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='blocklen' type-id='8f92235e' visibility='default' filepath='reduce.h' line='134' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='288'>
+        <var-decl name='sgl_in' type-id='c894953d' visibility='default' filepath='reduce.h' line='135' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='296'>
+        <var-decl name='sgl_out' type-id='c894953d' visibility='default' filepath='reduce.h' line='136' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='user_ctx_size' type-id='8f92235e' visibility='default' filepath='reduce.h' line='137' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_reduce_backing_io' size-in-bits='448' is-struct='yes' visibility='default' filepath='reduce.h' line='109' column='1' id='8610973d'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='dev' type-id='5822c6f6' visibility='default' filepath='reduce.h' line='110' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='iov' type-id='cc4b1be9' visibility='default' filepath='reduce.h' line='111' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='iovcnt' type-id='8f92235e' visibility='default' filepath='reduce.h' line='112' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='lba' type-id='9c313c2d' visibility='default' filepath='reduce.h' line='113' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='lba_count' type-id='8f92235e' visibility='default' filepath='reduce.h' line='114' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='backing_cb_args' type-id='a41aa92e' visibility='default' filepath='reduce.h' line='115' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='backing_io_type' type-id='b9dee981' visibility='default' filepath='reduce.h' line='116' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='416'>
+        <var-decl name='user_ctx' type-id='e84913bd' visibility='default' filepath='reduce.h' line='117' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_reduce_vol_cb_args' size-in-bits='192' is-struct='yes' visibility='default' filepath='reduce.h' line='97' column='1' id='e8c5eb18'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='output_size' type-id='8f92235e' visibility='default' filepath='reduce.h' line='98' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='cb_fn' type-id='f73e6af3' visibility='default' filepath='reduce.h' line='99' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='cb_arg' type-id='eaa32e2f' visibility='default' filepath='reduce.h' line='100' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_reduce_vol_params' size-in-bits='384' is-struct='yes' visibility='default' filepath='reduce.h' line='25' column='1' id='0b287997'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='uuid' type-id='429c70d3' visibility='default' filepath='reduce.h' line='26' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='backing_io_unit_size' type-id='8f92235e' visibility='default' filepath='reduce.h' line='34' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='160'>
+        <var-decl name='logical_block_size' type-id='8f92235e' visibility='default' filepath='reduce.h' line='41' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='chunk_size' type-id='8f92235e' visibility='default' filepath='reduce.h' line='49' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='vol_size' type-id='9c313c2d' visibility='default' filepath='reduce.h' line='60' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='comp_level' type-id='8f92235e' visibility='default' filepath='reduce.h' line='66' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='352'>
+        <var-decl name='comp_algo' type-id='b96825af' visibility='default' filepath='reduce.h' line='72' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='360'>
+        <var-decl name='reserved' type-id='d3490169' visibility='default' filepath='reduce.h' line='73' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_uuid' size-in-bits='128' is-struct='yes' visibility='default' filepath='uuid.h' line='21' column='1' id='429c70d3'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='u' type-id='ac5ab595' visibility='default' filepath='uuid.h' line='24' column='1'/>
+      </data-member>
+    </class-decl>
+    <typedef-decl name='__uint32_t' type-id='f0981eec' filepath='types.h' line='42' column='1' id='62f1140c'/>
+    <typedef-decl name='__uint64_t' type-id='f0981eeb' filepath='types.h' line='45' column='1' id='8910171f'/>
+    <typedef-decl name='__uint8_t' type-id='002ac4a6' filepath='types.h' line='38' column='1' id='c51d6389'/>
+    <typedef-decl name='size_t' type-id='f0981eeb' filepath='stddef.h' line='214' column='1' id='b59d7dce'/>
+    <typedef-decl name='spdk_reduce_dev_cpl' type-id='1ed1e4cd' filepath='reduce.h' line='95' column='1' id='f73e6af3'/>
+    <typedef-decl name='spdk_reduce_vol_op_complete' type-id='1ed1e4cd' filepath='reduce.h' line='78' column='1' id='3d61569b'/>
+    <typedef-decl name='spdk_reduce_vol_op_with_handle_complete' type-id='dfc70b88' filepath='reduce.h' line='79' column='1' id='3eca1faf'/>
+    <typedef-decl name='uint32_t' type-id='62f1140c' filepath='stdint-uintn.h' line='26' column='1' id='8f92235e'/>
+    <typedef-decl name='uint64_t' type-id='8910171f' filepath='stdint-uintn.h' line='27' column='1' id='9c313c2d'/>
+    <typedef-decl name='uint8_t' type-id='c51d6389' filepath='stdint-uintn.h' line='24' column='1' id='b96825af'/>
+    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='128' id='fa9986a5'>
+      <subrange length='16' lower-bound='0' upper-bound='15' type-id='f0981eeb' id='848d0938'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='24' id='d3490169'>
+      <subrange length='3' lower-bound='0' upper-bound='2' type-id='f0981eeb' id='56f209d2'/>
+    </array-type-def>
+    <union-decl name='__anonymous_union__' size-in-bits='128' is-anonymous='yes' visibility='default' filepath='uuid.h' line='22' column='1' id='ac5ab595'>
+      <data-member access='public'>
+        <var-decl name='raw' type-id='fa9986a5' visibility='default' filepath='uuid.h' line='23' column='1'/>
+      </data-member>
+    </union-decl>
+    <type-decl name='unnamed-enum-underlying-type-32' is-anonymous='yes' size-in-bits='32' alignment-in-bits='32' id='9cac1fee'/>
+    <type-decl name='unsigned char' size-in-bits='8' id='002ac4a6'/>
+    <type-decl name='unsigned int' size-in-bits='32' id='f0981eec'/>
+    <type-decl name='unsigned long int' size-in-bits='64' id='f0981eeb'/>
+    <qualified-type-def type-id='a84c031d' const='yes' id='9b45d938'/>
+    <pointer-type-def type-id='9b45d938' size-in-bits='64' id='80f4b756'/>
+    <qualified-type-def type-id='0b287997' const='yes' id='67adba22'/>
+    <pointer-type-def type-id='67adba22' size-in-bits='64' id='3e7bda98'/>
+    <qualified-type-def type-id='429c70d3' const='yes' id='2ecf4438'/>
+    <pointer-type-def type-id='2ecf4438' size-in-bits='64' id='c2482856'/>
+    <pointer-type-def type-id='0f042891' size-in-bits='64' id='cc4b1be9'/>
+    <pointer-type-def type-id='cac77be0' size-in-bits='64' id='5822c6f6'/>
+    <pointer-type-def type-id='8610973d' size-in-bits='64' id='3bcb393d'/>
+    <pointer-type-def type-id='e8c5eb18' size-in-bits='64' id='a41aa92e'/>
+    <pointer-type-def type-id='0b287997' size-in-bits='64' id='e453fa8f'/>
+    <pointer-type-def type-id='df337ec4' size-in-bits='64' id='a0eaa756'/>
+    <pointer-type-def type-id='0d909b0a' size-in-bits='64' id='46bf1594'/>
+    <pointer-type-def type-id='2922fb19' size-in-bits='64' id='1ed1e4cd'/>
+    <pointer-type-def type-id='cb78485e' size-in-bits='64' id='dfc70b88'/>
+    <qualified-type-def type-id='cc95dfe4' const='yes' id='746da1f3'/>
+    <pointer-type-def type-id='746da1f3' size-in-bits='64' id='2195c89b'/>
+    <pointer-type-def type-id='cc95dfe4' size-in-bits='64' id='28881962'/>
+    <class-decl name='spdk_reduce_vol' is-struct='yes' visibility='default' filepath='reduce.c' line='118' column='1' is-declaration-only='yes' id='cc95dfe4'/>
+    <function-decl name='spdk_reduce_vol_get_uuid' mangled-name='spdk_reduce_vol_get_uuid' filepath='reduce.c' line='290' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_reduce_vol_get_uuid'>
+      <parameter type-id='28881962' name='vol' filepath='reduce.c' line='290' column='1'/>
+      <return type-id='c2482856'/>
+    </function-decl>
+    <function-decl name='spdk_reduce_vol_init' mangled-name='spdk_reduce_vol_init' filepath='reduce.c' line='587' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_reduce_vol_init'>
+      <parameter type-id='e453fa8f' name='params' filepath='reduce.c' line='587' column='1'/>
+      <parameter type-id='5822c6f6' name='backing_dev' filepath='reduce.c' line='588' column='1'/>
+      <parameter type-id='80f4b756' name='pm_file_dir' filepath='reduce.c' line='589' column='1'/>
+      <parameter type-id='3eca1faf' name='cb_fn' filepath='reduce.c' line='590' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='reduce.c' line='590' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_reduce_vol_load' mangled-name='spdk_reduce_vol_load' filepath='reduce.c' line='868' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_reduce_vol_load'>
+      <parameter type-id='5822c6f6' name='backing_dev' filepath='reduce.c' line='868' column='1'/>
+      <parameter type-id='3eca1faf' name='cb_fn' filepath='reduce.c' line='869' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='reduce.c' line='869' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_reduce_vol_unload' mangled-name='spdk_reduce_vol_unload' filepath='reduce.c' line='950' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_reduce_vol_unload'>
+      <parameter type-id='28881962' name='vol' filepath='reduce.c' line='950' column='1'/>
+      <parameter type-id='3d61569b' name='cb_fn' filepath='reduce.c' line='951' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='reduce.c' line='951' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_reduce_vol_destroy' mangled-name='spdk_reduce_vol_destroy' filepath='reduce.c' line='1044' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_reduce_vol_destroy'>
+      <parameter type-id='5822c6f6' name='backing_dev' filepath='reduce.c' line='1044' column='1'/>
+      <parameter type-id='3d61569b' name='cb_fn' filepath='reduce.c' line='1045' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='reduce.c' line='1045' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_reduce_vol_readv' mangled-name='spdk_reduce_vol_readv' filepath='reduce.c' line='1800' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_reduce_vol_readv'>
+      <parameter type-id='28881962' name='vol' filepath='reduce.c' line='1800' column='1'/>
+      <parameter type-id='cc4b1be9' name='iov' filepath='reduce.c' line='1801' column='1'/>
+      <parameter type-id='95e97e5e' name='iovcnt' filepath='reduce.c' line='1801' column='1'/>
+      <parameter type-id='9c313c2d' name='offset' filepath='reduce.c' line='1801' column='1'/>
+      <parameter type-id='9c313c2d' name='length' filepath='reduce.c' line='1801' column='1'/>
+      <parameter type-id='3d61569b' name='cb_fn' filepath='reduce.c' line='1802' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='reduce.c' line='1802' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_reduce_vol_writev' mangled-name='spdk_reduce_vol_writev' filepath='reduce.c' line='1889' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_reduce_vol_writev'>
+      <parameter type-id='28881962' name='vol' filepath='reduce.c' line='1889' column='1'/>
+      <parameter type-id='cc4b1be9' name='iov' filepath='reduce.c' line='1890' column='1'/>
+      <parameter type-id='95e97e5e' name='iovcnt' filepath='reduce.c' line='1890' column='1'/>
+      <parameter type-id='9c313c2d' name='offset' filepath='reduce.c' line='1890' column='1'/>
+      <parameter type-id='9c313c2d' name='length' filepath='reduce.c' line='1890' column='1'/>
+      <parameter type-id='3d61569b' name='cb_fn' filepath='reduce.c' line='1891' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='reduce.c' line='1891' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_reduce_vol_get_params' mangled-name='spdk_reduce_vol_get_params' filepath='reduce.c' line='1941' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_reduce_vol_get_params'>
+      <parameter type-id='28881962' name='vol' filepath='reduce.c' line='1941' column='1'/>
+      <return type-id='3e7bda98'/>
+    </function-decl>
+    <function-decl name='spdk_reduce_vol_get_pm_path' mangled-name='spdk_reduce_vol_get_pm_path' filepath='reduce.c' line='1947' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_reduce_vol_get_pm_path'>
+      <parameter type-id='2195c89b' name='vol' filepath='reduce.c' line='1947' column='1'/>
+      <return type-id='80f4b756'/>
+    </function-decl>
+    <function-decl name='spdk_reduce_vol_print_info' mangled-name='spdk_reduce_vol_print_info' filepath='reduce.c' line='1953' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_reduce_vol_print_info'>
+      <parameter type-id='28881962' name='vol' filepath='reduce.c' line='1953' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <type-decl name='void' id='48b5725f'/>
+    <pointer-type-def type-id='48b5725f' id='eaa32e2f'/>
+    <function-type size-in-bits='64' id='df337ec4'>
+      <parameter type-id='5822c6f6'/>
+      <parameter type-id='cc4b1be9'/>
+      <parameter type-id='95e97e5e'/>
+      <parameter type-id='cc4b1be9'/>
+      <parameter type-id='95e97e5e'/>
+      <parameter type-id='a41aa92e'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+    <function-type size-in-bits='64' id='0d909b0a'>
+      <parameter type-id='3bcb393d'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+    <function-type size-in-bits='64' id='2922fb19'>
+      <parameter type-id='eaa32e2f'/>
+      <parameter type-id='95e97e5e'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+    <function-type size-in-bits='64' id='cb78485e'>
+      <parameter type-id='eaa32e2f'/>
+      <parameter type-id='28881962'/>
+      <parameter type-id='95e97e5e'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+  </abi-instr>
+</abi-corpus>

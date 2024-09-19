@@ -1,0 +1,7 @@
+<abi-corpus version='2.2' soname='libspdk_event_accel.so.6.0'>
+  <elf-needed>
+    <dependency name='libspdk_init.so.6.0'/>
+    <dependency name='libspdk_accel.so.16.0'/>
+    <dependency name='libspdk_event_iobuf.so.3.0'/>
+  </elf-needed>
+</abi-corpus>
