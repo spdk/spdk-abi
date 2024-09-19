@@ -31,8 +31,8 @@ for branch in $(ls $rootdir | grep -Eo "${tag_pattern}\.x"); do
 	# v24.09 release, so this check can be removed once we don't support anything older than
 	# that.
 	if git -C "$repodir" merge-base --is-ancestor 2dc96f6e2 HEAD; then
-		"$repodir/test/make/check_so_deps.sh" --spdk-abi-path="$rootdir" \
-			--release="$tag"
+		(cd "$repodir"; "$repodir/test/make/check_so_deps.sh" --spdk-abi-path="$rootdir" \
+			--release="$tag")
 	fi
 	echo "Veryfing $tag completed - success"
 done
