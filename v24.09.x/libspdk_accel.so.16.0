@@ -1,5 +1,6 @@
-<abi-corpus version='2.2' soname='libspdk_accel.so.16.0'>
+<abi-corpus version='2.4' soname='libspdk_accel.so.16.0'>
   <elf-needed>
+    <dependency name='liblz4.so.1'/>
     <dependency name='libspdk_log.so.7.0'/>
     <dependency name='libspdk_util.so.10.0'/>
     <dependency name='libspdk_thread.so.10.1'/>
@@ -78,27 +79,129 @@
     <elf-symbol name='spdk_accel_task_complete' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
     <elf-symbol name='spdk_accel_write_config_json' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
   </elf-function-symbols>
+  <undefined-elf-function-symbols>
+    <elf-symbol name='LZ4_compress_fast_continue' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='LZ4_createStream' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='LZ4_createStreamDecode' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='LZ4_decompress_safe_continue' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='LZ4_freeStream' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='LZ4_freeStreamDecode' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='LZ4_resetStream' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='LZ4_setStreamDecode' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__assert_fail' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__cxa_finalize' type='func-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='aligned_alloc' version='GLIBC_2.16' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='calloc' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='free' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='memcmp' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='memcpy' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='memset' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_crc32c_iov_update' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_dif_generate' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_dif_generate_copy' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_dif_verify' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_dif_verify_copy' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_dix_generate' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_dix_verify' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_for_each_channel' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_for_each_channel_continue' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_get_io_channel' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_get_thread' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_io_channel_iter_get_channel' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_io_channel_iter_get_ctx' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_io_device_register' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_io_device_unregister' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_iobuf_channel_fini' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_iobuf_channel_init' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_iobuf_get' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_iobuf_put' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_iobuf_register_module' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_ioviter_first' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_ioviter_next' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_decode_object' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_decode_string' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_decode_uint32' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_array_begin' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_array_end' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_named_array_begin' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_named_object_begin' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_named_string' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_named_uint32' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_named_uint64' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_object_begin' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_object_end' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_string' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_jsonrpc_begin_result' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_jsonrpc_end_result' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_jsonrpc_send_bool_response' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_jsonrpc_send_error_response' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_jsonrpc_send_error_response_fmt' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_log' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_log_register_flag' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_memory_domain_create' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_memory_domain_destroy' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_memory_domain_get_dma_device_id' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_memory_domain_get_system_domain' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_memory_domain_pull_data' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_memory_domain_push_data' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_memory_domain_set_invalidate' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_memory_domain_set_translation' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_poller_register_named' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_poller_unregister' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_put_io_channel' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_rpc_register_alias_deprecated' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_rpc_register_method' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_spin_destroy' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_spin_held' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_spin_init' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_spin_lock' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_spin_unlock' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_strerror' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_thread_send_msg' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_unhexlify' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_xor_gen' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='strcmp' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='strdup' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='strlen' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='strncmp' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='strnlen' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+  </undefined-elf-function-symbols>
+  <undefined-elf-variable-symbols>
+    <elf-symbol name='_ITM_deregisterTMCloneTable' type='no-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='_ITM_registerTMCloneTable' type='no-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__gmon_start__' type='no-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='isal_aes_xts_dec_128' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='isal_aes_xts_dec_256' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='isal_aes_xts_enc_128' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='isal_aes_xts_enc_256' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='isal_deflate' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='isal_deflate_init' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='isal_deflate_reset' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='isal_inflate' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='isal_inflate_init' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='isal_inflate_reset' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+  </undefined-elf-variable-symbols>
   <abi-instr address-size='64' path='accel.c' language='LANG_C11'>
-    <type-decl name='bool' size-in-bits='8' id='c894953d'/>
-    <type-decl name='char' size-in-bits='8' id='a84c031d'/>
-    <enum-decl name='spdk_accel_cipher' filepath='accel.h' line='62' column='1' id='682178d1'>
+    <type-decl name='bool' size-in-bits='8' hash='5ba96bb22f4237fb' id='c894953d'/>
+    <type-decl name='char' size-in-bits='8' hash='65b2d157027b431a' id='a84c031d'/>
+    <enum-decl name='spdk_accel_cipher' size-in-bits='32' alignment-in-bits='32' filepath='accel.h' line='62' column='1' hash='371b71b155718953' id='682178d1'>
       <underlying-type type-id='9cac1fee'/>
       <enumerator name='SPDK_ACCEL_CIPHER_AES_CBC' value='0'/>
       <enumerator name='SPDK_ACCEL_CIPHER_AES_XTS' value='1'/>
     </enum-decl>
-    <enum-decl name='spdk_accel_comp_algo' filepath='accel.h' line='25' column='1' id='5fe6f5cd'>
+    <enum-decl name='spdk_accel_comp_algo' size-in-bits='32' alignment-in-bits='32' filepath='accel.h' line='25' column='1' hash='0bcb8bad80161ec6' id='5fe6f5cd'>
       <underlying-type type-id='9cac1fee'/>
       <enumerator name='SPDK_ACCEL_COMP_ALGO_DEFLATE' value='0'/>
       <enumerator name='SPDK_ACCEL_COMP_ALGO_LZ4' value='1'/>
     </enum-decl>
-    <enum-decl name='spdk_accel_crypto_tweak_mode' filepath='accel_module.h' line='28' column='1' id='404aa5de'>
+    <enum-decl name='spdk_accel_crypto_tweak_mode' size-in-bits='32' alignment-in-bits='32' filepath='accel_module.h' line='28' column='1' hash='c079403db94563ed' id='404aa5de'>
       <underlying-type type-id='9cac1fee'/>
       <enumerator name='SPDK_ACCEL_CRYPTO_TWEAK_MODE_SIMPLE_LBA' value='0'/>
       <enumerator name='SPDK_ACCEL_CRYPTO_TWEAK_MODE_JOIN_NEG_LBA_WITH_LBA' value='1'/>
       <enumerator name='SPDK_ACCEL_CRYPTO_TWEAK_MODE_INCR_512_FULL_LBA' value='2'/>
       <enumerator name='SPDK_ACCEL_CRYPTO_TWEAK_MODE_INCR_512_UPPER_LBA' value='3'/>
     </enum-decl>
-    <enum-decl name='spdk_accel_opcode' filepath='accel.h' line='41' column='1' id='ad747ae4'>
+    <enum-decl name='spdk_accel_opcode' size-in-bits='32' alignment-in-bits='32' filepath='accel.h' line='41' column='1' hash='a582eb83be52c774' id='ad747ae4'>
       <underlying-type type-id='9cac1fee'/>
       <enumerator name='SPDK_ACCEL_OPC_COPY' value='0'/>
       <enumerator name='SPDK_ACCEL_OPC_FILL' value='1'/>
@@ -119,12 +222,12 @@
       <enumerator name='SPDK_ACCEL_OPC_DIX_VERIFY' value='16'/>
       <enumerator name='SPDK_ACCEL_OPC_LAST' value='17'/>
     </enum-decl>
-    <type-decl name='int' size-in-bits='32' id='95e97e5e'/>
-    <array-type-def dimensions='1' type-id='0f042891' size-in-bits='768' id='c6867c77'>
-      <subrange length='6' lower-bound='0' upper-bound='5' type-id='f0981eeb' id='52fa524b'/>
+    <type-decl name='int' size-in-bits='32' hash='09d17c08f594edc7' id='95e97e5e'/>
+    <array-type-def dimensions='1' type-id='0f042891' size-in-bits='768' hash='7ca72d21c90090b1' id='c6867c77'>
+      <subrange length='6' lower-bound='0' upper-bound='5' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='1c0e592c7ffbdbf5' id='52fa524b'/>
     </array-type-def>
-    <type-decl name='short int' size-in-bits='16' id='95e97e5f'/>
-    <class-decl name='iovec' size-in-bits='128' is-struct='yes' visibility='default' filepath='struct_iovec.h' line='26' column='1' id='0f042891'>
+    <type-decl name='short int' size-in-bits='16' hash='6c2352eccdcd3eea#2' id='95e97e5f'/>
+    <class-decl name='iovec' is-struct='yes' visibility='default' size-in-bits='128' filepath='struct_iovec.h' line='26' column='1' hash='1e0571bd6dce7043' id='0f042891'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='iov_base' type-id='eaa32e2f' visibility='default' filepath='struct_iovec.h' line='28' column='1'/>
       </data-member>
@@ -132,7 +235,7 @@
         <var-decl name='iov_len' type-id='b59d7dce' visibility='default' filepath='struct_iovec.h' line='29' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_accel_bounce_buffer' size-in-bits='384' is-struct='yes' visibility='default' filepath='accel_module.h' line='64' column='1' id='213755d0'>
+    <class-decl name='spdk_accel_bounce_buffer' is-struct='yes' visibility='default' size-in-bits='384' filepath='accel_module.h' line='64' column='1' hash='47671b9a824bbf3d' id='213755d0'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='orig_iovs' type-id='cc4b1be9' visibility='default' filepath='accel_module.h' line='65' column='1'/>
       </data-member>
@@ -149,7 +252,7 @@
         <var-decl name='iov' type-id='0f042891' visibility='default' filepath='accel_module.h' line='69' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_accel_crypto_key' size-in-bits='896' is-struct='yes' visibility='default' filepath='accel_module.h' line='46' column='1' id='7e6118f4'>
+    <class-decl name='spdk_accel_crypto_key' is-struct='yes' visibility='default' size-in-bits='896' filepath='accel_module.h' line='46' column='1' hash='5590e390f066589e' id='7e6118f4'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='priv' type-id='eaa32e2f' visibility='default' filepath='accel_module.h' line='47' column='1'/>
       </data-member>
@@ -181,7 +284,7 @@
         <var-decl name='link' type-id='e7f43f72' visibility='default' filepath='accel_module.h' line='56' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_accel_crypto_key_create_param' size-in-bits='320' is-struct='yes' visibility='default' filepath='accel.h' line='33' column='1' id='ee9bdf6b'>
+    <class-decl name='spdk_accel_crypto_key_create_param' is-struct='yes' visibility='default' size-in-bits='320' filepath='accel.h' line='33' column='1' hash='0741935d1dca47ee' id='ee9bdf6b'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='cipher' type-id='26a90f95' visibility='default' filepath='accel.h' line='34' column='1'/>
       </data-member>
@@ -198,30 +301,30 @@
         <var-decl name='key_name' type-id='26a90f95' visibility='default' filepath='accel.h' line='38' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_accel_driver' size-in-bits='512' is-struct='yes' visibility='default' filepath='accel_module.h' line='292' column='1' id='b3dd0cff'>
+    <class-decl name='spdk_accel_driver' is-struct='yes' visibility='default' size-in-bits='512' filepath='accel_module.h' line='292' column='1' hash='00a8072901469e73' id='b3dd0cff'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='name' type-id='80f4b756' visibility='default' filepath='accel_module.h' line='294' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='init' type-id='1db260e5' visibility='default' filepath='accel_module.h' line='297' column='1'/>
+        <var-decl name='init' type-id='65e3965a' visibility='default' filepath='accel_module.h' line='297' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='fini' type-id='953b12f8' visibility='default' filepath='accel_module.h' line='300' column='1'/>
+        <var-decl name='fini' type-id='c640490b' visibility='default' filepath='accel_module.h' line='300' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='execute_sequence' type-id='1d08b901' visibility='default' filepath='accel_module.h' line='316' column='1'/>
+        <var-decl name='execute_sequence' type-id='75a7502c' visibility='default' filepath='accel_module.h' line='316' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='get_io_channel' type-id='94a5300d' visibility='default' filepath='accel_module.h' line='319' column='1'/>
+        <var-decl name='get_io_channel' type-id='79787ee2' visibility='default' filepath='accel_module.h' line='319' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='320'>
-        <var-decl name='get_operation_info' type-id='b1607b55' visibility='default' filepath='accel_module.h' line='325' column='1'/>
+        <var-decl name='get_operation_info' type-id='5fef6035' visibility='default' filepath='accel_module.h' line='325' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='384'>
         <var-decl name='tailq' type-id='e7f43f73' visibility='default' filepath='accel_module.h' line='329' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_accel_module_if' size-in-bits='1216' is-struct='yes' visibility='default' filepath='accel_module.h' line='168' column='1' id='c7a04c81'>
+    <class-decl name='spdk_accel_module_if' is-struct='yes' visibility='default' size-in-bits='1216' filepath='accel_module.h' line='168' column='1' hash='69d7a26664db07fb' id='c7a04c81'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='name' type-id='80f4b756' visibility='default' filepath='accel_module.h' line='170' column='1'/>
       </data-member>
@@ -229,60 +332,60 @@
         <var-decl name='priority' type-id='95e97e5e' visibility='default' filepath='accel_module.h' line='179' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='module_init' type-id='1db260e5' visibility='default' filepath='accel_module.h' line='190' column='1'/>
+        <var-decl name='module_init' type-id='65e3965a' visibility='default' filepath='accel_module.h' line='190' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='module_fini' type-id='b7f9d8e6' visibility='default' filepath='accel_module.h' line='198' column='1'/>
+        <var-decl name='module_fini' type-id='61359e15' visibility='default' filepath='accel_module.h' line='198' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='write_config_json' type-id='582528d7' visibility='default' filepath='accel_module.h' line='201' column='1'/>
+        <var-decl name='write_config_json' type-id='46bc0678' visibility='default' filepath='accel_module.h' line='201' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='320'>
-        <var-decl name='get_ctx_size' type-id='0838a534' visibility='default' filepath='accel_module.h' line='204' column='1'/>
+        <var-decl name='get_ctx_size' type-id='b9ed7d93' visibility='default' filepath='accel_module.h' line='204' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='384'>
-        <var-decl name='supports_opcode' type-id='8dc19c3f' visibility='default' filepath='accel_module.h' line='207' column='1'/>
+        <var-decl name='supports_opcode' type-id='6bc35553' visibility='default' filepath='accel_module.h' line='207' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='448'>
-        <var-decl name='get_io_channel' type-id='94a5300d' visibility='default' filepath='accel_module.h' line='210' column='1'/>
+        <var-decl name='get_io_channel' type-id='79787ee2' visibility='default' filepath='accel_module.h' line='210' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='512'>
-        <var-decl name='submit_tasks' type-id='17aa1e6d' visibility='default' filepath='accel_module.h' line='217' column='1'/>
+        <var-decl name='submit_tasks' type-id='bf012844' visibility='default' filepath='accel_module.h' line='217' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='576'>
-        <var-decl name='crypto_key_init' type-id='d00898aa' visibility='default' filepath='accel_module.h' line='223' column='1'/>
+        <var-decl name='crypto_key_init' type-id='ded59f39' visibility='default' filepath='accel_module.h' line='223' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='640'>
-        <var-decl name='crypto_key_deinit' type-id='701e506f' visibility='default' filepath='accel_module.h' line='226' column='1'/>
+        <var-decl name='crypto_key_deinit' type-id='e02d0adc' visibility='default' filepath='accel_module.h' line='226' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='704'>
-        <var-decl name='crypto_supports_tweak_mode' type-id='bb2251e5' visibility='default' filepath='accel_module.h' line='231' column='1'/>
+        <var-decl name='crypto_supports_tweak_mode' type-id='2f331a71' visibility='default' filepath='accel_module.h' line='231' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='768'>
-        <var-decl name='crypto_supports_cipher' type-id='c2cfdafc' visibility='default' filepath='accel_module.h' line='236' column='1'/>
+        <var-decl name='crypto_supports_cipher' type-id='ee68be7e' visibility='default' filepath='accel_module.h' line='236' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='832'>
-        <var-decl name='compress_supports_algo' type-id='6e0789ca' visibility='default' filepath='accel_module.h' line='241' column='1'/>
+        <var-decl name='compress_supports_algo' type-id='da1452a0' visibility='default' filepath='accel_module.h' line='241' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='896'>
-        <var-decl name='get_compress_level_range' type-id='3fb1b82b' visibility='default' filepath='accel_module.h' line='246' column='1'/>
+        <var-decl name='get_compress_level_range' type-id='3c4369cb' visibility='default' filepath='accel_module.h' line='246' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='960'>
-        <var-decl name='get_memory_domains' type-id='4966e857' visibility='default' filepath='accel_module.h' line='259' column='1'/>
+        <var-decl name='get_memory_domains' type-id='04e505a8' visibility='default' filepath='accel_module.h' line='259' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1024'>
-        <var-decl name='get_operation_info' type-id='b1607b55' visibility='default' filepath='accel_module.h' line='265' column='1'/>
+        <var-decl name='get_operation_info' type-id='5fef6035' visibility='default' filepath='accel_module.h' line='265' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1088'>
         <var-decl name='tailq' type-id='e7f43f74' visibility='default' filepath='accel_module.h' line='269' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_accel_opcode_info' size-in-bits='8' is-struct='yes' visibility='default' filepath='accel_module.h' line='160' column='1' id='0116b8f4'>
+    <class-decl name='spdk_accel_opcode_info' is-struct='yes' visibility='default' size-in-bits='8' filepath='accel_module.h' line='160' column='1' hash='ab592319c8654c75' id='0116b8f4'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='required_alignment' type-id='b96825af' visibility='default' filepath='accel_module.h' line='165' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_accel_opcode_stats' size-in-bits='192' is-struct='yes' visibility='default' filepath='accel.h' line='1165' column='1' id='9f6466ab'>
+    <class-decl name='spdk_accel_opcode_stats' is-struct='yes' visibility='default' size-in-bits='192' filepath='accel.h' line='1165' column='1' hash='7527854c70184bbc' id='9f6466ab'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='executed' type-id='9c313c2d' visibility='default' filepath='accel.h' line='1167' column='1'/>
       </data-member>
@@ -293,7 +396,7 @@
         <var-decl name='num_bytes' type-id='9c313c2d' visibility='default' filepath='accel.h' line='1171' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_accel_operation_exec_ctx' size-in-bits='128' is-struct='yes' visibility='default' filepath='accel.h' line='1189' column='1' id='ca8df46c'>
+    <class-decl name='spdk_accel_operation_exec_ctx' is-struct='yes' visibility='default' size-in-bits='128' filepath='accel.h' line='1189' column='1' hash='c3bd14baebb7ca95' id='ca8df46c'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='size' type-id='b59d7dce' visibility='default' filepath='accel.h' line='1191' column='1'/>
       </data-member>
@@ -301,7 +404,7 @@
         <var-decl name='block_size' type-id='8f92235e' visibility='default' filepath='accel.h' line='1193' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_accel_opts' size-in-bits='224' is-struct='yes' visibility='default' filepath='accel.h' line='1126' column='1' id='77da0a4b'>
+    <class-decl name='spdk_accel_opts' is-struct='yes' visibility='default' size-in-bits='224' filepath='accel.h' line='1126' column='1' hash='72268ccf42a42c70' id='77da0a4b'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='opts_size' type-id='b59d7dce' visibility='default' filepath='accel.h' line='1133' column='1'/>
       </data-member>
@@ -321,7 +424,7 @@
         <var-decl name='buf_count' type-id='8f92235e' visibility='default' filepath='accel.h' line='1144' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_accel_task' size-in-bits='1472' is-struct='yes' visibility='default' filepath='accel_module.h' line='91' column='1' id='a817e78c'>
+    <class-decl name='spdk_accel_task' is-struct='yes' visibility='default' size-in-bits='1472' filepath='accel_module.h' line='91' column='1' hash='1fde5b6465f1c3a8' id='a817e78c'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='seq_link' type-id='e7f43f75' visibility='default' filepath='accel_module.h' line='92' column='1'/>
       </data-member>
@@ -386,7 +489,7 @@
         <var-decl name='aux' type-id='768d3a3c' visibility='default' filepath='accel_module.h' line='157' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_accel_task_aux_data' size-in-bits='1600' is-struct='yes' visibility='default' filepath='accel_module.h' line='82' column='1' id='749c8886'>
+    <class-decl name='spdk_accel_task_aux_data' is-struct='yes' visibility='default' size-in-bits='1600' filepath='accel_module.h' line='82' column='1' hash='c1a6e75c7f9b559b' id='749c8886'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='link' type-id='e7f43f77' visibility='default' filepath='accel_module.h' line='83' column='1'/>
       </data-member>
@@ -397,7 +500,7 @@
         <var-decl name='bounce' type-id='e7f43f78' visibility='default' filepath='accel_module.h' line='88' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_dif_ctx' size-in-bits='512' is-struct='yes' visibility='default' filepath='dif.h' line='64' column='1' id='6e011169'>
+    <class-decl name='spdk_dif_ctx' is-struct='yes' visibility='default' size-in-bits='512' filepath='dif.h' line='64' column='1' hash='3fa86a99bcca3589' id='6e011169'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='block_size' type-id='8f92235e' visibility='default' filepath='dif.h' line='66' column='1'/>
       </data-member>
@@ -450,7 +553,7 @@
         <var-decl name='guard_seed' type-id='9c313c2d' visibility='default' filepath='dif.h' line='116' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_dif_error' size-in-bits='256' is-struct='yes' visibility='default' filepath='dif.h' line='121' column='1' id='035f351a'>
+    <class-decl name='spdk_dif_error' is-struct='yes' visibility='default' size-in-bits='256' filepath='dif.h' line='121' column='1' hash='1c8ca713d84d211b' id='035f351a'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='err_type' type-id='b96825af' visibility='default' filepath='dif.h' line='123' column='1'/>
       </data-member>
@@ -467,7 +570,7 @@
         <var-decl name='err_offset' type-id='8f92235e' visibility='default' filepath='dif.h' line='134' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__8' size-in-bits='192' is-struct='yes' is-anonymous='yes' visibility='default' filepath='accel_module.h' line='141' column='1' id='e7f43f79'>
+    <class-decl name='__anonymous_struct__8' is-struct='yes' visibility='default' size-in-bits='192' is-anonymous='yes' filepath='accel_module.h' line='141' column='1' hash='9f4df001b487ce74' id='e7f43f79'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='ctx' type-id='a8e53a42' visibility='default' filepath='accel_module.h' line='142' column='1'/>
       </data-member>
@@ -478,7 +581,7 @@
         <var-decl name='num_blocks' type-id='8f92235e' visibility='default' filepath='accel_module.h' line='144' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__2' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='accel_module.h' line='114' column='1' id='e7f43f7a'>
+    <class-decl name='__anonymous_struct__2' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='accel_module.h' line='114' column='1' hash='f32772ef29e042d0#2' id='e7f43f7a'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='iovs' type-id='cc4b1be9' visibility='default' filepath='accel_module.h' line='115' column='1'/>
       </data-member>
@@ -486,7 +589,7 @@
         <var-decl name='iovcnt' type-id='8f92235e' visibility='default' filepath='accel_module.h' line='116' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__11' size-in-bits='768' is-struct='yes' is-anonymous='yes' visibility='default' filepath='accel_module.h' line='85' column='1' id='e7f43f78'>
+    <class-decl name='__anonymous_struct__11' is-struct='yes' visibility='default' size-in-bits='768' is-anonymous='yes' filepath='accel_module.h' line='85' column='1' hash='8969ff5acbeb6d3f#3' id='e7f43f78'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='s' type-id='213755d0' visibility='default' filepath='accel_module.h' line='86' column='1'/>
       </data-member>
@@ -494,7 +597,7 @@
         <var-decl name='d' type-id='213755d0' visibility='default' filepath='accel_module.h' line='87' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__9' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' filepath='accel_module.h' line='146' column='1' id='e7f43f7b'>
+    <class-decl name='__anonymous_struct__9' is-struct='yes' visibility='default' size-in-bits='64' is-anonymous='yes' filepath='accel_module.h' line='146' column='1' hash='44cfb48203f1c304#4' id='e7f43f7b'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='algo' type-id='5fe6f5cd' visibility='default' filepath='accel_module.h' line='147' column='1'/>
       </data-member>
@@ -502,7 +605,7 @@
         <var-decl name='level' type-id='8f92235e' visibility='default' filepath='accel_module.h' line='148' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__7' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='accel_module.h' line='56' column='1' id='e7f43f72'>
+    <class-decl name='__anonymous_struct__7' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='accel_module.h' line='56' column='1' hash='f23e405783e37b82#5' id='e7f43f72'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='tqe_next' type-id='043cb572' visibility='default' filepath='accel_module.h' line='56' column='1'/>
       </data-member>
@@ -510,7 +613,7 @@
         <var-decl name='tqe_prev' type-id='03917988' visibility='default' filepath='accel_module.h' line='56' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__13' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='accel_module.h' line='329' column='1' id='e7f43f73'>
+    <class-decl name='__anonymous_struct__13' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='accel_module.h' line='329' column='1' hash='d5a1b08512f51d1c#6' id='e7f43f73'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='tqe_next' type-id='2fb8c007' visibility='default' filepath='accel_module.h' line='329' column='1'/>
       </data-member>
@@ -518,7 +621,7 @@
         <var-decl name='tqe_prev' type-id='4cd686d7' visibility='default' filepath='accel_module.h' line='329' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__12' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='accel_module.h' line='269' column='1' id='e7f43f74'>
+    <class-decl name='__anonymous_struct__12' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='accel_module.h' line='269' column='1' hash='db33b9c506cfe159#7' id='e7f43f74'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='tqe_next' type-id='b78a11b9' visibility='default' filepath='accel_module.h' line='269' column='1'/>
       </data-member>
@@ -526,12 +629,12 @@
         <var-decl name='tqe_prev' type-id='8159aa69' visibility='default' filepath='accel_module.h' line='269' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__1' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' filepath='accel_module.h' line='93' column='1' id='e7f43f76'>
+    <class-decl name='__anonymous_struct__1' is-struct='yes' visibility='default' size-in-bits='64' is-anonymous='yes' filepath='accel_module.h' line='93' column='1' hash='92a296385d71acb9#8' id='e7f43f76'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='stqe_next' type-id='10ebab0a' visibility='default' filepath='accel_module.h' line='93' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='accel_module.h' line='92' column='1' id='e7f43f75'>
+    <class-decl name='__anonymous_struct__' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='accel_module.h' line='92' column='1' hash='c98ae425d1df5ec6#9' id='e7f43f75'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='tqe_next' type-id='10ebab0a' visibility='default' filepath='accel_module.h' line='92' column='1'/>
       </data-member>
@@ -539,12 +642,12 @@
         <var-decl name='tqe_prev' type-id='c2fe6360' visibility='default' filepath='accel_module.h' line='92' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__10' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' filepath='accel_module.h' line='83' column='1' id='e7f43f77'>
+    <class-decl name='__anonymous_struct__10' is-struct='yes' visibility='default' size-in-bits='64' is-anonymous='yes' filepath='accel_module.h' line='83' column='1' hash='d2de7c7e0ab22b32#10' id='e7f43f77'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='sle_next' type-id='768d3a3c' visibility='default' filepath='accel_module.h' line='83' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__3' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='accel_module.h' line='118' column='1' id='e7f43f7c'>
+    <class-decl name='__anonymous_struct__3' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='accel_module.h' line='118' column='1' hash='9527f7ce1cd392cb#11' id='e7f43f7c'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='srcs' type-id='63e171df' visibility='default' filepath='accel_module.h' line='119' column='1'/>
       </data-member>
@@ -552,31 +655,31 @@
         <var-decl name='cnt' type-id='8f92235e' visibility='default' filepath='accel_module.h' line='120' column='1'/>
       </data-member>
     </class-decl>
-    <typedef-decl name='__int16_t' type-id='95e97e5f' filepath='types.h' line='39' column='1' id='03896e23'/>
-    <typedef-decl name='__uint16_t' type-id='f0981eec' filepath='types.h' line='40' column='1' id='253c2d2a'/>
-    <typedef-decl name='__uint32_t' type-id='f0981eed' filepath='types.h' line='42' column='1' id='62f1140c'/>
-    <typedef-decl name='__uint64_t' type-id='f0981eeb' filepath='types.h' line='45' column='1' id='8910171f'/>
-    <typedef-decl name='__uint8_t' type-id='002ac4a6' filepath='types.h' line='38' column='1' id='c51d6389'/>
-    <typedef-decl name='int16_t' type-id='03896e23' filepath='stdint-intn.h' line='25' column='1' id='23bd8cb5'/>
-    <typedef-decl name='size_t' type-id='f0981eeb' filepath='stddef.h' line='214' column='1' id='b59d7dce'/>
-    <typedef-decl name='spdk_accel_completion_cb' type-id='1ed1e4cd' filepath='accel.h' line='73' column='1' id='e2a47d34'/>
-    <typedef-decl name='spdk_accel_fini_cb' type-id='b7f9d8e6' filepath='accel.h' line='80' column='1' id='e5aecfa2'/>
-    <typedef-decl name='spdk_accel_sequence_get_buf_cb' type-id='e34b5a87' filepath='accel_module.h' line='348' column='1' id='4208e346'/>
-    <typedef-decl name='spdk_accel_step_cb' type-id='b7f9d8e6' filepath='accel.h' line='618' column='1' id='e7d92aa4'/>
-    <typedef-decl name='uint16_t' type-id='253c2d2a' filepath='stdint-uintn.h' line='25' column='1' id='149c6638'/>
-    <typedef-decl name='uint32_t' type-id='62f1140c' filepath='stdint-uintn.h' line='26' column='1' id='8f92235e'/>
-    <typedef-decl name='uint64_t' type-id='8910171f' filepath='stdint-uintn.h' line='27' column='1' id='9c313c2d'/>
-    <typedef-decl name='uint8_t' type-id='c51d6389' filepath='stdint-uintn.h' line='24' column='1' id='b96825af'/>
-    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='8' id='0f44e2af'>
-      <subrange length='1' lower-bound='0' upper-bound='0' type-id='f0981eeb' id='52f813b4'/>
+    <typedef-decl name='__int16_t' type-id='95e97e5f' size-in-bits='16' filepath='types.h' line='39' column='1' hash='6c2352eccdcd3eea' id='03896e23'/>
+    <typedef-decl name='__uint16_t' type-id='f0981eec' size-in-bits='16' filepath='types.h' line='40' column='1' hash='d7723bb93a30b11d' id='253c2d2a'/>
+    <typedef-decl name='__uint32_t' type-id='f0981eed' size-in-bits='32' filepath='types.h' line='42' column='1' hash='e66b43f97c38e87a' id='62f1140c'/>
+    <typedef-decl name='__uint64_t' type-id='f0981eeb' size-in-bits='64' filepath='types.h' line='45' column='1' hash='8fdc5eea2983a729' id='8910171f'/>
+    <typedef-decl name='__uint8_t' type-id='002ac4a6' size-in-bits='8' filepath='types.h' line='38' column='1' hash='6ebac62b3366db68' id='c51d6389'/>
+    <typedef-decl name='int16_t' type-id='03896e23' size-in-bits='16' filepath='stdint-intn.h' line='25' column='1' hash='6c2352eccdcd3eea' id='23bd8cb5'/>
+    <typedef-decl name='size_t' type-id='f0981eeb' size-in-bits='64' filepath='stddef.h' line='214' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
+    <typedef-decl name='spdk_accel_completion_cb' type-id='82328a76' size-in-bits='64' filepath='accel.h' line='73' column='1' hash='fd7a63c0c6c822c4' id='e2a47d34'/>
+    <typedef-decl name='spdk_accel_fini_cb' type-id='61359e15' size-in-bits='64' filepath='accel.h' line='80' column='1' hash='fd7a63c0c6c822c4' id='e5aecfa2'/>
+    <typedef-decl name='spdk_accel_sequence_get_buf_cb' type-id='302d4f9a' size-in-bits='64' filepath='accel_module.h' line='348' column='1' hash='fd7a63c0c6c822c4' id='4208e346'/>
+    <typedef-decl name='spdk_accel_step_cb' type-id='61359e15' size-in-bits='64' filepath='accel.h' line='618' column='1' hash='fd7a63c0c6c822c4' id='e7d92aa4'/>
+    <typedef-decl name='uint16_t' type-id='253c2d2a' size-in-bits='16' filepath='stdint-uintn.h' line='25' column='1' hash='d7723bb93a30b11d' id='149c6638'/>
+    <typedef-decl name='uint32_t' type-id='62f1140c' size-in-bits='32' filepath='stdint-uintn.h' line='26' column='1' hash='e66b43f97c38e87a' id='8f92235e'/>
+    <typedef-decl name='uint64_t' type-id='8910171f' size-in-bits='64' filepath='stdint-uintn.h' line='27' column='1' hash='8fdc5eea2983a729' id='9c313c2d'/>
+    <typedef-decl name='uint8_t' type-id='c51d6389' size-in-bits='8' filepath='stdint-uintn.h' line='24' column='1' hash='6ebac62b3366db68' id='b96825af'/>
+    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='8' hash='2d5fed862e074f47' id='0f44e2af'>
+      <subrange length='1' lower-bound='0' upper-bound='0' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='eba0a2b392137dcb' id='52f813b4'/>
     </array-type-def>
-    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='32' id='d351502e'>
-      <subrange length='4' lower-bound='0' upper-bound='3' type-id='f0981eeb' id='16fe7105'/>
+    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='32' hash='7df313b77e5f7cf4' id='d351502e'>
+      <subrange length='4' lower-bound='0' upper-bound='3' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='cee611f4a73e486c' id='16fe7105'/>
     </array-type-def>
-    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='56' id='d3538ec5'>
-      <subrange length='7' lower-bound='0' upper-bound='6' type-id='f0981eeb' id='16fc326e'/>
+    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='56' hash='b2afc7891a8b4aa4' id='d3538ec5'>
+      <subrange length='7' lower-bound='0' upper-bound='6' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='58190901bcecd086' id='16fc326e'/>
     </array-type-def>
-    <union-decl name='__anonymous_union__' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='accel_module.h' line='101' column='1' id='ac5ab595'>
+    <union-decl name='__anonymous_union__' visibility='default' size-in-bits='64' is-anonymous='yes' filepath='accel_module.h' line='101' column='1' hash='436e999fca13e0a1' id='ac5ab595'>
       <data-member access='public'>
         <var-decl name='cb_fn' type-id='e2a47d34' visibility='default' filepath='accel_module.h' line='103' column='1'/>
       </data-member>
@@ -584,7 +687,7 @@
         <var-decl name='step_cb_fn' type-id='e7d92aa4' visibility='default' filepath='accel_module.h' line='105' column='1'/>
       </data-member>
     </union-decl>
-    <union-decl name='__anonymous_union__3' size-in-bits='192' is-anonymous='yes' visibility='default' filepath='accel_module.h' line='133' column='1' id='ac5ab598'>
+    <union-decl name='__anonymous_union__3' visibility='default' size-in-bits='192' is-anonymous='yes' filepath='accel_module.h' line='133' column='1' hash='2abd81fc701bec71#2' id='ac5ab598'>
       <data-member access='public'>
         <var-decl name='d2' type-id='e7f43f7a' visibility='default' filepath='accel_module.h' line='137' column='1'/>
       </data-member>
@@ -604,7 +707,7 @@
         <var-decl name='comp' type-id='e7f43f7b' visibility='default' filepath='accel_module.h' line='149' column='1'/>
       </data-member>
     </union-decl>
-    <union-decl name='__anonymous_union__2' size-in-bits='128' is-anonymous='yes' visibility='default' filepath='accel_module.h' line='123' column='1' id='ac5ab597'>
+    <union-decl name='__anonymous_union__2' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='accel_module.h' line='123' column='1' hash='e8d52f00e1eeb534#3' id='ac5ab597'>
       <data-member access='public'>
         <var-decl name='d' type-id='e7f43f7a' visibility='default' filepath='accel_module.h' line='127' column='1'/>
       </data-member>
@@ -612,7 +715,7 @@
         <var-decl name='s2' type-id='e7f43f7a' visibility='default' filepath='accel_module.h' line='131' column='1'/>
       </data-member>
     </union-decl>
-    <union-decl name='__anonymous_union__1' size-in-bits='128' is-anonymous='yes' visibility='default' filepath='accel_module.h' line='113' column='1' id='ac5ab596'>
+    <union-decl name='__anonymous_union__1' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='accel_module.h' line='113' column='1' hash='ea8623c086b9c5cd#4' id='ac5ab596'>
       <data-member access='public'>
         <var-decl name='s' type-id='e7f43f7a' visibility='default' filepath='accel_module.h' line='117' column='1'/>
       </data-member>
@@ -620,7 +723,7 @@
         <var-decl name='nsrcs' type-id='e7f43f7c' visibility='default' filepath='accel_module.h' line='121' column='1'/>
       </data-member>
     </union-decl>
-    <union-decl name='__anonymous_union__4' size-in-bits='64' is-anonymous='yes' visibility='default' filepath='accel_module.h' line='151' column='1' id='ac5ab599'>
+    <union-decl name='__anonymous_union__4' visibility='default' size-in-bits='64' is-anonymous='yes' filepath='accel_module.h' line='151' column='1' hash='b3a96d8088448d50#5' id='ac5ab599'>
       <data-member access='public'>
         <var-decl name='crc_dst' type-id='90421557' visibility='default' filepath='accel_module.h' line='152' column='1'/>
       </data-member>
@@ -631,58 +734,58 @@
         <var-decl name='block_size' type-id='8f92235e' visibility='default' filepath='accel_module.h' line='154' column='1'/>
       </data-member>
     </union-decl>
-    <type-decl name='unnamed-enum-underlying-type-32' is-anonymous='yes' size-in-bits='32' alignment-in-bits='32' id='9cac1fee'/>
-    <type-decl name='unsigned char' size-in-bits='8' id='002ac4a6'/>
-    <type-decl name='unsigned int' size-in-bits='32' id='f0981eed'/>
-    <type-decl name='unsigned long int' size-in-bits='64' id='f0981eeb'/>
-    <type-decl name='unsigned short int' size-in-bits='16' id='f0981eec'/>
-    <pointer-type-def type-id='5f1c357a' size-in-bits='64' id='c2cfdafc'/>
-    <pointer-type-def type-id='209754f8' size-in-bits='64' id='6e0789ca'/>
-    <pointer-type-def type-id='315e4d09' size-in-bits='64' id='bb2251e5'/>
-    <pointer-type-def type-id='9fb0c3cb' size-in-bits='64' id='8dc19c3f'/>
-    <pointer-type-def type-id='a84c031d' size-in-bits='64' id='26a90f95'/>
-    <qualified-type-def type-id='a84c031d' const='yes' id='9b45d938'/>
-    <pointer-type-def type-id='9b45d938' size-in-bits='64' id='80f4b756'/>
-    <pointer-type-def type-id='80f4b756' size-in-bits='64' id='7d3cd834'/>
-    <qualified-type-def type-id='ee9bdf6b' const='yes' id='27a7b922'/>
-    <pointer-type-def type-id='27a7b922' size-in-bits='64' id='75084798'/>
-    <qualified-type-def type-id='ca8df46c' const='yes' id='a77e783b'/>
-    <pointer-type-def type-id='a77e783b' size-in-bits='64' id='bd1702c3'/>
-    <qualified-type-def type-id='77da0a4b' const='yes' id='cecfe1dc'/>
-    <pointer-type-def type-id='cecfe1dc' size-in-bits='64' id='8740b642'/>
-    <qualified-type-def type-id='6e011169' const='yes' id='507bcddc'/>
-    <pointer-type-def type-id='507bcddc' size-in-bits='64' id='a8e53a42'/>
-    <pointer-type-def type-id='276427e1' size-in-bits='64' id='1db260e5'/>
-    <pointer-type-def type-id='4d550827' size-in-bits='64' id='3fb1b82b'/>
-    <pointer-type-def type-id='307bcde9' size-in-bits='64' id='b1607b55'/>
-    <pointer-type-def type-id='1b090520' size-in-bits='64' id='d00898aa'/>
-    <pointer-type-def type-id='b6f0a36d' size-in-bits='64' id='1d08b901'/>
-    <pointer-type-def type-id='2a0300f1' size-in-bits='64' id='17aa1e6d'/>
-    <pointer-type-def type-id='1a309423' size-in-bits='64' id='4966e857'/>
-    <pointer-type-def type-id='0f042891' size-in-bits='64' id='cc4b1be9'/>
-    <pointer-type-def type-id='7e6118f4' size-in-bits='64' id='043cb572'/>
-    <pointer-type-def type-id='043cb572' size-in-bits='64' id='03917988'/>
-    <pointer-type-def type-id='b3dd0cff' size-in-bits='64' id='2fb8c007'/>
-    <pointer-type-def type-id='2fb8c007' size-in-bits='64' id='4cd686d7'/>
-    <pointer-type-def type-id='c7a04c81' size-in-bits='64' id='b78a11b9'/>
-    <pointer-type-def type-id='b78a11b9' size-in-bits='64' id='8159aa69'/>
-    <pointer-type-def type-id='0116b8f4' size-in-bits='64' id='9bf1cbb2'/>
-    <pointer-type-def type-id='9f6466ab' size-in-bits='64' id='5d8fb96b'/>
-    <pointer-type-def type-id='77da0a4b' size-in-bits='64' id='74e64d2b'/>
-    <pointer-type-def type-id='a817e78c' size-in-bits='64' id='10ebab0a'/>
-    <pointer-type-def type-id='10ebab0a' size-in-bits='64' id='c2fe6360'/>
-    <pointer-type-def type-id='749c8886' size-in-bits='64' id='768d3a3c'/>
-    <pointer-type-def type-id='035f351a' size-in-bits='64' id='c7935638'/>
-    <pointer-type-def type-id='e76af571' size-in-bits='64' id='94a5300d'/>
-    <pointer-type-def type-id='ae2eaa42' size-in-bits='64' id='0838a534'/>
-    <pointer-type-def type-id='8f92235e' size-in-bits='64' id='90421557'/>
-    <pointer-type-def type-id='ee076206' size-in-bits='64' id='953b12f8'/>
-    <pointer-type-def type-id='0070a5eb' size-in-bits='64' id='701e506f'/>
-    <pointer-type-def type-id='44410d43' size-in-bits='64' id='e34b5a87'/>
-    <pointer-type-def type-id='9ed8cfeb' size-in-bits='64' id='582528d7'/>
-    <pointer-type-def type-id='c5c76c9c' size-in-bits='64' id='b7f9d8e6'/>
-    <pointer-type-def type-id='2922fb19' size-in-bits='64' id='1ed1e4cd'/>
-    <pointer-type-def type-id='eaa32e2f' size-in-bits='64' id='63e171df'/>
+    <type-decl name='unnamed-enum-underlying-type-32' size-in-bits='32' alignment-in-bits='32' is-anonymous='yes' hash='5181a58e665b3619' id='9cac1fee'/>
+    <type-decl name='unsigned char' size-in-bits='8' hash='6ebac62b3366db68' id='002ac4a6'/>
+    <type-decl name='unsigned int' size-in-bits='32' hash='e66b43f97c38e87a' id='f0981eed'/>
+    <type-decl name='unsigned long int' size-in-bits='64' hash='8fdc5eea2983a729#2' id='f0981eeb'/>
+    <type-decl name='unsigned short int' size-in-bits='16' hash='d7723bb93a30b11d#3' id='f0981eec'/>
+    <pointer-type-def type-id='e33bdf83' size-in-bits='64' hash='fd7a63c0c6c822c4' id='ee68be7e'/>
+    <pointer-type-def type-id='0becd0e7' size-in-bits='64' hash='fd7a63c0c6c822c4' id='da1452a0'/>
+    <pointer-type-def type-id='c459634a' size-in-bits='64' hash='fd7a63c0c6c822c4' id='2f331a71'/>
+    <pointer-type-def type-id='d8797dce' size-in-bits='64' hash='fd7a63c0c6c822c4' id='6bc35553'/>
+    <pointer-type-def type-id='a84c031d' size-in-bits='64' hash='e533f42d1dd4942c' id='26a90f95'/>
+    <qualified-type-def type-id='a84c031d' const='yes' hash='3e50fd33f9bb78d9' id='9b45d938'/>
+    <pointer-type-def type-id='9b45d938' size-in-bits='64' hash='c44743f354f6a443' id='80f4b756'/>
+    <pointer-type-def type-id='80f4b756' size-in-bits='64' hash='cea1d4b0943594a3' id='7d3cd834'/>
+    <qualified-type-def type-id='ee9bdf6b' const='yes' hash='1aebe4eef1ee867f' id='27a7b922'/>
+    <pointer-type-def type-id='27a7b922' size-in-bits='64' hash='703606bd1ea679e1' id='75084798'/>
+    <qualified-type-def type-id='ca8df46c' const='yes' hash='af7f318615a84019' id='a77e783b'/>
+    <pointer-type-def type-id='a77e783b' size-in-bits='64' hash='e9bc4a2c0d538aee' id='bd1702c3'/>
+    <qualified-type-def type-id='77da0a4b' const='yes' hash='8cc78d1fc764fe0e' id='cecfe1dc'/>
+    <pointer-type-def type-id='cecfe1dc' size-in-bits='64' hash='ee4816ad80efef6c' id='8740b642'/>
+    <qualified-type-def type-id='6e011169' const='yes' hash='79ceb31c961be71d' id='507bcddc'/>
+    <pointer-type-def type-id='507bcddc' size-in-bits='64' hash='b74b42c0aaa673c9' id='a8e53a42'/>
+    <pointer-type-def type-id='a5ef812a' size-in-bits='64' hash='fd7a63c0c6c822c4' id='3c4369cb'/>
+    <pointer-type-def type-id='1b090520' size-in-bits='64' hash='fd7a63c0c6c822c4' id='ded59f39'/>
+    <pointer-type-def type-id='431fb238' size-in-bits='64' hash='fd7a63c0c6c822c4' id='5fef6035'/>
+    <pointer-type-def type-id='b6f0a36d' size-in-bits='64' hash='fd7a63c0c6c822c4' id='75a7502c'/>
+    <pointer-type-def type-id='2a0300f1' size-in-bits='64' hash='fd7a63c0c6c822c4' id='bf012844'/>
+    <pointer-type-def type-id='1a309423' size-in-bits='64' hash='fd7a63c0c6c822c4' id='04e505a8'/>
+    <pointer-type-def type-id='b39d85cf' size-in-bits='64' hash='fd7a63c0c6c822c4' id='65e3965a'/>
+    <pointer-type-def type-id='0f042891' size-in-bits='64' hash='83ff866b84e07157' id='cc4b1be9'/>
+    <pointer-type-def type-id='977df01c' size-in-bits='64' hash='fd7a63c0c6c822c4' id='b9ed7d93'/>
+    <pointer-type-def type-id='7e6118f4' size-in-bits='64' hash='a2c40a29366d09ba' id='043cb572'/>
+    <pointer-type-def type-id='043cb572' size-in-bits='64' hash='a546ef37751da4ec' id='03917988'/>
+    <pointer-type-def type-id='b3dd0cff' size-in-bits='64' hash='c83ed915f0b125bb' id='2fb8c007'/>
+    <pointer-type-def type-id='2fb8c007' size-in-bits='64' hash='8882eb7b50172517' id='4cd686d7'/>
+    <pointer-type-def type-id='c7a04c81' size-in-bits='64' hash='afd484c290f1a1cf' id='b78a11b9'/>
+    <pointer-type-def type-id='b78a11b9' size-in-bits='64' hash='b7d785e77d4663c2' id='8159aa69'/>
+    <pointer-type-def type-id='0116b8f4' size-in-bits='64' hash='feda539cdfed977d' id='9bf1cbb2'/>
+    <pointer-type-def type-id='9f6466ab' size-in-bits='64' hash='ed51565150094810' id='5d8fb96b'/>
+    <pointer-type-def type-id='77da0a4b' size-in-bits='64' hash='264b8317a6aec695' id='74e64d2b'/>
+    <pointer-type-def type-id='a817e78c' size-in-bits='64' hash='3a551ac7233d00bf' id='10ebab0a'/>
+    <pointer-type-def type-id='10ebab0a' size-in-bits='64' hash='cf0c5322593d9424' id='c2fe6360'/>
+    <pointer-type-def type-id='749c8886' size-in-bits='64' hash='431a02fe6f4da83c' id='768d3a3c'/>
+    <pointer-type-def type-id='035f351a' size-in-bits='64' hash='4ba7187bfa0b834d' id='c7935638'/>
+    <pointer-type-def type-id='8810097f' size-in-bits='64' hash='fd7a63c0c6c822c4' id='79787ee2'/>
+    <pointer-type-def type-id='8f92235e' size-in-bits='64' hash='a285db8f38e4ea02' id='90421557'/>
+    <pointer-type-def type-id='0070a5eb' size-in-bits='64' hash='fd7a63c0c6c822c4' id='e02d0adc'/>
+    <pointer-type-def type-id='44410d43' size-in-bits='64' hash='fd7a63c0c6c822c4' id='302d4f9a'/>
+    <pointer-type-def type-id='9ed8cfeb' size-in-bits='64' hash='fd7a63c0c6c822c4' id='46bc0678'/>
+    <pointer-type-def type-id='30a82da4' size-in-bits='64' hash='fd7a63c0c6c822c4' id='c640490b'/>
+    <pointer-type-def type-id='c5c76c9c' size-in-bits='64' hash='fd7a63c0c6c822c4' id='61359e15'/>
+    <pointer-type-def type-id='2922fb19' size-in-bits='64' hash='fd7a63c0c6c822c4' id='82328a76'/>
+    <pointer-type-def type-id='eaa32e2f' size-in-bits='64' hash='473a9667a2856e32' id='63e171df'/>
     <pointer-type-def type-id='7d858f4c' size-in-bits='64' id='4d4d5eba'/>
     <pointer-type-def type-id='e2580b88' size-in-bits='64' id='d4aefa7e'/>
     <pointer-type-def type-id='d4aefa7e' size-in-bits='64' id='2374123c'/>
@@ -693,37 +796,37 @@
     <class-decl name='spdk_io_channel' is-struct='yes' visibility='default' is-declaration-only='yes' id='8de5f3c0'/>
     <class-decl name='spdk_json_write_ctx' is-struct='yes' visibility='default' is-declaration-only='yes' id='2ae61988'/>
     <class-decl name='spdk_memory_domain' is-struct='yes' visibility='default' is-declaration-only='yes' id='3e1ba880'/>
-    <class-decl name='accel_io_channel' is-struct='yes' visibility='default' filepath='accel.c' line='144' column='1' is-declaration-only='yes' id='7d858f4c'/>
-    <class-decl name='spdk_accel_sequence' is-struct='yes' visibility='default' filepath='accel.c' line='161' column='1' is-declaration-only='yes' id='e2580b88'/>
-    <function-decl name='spdk_accel_get_opc_module_name' mangled-name='spdk_accel_get_opc_module_name' filepath='accel.c' line='204' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_get_opc_module_name'>
+    <class-decl name='accel_io_channel' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='accel.c' line='144' column='1' id='7d858f4c'/>
+    <class-decl name='spdk_accel_sequence' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='accel.c' line='161' column='1' id='e2580b88'/>
+    <function-decl name='spdk_accel_get_opc_module_name' mangled-name='spdk_accel_get_opc_module_name' filepath='accel.c' line='204' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_get_opc_module_name' hash='0b4d84dce634d959'>
       <parameter type-id='ad747ae4' name='opcode' filepath='accel.c' line='204' column='1'/>
       <parameter type-id='7d3cd834' name='module_name' filepath='accel.c' line='204' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_get_opcode_name' mangled-name='spdk_accel_get_opcode_name' filepath='accel.c' line='242' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_get_opcode_name'>
+    <function-decl name='spdk_accel_get_opcode_name' mangled-name='spdk_accel_get_opcode_name' filepath='accel.c' line='242' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_get_opcode_name' hash='c9bb38934e07c05a'>
       <parameter type-id='ad747ae4' name='opcode' filepath='accel.c' line='242' column='1'/>
       <return type-id='80f4b756'/>
     </function-decl>
-    <function-decl name='spdk_accel_assign_opc' mangled-name='spdk_accel_assign_opc' filepath='accel.c' line='252' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_assign_opc'>
+    <function-decl name='spdk_accel_assign_opc' mangled-name='spdk_accel_assign_opc' filepath='accel.c' line='252' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_assign_opc' hash='e4d52658b17dd26c'>
       <parameter type-id='ad747ae4' name='opcode' filepath='accel.c' line='252' column='1'/>
       <parameter type-id='80f4b756' name='name' filepath='accel.c' line='252' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_task_complete' mangled-name='spdk_accel_task_complete' filepath='accel.c' line='310' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_task_complete'>
+    <function-decl name='spdk_accel_task_complete' mangled-name='spdk_accel_task_complete' filepath='accel.c' line='310' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_task_complete' hash='45b1f856c4ddfc56'>
       <parameter type-id='10ebab0a' name='accel_task' filepath='accel.c' line='310' column='1'/>
       <parameter type-id='95e97e5e' name='status' filepath='accel.c' line='310' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_accel_submit_copy' mangled-name='spdk_accel_submit_copy' filepath='accel.c' line='388' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_copy'>
-      <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='388' column='1'/>
-      <parameter type-id='eaa32e2f' name='dst' filepath='accel.c' line='388' column='1'/>
-      <parameter type-id='eaa32e2f' name='src' filepath='accel.c' line='388' column='1'/>
-      <parameter type-id='9c313c2d' name='nbytes' filepath='accel.c' line='389' column='1'/>
-      <parameter type-id='e2a47d34' name='cb_fn' filepath='accel.c' line='389' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='389' column='1'/>
+    <function-decl name='spdk_accel_submit_copy' mangled-name='spdk_accel_submit_copy' filepath='accel.c' line='388' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_copy' hash='1db3e6a393d2aa95'>
+      <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='461' column='1'/>
+      <parameter type-id='eaa32e2f' name='src1' filepath='accel.c' line='461' column='1'/>
+      <parameter type-id='eaa32e2f' name='src2' filepath='accel.c' line='462' column='1'/>
+      <parameter type-id='9c313c2d' name='nbytes' filepath='accel.c' line='462' column='1'/>
+      <parameter type-id='e2a47d34' name='cb_fn' filepath='accel.c' line='462' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='463' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_submit_dualcast' mangled-name='spdk_accel_submit_dualcast' filepath='accel.c' line='419' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_dualcast'>
+    <function-decl name='spdk_accel_submit_dualcast' mangled-name='spdk_accel_submit_dualcast' filepath='accel.c' line='419' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_dualcast' hash='1db3e6a393d2aa95'>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='419' column='1'/>
       <parameter type-id='eaa32e2f' name='dst1' filepath='accel.c' line='419' column='1'/>
       <parameter type-id='eaa32e2f' name='dst2' filepath='accel.c' line='420' column='1'/>
@@ -733,7 +836,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='421' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_submit_compare' mangled-name='spdk_accel_submit_compare' filepath='accel.c' line='461' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_compare'>
+    <function-decl name='spdk_accel_submit_compare' mangled-name='spdk_accel_submit_compare' filepath='accel.c' line='461' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_compare' hash='1db3e6a393d2aa95'>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='461' column='1'/>
       <parameter type-id='eaa32e2f' name='src1' filepath='accel.c' line='461' column='1'/>
       <parameter type-id='eaa32e2f' name='src2' filepath='accel.c' line='462' column='1'/>
@@ -742,7 +845,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='463' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_submit_fill' mangled-name='spdk_accel_submit_fill' filepath='accel.c' line='493' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_fill'>
+    <function-decl name='spdk_accel_submit_fill' mangled-name='spdk_accel_submit_fill' filepath='accel.c' line='493' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_fill' hash='e8214170fe664802'>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='493' column='1'/>
       <parameter type-id='eaa32e2f' name='dst' filepath='accel.c' line='493' column='1'/>
       <parameter type-id='b96825af' name='fill' filepath='accel.c' line='494' column='1'/>
@@ -751,7 +854,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='495' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_submit_crc32c' mangled-name='spdk_accel_submit_crc32c' filepath='accel.c' line='522' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_crc32c'>
+    <function-decl name='spdk_accel_submit_crc32c' mangled-name='spdk_accel_submit_crc32c' filepath='accel.c' line='522' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_crc32c' hash='17c98e0bec97a5c4'>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='522' column='1'/>
       <parameter type-id='90421557' name='crc_dst' filepath='accel.c' line='522' column='1'/>
       <parameter type-id='eaa32e2f' name='src' filepath='accel.c' line='523' column='1'/>
@@ -761,7 +864,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='524' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_submit_crc32cv' mangled-name='spdk_accel_submit_crc32cv' filepath='accel.c' line='552' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_crc32cv'>
+    <function-decl name='spdk_accel_submit_crc32cv' mangled-name='spdk_accel_submit_crc32cv' filepath='accel.c' line='552' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_crc32cv' hash='0036411345c71f8b'>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='552' column='1'/>
       <parameter type-id='90421557' name='crc_dst' filepath='accel.c' line='552' column='1'/>
       <parameter type-id='cc4b1be9' name='iov' filepath='accel.c' line='553' column='1'/>
@@ -771,7 +874,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='554' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_submit_copy_crc32c' mangled-name='spdk_accel_submit_copy_crc32c' filepath='accel.c' line='590' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_copy_crc32c'>
+    <function-decl name='spdk_accel_submit_copy_crc32c' mangled-name='spdk_accel_submit_copy_crc32c' filepath='accel.c' line='590' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_copy_crc32c' hash='17c98e0bec97a5c4'>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='590' column='1'/>
       <parameter type-id='eaa32e2f' name='dst' filepath='accel.c' line='590' column='1'/>
       <parameter type-id='eaa32e2f' name='src' filepath='accel.c' line='591' column='1'/>
@@ -782,7 +885,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='592' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_submit_copy_crc32cv' mangled-name='spdk_accel_submit_copy_crc32cv' filepath='accel.c' line='624' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_copy_crc32cv'>
+    <function-decl name='spdk_accel_submit_copy_crc32cv' mangled-name='spdk_accel_submit_copy_crc32cv' filepath='accel.c' line='624' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_copy_crc32cv' hash='84fafd21a30d3064'>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='624' column='1'/>
       <parameter type-id='eaa32e2f' name='dst' filepath='accel.c' line='624' column='1'/>
       <parameter type-id='cc4b1be9' name='src_iovs' filepath='accel.c' line='625' column='1'/>
@@ -793,13 +896,13 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='626' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_get_compress_level_range' mangled-name='spdk_accel_get_compress_level_range' filepath='accel.c' line='670' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_get_compress_level_range'>
-      <parameter type-id='5fe6f5cd' name='comp_algo' filepath='accel.c' line='670' column='1'/>
-      <parameter type-id='90421557' name='min_level' filepath='accel.c' line='671' column='1'/>
-      <parameter type-id='90421557' name='max_level' filepath='accel.c' line='671' column='1'/>
+    <function-decl name='spdk_accel_get_compress_level_range' mangled-name='spdk_accel_get_compress_level_range' filepath='accel.c' line='670' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_get_compress_level_range' hash='9320e7b4652ab93e'>
+      <parameter type-id='5fe6f5cd'/>
+      <parameter type-id='90421557'/>
+      <parameter type-id='90421557'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_submit_compress_ext' mangled-name='spdk_accel_submit_compress_ext' filepath='accel.c' line='697' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_compress_ext'>
+    <function-decl name='spdk_accel_submit_compress_ext' mangled-name='spdk_accel_submit_compress_ext' filepath='accel.c' line='697' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_compress_ext' hash='08f7f16a88b6685a'>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='697' column='1'/>
       <parameter type-id='eaa32e2f' name='dst' filepath='accel.c' line='697' column='1'/>
       <parameter type-id='9c313c2d' name='nbytes' filepath='accel.c' line='697' column='1'/>
@@ -812,7 +915,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='700' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_submit_decompress_ext' mangled-name='spdk_accel_submit_decompress_ext' filepath='accel.c' line='736' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_decompress_ext'>
+    <function-decl name='spdk_accel_submit_decompress_ext' mangled-name='spdk_accel_submit_decompress_ext' filepath='accel.c' line='736' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_decompress_ext' hash='a334152b4af275db'>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='736' column='1'/>
       <parameter type-id='cc4b1be9' name='dst_iovs' filepath='accel.c' line='736' column='1'/>
       <parameter type-id='b59d7dce' name='dst_iovcnt' filepath='accel.c' line='737' column='1'/>
@@ -824,7 +927,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='739' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_submit_compress' mangled-name='spdk_accel_submit_compress' filepath='accel.c' line='770' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_compress'>
+    <function-decl name='spdk_accel_submit_compress' mangled-name='spdk_accel_submit_compress' filepath='accel.c' line='770' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_compress' hash='b2a32283c82d509f'>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='770' column='1'/>
       <parameter type-id='eaa32e2f' name='dst' filepath='accel.c' line='770' column='1'/>
       <parameter type-id='9c313c2d' name='nbytes' filepath='accel.c' line='770' column='1'/>
@@ -835,7 +938,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='772' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_submit_decompress' mangled-name='spdk_accel_submit_decompress' filepath='accel.c' line='779' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_decompress'>
+    <function-decl name='spdk_accel_submit_decompress' mangled-name='spdk_accel_submit_decompress' filepath='accel.c' line='779' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_decompress' hash='ee0501e6243e98aa'>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='779' column='1'/>
       <parameter type-id='cc4b1be9' name='dst_iovs' filepath='accel.c' line='779' column='1'/>
       <parameter type-id='b59d7dce' name='dst_iovcnt' filepath='accel.c' line='780' column='1'/>
@@ -846,20 +949,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='782' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_submit_encrypt' mangled-name='spdk_accel_submit_encrypt' filepath='accel.c' line='789' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_encrypt'>
-      <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='789' column='1'/>
-      <parameter type-id='043cb572' name='key' filepath='accel.c' line='789' column='1'/>
-      <parameter type-id='cc4b1be9' name='dst_iovs' filepath='accel.c' line='790' column='1'/>
-      <parameter type-id='8f92235e' name='dst_iovcnt' filepath='accel.c' line='790' column='1'/>
-      <parameter type-id='cc4b1be9' name='src_iovs' filepath='accel.c' line='791' column='1'/>
-      <parameter type-id='8f92235e' name='src_iovcnt' filepath='accel.c' line='791' column='1'/>
-      <parameter type-id='9c313c2d' name='iv' filepath='accel.c' line='792' column='1'/>
-      <parameter type-id='8f92235e' name='block_size' filepath='accel.c' line='792' column='1'/>
-      <parameter type-id='e2a47d34' name='cb_fn' filepath='accel.c' line='793' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='793' column='1'/>
-      <return type-id='95e97e5e'/>
-    </function-decl>
-    <function-decl name='spdk_accel_submit_decrypt' mangled-name='spdk_accel_submit_decrypt' filepath='accel.c' line='823' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_decrypt'>
+    <function-decl name='spdk_accel_submit_encrypt' mangled-name='spdk_accel_submit_encrypt' filepath='accel.c' line='789' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_encrypt' hash='d3b9a5f600730758'>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='823' column='1'/>
       <parameter type-id='043cb572' name='key' filepath='accel.c' line='823' column='1'/>
       <parameter type-id='cc4b1be9' name='dst_iovs' filepath='accel.c' line='824' column='1'/>
@@ -872,7 +962,20 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='827' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_submit_xor' mangled-name='spdk_accel_submit_xor' filepath='accel.c' line='857' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_xor'>
+    <function-decl name='spdk_accel_submit_decrypt' mangled-name='spdk_accel_submit_decrypt' filepath='accel.c' line='823' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_decrypt' hash='d3b9a5f600730758'>
+      <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='823' column='1'/>
+      <parameter type-id='043cb572' name='key' filepath='accel.c' line='823' column='1'/>
+      <parameter type-id='cc4b1be9' name='dst_iovs' filepath='accel.c' line='824' column='1'/>
+      <parameter type-id='8f92235e' name='dst_iovcnt' filepath='accel.c' line='824' column='1'/>
+      <parameter type-id='cc4b1be9' name='src_iovs' filepath='accel.c' line='825' column='1'/>
+      <parameter type-id='8f92235e' name='src_iovcnt' filepath='accel.c' line='825' column='1'/>
+      <parameter type-id='9c313c2d' name='iv' filepath='accel.c' line='826' column='1'/>
+      <parameter type-id='8f92235e' name='block_size' filepath='accel.c' line='826' column='1'/>
+      <parameter type-id='e2a47d34' name='cb_fn' filepath='accel.c' line='827' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='827' column='1'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_accel_submit_xor' mangled-name='spdk_accel_submit_xor' filepath='accel.c' line='857' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_xor' hash='48ffcc7d8d302797'>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='857' column='1'/>
       <parameter type-id='eaa32e2f' name='dst' filepath='accel.c' line='857' column='1'/>
       <parameter type-id='63e171df' name='sources' filepath='accel.c' line='857' column='1'/>
@@ -882,7 +985,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='858' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_submit_dif_verify' mangled-name='spdk_accel_submit_dif_verify' filepath='accel.c' line='885' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_dif_verify'>
+    <function-decl name='spdk_accel_submit_dif_verify' mangled-name='spdk_accel_submit_dif_verify' filepath='accel.c' line='885' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_dif_verify' hash='8042c6189b94881d'>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='885' column='1'/>
       <parameter type-id='cc4b1be9' name='iovs' filepath='accel.c' line='886' column='1'/>
       <parameter type-id='b59d7dce' name='iovcnt' filepath='accel.c' line='886' column='1'/>
@@ -893,7 +996,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='888' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_submit_dif_generate' mangled-name='spdk_accel_submit_dif_generate' filepath='accel.c' line='912' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_dif_generate'>
+    <function-decl name='spdk_accel_submit_dif_generate' mangled-name='spdk_accel_submit_dif_generate' filepath='accel.c' line='912' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_dif_generate' hash='0a711f8417e5bd54'>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='912' column='1'/>
       <parameter type-id='cc4b1be9' name='iovs' filepath='accel.c' line='913' column='1'/>
       <parameter type-id='b59d7dce' name='iovcnt' filepath='accel.c' line='913' column='1'/>
@@ -903,7 +1006,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='915' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_submit_dif_generate_copy' mangled-name='spdk_accel_submit_dif_generate_copy' filepath='accel.c' line='938' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_dif_generate_copy'>
+    <function-decl name='spdk_accel_submit_dif_generate_copy' mangled-name='spdk_accel_submit_dif_generate_copy' filepath='accel.c' line='938' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_dif_generate_copy' hash='c89ee1129e620269'>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='938' column='1'/>
       <parameter type-id='cc4b1be9' name='dst_iovs' filepath='accel.c' line='938' column='1'/>
       <parameter type-id='b59d7dce' name='dst_iovcnt' filepath='accel.c' line='939' column='1'/>
@@ -915,7 +1018,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='941' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_submit_dif_verify_copy' mangled-name='spdk_accel_submit_dif_verify_copy' filepath='accel.c' line='966' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_dif_verify_copy'>
+    <function-decl name='spdk_accel_submit_dif_verify_copy' mangled-name='spdk_accel_submit_dif_verify_copy' filepath='accel.c' line='966' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_dif_verify_copy' hash='e182c55b3f99bb7e'>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='966' column='1'/>
       <parameter type-id='cc4b1be9' name='dst_iovs' filepath='accel.c' line='967' column='1'/>
       <parameter type-id='b59d7dce' name='dst_iovcnt' filepath='accel.c' line='967' column='1'/>
@@ -928,7 +1031,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='970' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_submit_dix_generate' mangled-name='spdk_accel_submit_dix_generate' filepath='accel.c' line='996' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_dix_generate'>
+    <function-decl name='spdk_accel_submit_dix_generate' mangled-name='spdk_accel_submit_dix_generate' filepath='accel.c' line='996' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_dix_generate' hash='540b81105da7394e'>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='996' column='1'/>
       <parameter type-id='cc4b1be9' name='iovs' filepath='accel.c' line='996' column='1'/>
       <parameter type-id='b59d7dce' name='iovcnt' filepath='accel.c' line='997' column='1'/>
@@ -939,7 +1042,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='999' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_submit_dix_verify' mangled-name='spdk_accel_submit_dix_verify' filepath='accel.c' line='1024' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_dix_verify'>
+    <function-decl name='spdk_accel_submit_dix_verify' mangled-name='spdk_accel_submit_dix_verify' filepath='accel.c' line='1024' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_submit_dix_verify' hash='f541741df8302d32'>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='1024' column='1'/>
       <parameter type-id='cc4b1be9' name='iovs' filepath='accel.c' line='1024' column='1'/>
       <parameter type-id='b59d7dce' name='iovcnt' filepath='accel.c' line='1025' column='1'/>
@@ -951,7 +1054,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='1027' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_append_copy' mangled-name='spdk_accel_append_copy' filepath='accel.c' line='1156' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_append_copy'>
+    <function-decl name='spdk_accel_append_copy' mangled-name='spdk_accel_append_copy' filepath='accel.c' line='1156' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_append_copy' hash='da39f4fe8c156ee2'>
       <parameter type-id='2374123c' name='pseq' filepath='accel.c' line='1156' column='1'/>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='1156' column='1'/>
       <parameter type-id='cc4b1be9' name='dst_iovs' filepath='accel.c' line='1157' column='1'/>
@@ -966,7 +1069,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='1161' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_append_fill' mangled-name='spdk_accel_append_fill' filepath='accel.c' line='1202' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_append_fill'>
+    <function-decl name='spdk_accel_append_fill' mangled-name='spdk_accel_append_fill' filepath='accel.c' line='1202' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_append_fill' hash='73cc1ebf4090b5e7'>
       <parameter type-id='2374123c' name='pseq' filepath='accel.c' line='1202' column='1'/>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='1202' column='1'/>
       <parameter type-id='eaa32e2f' name='buf' filepath='accel.c' line='1203' column='1'/>
@@ -978,7 +1081,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='1205' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_append_decompress' mangled-name='spdk_accel_append_decompress' filepath='accel.c' line='1262' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_append_decompress'>
+    <function-decl name='spdk_accel_append_decompress' mangled-name='spdk_accel_append_decompress' filepath='accel.c' line='1262' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_append_decompress' hash='c95d122098ba90db'>
       <parameter type-id='2374123c' name='pseq' filepath='accel.c' line='1262' column='1'/>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='1262' column='1'/>
       <parameter type-id='cc4b1be9' name='dst_iovs' filepath='accel.c' line='1263' column='1'/>
@@ -993,7 +1096,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='1267' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_append_decompress_ext' mangled-name='spdk_accel_append_decompress_ext' filepath='accel.c' line='1276' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_append_decompress_ext'>
+    <function-decl name='spdk_accel_append_decompress_ext' mangled-name='spdk_accel_append_decompress_ext' filepath='accel.c' line='1276' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_append_decompress_ext' hash='ee48f6f35bf7eeee'>
       <parameter type-id='2374123c' name='pseq' filepath='accel.c' line='1276' column='1'/>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='1276' column='1'/>
       <parameter type-id='cc4b1be9' name='dst_iovs' filepath='accel.c' line='1277' column='1'/>
@@ -1009,25 +1112,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='1282' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_append_encrypt' mangled-name='spdk_accel_append_encrypt' filepath='accel.c' line='1332' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_append_encrypt'>
-      <parameter type-id='2374123c' name='pseq' filepath='accel.c' line='1332' column='1'/>
-      <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='1332' column='1'/>
-      <parameter type-id='043cb572' name='key' filepath='accel.c' line='1333' column='1'/>
-      <parameter type-id='cc4b1be9' name='dst_iovs' filepath='accel.c' line='1334' column='1'/>
-      <parameter type-id='8f92235e' name='dst_iovcnt' filepath='accel.c' line='1334' column='1'/>
-      <parameter type-id='e5ecc906' name='dst_domain' filepath='accel.c' line='1335' column='1'/>
-      <parameter type-id='eaa32e2f' name='dst_domain_ctx' filepath='accel.c' line='1335' column='1'/>
-      <parameter type-id='cc4b1be9' name='src_iovs' filepath='accel.c' line='1336' column='1'/>
-      <parameter type-id='8f92235e' name='src_iovcnt' filepath='accel.c' line='1336' column='1'/>
-      <parameter type-id='e5ecc906' name='src_domain' filepath='accel.c' line='1337' column='1'/>
-      <parameter type-id='eaa32e2f' name='src_domain_ctx' filepath='accel.c' line='1337' column='1'/>
-      <parameter type-id='9c313c2d' name='iv' filepath='accel.c' line='1338' column='1'/>
-      <parameter type-id='8f92235e' name='block_size' filepath='accel.c' line='1338' column='1'/>
-      <parameter type-id='e7d92aa4' name='cb_fn' filepath='accel.c' line='1339' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='1339' column='1'/>
-      <return type-id='95e97e5e'/>
-    </function-decl>
-    <function-decl name='spdk_accel_append_decrypt' mangled-name='spdk_accel_append_decrypt' filepath='accel.c' line='1385' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_append_decrypt'>
+    <function-decl name='spdk_accel_append_encrypt' mangled-name='spdk_accel_append_encrypt' filepath='accel.c' line='1332' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_append_encrypt' hash='d3b9a5f600730758'>
       <parameter type-id='2374123c' name='pseq' filepath='accel.c' line='1385' column='1'/>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='1385' column='1'/>
       <parameter type-id='043cb572' name='key' filepath='accel.c' line='1386' column='1'/>
@@ -1045,7 +1130,25 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='1392' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_append_crc32c' mangled-name='spdk_accel_append_crc32c' filepath='accel.c' line='1438' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_append_crc32c'>
+    <function-decl name='spdk_accel_append_decrypt' mangled-name='spdk_accel_append_decrypt' filepath='accel.c' line='1385' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_append_decrypt' hash='d3b9a5f600730758'>
+      <parameter type-id='2374123c' name='pseq' filepath='accel.c' line='1385' column='1'/>
+      <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='1385' column='1'/>
+      <parameter type-id='043cb572' name='key' filepath='accel.c' line='1386' column='1'/>
+      <parameter type-id='cc4b1be9' name='dst_iovs' filepath='accel.c' line='1387' column='1'/>
+      <parameter type-id='8f92235e' name='dst_iovcnt' filepath='accel.c' line='1387' column='1'/>
+      <parameter type-id='e5ecc906' name='dst_domain' filepath='accel.c' line='1388' column='1'/>
+      <parameter type-id='eaa32e2f' name='dst_domain_ctx' filepath='accel.c' line='1388' column='1'/>
+      <parameter type-id='cc4b1be9' name='src_iovs' filepath='accel.c' line='1389' column='1'/>
+      <parameter type-id='8f92235e' name='src_iovcnt' filepath='accel.c' line='1389' column='1'/>
+      <parameter type-id='e5ecc906' name='src_domain' filepath='accel.c' line='1390' column='1'/>
+      <parameter type-id='eaa32e2f' name='src_domain_ctx' filepath='accel.c' line='1390' column='1'/>
+      <parameter type-id='9c313c2d' name='iv' filepath='accel.c' line='1391' column='1'/>
+      <parameter type-id='8f92235e' name='block_size' filepath='accel.c' line='1391' column='1'/>
+      <parameter type-id='e7d92aa4' name='cb_fn' filepath='accel.c' line='1392' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='1392' column='1'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_accel_append_crc32c' mangled-name='spdk_accel_append_crc32c' filepath='accel.c' line='1438' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_append_crc32c' hash='0036411345c71f8b'>
       <parameter type-id='2374123c' name='pseq' filepath='accel.c' line='1438' column='1'/>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='1438' column='1'/>
       <parameter type-id='90421557' name='dst' filepath='accel.c' line='1439' column='1'/>
@@ -1058,7 +1161,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='1441' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_append_dif_verify' mangled-name='spdk_accel_append_dif_verify' filepath='accel.c' line='1481' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_append_dif_verify'>
+    <function-decl name='spdk_accel_append_dif_verify' mangled-name='spdk_accel_append_dif_verify' filepath='accel.c' line='1481' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_append_dif_verify' hash='8042c6189b94881d'>
       <parameter type-id='2374123c' name='pseq' filepath='accel.c' line='1481' column='1'/>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='1481' column='1'/>
       <parameter type-id='cc4b1be9' name='iovs' filepath='accel.c' line='1482' column='1'/>
@@ -1072,7 +1175,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='1486' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_append_dif_verify_copy' mangled-name='spdk_accel_append_dif_verify_copy' filepath='accel.c' line='1527' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_append_dif_verify_copy'>
+    <function-decl name='spdk_accel_append_dif_verify_copy' mangled-name='spdk_accel_append_dif_verify_copy' filepath='accel.c' line='1527' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_append_dif_verify_copy' hash='e182c55b3f99bb7e'>
       <parameter type-id='2374123c' name='pseq' filepath='accel.c' line='1527' column='1'/>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='1527' column='1'/>
       <parameter type-id='cc4b1be9' name='dst_iovs' filepath='accel.c' line='1528' column='1'/>
@@ -1090,7 +1193,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='1534' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_append_dif_generate' mangled-name='spdk_accel_append_dif_generate' filepath='accel.c' line='1578' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_append_dif_generate'>
+    <function-decl name='spdk_accel_append_dif_generate' mangled-name='spdk_accel_append_dif_generate' filepath='accel.c' line='1578' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_append_dif_generate' hash='0a711f8417e5bd54'>
       <parameter type-id='2374123c' name='pseq' filepath='accel.c' line='1578' column='1'/>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='1578' column='1'/>
       <parameter type-id='cc4b1be9' name='iovs' filepath='accel.c' line='1579' column='1'/>
@@ -1103,7 +1206,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='1582' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_append_dif_generate_copy' mangled-name='spdk_accel_append_dif_generate_copy' filepath='accel.c' line='1622' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_append_dif_generate_copy'>
+    <function-decl name='spdk_accel_append_dif_generate_copy' mangled-name='spdk_accel_append_dif_generate_copy' filepath='accel.c' line='1622' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_append_dif_generate_copy' hash='c89ee1129e620269'>
       <parameter type-id='2374123c' name='pseq' filepath='accel.c' line='1622' column='1'/>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='1622' column='1'/>
       <parameter type-id='cc4b1be9' name='dst_iovs' filepath='accel.c' line='1623' column='1'/>
@@ -1120,7 +1223,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='1628' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_append_dix_generate' mangled-name='spdk_accel_append_dix_generate' filepath='accel.c' line='1669' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_append_dix_generate'>
+    <function-decl name='spdk_accel_append_dix_generate' mangled-name='spdk_accel_append_dix_generate' filepath='accel.c' line='1669' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_append_dix_generate' hash='540b81105da7394e'>
       <parameter type-id='2374123c' name='seq' filepath='accel.c' line='1669' column='1'/>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='1669' column='1'/>
       <parameter type-id='cc4b1be9' name='iovs' filepath='accel.c' line='1670' column='1'/>
@@ -1136,7 +1239,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='1674' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_append_dix_verify' mangled-name='spdk_accel_append_dix_verify' filepath='accel.c' line='1717' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_append_dix_verify'>
+    <function-decl name='spdk_accel_append_dix_verify' mangled-name='spdk_accel_append_dix_verify' filepath='accel.c' line='1717' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_append_dix_verify' hash='f541741df8302d32'>
       <parameter type-id='2374123c' name='seq' filepath='accel.c' line='1717' column='1'/>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='1717' column='1'/>
       <parameter type-id='cc4b1be9' name='iovs' filepath='accel.c' line='1718' column='1'/>
@@ -1153,7 +1256,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='1722' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_get_buf' mangled-name='spdk_accel_get_buf' filepath='accel.c' line='1766' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_get_buf'>
+    <function-decl name='spdk_accel_get_buf' mangled-name='spdk_accel_get_buf' filepath='accel.c' line='1766' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_get_buf' hash='451e335d6a1d81e7'>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='1766' column='1'/>
       <parameter type-id='9c313c2d' name='len' filepath='accel.c' line='1766' column='1'/>
       <parameter type-id='63e171df' name='buf' filepath='accel.c' line='1766' column='1'/>
@@ -1161,14 +1264,14 @@
       <parameter type-id='63e171df' name='domain_ctx' filepath='accel.c' line='1767' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_put_buf' mangled-name='spdk_accel_put_buf' filepath='accel.c' line='1788' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_put_buf'>
+    <function-decl name='spdk_accel_put_buf' mangled-name='spdk_accel_put_buf' filepath='accel.c' line='1788' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_put_buf' hash='7f32ffea222edbe7'>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='1788' column='1'/>
       <parameter type-id='eaa32e2f' name='buf' filepath='accel.c' line='1788' column='1'/>
       <parameter type-id='e5ecc906' name='domain' filepath='accel.c' line='1789' column='1'/>
       <parameter type-id='eaa32e2f' name='domain_ctx' filepath='accel.c' line='1789' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_accel_alloc_sequence_buf' mangled-name='spdk_accel_alloc_sequence_buf' filepath='accel.c' line='1995' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_alloc_sequence_buf'>
+    <function-decl name='spdk_accel_alloc_sequence_buf' mangled-name='spdk_accel_alloc_sequence_buf' filepath='accel.c' line='1995' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_alloc_sequence_buf' hash='e698fbedb78e4cd2'>
       <parameter type-id='d4aefa7e' name='seq' filepath='accel.c' line='1995' column='1'/>
       <parameter type-id='eaa32e2f' name='buf' filepath='accel.c' line='1995' column='1'/>
       <parameter type-id='e5ecc906' name='domain' filepath='accel.c' line='1996' column='1'/>
@@ -1177,106 +1280,106 @@
       <parameter type-id='eaa32e2f' name='cb_ctx' filepath='accel.c' line='1997' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_accel_sequence_first_task' mangled-name='spdk_accel_sequence_first_task' filepath='accel.c' line='2015' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_sequence_first_task'>
+    <function-decl name='spdk_accel_sequence_first_task' mangled-name='spdk_accel_sequence_first_task' filepath='accel.c' line='2015' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_sequence_first_task' hash='0a8179cd5fa6f19f'>
       <parameter type-id='d4aefa7e' name='seq' filepath='accel.c' line='2015' column='1'/>
       <return type-id='10ebab0a'/>
     </function-decl>
-    <function-decl name='spdk_accel_sequence_next_task' mangled-name='spdk_accel_sequence_next_task' filepath='accel.c' line='2021' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_sequence_next_task'>
+    <function-decl name='spdk_accel_sequence_next_task' mangled-name='spdk_accel_sequence_next_task' filepath='accel.c' line='2021' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_sequence_next_task' hash='450fdb741d034745'>
       <parameter type-id='10ebab0a' name='task' filepath='accel.c' line='2021' column='1'/>
       <return type-id='10ebab0a'/>
     </function-decl>
-    <function-decl name='spdk_accel_sequence_continue' mangled-name='spdk_accel_sequence_continue' filepath='accel.c' line='2410' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_sequence_continue'>
-      <parameter type-id='d4aefa7e' name='seq' filepath='accel.c' line='2410' column='1'/>
+    <function-decl name='spdk_accel_sequence_continue' mangled-name='spdk_accel_sequence_continue' filepath='accel.c' line='2410' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_sequence_continue' hash='7f32ffea222edbe7'>
+      <parameter type-id='d4aefa7e' name='seq' filepath='accel.c' line='2588' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_accel_sequence_finish' mangled-name='spdk_accel_sequence_finish' filepath='accel.c' line='2553' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_sequence_finish'>
+    <function-decl name='spdk_accel_sequence_finish' mangled-name='spdk_accel_sequence_finish' filepath='accel.c' line='2553' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_sequence_finish' hash='5695f5ce05a4c55f'>
       <parameter type-id='d4aefa7e' name='seq' filepath='accel.c' line='2553' column='1'/>
       <parameter type-id='e2a47d34' name='cb_fn' filepath='accel.c' line='2554' column='1'/>
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='2554' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_accel_sequence_reverse' mangled-name='spdk_accel_sequence_reverse' filepath='accel.c' line='2573' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_sequence_reverse'>
-      <parameter type-id='d4aefa7e' name='seq' filepath='accel.c' line='2573' column='1'/>
-      <return type-id='48b5725f'/>
-    </function-decl>
-    <function-decl name='spdk_accel_sequence_abort' mangled-name='spdk_accel_sequence_abort' filepath='accel.c' line='2588' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_sequence_abort'>
+    <function-decl name='spdk_accel_sequence_reverse' mangled-name='spdk_accel_sequence_reverse' filepath='accel.c' line='2573' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_sequence_reverse' hash='7f32ffea222edbe7'>
       <parameter type-id='d4aefa7e' name='seq' filepath='accel.c' line='2588' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_accel_get_memory_domain' mangled-name='spdk_accel_get_memory_domain' filepath='accel.c' line='2599' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_get_memory_domain'>
+    <function-decl name='spdk_accel_sequence_abort' mangled-name='spdk_accel_sequence_abort' filepath='accel.c' line='2588' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_sequence_abort' hash='7f32ffea222edbe7'>
+      <parameter type-id='d4aefa7e' name='seq' filepath='accel.c' line='2588' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_accel_get_memory_domain' mangled-name='spdk_accel_get_memory_domain' filepath='accel.c' line='2599' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_get_memory_domain' hash='7f32ffea222edbe7'>
       <return type-id='e5ecc906'/>
     </function-decl>
-    <function-decl name='spdk_accel_crypto_key_create' mangled-name='spdk_accel_crypto_key_create' filepath='accel.c' line='2701' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_crypto_key_create'>
+    <function-decl name='spdk_accel_crypto_key_create' mangled-name='spdk_accel_crypto_key_create' filepath='accel.c' line='2701' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_crypto_key_create' hash='cd0fadfea8670470'>
       <parameter type-id='75084798' name='param' filepath='accel.c' line='2701' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_crypto_key_destroy' mangled-name='spdk_accel_crypto_key_destroy' filepath='accel.c' line='2918' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_crypto_key_destroy'>
-      <parameter type-id='043cb572' name='key' filepath='accel.c' line='2918' column='1'/>
+    <function-decl name='spdk_accel_crypto_key_destroy' mangled-name='spdk_accel_crypto_key_destroy' filepath='accel.c' line='2918' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_crypto_key_destroy' hash='1b74f1ad01c5a79c'>
+      <parameter type-id='043cb572'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_crypto_key_get' mangled-name='spdk_accel_crypto_key_get' filepath='accel.c' line='2938' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_crypto_key_get'>
+    <function-decl name='spdk_accel_crypto_key_get' mangled-name='spdk_accel_crypto_key_get' filepath='accel.c' line='2938' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_crypto_key_get' hash='ed4327cea601b20a'>
       <parameter type-id='80f4b756' name='name' filepath='accel.c' line='2938' column='1'/>
       <return type-id='043cb572'/>
     </function-decl>
-    <function-decl name='spdk_accel_module_list_add' mangled-name='spdk_accel_module_list_add' filepath='accel.c' line='2951' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_module_list_add'>
+    <function-decl name='spdk_accel_module_list_add' mangled-name='spdk_accel_module_list_add' filepath='accel.c' line='2951' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_module_list_add' hash='7854456230634b2b'>
       <parameter type-id='b78a11b9' name='accel_module' filepath='accel.c' line='2951' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_accel_get_io_channel' mangled-name='spdk_accel_get_io_channel' filepath='accel.c' line='3128' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_get_io_channel'>
+    <function-decl name='spdk_accel_get_io_channel' mangled-name='spdk_accel_get_io_channel' filepath='accel.c' line='3128' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_get_io_channel' hash='7f32ffea222edbe7'>
       <return type-id='a7e01876'/>
     </function-decl>
-    <function-decl name='spdk_accel_initialize' mangled-name='spdk_accel_initialize' filepath='accel.c' line='3215' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_initialize'>
+    <function-decl name='spdk_accel_initialize' mangled-name='spdk_accel_initialize' filepath='accel.c' line='3215' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_initialize' hash='388da3fa973fde78'>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_write_config_json' mangled-name='spdk_accel_write_config_json' filepath='accel.c' line='3412' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_write_config_json'>
-      <parameter type-id='b8e14bfe' name='w' filepath='accel.c' line='3412' column='1'/>
+    <function-decl name='spdk_accel_write_config_json' mangled-name='spdk_accel_write_config_json' filepath='accel.c' line='3412' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_write_config_json' hash='7f32ffea222edbe7'>
+      <parameter type-id='b8e14bfe'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_accel_module_finish' mangled-name='spdk_accel_module_finish' filepath='accel.c' line='3446' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_module_finish'>
+    <function-decl name='spdk_accel_module_finish' mangled-name='spdk_accel_module_finish' filepath='accel.c' line='3446' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_module_finish' hash='7f32ffea222edbe7'>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_accel_finish' mangled-name='spdk_accel_finish' filepath='accel.c' line='3500' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_finish'>
+    <function-decl name='spdk_accel_finish' mangled-name='spdk_accel_finish' filepath='accel.c' line='3500' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_finish' hash='5695f5ce05a4c55f'>
       <parameter type-id='e5aecfa2' name='cb_fn' filepath='accel.c' line='3500' column='1'/>
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='accel.c' line='3500' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_accel_set_driver' mangled-name='spdk_accel_set_driver' filepath='accel.c' line='3525' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_set_driver'>
+    <function-decl name='spdk_accel_set_driver' mangled-name='spdk_accel_set_driver' filepath='accel.c' line='3525' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_set_driver' hash='e9ea91a7eab8302c'>
       <parameter type-id='80f4b756' name='name' filepath='accel.c' line='3525' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_get_driver_name' mangled-name='spdk_accel_get_driver_name' filepath='accel.c' line='3543' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_get_driver_name'>
+    <function-decl name='spdk_accel_get_driver_name' mangled-name='spdk_accel_get_driver_name' filepath='accel.c' line='3543' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_get_driver_name' hash='53885bde0aa65efe'>
       <return type-id='80f4b756'/>
     </function-decl>
-    <function-decl name='spdk_accel_driver_register' mangled-name='spdk_accel_driver_register' filepath='accel.c' line='3553' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_driver_register'>
+    <function-decl name='spdk_accel_driver_register' mangled-name='spdk_accel_driver_register' filepath='accel.c' line='3553' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_driver_register' hash='ccca46929e24a53b'>
       <parameter type-id='2fb8c007' name='driver' filepath='accel.c' line='3553' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_accel_set_opts' mangled-name='spdk_accel_set_opts' filepath='accel.c' line='3565' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_set_opts'>
+    <function-decl name='spdk_accel_set_opts' mangled-name='spdk_accel_set_opts' filepath='accel.c' line='3565' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_set_opts' hash='81d9f6c64ebd4296'>
       <parameter type-id='8740b642' name='opts' filepath='accel.c' line='3565' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_accel_get_opts' mangled-name='spdk_accel_get_opts' filepath='accel.c' line='3601' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_get_opts'>
+    <function-decl name='spdk_accel_get_opts' mangled-name='spdk_accel_get_opts' filepath='accel.c' line='3601' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_get_opts' hash='bfbc1ecc6b6f8a34'>
       <parameter type-id='74e64d2b' name='opts' filepath='accel.c' line='3601' column='1'/>
       <parameter type-id='b59d7dce' name='opts_size' filepath='accel.c' line='3601' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_accel_get_opcode_stats' mangled-name='spdk_accel_get_opcode_stats' filepath='accel.c' line='3683' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_get_opcode_stats'>
+    <function-decl name='spdk_accel_get_opcode_stats' mangled-name='spdk_accel_get_opcode_stats' filepath='accel.c' line='3683' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_get_opcode_stats' hash='61f7b830e0079857'>
       <parameter type-id='a7e01876' name='ch' filepath='accel.c' line='3683' column='1'/>
       <parameter type-id='ad747ae4' name='opcode' filepath='accel.c' line='3683' column='1'/>
       <parameter type-id='5d8fb96b' name='stats' filepath='accel.c' line='3684' column='1'/>
       <parameter type-id='b59d7dce' name='size' filepath='accel.c' line='3684' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_accel_get_buf_align' mangled-name='spdk_accel_get_buf_align' filepath='accel.c' line='3705' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_get_buf_align'>
+    <function-decl name='spdk_accel_get_buf_align' mangled-name='spdk_accel_get_buf_align' filepath='accel.c' line='3705' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_get_buf_align' hash='fcd58dc3d9629605'>
       <parameter type-id='ad747ae4' name='opcode' filepath='accel.c' line='3705' column='1'/>
       <parameter type-id='bd1702c3' name='ctx' filepath='accel.c' line='3706' column='1'/>
       <return type-id='b96825af'/>
     </function-decl>
-    <function-decl name='spdk_accel_get_module' mangled-name='spdk_accel_get_module' filepath='accel.c' line='3727' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_get_module'>
+    <function-decl name='spdk_accel_get_module' mangled-name='spdk_accel_get_module' filepath='accel.c' line='3727' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_get_module' hash='4baf74cd7b7ceec6'>
       <parameter type-id='80f4b756' name='name' filepath='accel.c' line='3727' column='1'/>
       <return type-id='b78a11b9'/>
     </function-decl>
-    <function-decl name='spdk_accel_get_opc_memory_domains' mangled-name='spdk_accel_get_opc_memory_domains' filepath='accel.c' line='3741' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_get_opc_memory_domains'>
+    <function-decl name='spdk_accel_get_opc_memory_domains' mangled-name='spdk_accel_get_opc_memory_domains' filepath='accel.c' line='3741' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_accel_get_opc_memory_domains' hash='1a93535b7ba71712'>
       <parameter type-id='ad747ae4' name='opcode' filepath='accel.c' line='3741' column='1'/>
       <parameter type-id='1fc0b044' name='domains' filepath='accel.c' line='3742' column='1'/>
       <parameter type-id='95e97e5e' name='array_size' filepath='accel.c' line='3743' column='1'/>
@@ -1284,84 +1387,84 @@
     </function-decl>
     <type-decl name='void' id='48b5725f'/>
     <pointer-type-def type-id='48b5725f' id='eaa32e2f'/>
-    <function-type size-in-bits='64' id='5f1c357a'>
+    <function-type size-in-bits='64' hash='746e9550618a4362' id='e33bdf83'>
       <parameter type-id='682178d1'/>
       <parameter type-id='b59d7dce'/>
       <return type-id='c894953d'/>
     </function-type>
-    <function-type size-in-bits='64' id='209754f8'>
+    <function-type size-in-bits='64' hash='ef9ce7f75bb18872' id='0becd0e7'>
       <parameter type-id='5fe6f5cd'/>
       <return type-id='c894953d'/>
     </function-type>
-    <function-type size-in-bits='64' id='315e4d09'>
+    <function-type size-in-bits='64' hash='ffe89f972185dd6e' id='c459634a'>
       <parameter type-id='404aa5de'/>
       <return type-id='c894953d'/>
     </function-type>
-    <function-type size-in-bits='64' id='9fb0c3cb'>
+    <function-type size-in-bits='64' hash='ef13de4fa97e2052' id='d8797dce'>
       <parameter type-id='ad747ae4'/>
       <return type-id='c894953d'/>
     </function-type>
-    <function-type size-in-bits='64' id='276427e1'>
-      <return type-id='95e97e5e'/>
-    </function-type>
-    <function-type size-in-bits='64' id='4d550827'>
+    <function-type size-in-bits='64' hash='9320e7b4652ab93e' id='a5ef812a'>
       <parameter type-id='5fe6f5cd'/>
       <parameter type-id='90421557'/>
       <parameter type-id='90421557'/>
       <return type-id='95e97e5e'/>
     </function-type>
-    <function-type size-in-bits='64' id='307bcde9'>
+    <function-type size-in-bits='64' hash='1b74f1ad01c5a79c' id='1b090520'>
+      <parameter type-id='043cb572'/>
+      <return type-id='95e97e5e'/>
+    </function-type>
+    <function-type size-in-bits='64' hash='7b7529238ff5c519' id='431fb238'>
       <parameter type-id='ad747ae4'/>
       <parameter type-id='bd1702c3'/>
       <parameter type-id='9bf1cbb2'/>
       <return type-id='95e97e5e'/>
     </function-type>
-    <function-type size-in-bits='64' id='1b090520'>
-      <parameter type-id='043cb572'/>
-      <return type-id='95e97e5e'/>
-    </function-type>
-    <function-type size-in-bits='64' id='b6f0a36d'>
+    <function-type size-in-bits='64' hash='388da3fa973fde78' id='b6f0a36d'>
       <parameter type-id='a7e01876'/>
       <parameter type-id='d4aefa7e'/>
       <return type-id='95e97e5e'/>
     </function-type>
-    <function-type size-in-bits='64' id='2a0300f1'>
+    <function-type size-in-bits='64' hash='9ab902669ed63d11' id='2a0300f1'>
       <parameter type-id='a7e01876'/>
       <parameter type-id='10ebab0a'/>
       <return type-id='95e97e5e'/>
     </function-type>
-    <function-type size-in-bits='64' id='1a309423'>
+    <function-type size-in-bits='64' hash='d628501fd2223339' id='1a309423'>
       <parameter type-id='1fc0b044'/>
       <parameter type-id='95e97e5e'/>
       <return type-id='95e97e5e'/>
     </function-type>
-    <function-type size-in-bits='64' id='e76af571'>
-      <return type-id='a7e01876'/>
+    <function-type size-in-bits='64' hash='388da3fa973fde78' id='b39d85cf'>
+      <return type-id='95e97e5e'/>
     </function-type>
-    <function-type size-in-bits='64' id='ae2eaa42'>
+    <function-type size-in-bits='64' hash='e0055d99adb0e173' id='977df01c'>
       <return type-id='b59d7dce'/>
     </function-type>
-    <function-type size-in-bits='64' id='ee076206'>
-      <return type-id='48b5725f'/>
+    <function-type size-in-bits='64' hash='7f32ffea222edbe7' id='8810097f'>
+      <return type-id='a7e01876'/>
     </function-type>
-    <function-type size-in-bits='64' id='0070a5eb'>
+    <function-type size-in-bits='64' hash='fda467eb1bd50561' id='0070a5eb'>
       <parameter type-id='043cb572'/>
       <return type-id='48b5725f'/>
     </function-type>
-    <function-type size-in-bits='64' id='44410d43'>
+    <function-type size-in-bits='64' hash='7f32ffea222edbe7' id='44410d43'>
       <parameter type-id='d4aefa7e'/>
       <parameter type-id='eaa32e2f'/>
       <return type-id='48b5725f'/>
     </function-type>
-    <function-type size-in-bits='64' id='9ed8cfeb'>
+    <function-type size-in-bits='64' hash='7f32ffea222edbe7' id='9ed8cfeb'>
       <parameter type-id='b8e14bfe'/>
       <return type-id='48b5725f'/>
     </function-type>
-    <function-type size-in-bits='64' id='c5c76c9c'>
+    <function-type size-in-bits='64' hash='7f32ffea222edbe7' id='30a82da4'>
+      <return type-id='48b5725f'/>
+    </function-type>
+    <function-type size-in-bits='64' hash='7f32ffea222edbe7' id='c5c76c9c'>
       <parameter type-id='eaa32e2f'/>
       <return type-id='48b5725f'/>
     </function-type>
-    <function-type size-in-bits='64' id='2922fb19'>
+    <function-type size-in-bits='64' hash='388da3fa973fde78' id='2922fb19'>
       <parameter type-id='eaa32e2f'/>
       <parameter type-id='95e97e5e'/>
       <return type-id='48b5725f'/>

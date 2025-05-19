@@ -1,4 +1,4 @@
-<abi-corpus version='2.2' soname='libspdk_fsdev.so.1.0'>
+<abi-corpus version='2.4' soname='libspdk_fsdev.so.1.0'>
   <elf-needed>
     <dependency name='libspdk_log.so.7.0'/>
     <dependency name='libspdk_thread.so.10.1'/>
@@ -65,14 +65,70 @@
     <elf-symbol name='spdk_fsdev_unregister_by_name' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
     <elf-symbol name='spdk_fsdev_write' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
   </elf-function-symbols>
+  <undefined-elf-function-symbols>
+    <elf-symbol name='__assert_fail' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__cxa_finalize' type='func-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__stack_chk_fail' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='calloc' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='free' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='getpid' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='malloc' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='memcpy' version='GLIBC_2.14' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='snprintf' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_get_io_channel' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_get_thread' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_io_channel_from_ctx' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_io_channel_get_thread' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_io_device_register' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_io_device_unregister' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_decode_object' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_decode_uint32' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_array_begin' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_array_end' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_named_object_begin' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_named_string' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_named_uint32' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_object_begin' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_object_end' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_jsonrpc_begin_result' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_jsonrpc_end_result' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_jsonrpc_send_bool_response' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_jsonrpc_send_error_response' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_jsonrpc_send_error_response_fmt' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_log' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_log_register_flag' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_notify_send' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_notify_type_register' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_put_io_channel' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_rpc_register_method' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_spin_destroy' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_spin_init' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_spin_lock' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_spin_unlock' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_sprintf_alloc' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_thread_get_count' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_thread_send_msg' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='strcmp' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='strdup' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+  </undefined-elf-function-symbols>
+  <undefined-elf-variable-symbols>
+    <elf-symbol name='_ITM_deregisterTMCloneTable' type='no-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='_ITM_registerTMCloneTable' type='no-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__gmon_start__' type='no-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_mempool_count' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_mempool_create' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_mempool_free' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_mempool_get' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_mempool_put' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+  </undefined-elf-variable-symbols>
   <abi-instr address-size='64' path='fsdev.c' language='LANG_C11'>
-    <type-decl name='bool' size-in-bits='8' id='c894953d'/>
-    <type-decl name='char' size-in-bits='8' id='a84c031d'/>
-    <enum-decl name='spdk_fsdev_event_type' filepath='fsdev.h' line='29' column='1' id='2766c765'>
+    <type-decl name='bool' size-in-bits='8' hash='5ba96bb22f4237fb' id='c894953d'/>
+    <type-decl name='char' size-in-bits='8' hash='65b2d157027b431a' id='a84c031d'/>
+    <enum-decl name='spdk_fsdev_event_type' size-in-bits='32' alignment-in-bits='32' filepath='fsdev.h' line='29' column='1' hash='8030ad2c8c8ea953' id='2766c765'>
       <underlying-type type-id='9cac1fee'/>
       <enumerator name='SPDK_FSDEV_EVENT_REMOVE' value='0'/>
     </enum-decl>
-    <enum-decl name='spdk_fsdev_io_type' filepath='fsdev_module.h' line='190' column='1' id='12c1ab69'>
+    <enum-decl name='spdk_fsdev_io_type' size-in-bits='32' alignment-in-bits='32' filepath='fsdev_module.h' line='190' column='1' hash='bfa66484b9064aa6' id='12c1ab69'>
       <underlying-type type-id='9cac1fee'/>
       <enumerator name='SPDK_FSDEV_IO_LOOKUP' value='0'/>
       <enumerator name='SPDK_FSDEV_IO_FORGET' value='1'/>
@@ -108,16 +164,16 @@
       <enumerator name='SPDK_FSDEV_IO_COPY_FILE_RANGE' value='31'/>
       <enumerator name='__SPDK_FSDEV_IO_LAST' value='32'/>
     </enum-decl>
-    <enum-decl name='spdk_fsdev_status' filepath='fsdev.h' line='48' column='1' id='476c061a'>
+    <enum-decl name='spdk_fsdev_status' size-in-bits='32' alignment-in-bits='32' filepath='fsdev.h' line='48' column='1' hash='38693222b554693a' id='476c061a'>
       <underlying-type type-id='9cac1fee'/>
       <enumerator name='SPDK_FSDEV_STATUS_INVALID' value='0'/>
       <enumerator name='SPDK_FSDEV_STATUS_READY' value='1'/>
       <enumerator name='SPDK_FSDEV_STATUS_UNREGISTERING' value='2'/>
       <enumerator name='SPDK_FSDEV_STATUS_REMOVING' value='3'/>
     </enum-decl>
-    <type-decl name='int' size-in-bits='32' id='95e97e5e'/>
-    <type-decl name='long int' size-in-bits='64' id='95e97e5f'/>
-    <class-decl name='__fsdev_internal_fields' size-in-bits='1024' is-struct='yes' visibility='default' filepath='fsdev_module.h' line='167' column='1' id='d5f22443'>
+    <type-decl name='int' size-in-bits='32' hash='09d17c08f594edc7' id='95e97e5e'/>
+    <type-decl name='long int' size-in-bits='64' hash='b119fe0931d2ee10#2' id='95e97e5f'/>
+    <class-decl name='__fsdev_internal_fields' is-struct='yes' visibility='default' size-in-bits='1024' filepath='fsdev_module.h' line='167' column='1' hash='0a375e0ea783902d' id='d5f22443'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='spinlock' type-id='d02a8f9f' visibility='default' filepath='fsdev_module.h' line='169' column='1'/>
       </data-member>
@@ -140,7 +196,7 @@
         <var-decl name='fsdev_name' type-id='60db09f4' visibility='default' filepath='fsdev_module.h' line='186' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__fsdev_io_internal_fields' size-in-bits='896' is-struct='yes' visibility='default' filepath='fsdev_module.h' line='490' column='1' id='2eacca64'>
+    <class-decl name='__fsdev_io_internal_fields' is-struct='yes' visibility='default' size-in-bits='896' filepath='fsdev_module.h' line='490' column='1' hash='58956d7adad014cf' id='2eacca64'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='ch' type-id='7f460d6c' visibility='default' filepath='fsdev_module.h' line='492' column='1'/>
       </data-member>
@@ -181,12 +237,12 @@
         <var-decl name='ch_link' type-id='e7f43f74' visibility='default' filepath='fsdev_module.h' line='533' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__fsdev_module_internal_fields' size-in-bits='128' is-struct='yes' visibility='default' filepath='fsdev_module.h' line='73' column='1' id='8ad91680'>
+    <class-decl name='__fsdev_module_internal_fields' is-struct='yes' visibility='default' size-in-bits='128' filepath='fsdev_module.h' line='73' column='1' hash='607509161f1430fd' id='8ad91680'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='tailq' type-id='e7f43f76' visibility='default' filepath='fsdev_module.h' line='74' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='iovec' size-in-bits='128' is-struct='yes' visibility='default' filepath='struct_iovec.h' line='26' column='1' id='0f042891'>
+    <class-decl name='iovec' is-struct='yes' visibility='default' size-in-bits='128' filepath='struct_iovec.h' line='26' column='1' hash='1e0571bd6dce7043' id='0f042891'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='iov_base' type-id='eaa32e2f' visibility='default' filepath='struct_iovec.h' line='28' column='1'/>
       </data-member>
@@ -194,7 +250,7 @@
         <var-decl name='iov_len' type-id='b59d7dce' visibility='default' filepath='struct_iovec.h' line='29' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_fsdev' size-in-bits='1408' is-struct='yes' visibility='default' filepath='fsdev_module.h' line='146' column='1' id='08bb5c12'>
+    <class-decl name='spdk_fsdev' is-struct='yes' visibility='default' size-in-bits='1408' filepath='fsdev_module.h' line='146' column='1' hash='81a69da3deda1627' id='08bb5c12'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='ctxt' type-id='eaa32e2f' visibility='default' filepath='fsdev_module.h' line='148' column='1'/>
       </data-member>
@@ -214,7 +270,7 @@
         <var-decl name='internal' type-id='d5f22443' visibility='default' filepath='fsdev_module.h' line='187' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_fsdev_file_attr' size-in-bits='704' is-struct='yes' visibility='default' filepath='fsdev.h' line='279' column='1' id='b3665c31'>
+    <class-decl name='spdk_fsdev_file_attr' is-struct='yes' visibility='default' size-in-bits='704' filepath='fsdev.h' line='279' column='1' hash='64f61c34c8441147' id='b3665c31'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='ino' type-id='9c313c2d' visibility='default' filepath='fsdev.h' line='280' column='1'/>
       </data-member>
@@ -264,7 +320,7 @@
         <var-decl name='valid_ms' type-id='8f92235e' visibility='default' filepath='fsdev.h' line='295' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_fsdev_file_statfs' size-in-bits='448' is-struct='yes' visibility='default' filepath='fsdev.h' line='298' column='1' id='e618950b'>
+    <class-decl name='spdk_fsdev_file_statfs' is-struct='yes' visibility='default' size-in-bits='448' filepath='fsdev.h' line='298' column='1' hash='ede24a0ee80eee8d' id='e618950b'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='blocks' type-id='9c313c2d' visibility='default' filepath='fsdev.h' line='299' column='1'/>
       </data-member>
@@ -290,27 +346,27 @@
         <var-decl name='frsize' type-id='8f92235e' visibility='default' filepath='fsdev.h' line='306' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_fsdev_fn_table' size-in-bits='384' is-struct='yes' visibility='default' filepath='fsdev_module.h' line='86' column='1' id='e473dbdc'>
+    <class-decl name='spdk_fsdev_fn_table' is-struct='yes' visibility='default' size-in-bits='384' filepath='fsdev_module.h' line='86' column='1' hash='d09203170d5552b5' id='e473dbdc'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='destruct' type-id='b9b212f5' visibility='default' filepath='fsdev_module.h' line='88' column='1'/>
+        <var-decl name='destruct' type-id='c04372aa' visibility='default' filepath='fsdev_module.h' line='88' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='submit_request' type-id='76b7e369' visibility='default' filepath='fsdev_module.h' line='91' column='1'/>
+        <var-decl name='submit_request' type-id='e20349de' visibility='default' filepath='fsdev_module.h' line='91' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='get_io_channel' type-id='ddc2673d' visibility='default' filepath='fsdev_module.h' line='94' column='1'/>
+        <var-decl name='get_io_channel' type-id='0bad6792' visibility='default' filepath='fsdev_module.h' line='94' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='negotiate_opts' type-id='55f9fe32' visibility='default' filepath='fsdev_module.h' line='104' column='1'/>
+        <var-decl name='negotiate_opts' type-id='19e810c5' visibility='default' filepath='fsdev_module.h' line='104' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='write_config_json' type-id='518fd49e' visibility='default' filepath='fsdev_module.h' line='113' column='1'/>
+        <var-decl name='write_config_json' type-id='9c3e4c91' visibility='default' filepath='fsdev_module.h' line='113' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='320'>
-        <var-decl name='get_memory_domains' type-id='19c4f5a3' visibility='default' filepath='fsdev_module.h' line='119' column='1'/>
+        <var-decl name='get_memory_domains' type-id='d3d1557a' visibility='default' filepath='fsdev_module.h' line='119' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_fsdev_io' size-in-bits='2944' is-struct='yes' visibility='default' filepath='fsdev_module.h' line='226' column='1' id='88fbe88f'>
+    <class-decl name='spdk_fsdev_io' is-struct='yes' visibility='default' size-in-bits='2944' filepath='fsdev_module.h' line='226' column='1' hash='85301425709b6d33' id='88fbe88f'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='fsdev' type-id='e93d8a00' visibility='default' filepath='fsdev_module.h' line='228' column='1'/>
       </data-member>
@@ -333,7 +389,7 @@
         <var-decl name='driver_ctx' type-id='048fe7bc' visibility='default' filepath='fsdev_module.h' line='539' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_fsdev_io_opts' size-in-bits='192' is-struct='yes' visibility='default' filepath='fsdev.h' line='108' column='1' id='22c5338e'>
+    <class-decl name='spdk_fsdev_io_opts' is-struct='yes' visibility='default' size-in-bits='192' filepath='fsdev.h' line='108' column='1' hash='02c75aaa1f4d8260' id='22c5338e'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='size' type-id='b59d7dce' visibility='default' filepath='fsdev.h' line='110' column='1'/>
       </data-member>
@@ -344,27 +400,27 @@
         <var-decl name='memory_domain_ctx' type-id='eaa32e2f' visibility='default' filepath='fsdev.h' line='118' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_fsdev_module' size-in-bits='448' is-struct='yes' visibility='default' filepath='fsdev_module.h' line='27' column='1' id='3ac83ed3'>
+    <class-decl name='spdk_fsdev_module' is-struct='yes' visibility='default' size-in-bits='448' filepath='fsdev_module.h' line='27' column='1' hash='ecaf2fc436e758aa' id='3ac83ed3'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='module_init' type-id='1db260e5' visibility='default' filepath='fsdev_module.h' line='34' column='1'/>
+        <var-decl name='module_init' type-id='65e3965a' visibility='default' filepath='fsdev_module.h' line='34' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='module_fini' type-id='953b12f8' visibility='default' filepath='fsdev_module.h' line='43' column='1'/>
+        <var-decl name='module_fini' type-id='c640490b' visibility='default' filepath='fsdev_module.h' line='43' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='config_json' type-id='eb9d423e' visibility='default' filepath='fsdev_module.h' line='58' column='1'/>
+        <var-decl name='config_json' type-id='494cdc6d' visibility='default' filepath='fsdev_module.h' line='58' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
         <var-decl name='name' type-id='80f4b756' visibility='default' filepath='fsdev_module.h' line='61' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='get_ctx_size' type-id='1db260e5' visibility='default' filepath='fsdev_module.h' line='67' column='1'/>
+        <var-decl name='get_ctx_size' type-id='65e3965a' visibility='default' filepath='fsdev_module.h' line='67' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='320'>
         <var-decl name='internal' type-id='8ad91680' visibility='default' filepath='fsdev_module.h' line='75' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_fsdev_name' size-in-bits='320' is-struct='yes' visibility='default' filepath='fsdev_module.h' line='130' column='1' id='60db09f4'>
+    <class-decl name='spdk_fsdev_name' is-struct='yes' visibility='default' size-in-bits='320' filepath='fsdev_module.h' line='130' column='1' hash='34c44ba8623aea58' id='60db09f4'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='name' type-id='26a90f95' visibility='default' filepath='fsdev_module.h' line='131' column='1'/>
       </data-member>
@@ -375,7 +431,7 @@
         <var-decl name='node' type-id='e7f43f77' visibility='default' filepath='fsdev_module.h' line='133' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_fsdev_open_opts' size-in-bits='72' is-struct='yes' visibility='default' filepath='fsdev.h' line='76' column='1' id='f97d08fa'>
+    <class-decl name='spdk_fsdev_open_opts' is-struct='yes' visibility='default' size-in-bits='72' filepath='fsdev.h' line='76' column='1' hash='69226e0074bd024f' id='f97d08fa'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='opts_size' type-id='8f92235e' visibility='default' filepath='fsdev.h' line='83' column='1'/>
       </data-member>
@@ -386,7 +442,7 @@
         <var-decl name='writeback_cache_enabled' type-id='b96825af' visibility='default' filepath='fsdev.h' line='99' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_fsdev_opts' size-in-bits='96' is-struct='yes' visibility='default' filepath='fsdev.h' line='56' column='1' id='c6726725'>
+    <class-decl name='spdk_fsdev_opts' is-struct='yes' visibility='default' size-in-bits='96' filepath='fsdev.h' line='56' column='1' hash='7cbaca78b4e34521' id='c6726725'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='opts_size' type-id='8f92235e' visibility='default' filepath='fsdev.h' line='63' column='1'/>
       </data-member>
@@ -397,7 +453,7 @@
         <var-decl name='fsdev_io_cache_size' type-id='8f92235e' visibility='default' filepath='fsdev.h' line='71' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_spinlock' size-in-bits='256' is-struct='yes' visibility='default' filepath='thread.h' line='981' column='1' id='d02a8f9f'>
+    <class-decl name='spdk_spinlock' is-struct='yes' visibility='default' size-in-bits='256' filepath='thread.h' line='981' column='1' hash='f3654a830a369375' id='d02a8f9f'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='spinlock' type-id='6d44fa69' visibility='default' filepath='thread.h' line='982' column='1'/>
       </data-member>
@@ -414,12 +470,12 @@
         <var-decl name='destroyed' type-id='c894953d' visibility='default' filepath='thread.h' line='986' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__36' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='429' column='1' id='e7f43f78'>
+    <class-decl name='__anonymous_struct__36' is-struct='yes' visibility='default' size-in-bits='64' is-anonymous='yes' filepath='fsdev_module.h' line='429' column='1' hash='d21a95cb58c7d517' id='e7f43f78'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='linkname' type-id='26a90f95' visibility='default' filepath='fsdev_module.h' line='430' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__48' size-in-bits='896' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='470' column='1' id='e7f43f79'>
+    <class-decl name='__anonymous_struct__48' is-struct='yes' visibility='default' size-in-bits='896' is-anonymous='yes' filepath='fsdev_module.h' line='470' column='1' hash='9c065c73d5c49893#2' id='e7f43f79'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='name' type-id='80f4b756' visibility='default' filepath='fsdev_module.h' line='471' column='1'/>
       </data-member>
@@ -433,7 +489,7 @@
         <var-decl name='offset' type-id='ad707ada' visibility='default' filepath='fsdev_module.h' line='474' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__46' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='463' column='1' id='e7f43f7a'>
+    <class-decl name='__anonymous_struct__46' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='fsdev_module.h' line='463' column='1' hash='7ee8c329a3eee467#3' id='e7f43f7a'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='data_size' type-id='b59d7dce' visibility='default' filepath='fsdev_module.h' line='464' column='1'/>
       </data-member>
@@ -441,17 +497,17 @@
         <var-decl name='size_only' type-id='c894953d' visibility='default' filepath='fsdev_module.h' line='465' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__50' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='481' column='1' id='e7f43f7b'>
+    <class-decl name='__anonymous_struct__50' is-struct='yes' visibility='default' size-in-bits='64' is-anonymous='yes' filepath='fsdev_module.h' line='481' column='1' hash='575b61355262cab1#4' id='e7f43f7b'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='data_size' type-id='b59d7dce' visibility='default' filepath='fsdev_module.h' line='482' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__45' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='460' column='1' id='e7f43f7c'>
+    <class-decl name='__anonymous_struct__45' is-struct='yes' visibility='default' size-in-bits='64' is-anonymous='yes' filepath='fsdev_module.h' line='460' column='1' hash='87c8cd66d57f1245#5' id='e7f43f7c'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='value_size' type-id='b59d7dce' visibility='default' filepath='fsdev_module.h' line='461' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__55' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='183' column='1' id='e7f43f73'>
+    <class-decl name='__anonymous_struct__55' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='fsdev_module.h' line='183' column='1' hash='1e97cd0e71c9b3a0#6' id='e7f43f73'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='tqe_next' type-id='e93d8a00' visibility='default' filepath='fsdev_module.h' line='183' column='1'/>
       </data-member>
@@ -459,7 +515,7 @@
         <var-decl name='tqe_prev' type-id='55e0801e' visibility='default' filepath='fsdev_module.h' line='183' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__54' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='181' column='1' id='e7f43f72'>
+    <class-decl name='__anonymous_struct__54' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='fsdev_module.h' line='181' column='1' hash='88a04d14b93cac82#7' id='e7f43f72'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='tqh_first' type-id='f0f65670' visibility='default' filepath='fsdev_module.h' line='181' column='1'/>
       </data-member>
@@ -467,17 +523,17 @@
         <var-decl name='tqh_last' type-id='adc9efae' visibility='default' filepath='fsdev_module.h' line='181' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__34' size-in-bits='704' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='423' column='1' id='e7f43f7d'>
+    <class-decl name='__anonymous_struct__34' is-struct='yes' visibility='default' size-in-bits='704' is-anonymous='yes' filepath='fsdev_module.h' line='423' column='1' hash='a6c8a12d813b012b#8' id='e7f43f7d'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='attr' type-id='b3665c31' visibility='default' filepath='fsdev_module.h' line='424' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__41' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='448' column='1' id='e7f43f7e'>
+    <class-decl name='__anonymous_struct__41' is-struct='yes' visibility='default' size-in-bits='64' is-anonymous='yes' filepath='fsdev_module.h' line='448' column='1' hash='d0d6943c1e5c32cf#9' id='e7f43f7e'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='fhandle' type-id='b008536a' visibility='default' filepath='fsdev_module.h' line='449' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__21' size-in-bits='192' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='349' column='1' id='e7f43f7f'>
+    <class-decl name='__anonymous_struct__21' is-struct='yes' visibility='default' size-in-bits='192' is-anonymous='yes' filepath='fsdev_module.h' line='349' column='1' hash='0bd8e89bb62ee325#10' id='e7f43f7f'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='fobject' type-id='6e396921' visibility='default' filepath='fsdev_module.h' line='350' column='1'/>
       </data-member>
@@ -488,7 +544,7 @@
         <var-decl name='size' type-id='b59d7dce' visibility='default' filepath='fsdev_module.h' line='352' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__19' size-in-bits='320' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='336' column='1' id='e7f43f80'>
+    <class-decl name='__anonymous_struct__19' is-struct='yes' visibility='default' size-in-bits='320' is-anonymous='yes' filepath='fsdev_module.h' line='336' column='1' hash='3535d2f96cf925ae#11' id='e7f43f80'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='fobject' type-id='6e396921' visibility='default' filepath='fsdev_module.h' line='337' column='1'/>
       </data-member>
@@ -505,7 +561,7 @@
         <var-decl name='flags' type-id='8f92235e' visibility='default' filepath='fsdev_module.h' line='341' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__20' size-in-bits='256' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='343' column='1' id='e7f43f81'>
+    <class-decl name='__anonymous_struct__20' is-struct='yes' visibility='default' size-in-bits='256' is-anonymous='yes' filepath='fsdev_module.h' line='343' column='1' hash='8745c467b961d17b#12' id='e7f43f81'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='fobject' type-id='6e396921' visibility='default' filepath='fsdev_module.h' line='344' column='1'/>
       </data-member>
@@ -519,7 +575,7 @@
         <var-decl name='size' type-id='b59d7dce' visibility='default' filepath='fsdev_module.h' line='347' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__22' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='354' column='1' id='e7f43f82'>
+    <class-decl name='__anonymous_struct__22' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='fsdev_module.h' line='354' column='1' hash='897513bc8503a2cc#13' id='e7f43f82'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='fobject' type-id='6e396921' visibility='default' filepath='fsdev_module.h' line='355' column='1'/>
       </data-member>
@@ -527,7 +583,7 @@
         <var-decl name='name' type-id='26a90f95' visibility='default' filepath='fsdev_module.h' line='356' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__33' size-in-bits='768' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='419' column='1' id='e7f43f83'>
+    <class-decl name='__anonymous_struct__33' is-struct='yes' visibility='default' size-in-bits='768' is-anonymous='yes' filepath='fsdev_module.h' line='419' column='1' hash='46ba558985d03283#14' id='e7f43f83'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='fobject' type-id='6e396921' visibility='default' filepath='fsdev_module.h' line='420' column='1'/>
       </data-member>
@@ -535,7 +591,7 @@
         <var-decl name='attr' type-id='b3665c31' visibility='default' filepath='fsdev_module.h' line='421' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__18' size-in-bits='192' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='331' column='1' id='e7f43f84'>
+    <class-decl name='__anonymous_struct__18' is-struct='yes' visibility='default' size-in-bits='192' is-anonymous='yes' filepath='fsdev_module.h' line='331' column='1' hash='9e46a4da0e7cfaa5#15' id='e7f43f84'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='fobject' type-id='6e396921' visibility='default' filepath='fsdev_module.h' line='332' column='1'/>
       </data-member>
@@ -546,7 +602,7 @@
         <var-decl name='datasync' type-id='c894953d' visibility='default' filepath='fsdev_module.h' line='334' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__31' size-in-bits='320' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='399' column='1' id='e7f43f85'>
+    <class-decl name='__anonymous_struct__31' is-struct='yes' visibility='default' size-in-bits='320' is-anonymous='yes' filepath='fsdev_module.h' line='399' column='1' hash='02d7cee82ae07440#16' id='e7f43f85'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='fobject' type-id='6e396921' visibility='default' filepath='fsdev_module.h' line='400' column='1'/>
       </data-member>
@@ -563,7 +619,7 @@
         <var-decl name='length' type-id='ad707ada' visibility='default' filepath='fsdev_module.h' line='404' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__28' size-in-bits='192' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='382' column='1' id='e7f43f86'>
+    <class-decl name='__anonymous_struct__28' is-struct='yes' visibility='default' size-in-bits='192' is-anonymous='yes' filepath='fsdev_module.h' line='382' column='1' hash='7c386c33c3cf0ac9#17' id='e7f43f86'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='fobject' type-id='6e396921' visibility='default' filepath='fsdev_module.h' line='383' column='1'/>
       </data-member>
@@ -574,7 +630,7 @@
         <var-decl name='operation' type-id='95e97e5e' visibility='default' filepath='fsdev_module.h' line='385' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__14' size-in-bits='512' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='304' column='1' id='e7f43f87'>
+    <class-decl name='__anonymous_struct__14' is-struct='yes' visibility='default' size-in-bits='512' is-anonymous='yes' filepath='fsdev_module.h' line='304' column='1' hash='6b448ae38b77fc1d#18' id='e7f43f87'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='fobject' type-id='6e396921' visibility='default' filepath='fsdev_module.h' line='305' column='1'/>
       </data-member>
@@ -600,7 +656,7 @@
         <var-decl name='opts' type-id='d69566d4' visibility='default' filepath='fsdev_module.h' line='312' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__15' size-in-bits='512' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='314' column='1' id='e7f43f88'>
+    <class-decl name='__anonymous_struct__15' is-struct='yes' visibility='default' size-in-bits='512' is-anonymous='yes' filepath='fsdev_module.h' line='314' column='1' hash='1a19f41f2dc546ab#19' id='e7f43f88'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='fobject' type-id='6e396921' visibility='default' filepath='fsdev_module.h' line='315' column='1'/>
       </data-member>
@@ -626,7 +682,7 @@
         <var-decl name='opts' type-id='d69566d4' visibility='default' filepath='fsdev_module.h' line='322' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__4' size-in-bits='896' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='249' column='1' id='e7f43f89'>
+    <class-decl name='__anonymous_struct__4' is-struct='yes' visibility='default' size-in-bits='896' is-anonymous='yes' filepath='fsdev_module.h' line='249' column='1' hash='969d94de84d58e66#20' id='e7f43f89'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='fobject' type-id='6e396921' visibility='default' filepath='fsdev_module.h' line='250' column='1'/>
       </data-member>
@@ -640,7 +696,7 @@
         <var-decl name='to_set' type-id='8f92235e' visibility='default' filepath='fsdev_module.h' line='253' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__49' size-in-bits='832' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='476' column='1' id='e7f43f8a'>
+    <class-decl name='__anonymous_struct__49' is-struct='yes' visibility='default' size-in-bits='832' is-anonymous='yes' filepath='fsdev_module.h' line='476' column='1' hash='78c76d858d0b9cff#21' id='e7f43f8a'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='fobject' type-id='6e396921' visibility='default' filepath='fsdev_module.h' line='477' column='1'/>
       </data-member>
@@ -651,7 +707,7 @@
         <var-decl name='attr' type-id='b3665c31' visibility='default' filepath='fsdev_module.h' line='479' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__25' size-in-bits='320' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='366' column='1' id='e7f43f8b'>
+    <class-decl name='__anonymous_struct__25' is-struct='yes' visibility='default' size-in-bits='320' is-anonymous='yes' filepath='fsdev_module.h' line='366' column='1' hash='01b1dc458805567a#22' id='e7f43f8b'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='fobject' type-id='6e396921' visibility='default' filepath='fsdev_module.h' line='367' column='1'/>
       </data-member>
@@ -662,13 +718,13 @@
         <var-decl name='offset' type-id='9c313c2d' visibility='default' filepath='fsdev_module.h' line='369' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='entry_cb_fn' type-id='1cc9a68b' visibility='default' filepath='fsdev_module.h' line='370' column='1'/>
+        <var-decl name='entry_cb_fn' type-id='f2f8cb0c' visibility='default' filepath='fsdev_module.h' line='370' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='256'>
         <var-decl name='usr_entry_cb_fn' type-id='18bd2393' visibility='default' filepath='fsdev_module.h' line='371' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__3' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='245' column='1' id='e7f43f8c'>
+    <class-decl name='__anonymous_struct__3' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='fsdev_module.h' line='245' column='1' hash='adf5e742aaa3c246#23' id='e7f43f8c'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='fobject' type-id='6e396921' visibility='default' filepath='fsdev_module.h' line='246' column='1'/>
       </data-member>
@@ -676,7 +732,7 @@
         <var-decl name='fhandle' type-id='b008536a' visibility='default' filepath='fsdev_module.h' line='247' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__12' size-in-bits='192' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='295' column='1' id='e7f43f8d'>
+    <class-decl name='__anonymous_struct__12' is-struct='yes' visibility='default' size-in-bits='192' is-anonymous='yes' filepath='fsdev_module.h' line='295' column='1' hash='905069e088daa11a#24' id='e7f43f8d'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='fobject' type-id='6e396921' visibility='default' filepath='fsdev_module.h' line='296' column='1'/>
       </data-member>
@@ -687,7 +743,7 @@
         <var-decl name='name' type-id='26a90f95' visibility='default' filepath='fsdev_module.h' line='298' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__13' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='300' column='1' id='e7f43f8e'>
+    <class-decl name='__anonymous_struct__13' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='fsdev_module.h' line='300' column='1' hash='3583d9a5b230d839#25' id='e7f43f8e'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='fobject' type-id='6e396921' visibility='default' filepath='fsdev_module.h' line='301' column='1'/>
       </data-member>
@@ -695,7 +751,7 @@
         <var-decl name='flags' type-id='8f92235e' visibility='default' filepath='fsdev_module.h' line='302' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__2' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='241' column='1' id='e7f43f8f'>
+    <class-decl name='__anonymous_struct__2' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='fsdev_module.h' line='241' column='1' hash='98ee89272853ef3d#26' id='e7f43f8f'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='fobject' type-id='6e396921' visibility='default' filepath='fsdev_module.h' line='242' column='1'/>
       </data-member>
@@ -703,12 +759,12 @@
         <var-decl name='nlookup' type-id='9c313c2d' visibility='default' filepath='fsdev_module.h' line='243' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__5' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='255' column='1' id='e7f43f90'>
+    <class-decl name='__anonymous_struct__5' is-struct='yes' visibility='default' size-in-bits='64' is-anonymous='yes' filepath='fsdev_module.h' line='255' column='1' hash='d424fd21bbc46ba8#27' id='e7f43f90'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='fobject' type-id='6e396921' visibility='default' filepath='fsdev_module.h' line='256' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__32' size-in-bits='512' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='406' column='1' id='e7f43f91'>
+    <class-decl name='__anonymous_struct__32' is-struct='yes' visibility='default' size-in-bits='512' is-anonymous='yes' filepath='fsdev_module.h' line='406' column='1' hash='e707d6d8e5005f1a#28' id='e7f43f91'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='fobject_in' type-id='6e396921' visibility='default' filepath='fsdev_module.h' line='407' column='1'/>
       </data-member>
@@ -734,7 +790,7 @@
         <var-decl name='flags' type-id='8f92235e' visibility='default' filepath='fsdev_module.h' line='414' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__7' size-in-bits='320' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='265' column='1' id='e7f43f92'>
+    <class-decl name='__anonymous_struct__7' is-struct='yes' visibility='default' size-in-bits='320' is-anonymous='yes' filepath='fsdev_module.h' line='265' column='1' hash='01b866ca1a9b0f97#29' id='e7f43f92'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='parent_fobject' type-id='6e396921' visibility='default' filepath='fsdev_module.h' line='266' column='1'/>
       </data-member>
@@ -754,7 +810,7 @@
         <var-decl name='egid' type-id='2bb2b96f' visibility='default' filepath='fsdev_module.h' line='271' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__8' size-in-bits='256' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='273' column='1' id='e7f43f93'>
+    <class-decl name='__anonymous_struct__8' is-struct='yes' visibility='default' size-in-bits='256' is-anonymous='yes' filepath='fsdev_module.h' line='273' column='1' hash='75dacd39086e9be0#30' id='e7f43f93'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='parent_fobject' type-id='6e396921' visibility='default' filepath='fsdev_module.h' line='274' column='1'/>
       </data-member>
@@ -771,7 +827,7 @@
         <var-decl name='egid' type-id='2bb2b96f' visibility='default' filepath='fsdev_module.h' line='278' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__29' size-in-bits='320' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='387' column='1' id='e7f43f94'>
+    <class-decl name='__anonymous_struct__29' is-struct='yes' visibility='default' size-in-bits='320' is-anonymous='yes' filepath='fsdev_module.h' line='387' column='1' hash='76b9d4e15bb58cda#31' id='e7f43f94'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='parent_fobject' type-id='6e396921' visibility='default' filepath='fsdev_module.h' line='388' column='1'/>
       </data-member>
@@ -794,7 +850,7 @@
         <var-decl name='egid' type-id='2bb2b96f' visibility='default' filepath='fsdev_module.h' line='394' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__11' size-in-bits='320' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='288' column='1' id='e7f43f95'>
+    <class-decl name='__anonymous_struct__11' is-struct='yes' visibility='default' size-in-bits='320' is-anonymous='yes' filepath='fsdev_module.h' line='288' column='1' hash='a40e0f980bb8e925#32' id='e7f43f95'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='parent_fobject' type-id='6e396921' visibility='default' filepath='fsdev_module.h' line='289' column='1'/>
       </data-member>
@@ -811,7 +867,7 @@
         <var-decl name='flags' type-id='8f92235e' visibility='default' filepath='fsdev_module.h' line='293' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__1' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='237' column='1' id='e7f43f96'>
+    <class-decl name='__anonymous_struct__1' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='fsdev_module.h' line='237' column='1' hash='5b759befb2af85ca#33' id='e7f43f96'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='parent_fobject' type-id='6e396921' visibility='default' filepath='fsdev_module.h' line='238' column='1'/>
       </data-member>
@@ -819,7 +875,7 @@
         <var-decl name='name' type-id='26a90f95' visibility='default' filepath='fsdev_module.h' line='239' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__6' size-in-bits='256' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='258' column='1' id='e7f43f97'>
+    <class-decl name='__anonymous_struct__6' is-struct='yes' visibility='default' size-in-bits='256' is-anonymous='yes' filepath='fsdev_module.h' line='258' column='1' hash='01163366e7e6dee1#34' id='e7f43f97'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='parent_fobject' type-id='6e396921' visibility='default' filepath='fsdev_module.h' line='259' column='1'/>
       </data-member>
@@ -836,17 +892,17 @@
         <var-decl name='egid' type-id='2bb2b96f' visibility='default' filepath='fsdev_module.h' line='263' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__44' size-in-bits='448' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='457' column='1' id='e7f43f98'>
+    <class-decl name='__anonymous_struct__44' is-struct='yes' visibility='default' size-in-bits='448' is-anonymous='yes' filepath='fsdev_module.h' line='457' column='1' hash='86060ec7b0c66183#35' id='e7f43f98'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='statfs' type-id='e618950b' visibility='default' filepath='fsdev_module.h' line='458' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__52' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='530' column='1' id='e7f43f75'>
+    <class-decl name='__anonymous_struct__52' is-struct='yes' visibility='default' size-in-bits='64' is-anonymous='yes' filepath='fsdev_module.h' line='530' column='1' hash='9df4de927d6620ba#36' id='e7f43f75'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='stqe_next' type-id='ebe2c337' visibility='default' filepath='fsdev_module.h' line='530' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__51' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='527' column='1' id='e7f43f74'>
+    <class-decl name='__anonymous_struct__51' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='fsdev_module.h' line='527' column='1' hash='5ad899fad66ed6af#37' id='e7f43f74'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='tqe_next' type-id='ebe2c337' visibility='default' filepath='fsdev_module.h' line='527' column='1'/>
       </data-member>
@@ -854,7 +910,7 @@
         <var-decl name='tqe_prev' type-id='72f926a7' visibility='default' filepath='fsdev_module.h' line='527' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__' size-in-bits='128' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='74' column='1' id='e7f43f76'>
+    <class-decl name='__anonymous_struct__' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='fsdev_module.h' line='74' column='1' hash='f98b9a69e378efc5#38' id='e7f43f76'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='tqe_next' type-id='aad364e3' visibility='default' filepath='fsdev_module.h' line='74' column='1'/>
       </data-member>
@@ -862,7 +918,7 @@
         <var-decl name='tqe_prev' type-id='b3c7a86b' visibility='default' filepath='fsdev_module.h' line='74' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__56' size-in-bits='192' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='133' column='1' id='e7f43f77'>
+    <class-decl name='__anonymous_struct__56' is-struct='yes' visibility='default' size-in-bits='192' is-anonymous='yes' filepath='fsdev_module.h' line='133' column='1' hash='48585c50383a255a#39' id='e7f43f77'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='rbe_left' type-id='598f2d72' visibility='default' filepath='fsdev_module.h' line='133' column='1'/>
       </data-member>
@@ -873,44 +929,44 @@
         <var-decl name='rbe_parent' type-id='598f2d72' visibility='default' filepath='fsdev_module.h' line='133' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__42' size-in-bits='32' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='451' column='1' id='e7f43f99'>
+    <class-decl name='__anonymous_struct__42' is-struct='yes' visibility='default' size-in-bits='32' is-anonymous='yes' filepath='fsdev_module.h' line='451' column='1' hash='f53a816ba377db45#40' id='e7f43f99'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='data_size' type-id='8f92235e' visibility='default' filepath='fsdev_module.h' line='452' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__30' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='396' column='1' id='e7f43f9a'>
+    <class-decl name='__anonymous_struct__30' is-struct='yes' visibility='default' size-in-bits='64' is-anonymous='yes' filepath='fsdev_module.h' line='396' column='1' hash='b4bb4575515a8761#41' id='e7f43f9a'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='unique_to_abort' type-id='9c313c2d' visibility='default' filepath='fsdev_module.h' line='397' column='1'/>
       </data-member>
     </class-decl>
-    <typedef-decl name='__dev_t' type-id='f0981eeb' filepath='types.h' line='145' column='1' id='35ed8932'/>
-    <typedef-decl name='__gid_t' type-id='f0981eec' filepath='types.h' line='147' column='1' id='d94ec6d9'/>
-    <typedef-decl name='__mode_t' type-id='f0981eec' filepath='types.h' line='150' column='1' id='e1c52942'/>
-    <typedef-decl name='__off_t' type-id='95e97e5f' filepath='types.h' line='152' column='1' id='79989e9c'/>
-    <typedef-decl name='__uid_t' type-id='f0981eec' filepath='types.h' line='146' column='1' id='cc5fcceb'/>
-    <typedef-decl name='__uint32_t' type-id='f0981eec' filepath='types.h' line='42' column='1' id='62f1140c'/>
-    <typedef-decl name='__uint64_t' type-id='f0981eeb' filepath='types.h' line='45' column='1' id='8910171f'/>
-    <typedef-decl name='__uint8_t' type-id='002ac4a6' filepath='types.h' line='38' column='1' id='c51d6389'/>
-    <typedef-decl name='dev_t' type-id='35ed8932' filepath='types.h' line='59' column='1' id='8504f260'/>
-    <typedef-decl name='gid_t' type-id='d94ec6d9' filepath='types.h' line='64' column='1' id='2bb2b96f'/>
-    <typedef-decl name='mode_t' type-id='e1c52942' filepath='types.h' line='69' column='1' id='d50d396c'/>
-    <typedef-decl name='off_t' type-id='79989e9c' filepath='stdio.h' line='63' column='1' id='ad707ada'/>
-    <typedef-decl name='pthread_spinlock_t' type-id='e024ff18' filepath='pthreadtypes.h' line='103' column='1' id='6d44fa69'/>
-    <typedef-decl name='size_t' type-id='f0981eeb' filepath='stddef.h' line='214' column='1' id='b59d7dce'/>
-    <typedef-decl name='spdk_fsdev_event_cb_t' type-id='51592245' filepath='fsdev.h' line='40' column='1' id='f5bf2e9f'/>
-    <typedef-decl name='spdk_fsdev_fini_cb' type-id='b7f9d8e6' filepath='fsdev.h' line='140' column='1' id='c17a5d68'/>
-    <typedef-decl name='spdk_fsdev_init_cb' type-id='1ed1e4cd' filepath='fsdev.h' line='133' column='1' id='94168d2e'/>
-    <typedef-decl name='spdk_fsdev_io_completion_cb' type-id='8a2af2bc' filepath='fsdev_module.h' line='128' column='1' id='e975e7e9'/>
-    <typedef-decl name='spdk_fsdev_readdir_entry_cb' type-id='62951185' filepath='fsdev.h' line='1164' column='1' id='fee029bc'/>
-    <typedef-decl name='spdk_fsdev_unregister_cb' type-id='1ed1e4cd' filepath='fsdev_module.h' line='78' column='1' id='7bff2ab2'/>
-    <typedef-decl name='uid_t' type-id='cc5fcceb' filepath='types.h' line='79' column='1' id='354978ed'/>
-    <typedef-decl name='uint32_t' type-id='62f1140c' filepath='stdint-uintn.h' line='26' column='1' id='8f92235e'/>
-    <typedef-decl name='uint64_t' type-id='8910171f' filepath='stdint-uintn.h' line='27' column='1' id='9c313c2d'/>
-    <typedef-decl name='uint8_t' type-id='c51d6389' filepath='stdint-uintn.h' line='24' column='1' id='b96825af'/>
-    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='unknown' id='048fe7bc'>
-      <subrange length='unknown' lower-bound='0' upper-bound='-1' type-id='f0981eeb' id='031f2035'/>
+    <typedef-decl name='__dev_t' type-id='f0981eeb' size-in-bits='64' filepath='types.h' line='145' column='1' hash='8fdc5eea2983a729' id='35ed8932'/>
+    <typedef-decl name='__gid_t' type-id='f0981eec' size-in-bits='32' filepath='types.h' line='147' column='1' hash='e66b43f97c38e87a' id='d94ec6d9'/>
+    <typedef-decl name='__mode_t' type-id='f0981eec' size-in-bits='32' filepath='types.h' line='150' column='1' hash='e66b43f97c38e87a' id='e1c52942'/>
+    <typedef-decl name='__off_t' type-id='95e97e5f' size-in-bits='64' filepath='types.h' line='152' column='1' hash='b119fe0931d2ee10' id='79989e9c'/>
+    <typedef-decl name='__uid_t' type-id='f0981eec' size-in-bits='32' filepath='types.h' line='146' column='1' hash='e66b43f97c38e87a' id='cc5fcceb'/>
+    <typedef-decl name='__uint32_t' type-id='f0981eec' size-in-bits='32' filepath='types.h' line='42' column='1' hash='e66b43f97c38e87a' id='62f1140c'/>
+    <typedef-decl name='__uint64_t' type-id='f0981eeb' size-in-bits='64' filepath='types.h' line='45' column='1' hash='8fdc5eea2983a729' id='8910171f'/>
+    <typedef-decl name='__uint8_t' type-id='002ac4a6' size-in-bits='8' filepath='types.h' line='38' column='1' hash='6ebac62b3366db68' id='c51d6389'/>
+    <typedef-decl name='dev_t' type-id='35ed8932' size-in-bits='64' filepath='types.h' line='59' column='1' hash='8fdc5eea2983a729' id='8504f260'/>
+    <typedef-decl name='gid_t' type-id='d94ec6d9' size-in-bits='32' filepath='types.h' line='64' column='1' hash='e66b43f97c38e87a' id='2bb2b96f'/>
+    <typedef-decl name='mode_t' type-id='e1c52942' size-in-bits='32' filepath='types.h' line='69' column='1' hash='e66b43f97c38e87a' id='d50d396c'/>
+    <typedef-decl name='off_t' type-id='79989e9c' size-in-bits='64' filepath='stdio.h' line='64' column='1' hash='b119fe0931d2ee10' id='ad707ada'/>
+    <typedef-decl name='pthread_spinlock_t' type-id='e024ff18' size-in-bits='32' filepath='pthreadtypes.h' line='103' column='1' hash='ae69415523d5e788' id='6d44fa69'/>
+    <typedef-decl name='size_t' type-id='f0981eeb' size-in-bits='64' filepath='stddef.h' line='214' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
+    <typedef-decl name='spdk_fsdev_event_cb_t' type-id='e37e36e9' size-in-bits='64' filepath='fsdev.h' line='40' column='1' hash='fd7a63c0c6c822c4' id='f5bf2e9f'/>
+    <typedef-decl name='spdk_fsdev_fini_cb' type-id='61359e15' size-in-bits='64' filepath='fsdev.h' line='140' column='1' hash='fd7a63c0c6c822c4' id='c17a5d68'/>
+    <typedef-decl name='spdk_fsdev_init_cb' type-id='82328a76' size-in-bits='64' filepath='fsdev.h' line='133' column='1' hash='fd7a63c0c6c822c4' id='94168d2e'/>
+    <typedef-decl name='spdk_fsdev_io_completion_cb' type-id='8d6edbcb' size-in-bits='64' filepath='fsdev_module.h' line='128' column='1' hash='fd7a63c0c6c822c4' id='e975e7e9'/>
+    <typedef-decl name='spdk_fsdev_readdir_entry_cb' type-id='7c767da8' size-in-bits='64' filepath='fsdev.h' line='1164' column='1' id='fee029bc'/>
+    <typedef-decl name='spdk_fsdev_unregister_cb' type-id='82328a76' size-in-bits='64' filepath='fsdev_module.h' line='78' column='1' hash='fd7a63c0c6c822c4' id='7bff2ab2'/>
+    <typedef-decl name='uid_t' type-id='cc5fcceb' size-in-bits='32' filepath='types.h' line='79' column='1' hash='e66b43f97c38e87a' id='354978ed'/>
+    <typedef-decl name='uint32_t' type-id='62f1140c' size-in-bits='32' filepath='stdint-uintn.h' line='26' column='1' hash='e66b43f97c38e87a' id='8f92235e'/>
+    <typedef-decl name='uint64_t' type-id='8910171f' size-in-bits='64' filepath='stdint-uintn.h' line='27' column='1' hash='8fdc5eea2983a729' id='9c313c2d'/>
+    <typedef-decl name='uint8_t' type-id='c51d6389' size-in-bits='8' filepath='stdint-uintn.h' line='24' column='1' hash='6ebac62b3366db68' id='b96825af'/>
+    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='unknown' hash='953f9801eb087566' id='048fe7bc'>
+      <subrange length='unknown' lower-bound='0' upper-bound='0' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='eba0a2b392137dcb' id='031f2035'/>
     </array-type-def>
-    <union-decl name='__anonymous_union__1' size-in-bits='896' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='418' column='1' id='ac5ab596'>
+    <union-decl name='__anonymous_union__1' visibility='default' size-in-bits='896' is-anonymous='yes' filepath='fsdev_module.h' line='418' column='1' hash='888dd6a3efa4c206' id='ac5ab596'>
       <data-member access='public'>
         <var-decl name='lookup' type-id='e7f43f83' visibility='default' filepath='fsdev_module.h' line='422' column='1'/>
       </data-member>
@@ -966,7 +1022,7 @@
         <var-decl name='copy_file_range' type-id='e7f43f7b' visibility='default' filepath='fsdev_module.h' line='483' column='1'/>
       </data-member>
     </union-decl>
-    <union-decl name='__anonymous_union__' size-in-bits='896' is-anonymous='yes' visibility='default' filepath='fsdev_module.h' line='236' column='1' id='ac5ab595'>
+    <union-decl name='__anonymous_union__' visibility='default' size-in-bits='896' is-anonymous='yes' filepath='fsdev_module.h' line='236' column='1' hash='983b25019c80e4d0#2' id='ac5ab595'>
       <data-member access='public'>
         <var-decl name='lookup' type-id='e7f43f96' visibility='default' filepath='fsdev_module.h' line='240' column='1'/>
       </data-member>
@@ -1064,50 +1120,50 @@
         <var-decl name='copy_file_range' type-id='e7f43f91' visibility='default' filepath='fsdev_module.h' line='415' column='1'/>
       </data-member>
     </union-decl>
-    <type-decl name='unnamed-enum-underlying-type-32' is-anonymous='yes' size-in-bits='32' alignment-in-bits='32' id='9cac1fee'/>
-    <type-decl name='unsigned char' size-in-bits='8' id='002ac4a6'/>
-    <type-decl name='unsigned int' size-in-bits='32' id='f0981eec'/>
-    <type-decl name='unsigned long int' size-in-bits='64' id='f0981eeb'/>
-    <pointer-type-def type-id='a84c031d' size-in-bits='64' id='26a90f95'/>
-    <qualified-type-def type-id='a84c031d' const='yes' id='9b45d938'/>
-    <pointer-type-def type-id='9b45d938' size-in-bits='64' id='80f4b756'/>
-    <qualified-type-def type-id='0f042891' const='yes' id='fb4943b2'/>
-    <pointer-type-def type-id='fb4943b2' size-in-bits='64' id='2c556848'/>
-    <qualified-type-def type-id='08bb5c12' const='yes' id='65a47af3'/>
-    <pointer-type-def type-id='65a47af3' size-in-bits='64' id='daed639b'/>
-    <qualified-type-def type-id='b3665c31' const='yes' id='8de22a30'/>
-    <pointer-type-def type-id='8de22a30' size-in-bits='64' id='750846ee'/>
-    <qualified-type-def type-id='e473dbdc' const='yes' id='e0c2403f'/>
-    <pointer-type-def type-id='e0c2403f' size-in-bits='64' id='e6cae10f'/>
-    <qualified-type-def type-id='c6726725' const='yes' id='5b2eaaa2'/>
-    <pointer-type-def type-id='5b2eaaa2' size-in-bits='64' id='12767418'/>
-    <pointer-type-def type-id='276427e1' size-in-bits='64' id='1db260e5'/>
-    <pointer-type-def type-id='4e61c12f' size-in-bits='64' id='1cc9a68b'/>
-    <pointer-type-def type-id='ad11f404' size-in-bits='64' id='eb9d423e'/>
-    <pointer-type-def type-id='9efbfb11' size-in-bits='64' id='b9b212f5'/>
-    <pointer-type-def type-id='f5f92228' size-in-bits='64' id='55f9fe32'/>
-    <pointer-type-def type-id='4c7d72bf' size-in-bits='64' id='19c4f5a3'/>
-    <pointer-type-def type-id='0f042891' size-in-bits='64' id='cc4b1be9'/>
-    <pointer-type-def type-id='08bb5c12' size-in-bits='64' id='e93d8a00'/>
-    <pointer-type-def type-id='e93d8a00' size-in-bits='64' id='55e0801e'/>
-    <pointer-type-def type-id='88fbe88f' size-in-bits='64' id='ebe2c337'/>
-    <pointer-type-def type-id='ebe2c337' size-in-bits='64' id='72f926a7'/>
-    <pointer-type-def type-id='22c5338e' size-in-bits='64' id='d69566d4'/>
-    <pointer-type-def type-id='3ac83ed3' size-in-bits='64' id='aad364e3'/>
-    <pointer-type-def type-id='aad364e3' size-in-bits='64' id='b3c7a86b'/>
-    <pointer-type-def type-id='60db09f4' size-in-bits='64' id='598f2d72'/>
-    <pointer-type-def type-id='f97d08fa' size-in-bits='64' id='d4950b38'/>
-    <pointer-type-def type-id='c6726725' size-in-bits='64' id='11bc71a5'/>
-    <pointer-type-def type-id='fee029bc' size-in-bits='64' id='18bd2393'/>
-    <pointer-type-def type-id='ff41ade1' size-in-bits='64' id='ddc2673d'/>
-    <pointer-type-def type-id='ee076206' size-in-bits='64' id='953b12f8'/>
-    <pointer-type-def type-id='6a2e3bf1' size-in-bits='64' id='51592245'/>
-    <pointer-type-def type-id='49239174' size-in-bits='64' id='518fd49e'/>
-    <pointer-type-def type-id='cbc86a1a' size-in-bits='64' id='8a2af2bc'/>
-    <pointer-type-def type-id='05de9d75' size-in-bits='64' id='76b7e369'/>
-    <pointer-type-def type-id='c5c76c9c' size-in-bits='64' id='b7f9d8e6'/>
-    <pointer-type-def type-id='2922fb19' size-in-bits='64' id='1ed1e4cd'/>
-    <qualified-type-def type-id='95e97e5e' volatile='yes' id='e024ff18'/>
+    <type-decl name='unnamed-enum-underlying-type-32' size-in-bits='32' alignment-in-bits='32' is-anonymous='yes' hash='5181a58e665b3619' id='9cac1fee'/>
+    <type-decl name='unsigned char' size-in-bits='8' hash='6ebac62b3366db68' id='002ac4a6'/>
+    <type-decl name='unsigned int' size-in-bits='32' hash='e66b43f97c38e87a' id='f0981eec'/>
+    <type-decl name='unsigned long int' size-in-bits='64' hash='8fdc5eea2983a729#2' id='f0981eeb'/>
+    <pointer-type-def type-id='a84c031d' size-in-bits='64' hash='e533f42d1dd4942c' id='26a90f95'/>
+    <qualified-type-def type-id='a84c031d' const='yes' hash='3e50fd33f9bb78d9' id='9b45d938'/>
+    <pointer-type-def type-id='9b45d938' size-in-bits='64' hash='c44743f354f6a443' id='80f4b756'/>
+    <qualified-type-def type-id='0f042891' const='yes' hash='a74535423f2d1afd' id='fb4943b2'/>
+    <pointer-type-def type-id='fb4943b2' size-in-bits='64' hash='a645f8907fb9457d' id='2c556848'/>
+    <qualified-type-def type-id='08bb5c12' const='yes' hash='3dfc13a65a18da23' id='65a47af3'/>
+    <pointer-type-def type-id='65a47af3' size-in-bits='64' hash='cb7baae847f6f5ab' id='daed639b'/>
+    <qualified-type-def type-id='b3665c31' const='yes' hash='bea04dd3dfb3d510' id='8de22a30'/>
+    <pointer-type-def type-id='8de22a30' size-in-bits='64' hash='e83797ff4356c7d2' id='750846ee'/>
+    <qualified-type-def type-id='e473dbdc' const='yes' hash='52d0071ef546c6b8' id='e0c2403f'/>
+    <pointer-type-def type-id='e0c2403f' size-in-bits='64' hash='1d6ea4bae1e441f2' id='e6cae10f'/>
+    <qualified-type-def type-id='c6726725' const='yes' hash='232e24c0de7695df' id='5b2eaaa2'/>
+    <pointer-type-def type-id='5b2eaaa2' size-in-bits='64' hash='60bce15f403e26f8' id='12767418'/>
+    <pointer-type-def type-id='4e61c12f' size-in-bits='64' hash='fd7a63c0c6c822c4' id='f2f8cb0c'/>
+    <pointer-type-def type-id='ad11f404' size-in-bits='64' hash='fd7a63c0c6c822c4' id='494cdc6d'/>
+    <pointer-type-def type-id='b39d85cf' size-in-bits='64' hash='fd7a63c0c6c822c4' id='65e3965a'/>
+    <pointer-type-def type-id='9efbfb11' size-in-bits='64' hash='fd7a63c0c6c822c4' id='c04372aa'/>
+    <pointer-type-def type-id='f5f92228' size-in-bits='64' hash='fd7a63c0c6c822c4' id='19e810c5'/>
+    <pointer-type-def type-id='4c7d72bf' size-in-bits='64' hash='fd7a63c0c6c822c4' id='d3d1557a'/>
+    <pointer-type-def type-id='0f042891' size-in-bits='64' hash='83ff866b84e07157' id='cc4b1be9'/>
+    <pointer-type-def type-id='08bb5c12' size-in-bits='64' hash='7578606a4ffe70f3' id='e93d8a00'/>
+    <pointer-type-def type-id='e93d8a00' size-in-bits='64' hash='32745ae3918b3aba' id='55e0801e'/>
+    <pointer-type-def type-id='88fbe88f' size-in-bits='64' hash='f7b7fe5ee99f3d2d' id='ebe2c337'/>
+    <pointer-type-def type-id='ebe2c337' size-in-bits='64' hash='690a8de91a3e1f72' id='72f926a7'/>
+    <pointer-type-def type-id='22c5338e' size-in-bits='64' hash='932f5a7bd8f639b7' id='d69566d4'/>
+    <pointer-type-def type-id='3ac83ed3' size-in-bits='64' hash='33aa33563c507051' id='aad364e3'/>
+    <pointer-type-def type-id='aad364e3' size-in-bits='64' hash='a9860e99611af3e9' id='b3c7a86b'/>
+    <pointer-type-def type-id='60db09f4' size-in-bits='64' hash='0e177adfa73cc8c6' id='598f2d72'/>
+    <pointer-type-def type-id='f97d08fa' size-in-bits='64' hash='4a30f858fba1e4dd' id='d4950b38'/>
+    <pointer-type-def type-id='c6726725' size-in-bits='64' hash='78e6da52e49f5a47' id='11bc71a5'/>
+    <pointer-type-def type-id='fee029bc' size-in-bits='64' hash='6c7f1cacd88e7b26' id='18bd2393'/>
+    <pointer-type-def type-id='ff41ade1' size-in-bits='64' hash='fd7a63c0c6c822c4' id='0bad6792'/>
+    <pointer-type-def type-id='49239174' size-in-bits='64' hash='fd7a63c0c6c822c4' id='9c3e4c91'/>
+    <pointer-type-def type-id='03720068' size-in-bits='64' hash='fd7a63c0c6c822c4' id='e37e36e9'/>
+    <pointer-type-def type-id='cbc86a1a' size-in-bits='64' hash='fd7a63c0c6c822c4' id='8d6edbcb'/>
+    <pointer-type-def type-id='05de9d75' size-in-bits='64' hash='fd7a63c0c6c822c4' id='e20349de'/>
+    <pointer-type-def type-id='30a82da4' size-in-bits='64' hash='fd7a63c0c6c822c4' id='c640490b'/>
+    <pointer-type-def type-id='c5c76c9c' size-in-bits='64' hash='fd7a63c0c6c822c4' id='61359e15'/>
+    <pointer-type-def type-id='2922fb19' size-in-bits='64' hash='fd7a63c0c6c822c4' id='82328a76'/>
+    <qualified-type-def type-id='95e97e5e' volatile='yes' hash='ae69415523d5e788' id='e024ff18'/>
     <pointer-type-def type-id='14f095c6' size-in-bits='64' id='7f460d6c'/>
     <pointer-type-def type-id='736ae022' size-in-bits='64' id='f0f65670'/>
     <pointer-type-def type-id='f0f65670' size-in-bits='64' id='adc9efae'/>
@@ -1126,85 +1182,85 @@
     <class-decl name='spdk_memory_domain' is-struct='yes' visibility='default' is-declaration-only='yes' id='3e1ba880'/>
     <class-decl name='spdk_spinlock_internal' is-struct='yes' visibility='default' is-declaration-only='yes' id='2e6655e1'/>
     <class-decl name='spdk_thread' is-struct='yes' visibility='default' is-declaration-only='yes' id='ef0f6b10'/>
-    <class-decl name='spdk_fsdev_channel' is-struct='yes' visibility='default' filepath='fsdev.c' line='114' column='1' is-declaration-only='yes' id='14f095c6'/>
-    <class-decl name='spdk_fsdev_desc' is-struct='yes' visibility='default' filepath='fsdev.c' line='135' column='1' is-declaration-only='yes' id='736ae022'/>
-    <function-decl name='spdk_fsdev_subsystem_config_json' mangled-name='spdk_fsdev_subsystem_config_json' filepath='fsdev.c' line='183' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_subsystem_config_json'>
+    <class-decl name='spdk_fsdev_channel' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='fsdev.c' line='114' column='1' id='14f095c6'/>
+    <class-decl name='spdk_fsdev_desc' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='fsdev.c' line='135' column='1' id='736ae022'/>
+    <function-decl name='spdk_fsdev_subsystem_config_json' mangled-name='spdk_fsdev_subsystem_config_json' filepath='fsdev.c' line='183' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_subsystem_config_json' hash='7f32ffea222edbe7'>
       <parameter type-id='b8e14bfe' name='w' filepath='fsdev.c' line='183' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_initialize' mangled-name='spdk_fsdev_initialize' filepath='fsdev.c' line='304' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_initialize'>
+    <function-decl name='spdk_fsdev_initialize' mangled-name='spdk_fsdev_initialize' filepath='fsdev.c' line='304' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_initialize' hash='5695f5ce05a4c55f'>
       <parameter type-id='94168d2e' name='cb_fn' filepath='fsdev.c' line='304' column='1'/>
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev.c' line='304' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_finish' mangled-name='spdk_fsdev_finish' filepath='fsdev.c' line='433' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_finish'>
+    <function-decl name='spdk_fsdev_finish' mangled-name='spdk_fsdev_finish' filepath='fsdev.c' line='433' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_finish' hash='5695f5ce05a4c55f'>
       <parameter type-id='c17a5d68' name='cb_fn' filepath='fsdev.c' line='433' column='1'/>
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev.c' line='433' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_free_io' mangled-name='spdk_fsdev_free_io' filepath='fsdev.c' line='460' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_free_io'>
+    <function-decl name='spdk_fsdev_free_io' mangled-name='spdk_fsdev_free_io' filepath='fsdev.c' line='460' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_free_io' hash='ca8192778a64e533'>
       <parameter type-id='ebe2c337' name='fsdev_io' filepath='fsdev.c' line='460' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_get_io_channel' mangled-name='spdk_fsdev_get_io_channel' filepath='fsdev.c' line='620' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_get_io_channel'>
+    <function-decl name='spdk_fsdev_get_io_channel' mangled-name='spdk_fsdev_get_io_channel' filepath='fsdev.c' line='620' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_get_io_channel' hash='7f32ffea222edbe7'>
       <parameter type-id='f0f65670' name='desc' filepath='fsdev.c' line='620' column='1'/>
       <return type-id='a7e01876'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_set_opts' mangled-name='spdk_fsdev_set_opts' filepath='fsdev.c' line='626' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_set_opts'>
+    <function-decl name='spdk_fsdev_set_opts' mangled-name='spdk_fsdev_set_opts' filepath='fsdev.c' line='626' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_set_opts' hash='f9f3bf87e47793c0'>
       <parameter type-id='12767418' name='opts' filepath='fsdev.c' line='626' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_get_opts' mangled-name='spdk_fsdev_get_opts' filepath='fsdev.c' line='670' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_get_opts'>
+    <function-decl name='spdk_fsdev_get_opts' mangled-name='spdk_fsdev_get_opts' filepath='fsdev.c' line='670' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_get_opts' hash='df99a56554f454a0'>
       <parameter type-id='11bc71a5' name='opts' filepath='fsdev.c' line='670' column='1'/>
       <parameter type-id='b59d7dce' name='opts_size' filepath='fsdev.c' line='670' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_get_memory_domains' mangled-name='spdk_fsdev_get_memory_domains' filepath='fsdev.c' line='740' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_get_memory_domains'>
+    <function-decl name='spdk_fsdev_get_memory_domains' mangled-name='spdk_fsdev_get_memory_domains' filepath='fsdev.c' line='740' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_get_memory_domains' hash='245cea0a355c56da'>
       <parameter type-id='e93d8a00' name='fsdev' filepath='fsdev.c' line='740' column='1'/>
       <parameter type-id='1fc0b044' name='domains' filepath='fsdev.c' line='740' column='1'/>
       <parameter type-id='95e97e5e' name='array_size' filepath='fsdev.c' line='741' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_get_module_name' mangled-name='spdk_fsdev_get_module_name' filepath='fsdev.c' line='755' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_get_module_name'>
-      <parameter type-id='daed639b' name='fsdev' filepath='fsdev.c' line='755' column='1'/>
-      <return type-id='80f4b756'/>
-    </function-decl>
-    <function-decl name='spdk_fsdev_get_name' mangled-name='spdk_fsdev_get_name' filepath='fsdev.c' line='761' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_get_name'>
+    <function-decl name='spdk_fsdev_get_module_name' mangled-name='spdk_fsdev_get_module_name' filepath='fsdev.c' line='755' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_get_module_name' hash='6f7b76638b3956c5'>
       <parameter type-id='daed639b' name='fsdev' filepath='fsdev.c' line='761' column='1'/>
       <return type-id='80f4b756'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_io_complete' mangled-name='spdk_fsdev_io_complete' filepath='fsdev.c' line='791' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_io_complete'>
+    <function-decl name='spdk_fsdev_get_name' mangled-name='spdk_fsdev_get_name' filepath='fsdev.c' line='761' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_get_name' hash='6f7b76638b3956c5'>
+      <parameter type-id='daed639b' name='fsdev' filepath='fsdev.c' line='761' column='1'/>
+      <return type-id='80f4b756'/>
+    </function-decl>
+    <function-decl name='spdk_fsdev_io_complete' mangled-name='spdk_fsdev_io_complete' filepath='fsdev.c' line='791' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_io_complete' hash='a731e8afe5e52dc7'>
       <parameter type-id='ebe2c337' name='fsdev_io' filepath='fsdev.c' line='791' column='1'/>
       <parameter type-id='95e97e5e' name='status' filepath='fsdev.c' line='791' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_io_get_thread' mangled-name='spdk_fsdev_io_get_thread' filepath='fsdev.c' line='806' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_io_get_thread'>
+    <function-decl name='spdk_fsdev_io_get_thread' mangled-name='spdk_fsdev_io_get_thread' filepath='fsdev.c' line='806' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_io_get_thread' hash='ca8192778a64e533'>
       <parameter type-id='ebe2c337' name='fsdev_io' filepath='fsdev.c' line='806' column='1'/>
       <return type-id='f8fcfe66'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_io_get_io_channel' mangled-name='spdk_fsdev_io_get_io_channel' filepath='fsdev.c' line='812' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_io_get_io_channel'>
+    <function-decl name='spdk_fsdev_io_get_io_channel' mangled-name='spdk_fsdev_io_get_io_channel' filepath='fsdev.c' line='812' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_io_get_io_channel' hash='ca8192778a64e533'>
       <parameter type-id='ebe2c337' name='fsdev_io' filepath='fsdev.c' line='812' column='1'/>
       <return type-id='a7e01876'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_destruct_done' mangled-name='spdk_fsdev_destruct_done' filepath='fsdev.c' line='890' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_destruct_done'>
+    <function-decl name='spdk_fsdev_destruct_done' mangled-name='spdk_fsdev_destruct_done' filepath='fsdev.c' line='890' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_destruct_done' hash='354bf01ec3f10cff'>
       <parameter type-id='e93d8a00' name='fsdev' filepath='fsdev.c' line='890' column='1'/>
       <parameter type-id='95e97e5e' name='fsdeverrno' filepath='fsdev.c' line='890' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_unregister' mangled-name='spdk_fsdev_unregister' filepath='fsdev.c' line='980' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_unregister'>
+    <function-decl name='spdk_fsdev_unregister' mangled-name='spdk_fsdev_unregister' filepath='fsdev.c' line='980' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_unregister' hash='9e3485c57f84f249'>
       <parameter type-id='e93d8a00' name='fsdev' filepath='fsdev.c' line='980' column='1'/>
       <parameter type-id='7bff2ab2' name='cb_fn' filepath='fsdev.c' line='980' column='1'/>
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev.c' line='980' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_unregister_by_name' mangled-name='spdk_fsdev_unregister_by_name' filepath='fsdev.c' line='1023' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_unregister_by_name'>
+    <function-decl name='spdk_fsdev_unregister_by_name' mangled-name='spdk_fsdev_unregister_by_name' filepath='fsdev.c' line='1023' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_unregister_by_name' hash='23f4e112f6892111'>
       <parameter type-id='80f4b756' name='fsdev_name' filepath='fsdev.c' line='1023' column='1'/>
       <parameter type-id='aad364e3' name='module' filepath='fsdev.c' line='1023' column='1'/>
       <parameter type-id='7bff2ab2' name='cb_fn' filepath='fsdev.c' line='1024' column='1'/>
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev.c' line='1024' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_open' mangled-name='spdk_fsdev_open' filepath='fsdev.c' line='1100' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_open'>
+    <function-decl name='spdk_fsdev_open' mangled-name='spdk_fsdev_open' filepath='fsdev.c' line='1100' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_open' hash='452d1a551d112084'>
       <parameter type-id='80f4b756' name='fsdev_name' filepath='fsdev.c' line='1100' column='1'/>
       <parameter type-id='f5bf2e9f' name='event_cb' filepath='fsdev.c' line='1100' column='1'/>
       <parameter type-id='eaa32e2f' name='event_ctx' filepath='fsdev.c' line='1101' column='1'/>
@@ -1212,50 +1268,50 @@
       <parameter type-id='adc9efae' name='_desc' filepath='fsdev.c' line='1101' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_close' mangled-name='spdk_fsdev_close' filepath='fsdev.c' line='1180' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_close'>
+    <function-decl name='spdk_fsdev_close' mangled-name='spdk_fsdev_close' filepath='fsdev.c' line='1180' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_close' hash='7f32ffea222edbe7'>
       <parameter type-id='f0f65670' name='desc' filepath='fsdev.c' line='1180' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_register' mangled-name='spdk_fsdev_register' filepath='fsdev.c' line='1193' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_register'>
+    <function-decl name='spdk_fsdev_register' mangled-name='spdk_fsdev_register' filepath='fsdev.c' line='1193' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_register' hash='391432db28b3c51f'>
       <parameter type-id='e93d8a00' name='fsdev' filepath='fsdev.c' line='1193' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_desc_get_fsdev' mangled-name='spdk_fsdev_desc_get_fsdev' filepath='fsdev.c' line='1207' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_desc_get_fsdev'>
+    <function-decl name='spdk_fsdev_desc_get_fsdev' mangled-name='spdk_fsdev_desc_get_fsdev' filepath='fsdev.c' line='1207' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_desc_get_fsdev' hash='80c62fec3f0e77b1'>
       <parameter type-id='f0f65670' name='desc' filepath='fsdev.c' line='1207' column='1'/>
       <return type-id='e93d8a00'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_module_list_add' mangled-name='spdk_fsdev_module_list_add' filepath='fsdev.c' line='1214' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_module_list_add'>
+    <function-decl name='spdk_fsdev_module_list_add' mangled-name='spdk_fsdev_module_list_add' filepath='fsdev.c' line='1214' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_module_list_add' hash='41e127d89f43d0e0'>
       <parameter type-id='aad364e3' name='fsdev_module' filepath='fsdev.c' line='1214' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_module_list_find' mangled-name='spdk_fsdev_module_list_find' filepath='fsdev.c' line='1226' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_module_list_find'>
+    <function-decl name='spdk_fsdev_module_list_find' mangled-name='spdk_fsdev_module_list_find' filepath='fsdev.c' line='1226' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_module_list_find' hash='844010cb0bdfb839'>
       <parameter type-id='80f4b756' name='name' filepath='fsdev.c' line='1226' column='1'/>
       <return type-id='aad364e3'/>
     </function-decl>
     <type-decl name='void' id='48b5725f'/>
     <pointer-type-def type-id='48b5725f' id='eaa32e2f'/>
-    <function-type size-in-bits='64' id='276427e1'>
-      <return type-id='95e97e5e'/>
-    </function-type>
-    <function-type size-in-bits='64' id='4e61c12f'>
+    <function-type size-in-bits='64' hash='4e825d4dc474ffdd' id='4e61c12f'>
       <parameter type-id='ebe2c337'/>
       <parameter type-id='eaa32e2f'/>
       <return type-id='95e97e5e'/>
     </function-type>
-    <function-type size-in-bits='64' id='ad11f404'>
+    <function-type size-in-bits='64' hash='388da3fa973fde78' id='ad11f404'>
       <parameter type-id='b8e14bfe'/>
       <return type-id='95e97e5e'/>
     </function-type>
-    <function-type size-in-bits='64' id='9efbfb11'>
+    <function-type size-in-bits='64' hash='388da3fa973fde78' id='b39d85cf'>
+      <return type-id='95e97e5e'/>
+    </function-type>
+    <function-type size-in-bits='64' hash='388da3fa973fde78' id='9efbfb11'>
       <parameter type-id='eaa32e2f'/>
       <return type-id='95e97e5e'/>
     </function-type>
-    <function-type size-in-bits='64' id='f5f92228'>
+    <function-type size-in-bits='64' hash='57cf64c5b7d92d51' id='f5f92228'>
       <parameter type-id='eaa32e2f'/>
       <parameter type-id='d4950b38'/>
       <return type-id='95e97e5e'/>
     </function-type>
-    <function-type size-in-bits='64' id='62951185'>
+    <function-type size-in-bits='64' hash='027c2ab62ea09fc6' id='7c767da8'>
       <parameter type-id='eaa32e2f'/>
       <parameter type-id='a7e01876'/>
       <parameter type-id='80f4b756'/>
@@ -1264,117 +1320,117 @@
       <parameter type-id='ad707ada'/>
       <return type-id='95e97e5e'/>
     </function-type>
-    <function-type size-in-bits='64' id='4c7d72bf'>
+    <function-type size-in-bits='64' hash='d628501fd2223339' id='4c7d72bf'>
       <parameter type-id='eaa32e2f'/>
       <parameter type-id='1fc0b044'/>
       <parameter type-id='95e97e5e'/>
       <return type-id='95e97e5e'/>
     </function-type>
-    <function-type size-in-bits='64' id='ff41ade1'>
+    <function-type size-in-bits='64' hash='7f32ffea222edbe7' id='ff41ade1'>
       <parameter type-id='eaa32e2f'/>
       <return type-id='a7e01876'/>
     </function-type>
-    <function-type size-in-bits='64' id='ee076206'>
+    <function-type size-in-bits='64' hash='80c62fec3f0e77b1' id='49239174'>
+      <parameter type-id='e93d8a00'/>
+      <parameter type-id='b8e14bfe'/>
       <return type-id='48b5725f'/>
     </function-type>
-    <function-type size-in-bits='64' id='6a2e3bf1'>
+    <function-type size-in-bits='64' hash='20fb92a3f66b7d76' id='03720068'>
       <parameter type-id='2766c765'/>
       <parameter type-id='e93d8a00'/>
       <parameter type-id='eaa32e2f'/>
       <return type-id='48b5725f'/>
     </function-type>
-    <function-type size-in-bits='64' id='49239174'>
-      <parameter type-id='e93d8a00'/>
-      <parameter type-id='b8e14bfe'/>
-      <return type-id='48b5725f'/>
-    </function-type>
-    <function-type size-in-bits='64' id='cbc86a1a'>
+    <function-type size-in-bits='64' hash='ca8192778a64e533' id='cbc86a1a'>
       <parameter type-id='ebe2c337'/>
       <parameter type-id='eaa32e2f'/>
       <return type-id='48b5725f'/>
     </function-type>
-    <function-type size-in-bits='64' id='05de9d75'>
+    <function-type size-in-bits='64' hash='ca8192778a64e533' id='05de9d75'>
       <parameter type-id='a7e01876'/>
       <parameter type-id='ebe2c337'/>
       <return type-id='48b5725f'/>
     </function-type>
-    <function-type size-in-bits='64' id='c5c76c9c'>
+    <function-type size-in-bits='64' hash='7f32ffea222edbe7' id='30a82da4'>
+      <return type-id='48b5725f'/>
+    </function-type>
+    <function-type size-in-bits='64' hash='7f32ffea222edbe7' id='c5c76c9c'>
       <parameter type-id='eaa32e2f'/>
       <return type-id='48b5725f'/>
     </function-type>
-    <function-type size-in-bits='64' id='2922fb19'>
+    <function-type size-in-bits='64' hash='388da3fa973fde78' id='2922fb19'>
       <parameter type-id='eaa32e2f'/>
       <parameter type-id='95e97e5e'/>
       <return type-id='48b5725f'/>
     </function-type>
   </abi-instr>
   <abi-instr address-size='64' path='fsdev_io.c' language='LANG_C11'>
-    <typedef-decl name='spdk_fsdev_abort_cpl_cb' type-id='e86134ea' filepath='fsdev.h' line='1372' column='1' id='8993ae3c'/>
-    <typedef-decl name='spdk_fsdev_copy_file_range_cpl_cb' type-id='d9cbc29c' filepath='fsdev.h' line='1332' column='1' id='225ec8ac'/>
-    <typedef-decl name='spdk_fsdev_create_cpl_cb' type-id='e4133648' filepath='fsdev.h' line='851' column='1' id='d123d17e'/>
-    <typedef-decl name='spdk_fsdev_fallocate_cpl_cb' type-id='e86134ea' filepath='fsdev.h' line='1298' column='1' id='3a1a1a5d'/>
-    <typedef-decl name='spdk_fsdev_flock_cpl_cb' type-id='e86134ea' filepath='fsdev.h' line='1268' column='1' id='8599d0a9'/>
-    <typedef-decl name='spdk_fsdev_flush_cpl_cb' type-id='e86134ea' filepath='fsdev.h' line='1097' column='1' id='cd9e2a98'/>
-    <typedef-decl name='spdk_fsdev_fopen_cpl_cb' type-id='2876a97b' filepath='fsdev.h' line='817' column='1' id='a87dbd04'/>
-    <typedef-decl name='spdk_fsdev_forget_cpl_cb' type-id='e86134ea' filepath='fsdev.h' line='350' column='1' id='fb2acabd'/>
-    <typedef-decl name='spdk_fsdev_fsync_cpl_cb' type-id='e86134ea' filepath='fsdev.h' line='1067' column='1' id='8f966ead'/>
-    <typedef-decl name='spdk_fsdev_fsyncdir_cpl_cb' type-id='e86134ea' filepath='fsdev.h' line='1237' column='1' id='7612cd72'/>
-    <typedef-decl name='spdk_fsdev_getattr_cpl_cb' type-id='60567f77' filepath='fsdev.h' line='920' column='1' id='8df54a73'/>
-    <typedef-decl name='spdk_fsdev_getxattr_cpl_cb' type-id='d9cbc29d' filepath='fsdev.h' line='717' column='1' id='5aed4b3b'/>
-    <typedef-decl name='spdk_fsdev_link_cpl_cb' type-id='c9b1af83' filepath='fsdev.h' line='621' column='1' id='aa8db7f2'/>
-    <typedef-decl name='spdk_fsdev_listxattr_cpl_cb' type-id='d9916fe0' filepath='fsdev.h' line='753' column='1' id='d31e05cf'/>
-    <typedef-decl name='spdk_fsdev_lookup_cpl_cb' type-id='c9b1af83' filepath='fsdev.h' line='319' column='1' id='3be76218'/>
-    <typedef-decl name='spdk_fsdev_mkdir_cpl_cb' type-id='c9b1af83' filepath='fsdev.h' line='489' column='1' id='88728f17'/>
-    <typedef-decl name='spdk_fsdev_mknod_cpl_cb' type-id='c9b1af83' filepath='fsdev.h' line='451' column='1' id='e5590cb9'/>
-    <typedef-decl name='spdk_fsdev_opendir_cpl_cb' type-id='2876a97b' filepath='fsdev.h' line='1129' column='1' id='e05180eb'/>
-    <typedef-decl name='spdk_fsdev_read_cpl_cb' type-id='d9cbc29c' filepath='fsdev.h' line='986' column='1' id='342f97c6'/>
-    <typedef-decl name='spdk_fsdev_readdir_cpl_cb' type-id='e86134ea' filepath='fsdev.h' line='1175' column='1' id='a77693af'/>
-    <typedef-decl name='spdk_fsdev_readlink_cpl_cb' type-id='224f791f' filepath='fsdev.h' line='381' column='1' id='658ef756'/>
-    <typedef-decl name='spdk_fsdev_release_cpl_cb' type-id='e86134ea' filepath='fsdev.h' line='889' column='1' id='a9a8c191'/>
-    <typedef-decl name='spdk_fsdev_releasedir_cpl_cb' type-id='e86134ea' filepath='fsdev.h' line='1207' column='1' id='355d2536'/>
-    <typedef-decl name='spdk_fsdev_removexattr_cpl_cb' type-id='e86134ea' filepath='fsdev.h' line='784' column='1' id='f685c697'/>
-    <typedef-decl name='spdk_fsdev_rename_cpl_cb' type-id='e86134ea' filepath='fsdev.h' line='584' column='1' id='09e6b8e4'/>
-    <typedef-decl name='spdk_fsdev_rmdir_cpl_cb' type-id='e86134ea' filepath='fsdev.h' line='554' column='1' id='363e732a'/>
-    <typedef-decl name='spdk_fsdev_setattr_cpl_cb' type-id='60567f77' filepath='fsdev.h' line='952' column='1' id='4fa648bf'/>
-    <typedef-decl name='spdk_fsdev_setxattr_cpl_cb' type-id='e86134ea' filepath='fsdev.h' line='683' column='1' id='26c44cef'/>
-    <typedef-decl name='spdk_fsdev_statfs_cpl_cb' type-id='dda518a1' filepath='fsdev.h' line='655' column='1' id='8ba863a1'/>
-    <typedef-decl name='spdk_fsdev_symlink_cpl_cb' type-id='c9b1af83' filepath='fsdev.h' line='413' column='1' id='1273d88f'/>
-    <typedef-decl name='spdk_fsdev_unlink_cpl_cb' type-id='e86134ea' filepath='fsdev.h' line='524' column='1' id='b14dd4bb'/>
-    <typedef-decl name='spdk_fsdev_write_cpl_cb' type-id='d9cbc29c' filepath='fsdev.h' line='1027' column='1' id='57117d43'/>
-    <qualified-type-def type-id='e618950b' const='yes' id='e1b038a6'/>
-    <pointer-type-def type-id='e1b038a6' size-in-bits='64' id='d4690464'/>
-    <pointer-type-def type-id='8993ae3c' size-in-bits='64' id='b262722b'/>
-    <pointer-type-def type-id='225ec8ac' size-in-bits='64' id='5f8f552b'/>
-    <pointer-type-def type-id='d123d17e' size-in-bits='64' id='f3b78fb7'/>
-    <pointer-type-def type-id='3a1a1a5d' size-in-bits='64' id='6a99d84c'/>
-    <pointer-type-def type-id='8599d0a9' size-in-bits='64' id='52085e08'/>
-    <pointer-type-def type-id='cd9e2a98' size-in-bits='64' id='7255726b'/>
-    <pointer-type-def type-id='a87dbd04' size-in-bits='64' id='ac27e1b7'/>
-    <pointer-type-def type-id='fb2acabd' size-in-bits='64' id='86f5350a'/>
-    <pointer-type-def type-id='8f966ead' size-in-bits='64' id='57e02f00'/>
-    <pointer-type-def type-id='7612cd72' size-in-bits='64' id='3ecb4c7b'/>
-    <pointer-type-def type-id='8df54a73' size-in-bits='64' id='29e9cd1a'/>
-    <pointer-type-def type-id='5aed4b3b' size-in-bits='64' id='405c1ba0'/>
-    <pointer-type-def type-id='aa8db7f2' size-in-bits='64' id='3245c74b'/>
-    <pointer-type-def type-id='d31e05cf' size-in-bits='64' id='7b1603c6'/>
-    <pointer-type-def type-id='3be76218' size-in-bits='64' id='26eadc11'/>
-    <pointer-type-def type-id='88728f17' size-in-bits='64' id='a34cdf0a'/>
-    <pointer-type-def type-id='e5590cb9' size-in-bits='64' id='341a99c4'/>
-    <pointer-type-def type-id='e05180eb' size-in-bits='64' id='a4e8b92e'/>
-    <pointer-type-def type-id='342f97c6' size-in-bits='64' id='7686cf9b'/>
-    <pointer-type-def type-id='a77693af' size-in-bits='64' id='8c016ece'/>
-    <pointer-type-def type-id='658ef756' size-in-bits='64' id='6cd0b057'/>
-    <pointer-type-def type-id='a9a8c191' size-in-bits='64' id='06068328'/>
-    <pointer-type-def type-id='355d2536' size-in-bits='64' id='79f46e63'/>
-    <pointer-type-def type-id='f685c697' size-in-bits='64' id='407835a2'/>
-    <pointer-type-def type-id='09e6b8e4' size-in-bits='64' id='879f6535'/>
-    <pointer-type-def type-id='363e732a' size-in-bits='64' id='a2d37a25'/>
-    <pointer-type-def type-id='4fa648bf' size-in-bits='64' id='b022d25e'/>
-    <pointer-type-def type-id='26c44cef' size-in-bits='64' id='f239aa6c'/>
-    <pointer-type-def type-id='8ba863a1' size-in-bits='64' id='fcd86f32'/>
-    <pointer-type-def type-id='1273d88f' size-in-bits='64' id='c50da95a'/>
-    <pointer-type-def type-id='b14dd4bb' size-in-bits='64' id='42734b6c'/>
-    <pointer-type-def type-id='57117d43' size-in-bits='64' id='64ed9d8e'/>
+    <typedef-decl name='spdk_fsdev_abort_cpl_cb' type-id='e86134ea' size-in-bits='64' filepath='fsdev.h' line='1372' column='1' id='8993ae3c'/>
+    <typedef-decl name='spdk_fsdev_copy_file_range_cpl_cb' type-id='bdbbdca4' size-in-bits='64' filepath='fsdev.h' line='1332' column='1' id='225ec8ac'/>
+    <typedef-decl name='spdk_fsdev_create_cpl_cb' type-id='e4133648' size-in-bits='64' filepath='fsdev.h' line='851' column='1' id='d123d17e'/>
+    <typedef-decl name='spdk_fsdev_fallocate_cpl_cb' type-id='e86134ea' size-in-bits='64' filepath='fsdev.h' line='1298' column='1' id='3a1a1a5d'/>
+    <typedef-decl name='spdk_fsdev_flock_cpl_cb' type-id='e86134ea' size-in-bits='64' filepath='fsdev.h' line='1268' column='1' id='8599d0a9'/>
+    <typedef-decl name='spdk_fsdev_flush_cpl_cb' type-id='e86134ea' size-in-bits='64' filepath='fsdev.h' line='1097' column='1' id='cd9e2a98'/>
+    <typedef-decl name='spdk_fsdev_fopen_cpl_cb' type-id='2876a97b' size-in-bits='64' filepath='fsdev.h' line='817' column='1' id='a87dbd04'/>
+    <typedef-decl name='spdk_fsdev_forget_cpl_cb' type-id='e86134ea' size-in-bits='64' filepath='fsdev.h' line='350' column='1' id='fb2acabd'/>
+    <typedef-decl name='spdk_fsdev_fsync_cpl_cb' type-id='e86134ea' size-in-bits='64' filepath='fsdev.h' line='1067' column='1' id='8f966ead'/>
+    <typedef-decl name='spdk_fsdev_fsyncdir_cpl_cb' type-id='e86134ea' size-in-bits='64' filepath='fsdev.h' line='1237' column='1' id='7612cd72'/>
+    <typedef-decl name='spdk_fsdev_getattr_cpl_cb' type-id='60567f77' size-in-bits='64' filepath='fsdev.h' line='920' column='1' id='8df54a73'/>
+    <typedef-decl name='spdk_fsdev_getxattr_cpl_cb' type-id='40346000' size-in-bits='64' filepath='fsdev.h' line='717' column='1' id='5aed4b3b'/>
+    <typedef-decl name='spdk_fsdev_link_cpl_cb' type-id='c9b1af83' size-in-bits='64' filepath='fsdev.h' line='621' column='1' id='aa8db7f2'/>
+    <typedef-decl name='spdk_fsdev_listxattr_cpl_cb' type-id='0e17ab74' size-in-bits='64' filepath='fsdev.h' line='753' column='1' id='d31e05cf'/>
+    <typedef-decl name='spdk_fsdev_lookup_cpl_cb' type-id='c9b1af83' size-in-bits='64' filepath='fsdev.h' line='319' column='1' id='3be76218'/>
+    <typedef-decl name='spdk_fsdev_mkdir_cpl_cb' type-id='c9b1af83' size-in-bits='64' filepath='fsdev.h' line='489' column='1' id='88728f17'/>
+    <typedef-decl name='spdk_fsdev_mknod_cpl_cb' type-id='c9b1af83' size-in-bits='64' filepath='fsdev.h' line='451' column='1' id='e5590cb9'/>
+    <typedef-decl name='spdk_fsdev_opendir_cpl_cb' type-id='2876a97b' size-in-bits='64' filepath='fsdev.h' line='1129' column='1' id='e05180eb'/>
+    <typedef-decl name='spdk_fsdev_read_cpl_cb' type-id='bdbbdca4' size-in-bits='64' filepath='fsdev.h' line='986' column='1' id='342f97c6'/>
+    <typedef-decl name='spdk_fsdev_readdir_cpl_cb' type-id='e86134ea' size-in-bits='64' filepath='fsdev.h' line='1175' column='1' id='a77693af'/>
+    <typedef-decl name='spdk_fsdev_readlink_cpl_cb' type-id='224f791f' size-in-bits='64' filepath='fsdev.h' line='381' column='1' id='658ef756'/>
+    <typedef-decl name='spdk_fsdev_release_cpl_cb' type-id='e86134ea' size-in-bits='64' filepath='fsdev.h' line='889' column='1' id='a9a8c191'/>
+    <typedef-decl name='spdk_fsdev_releasedir_cpl_cb' type-id='e86134ea' size-in-bits='64' filepath='fsdev.h' line='1207' column='1' id='355d2536'/>
+    <typedef-decl name='spdk_fsdev_removexattr_cpl_cb' type-id='e86134ea' size-in-bits='64' filepath='fsdev.h' line='784' column='1' id='f685c697'/>
+    <typedef-decl name='spdk_fsdev_rename_cpl_cb' type-id='e86134ea' size-in-bits='64' filepath='fsdev.h' line='584' column='1' id='09e6b8e4'/>
+    <typedef-decl name='spdk_fsdev_rmdir_cpl_cb' type-id='e86134ea' size-in-bits='64' filepath='fsdev.h' line='554' column='1' id='363e732a'/>
+    <typedef-decl name='spdk_fsdev_setattr_cpl_cb' type-id='60567f77' size-in-bits='64' filepath='fsdev.h' line='952' column='1' id='4fa648bf'/>
+    <typedef-decl name='spdk_fsdev_setxattr_cpl_cb' type-id='e86134ea' size-in-bits='64' filepath='fsdev.h' line='683' column='1' id='26c44cef'/>
+    <typedef-decl name='spdk_fsdev_statfs_cpl_cb' type-id='dda518a1' size-in-bits='64' filepath='fsdev.h' line='655' column='1' id='8ba863a1'/>
+    <typedef-decl name='spdk_fsdev_symlink_cpl_cb' type-id='c9b1af83' size-in-bits='64' filepath='fsdev.h' line='413' column='1' id='1273d88f'/>
+    <typedef-decl name='spdk_fsdev_unlink_cpl_cb' type-id='e86134ea' size-in-bits='64' filepath='fsdev.h' line='524' column='1' id='b14dd4bb'/>
+    <typedef-decl name='spdk_fsdev_write_cpl_cb' type-id='bdbbdca4' size-in-bits='64' filepath='fsdev.h' line='1027' column='1' id='57117d43'/>
+    <qualified-type-def type-id='e618950b' const='yes' hash='44bcafc3470f1305' id='e1b038a6'/>
+    <pointer-type-def type-id='e1b038a6' size-in-bits='64' hash='e14768ff77b95b9b' id='d4690464'/>
+    <pointer-type-def type-id='8993ae3c' size-in-bits='64' hash='c224dfd71b122a36' id='b262722b'/>
+    <pointer-type-def type-id='225ec8ac' size-in-bits='64' hash='f181a5e08560fcc0' id='5f8f552b'/>
+    <pointer-type-def type-id='d123d17e' size-in-bits='64' hash='9c9458a3d61c51b3' id='f3b78fb7'/>
+    <pointer-type-def type-id='3a1a1a5d' size-in-bits='64' hash='b74981f0cefdd655' id='6a99d84c'/>
+    <pointer-type-def type-id='8599d0a9' size-in-bits='64' hash='229d1aa14344ea9f' id='52085e08'/>
+    <pointer-type-def type-id='cd9e2a98' size-in-bits='64' hash='3b2f01adece58566' id='7255726b'/>
+    <pointer-type-def type-id='a87dbd04' size-in-bits='64' hash='b53d69154044fd6e' id='ac27e1b7'/>
+    <pointer-type-def type-id='fb2acabd' size-in-bits='64' hash='529c27009565b0d2' id='86f5350a'/>
+    <pointer-type-def type-id='8f966ead' size-in-bits='64' hash='bf4e5e707d817095' id='57e02f00'/>
+    <pointer-type-def type-id='7612cd72' size-in-bits='64' hash='e0ea5a22e832b822' id='3ecb4c7b'/>
+    <pointer-type-def type-id='8df54a73' size-in-bits='64' hash='06984ce432a05359' id='29e9cd1a'/>
+    <pointer-type-def type-id='5aed4b3b' size-in-bits='64' hash='213a6d601b1d6ea1' id='405c1ba0'/>
+    <pointer-type-def type-id='aa8db7f2' size-in-bits='64' hash='6acfffab5fda1173' id='3245c74b'/>
+    <pointer-type-def type-id='d31e05cf' size-in-bits='64' hash='d488e96b5576f5df' id='7b1603c6'/>
+    <pointer-type-def type-id='3be76218' size-in-bits='64' hash='6e742c30925d4036' id='26eadc11'/>
+    <pointer-type-def type-id='88728f17' size-in-bits='64' hash='f3379eea8bb13731' id='a34cdf0a'/>
+    <pointer-type-def type-id='e5590cb9' size-in-bits='64' hash='9027c70e6201521e' id='341a99c4'/>
+    <pointer-type-def type-id='e05180eb' size-in-bits='64' hash='3ba1c77f2587bdac' id='a4e8b92e'/>
+    <pointer-type-def type-id='342f97c6' size-in-bits='64' hash='6f1c23fae758a4ce' id='7686cf9b'/>
+    <pointer-type-def type-id='a77693af' size-in-bits='64' hash='bee9a344bfe7f3fc' id='8c016ece'/>
+    <pointer-type-def type-id='658ef756' size-in-bits='64' hash='26186b45dda81945' id='6cd0b057'/>
+    <pointer-type-def type-id='a9a8c191' size-in-bits='64' hash='c3543e0c74d6e8a7' id='06068328'/>
+    <pointer-type-def type-id='355d2536' size-in-bits='64' hash='f4a9cbf5e3659466' id='79f46e63'/>
+    <pointer-type-def type-id='f685c697' size-in-bits='64' hash='158c2d589ba015b2' id='407835a2'/>
+    <pointer-type-def type-id='09e6b8e4' size-in-bits='64' hash='aaa52140cc0400d4' id='879f6535'/>
+    <pointer-type-def type-id='363e732a' size-in-bits='64' hash='bea969a6f4beba05' id='a2d37a25'/>
+    <pointer-type-def type-id='4fa648bf' size-in-bits='64' hash='6d05c1073096320e' id='b022d25e'/>
+    <pointer-type-def type-id='26c44cef' size-in-bits='64' hash='11d05071d1106ffa' id='f239aa6c'/>
+    <pointer-type-def type-id='8ba863a1' size-in-bits='64' hash='ec3a3db67bd4474d' id='fcd86f32'/>
+    <pointer-type-def type-id='1273d88f' size-in-bits='64' hash='97e2626533bb1fe0' id='c50da95a'/>
+    <pointer-type-def type-id='b14dd4bb' size-in-bits='64' hash='b0b84138417187f1' id='42734b6c'/>
+    <pointer-type-def type-id='57117d43' size-in-bits='64' hash='2863c900d0d68a2c' id='64ed9d8e'/>
     <pointer-type-def type-id='736ae023' size-in-bits='64' id='f0f65671'/>
     <pointer-type-def type-id='38b2035d' size-in-bits='64' id='b008536b'/>
     <pointer-type-def type-id='c1e3241a' size-in-bits='64' id='6e396922'/>
@@ -1383,7 +1439,7 @@
     <class-decl name='spdk_fsdev_file_handle' is-struct='yes' visibility='default' is-declaration-only='yes' id='38b2035d'/>
     <class-decl name='spdk_fsdev_file_object' is-struct='yes' visibility='default' is-declaration-only='yes' id='c1e3241a'/>
     <class-decl name='spdk_io_channel' is-struct='yes' visibility='default' is-declaration-only='yes' id='8de5f3c1'/>
-    <function-decl name='spdk_fsdev_lookup' mangled-name='spdk_fsdev_lookup' filepath='fsdev_io.c' line='63' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_lookup'>
+    <function-decl name='spdk_fsdev_lookup' mangled-name='spdk_fsdev_lookup' filepath='fsdev_io.c' line='63' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_lookup' hash='f55dd00c3ce042d8'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='63' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='63' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='63' column='1'/>
@@ -1393,7 +1449,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='65' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_forget' mangled-name='spdk_fsdev_forget' filepath='fsdev_io.c' line='98' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_forget'>
+    <function-decl name='spdk_fsdev_forget' mangled-name='spdk_fsdev_forget' filepath='fsdev_io.c' line='98' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_forget' hash='2dac03316f3eab31'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='98' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='98' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='98' column='1'/>
@@ -1403,7 +1459,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='100' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_getattr' mangled-name='spdk_fsdev_getattr' filepath='fsdev_io.c' line='128' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_getattr'>
+    <function-decl name='spdk_fsdev_getattr' mangled-name='spdk_fsdev_getattr' filepath='fsdev_io.c' line='128' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_getattr' hash='239607f7beb772e0'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='128' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='128' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='128' column='1'/>
@@ -1413,7 +1469,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='130' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_setattr' mangled-name='spdk_fsdev_setattr' filepath='fsdev_io.c' line='158' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_setattr'>
+    <function-decl name='spdk_fsdev_setattr' mangled-name='spdk_fsdev_setattr' filepath='fsdev_io.c' line='158' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_setattr' hash='7a5d136ecf437c1d'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='158' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='158' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='158' column='1'/>
@@ -1425,7 +1481,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='161' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_readlink' mangled-name='spdk_fsdev_readlink' filepath='fsdev_io.c' line='192' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_readlink'>
+    <function-decl name='spdk_fsdev_readlink' mangled-name='spdk_fsdev_readlink' filepath='fsdev_io.c' line='192' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_readlink' hash='6bdc7ac45a5e239c'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='192' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='192' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='192' column='1'/>
@@ -1434,7 +1490,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='193' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_symlink' mangled-name='spdk_fsdev_symlink' filepath='fsdev_io.c' line='225' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_symlink'>
+    <function-decl name='spdk_fsdev_symlink' mangled-name='spdk_fsdev_symlink' filepath='fsdev_io.c' line='225' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_symlink' hash='4c75da33aaeadbca'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='225' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='225' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='225' column='1'/>
@@ -1447,7 +1503,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='227' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_mknod' mangled-name='spdk_fsdev_mknod' filepath='fsdev_io.c' line='272' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_mknod'>
+    <function-decl name='spdk_fsdev_mknod' mangled-name='spdk_fsdev_mknod' filepath='fsdev_io.c' line='272' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_mknod' hash='a3c39188f08082d6'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='272' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='272' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='272' column='1'/>
@@ -1461,7 +1517,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='274' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_mkdir' mangled-name='spdk_fsdev_mkdir' filepath='fsdev_io.c' line='314' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_mkdir'>
+    <function-decl name='spdk_fsdev_mkdir' mangled-name='spdk_fsdev_mkdir' filepath='fsdev_io.c' line='314' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_mkdir' hash='ec667fe053f31c85'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='314' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='314' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='314' column='1'/>
@@ -1474,7 +1530,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='316' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_unlink' mangled-name='spdk_fsdev_unlink' filepath='fsdev_io.c' line='354' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_unlink'>
+    <function-decl name='spdk_fsdev_unlink' mangled-name='spdk_fsdev_unlink' filepath='fsdev_io.c' line='354' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_unlink' hash='9eda6864d94b467a'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='354' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='354' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='354' column='1'/>
@@ -1484,7 +1540,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='356' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_rmdir' mangled-name='spdk_fsdev_rmdir' filepath='fsdev_io.c' line='391' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_rmdir'>
+    <function-decl name='spdk_fsdev_rmdir' mangled-name='spdk_fsdev_rmdir' filepath='fsdev_io.c' line='391' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_rmdir' hash='74d5cbef1fb1be83'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='391' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='391' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='391' column='1'/>
@@ -1494,7 +1550,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='393' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_rename' mangled-name='spdk_fsdev_rename' filepath='fsdev_io.c' line='429' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_rename'>
+    <function-decl name='spdk_fsdev_rename' mangled-name='spdk_fsdev_rename' filepath='fsdev_io.c' line='429' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_rename' hash='b41eabd57eca0f12'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='429' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='429' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='429' column='1'/>
@@ -1507,7 +1563,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='432' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_link' mangled-name='spdk_fsdev_link' filepath='fsdev_io.c' line='477' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_link'>
+    <function-decl name='spdk_fsdev_link' mangled-name='spdk_fsdev_link' filepath='fsdev_io.c' line='477' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_link' hash='3d7620cd2ccb1b7a'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='477' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='477' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='477' column='1'/>
@@ -1518,7 +1574,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='479' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_fopen' mangled-name='spdk_fsdev_fopen' filepath='fsdev_io.c' line='513' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_fopen'>
+    <function-decl name='spdk_fsdev_fopen' mangled-name='spdk_fsdev_fopen' filepath='fsdev_io.c' line='513' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_fopen' hash='d9422fc674dc6bf3'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='513' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='513' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='513' column='1'/>
@@ -1528,7 +1584,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='515' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_read' mangled-name='spdk_fsdev_read' filepath='fsdev_io.c' line='543' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_read'>
+    <function-decl name='spdk_fsdev_read' mangled-name='spdk_fsdev_read' filepath='fsdev_io.c' line='543' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_read' hash='04acca8326668e70'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='543' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='543' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='543' column='1'/>
@@ -1544,7 +1600,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='547' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_write' mangled-name='spdk_fsdev_write' filepath='fsdev_io.c' line='581' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_write'>
+    <function-decl name='spdk_fsdev_write' mangled-name='spdk_fsdev_write' filepath='fsdev_io.c' line='581' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_write' hash='e253e455e76d5966'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='581' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='581' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='581' column='1'/>
@@ -1560,7 +1616,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='585' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_statfs' mangled-name='spdk_fsdev_statfs' filepath='fsdev_io.c' line='619' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_statfs'>
+    <function-decl name='spdk_fsdev_statfs' mangled-name='spdk_fsdev_statfs' filepath='fsdev_io.c' line='619' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_statfs' hash='0f429bae905f6a71'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='619' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='619' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='619' column='1'/>
@@ -1569,7 +1625,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='620' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_release' mangled-name='spdk_fsdev_release' filepath='fsdev_io.c' line='647' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_release'>
+    <function-decl name='spdk_fsdev_release' mangled-name='spdk_fsdev_release' filepath='fsdev_io.c' line='647' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_release' hash='3e47e73211e59c17'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='647' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='647' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='647' column='1'/>
@@ -1579,7 +1635,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='649' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_fsync' mangled-name='spdk_fsdev_fsync' filepath='fsdev_io.c' line='677' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_fsync'>
+    <function-decl name='spdk_fsdev_fsync' mangled-name='spdk_fsdev_fsync' filepath='fsdev_io.c' line='677' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_fsync' hash='b811a12c16219215'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='677' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='677' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='677' column='1'/>
@@ -1590,7 +1646,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='679' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_setxattr' mangled-name='spdk_fsdev_setxattr' filepath='fsdev_io.c' line='711' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_setxattr'>
+    <function-decl name='spdk_fsdev_setxattr' mangled-name='spdk_fsdev_setxattr' filepath='fsdev_io.c' line='711' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_setxattr' hash='9c73b96c89848069'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='711' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='711' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='711' column='1'/>
@@ -1603,7 +1659,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='713' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_getxattr' mangled-name='spdk_fsdev_getxattr' filepath='fsdev_io.c' line='758' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_getxattr'>
+    <function-decl name='spdk_fsdev_getxattr' mangled-name='spdk_fsdev_getxattr' filepath='fsdev_io.c' line='758' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_getxattr' hash='457739ee49ba4c62'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='758' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='758' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='758' column='1'/>
@@ -1615,7 +1671,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='760' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_listxattr' mangled-name='spdk_fsdev_listxattr' filepath='fsdev_io.c' line='796' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_listxattr'>
+    <function-decl name='spdk_fsdev_listxattr' mangled-name='spdk_fsdev_listxattr' filepath='fsdev_io.c' line='796' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_listxattr' hash='a707a9d2e744cb80'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='796' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='796' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='796' column='1'/>
@@ -1626,7 +1682,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='798' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_removexattr' mangled-name='spdk_fsdev_removexattr' filepath='fsdev_io.c' line='829' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_removexattr'>
+    <function-decl name='spdk_fsdev_removexattr' mangled-name='spdk_fsdev_removexattr' filepath='fsdev_io.c' line='829' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_removexattr' hash='f7676a4cd61e898a'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='829' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='829' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='829' column='1'/>
@@ -1636,7 +1692,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='831' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_flush' mangled-name='spdk_fsdev_flush' filepath='fsdev_io.c' line='864' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_flush'>
+    <function-decl name='spdk_fsdev_flush' mangled-name='spdk_fsdev_flush' filepath='fsdev_io.c' line='864' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_flush' hash='1637f1370f8869f2'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='864' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='864' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='864' column='1'/>
@@ -1646,7 +1702,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='866' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_opendir' mangled-name='spdk_fsdev_opendir' filepath='fsdev_io.c' line='894' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_opendir'>
+    <function-decl name='spdk_fsdev_opendir' mangled-name='spdk_fsdev_opendir' filepath='fsdev_io.c' line='894' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_opendir' hash='4f6eedd2dafc7398'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='894' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='894' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='894' column='1'/>
@@ -1656,7 +1712,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='896' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_readdir' mangled-name='spdk_fsdev_readdir' filepath='fsdev_io.c' line='934' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_readdir'>
+    <function-decl name='spdk_fsdev_readdir' mangled-name='spdk_fsdev_readdir' filepath='fsdev_io.c' line='934' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_readdir' hash='60efccfea7cd8bfe'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='934' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='934' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='934' column='1'/>
@@ -1668,7 +1724,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='936' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_releasedir' mangled-name='spdk_fsdev_releasedir' filepath='fsdev_io.c' line='967' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_releasedir'>
+    <function-decl name='spdk_fsdev_releasedir' mangled-name='spdk_fsdev_releasedir' filepath='fsdev_io.c' line='967' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_releasedir' hash='4a890cf3f505508c'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='967' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='967' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='967' column='1'/>
@@ -1678,7 +1734,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='969' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_fsyncdir' mangled-name='spdk_fsdev_fsyncdir' filepath='fsdev_io.c' line='997' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_fsyncdir'>
+    <function-decl name='spdk_fsdev_fsyncdir' mangled-name='spdk_fsdev_fsyncdir' filepath='fsdev_io.c' line='997' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_fsyncdir' hash='217fcb31280f4ba5'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='997' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='997' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='997' column='1'/>
@@ -1689,7 +1745,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='999' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_flock' mangled-name='spdk_fsdev_flock' filepath='fsdev_io.c' line='1028' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_flock'>
+    <function-decl name='spdk_fsdev_flock' mangled-name='spdk_fsdev_flock' filepath='fsdev_io.c' line='1028' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_flock' hash='1830853704cccf91'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='1028' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='1028' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='1028' column='1'/>
@@ -1700,7 +1756,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='1030' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_create' mangled-name='spdk_fsdev_create' filepath='fsdev_io.c' line='1062' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_create'>
+    <function-decl name='spdk_fsdev_create' mangled-name='spdk_fsdev_create' filepath='fsdev_io.c' line='1062' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_create' hash='87ffd2d9c919130e'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='1062' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='1062' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='1062' column='1'/>
@@ -1715,7 +1771,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='1064' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_abort' mangled-name='spdk_fsdev_abort' filepath='fsdev_io.c' line='1102' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_abort'>
+    <function-decl name='spdk_fsdev_abort' mangled-name='spdk_fsdev_abort' filepath='fsdev_io.c' line='1102' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_abort' hash='c6b248dfb9d35e68'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='1102' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='1102' column='1'/>
       <parameter type-id='9c313c2d' name='unique_to_abort' filepath='fsdev_io.c' line='1103' column='1'/>
@@ -1723,7 +1779,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='1103' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_fallocate' mangled-name='spdk_fsdev_fallocate' filepath='fsdev_io.c' line='1130' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_fallocate'>
+    <function-decl name='spdk_fsdev_fallocate' mangled-name='spdk_fsdev_fallocate' filepath='fsdev_io.c' line='1130' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_fallocate' hash='82620eb046144689'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='1130' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='1130' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='1130' column='1'/>
@@ -1736,7 +1792,7 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='1133' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_fsdev_copy_file_range' mangled-name='spdk_fsdev_copy_file_range' filepath='fsdev_io.c' line='1165' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_copy_file_range'>
+    <function-decl name='spdk_fsdev_copy_file_range' mangled-name='spdk_fsdev_copy_file_range' filepath='fsdev_io.c' line='1165' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_fsdev_copy_file_range' hash='3f902152e3afb065'>
       <parameter type-id='f0f65671' name='desc' filepath='fsdev_io.c' line='1165' column='1'/>
       <parameter type-id='a7e01877' name='ch' filepath='fsdev_io.c' line='1165' column='1'/>
       <parameter type-id='9c313c2d' name='unique' filepath='fsdev_io.c' line='1166' column='1'/>
@@ -1752,77 +1808,77 @@
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='fsdev_io.c' line='1170' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-type size-in-bits='64' id='e86134ea'>
+    <function-type size-in-bits='64' hash='388da3fa973fde78' id='e86134ea'>
       <parameter type-id='eaa32e2f'/>
       <parameter type-id='a7e01877'/>
       <parameter type-id='95e97e5e'/>
       <return type-id='48b5725f'/>
     </function-type>
-    <function-type size-in-bits='64' id='224f791f'>
+    <function-type size-in-bits='64' hash='e9ea91a7eab8302c' id='224f791f'>
       <parameter type-id='eaa32e2f'/>
       <parameter type-id='a7e01877'/>
       <parameter type-id='95e97e5e'/>
       <parameter type-id='80f4b756'/>
       <return type-id='48b5725f'/>
     </function-type>
-    <function-type size-in-bits='64' id='60567f77'>
+    <function-type size-in-bits='64' hash='91ac41d3c4bdfdf5' id='60567f77'>
       <parameter type-id='eaa32e2f'/>
       <parameter type-id='a7e01877'/>
       <parameter type-id='95e97e5e'/>
       <parameter type-id='750846ee'/>
       <return type-id='48b5725f'/>
     </function-type>
-    <function-type size-in-bits='64' id='dda518a1'>
+    <function-type size-in-bits='64' hash='f7b3310afdfa564e' id='dda518a1'>
       <parameter type-id='eaa32e2f'/>
       <parameter type-id='a7e01877'/>
       <parameter type-id='95e97e5e'/>
       <parameter type-id='d4690464'/>
       <return type-id='48b5725f'/>
     </function-type>
-    <function-type size-in-bits='64' id='2876a97b'>
-      <parameter type-id='eaa32e2f'/>
-      <parameter type-id='a7e01877'/>
-      <parameter type-id='95e97e5e'/>
-      <parameter type-id='b008536b'/>
-      <return type-id='48b5725f'/>
-    </function-type>
-    <function-type size-in-bits='64' id='c9b1af83'>
-      <parameter type-id='eaa32e2f'/>
-      <parameter type-id='a7e01877'/>
-      <parameter type-id='95e97e5e'/>
-      <parameter type-id='6e396922'/>
-      <parameter type-id='750846ee'/>
-      <return type-id='48b5725f'/>
-    </function-type>
-    <function-type size-in-bits='64' id='e4133648'>
-      <parameter type-id='eaa32e2f'/>
-      <parameter type-id='a7e01877'/>
-      <parameter type-id='95e97e5e'/>
-      <parameter type-id='6e396922'/>
-      <parameter type-id='750846ee'/>
-      <parameter type-id='b008536b'/>
-      <return type-id='48b5725f'/>
-    </function-type>
-    <function-type size-in-bits='64' id='d9cbc29c'>
-      <parameter type-id='eaa32e2f'/>
-      <parameter type-id='a7e01877'/>
-      <parameter type-id='95e97e5e'/>
-      <parameter type-id='8f92235e'/>
-      <return type-id='48b5725f'/>
-    </function-type>
-    <function-type size-in-bits='64' id='d9cbc29d'>
+    <function-type size-in-bits='64' hash='b6a97d07f8261bc0' id='40346000'>
       <parameter type-id='eaa32e2f'/>
       <parameter type-id='a7e01877'/>
       <parameter type-id='95e97e5e'/>
       <parameter type-id='b59d7dce'/>
       <return type-id='48b5725f'/>
     </function-type>
-    <function-type size-in-bits='64' id='d9916fe0'>
+    <function-type size-in-bits='64' hash='db2d2af5123c3d38' id='0e17ab74'>
       <parameter type-id='eaa32e2f'/>
       <parameter type-id='a7e01877'/>
       <parameter type-id='95e97e5e'/>
       <parameter type-id='b59d7dce'/>
       <parameter type-id='c894953d'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+    <function-type size-in-bits='64' hash='388da3fa973fde78' id='2876a97b'>
+      <parameter type-id='eaa32e2f'/>
+      <parameter type-id='a7e01877'/>
+      <parameter type-id='95e97e5e'/>
+      <parameter type-id='b008536b'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+    <function-type size-in-bits='64' hash='91ac41d3c4bdfdf5' id='c9b1af83'>
+      <parameter type-id='eaa32e2f'/>
+      <parameter type-id='a7e01877'/>
+      <parameter type-id='95e97e5e'/>
+      <parameter type-id='6e396922'/>
+      <parameter type-id='750846ee'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+    <function-type size-in-bits='64' hash='91ac41d3c4bdfdf5' id='e4133648'>
+      <parameter type-id='eaa32e2f'/>
+      <parameter type-id='a7e01877'/>
+      <parameter type-id='95e97e5e'/>
+      <parameter type-id='6e396922'/>
+      <parameter type-id='750846ee'/>
+      <parameter type-id='b008536b'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+    <function-type size-in-bits='64' hash='6668baab5275d4c5' id='bdbbdca4'>
+      <parameter type-id='eaa32e2f'/>
+      <parameter type-id='a7e01877'/>
+      <parameter type-id='95e97e5e'/>
+      <parameter type-id='8f92235e'/>
       <return type-id='48b5725f'/>
     </function-type>
   </abi-instr>

@@ -1,4 +1,4 @@
-<abi-corpus version='2.2' soname='libspdk_thread.so.10.1'>
+<abi-corpus version='2.4' soname='libspdk_thread.so.10.1'>
   <elf-needed>
     <dependency name='libspdk_log.so.7.0'/>
     <dependency name='libspdk_util.so.10.0'/>
@@ -101,13 +101,77 @@
     <elf-symbol name='spdk_thread_set_cpumask' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
     <elf-symbol name='spdk_thread_set_interrupt_mode' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
   </elf-function-symbols>
+  <undefined-elf-function-symbols>
+    <elf-symbol name='__assert_fail' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__cxa_finalize' type='func-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__errno_location' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__stack_chk_fail' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__tls_get_addr' version='GLIBC_2.3' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='_spdk_trace_record' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='abort' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='calloc' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='close' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='eventfd' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='free' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='getpid' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='memset' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='posix_memalign' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='pthread_mutex_lock' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='pthread_mutex_unlock' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='pthread_spin_destroy' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='pthread_spin_init' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='pthread_spin_lock' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='pthread_spin_unlock' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='read' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='snprintf' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_cpuset_copy' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_cpuset_negate' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_fd_group_add' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_fd_group_add_for_events' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_fd_group_create' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_fd_group_destroy' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_fd_group_event_modify' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_fd_group_get_fd' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_fd_group_remove' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_fd_group_wait' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_log' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_log_register_flag' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_strerror' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_trace_add_register_fn' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_trace_register_description_ext' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='strcmp' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='strdup' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='timerfd_create' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='timerfd_settime' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='write' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+  </undefined-elf-function-symbols>
+  <undefined-elf-variable-symbols>
+    <elf-symbol name='_ITM_deregisterTMCloneTable' type='no-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='_ITM_registerTMCloneTable' type='no-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__gmon_start__' type='no-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='g_trace_file' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_free' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_get_ticks' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_get_ticks_hz' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_malloc' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_mempool_create' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_mempool_free' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_mempool_get' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_mempool_get_bulk' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_mempool_put' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_ring_count' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_ring_create' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_ring_dequeue' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_ring_enqueue' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_ring_free' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+  </undefined-elf-variable-symbols>
   <abi-instr address-size='64' path='iobuf.c' language='LANG_C11'>
-    <class-decl name='spdk_iobuf_buffer' size-in-bits='64' is-struct='yes' visibility='default' filepath='thread.h' line='1071' column='1' id='9321bf74'>
+    <class-decl name='spdk_iobuf_buffer' is-struct='yes' visibility='default' size-in-bits='64' filepath='thread.h' line='1071' column='1' hash='efb1fa163f7c7507' id='9321bf74'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='stailq' type-id='e7f43f72' visibility='default' filepath='thread.h' line='1072' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_iobuf_buffer_stailq_t' size-in-bits='128' is-struct='yes' naming-typedef-id='306e7691' visibility='default' filepath='thread.h' line='1076' column='1' id='79110b08'>
+    <class-decl name='spdk_iobuf_buffer_stailq_t' is-struct='yes' naming-typedef-id='306e7691' visibility='default' size-in-bits='128' filepath='thread.h' line='1076' column='1' hash='ab07a5bcfa5575e1' id='79110b08'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='stqh_first' type-id='136d6f32' visibility='default' filepath='thread.h' line='1076' column='1'/>
       </data-member>
@@ -115,7 +179,7 @@
         <var-decl name='stqh_last' type-id='ad45e2c8' visibility='default' filepath='thread.h' line='1076' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_iobuf_channel' size-in-bits='1280' is-struct='yes' visibility='default' filepath='thread.h' line='1096' column='1' id='e8e2ad7d'>
+    <class-decl name='spdk_iobuf_channel' is-struct='yes' visibility='default' size-in-bits='1280' filepath='thread.h' line='1096' column='1' hash='3dfc7a299c67b7ad' id='e8e2ad7d'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='small' type-id='88eba988' visibility='default' filepath='thread.h' line='1098' column='1'/>
       </data-member>
@@ -129,7 +193,7 @@
         <var-decl name='parent' type-id='a7e01876' visibility='default' filepath='thread.h' line='1104' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_iobuf_entry' size-in-bits='192' is-struct='yes' visibility='default' filepath='thread.h' line='1065' column='1' id='71e32ba2'>
+    <class-decl name='spdk_iobuf_entry' is-struct='yes' visibility='default' size-in-bits='192' filepath='thread.h' line='1065' column='1' hash='3823418d95fd487d' id='71e32ba2'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='cb_fn' type-id='8b006695' visibility='default' filepath='thread.h' line='1066' column='1'/>
       </data-member>
@@ -140,7 +204,7 @@
         <var-decl name='stailq' type-id='e7f43f73' visibility='default' filepath='thread.h' line='1068' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_iobuf_entry_stailq_t' size-in-bits='128' is-struct='yes' naming-typedef-id='da6a25d9' visibility='default' filepath='thread.h' line='1075' column='1' id='ce92b0c6'>
+    <class-decl name='spdk_iobuf_entry_stailq_t' is-struct='yes' naming-typedef-id='da6a25d9' visibility='default' size-in-bits='128' filepath='thread.h' line='1075' column='1' hash='8b3084943765eb88' id='ce92b0c6'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='stqh_first' type-id='29210180' visibility='default' filepath='thread.h' line='1075' column='1'/>
       </data-member>
@@ -148,7 +212,7 @@
         <var-decl name='stqh_last' type-id='68f59e9e' visibility='default' filepath='thread.h' line='1075' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_iobuf_module_stats' size-in-bits='448' is-struct='yes' visibility='default' filepath='thread.h' line='1054' column='1' id='c3a99cd6'>
+    <class-decl name='spdk_iobuf_module_stats' is-struct='yes' visibility='default' size-in-bits='448' filepath='thread.h' line='1054' column='1' hash='f01f5416b2ea93a7' id='c3a99cd6'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='small_pool' type-id='adee513c' visibility='default' filepath='thread.h' line='1055' column='1'/>
       </data-member>
@@ -159,7 +223,7 @@
         <var-decl name='module' type-id='80f4b756' visibility='default' filepath='thread.h' line='1057' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_iobuf_opts' size-in-bits='256' is-struct='yes' visibility='default' filepath='thread.h' line='1025' column='1' id='2b1f9788'>
+    <class-decl name='spdk_iobuf_opts' is-struct='yes' visibility='default' size-in-bits='256' filepath='thread.h' line='1025' column='1' hash='bdd81250e6d91599' id='2b1f9788'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='small_pool_count' type-id='9c313c2d' visibility='default' filepath='thread.h' line='1027' column='1'/>
       </data-member>
@@ -176,7 +240,7 @@
         <var-decl name='opts_size' type-id='b59d7dce' visibility='default' filepath='thread.h' line='1041' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_iobuf_pool' size-in-bits='576' is-struct='yes' visibility='default' filepath='thread.h' line='1078' column='1' id='88eba988'>
+    <class-decl name='spdk_iobuf_pool' is-struct='yes' visibility='default' size-in-bits='576' filepath='thread.h' line='1078' column='1' hash='e9ba5c1a880ba87a' id='88eba988'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='pool' type-id='b2192338' visibility='default' filepath='thread.h' line='1080' column='1'/>
       </data-member>
@@ -199,7 +263,7 @@
         <var-decl name='stats' type-id='adee513c' visibility='default' filepath='thread.h' line='1092' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_iobuf_pool_stats' size-in-bits='192' is-struct='yes' visibility='default' filepath='thread.h' line='1045' column='1' id='adee513c'>
+    <class-decl name='spdk_iobuf_pool_stats' is-struct='yes' visibility='default' size-in-bits='192' filepath='thread.h' line='1045' column='1' hash='10641058b4271617' id='adee513c'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='cache' type-id='9c313c2d' visibility='default' filepath='thread.h' line='1047' column='1'/>
       </data-member>
@@ -210,148 +274,170 @@
         <var-decl name='retry' type-id='9c313c2d' visibility='default' filepath='thread.h' line='1051' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__1' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' filepath='thread.h' line='1072' column='1' id='e7f43f72'>
+    <class-decl name='__anonymous_struct__1' is-struct='yes' visibility='default' size-in-bits='64' is-anonymous='yes' filepath='thread.h' line='1072' column='1' hash='847a447b977d48b2' id='e7f43f72'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='stqe_next' type-id='136d6f32' visibility='default' filepath='thread.h' line='1072' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__2' size-in-bits='64' is-struct='yes' is-anonymous='yes' visibility='default' filepath='thread.h' line='1068' column='1' id='e7f43f73'>
+    <class-decl name='__anonymous_struct__2' is-struct='yes' visibility='default' size-in-bits='64' is-anonymous='yes' filepath='thread.h' line='1068' column='1' hash='9d88403e96580dfc#2' id='e7f43f73'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='stqe_next' type-id='29210180' visibility='default' filepath='thread.h' line='1068' column='1'/>
       </data-member>
     </class-decl>
-    <typedef-decl name='spdk_iobuf_buffer_stailq_t' type-id='79110b08' filepath='thread.h' line='1076' column='1' id='306e7691'/>
-    <typedef-decl name='spdk_iobuf_entry_stailq_t' type-id='ce92b0c6' filepath='thread.h' line='1075' column='1' id='da6a25d9'/>
-    <typedef-decl name='spdk_iobuf_finish_cb' type-id='b7f9d8e6' filepath='thread.h' line='1114' column='1' id='54a757f6'/>
-    <typedef-decl name='spdk_iobuf_for_each_entry_fn' type-id='029f6c42' filepath='thread.h' line='1180' column='1' id='acf1b6cc'/>
-    <typedef-decl name='spdk_iobuf_get_cb' type-id='fa35b1b9' filepath='thread.h' line='1062' column='1' id='8b006695'/>
-    <typedef-decl name='spdk_iobuf_get_stats_cb' type-id='2bf3510b' filepath='thread.h' line='1234' column='1' id='9d506da1'/>
-    <qualified-type-def type-id='2b1f9788' const='yes' id='d9f751c7'/>
-    <pointer-type-def type-id='d9f751c7' size-in-bits='64' id='0d55f817'/>
-    <pointer-type-def type-id='1a50f708' size-in-bits='64' id='029f6c42'/>
-    <pointer-type-def type-id='9321bf74' size-in-bits='64' id='136d6f32'/>
-    <pointer-type-def type-id='136d6f32' size-in-bits='64' id='ad45e2c8'/>
-    <pointer-type-def type-id='e8e2ad7d' size-in-bits='64' id='f905ec5d'/>
-    <pointer-type-def type-id='71e32ba2' size-in-bits='64' id='29210180'/>
-    <pointer-type-def type-id='29210180' size-in-bits='64' id='68f59e9e'/>
-    <pointer-type-def type-id='da6a25d9' size-in-bits='64' id='49599bfc'/>
-    <pointer-type-def type-id='c3a99cd6' size-in-bits='64' id='0e94382c'/>
-    <pointer-type-def type-id='2b1f9788' size-in-bits='64' id='bd31792e'/>
-    <pointer-type-def type-id='88eba988' size-in-bits='64' id='0087086e'/>
-    <pointer-type-def type-id='84d13285' size-in-bits='64' id='fa35b1b9'/>
-    <pointer-type-def type-id='5c26616f' size-in-bits='64' id='2bf3510b'/>
+    <typedef-decl name='spdk_iobuf_buffer_stailq_t' type-id='79110b08' size-in-bits='128' filepath='thread.h' line='1076' column='1' id='306e7691'/>
+    <typedef-decl name='spdk_iobuf_entry_stailq_t' type-id='ce92b0c6' size-in-bits='128' filepath='thread.h' line='1075' column='1' id='da6a25d9'/>
+    <typedef-decl name='spdk_iobuf_finish_cb' type-id='61359e15' size-in-bits='64' filepath='thread.h' line='1114' column='1' hash='fd7a63c0c6c822c4' id='54a757f6'/>
+    <typedef-decl name='spdk_iobuf_for_each_entry_fn' type-id='b845eafb' size-in-bits='64' filepath='thread.h' line='1180' column='1' hash='fd7a63c0c6c822c4' id='acf1b6cc'/>
+    <typedef-decl name='spdk_iobuf_get_cb' type-id='86c1c05e' size-in-bits='64' filepath='thread.h' line='1062' column='1' hash='fd7a63c0c6c822c4' id='8b006695'/>
+    <typedef-decl name='spdk_iobuf_get_stats_cb' type-id='47f054e2' size-in-bits='64' filepath='thread.h' line='1234' column='1' hash='fd7a63c0c6c822c4' id='9d506da1'/>
+    <qualified-type-def type-id='2b1f9788' const='yes' hash='29b091d50a68dd5f' id='d9f751c7'/>
+    <pointer-type-def type-id='d9f751c7' size-in-bits='64' hash='2f6dac7e6f174c28' id='0d55f817'/>
+    <pointer-type-def type-id='1a50f708' size-in-bits='64' hash='fd7a63c0c6c822c4' id='b845eafb'/>
+    <pointer-type-def type-id='9321bf74' size-in-bits='64' hash='fcfecc06c3e6bc4e' id='136d6f32'/>
+    <pointer-type-def type-id='136d6f32' size-in-bits='64' hash='b2b8a55b146d9011' id='ad45e2c8'/>
+    <pointer-type-def type-id='e8e2ad7d' size-in-bits='64' hash='59a882b5a5a5ec0f' id='f905ec5d'/>
+    <pointer-type-def type-id='71e32ba2' size-in-bits='64' hash='7a5ac91511c7d708' id='29210180'/>
+    <pointer-type-def type-id='29210180' size-in-bits='64' hash='e9ec4a9354e6e83b' id='68f59e9e'/>
+    <pointer-type-def type-id='da6a25d9' size-in-bits='64' hash='500283e43bd4c202' id='49599bfc'/>
+    <pointer-type-def type-id='c3a99cd6' size-in-bits='64' hash='3777bb5077c02569' id='0e94382c'/>
+    <pointer-type-def type-id='2b1f9788' size-in-bits='64' hash='f0965f87a638abe3' id='bd31792e'/>
+    <pointer-type-def type-id='88eba988' size-in-bits='64' hash='adfcd0ec0b481802' id='0087086e'/>
+    <pointer-type-def type-id='84d13285' size-in-bits='64' hash='fd7a63c0c6c822c4' id='86c1c05e'/>
+    <pointer-type-def type-id='39bf6d87' size-in-bits='64' hash='fd7a63c0c6c822c4' id='47f054e2'/>
     <pointer-type-def type-id='8de5f3c0' size-in-bits='64' id='a7e01876'/>
     <pointer-type-def type-id='f749e2ba' size-in-bits='64' id='b2192338'/>
     <class-decl name='spdk_io_channel' is-struct='yes' visibility='default' is-declaration-only='yes' id='8de5f3c0'/>
     <class-decl name='spdk_ring' is-struct='yes' visibility='default' is-declaration-only='yes' id='f749e2ba'/>
-    <function-decl name='spdk_iobuf_initialize' mangled-name='spdk_iobuf_initialize' filepath='iobuf.c' line='96' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iobuf_initialize'>
+    <function-decl name='spdk_iobuf_initialize' mangled-name='spdk_iobuf_initialize' filepath='iobuf.c' line='96' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iobuf_initialize' hash='388da3fa973fde78'>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_iobuf_finish' mangled-name='spdk_iobuf_finish' filepath='iobuf.c' line='201' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iobuf_finish'>
+    <function-decl name='spdk_iobuf_finish' mangled-name='spdk_iobuf_finish' filepath='iobuf.c' line='201' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iobuf_finish' hash='5695f5ce05a4c55f'>
       <parameter type-id='54a757f6' name='cb_fn' filepath='iobuf.c' line='201' column='1'/>
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='iobuf.c' line='201' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_iobuf_set_opts' mangled-name='spdk_iobuf_set_opts' filepath='iobuf.c' line='216' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iobuf_set_opts'>
+    <function-decl name='spdk_iobuf_set_opts' mangled-name='spdk_iobuf_set_opts' filepath='iobuf.c' line='216' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iobuf_set_opts' hash='d0a436a9f24099b8'>
       <parameter type-id='0d55f817' name='opts' filepath='iobuf.c' line='216' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_iobuf_get_opts' mangled-name='spdk_iobuf_get_opts' filepath='iobuf.c' line='269' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iobuf_get_opts'>
+    <function-decl name='spdk_iobuf_get_opts' mangled-name='spdk_iobuf_get_opts' filepath='iobuf.c' line='269' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iobuf_get_opts' hash='5a4723771cb0be08'>
       <parameter type-id='bd31792e' name='opts' filepath='iobuf.c' line='269' column='1'/>
       <parameter type-id='b59d7dce' name='opts_size' filepath='iobuf.c' line='269' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_iobuf_channel_init' mangled-name='spdk_iobuf_channel_init' filepath='iobuf.c' line='302' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iobuf_channel_init'>
+    <function-decl name='spdk_iobuf_channel_init' mangled-name='spdk_iobuf_channel_init' filepath='iobuf.c' line='302' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iobuf_channel_init' hash='43a9b3b93cef05fb'>
       <parameter type-id='f905ec5d' name='ch' filepath='iobuf.c' line='302' column='1'/>
       <parameter type-id='80f4b756' name='name' filepath='iobuf.c' line='302' column='1'/>
       <parameter type-id='8f92235e' name='small_cache_size' filepath='iobuf.c' line='303' column='1'/>
       <parameter type-id='8f92235e' name='large_cache_size' filepath='iobuf.c' line='303' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_iobuf_channel_fini' mangled-name='spdk_iobuf_channel_fini' filepath='iobuf.c' line='391' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iobuf_channel_fini'>
+    <function-decl name='spdk_iobuf_channel_fini' mangled-name='spdk_iobuf_channel_fini' filepath='iobuf.c' line='391' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iobuf_channel_fini' hash='83ea0cef7185b7fe'>
       <parameter type-id='f905ec5d' name='ch' filepath='iobuf.c' line='391' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_iobuf_register_module' mangled-name='spdk_iobuf_register_module' filepath='iobuf.c' line='436' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iobuf_register_module'>
-      <parameter type-id='80f4b756' name='name' filepath='iobuf.c' line='436' column='1'/>
-      <return type-id='95e97e5e'/>
-    </function-decl>
-    <function-decl name='spdk_iobuf_unregister_module' mangled-name='spdk_iobuf_unregister_module' filepath='iobuf.c' line='463' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iobuf_unregister_module'>
+    <function-decl name='spdk_iobuf_register_module' mangled-name='spdk_iobuf_register_module' filepath='iobuf.c' line='436' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iobuf_register_module' hash='e9ea91a7eab8302c'>
       <parameter type-id='80f4b756' name='name' filepath='iobuf.c' line='463' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_iobuf_for_each_entry' mangled-name='spdk_iobuf_for_each_entry' filepath='iobuf.c' line='480' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iobuf_for_each_entry'>
+    <function-decl name='spdk_iobuf_unregister_module' mangled-name='spdk_iobuf_unregister_module' filepath='iobuf.c' line='463' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iobuf_unregister_module' hash='e9ea91a7eab8302c'>
+      <parameter type-id='80f4b756' name='name' filepath='iobuf.c' line='463' column='1'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_iobuf_for_each_entry' mangled-name='spdk_iobuf_for_each_entry' filepath='iobuf.c' line='480' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iobuf_for_each_entry' hash='2997b2ef666aabd6'>
       <parameter type-id='f905ec5d' name='ch' filepath='iobuf.c' line='480' column='1'/>
       <parameter type-id='0087086e' name='pool' filepath='iobuf.c' line='480' column='1'/>
       <parameter type-id='acf1b6cc' name='cb_fn' filepath='iobuf.c' line='481' column='1'/>
       <parameter type-id='eaa32e2f' name='cb_ctx' filepath='iobuf.c' line='481' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_iobuf_entry_abort' mangled-name='spdk_iobuf_entry_abort' filepath='iobuf.c' line='502' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iobuf_entry_abort'>
+    <function-decl name='spdk_iobuf_entry_abort' mangled-name='spdk_iobuf_entry_abort' filepath='iobuf.c' line='502' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iobuf_entry_abort' hash='2e148c6624d425c4'>
       <parameter type-id='f905ec5d' name='ch' filepath='iobuf.c' line='502' column='1'/>
       <parameter type-id='29210180' name='entry' filepath='iobuf.c' line='502' column='1'/>
       <parameter type-id='9c313c2d' name='len' filepath='iobuf.c' line='503' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_iobuf_get' mangled-name='spdk_iobuf_get' filepath='iobuf.c' line='520' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iobuf_get'>
+    <function-decl name='spdk_iobuf_get' mangled-name='spdk_iobuf_get' filepath='iobuf.c' line='520' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iobuf_get' hash='d5e55c6175860ee0'>
       <parameter type-id='f905ec5d' name='ch' filepath='iobuf.c' line='520' column='1'/>
       <parameter type-id='9c313c2d' name='len' filepath='iobuf.c' line='520' column='1'/>
       <parameter type-id='29210180' name='entry' filepath='iobuf.c' line='521' column='1'/>
       <parameter type-id='8b006695' name='cb_fn' filepath='iobuf.c' line='521' column='1'/>
       <return type-id='eaa32e2f'/>
     </function-decl>
-    <function-decl name='spdk_iobuf_put' mangled-name='spdk_iobuf_put' filepath='iobuf.c' line='572' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iobuf_put'>
+    <function-decl name='spdk_iobuf_put' mangled-name='spdk_iobuf_put' filepath='iobuf.c' line='572' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iobuf_put' hash='6b28dab096e7e9d7'>
       <parameter type-id='f905ec5d' name='ch' filepath='iobuf.c' line='572' column='1'/>
       <parameter type-id='eaa32e2f' name='buf' filepath='iobuf.c' line='572' column='1'/>
       <parameter type-id='9c313c2d' name='len' filepath='iobuf.c' line='572' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_iobuf_get_stats' mangled-name='spdk_iobuf_get_stats' filepath='iobuf.c' line='671' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iobuf_get_stats'>
+    <function-decl name='spdk_iobuf_get_stats' mangled-name='spdk_iobuf_get_stats' filepath='iobuf.c' line='671' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iobuf_get_stats' hash='a7f99494147764a8'>
       <parameter type-id='9d506da1' name='cb_fn' filepath='iobuf.c' line='671' column='1'/>
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='iobuf.c' line='671' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-type size-in-bits='64' id='1a50f708'>
+    <function-type size-in-bits='64' hash='4c0d580acb5bc91d' id='1a50f708'>
       <parameter type-id='f905ec5d'/>
       <parameter type-id='29210180'/>
       <parameter type-id='eaa32e2f'/>
       <return type-id='95e97e5e'/>
     </function-type>
-    <function-type size-in-bits='64' id='84d13285'>
+    <function-type size-in-bits='64' hash='07016b87e631b847' id='84d13285'>
       <parameter type-id='29210180'/>
       <parameter type-id='eaa32e2f'/>
       <return type-id='48b5725f'/>
     </function-type>
-    <function-type size-in-bits='64' id='5c26616f'>
+    <function-type size-in-bits='64' hash='9c614a37b677247b' id='39bf6d87'>
       <parameter type-id='0e94382c'/>
       <parameter type-id='8f92235e'/>
       <parameter type-id='eaa32e2f'/>
       <return type-id='48b5725f'/>
     </function-type>
-    <function-type size-in-bits='64' id='c5c76c9c'>
+    <function-type size-in-bits='64' hash='7f32ffea222edbe7' id='c5c76c9c'>
       <parameter type-id='eaa32e2f'/>
       <return type-id='48b5725f'/>
     </function-type>
   </abi-instr>
   <abi-instr address-size='64' path='thread.c' language='LANG_C11'>
-    <type-decl name='bool' size-in-bits='8' id='c894953d'/>
-    <type-decl name='char' size-in-bits='8' id='a84c031d'/>
-    <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='2056' id='cd5f2f4f'>
-      <subrange length='257' lower-bound='0' upper-bound='256' type-id='f0981eeb' id='72e246d7'/>
+    <type-decl name='bool' size-in-bits='8' hash='5ba96bb22f4237fb' id='c894953d'/>
+    <type-decl name='char' size-in-bits='8' hash='65b2d157027b431a' id='a84c031d'/>
+    <array-type-def dimensions='2' type-id='a84c031d' size-in-bits='131072' hash='3c5916f897c0fccc' id='2afe1b7d'>
+      <subrange length='1024' lower-bound='0' upper-bound='1023' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='3d55c71eae25bbb8' id='c60446f8'/>
+      <subrange length='16' lower-bound='0' upper-bound='15' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='6c35b1e999eba398' id='848d0938'/>
     </array-type-def>
-    <enum-decl name='spdk_interrupt_event_types' filepath='thread.h' line='899' column='1' id='88d1abf7'>
+    <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='112' hash='32c03ac42667596f' id='f01a039e'>
+      <subrange length='14' lower-bound='0' upper-bound='13' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='73cf96c2d1f03103' id='48882d96'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='192' hash='fff287cef34a1a32' id='6653bb13'>
+      <subrange length='24' lower-bound='0' upper-bound='23' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='e7b8d3aa178b54e4' id='fdd3342b'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='2056' hash='85a15a68e9db1393' id='cd5f2f4f'>
+      <subrange length='257' lower-bound='0' upper-bound='256' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='28db190caf697622' id='72e246d7'/>
+    </array-type-def>
+    <enum-decl name='spdk_interrupt_event_types' size-in-bits='32' alignment-in-bits='32' filepath='thread.h' line='899' column='1' hash='8651242702a271f7' id='88d1abf7'>
       <underlying-type type-id='9cac1fee'/>
       <enumerator name='SPDK_INTERRUPT_EVENT_IN' value='1'/>
       <enumerator name='SPDK_INTERRUPT_EVENT_OUT' value='4'/>
       <enumerator name='SPDK_INTERRUPT_EVENT_ET' value='2147483648'/>
     </enum-decl>
-    <enum-decl name='spdk_thread_op' filepath='thread.h' line='63' column='1' id='1380717f'>
+    <enum-decl name='spdk_thread_op' size-in-bits='32' alignment-in-bits='32' filepath='thread.h' line='63' column='1' hash='44705a75251d62ce' id='1380717f'>
       <underlying-type type-id='9cac1fee'/>
       <enumerator name='SPDK_THREAD_OP_NEW' value='0'/>
       <enumerator name='SPDK_THREAD_OP_RESCHED' value='1'/>
     </enum-decl>
-    <type-decl name='int' size-in-bits='32' id='95e97e5e'/>
-    <class-decl name='spdk_cpuset' size-in-bits='3080' is-struct='yes' visibility='default' filepath='cpuset.h' line='25' column='1' id='aec5215a'>
+    <type-decl name='int' size-in-bits='32' hash='09d17c08f594edc7' id='95e97e5e'/>
+    <array-type-def dimensions='1' type-id='e60ad0bd' size-in-bits='1024' hash='60ed9848ccb7031f' id='b82d72d1'>
+      <subrange length='8' lower-bound='0' upper-bound='7' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='6e87a8ff484907ad' id='56e0c0b1'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='0bd4cb79' size-in-bits='4096' hash='0f079d7129c3e1e4' id='9fd81fb6'>
+      <subrange length='256' lower-bound='0' upper-bound='255' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='5cb16198282e86c6' id='36e5b9fa'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='9de25536' size-in-bits='4096' hash='1ca77a0af0acdbdb' id='42417227'>
+      <subrange length='256' lower-bound='0' upper-bound='255' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='5cb16198282e86c6' id='36e5b9fa'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='40439314' size-in-bits='1945600' hash='7c0b354302af8747' id='4ee141dd'>
+      <subrange length='1280' lower-bound='0' upper-bound='1279' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='7da7205683a200f5' id='33dc94fc'/>
+    </array-type-def>
+    <class-decl name='spdk_cpuset' is-struct='yes' visibility='default' size-in-bits='3080' filepath='cpuset.h' line='25' column='1' hash='c4979574ded471d6' id='aec5215a'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='str' type-id='cd5f2f4f' visibility='default' filepath='cpuset.h' line='26' column='1'/>
       </data-member>
@@ -359,7 +445,7 @@
         <var-decl name='cpus' type-id='c768f32d' visibility='default' filepath='cpuset.h' line='27' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_poller_stats' size-in-bits='128' is-struct='yes' visibility='default' filepath='thread.h' line='14' column='1' id='cb2c3d4e'>
+    <class-decl name='spdk_poller_stats' is-struct='yes' visibility='default' size-in-bits='128' filepath='thread.h' line='14' column='1' hash='5728cb13165dc9e3' id='cb2c3d4e'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='run_count' type-id='9c313c2d' visibility='default' filepath='thread.h' line='15' column='1'/>
       </data-member>
@@ -367,7 +453,7 @@
         <var-decl name='busy_count' type-id='9c313c2d' visibility='default' filepath='thread.h' line='16' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_spinlock' size-in-bits='256' is-struct='yes' visibility='default' filepath='thread.h' line='981' column='1' id='d02a8f9f'>
+    <class-decl name='spdk_spinlock' is-struct='yes' visibility='default' size-in-bits='256' filepath='thread.h' line='981' column='1' hash='f3654a830a369375' id='d02a8f9f'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='spinlock' type-id='6d44fa69' visibility='default' filepath='thread.h' line='982' column='1'/>
       </data-member>
@@ -384,7 +470,7 @@
         <var-decl name='destroyed' type-id='c894953d' visibility='default' filepath='thread.h' line='986' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_thread_stats' size-in-bits='128' is-struct='yes' visibility='default' filepath='thread.h' line='478' column='1' id='06899014'>
+    <class-decl name='spdk_thread_stats' is-struct='yes' visibility='default' size-in-bits='128' filepath='thread.h' line='478' column='1' hash='2aa08a1a07e79c20' id='06899014'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='busy_tsc' type-id='9c313c2d' visibility='default' filepath='thread.h' line='479' column='1'/>
       </data-member>
@@ -392,52 +478,173 @@
         <var-decl name='idle_tsc' type-id='9c313c2d' visibility='default' filepath='thread.h' line='480' column='1'/>
       </data-member>
     </class-decl>
-    <typedef-decl name='__uint32_t' type-id='f0981eec' filepath='types.h' line='42' column='1' id='62f1140c'/>
-    <typedef-decl name='__uint64_t' type-id='f0981eeb' filepath='types.h' line='45' column='1' id='8910171f'/>
-    <typedef-decl name='__uint8_t' type-id='002ac4a6' filepath='types.h' line='38' column='1' id='c51d6389'/>
-    <typedef-decl name='pthread_spinlock_t' type-id='e024ff18' filepath='pthreadtypes.h' line='103' column='1' id='6d44fa69'/>
-    <typedef-decl name='size_t' type-id='f0981eeb' filepath='stddef.h' line='214' column='1' id='b59d7dce'/>
-    <typedef-decl name='spdk_channel_for_each_cpl' type-id='7957efd5' filepath='thread.h' line='174' column='1' id='38c48f04'/>
-    <typedef-decl name='spdk_channel_msg' type-id='8ced1cce' filepath='thread.h' line='166' column='1' id='fce5caf0'/>
-    <typedef-decl name='spdk_interrupt_fn' type-id='b9b212f5' filepath='thread.h' line='837' column='1' id='d841131b'/>
-    <typedef-decl name='spdk_io_channel_create_cb' type-id='585e1de9' filepath='thread.h' line='144' column='1' id='7c63ffcc'/>
-    <typedef-decl name='spdk_io_channel_destroy_cb' type-id='debb4ee8' filepath='thread.h' line='152' column='1' id='7e998c02'/>
-    <typedef-decl name='spdk_io_device_unregister_cb' type-id='b7f9d8e6' filepath='thread.h' line='159' column='1' id='ee92dcdf'/>
-    <typedef-decl name='spdk_msg_fn' type-id='b7f9d8e6' filepath='thread.h' line='90' column='1' id='de128c99'/>
-    <typedef-decl name='spdk_new_thread_fn' type-id='ced30f5e' filepath='thread.h' line='58' column='1' id='cf6adfe1'/>
-    <typedef-decl name='spdk_poller_fn' type-id='b9b212f5' filepath='thread.h' line='109' column='1' id='6aa9ba7a'/>
-    <typedef-decl name='spdk_poller_set_interrupt_mode_cb' type-id='32a99b79' filepath='thread.h' line='118' column='1' id='5d15a824'/>
-    <typedef-decl name='spdk_thread_op_fn' type-id='6588d7a0' filepath='thread.h' line='78' column='1' id='fd7a9268'/>
-    <typedef-decl name='spdk_thread_op_supported_fn' type-id='24118130' filepath='thread.h' line='83' column='1' id='34a4e98f'/>
-    <typedef-decl name='uint32_t' type-id='62f1140c' filepath='stdint-uintn.h' line='26' column='1' id='8f92235e'/>
-    <typedef-decl name='uint64_t' type-id='8910171f' filepath='stdint-uintn.h' line='27' column='1' id='9c313c2d'/>
-    <typedef-decl name='uint8_t' type-id='c51d6389' filepath='stdint-uintn.h' line='24' column='1' id='b96825af'/>
-    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='1024' id='c768f32d'>
-      <subrange length='128' lower-bound='0' upper-bound='127' type-id='f0981eeb' id='1eb1687a'/>
+    <class-decl name='spdk_trace_argument' is-struct='yes' visibility='default' size-in-bits='128' filepath='trace.h' line='76' column='1' hash='80b9ee8812159e6b' id='e60ad0bd'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='f01a039e' visibility='default' filepath='trace.h' line='77' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='112'>
+        <var-decl name='type' type-id='b96825af' visibility='default' filepath='trace.h' line='78' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='120'>
+        <var-decl name='size' type-id='b96825af' visibility='default' filepath='trace.h' line='79' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_trace_file' is-struct='yes' visibility='default' size-in-bits='2151936' filepath='trace.h' line='125' column='1' hash='8233947ec35f6520' id='a6dc9de4'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='file_size' type-id='9c313c2d' visibility='default' filepath='trace.h' line='126' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tsc_rate' type-id='9c313c2d' visibility='default' filepath='trace.h' line='127' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='tpoint_mask' type-id='38ce06c2' visibility='default' filepath='trace.h' line='128' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1408'>
+        <var-decl name='tname' type-id='2afe1b7d' visibility='default' filepath='trace.h' line='129' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='132480'>
+        <var-decl name='owner_type' type-id='42417227' visibility='default' filepath='trace.h' line='130' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='136576'>
+        <var-decl name='object' type-id='9fd81fb6' visibility='default' filepath='trace.h' line='131' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='140672'>
+        <var-decl name='tpoint' type-id='4ee141dd' visibility='default' filepath='trace.h' line='132' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2086272'>
+        <var-decl name='num_owners' type-id='149c6638' visibility='default' filepath='trace.h' line='134' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2086288'>
+        <var-decl name='owner_description_size' type-id='149c6638' visibility='default' filepath='trace.h' line='135' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2086304'>
+        <var-decl name='reserved' type-id='d351502e' visibility='default' filepath='trace.h' line='136' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2086336'>
+        <var-decl name='lcore_history_offsets' type-id='4dee7a71' visibility='default' filepath='trace.h' line='139' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2151872'>
+        <var-decl name='owner_offset' type-id='9c313c2d' visibility='default' filepath='trace.h' line='142' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2151936'>
+        <var-decl name='data' type-id='048fe7bc' visibility='default' filepath='trace.h' line='147' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_trace_object' is-struct='yes' visibility='default' size-in-bits='16' filepath='trace.h' line='59' column='1' hash='4cb7e9f800eb3922' id='0bd4cb79'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='type' type-id='b96825af' visibility='default' filepath='trace.h' line='60' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='8'>
+        <var-decl name='id_prefix' type-id='a84c031d' visibility='default' filepath='trace.h' line='61' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_trace_owner_type' is-struct='yes' visibility='default' size-in-bits='16' filepath='trace.h' line='45' column='1' hash='3a844a43fe71e62c' id='9de25536'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='type' type-id='b96825af' visibility='default' filepath='trace.h' line='46' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='8'>
+        <var-decl name='id_prefix' type-id='a84c031d' visibility='default' filepath='trace.h' line='47' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_trace_tpoint' is-struct='yes' visibility='default' size-in-bits='1520' filepath='trace.h' line='82' column='1' hash='6811ef216b2d907d' id='40439314'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='6653bb13' visibility='default' filepath='trace.h' line='83' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='tpoint_id' type-id='149c6638' visibility='default' filepath='trace.h' line='84' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='208'>
+        <var-decl name='owner_type' type-id='b96825af' visibility='default' filepath='trace.h' line='85' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='216'>
+        <var-decl name='object_type' type-id='b96825af' visibility='default' filepath='trace.h' line='86' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='224'>
+        <var-decl name='new_object' type-id='b96825af' visibility='default' filepath='trace.h' line='87' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='232'>
+        <var-decl name='num_args' type-id='b96825af' visibility='default' filepath='trace.h' line='88' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='240'>
+        <var-decl name='args' type-id='b82d72d1' visibility='default' filepath='trace.h' line='89' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1264'>
+        <var-decl name='related_objects' type-id='4cb10997' visibility='default' filepath='trace.h' line='94' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' is-struct='yes' visibility='default' size-in-bits='16' is-anonymous='yes' filepath='trace.h' line='91' column='1' hash='674f82d2e91b52ab#3' id='e7f43f74'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='object_type' type-id='b96825af' visibility='default' filepath='trace.h' line='92' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='8'>
+        <var-decl name='arg_index' type-id='b96825af' visibility='default' filepath='trace.h' line='93' column='1'/>
+      </data-member>
+    </class-decl>
+    <array-type-def dimensions='1' type-id='e7f43f74' size-in-bits='256' hash='835df774c3307f8b' id='4cb10997'>
+      <subrange length='16' lower-bound='0' upper-bound='15' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='6c35b1e999eba398' id='848d0938'/>
     </array-type-def>
-    <type-decl name='unnamed-enum-underlying-type-32' is-anonymous='yes' size-in-bits='32' alignment-in-bits='32' id='9cac1fee'/>
-    <type-decl name='unsigned char' size-in-bits='8' id='002ac4a6'/>
-    <type-decl name='unsigned int' size-in-bits='32' id='f0981eec'/>
-    <type-decl name='unsigned long int' size-in-bits='64' id='f0981eeb'/>
-    <pointer-type-def type-id='c11e252e' size-in-bits='64' id='24118130'/>
-    <qualified-type-def type-id='a84c031d' const='yes' id='9b45d938'/>
-    <pointer-type-def type-id='9b45d938' size-in-bits='64' id='80f4b756'/>
-    <qualified-type-def type-id='aec5215a' const='yes' id='04ae283d'/>
-    <pointer-type-def type-id='04ae283d' size-in-bits='64' id='75291c35'/>
-    <pointer-type-def type-id='c448161c' size-in-bits='64' id='ced30f5e'/>
-    <pointer-type-def type-id='034ff13e' size-in-bits='64' id='6588d7a0'/>
-    <pointer-type-def type-id='9efbfb11' size-in-bits='64' id='b9b212f5'/>
-    <pointer-type-def type-id='96ee24a5' size-in-bits='64' id='585e1de9'/>
-    <pointer-type-def type-id='aec5215a' size-in-bits='64' id='d5319498'/>
-    <pointer-type-def type-id='cb2c3d4e' size-in-bits='64' id='6def6e14'/>
-    <pointer-type-def type-id='d02a8f9f' size-in-bits='64' id='7d80dc07'/>
-    <pointer-type-def type-id='06899014' size-in-bits='64' id='16f014c2'/>
-    <pointer-type-def type-id='4f915724' size-in-bits='64' id='8ced1cce'/>
-    <pointer-type-def type-id='dee270c1' size-in-bits='64' id='7957efd5'/>
-    <pointer-type-def type-id='0ae3ab65' size-in-bits='64' id='32a99b79'/>
-    <pointer-type-def type-id='c5c76c9c' size-in-bits='64' id='b7f9d8e6'/>
-    <pointer-type-def type-id='c039af2e' size-in-bits='64' id='debb4ee8'/>
-    <qualified-type-def type-id='95e97e5e' volatile='yes' id='e024ff18'/>
+    <typedef-decl name='__uint16_t' type-id='f0981eec' size-in-bits='16' filepath='types.h' line='40' column='1' hash='d7723bb93a30b11d' id='253c2d2a'/>
+    <typedef-decl name='__uint32_t' type-id='f0981eed' size-in-bits='32' filepath='types.h' line='42' column='1' hash='e66b43f97c38e87a' id='62f1140c'/>
+    <typedef-decl name='__uint64_t' type-id='f0981eeb' size-in-bits='64' filepath='types.h' line='45' column='1' hash='8fdc5eea2983a729' id='8910171f'/>
+    <typedef-decl name='__uint8_t' type-id='002ac4a6' size-in-bits='8' filepath='types.h' line='38' column='1' hash='6ebac62b3366db68' id='c51d6389'/>
+    <typedef-decl name='pthread_spinlock_t' type-id='e024ff18' size-in-bits='32' filepath='pthreadtypes.h' line='103' column='1' hash='ae69415523d5e788' id='6d44fa69'/>
+    <typedef-decl name='size_t' type-id='f0981eeb' size-in-bits='64' filepath='stddef.h' line='214' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
+    <typedef-decl name='spdk_channel_for_each_cpl' type-id='2f4d5fde' size-in-bits='64' filepath='thread.h' line='174' column='1' hash='fd7a63c0c6c822c4' id='38c48f04'/>
+    <typedef-decl name='spdk_channel_msg' type-id='71711fbd' size-in-bits='64' filepath='thread.h' line='166' column='1' hash='fd7a63c0c6c822c4' id='fce5caf0'/>
+    <typedef-decl name='spdk_interrupt_fn' type-id='c04372aa' size-in-bits='64' filepath='thread.h' line='837' column='1' hash='fd7a63c0c6c822c4' id='d841131b'/>
+    <typedef-decl name='spdk_io_channel_create_cb' type-id='67230494' size-in-bits='64' filepath='thread.h' line='144' column='1' hash='fd7a63c0c6c822c4' id='7c63ffcc'/>
+    <typedef-decl name='spdk_io_channel_destroy_cb' type-id='30f9af41' size-in-bits='64' filepath='thread.h' line='152' column='1' hash='fd7a63c0c6c822c4' id='7e998c02'/>
+    <typedef-decl name='spdk_io_device_unregister_cb' type-id='61359e15' size-in-bits='64' filepath='thread.h' line='159' column='1' hash='fd7a63c0c6c822c4' id='ee92dcdf'/>
+    <typedef-decl name='spdk_msg_fn' type-id='61359e15' size-in-bits='64' filepath='thread.h' line='90' column='1' hash='fd7a63c0c6c822c4' id='de128c99'/>
+    <typedef-decl name='spdk_new_thread_fn' type-id='273f9155' size-in-bits='64' filepath='thread.h' line='58' column='1' hash='fd7a63c0c6c822c4' id='cf6adfe1'/>
+    <typedef-decl name='spdk_poller_fn' type-id='c04372aa' size-in-bits='64' filepath='thread.h' line='109' column='1' hash='fd7a63c0c6c822c4' id='6aa9ba7a'/>
+    <typedef-decl name='spdk_poller_set_interrupt_mode_cb' type-id='0e02a660' size-in-bits='64' filepath='thread.h' line='118' column='1' hash='fd7a63c0c6c822c4' id='5d15a824'/>
+    <typedef-decl name='spdk_thread_op_fn' type-id='0a96cec0' size-in-bits='64' filepath='thread.h' line='78' column='1' hash='fd7a63c0c6c822c4' id='fd7a9268'/>
+    <typedef-decl name='spdk_thread_op_supported_fn' type-id='127c0016' size-in-bits='64' filepath='thread.h' line='83' column='1' hash='fd7a63c0c6c822c4' id='34a4e98f'/>
+    <typedef-decl name='uint16_t' type-id='253c2d2a' size-in-bits='16' filepath='stdint-uintn.h' line='25' column='1' hash='d7723bb93a30b11d' id='149c6638'/>
+    <typedef-decl name='uint32_t' type-id='62f1140c' size-in-bits='32' filepath='stdint-uintn.h' line='26' column='1' hash='e66b43f97c38e87a' id='8f92235e'/>
+    <typedef-decl name='uint64_t' type-id='8910171f' size-in-bits='64' filepath='stdint-uintn.h' line='27' column='1' hash='8fdc5eea2983a729' id='9c313c2d'/>
+    <typedef-decl name='uint8_t' type-id='c51d6389' size-in-bits='8' filepath='stdint-uintn.h' line='24' column='1' hash='6ebac62b3366db68' id='b96825af'/>
+    <array-type-def dimensions='1' type-id='9c313c2d' size-in-bits='65536' hash='837662ad0a66648a' id='4dee7a71'>
+      <subrange length='1024' lower-bound='0' upper-bound='1023' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='3d55c71eae25bbb8' id='c60446f8'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='9c313c2d' size-in-bits='1280' hash='2c6ebbabf2c1ee95' id='38ce06c2'>
+      <subrange length='20' lower-bound='0' upper-bound='19' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='1ca9e41140ea49be' id='fdca39cf'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='1024' hash='d146d941c673b418' id='c768f32d'>
+      <subrange length='128' lower-bound='0' upper-bound='127' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='6d1a6a21feae6dd2' id='1eb1687a'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='32' hash='7df313b77e5f7cf4' id='d351502e'>
+      <subrange length='4' lower-bound='0' upper-bound='3' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='cee611f4a73e486c' id='16fe7105'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='unknown' hash='953f9801eb087566' id='048fe7bc'>
+      <subrange length='unknown' lower-bound='0' upper-bound='0' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='eba0a2b392137dcb' id='031f2035'/>
+    </array-type-def>
+    <type-decl name='unnamed-enum-underlying-type-32' size-in-bits='32' alignment-in-bits='32' is-anonymous='yes' hash='5181a58e665b3619' id='9cac1fee'/>
+    <type-decl name='unsigned char' size-in-bits='8' hash='6ebac62b3366db68' id='002ac4a6'/>
+    <type-decl name='unsigned int' size-in-bits='32' hash='e66b43f97c38e87a' id='f0981eed'/>
+    <type-decl name='unsigned long int' size-in-bits='64' hash='8fdc5eea2983a729#2' id='f0981eeb'/>
+    <type-decl name='unsigned short int' size-in-bits='16' hash='d7723bb93a30b11d#3' id='f0981eec'/>
+    <pointer-type-def type-id='a5eb4d3d' size-in-bits='64' hash='fd7a63c0c6c822c4' id='127c0016'/>
+    <qualified-type-def type-id='a84c031d' const='yes' hash='3e50fd33f9bb78d9' id='9b45d938'/>
+    <pointer-type-def type-id='9b45d938' size-in-bits='64' hash='c44743f354f6a443' id='80f4b756'/>
+    <qualified-type-def type-id='aec5215a' const='yes' hash='9ec73d88b6bfc7ef' id='04ae283d'/>
+    <pointer-type-def type-id='04ae283d' size-in-bits='64' hash='18395ee449757275' id='75291c35'/>
+    <pointer-type-def type-id='c448161c' size-in-bits='64' hash='fd7a63c0c6c822c4' id='273f9155'/>
+    <pointer-type-def type-id='a76497cd' size-in-bits='64' hash='fd7a63c0c6c822c4' id='0a96cec0'/>
+    <pointer-type-def type-id='9efbfb11' size-in-bits='64' hash='fd7a63c0c6c822c4' id='c04372aa'/>
+    <pointer-type-def type-id='96ee24a5' size-in-bits='64' hash='fd7a63c0c6c822c4' id='67230494'/>
+    <pointer-type-def type-id='aec5215a' size-in-bits='64' hash='3b069d0e8f010cd1' id='d5319498'/>
+    <pointer-type-def type-id='cb2c3d4e' size-in-bits='64' hash='982471240cd68914' id='6def6e14'/>
+    <pointer-type-def type-id='d02a8f9f' size-in-bits='64' hash='4baeaea8a1a27c06' id='7d80dc07'/>
+    <pointer-type-def type-id='06899014' size-in-bits='64' hash='5f6e9370efcf8563' id='16f014c2'/>
+    <pointer-type-def type-id='a6dc9de4' size-in-bits='64' hash='f13879d37c217898' id='ddda0722'/>
+    <pointer-type-def type-id='4f915724' size-in-bits='64' hash='fd7a63c0c6c822c4' id='71711fbd'/>
+    <pointer-type-def type-id='dee270c1' size-in-bits='64' hash='fd7a63c0c6c822c4' id='2f4d5fde'/>
+    <pointer-type-def type-id='0ae3ab65' size-in-bits='64' hash='fd7a63c0c6c822c4' id='0e02a660'/>
+    <pointer-type-def type-id='c5c76c9c' size-in-bits='64' hash='fd7a63c0c6c822c4' id='61359e15'/>
+    <pointer-type-def type-id='c039af2e' size-in-bits='64' hash='fd7a63c0c6c822c4' id='30f9af41'/>
+    <qualified-type-def type-id='95e97e5e' volatile='yes' hash='ae69415523d5e788' id='e024ff18'/>
     <qualified-type-def type-id='ef0f6b10' const='yes' id='33b441b3'/>
     <pointer-type-def type-id='33b441b3' size-in-bits='64' id='fdc343db'/>
     <pointer-type-def type-id='0a8179f4' size-in-bits='64' id='75c2ad82'/>
@@ -451,236 +658,237 @@
     <pointer-type-def type-id='2e6655e1' size-in-bits='64' id='e7041c49'/>
     <pointer-type-def type-id='ef0f6b10' size-in-bits='64' id='f8fcfe66'/>
     <class-decl name='spdk_fd_group' is-struct='yes' visibility='default' is-declaration-only='yes' id='c8d12ece'/>
-    <class-decl name='spdk_interrupt' is-struct='yes' visibility='default' filepath='thread.c' line='42' column='1' is-declaration-only='yes' id='b9eb5d13'/>
-    <class-decl name='spdk_poller' is-struct='yes' visibility='default' filepath='thread.c' line='71' column='1' is-declaration-only='yes' id='8921c3fe'/>
-    <class-decl name='spdk_thread' is-struct='yes' visibility='default' filepath='thread.c' line='106' column='1' is-declaration-only='yes' id='ef0f6b10'/>
-    <class-decl name='io_device' is-struct='yes' visibility='default' filepath='thread.c' line='240' column='1' is-declaration-only='yes' id='0a8179f4'/>
-    <function-decl name='spdk_thread_lib_init' mangled-name='spdk_thread_lib_init' filepath='thread.c' line='429' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_lib_init'>
+    <var-decl name='g_trace_file' type-id='ddda0722' visibility='default' filepath='trace.h' line='149' column='1' elf-symbol-id='g_trace_file'/>
+    <class-decl name='spdk_interrupt' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='thread.c' line='42' column='1' id='b9eb5d13'/>
+    <class-decl name='spdk_poller' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='thread.c' line='71' column='1' id='8921c3fe'/>
+    <class-decl name='spdk_thread' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='thread.c' line='106' column='1' id='ef0f6b10'/>
+    <class-decl name='io_device' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='thread.c' line='240' column='1' id='0a8179f4'/>
+    <function-decl name='spdk_thread_lib_init' mangled-name='spdk_thread_lib_init' filepath='thread.c' line='429' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_lib_init' hash='6f942c73482bd8e3'>
       <parameter type-id='cf6adfe1' name='new_thread_fn' filepath='thread.c' line='429' column='1'/>
       <parameter type-id='b59d7dce' name='ctx_sz' filepath='thread.c' line='429' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_thread_lib_init_ext' mangled-name='spdk_thread_lib_init_ext' filepath='thread.c' line='444' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_lib_init_ext'>
+    <function-decl name='spdk_thread_lib_init_ext' mangled-name='spdk_thread_lib_init_ext' filepath='thread.c' line='444' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_lib_init_ext' hash='73a5ca15b33cee2b'>
       <parameter type-id='fd7a9268' name='thread_op_fn' filepath='thread.c' line='444' column='1'/>
       <parameter type-id='34a4e98f' name='thread_op_supported_fn' filepath='thread.c' line='445' column='1'/>
       <parameter type-id='b59d7dce' name='ctx_sz' filepath='thread.c' line='446' column='1'/>
       <parameter type-id='b59d7dce' name='msg_mempool_sz' filepath='thread.c' line='446' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_thread_lib_fini' mangled-name='spdk_thread_lib_fini' filepath='thread.c' line='468' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_lib_fini'>
+    <function-decl name='spdk_thread_lib_fini' mangled-name='spdk_thread_lib_fini' filepath='thread.c' line='468' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_lib_fini' hash='7f32ffea222edbe7'>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_thread_create' mangled-name='spdk_thread_create' filepath='thread.c' line='492' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_create'>
+    <function-decl name='spdk_thread_create' mangled-name='spdk_thread_create' filepath='thread.c' line='492' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_create' hash='5c3c34e60585a9e0'>
       <parameter type-id='80f4b756' name='name' filepath='thread.c' line='492' column='1'/>
       <parameter type-id='75291c35' name='cpumask' filepath='thread.c' line='492' column='1'/>
       <return type-id='f8fcfe66'/>
     </function-decl>
-    <function-decl name='spdk_thread_get_app_thread' mangled-name='spdk_thread_get_app_thread' filepath='thread.c' line='601' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_app_thread'>
+    <function-decl name='spdk_thread_get_app_thread' mangled-name='spdk_thread_get_app_thread' filepath='thread.c' line='601' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_app_thread' hash='7f32ffea222edbe7'>
       <return type-id='f8fcfe66'/>
     </function-decl>
-    <function-decl name='spdk_thread_is_app_thread' mangled-name='spdk_thread_is_app_thread' filepath='thread.c' line='607' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_is_app_thread'>
-      <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='607' column='1'/>
+    <function-decl name='spdk_thread_is_app_thread' mangled-name='spdk_thread_is_app_thread' filepath='thread.c' line='607' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_is_app_thread' hash='c7c710e908194b91'>
+      <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='1245' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_thread_bind' mangled-name='spdk_thread_bind' filepath='thread.c' line='617' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_bind'>
+    <function-decl name='spdk_thread_bind' mangled-name='spdk_thread_bind' filepath='thread.c' line='617' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_bind' hash='c7c710e908194b91'>
       <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='617' column='1'/>
       <parameter type-id='c894953d' name='bind' filepath='thread.c' line='617' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_thread_is_bound' mangled-name='spdk_thread_is_bound' filepath='thread.c' line='623' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_is_bound'>
-      <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='623' column='1'/>
+    <function-decl name='spdk_thread_is_bound' mangled-name='spdk_thread_is_bound' filepath='thread.c' line='623' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_is_bound' hash='c7c710e908194b91'>
+      <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='1245' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_set_thread' mangled-name='spdk_set_thread' filepath='thread.c' line='629' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_set_thread'>
-      <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='629' column='1'/>
-      <return type-id='48b5725f'/>
-    </function-decl>
-    <function-decl name='spdk_thread_exit' mangled-name='spdk_thread_exit' filepath='thread.c' line='706' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_exit'>
-      <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='706' column='1'/>
-      <return type-id='95e97e5e'/>
-    </function-decl>
-    <function-decl name='spdk_thread_is_running' mangled-name='spdk_thread_is_running' filepath='thread.c' line='731' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_is_running'>
-      <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='731' column='1'/>
-      <return type-id='c894953d'/>
-    </function-decl>
-    <function-decl name='spdk_thread_is_exited' mangled-name='spdk_thread_is_exited' filepath='thread.c' line='737' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_is_exited'>
-      <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='737' column='1'/>
-      <return type-id='c894953d'/>
-    </function-decl>
-    <function-decl name='spdk_thread_destroy' mangled-name='spdk_thread_destroy' filepath='thread.c' line='743' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_destroy'>
+    <function-decl name='spdk_set_thread' mangled-name='spdk_set_thread' filepath='thread.c' line='629' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_set_thread' hash='7f32ffea222edbe7'>
       <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='743' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_thread_get_ctx' mangled-name='spdk_thread_get_ctx' filepath='thread.c' line='761' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_ctx'>
+    <function-decl name='spdk_thread_exit' mangled-name='spdk_thread_exit' filepath='thread.c' line='706' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_exit' hash='388da3fa973fde78'>
+      <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='2920' column='1'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_thread_is_running' mangled-name='spdk_thread_is_running' filepath='thread.c' line='731' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_is_running' hash='c7c710e908194b91'>
+      <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='1245' column='1'/>
+      <return type-id='c894953d'/>
+    </function-decl>
+    <function-decl name='spdk_thread_is_exited' mangled-name='spdk_thread_is_exited' filepath='thread.c' line='737' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_is_exited' hash='c7c710e908194b91'>
+      <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='1245' column='1'/>
+      <return type-id='c894953d'/>
+    </function-decl>
+    <function-decl name='spdk_thread_destroy' mangled-name='spdk_thread_destroy' filepath='thread.c' line='743' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_destroy' hash='7f32ffea222edbe7'>
+      <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='743' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_thread_get_ctx' mangled-name='spdk_thread_get_ctx' filepath='thread.c' line='761' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_ctx' hash='7f32ffea222edbe7'>
       <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='761' column='1'/>
       <return type-id='eaa32e2f'/>
     </function-decl>
-    <function-decl name='spdk_thread_get_cpumask' mangled-name='spdk_thread_get_cpumask' filepath='thread.c' line='771' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_cpumask'>
+    <function-decl name='spdk_thread_get_cpumask' mangled-name='spdk_thread_get_cpumask' filepath='thread.c' line='771' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_cpumask' hash='10eb1064c040b228'>
       <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='771' column='1'/>
       <return type-id='d5319498'/>
     </function-decl>
-    <function-decl name='spdk_thread_set_cpumask' mangled-name='spdk_thread_set_cpumask' filepath='thread.c' line='777' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_set_cpumask'>
+    <function-decl name='spdk_thread_set_cpumask' mangled-name='spdk_thread_set_cpumask' filepath='thread.c' line='777' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_set_cpumask' hash='affb529d63e207e5'>
       <parameter type-id='d5319498' name='cpumask' filepath='thread.c' line='777' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_thread_get_from_ctx' mangled-name='spdk_thread_get_from_ctx' filepath='thread.c' line='806' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_from_ctx'>
+    <function-decl name='spdk_thread_get_from_ctx' mangled-name='spdk_thread_get_from_ctx' filepath='thread.c' line='806' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_from_ctx' hash='7f32ffea222edbe7'>
       <parameter type-id='eaa32e2f' name='ctx' filepath='thread.c' line='806' column='1'/>
       <return type-id='f8fcfe66'/>
     </function-decl>
-    <function-decl name='spdk_thread_poll' mangled-name='spdk_thread_poll' filepath='thread.c' line='1166' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_poll'>
+    <function-decl name='spdk_thread_poll' mangled-name='spdk_thread_poll' filepath='thread.c' line='1166' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_poll' hash='fefa91292300ff4f'>
       <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='1166' column='1'/>
       <parameter type-id='8f92235e' name='max_msgs' filepath='thread.c' line='1166' column='1'/>
       <parameter type-id='9c313c2d' name='now' filepath='thread.c' line='1166' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_thread_next_poller_expiration' mangled-name='spdk_thread_next_poller_expiration' filepath='thread.c' line='1204' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_next_poller_expiration'>
-      <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='1204' column='1'/>
-      <return type-id='9c313c2d'/>
-    </function-decl>
-    <function-decl name='spdk_thread_has_active_pollers' mangled-name='spdk_thread_has_active_pollers' filepath='thread.c' line='1217' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_has_active_pollers'>
-      <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='1217' column='1'/>
-      <return type-id='95e97e5e'/>
-    </function-decl>
-    <function-decl name='spdk_thread_has_pollers' mangled-name='spdk_thread_has_pollers' filepath='thread.c' line='1234' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_has_pollers'>
-      <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='1234' column='1'/>
-      <return type-id='c894953d'/>
-    </function-decl>
-    <function-decl name='spdk_thread_is_idle' mangled-name='spdk_thread_is_idle' filepath='thread.c' line='1245' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_is_idle'>
-      <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='1245' column='1'/>
-      <return type-id='c894953d'/>
-    </function-decl>
-    <function-decl name='spdk_thread_get_count' mangled-name='spdk_thread_get_count' filepath='thread.c' line='1257' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_count'>
-      <return type-id='8f92235e'/>
-    </function-decl>
-    <function-decl name='spdk_get_thread' mangled-name='spdk_get_thread' filepath='thread.c' line='1268' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_get_thread'>
-      <return type-id='f8fcfe66'/>
-    </function-decl>
-    <function-decl name='spdk_thread_get_name' mangled-name='spdk_thread_get_name' filepath='thread.c' line='1274' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_name'>
-      <parameter type-id='fdc343db' name='thread' filepath='thread.c' line='1274' column='1'/>
-      <return type-id='80f4b756'/>
-    </function-decl>
-    <function-decl name='spdk_thread_get_id' mangled-name='spdk_thread_get_id' filepath='thread.c' line='1280' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_id'>
-      <parameter type-id='fdc343db' name='thread' filepath='thread.c' line='1280' column='1'/>
-      <return type-id='9c313c2d'/>
-    </function-decl>
-    <function-decl name='spdk_thread_get_by_id' mangled-name='spdk_thread_get_by_id' filepath='thread.c' line='1286' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_by_id'>
-      <parameter type-id='9c313c2d' name='id' filepath='thread.c' line='1286' column='1'/>
-      <return type-id='f8fcfe66'/>
-    </function-decl>
-    <function-decl name='spdk_thread_get_stats' mangled-name='spdk_thread_get_stats' filepath='thread.c' line='1305' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_stats'>
-      <parameter type-id='16f014c2' name='stats' filepath='thread.c' line='1305' column='1'/>
-      <return type-id='95e97e5e'/>
-    </function-decl>
-    <function-decl name='spdk_thread_get_last_tsc' mangled-name='spdk_thread_get_last_tsc' filepath='thread.c' line='1325' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_last_tsc'>
+    <function-decl name='spdk_thread_next_poller_expiration' mangled-name='spdk_thread_next_poller_expiration' filepath='thread.c' line='1204' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_next_poller_expiration' hash='e0055d99adb0e173'>
       <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='1325' column='1'/>
       <return type-id='9c313c2d'/>
     </function-decl>
-    <function-decl name='spdk_thread_send_msg' mangled-name='spdk_thread_send_msg' filepath='thread.c' line='1361' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_send_msg'>
+    <function-decl name='spdk_thread_has_active_pollers' mangled-name='spdk_thread_has_active_pollers' filepath='thread.c' line='1217' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_has_active_pollers' hash='388da3fa973fde78'>
+      <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='2920' column='1'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_thread_has_pollers' mangled-name='spdk_thread_has_pollers' filepath='thread.c' line='1234' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_has_pollers' hash='c7c710e908194b91'>
+      <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='1245' column='1'/>
+      <return type-id='c894953d'/>
+    </function-decl>
+    <function-decl name='spdk_thread_is_idle' mangled-name='spdk_thread_is_idle' filepath='thread.c' line='1245' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_is_idle' hash='c7c710e908194b91'>
+      <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='1245' column='1'/>
+      <return type-id='c894953d'/>
+    </function-decl>
+    <function-decl name='spdk_thread_get_count' mangled-name='spdk_thread_get_count' filepath='thread.c' line='1257' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_count' hash='2bb88322482ae81c'>
+      <return type-id='8f92235e'/>
+    </function-decl>
+    <function-decl name='spdk_get_thread' mangled-name='spdk_get_thread' filepath='thread.c' line='1268' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_get_thread' hash='7f32ffea222edbe7'>
+      <return type-id='f8fcfe66'/>
+    </function-decl>
+    <function-decl name='spdk_thread_get_name' mangled-name='spdk_thread_get_name' filepath='thread.c' line='1274' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_name' hash='53885bde0aa65efe'>
+      <parameter type-id='fdc343db' name='thread' filepath='thread.c' line='1274' column='1'/>
+      <return type-id='80f4b756'/>
+    </function-decl>
+    <function-decl name='spdk_thread_get_id' mangled-name='spdk_thread_get_id' filepath='thread.c' line='1280' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_id' hash='e0055d99adb0e173'>
+      <parameter type-id='fdc343db' name='thread' filepath='thread.c' line='1280' column='1'/>
+      <return type-id='9c313c2d'/>
+    </function-decl>
+    <function-decl name='spdk_thread_get_by_id' mangled-name='spdk_thread_get_by_id' filepath='thread.c' line='1286' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_by_id' hash='e0055d99adb0e173'>
+      <parameter type-id='9c313c2d' name='id' filepath='thread.c' line='1286' column='1'/>
+      <return type-id='f8fcfe66'/>
+    </function-decl>
+    <function-decl name='spdk_thread_get_stats' mangled-name='spdk_thread_get_stats' filepath='thread.c' line='1305' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_stats' hash='11c3e10f3586593c'>
+      <parameter type-id='16f014c2' name='stats' filepath='thread.c' line='1305' column='1'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_thread_get_last_tsc' mangled-name='spdk_thread_get_last_tsc' filepath='thread.c' line='1325' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_last_tsc' hash='e0055d99adb0e173'>
+      <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='1325' column='1'/>
+      <return type-id='9c313c2d'/>
+    </function-decl>
+    <function-decl name='spdk_thread_send_msg' mangled-name='spdk_thread_send_msg' filepath='thread.c' line='1361' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_send_msg' hash='a7f99494147764a8'>
       <parameter type-id='fdc343db' name='thread' filepath='thread.c' line='1361' column='1'/>
       <parameter type-id='de128c99' name='fn' filepath='thread.c' line='1361' column='1'/>
       <parameter type-id='eaa32e2f' name='ctx' filepath='thread.c' line='1361' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_thread_send_critical_msg' mangled-name='spdk_thread_send_critical_msg' filepath='thread.c' line='1408' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_send_critical_msg'>
+    <function-decl name='spdk_thread_send_critical_msg' mangled-name='spdk_thread_send_critical_msg' filepath='thread.c' line='1408' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_send_critical_msg' hash='a7f99494147764a8'>
       <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='1408' column='1'/>
       <parameter type-id='de128c99' name='fn' filepath='thread.c' line='1408' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_poller_register_interrupt' mangled-name='spdk_poller_register_interrupt' filepath='thread.c' line='1607' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_poller_register_interrupt'>
+    <function-decl name='spdk_poller_register_interrupt' mangled-name='spdk_poller_register_interrupt' filepath='thread.c' line='1607' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_poller_register_interrupt' hash='5695f5ce05a4c55f'>
       <parameter type-id='bf13de54' name='poller' filepath='thread.c' line='1607' column='1'/>
       <parameter type-id='5d15a824' name='cb_fn' filepath='thread.c' line='1608' column='1'/>
       <parameter type-id='eaa32e2f' name='cb_arg' filepath='thread.c' line='1609' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_poller_register' mangled-name='spdk_poller_register' filepath='thread.c' line='1734' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_poller_register'>
+    <function-decl name='spdk_poller_register' mangled-name='spdk_poller_register' filepath='thread.c' line='1734' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_poller_register' hash='25fd9e08488444af'>
       <parameter type-id='6aa9ba7a' name='fn' filepath='thread.c' line='1734' column='1'/>
       <parameter type-id='eaa32e2f' name='arg' filepath='thread.c' line='1735' column='1'/>
       <parameter type-id='9c313c2d' name='period_microseconds' filepath='thread.c' line='1736' column='1'/>
       <return type-id='bf13de54'/>
     </function-decl>
-    <function-decl name='spdk_poller_register_named' mangled-name='spdk_poller_register_named' filepath='thread.c' line='1742' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_poller_register_named'>
+    <function-decl name='spdk_poller_register_named' mangled-name='spdk_poller_register_named' filepath='thread.c' line='1742' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_poller_register_named' hash='dff257b1c68c4432'>
       <parameter type-id='6aa9ba7a' name='fn' filepath='thread.c' line='1742' column='1'/>
       <parameter type-id='eaa32e2f' name='arg' filepath='thread.c' line='1743' column='1'/>
       <parameter type-id='9c313c2d' name='period_microseconds' filepath='thread.c' line='1744' column='1'/>
       <parameter type-id='80f4b756' name='name' filepath='thread.c' line='1745' column='1'/>
       <return type-id='bf13de54'/>
     </function-decl>
-    <function-decl name='spdk_poller_unregister' mangled-name='spdk_poller_unregister' filepath='thread.c' line='1765' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_poller_unregister'>
+    <function-decl name='spdk_poller_unregister' mangled-name='spdk_poller_unregister' filepath='thread.c' line='1765' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_poller_unregister' hash='7f32ffea222edbe7'>
       <parameter type-id='4a47405a' name='ppoller' filepath='thread.c' line='1765' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_poller_pause' mangled-name='spdk_poller_pause' filepath='thread.c' line='1818' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_poller_pause'>
-      <parameter type-id='bf13de54' name='poller' filepath='thread.c' line='1818' column='1'/>
-      <return type-id='48b5725f'/>
-    </function-decl>
-    <function-decl name='spdk_poller_resume' mangled-name='spdk_poller_resume' filepath='thread.c' line='1854' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_poller_resume'>
+    <function-decl name='spdk_poller_pause' mangled-name='spdk_poller_pause' filepath='thread.c' line='1818' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_poller_pause' hash='7f32ffea222edbe7'>
       <parameter type-id='bf13de54' name='poller' filepath='thread.c' line='1854' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_poller_get_name' mangled-name='spdk_poller_get_name' filepath='thread.c' line='1893' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_poller_get_name'>
-      <parameter type-id='bf13de54' name='poller' filepath='thread.c' line='1893' column='1'/>
-      <return type-id='80f4b756'/>
+    <function-decl name='spdk_poller_resume' mangled-name='spdk_poller_resume' filepath='thread.c' line='1854' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_poller_resume' hash='7f32ffea222edbe7'>
+      <parameter type-id='bf13de54' name='poller' filepath='thread.c' line='1854' column='1'/>
+      <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_poller_get_id' mangled-name='spdk_poller_get_id' filepath='thread.c' line='1899' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_poller_get_id'>
-      <parameter type-id='bf13de54' name='poller' filepath='thread.c' line='1899' column='1'/>
-      <return type-id='9c313c2d'/>
-    </function-decl>
-    <function-decl name='spdk_poller_get_state_str' mangled-name='spdk_poller_get_state_str' filepath='thread.c' line='1905' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_poller_get_state_str'>
+    <function-decl name='spdk_poller_get_name' mangled-name='spdk_poller_get_name' filepath='thread.c' line='1893' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_poller_get_name' hash='53885bde0aa65efe'>
       <parameter type-id='bf13de54' name='poller' filepath='thread.c' line='1905' column='1'/>
       <return type-id='80f4b756'/>
     </function-decl>
-    <function-decl name='spdk_poller_get_period_ticks' mangled-name='spdk_poller_get_period_ticks' filepath='thread.c' line='1924' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_poller_get_period_ticks'>
+    <function-decl name='spdk_poller_get_id' mangled-name='spdk_poller_get_id' filepath='thread.c' line='1899' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_poller_get_id' hash='e0055d99adb0e173'>
       <parameter type-id='bf13de54' name='poller' filepath='thread.c' line='1924' column='1'/>
       <return type-id='9c313c2d'/>
     </function-decl>
-    <function-decl name='spdk_poller_get_stats' mangled-name='spdk_poller_get_stats' filepath='thread.c' line='1930' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_poller_get_stats'>
+    <function-decl name='spdk_poller_get_state_str' mangled-name='spdk_poller_get_state_str' filepath='thread.c' line='1905' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_poller_get_state_str' hash='53885bde0aa65efe'>
+      <parameter type-id='bf13de54' name='poller' filepath='thread.c' line='1905' column='1'/>
+      <return type-id='80f4b756'/>
+    </function-decl>
+    <function-decl name='spdk_poller_get_period_ticks' mangled-name='spdk_poller_get_period_ticks' filepath='thread.c' line='1924' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_poller_get_period_ticks' hash='e0055d99adb0e173'>
+      <parameter type-id='bf13de54' name='poller' filepath='thread.c' line='1924' column='1'/>
+      <return type-id='9c313c2d'/>
+    </function-decl>
+    <function-decl name='spdk_poller_get_stats' mangled-name='spdk_poller_get_stats' filepath='thread.c' line='1930' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_poller_get_stats' hash='bbfd595b1cc24fe3'>
       <parameter type-id='bf13de54' name='poller' filepath='thread.c' line='1930' column='1'/>
       <parameter type-id='6def6e14' name='stats' filepath='thread.c' line='1930' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_thread_get_first_active_poller' mangled-name='spdk_thread_get_first_active_poller' filepath='thread.c' line='1937' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_first_active_poller'>
-      <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='1937' column='1'/>
-      <return type-id='bf13de54'/>
-    </function-decl>
-    <function-decl name='spdk_thread_get_next_active_poller' mangled-name='spdk_thread_get_next_active_poller' filepath='thread.c' line='1943' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_next_active_poller'>
-      <parameter type-id='bf13de54' name='prev' filepath='thread.c' line='1943' column='1'/>
-      <return type-id='bf13de54'/>
-    </function-decl>
-    <function-decl name='spdk_thread_get_first_timed_poller' mangled-name='spdk_thread_get_first_timed_poller' filepath='thread.c' line='1949' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_first_timed_poller'>
-      <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='1949' column='1'/>
-      <return type-id='bf13de54'/>
-    </function-decl>
-    <function-decl name='spdk_thread_get_next_timed_poller' mangled-name='spdk_thread_get_next_timed_poller' filepath='thread.c' line='1955' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_next_timed_poller'>
-      <parameter type-id='bf13de54' name='prev' filepath='thread.c' line='1955' column='1'/>
-      <return type-id='bf13de54'/>
-    </function-decl>
-    <function-decl name='spdk_thread_get_first_paused_poller' mangled-name='spdk_thread_get_first_paused_poller' filepath='thread.c' line='1961' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_first_paused_poller'>
+    <function-decl name='spdk_thread_get_first_active_poller' mangled-name='spdk_thread_get_first_active_poller' filepath='thread.c' line='1937' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_first_active_poller' hash='7f32ffea222edbe7'>
       <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='1961' column='1'/>
       <return type-id='bf13de54'/>
     </function-decl>
-    <function-decl name='spdk_thread_get_next_paused_poller' mangled-name='spdk_thread_get_next_paused_poller' filepath='thread.c' line='1967' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_next_paused_poller'>
+    <function-decl name='spdk_thread_get_next_active_poller' mangled-name='spdk_thread_get_next_active_poller' filepath='thread.c' line='1943' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_next_active_poller' hash='7f32ffea222edbe7'>
       <parameter type-id='bf13de54' name='prev' filepath='thread.c' line='1967' column='1'/>
       <return type-id='bf13de54'/>
     </function-decl>
-    <function-decl name='spdk_thread_get_first_io_channel' mangled-name='spdk_thread_get_first_io_channel' filepath='thread.c' line='1973' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_first_io_channel'>
+    <function-decl name='spdk_thread_get_first_timed_poller' mangled-name='spdk_thread_get_first_timed_poller' filepath='thread.c' line='1949' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_first_timed_poller' hash='7f32ffea222edbe7'>
+      <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='1961' column='1'/>
+      <return type-id='bf13de54'/>
+    </function-decl>
+    <function-decl name='spdk_thread_get_next_timed_poller' mangled-name='spdk_thread_get_next_timed_poller' filepath='thread.c' line='1955' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_next_timed_poller' hash='7f32ffea222edbe7'>
+      <parameter type-id='bf13de54' name='prev' filepath='thread.c' line='1967' column='1'/>
+      <return type-id='bf13de54'/>
+    </function-decl>
+    <function-decl name='spdk_thread_get_first_paused_poller' mangled-name='spdk_thread_get_first_paused_poller' filepath='thread.c' line='1961' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_first_paused_poller' hash='7f32ffea222edbe7'>
+      <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='1961' column='1'/>
+      <return type-id='bf13de54'/>
+    </function-decl>
+    <function-decl name='spdk_thread_get_next_paused_poller' mangled-name='spdk_thread_get_next_paused_poller' filepath='thread.c' line='1967' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_next_paused_poller' hash='7f32ffea222edbe7'>
+      <parameter type-id='bf13de54' name='prev' filepath='thread.c' line='1967' column='1'/>
+      <return type-id='bf13de54'/>
+    </function-decl>
+    <function-decl name='spdk_thread_get_first_io_channel' mangled-name='spdk_thread_get_first_io_channel' filepath='thread.c' line='1973' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_first_io_channel' hash='7f32ffea222edbe7'>
       <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='1973' column='1'/>
       <return type-id='a7e01877'/>
     </function-decl>
-    <function-decl name='spdk_thread_get_next_io_channel' mangled-name='spdk_thread_get_next_io_channel' filepath='thread.c' line='1979' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_next_io_channel'>
+    <function-decl name='spdk_thread_get_next_io_channel' mangled-name='spdk_thread_get_next_io_channel' filepath='thread.c' line='1979' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_next_io_channel' hash='7f32ffea222edbe7'>
       <parameter type-id='a7e01877' name='prev' filepath='thread.c' line='1979' column='1'/>
       <return type-id='a7e01877'/>
     </function-decl>
-    <function-decl name='spdk_for_each_thread' mangled-name='spdk_for_each_thread' filepath='thread.c' line='2036' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_for_each_thread'>
+    <function-decl name='spdk_for_each_thread' mangled-name='spdk_for_each_thread' filepath='thread.c' line='2036' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_for_each_thread' hash='e7946129631a25a2'>
       <parameter type-id='de128c99' name='fn' filepath='thread.c' line='2036' column='1'/>
       <parameter type-id='eaa32e2f' name='ctx' filepath='thread.c' line='2036' column='1'/>
       <parameter type-id='de128c99' name='cpl' filepath='thread.c' line='2036' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_thread_set_interrupt_mode' mangled-name='spdk_thread_set_interrupt_mode' filepath='thread.c' line='2088' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_set_interrupt_mode'>
+    <function-decl name='spdk_thread_set_interrupt_mode' mangled-name='spdk_thread_set_interrupt_mode' filepath='thread.c' line='2088' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_set_interrupt_mode' hash='c7c710e908194b91'>
       <parameter type-id='c894953d' name='enable_interrupt' filepath='thread.c' line='2088' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_io_device_register' mangled-name='spdk_io_device_register' filepath='thread.c' line='2130' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_io_device_register'>
+    <function-decl name='spdk_io_device_register' mangled-name='spdk_io_device_register' filepath='thread.c' line='2130' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_io_device_register' hash='3eef5a468e07f986'>
       <parameter type-id='eaa32e2f' name='io_device' filepath='thread.c' line='2130' column='1'/>
       <parameter type-id='7c63ffcc' name='create_cb' filepath='thread.c' line='2130' column='1'/>
       <parameter type-id='7e998c02' name='destroy_cb' filepath='thread.c' line='2131' column='1'/>
@@ -688,76 +896,76 @@
       <parameter type-id='80f4b756' name='name' filepath='thread.c' line='2132' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_io_device_unregister' mangled-name='spdk_io_device_unregister' filepath='thread.c' line='2218' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_io_device_unregister'>
+    <function-decl name='spdk_io_device_unregister' mangled-name='spdk_io_device_unregister' filepath='thread.c' line='2218' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_io_device_unregister' hash='5695f5ce05a4c55f'>
       <parameter type-id='eaa32e2f' name='io_device' filepath='thread.c' line='2218' column='1'/>
       <parameter type-id='ee92dcdf' name='unregister_cb' filepath='thread.c' line='2218' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_io_device_get_name' mangled-name='spdk_io_device_get_name' filepath='thread.c' line='2283' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_io_device_get_name'>
+    <function-decl name='spdk_io_device_get_name' mangled-name='spdk_io_device_get_name' filepath='thread.c' line='2283' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_io_device_get_name' hash='53885bde0aa65efe'>
       <parameter type-id='75c2ad82' name='dev' filepath='thread.c' line='2283' column='1'/>
       <return type-id='80f4b756'/>
     </function-decl>
-    <function-decl name='spdk_get_io_channel' mangled-name='spdk_get_io_channel' filepath='thread.c' line='2298' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_get_io_channel'>
-      <parameter type-id='eaa32e2f' name='io_device' filepath='thread.c' line='2298' column='1'/>
-      <return type-id='a7e01877'/>
-    </function-decl>
-    <function-decl name='spdk_put_io_channel' mangled-name='spdk_put_io_channel' filepath='thread.c' line='2438' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_put_io_channel'>
-      <parameter type-id='a7e01877' name='ch' filepath='thread.c' line='2438' column='1'/>
-      <return type-id='48b5725f'/>
-    </function-decl>
-    <function-decl name='spdk_io_channel_from_ctx' mangled-name='spdk_io_channel_from_ctx' filepath='thread.c' line='2472' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_io_channel_from_ctx'>
+    <function-decl name='spdk_get_io_channel' mangled-name='spdk_get_io_channel' filepath='thread.c' line='2298' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_get_io_channel' hash='7f32ffea222edbe7'>
       <parameter type-id='eaa32e2f' name='ctx' filepath='thread.c' line='2472' column='1'/>
       <return type-id='a7e01877'/>
     </function-decl>
-    <function-decl name='spdk_io_channel_get_thread' mangled-name='spdk_io_channel_get_thread' filepath='thread.c' line='2478' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_io_channel_get_thread'>
+    <function-decl name='spdk_put_io_channel' mangled-name='spdk_put_io_channel' filepath='thread.c' line='2438' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_put_io_channel' hash='7f32ffea222edbe7'>
+      <parameter type-id='a7e01877' name='ch' filepath='thread.c' line='2438' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_io_channel_from_ctx' mangled-name='spdk_io_channel_from_ctx' filepath='thread.c' line='2472' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_io_channel_from_ctx' hash='7f32ffea222edbe7'>
+      <parameter type-id='eaa32e2f' name='ctx' filepath='thread.c' line='2472' column='1'/>
+      <return type-id='a7e01877'/>
+    </function-decl>
+    <function-decl name='spdk_io_channel_get_thread' mangled-name='spdk_io_channel_get_thread' filepath='thread.c' line='2478' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_io_channel_get_thread' hash='7f32ffea222edbe7'>
       <parameter type-id='a7e01877' name='ch' filepath='thread.c' line='2478' column='1'/>
       <return type-id='f8fcfe66'/>
     </function-decl>
-    <function-decl name='spdk_io_channel_get_io_device' mangled-name='spdk_io_channel_get_io_device' filepath='thread.c' line='2484' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_io_channel_get_io_device'>
+    <function-decl name='spdk_io_channel_get_io_device' mangled-name='spdk_io_channel_get_io_device' filepath='thread.c' line='2484' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_io_channel_get_io_device' hash='7f32ffea222edbe7'>
       <parameter type-id='a7e01877' name='ch' filepath='thread.c' line='2484' column='1'/>
       <return type-id='eaa32e2f'/>
     </function-decl>
-    <function-decl name='spdk_io_channel_get_io_device_name' mangled-name='spdk_io_channel_get_io_device_name' filepath='thread.c' line='2490' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_io_channel_get_io_device_name'>
+    <function-decl name='spdk_io_channel_get_io_device_name' mangled-name='spdk_io_channel_get_io_device_name' filepath='thread.c' line='2490' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_io_channel_get_io_device_name' hash='53885bde0aa65efe'>
       <parameter type-id='a7e01877' name='ch' filepath='thread.c' line='2490' column='1'/>
       <return type-id='80f4b756'/>
     </function-decl>
-    <function-decl name='spdk_io_channel_get_ref_count' mangled-name='spdk_io_channel_get_ref_count' filepath='thread.c' line='2496' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_io_channel_get_ref_count'>
+    <function-decl name='spdk_io_channel_get_ref_count' mangled-name='spdk_io_channel_get_ref_count' filepath='thread.c' line='2496' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_io_channel_get_ref_count' hash='388da3fa973fde78'>
       <parameter type-id='a7e01877' name='ch' filepath='thread.c' line='2496' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <class-decl name='spdk_io_channel_iter' is-struct='yes' visibility='default' filepath='thread.c' line='2501' column='1' is-declaration-only='yes' id='88fe287f'/>
-    <function-decl name='spdk_io_channel_iter_get_io_device' mangled-name='spdk_io_channel_iter_get_io_device' filepath='thread.c' line='2516' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_io_channel_iter_get_io_device'>
-      <parameter type-id='1e5ee9f7' name='i' filepath='thread.c' line='2516' column='1'/>
-      <return type-id='eaa32e2f'/>
-    </function-decl>
-    <function-decl name='spdk_io_channel_iter_get_channel' mangled-name='spdk_io_channel_iter_get_channel' filepath='thread.c' line='2522' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_io_channel_iter_get_channel'>
-      <parameter type-id='1e5ee9f7' name='i' filepath='thread.c' line='2522' column='1'/>
-      <return type-id='a7e01877'/>
-    </function-decl>
-    <function-decl name='spdk_io_channel_iter_get_ctx' mangled-name='spdk_io_channel_iter_get_ctx' filepath='thread.c' line='2528' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_io_channel_iter_get_ctx'>
+    <class-decl name='spdk_io_channel_iter' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='thread.c' line='2501' column='1' id='88fe287f'/>
+    <function-decl name='spdk_io_channel_iter_get_io_device' mangled-name='spdk_io_channel_iter_get_io_device' filepath='thread.c' line='2516' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_io_channel_iter_get_io_device' hash='7f32ffea222edbe7'>
       <parameter type-id='1e5ee9f7' name='i' filepath='thread.c' line='2528' column='1'/>
       <return type-id='eaa32e2f'/>
     </function-decl>
-    <function-decl name='spdk_for_each_channel' mangled-name='spdk_for_each_channel' filepath='thread.c' line='2570' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_for_each_channel'>
+    <function-decl name='spdk_io_channel_iter_get_channel' mangled-name='spdk_io_channel_iter_get_channel' filepath='thread.c' line='2522' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_io_channel_iter_get_channel' hash='7f32ffea222edbe7'>
+      <parameter type-id='1e5ee9f7' name='i' filepath='thread.c' line='2522' column='1'/>
+      <return type-id='a7e01877'/>
+    </function-decl>
+    <function-decl name='spdk_io_channel_iter_get_ctx' mangled-name='spdk_io_channel_iter_get_ctx' filepath='thread.c' line='2528' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_io_channel_iter_get_ctx' hash='7f32ffea222edbe7'>
+      <parameter type-id='1e5ee9f7' name='i' filepath='thread.c' line='2528' column='1'/>
+      <return type-id='eaa32e2f'/>
+    </function-decl>
+    <function-decl name='spdk_for_each_channel' mangled-name='spdk_for_each_channel' filepath='thread.c' line='2570' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_for_each_channel' hash='e7946129631a25a2'>
       <parameter type-id='eaa32e2f' name='io_device' filepath='thread.c' line='2570' column='1'/>
       <parameter type-id='fce5caf0' name='fn' filepath='thread.c' line='2570' column='1'/>
       <parameter type-id='eaa32e2f' name='ctx' filepath='thread.c' line='2570' column='1'/>
       <parameter type-id='38c48f04' name='cpl' filepath='thread.c' line='2571' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_for_each_channel_continue' mangled-name='spdk_for_each_channel_continue' filepath='thread.c' line='2642' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_for_each_channel_continue'>
+    <function-decl name='spdk_for_each_channel_continue' mangled-name='spdk_for_each_channel_continue' filepath='thread.c' line='2642' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_for_each_channel_continue' hash='388da3fa973fde78'>
       <parameter type-id='1e5ee9f7' name='i' filepath='thread.c' line='2642' column='1'/>
       <parameter type-id='95e97e5e' name='status' filepath='thread.c' line='2642' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_interrupt_register' mangled-name='spdk_interrupt_register' filepath='thread.c' line='2817' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_interrupt_register'>
+    <function-decl name='spdk_interrupt_register' mangled-name='spdk_interrupt_register' filepath='thread.c' line='2817' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_interrupt_register' hash='dc47189841deac5a'>
       <parameter type-id='95e97e5e' name='efd' filepath='thread.c' line='2817' column='1'/>
       <parameter type-id='d841131b' name='fn' filepath='thread.c' line='2817' column='1'/>
       <parameter type-id='eaa32e2f' name='arg' filepath='thread.c' line='2818' column='1'/>
       <parameter type-id='80f4b756' name='name' filepath='thread.c' line='2818' column='1'/>
       <return type-id='aaf85c13'/>
     </function-decl>
-    <function-decl name='spdk_interrupt_register_for_events' mangled-name='spdk_interrupt_register_for_events' filepath='thread.c' line='2824' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_interrupt_register_for_events'>
+    <function-decl name='spdk_interrupt_register_for_events' mangled-name='spdk_interrupt_register_for_events' filepath='thread.c' line='2824' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_interrupt_register_for_events' hash='2a986b98b09eb75e'>
       <parameter type-id='95e97e5e' name='efd' filepath='thread.c' line='2824' column='1'/>
       <parameter type-id='8f92235e' name='events' filepath='thread.c' line='2824' column='1'/>
       <parameter type-id='d841131b' name='fn' filepath='thread.c' line='2824' column='1'/>
@@ -765,91 +973,91 @@
       <parameter type-id='80f4b756' name='name' filepath='thread.c' line='2825' column='1'/>
       <return type-id='aaf85c13'/>
     </function-decl>
-    <function-decl name='spdk_interrupt_unregister' mangled-name='spdk_interrupt_unregister' filepath='thread.c' line='2872' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_interrupt_unregister'>
+    <function-decl name='spdk_interrupt_unregister' mangled-name='spdk_interrupt_unregister' filepath='thread.c' line='2872' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_interrupt_unregister' hash='7f32ffea222edbe7'>
       <parameter type-id='5df92dbb' name='pintr' filepath='thread.c' line='2872' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_interrupt_set_event_types' mangled-name='spdk_interrupt_set_event_types' filepath='thread.c' line='2900' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_interrupt_set_event_types'>
+    <function-decl name='spdk_interrupt_set_event_types' mangled-name='spdk_interrupt_set_event_types' filepath='thread.c' line='2900' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_interrupt_set_event_types' hash='6e7efc1fab8dc091'>
       <parameter type-id='aaf85c13' name='intr' filepath='thread.c' line='2900' column='1'/>
       <parameter type-id='88d1abf7' name='event_types' filepath='thread.c' line='2901' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_thread_get_interrupt_fd' mangled-name='spdk_thread_get_interrupt_fd' filepath='thread.c' line='2920' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_interrupt_fd'>
+    <function-decl name='spdk_thread_get_interrupt_fd' mangled-name='spdk_thread_get_interrupt_fd' filepath='thread.c' line='2920' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_interrupt_fd' hash='388da3fa973fde78'>
       <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='2920' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_thread_get_interrupt_fd_group' mangled-name='spdk_thread_get_interrupt_fd_group' filepath='thread.c' line='2926' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_interrupt_fd_group'>
+    <function-decl name='spdk_thread_get_interrupt_fd_group' mangled-name='spdk_thread_get_interrupt_fd_group' filepath='thread.c' line='2926' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_thread_get_interrupt_fd_group' hash='7f32ffea222edbe7'>
       <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='2926' column='1'/>
       <return type-id='eb7a8954'/>
     </function-decl>
-    <function-decl name='spdk_interrupt_mode_enable' mangled-name='spdk_interrupt_mode_enable' filepath='thread.c' line='2934' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_interrupt_mode_enable'>
+    <function-decl name='spdk_interrupt_mode_enable' mangled-name='spdk_interrupt_mode_enable' filepath='thread.c' line='2934' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_interrupt_mode_enable' hash='388da3fa973fde78'>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_interrupt_mode_is_enabled' mangled-name='spdk_interrupt_mode_is_enabled' filepath='thread.c' line='2956' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_interrupt_mode_is_enabled'>
+    <function-decl name='spdk_interrupt_mode_is_enabled' mangled-name='spdk_interrupt_mode_is_enabled' filepath='thread.c' line='2956' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_interrupt_mode_is_enabled' hash='c7c710e908194b91'>
       <return type-id='c894953d'/>
     </function-decl>
-    <class-decl name='spdk_spinlock_internal' is-struct='yes' visibility='default' filepath='thread.c' line='2968' column='1' is-declaration-only='yes' id='2e6655e1'/>
-    <function-decl name='spdk_spin_init' mangled-name='spdk_spin_init' filepath='thread.c' line='3042' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_spin_init'>
-      <parameter type-id='7d80dc07' name='sspin' filepath='thread.c' line='3042' column='1'/>
-      <return type-id='48b5725f'/>
-    </function-decl>
-    <function-decl name='spdk_spin_destroy' mangled-name='spdk_spin_destroy' filepath='thread.c' line='3055' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_spin_destroy'>
-      <parameter type-id='7d80dc07' name='sspin' filepath='thread.c' line='3055' column='1'/>
-      <return type-id='48b5725f'/>
-    </function-decl>
-    <function-decl name='spdk_spin_lock' mangled-name='spdk_spin_lock' filepath='thread.c' line='3072' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_spin_lock'>
-      <parameter type-id='7d80dc07' name='sspin' filepath='thread.c' line='3072' column='1'/>
-      <return type-id='48b5725f'/>
-    </function-decl>
-    <function-decl name='spdk_spin_unlock' mangled-name='spdk_spin_unlock' filepath='thread.c' line='3092' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_spin_unlock'>
+    <class-decl name='spdk_spinlock_internal' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='thread.c' line='2968' column='1' id='2e6655e1'/>
+    <function-decl name='spdk_spin_init' mangled-name='spdk_spin_init' filepath='thread.c' line='3042' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_spin_init' hash='a2ed363298906c8e'>
       <parameter type-id='7d80dc07' name='sspin' filepath='thread.c' line='3092' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_spin_held' mangled-name='spdk_spin_held' filepath='thread.c' line='3113' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_spin_held'>
+    <function-decl name='spdk_spin_destroy' mangled-name='spdk_spin_destroy' filepath='thread.c' line='3055' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_spin_destroy' hash='a2ed363298906c8e'>
+      <parameter type-id='7d80dc07' name='sspin' filepath='thread.c' line='3092' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_spin_lock' mangled-name='spdk_spin_lock' filepath='thread.c' line='3072' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_spin_lock' hash='a2ed363298906c8e'>
+      <parameter type-id='7d80dc07' name='sspin' filepath='thread.c' line='3092' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_spin_unlock' mangled-name='spdk_spin_unlock' filepath='thread.c' line='3092' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_spin_unlock' hash='a2ed363298906c8e'>
+      <parameter type-id='7d80dc07' name='sspin' filepath='thread.c' line='3092' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_spin_held' mangled-name='spdk_spin_held' filepath='thread.c' line='3113' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_spin_held' hash='0c33ada447125881'>
       <parameter type-id='7d80dc07' name='sspin' filepath='thread.c' line='3113' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <class-decl name='spdk_io_channel' is-struct='yes' visibility='default' filepath='thread_internal.h' line='20' column='1' is-declaration-only='yes' id='8de5f3c1'/>
+    <class-decl name='spdk_io_channel' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='thread_internal.h' line='20' column='1' id='8de5f3c1'/>
     <type-decl name='void' id='48b5725f'/>
     <pointer-type-def type-id='48b5725f' id='eaa32e2f'/>
-    <function-type size-in-bits='64' id='c11e252e'>
+    <function-type size-in-bits='64' hash='1b2043b146a79577' id='a5eb4d3d'>
       <parameter type-id='1380717f'/>
       <return type-id='c894953d'/>
     </function-type>
-    <function-type size-in-bits='64' id='c448161c'>
-      <parameter type-id='f8fcfe66' name='thread'/>
+    <function-type size-in-bits='64' hash='388da3fa973fde78' id='c448161c'>
+      <parameter type-id='f8fcfe66' name='thread' filepath='thread.c' line='2920' column='1'/>
       <return type-id='95e97e5e'/>
     </function-type>
-    <function-type size-in-bits='64' id='034ff13e'>
+    <function-type size-in-bits='64' hash='1ae2bf0fd947238d' id='a76497cd'>
       <parameter type-id='f8fcfe66'/>
       <parameter type-id='1380717f'/>
       <return type-id='95e97e5e'/>
     </function-type>
-    <function-type size-in-bits='64' id='9efbfb11'>
+    <function-type size-in-bits='64' hash='388da3fa973fde78' id='9efbfb11'>
       <parameter type-id='eaa32e2f'/>
       <return type-id='95e97e5e'/>
     </function-type>
-    <function-type size-in-bits='64' id='96ee24a5'>
+    <function-type size-in-bits='64' hash='388da3fa973fde78' id='96ee24a5'>
       <parameter type-id='eaa32e2f'/>
       <parameter type-id='eaa32e2f'/>
       <return type-id='95e97e5e'/>
     </function-type>
-    <function-type size-in-bits='64' id='4f915724'>
+    <function-type size-in-bits='64' hash='7f32ffea222edbe7' id='4f915724'>
       <parameter type-id='1e5ee9f7'/>
       <return type-id='48b5725f'/>
     </function-type>
-    <function-type size-in-bits='64' id='dee270c1'>
-      <parameter type-id='1e5ee9f7' name='i'/>
-      <parameter type-id='95e97e5e' name='status'/>
+    <function-type size-in-bits='64' hash='388da3fa973fde78' id='dee270c1'>
+      <parameter type-id='1e5ee9f7' name='i' filepath='thread.c' line='2642' column='1'/>
+      <parameter type-id='95e97e5e' name='status' filepath='thread.c' line='2642' column='1'/>
       <return type-id='48b5725f'/>
     </function-type>
-    <function-type size-in-bits='64' id='0ae3ab65'>
+    <function-type size-in-bits='64' hash='c7c710e908194b91' id='0ae3ab65'>
       <parameter type-id='bf13de54'/>
       <parameter type-id='eaa32e2f'/>
       <parameter type-id='c894953d'/>
       <return type-id='48b5725f'/>
     </function-type>
-    <function-type size-in-bits='64' id='c039af2e'>
+    <function-type size-in-bits='64' hash='7f32ffea222edbe7' id='c039af2e'>
       <parameter type-id='eaa32e2f'/>
       <parameter type-id='eaa32e2f'/>
       <return type-id='48b5725f'/>
