@@ -1,0 +1,120 @@
+<abi-corpus version='2.4' soname='libspdk_accel_dpdk_cryptodev.so.3.0'>
+  <elf-needed>
+    <dependency name='libspdk_log.so.7.1'/>
+    <dependency name='libspdk_thread.so.11.0'/>
+    <dependency name='libspdk_json.so.6.0'/>
+    <dependency name='libspdk_jsonrpc.so.6.0'/>
+    <dependency name='libspdk_rpc.so.7.0'/>
+    <dependency name='libspdk_accel.so.16.0'/>
+    <dependency name='libspdk_util.so.10.1'/>
+    <dependency name='libc.so.6'/>
+    <dependency name='ld-linux-x86-64.so.2'/>
+  </elf-needed>
+  <undefined-elf-function-symbols>
+    <elf-symbol name='__assert_fail' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__cxa_finalize' type='func-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__stack_chk_fail' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__tls_get_addr' version='GLIBC_2.3' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='calloc' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='free' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='memcmp' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='memcpy' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='memmove' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='memset' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='pthread_mutex_lock' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='pthread_mutex_unlock' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='snprintf' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_accel_module_finish' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_accel_module_list_add' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_accel_task_complete' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_get_io_channel' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_io_device_register' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_io_device_unregister' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_decode_object' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_decode_string' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_named_object_begin' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_named_string' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_object_begin' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_object_end' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_string' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_jsonrpc_begin_result' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_jsonrpc_end_result' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_jsonrpc_send_bool_response' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_jsonrpc_send_error_response' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_log' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_poller_register_named' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_poller_unregister' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_rpc_register_method' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_u32log2' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='strcmp' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+  </undefined-elf-function-symbols>
+  <undefined-elf-variable-symbols>
+    <elf-symbol name='_ITM_deregisterTMCloneTable' type='no-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='_ITM_registerTMCloneTable' type='no-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__gmon_start__' type='no-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__rte_cryptodev_trace_dequeue_burst' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__rte_cryptodev_trace_enqueue_burst' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__rte_mempool_trace_default_cache' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__rte_mempool_trace_generic_get' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__rte_mempool_trace_generic_put' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__rte_mempool_trace_get_bulk' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__rte_mempool_trace_ops_dequeue_bulk' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__rte_mempool_trace_ops_enqueue_bulk' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__rte_mempool_trace_put_bulk' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__rte_panic' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__rte_trace_mem_per_thread_alloc' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='per_lcore__lcore_id' type='tls-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='per_lcore_trace_mem' type='tls-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_crypto_fp_ops' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_crypto_op_pool_create' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_cryptodev_close' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_cryptodev_configure' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_cryptodev_count' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_cryptodev_device_count_by_driver' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_cryptodev_info_get' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_cryptodev_queue_pair_setup' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_cryptodev_start' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_cryptodev_stop' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_cryptodev_sym_get_private_session_size' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_cryptodev_sym_session_create' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_cryptodev_sym_session_free' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_cryptodev_sym_session_pool_create' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_lcore_count' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_mbuf_dynfield_register' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_mempool_free' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_mempool_ops_table' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_pktmbuf_free_bulk' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_pktmbuf_pool_create' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_socket_id' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_vdev_init' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_vdev_uninit' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_vtophys' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+  </undefined-elf-variable-symbols>
+  <abi-instr address-size='64' path='accel_dpdk_cryptodev.c' language='LANG_C11'>
+    <typedef-decl name='__uint64_t' type-id='f0981eeb' size-in-bits='64' filepath='types.h' line='45' column='1' hash='8fdc5eea2983a729' id='8910171f'/>
+    <typedef-decl name='rte_trace_point_t' type-id='9c313c2d' size-in-bits='64' filepath='rte_trace_point.h' line='36' column='1' hash='8fdc5eea2983a729' id='d2dae1c9'/>
+    <typedef-decl name='uint64_t' type-id='8910171f' size-in-bits='64' filepath='stdint-uintn.h' line='27' column='1' hash='8fdc5eea2983a729' id='9c313c2d'/>
+    <type-decl name='unsigned int' size-in-bits='32' hash='e66b43f97c38e87a' id='f0981eec'/>
+    <type-decl name='unsigned long int' size-in-bits='64' hash='8fdc5eea2983a729#2' id='f0981eeb'/>
+    <array-type-def dimensions='1' type-id='b76226c6' id='45f6f267'>
+      <subrange length='128' lower-bound='0' upper-bound='127' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='6d1a6a21feae6dd2' id='1eb1687a'/>
+    </array-type-def>
+    <class-decl name='rte_crypto_fp_ops' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='rte_cryptodev_core.h' line='43' column='1' id='b76226c6'/>
+    <var-decl name='rte_crypto_fp_ops' type-id='45f6f267' visibility='default' filepath='rte_cryptodev_core.h' line='54' column='1' elf-symbol-id='rte_crypto_fp_ops'/>
+    <var-decl name='__rte_cryptodev_trace_enqueue_burst' type-id='d2dae1c9' visibility='default' filepath='rte_cryptodev_trace_fp.h' line='14' column='1' elf-symbol-id='__rte_cryptodev_trace_enqueue_burst'/>
+    <var-decl name='__rte_cryptodev_trace_dequeue_burst' type-id='d2dae1c9' visibility='default' filepath='rte_cryptodev_trace_fp.h' line='24' column='1' elf-symbol-id='__rte_cryptodev_trace_dequeue_burst'/>
+    <var-decl name='per_lcore__lcore_id' type-id='f0981eec' visibility='default' filepath='rte_lcore.h' line='28' column='1' elf-symbol-id='per_lcore__lcore_id'/>
+    <class-decl name='rte_mempool_ops_table' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='rte_mempool.h' line='730' column='1' id='a5b1e76e'/>
+    <var-decl name='rte_mempool_ops_table' type-id='a5b1e76e' visibility='default' filepath='rte_mempool.h' line='740' column='1' elf-symbol-id='rte_mempool_ops_table'/>
+    <var-decl name='__rte_mempool_trace_ops_dequeue_bulk' type-id='d2dae1c9' visibility='default' filepath='rte_mempool_trace_fp.h' line='20' column='1' elf-symbol-id='__rte_mempool_trace_ops_dequeue_bulk'/>
+    <var-decl name='__rte_mempool_trace_ops_enqueue_bulk' type-id='d2dae1c9' visibility='default' filepath='rte_mempool_trace_fp.h' line='38' column='1' elf-symbol-id='__rte_mempool_trace_ops_enqueue_bulk'/>
+    <var-decl name='__rte_mempool_trace_generic_put' type-id='d2dae1c9' visibility='default' filepath='rte_mempool_trace_fp.h' line='47' column='1' elf-symbol-id='__rte_mempool_trace_generic_put'/>
+    <var-decl name='__rte_mempool_trace_put_bulk' type-id='d2dae1c9' visibility='default' filepath='rte_mempool_trace_fp.h' line='57' column='1' elf-symbol-id='__rte_mempool_trace_put_bulk'/>
+    <var-decl name='__rte_mempool_trace_generic_get' type-id='d2dae1c9' visibility='default' filepath='rte_mempool_trace_fp.h' line='67' column='1' elf-symbol-id='__rte_mempool_trace_generic_get'/>
+    <var-decl name='__rte_mempool_trace_get_bulk' type-id='d2dae1c9' visibility='default' filepath='rte_mempool_trace_fp.h' line='77' column='1' elf-symbol-id='__rte_mempool_trace_get_bulk'/>
+    <var-decl name='__rte_mempool_trace_default_cache' type-id='d2dae1c9' visibility='default' filepath='rte_mempool_trace_fp.h' line='96' column='1' elf-symbol-id='__rte_mempool_trace_default_cache'/>
+    <type-decl name='void' id='48b5725f'/>
+    <pointer-type-def type-id='48b5725f' id='eaa32e2f'/>
+    <var-decl name='per_lcore_trace_mem' type-id='eaa32e2f' visibility='default' filepath='rte_trace_point.h' line='309' column='1' elf-symbol-id='per_lcore_trace_mem'/>
+  </abi-instr>
+</abi-corpus>

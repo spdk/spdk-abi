@@ -1,0 +1,50 @@
+<abi-corpus version='2.4' soname='libspdk_accel_error.so.2.0'>
+  <elf-needed>
+    <dependency name='libspdk_accel.so.16.0'/>
+    <dependency name='libspdk_json.so.6.0'/>
+    <dependency name='libspdk_jsonrpc.so.6.0'/>
+    <dependency name='libspdk_rpc.so.7.0'/>
+    <dependency name='libspdk_thread.so.11.0'/>
+    <dependency name='libspdk_util.so.10.1'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+  <undefined-elf-function-symbols>
+    <elf-symbol name='__assert_fail' version='GLIBC_2.2.5' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__cxa_finalize' version='GLIBC_2.2.5' is-default-version='yes' type='func-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='free' version='GLIBC_2.2.5' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_accel_get_module' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_accel_get_opcode_name' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_accel_module_finish' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_accel_module_list_add' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_accel_task_complete' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_for_each_channel' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_for_each_channel_continue' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_get_io_channel' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_io_channel_iter_get_channel' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_io_channel_iter_get_ctx' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_io_device_register' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_io_device_unregister' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_decode_int32' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_decode_object' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_decode_string' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_decode_uint64' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_named_object_begin' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_named_string' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_named_uint64' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_object_begin' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_object_end' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_jsonrpc_send_bool_response' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_jsonrpc_send_error_response' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_poller_register_named' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_poller_unregister' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_put_io_channel' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_rpc_register_method' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_strerror' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='strcmp' version='GLIBC_2.2.5' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+  </undefined-elf-function-symbols>
+  <undefined-elf-variable-symbols>
+    <elf-symbol name='_ITM_deregisterTMCloneTable' type='no-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='_ITM_registerTMCloneTable' type='no-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__gmon_start__' type='no-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+  </undefined-elf-variable-symbols>
+</abi-corpus>

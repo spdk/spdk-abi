@@ -1,0 +1,85 @@
+<abi-corpus version='2.4' soname='libspdk_scheduler_dpdk_governor.so.4.0'>
+  <elf-needed>
+    <dependency name='libspdk_event.so.14.0'/>
+    <dependency name='libspdk_json.so.6.0'/>
+    <dependency name='libspdk_log.so.7.1'/>
+    <dependency name='libspdk_util.so.10.1'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+  <undefined-elf-function-symbols>
+    <elf-symbol name='__cxa_finalize' version='GLIBC_2.2.5' is-default-version='yes' type='func-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__stack_chk_fail' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_cpuset_and' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_cpuset_equal' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_governor_register' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_named_string' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_log' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+  </undefined-elf-function-symbols>
+  <undefined-elf-variable-symbols>
+    <elf-symbol name='_ITM_deregisterTMCloneTable' type='no-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='_ITM_registerTMCloneTable' type='no-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__gmon_start__' type='no-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_power_check_env_supported' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_power_exit' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_power_freq_down' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_power_freq_enable_turbo' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_power_freq_max' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_power_freq_min' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_power_freq_up' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_power_freqs' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_power_get_capabilities' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_power_get_env' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_power_get_freq' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_power_init' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_power_set_env' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_power_unset_env' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_env_core_get_smt_cpuset' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_env_get_cpuset' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_env_get_first_core' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_env_get_next_core' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+  </undefined-elf-variable-symbols>
+  <abi-instr address-size='64' path='dpdk_governor.c' language='LANG_C11'>
+    <type-decl name='int' size-in-bits='32' hash='09d17c08f594edc7' id='95e97e5e'/>
+    <typedef-decl name='__uint32_t' type-id='f0981eeb' size-in-bits='32' filepath='types.h' line='42' column='1' hash='e66b43f97c38e87a' id='62f1140c'/>
+    <typedef-decl name='rte_power_freq_change_t' type-id='f7ad0cae' size-in-bits='64' filepath='rte_power.h' line='163' column='1' hash='fd7a63c0c6c822c4' id='7e598c20'/>
+    <typedef-decl name='rte_power_freqs_t' type-id='73db9669' size-in-bits='64' filepath='rte_power.h' line='111' column='1' hash='fd7a63c0c6c822c4' id='b41dbcc0'/>
+    <typedef-decl name='rte_power_get_capabilities_t' type-id='d124ba76' size-in-bits='64' filepath='rte_power.h' line='238' column='1' hash='fd7a63c0c6c822c4' id='00ac8430'/>
+    <typedef-decl name='rte_power_get_freq_t' type-id='d43c5f0b' size-in-bits='64' filepath='rte_power.h' line='127' column='1' hash='fd7a63c0c6c822c4' id='1fa26bd0'/>
+    <typedef-decl name='uint32_t' type-id='62f1140c' size-in-bits='32' filepath='stdint-uintn.h' line='26' column='1' hash='e66b43f97c38e87a' id='8f92235e'/>
+    <type-decl name='unsigned int' size-in-bits='32' hash='e66b43f97c38e87a' id='f0981eeb'/>
+    <pointer-type-def type-id='db7d07ef' size-in-bits='64' hash='fd7a63c0c6c822c4' id='f7ad0cae'/>
+    <pointer-type-def type-id='f673f263' size-in-bits='64' hash='fd7a63c0c6c822c4' id='d124ba76'/>
+    <pointer-type-def type-id='03bdc53c' size-in-bits='64' hash='fd7a63c0c6c822c4' id='d43c5f0b'/>
+    <pointer-type-def type-id='581932a0' size-in-bits='64' hash='fd7a63c0c6c822c4' id='73db9669'/>
+    <pointer-type-def type-id='8f92235e' size-in-bits='64' hash='a285db8f38e4ea02' id='90421557'/>
+    <pointer-type-def type-id='1837f079' size-in-bits='64' id='4a876761'/>
+    <var-decl name='rte_power_freqs' type-id='b41dbcc0' visibility='default' filepath='rte_power.h' line='114' column='1' elf-symbol-id='rte_power_freqs'/>
+    <var-decl name='rte_power_get_freq' type-id='1fa26bd0' visibility='default' filepath='rte_power.h' line='129' column='1' elf-symbol-id='rte_power_get_freq'/>
+    <var-decl name='rte_power_freq_up' type-id='7e598c20' visibility='default' filepath='rte_power.h' line='170' column='1' elf-symbol-id='rte_power_freq_up'/>
+    <var-decl name='rte_power_freq_down' type-id='7e598c20' visibility='default' filepath='rte_power.h' line='177' column='1' elf-symbol-id='rte_power_freq_down'/>
+    <var-decl name='rte_power_freq_max' type-id='7e598c20' visibility='default' filepath='rte_power.h' line='184' column='1' elf-symbol-id='rte_power_freq_max'/>
+    <var-decl name='rte_power_freq_min' type-id='7e598c20' visibility='default' filepath='rte_power.h' line='191' column='1' elf-symbol-id='rte_power_freq_min'/>
+    <var-decl name='rte_power_freq_enable_turbo' type-id='7e598c20' visibility='default' filepath='rte_power.h' line='203' column='1' elf-symbol-id='rte_power_freq_enable_turbo'/>
+    <class-decl name='rte_power_core_capabilities' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='rte_power.h' line='214' column='1' id='1837f079'/>
+    <var-decl name='rte_power_get_capabilities' type-id='00ac8430' visibility='default' filepath='rte_power.h' line='241' column='1' elf-symbol-id='rte_power_get_capabilities'/>
+    <function-type size-in-bits='64' hash='6668baab5275d4c5' id='db7d07ef'>
+      <parameter type-id='f0981eeb'/>
+      <return type-id='95e97e5e'/>
+    </function-type>
+    <function-type size-in-bits='64' hash='6668baab5275d4c5' id='f673f263'>
+      <parameter type-id='f0981eeb'/>
+      <parameter type-id='4a876761'/>
+      <return type-id='95e97e5e'/>
+    </function-type>
+    <function-type size-in-bits='64' hash='0389e499374a3f97' id='03bdc53c'>
+      <parameter type-id='f0981eeb'/>
+      <return type-id='8f92235e'/>
+    </function-type>
+    <function-type size-in-bits='64' hash='b906292a63a6c75c' id='581932a0'>
+      <parameter type-id='f0981eeb'/>
+      <parameter type-id='90421557'/>
+      <parameter type-id='8f92235e'/>
+      <return type-id='8f92235e'/>
+    </function-type>
+  </abi-instr>
+</abi-corpus>
