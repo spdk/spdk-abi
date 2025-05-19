@@ -1,6 +1,0 @@
-<abi-corpus version='2.2' soname='libspdk_event_vfu_tgt.so.2.0'>
-  <elf-needed>
-    <dependency name='libspdk_init.so.4.0'/>
-    <dependency name='libspdk_vfu_tgt.so.2.0'/>
-  </elf-needed>
-</abi-corpus>
