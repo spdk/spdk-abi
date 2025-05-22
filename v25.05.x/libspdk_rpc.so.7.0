@@ -2,7 +2,7 @@
   <elf-needed>
     <dependency name='libspdk_log.so.7.1'/>
     <dependency name='libspdk_util.so.10.1'/>
-    <dependency name='libspdk_json.so.6.0'/>
+    <dependency name='libspdk_json.so.6.1'/>
     <dependency name='libspdk_jsonrpc.so.6.0'/>
     <dependency name='libc.so.6'/>
   </elf-needed>

@@ -2,7 +2,7 @@
   <elf-needed>
     <dependency name='libspdk_log.so.7.1'/>
     <dependency name='libspdk_util.so.10.1'/>
-    <dependency name='libspdk_json.so.6.0'/>
+    <dependency name='libspdk_json.so.6.1'/>
     <dependency name='libc.so.6'/>
   </elf-needed>
   <elf-function-symbols>
@@ -77,6 +77,7 @@
     <elf-symbol name='spdk_json_write_null' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='spdk_json_write_object_begin' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='spdk_json_write_object_end' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_reset' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='spdk_json_write_val' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='spdk_log' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='spdk_log_register_flag' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
@@ -311,30 +312,30 @@
       <parameter type-id='42a6b637' name='request' filepath='jsonrpc_server.c' line='276' column='1'/>
       <return type-id='7923cb22'/>
     </function-decl>
-    <function-decl name='spdk_jsonrpc_begin_result' mangled-name='spdk_jsonrpc_begin_result' filepath='jsonrpc_server.c' line='361' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_jsonrpc_begin_result' hash='7f32ffea222edbe7'>
-      <parameter type-id='42a6b637' name='request' filepath='jsonrpc_server.c' line='361' column='1'/>
+    <function-decl name='spdk_jsonrpc_begin_result' mangled-name='spdk_jsonrpc_begin_result' filepath='jsonrpc_server.c' line='366' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_jsonrpc_begin_result' hash='7f32ffea222edbe7'>
+      <parameter type-id='42a6b637' name='request' filepath='jsonrpc_server.c' line='366' column='1'/>
       <return type-id='b8e14bff'/>
     </function-decl>
-    <function-decl name='spdk_jsonrpc_end_result' mangled-name='spdk_jsonrpc_end_result' filepath='jsonrpc_server.c' line='370' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_jsonrpc_end_result' hash='7f32ffea222edbe7'>
-      <parameter type-id='42a6b637' name='request' filepath='jsonrpc_server.c' line='370' column='1'/>
-      <parameter type-id='b8e14bff' name='w' filepath='jsonrpc_server.c' line='370' column='1'/>
+    <function-decl name='spdk_jsonrpc_end_result' mangled-name='spdk_jsonrpc_end_result' filepath='jsonrpc_server.c' line='375' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_jsonrpc_end_result' hash='7f32ffea222edbe7'>
+      <parameter type-id='42a6b637' name='request' filepath='jsonrpc_server.c' line='375' column='1'/>
+      <parameter type-id='b8e14bff' name='w' filepath='jsonrpc_server.c' line='375' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_jsonrpc_send_bool_response' mangled-name='spdk_jsonrpc_send_bool_response' filepath='jsonrpc_server.c' line='384' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_jsonrpc_send_bool_response' hash='c7c710e908194b91'>
-      <parameter type-id='42a6b637' name='request' filepath='jsonrpc_server.c' line='384' column='1'/>
-      <parameter type-id='c894953d' name='value' filepath='jsonrpc_server.c' line='384' column='1'/>
+    <function-decl name='spdk_jsonrpc_send_bool_response' mangled-name='spdk_jsonrpc_send_bool_response' filepath='jsonrpc_server.c' line='389' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_jsonrpc_send_bool_response' hash='c7c710e908194b91'>
+      <parameter type-id='42a6b637' name='request' filepath='jsonrpc_server.c' line='389' column='1'/>
+      <parameter type-id='c894953d' name='value' filepath='jsonrpc_server.c' line='389' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_jsonrpc_send_error_response' mangled-name='spdk_jsonrpc_send_error_response' filepath='jsonrpc_server.c' line='395' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_jsonrpc_send_error_response' hash='e9ea91a7eab8302c'>
-      <parameter type-id='42a6b637' name='request' filepath='jsonrpc_server.c' line='395' column='1'/>
-      <parameter type-id='95e97e5e' name='error_code' filepath='jsonrpc_server.c' line='396' column='1'/>
-      <parameter type-id='80f4b756' name='msg' filepath='jsonrpc_server.c' line='396' column='1'/>
+    <function-decl name='spdk_jsonrpc_send_error_response' mangled-name='spdk_jsonrpc_send_error_response' filepath='jsonrpc_server.c' line='407' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_jsonrpc_send_error_response' hash='e9ea91a7eab8302c'>
+      <parameter type-id='42a6b637' name='request' filepath='jsonrpc_server.c' line='407' column='1'/>
+      <parameter type-id='95e97e5e' name='error_code' filepath='jsonrpc_server.c' line='408' column='1'/>
+      <parameter type-id='80f4b756' name='msg' filepath='jsonrpc_server.c' line='408' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_jsonrpc_send_error_response_fmt' mangled-name='spdk_jsonrpc_send_error_response_fmt' filepath='jsonrpc_server.c' line='409' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_jsonrpc_send_error_response_fmt' hash='e9ea91a7eab8302c'>
-      <parameter type-id='42a6b637' name='request' filepath='jsonrpc_server.c' line='409' column='1'/>
-      <parameter type-id='95e97e5e' name='error_code' filepath='jsonrpc_server.c' line='410' column='1'/>
-      <parameter type-id='80f4b756' name='fmt' filepath='jsonrpc_server.c' line='410' column='1'/>
+    <function-decl name='spdk_jsonrpc_send_error_response_fmt' mangled-name='spdk_jsonrpc_send_error_response_fmt' filepath='jsonrpc_server.c' line='425' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_jsonrpc_send_error_response_fmt' hash='e9ea91a7eab8302c'>
+      <parameter type-id='42a6b637' name='request' filepath='jsonrpc_server.c' line='425' column='1'/>
+      <parameter type-id='95e97e5e' name='error_code' filepath='jsonrpc_server.c' line='426' column='1'/>
+      <parameter type-id='80f4b756' name='fmt' filepath='jsonrpc_server.c' line='426' column='1'/>
       <parameter is-variadic='yes'/>
       <return type-id='48b5725f'/>
     </function-decl>

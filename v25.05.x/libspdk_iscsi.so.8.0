@@ -6,7 +6,7 @@
     <dependency name='libspdk_util.so.10.1'/>
     <dependency name='libspdk_conf.so.6.0'/>
     <dependency name='libspdk_thread.so.11.0'/>
-    <dependency name='libspdk_json.so.6.0'/>
+    <dependency name='libspdk_json.so.6.1'/>
     <dependency name='libspdk_jsonrpc.so.6.0'/>
     <dependency name='libspdk_rpc.so.7.0'/>
     <dependency name='libspdk_trace.so.11.0'/>

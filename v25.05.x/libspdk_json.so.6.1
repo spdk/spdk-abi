@@ -1,4 +1,4 @@
-<abi-corpus version='2.4' soname='libspdk_json.so.6.0'>
+<abi-corpus version='2.4' soname='libspdk_json.so.6.1'>
   <elf-needed>
     <dependency name='libspdk_log.so.7.1'/>
     <dependency name='libspdk_util.so.10.1'/>
@@ -64,6 +64,7 @@
     <elf-symbol name='spdk_json_write_null' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
     <elf-symbol name='spdk_json_write_object_begin' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
     <elf-symbol name='spdk_json_write_object_end' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_json_write_reset' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
     <elf-symbol name='spdk_json_write_string' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
     <elf-symbol name='spdk_json_write_string_fmt' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
     <elf-symbol name='spdk_json_write_string_fmt_v' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
@@ -393,243 +394,247 @@
       <return type-id='b8e14bfe'/>
     </function-decl>
     <function-decl name='spdk_json_write_end' mangled-name='spdk_json_write_end' filepath='json_write.c' line='69' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_end' hash='388da3fa973fde78'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='591' column='1'/>
-      <return type-id='95e97e5f'/>
-    </function-decl>
-    <function-decl name='spdk_json_write_val_raw' mangled-name='spdk_json_write_val_raw' filepath='json_write.c' line='168' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_val_raw' hash='b6a97d07f8261bc0'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='522' column='1'/>
-      <parameter type-id='eaa32e2f' name='val' filepath='json_write.c' line='522' column='1'/>
-      <parameter type-id='b59d7dce' name='len' filepath='json_write.c' line='522' column='1'/>
-      <return type-id='95e97e5f'/>
-    </function-decl>
-    <function-decl name='spdk_json_write_null' mangled-name='spdk_json_write_null' filepath='json_write.c' line='175' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_null' hash='388da3fa973fde78'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='591' column='1'/>
-      <return type-id='95e97e5f'/>
-    </function-decl>
-    <function-decl name='spdk_json_write_bool' mangled-name='spdk_json_write_bool' filepath='json_write.c' line='182' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_bool' hash='a79502d22727be06'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='182' column='1'/>
-      <parameter type-id='c894953d' name='val' filepath='json_write.c' line='182' column='1'/>
-      <return type-id='95e97e5f'/>
-    </function-decl>
-    <function-decl name='spdk_json_write_uint8' mangled-name='spdk_json_write_uint8' filepath='json_write.c' line='193' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_uint8' hash='441b0fd3e3aff7f3'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='193' column='1'/>
-      <parameter type-id='b96825af' name='val' filepath='json_write.c' line='193' column='1'/>
-      <return type-id='95e97e5f'/>
-    </function-decl>
-    <function-decl name='spdk_json_write_uint16' mangled-name='spdk_json_write_uint16' filepath='json_write.c' line='205' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_uint16' hash='eaefd76559d626dc'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='205' column='1'/>
-      <parameter type-id='149c6638' name='val' filepath='json_write.c' line='205' column='1'/>
-      <return type-id='95e97e5f'/>
-    </function-decl>
-    <function-decl name='spdk_json_write_int32' mangled-name='spdk_json_write_int32' filepath='json_write.c' line='217' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_int32' hash='d628501fd2223339'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='217' column='1'/>
-      <parameter type-id='3ff5601b' name='val' filepath='json_write.c' line='217' column='1'/>
-      <return type-id='95e97e5f'/>
-    </function-decl>
-    <function-decl name='spdk_json_write_uint32' mangled-name='spdk_json_write_uint32' filepath='json_write.c' line='229' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_uint32' hash='6668baab5275d4c5'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='229' column='1'/>
-      <parameter type-id='8f92235e' name='val' filepath='json_write.c' line='229' column='1'/>
-      <return type-id='95e97e5f'/>
-    </function-decl>
-    <function-decl name='spdk_json_write_int64' mangled-name='spdk_json_write_int64' filepath='json_write.c' line='241' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_int64' hash='c62f1f6f1aa640e5'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='241' column='1'/>
-      <parameter type-id='9da381c4' name='val' filepath='json_write.c' line='241' column='1'/>
-      <return type-id='95e97e5f'/>
-    </function-decl>
-    <function-decl name='spdk_json_write_uint64' mangled-name='spdk_json_write_uint64' filepath='json_write.c' line='253' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_uint64' hash='b6a97d07f8261bc0'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='253' column='1'/>
-      <parameter type-id='9c313c2d' name='val' filepath='json_write.c' line='253' column='1'/>
-      <return type-id='95e97e5f'/>
-    </function-decl>
-    <function-decl name='spdk_json_write_uint128' mangled-name='spdk_json_write_uint128' filepath='json_write.c' line='265' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_uint128' hash='ccc0e5595ea688d4'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='265' column='1'/>
-      <parameter type-id='9c313c2d' name='low_val' filepath='json_write.c' line='265' column='1'/>
-      <parameter type-id='9c313c2d' name='high_val' filepath='json_write.c' line='265' column='1'/>
-      <return type-id='95e97e5f'/>
-    </function-decl>
-    <function-decl name='spdk_json_write_named_uint128' mangled-name='spdk_json_write_named_uint128' filepath='json_write.c' line='304' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_uint128' hash='63e0dcdaac8b048d'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='304' column='1'/>
-      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='304' column='1'/>
-      <parameter type-id='9c313c2d' name='low_val' filepath='json_write.c' line='305' column='1'/>
-      <parameter type-id='9c313c2d' name='high_val' filepath='json_write.c' line='305' column='1'/>
-      <return type-id='95e97e5f'/>
-    </function-decl>
-    <function-decl name='spdk_json_write_double' mangled-name='spdk_json_write_double' filepath='json_write.c' line='313' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_double' hash='a7973611e488a0da'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='313' column='1'/>
-      <parameter type-id='a0eb0f08' name='val' filepath='json_write.c' line='313' column='1'/>
-      <return type-id='95e97e5f'/>
-    </function-decl>
-    <function-decl name='spdk_json_write_string_raw' mangled-name='spdk_json_write_string_raw' filepath='json_write.c' line='460' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_string_raw' hash='e1f9b6b88b6e9119'>
       <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='605' column='1'/>
-      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='605' column='1'/>
-      <parameter type-id='b59d7dce' name='len' filepath='json_write.c' line='605' column='1'/>
       <return type-id='95e97e5f'/>
     </function-decl>
-    <function-decl name='spdk_json_write_string' mangled-name='spdk_json_write_string' filepath='json_write.c' line='467' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_string' hash='e9ea91a7eab8302c'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='821' column='1'/>
-      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='821' column='1'/>
+    <function-decl name='spdk_json_write_reset' mangled-name='spdk_json_write_reset' filepath='json_write.c' line='91' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_reset' hash='7f32ffea222edbe7'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='91' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_json_write_val_raw' mangled-name='spdk_json_write_val_raw' filepath='json_write.c' line='182' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_val_raw' hash='b6a97d07f8261bc0'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='536' column='1'/>
+      <parameter type-id='eaa32e2f' name='val' filepath='json_write.c' line='536' column='1'/>
+      <parameter type-id='b59d7dce' name='len' filepath='json_write.c' line='536' column='1'/>
       <return type-id='95e97e5f'/>
     </function-decl>
-    <function-decl name='spdk_json_write_string_utf16e_raw' mangled-name='spdk_json_write_string_utf16le_raw' filepath='json_write.c' line='473' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_string_utf16le_raw' hash='cb220f5263f6de88'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='473' column='1'/>
-      <parameter type-id='1b7d11c6' name='val' filepath='json_write.c' line='473' column='1'/>
-      <parameter type-id='b59d7dce' name='len' filepath='json_write.c' line='473' column='1'/>
+    <function-decl name='spdk_json_write_null' mangled-name='spdk_json_write_null' filepath='json_write.c' line='189' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_null' hash='388da3fa973fde78'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='605' column='1'/>
       <return type-id='95e97e5f'/>
     </function-decl>
-    <function-decl name='spdk_json_write_string_utf16e' mangled-name='spdk_json_write_string_utf16le' filepath='json_write.c' line='480' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_string_utf16le' hash='e5460e883e4463fd'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='480' column='1'/>
-      <parameter type-id='1b7d11c6' name='val' filepath='json_write.c' line='480' column='1'/>
+    <function-decl name='spdk_json_write_bool' mangled-name='spdk_json_write_bool' filepath='json_write.c' line='196' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_bool' hash='a79502d22727be06'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='196' column='1'/>
+      <parameter type-id='c894953d' name='val' filepath='json_write.c' line='196' column='1'/>
       <return type-id='95e97e5f'/>
     </function-decl>
-    <function-decl name='spdk_json_write_string_fmt' mangled-name='spdk_json_write_string_fmt' filepath='json_write.c' line='493' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_string_fmt' hash='e9ea91a7eab8302c'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='493' column='1'/>
-      <parameter type-id='80f4b756' name='fmt' filepath='json_write.c' line='493' column='1'/>
+    <function-decl name='spdk_json_write_uint8' mangled-name='spdk_json_write_uint8' filepath='json_write.c' line='207' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_uint8' hash='441b0fd3e3aff7f3'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='207' column='1'/>
+      <parameter type-id='b96825af' name='val' filepath='json_write.c' line='207' column='1'/>
+      <return type-id='95e97e5f'/>
+    </function-decl>
+    <function-decl name='spdk_json_write_uint16' mangled-name='spdk_json_write_uint16' filepath='json_write.c' line='219' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_uint16' hash='eaefd76559d626dc'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='219' column='1'/>
+      <parameter type-id='149c6638' name='val' filepath='json_write.c' line='219' column='1'/>
+      <return type-id='95e97e5f'/>
+    </function-decl>
+    <function-decl name='spdk_json_write_int32' mangled-name='spdk_json_write_int32' filepath='json_write.c' line='231' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_int32' hash='d628501fd2223339'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='231' column='1'/>
+      <parameter type-id='3ff5601b' name='val' filepath='json_write.c' line='231' column='1'/>
+      <return type-id='95e97e5f'/>
+    </function-decl>
+    <function-decl name='spdk_json_write_uint32' mangled-name='spdk_json_write_uint32' filepath='json_write.c' line='243' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_uint32' hash='6668baab5275d4c5'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='243' column='1'/>
+      <parameter type-id='8f92235e' name='val' filepath='json_write.c' line='243' column='1'/>
+      <return type-id='95e97e5f'/>
+    </function-decl>
+    <function-decl name='spdk_json_write_int64' mangled-name='spdk_json_write_int64' filepath='json_write.c' line='255' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_int64' hash='c62f1f6f1aa640e5'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='255' column='1'/>
+      <parameter type-id='9da381c4' name='val' filepath='json_write.c' line='255' column='1'/>
+      <return type-id='95e97e5f'/>
+    </function-decl>
+    <function-decl name='spdk_json_write_uint64' mangled-name='spdk_json_write_uint64' filepath='json_write.c' line='267' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_uint64' hash='b6a97d07f8261bc0'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='267' column='1'/>
+      <parameter type-id='9c313c2d' name='val' filepath='json_write.c' line='267' column='1'/>
+      <return type-id='95e97e5f'/>
+    </function-decl>
+    <function-decl name='spdk_json_write_uint128' mangled-name='spdk_json_write_uint128' filepath='json_write.c' line='279' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_uint128' hash='ccc0e5595ea688d4'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='279' column='1'/>
+      <parameter type-id='9c313c2d' name='low_val' filepath='json_write.c' line='279' column='1'/>
+      <parameter type-id='9c313c2d' name='high_val' filepath='json_write.c' line='279' column='1'/>
+      <return type-id='95e97e5f'/>
+    </function-decl>
+    <function-decl name='spdk_json_write_named_uint128' mangled-name='spdk_json_write_named_uint128' filepath='json_write.c' line='318' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_uint128' hash='63e0dcdaac8b048d'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='318' column='1'/>
+      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='318' column='1'/>
+      <parameter type-id='9c313c2d' name='low_val' filepath='json_write.c' line='319' column='1'/>
+      <parameter type-id='9c313c2d' name='high_val' filepath='json_write.c' line='319' column='1'/>
+      <return type-id='95e97e5f'/>
+    </function-decl>
+    <function-decl name='spdk_json_write_double' mangled-name='spdk_json_write_double' filepath='json_write.c' line='327' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_double' hash='a7973611e488a0da'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='327' column='1'/>
+      <parameter type-id='a0eb0f08' name='val' filepath='json_write.c' line='327' column='1'/>
+      <return type-id='95e97e5f'/>
+    </function-decl>
+    <function-decl name='spdk_json_write_string_raw' mangled-name='spdk_json_write_string_raw' filepath='json_write.c' line='474' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_string_raw' hash='e1f9b6b88b6e9119'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='619' column='1'/>
+      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='619' column='1'/>
+      <parameter type-id='b59d7dce' name='len' filepath='json_write.c' line='619' column='1'/>
+      <return type-id='95e97e5f'/>
+    </function-decl>
+    <function-decl name='spdk_json_write_string' mangled-name='spdk_json_write_string' filepath='json_write.c' line='481' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_string' hash='e9ea91a7eab8302c'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='835' column='1'/>
+      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='835' column='1'/>
+      <return type-id='95e97e5f'/>
+    </function-decl>
+    <function-decl name='spdk_json_write_string_utf16e_raw' mangled-name='spdk_json_write_string_utf16le_raw' filepath='json_write.c' line='487' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_string_utf16le_raw' hash='cb220f5263f6de88'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='487' column='1'/>
+      <parameter type-id='1b7d11c6' name='val' filepath='json_write.c' line='487' column='1'/>
+      <parameter type-id='b59d7dce' name='len' filepath='json_write.c' line='487' column='1'/>
+      <return type-id='95e97e5f'/>
+    </function-decl>
+    <function-decl name='spdk_json_write_string_utf16e' mangled-name='spdk_json_write_string_utf16le' filepath='json_write.c' line='494' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_string_utf16le' hash='e5460e883e4463fd'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='494' column='1'/>
+      <parameter type-id='1b7d11c6' name='val' filepath='json_write.c' line='494' column='1'/>
+      <return type-id='95e97e5f'/>
+    </function-decl>
+    <function-decl name='spdk_json_write_string_fmt' mangled-name='spdk_json_write_string_fmt' filepath='json_write.c' line='507' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_string_fmt' hash='e9ea91a7eab8302c'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='507' column='1'/>
+      <parameter type-id='80f4b756' name='fmt' filepath='json_write.c' line='507' column='1'/>
       <parameter is-variadic='yes'/>
       <return type-id='95e97e5f'/>
     </function-decl>
-    <function-decl name='spdk_json_write_string_fmt_v' mangled-name='spdk_json_write_string_fmt_v' filepath='json_write.c' line='506' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_string_fmt_v' hash='7edab0dc77cdd85d'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='506' column='1'/>
-      <parameter type-id='80f4b756' name='fmt' filepath='json_write.c' line='506' column='1'/>
-      <parameter type-id='b7f2d5e6' name='args' filepath='json_write.c' line='506' column='1'/>
+    <function-decl name='spdk_json_write_string_fmt_v' mangled-name='spdk_json_write_string_fmt_v' filepath='json_write.c' line='520' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_string_fmt_v' hash='7edab0dc77cdd85d'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='520' column='1'/>
+      <parameter type-id='80f4b756' name='fmt' filepath='json_write.c' line='520' column='1'/>
+      <parameter type-id='b7f2d5e6' name='args' filepath='json_write.c' line='520' column='1'/>
       <return type-id='95e97e5f'/>
     </function-decl>
-    <function-decl name='spdk_json_write_bytearray' mangled-name='spdk_json_write_bytearray' filepath='json_write.c' line='522' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_bytearray' hash='b6a97d07f8261bc0'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='522' column='1'/>
-      <parameter type-id='eaa32e2f' name='val' filepath='json_write.c' line='522' column='1'/>
-      <parameter type-id='b59d7dce' name='len' filepath='json_write.c' line='522' column='1'/>
+    <function-decl name='spdk_json_write_bytearray' mangled-name='spdk_json_write_bytearray' filepath='json_write.c' line='536' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_bytearray' hash='b6a97d07f8261bc0'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='536' column='1'/>
+      <parameter type-id='eaa32e2f' name='val' filepath='json_write.c' line='536' column='1'/>
+      <parameter type-id='b59d7dce' name='len' filepath='json_write.c' line='536' column='1'/>
       <return type-id='95e97e5f'/>
     </function-decl>
-    <function-decl name='spdk_json_write_uuid' mangled-name='spdk_json_write_uuid' filepath='json_write.c' line='545' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_uuid' hash='1b37f93c196b7971'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='545' column='1'/>
-      <parameter type-id='c2482856' name='uuid' filepath='json_write.c' line='545' column='1'/>
+    <function-decl name='spdk_json_write_uuid' mangled-name='spdk_json_write_uuid' filepath='json_write.c' line='559' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_uuid' hash='1b37f93c196b7971'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='559' column='1'/>
+      <parameter type-id='c2482856' name='uuid' filepath='json_write.c' line='559' column='1'/>
       <return type-id='95e97e5f'/>
     </function-decl>
-    <function-decl name='spdk_json_write_array_begin' mangled-name='spdk_json_write_array_begin' filepath='json_write.c' line='555' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_array_begin' hash='388da3fa973fde78'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='591' column='1'/>
-      <return type-id='95e97e5f'/>
-    </function-decl>
-    <function-decl name='spdk_json_write_array_end' mangled-name='spdk_json_write_array_end' filepath='json_write.c' line='566' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_array_end' hash='388da3fa973fde78'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='591' column='1'/>
-      <return type-id='95e97e5f'/>
-    </function-decl>
-    <function-decl name='spdk_json_write_object_begin' mangled-name='spdk_json_write_object_begin' filepath='json_write.c' line='580' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_object_begin' hash='388da3fa973fde78'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='591' column='1'/>
-      <return type-id='95e97e5f'/>
-    </function-decl>
-    <function-decl name='spdk_json_write_object_end' mangled-name='spdk_json_write_object_end' filepath='json_write.c' line='591' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_object_end' hash='388da3fa973fde78'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='591' column='1'/>
-      <return type-id='95e97e5f'/>
-    </function-decl>
-    <function-decl name='spdk_json_write_name_raw' mangled-name='spdk_json_write_name_raw' filepath='json_write.c' line='605' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_name_raw' hash='e1f9b6b88b6e9119'>
+    <function-decl name='spdk_json_write_array_begin' mangled-name='spdk_json_write_array_begin' filepath='json_write.c' line='569' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_array_begin' hash='388da3fa973fde78'>
       <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='605' column='1'/>
-      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='605' column='1'/>
-      <parameter type-id='b59d7dce' name='len' filepath='json_write.c' line='605' column='1'/>
       <return type-id='95e97e5f'/>
     </function-decl>
-    <function-decl name='spdk_json_write_name' mangled-name='spdk_json_write_name' filepath='json_write.c' line='616' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_name' hash='e9ea91a7eab8302c'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='821' column='1'/>
-      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='821' column='1'/>
+    <function-decl name='spdk_json_write_array_end' mangled-name='spdk_json_write_array_end' filepath='json_write.c' line='580' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_array_end' hash='388da3fa973fde78'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='605' column='1'/>
       <return type-id='95e97e5f'/>
     </function-decl>
-    <function-decl name='spdk_json_write_val' mangled-name='spdk_json_write_val' filepath='json_write.c' line='622' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_val' hash='526d675145c2bfa7'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='622' column='1'/>
-      <parameter type-id='3ee1fff1' name='val' filepath='json_write.c' line='622' column='1'/>
+    <function-decl name='spdk_json_write_object_begin' mangled-name='spdk_json_write_object_begin' filepath='json_write.c' line='594' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_object_begin' hash='388da3fa973fde78'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='605' column='1'/>
       <return type-id='95e97e5f'/>
     </function-decl>
-    <function-decl name='spdk_json_write_named_null' mangled-name='spdk_json_write_named_null' filepath='json_write.c' line='688' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_null' hash='e9ea91a7eab8302c'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='821' column='1'/>
-      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='821' column='1'/>
+    <function-decl name='spdk_json_write_object_end' mangled-name='spdk_json_write_object_end' filepath='json_write.c' line='605' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_object_end' hash='388da3fa973fde78'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='605' column='1'/>
       <return type-id='95e97e5f'/>
     </function-decl>
-    <function-decl name='spdk_json_write_named_bool' mangled-name='spdk_json_write_named_bool' filepath='json_write.c' line='695' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_bool' hash='44d4f068f334c06e'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='695' column='1'/>
-      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='695' column='1'/>
-      <parameter type-id='c894953d' name='val' filepath='json_write.c' line='695' column='1'/>
+    <function-decl name='spdk_json_write_name_raw' mangled-name='spdk_json_write_name_raw' filepath='json_write.c' line='619' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_name_raw' hash='e1f9b6b88b6e9119'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='619' column='1'/>
+      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='619' column='1'/>
+      <parameter type-id='b59d7dce' name='len' filepath='json_write.c' line='619' column='1'/>
       <return type-id='95e97e5f'/>
     </function-decl>
-    <function-decl name='spdk_json_write_named_uint8' mangled-name='spdk_json_write_named_uint8' filepath='json_write.c' line='703' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_uint8' hash='23dcf10947408eba'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='703' column='1'/>
-      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='703' column='1'/>
-      <parameter type-id='b96825af' name='val' filepath='json_write.c' line='703' column='1'/>
+    <function-decl name='spdk_json_write_name' mangled-name='spdk_json_write_name' filepath='json_write.c' line='630' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_name' hash='e9ea91a7eab8302c'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='835' column='1'/>
+      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='835' column='1'/>
       <return type-id='95e97e5f'/>
     </function-decl>
-    <function-decl name='spdk_json_write_named_uint16' mangled-name='spdk_json_write_named_uint16' filepath='json_write.c' line='711' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_uint16' hash='229e74d64cef3b72'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='711' column='1'/>
-      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='711' column='1'/>
-      <parameter type-id='149c6638' name='val' filepath='json_write.c' line='711' column='1'/>
+    <function-decl name='spdk_json_write_val' mangled-name='spdk_json_write_val' filepath='json_write.c' line='636' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_val' hash='526d675145c2bfa7'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='636' column='1'/>
+      <parameter type-id='3ee1fff1' name='val' filepath='json_write.c' line='636' column='1'/>
       <return type-id='95e97e5f'/>
     </function-decl>
-    <function-decl name='spdk_json_write_named_int32' mangled-name='spdk_json_write_named_int32' filepath='json_write.c' line='719' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_int32' hash='1d81aff51c388187'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='719' column='1'/>
-      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='719' column='1'/>
-      <parameter type-id='3ff5601b' name='val' filepath='json_write.c' line='719' column='1'/>
+    <function-decl name='spdk_json_write_named_null' mangled-name='spdk_json_write_named_null' filepath='json_write.c' line='702' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_null' hash='e9ea91a7eab8302c'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='835' column='1'/>
+      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='835' column='1'/>
       <return type-id='95e97e5f'/>
     </function-decl>
-    <function-decl name='spdk_json_write_named_uint32' mangled-name='spdk_json_write_named_uint32' filepath='json_write.c' line='727' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_uint32' hash='7632efc1596daaa3'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='727' column='1'/>
-      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='727' column='1'/>
-      <parameter type-id='8f92235e' name='val' filepath='json_write.c' line='727' column='1'/>
+    <function-decl name='spdk_json_write_named_bool' mangled-name='spdk_json_write_named_bool' filepath='json_write.c' line='709' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_bool' hash='44d4f068f334c06e'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='709' column='1'/>
+      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='709' column='1'/>
+      <parameter type-id='c894953d' name='val' filepath='json_write.c' line='709' column='1'/>
       <return type-id='95e97e5f'/>
     </function-decl>
-    <function-decl name='spdk_json_write_named_int64' mangled-name='spdk_json_write_named_int64' filepath='json_write.c' line='735' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_int64' hash='057e94ea03773b7d'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='735' column='1'/>
-      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='735' column='1'/>
-      <parameter type-id='9da381c4' name='val' filepath='json_write.c' line='735' column='1'/>
+    <function-decl name='spdk_json_write_named_uint8' mangled-name='spdk_json_write_named_uint8' filepath='json_write.c' line='717' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_uint8' hash='23dcf10947408eba'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='717' column='1'/>
+      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='717' column='1'/>
+      <parameter type-id='b96825af' name='val' filepath='json_write.c' line='717' column='1'/>
       <return type-id='95e97e5f'/>
     </function-decl>
-    <function-decl name='spdk_json_write_named_uint64' mangled-name='spdk_json_write_named_uint64' filepath='json_write.c' line='743' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_uint64' hash='e1f9b6b88b6e9119'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='743' column='1'/>
-      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='743' column='1'/>
-      <parameter type-id='9c313c2d' name='val' filepath='json_write.c' line='743' column='1'/>
+    <function-decl name='spdk_json_write_named_uint16' mangled-name='spdk_json_write_named_uint16' filepath='json_write.c' line='725' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_uint16' hash='229e74d64cef3b72'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='725' column='1'/>
+      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='725' column='1'/>
+      <parameter type-id='149c6638' name='val' filepath='json_write.c' line='725' column='1'/>
       <return type-id='95e97e5f'/>
     </function-decl>
-    <function-decl name='spdk_json_write_named_double' mangled-name='spdk_json_write_named_double' filepath='json_write.c' line='751' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_double' hash='8154fd64ef29a0da'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='751' column='1'/>
-      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='751' column='1'/>
-      <parameter type-id='a0eb0f08' name='val' filepath='json_write.c' line='751' column='1'/>
+    <function-decl name='spdk_json_write_named_int32' mangled-name='spdk_json_write_named_int32' filepath='json_write.c' line='733' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_int32' hash='1d81aff51c388187'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='733' column='1'/>
+      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='733' column='1'/>
+      <parameter type-id='3ff5601b' name='val' filepath='json_write.c' line='733' column='1'/>
       <return type-id='95e97e5f'/>
     </function-decl>
-    <function-decl name='spdk_json_write_named_string' mangled-name='spdk_json_write_named_string' filepath='json_write.c' line='759' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_string' hash='5f03b5b551b5a51f'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='759' column='1'/>
-      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='759' column='1'/>
-      <parameter type-id='80f4b756' name='val' filepath='json_write.c' line='759' column='1'/>
+    <function-decl name='spdk_json_write_named_uint32' mangled-name='spdk_json_write_named_uint32' filepath='json_write.c' line='741' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_uint32' hash='7632efc1596daaa3'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='741' column='1'/>
+      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='741' column='1'/>
+      <parameter type-id='8f92235e' name='val' filepath='json_write.c' line='741' column='1'/>
       <return type-id='95e97e5f'/>
     </function-decl>
-    <function-decl name='spdk_json_write_named_string_fmt' mangled-name='spdk_json_write_named_string_fmt' filepath='json_write.c' line='767' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_string_fmt' hash='5f03b5b551b5a51f'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='767' column='1'/>
-      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='767' column='1'/>
-      <parameter type-id='80f4b756' name='fmt' filepath='json_write.c' line='768' column='1'/>
-      <parameter is-variadic='yes'/>
+    <function-decl name='spdk_json_write_named_int64' mangled-name='spdk_json_write_named_int64' filepath='json_write.c' line='749' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_int64' hash='057e94ea03773b7d'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='749' column='1'/>
+      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='749' column='1'/>
+      <parameter type-id='9da381c4' name='val' filepath='json_write.c' line='749' column='1'/>
       <return type-id='95e97e5f'/>
     </function-decl>
-    <function-decl name='spdk_json_write_named_string_fmt_v' mangled-name='spdk_json_write_named_string_fmt_v' filepath='json_write.c' line='781' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_string_fmt_v' hash='16ca353557fca692'>
+    <function-decl name='spdk_json_write_named_uint64' mangled-name='spdk_json_write_named_uint64' filepath='json_write.c' line='757' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_uint64' hash='e1f9b6b88b6e9119'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='757' column='1'/>
+      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='757' column='1'/>
+      <parameter type-id='9c313c2d' name='val' filepath='json_write.c' line='757' column='1'/>
+      <return type-id='95e97e5f'/>
+    </function-decl>
+    <function-decl name='spdk_json_write_named_double' mangled-name='spdk_json_write_named_double' filepath='json_write.c' line='765' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_double' hash='8154fd64ef29a0da'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='765' column='1'/>
+      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='765' column='1'/>
+      <parameter type-id='a0eb0f08' name='val' filepath='json_write.c' line='765' column='1'/>
+      <return type-id='95e97e5f'/>
+    </function-decl>
+    <function-decl name='spdk_json_write_named_string' mangled-name='spdk_json_write_named_string' filepath='json_write.c' line='773' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_string' hash='5f03b5b551b5a51f'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='773' column='1'/>
+      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='773' column='1'/>
+      <parameter type-id='80f4b756' name='val' filepath='json_write.c' line='773' column='1'/>
+      <return type-id='95e97e5f'/>
+    </function-decl>
+    <function-decl name='spdk_json_write_named_string_fmt' mangled-name='spdk_json_write_named_string_fmt' filepath='json_write.c' line='781' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_string_fmt' hash='5f03b5b551b5a51f'>
       <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='781' column='1'/>
       <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='781' column='1'/>
       <parameter type-id='80f4b756' name='fmt' filepath='json_write.c' line='782' column='1'/>
-      <parameter type-id='b7f2d5e6' name='args' filepath='json_write.c' line='782' column='1'/>
+      <parameter is-variadic='yes'/>
       <return type-id='95e97e5f'/>
     </function-decl>
-    <function-decl name='spdk_json_write_named_bytearray' mangled-name='spdk_json_write_named_bytearray' filepath='json_write.c' line='804' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_bytearray' hash='e1f9b6b88b6e9119'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='804' column='1'/>
-      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='804' column='1'/>
-      <parameter type-id='eaa32e2f' name='val' filepath='json_write.c' line='804' column='1'/>
-      <parameter type-id='b59d7dce' name='len' filepath='json_write.c' line='805' column='1'/>
+    <function-decl name='spdk_json_write_named_string_fmt_v' mangled-name='spdk_json_write_named_string_fmt_v' filepath='json_write.c' line='795' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_string_fmt_v' hash='16ca353557fca692'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='795' column='1'/>
+      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='795' column='1'/>
+      <parameter type-id='80f4b756' name='fmt' filepath='json_write.c' line='796' column='1'/>
+      <parameter type-id='b7f2d5e6' name='args' filepath='json_write.c' line='796' column='1'/>
       <return type-id='95e97e5f'/>
     </function-decl>
-    <function-decl name='spdk_json_write_named_array_begin' mangled-name='spdk_json_write_named_array_begin' filepath='json_write.c' line='813' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_array_begin' hash='e9ea91a7eab8302c'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='821' column='1'/>
-      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='821' column='1'/>
+    <function-decl name='spdk_json_write_named_bytearray' mangled-name='spdk_json_write_named_bytearray' filepath='json_write.c' line='818' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_bytearray' hash='e1f9b6b88b6e9119'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='818' column='1'/>
+      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='818' column='1'/>
+      <parameter type-id='eaa32e2f' name='val' filepath='json_write.c' line='818' column='1'/>
+      <parameter type-id='b59d7dce' name='len' filepath='json_write.c' line='819' column='1'/>
       <return type-id='95e97e5f'/>
     </function-decl>
-    <function-decl name='spdk_json_write_named_object_begin' mangled-name='spdk_json_write_named_object_begin' filepath='json_write.c' line='821' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_object_begin' hash='e9ea91a7eab8302c'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='821' column='1'/>
-      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='821' column='1'/>
+    <function-decl name='spdk_json_write_named_array_begin' mangled-name='spdk_json_write_named_array_begin' filepath='json_write.c' line='827' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_array_begin' hash='e9ea91a7eab8302c'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='835' column='1'/>
+      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='835' column='1'/>
       <return type-id='95e97e5f'/>
     </function-decl>
-    <function-decl name='spdk_json_write_named_uuid' mangled-name='spdk_json_write_named_uuid' filepath='json_write.c' line='829' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_uuid' hash='f92c49b809491628'>
-      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='829' column='1'/>
-      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='829' column='1'/>
-      <parameter type-id='c2482856' name='uuid' filepath='json_write.c' line='830' column='1'/>
+    <function-decl name='spdk_json_write_named_object_begin' mangled-name='spdk_json_write_named_object_begin' filepath='json_write.c' line='835' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_object_begin' hash='e9ea91a7eab8302c'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='835' column='1'/>
+      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='835' column='1'/>
+      <return type-id='95e97e5f'/>
+    </function-decl>
+    <function-decl name='spdk_json_write_named_uuid' mangled-name='spdk_json_write_named_uuid' filepath='json_write.c' line='843' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_json_write_named_uuid' hash='f92c49b809491628'>
+      <parameter type-id='b8e14bfe' name='w' filepath='json_write.c' line='843' column='1'/>
+      <parameter type-id='80f4b756' name='name' filepath='json_write.c' line='843' column='1'/>
+      <parameter type-id='c2482856' name='uuid' filepath='json_write.c' line='844' column='1'/>
       <return type-id='95e97e5f'/>
     </function-decl>
     <type-decl name='variadic parameter type' id='2c1145c5'/>

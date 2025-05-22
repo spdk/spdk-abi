@@ -10,7 +10,7 @@
     <dependency name='libspdk_util.so.10.1'/>
     <dependency name='libspdk_nvme.so.15.0'/>
     <dependency name='libspdk_thread.so.11.0'/>
-    <dependency name='libspdk_json.so.6.0'/>
+    <dependency name='libspdk_json.so.6.1'/>
     <dependency name='libspdk_jsonrpc.so.6.0'/>
     <dependency name='libspdk_rpc.so.7.0'/>
     <dependency name='libspdk_trace.so.11.0'/>
@@ -2001,24 +2001,24 @@
         <var-decl name='reserved4' type-id='13339fda' visibility='default' filepath='nvmf_spec.h' line='311' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_nvmf_listen_opts' is-struct='yes' visibility='default' size-in-bits='256' filepath='nvmf.h' line='116' column='1' hash='680cc548161022f1' id='ac930882'>
+    <class-decl name='spdk_nvmf_listen_opts' is-struct='yes' visibility='default' size-in-bits='256' filepath='nvmf.h' line='120' column='1' hash='680cc548161022f1' id='ac930882'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='opts_size' type-id='b59d7dce' visibility='default' filepath='nvmf.h' line='123' column='1'/>
+        <var-decl name='opts_size' type-id='b59d7dce' visibility='default' filepath='nvmf.h' line='127' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='transport_specific' type-id='3ee1fff1' visibility='default' filepath='nvmf.h' line='131' column='1'/>
+        <var-decl name='transport_specific' type-id='3ee1fff1' visibility='default' filepath='nvmf.h' line='135' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='secure_channel' type-id='c894953d' visibility='default' filepath='nvmf.h' line='137' column='1'/>
+        <var-decl name='secure_channel' type-id='c894953d' visibility='default' filepath='nvmf.h' line='141' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='136'>
-        <var-decl name='reserved1' type-id='d3490169' visibility='default' filepath='nvmf.h' line='140' column='1'/>
+        <var-decl name='reserved1' type-id='d3490169' visibility='default' filepath='nvmf.h' line='144' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='160'>
-        <var-decl name='ana_state' type-id='78649e32' visibility='default' filepath='nvmf.h' line='148' column='1'/>
+        <var-decl name='ana_state' type-id='78649e32' visibility='default' filepath='nvmf.h' line='152' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='sock_impl' type-id='26a90f95' visibility='default' filepath='nvmf.h' line='151' column='1'/>
+        <var-decl name='sock_impl' type-id='26a90f95' visibility='default' filepath='nvmf.h' line='155' column='1'/>
       </data-member>
     </class-decl>
     <class-decl name='spdk_nvmf_listener' is-struct='yes' visibility='default' size-in-bits='4736' filepath='nvmf_transport.h' line='233' column='1' hash='1aadb4df97086c48' id='d5c9cd10'>
@@ -2073,24 +2073,24 @@
         <var-decl name='mutex' type-id='7a6844eb' visibility='default' filepath='nvmf_transport.h' line='230' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_nvmf_poll_group_stat' is-struct='yes' visibility='default' size-in-bits='256' filepath='nvmf.h' line='163' column='1' hash='d8276e7ba8527f79' id='cb344050'>
+    <class-decl name='spdk_nvmf_poll_group_stat' is-struct='yes' visibility='default' size-in-bits='256' filepath='nvmf.h' line='167' column='1' hash='d8276e7ba8527f79' id='cb344050'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='admin_qpairs' type-id='8f92235e' visibility='default' filepath='nvmf.h' line='165' column='1'/>
+        <var-decl name='admin_qpairs' type-id='8f92235e' visibility='default' filepath='nvmf.h' line='169' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='32'>
-        <var-decl name='io_qpairs' type-id='8f92235e' visibility='default' filepath='nvmf.h' line='167' column='1'/>
+        <var-decl name='io_qpairs' type-id='8f92235e' visibility='default' filepath='nvmf.h' line='171' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='current_admin_qpairs' type-id='8f92235e' visibility='default' filepath='nvmf.h' line='169' column='1'/>
+        <var-decl name='current_admin_qpairs' type-id='8f92235e' visibility='default' filepath='nvmf.h' line='173' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='96'>
-        <var-decl name='current_io_qpairs' type-id='8f92235e' visibility='default' filepath='nvmf.h' line='171' column='1'/>
+        <var-decl name='current_io_qpairs' type-id='8f92235e' visibility='default' filepath='nvmf.h' line='175' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='pending_bdev_io' type-id='9c313c2d' visibility='default' filepath='nvmf.h' line='172' column='1'/>
+        <var-decl name='pending_bdev_io' type-id='9c313c2d' visibility='default' filepath='nvmf.h' line='176' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='completed_nvme_io' type-id='9c313c2d' visibility='default' filepath='nvmf.h' line='174' column='1'/>
+        <var-decl name='completed_nvme_io' type-id='9c313c2d' visibility='default' filepath='nvmf.h' line='178' column='1'/>
       </data-member>
     </class-decl>
     <class-decl name='spdk_nvmf_qpair' is-struct='yes' visibility='default' size-in-bits='896' filepath='nvmf_transport.h' line='147' column='1' hash='ea0dd80826e16990' id='407d526b'>
@@ -2280,7 +2280,7 @@
         <var-decl name='iov' type-id='8caeb6eb' visibility='default' filepath='nvmf_transport.h' line='70' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_nvmf_transport' is-struct='yes' visibility='default' size-in-bits='1600' filepath='nvmf_transport.h' line='265' column='1' hash='29be71ea184b90b4' id='d59a222d'>
+    <class-decl name='spdk_nvmf_transport' is-struct='yes' visibility='default' size-in-bits='1664' filepath='nvmf_transport.h' line='265' column='1' hash='ed6ae6eb3fc68a11' id='d59a222d'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='tgt' type-id='690b38cf' visibility='default' filepath='nvmf_transport.h' line='266' column='1'/>
       </data-member>
@@ -2290,16 +2290,16 @@
       <data-member access='public' layout-offset-in-bits='128'>
         <var-decl name='opts' type-id='72315d04' visibility='default' filepath='nvmf_transport.h' line='268' column='1'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='704'>
+      <data-member access='public' layout-offset-in-bits='752'>
         <var-decl name='iobuf_name' type-id='36c46961' visibility='default' filepath='nvmf_transport.h' line='270' column='1'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='1024'>
+      <data-member access='public' layout-offset-in-bits='1088'>
         <var-decl name='listeners' type-id='e7f43f99' visibility='default' filepath='nvmf_transport.h' line='272' column='1'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='1152'>
+      <data-member access='public' layout-offset-in-bits='1216'>
         <var-decl name='link' type-id='e7f43f9a' visibility='default' filepath='nvmf_transport.h' line='273' column='1'/>
       </data-member>
-      <data-member access='public' layout-offset-in-bits='1280'>
+      <data-member access='public' layout-offset-in-bits='1344'>
         <var-decl name='mutex' type-id='7a6844eb' visibility='default' filepath='nvmf_transport.h' line='275' column='1'/>
       </data-member>
     </class-decl>
@@ -2404,7 +2404,7 @@
         <var-decl name='subsystem_dump_host' type-id='17667570' visibility='default' filepath='nvmf_transport.h' line='493' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_nvmf_transport_opts' is-struct='yes' visibility='default' size-in-bits='576' filepath='nvmf.h' line='68' column='1' hash='25f0f37fee35f92b' id='72315d04'>
+    <class-decl name='spdk_nvmf_transport_opts' is-struct='yes' visibility='default' size-in-bits='624' filepath='nvmf.h' line='68' column='1' hash='61d6fbc48f51932b' id='72315d04'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='max_queue_depth' type-id='149c6638' visibility='default' filepath='nvmf.h' line='69' column='1'/>
       </data-member>
@@ -2464,6 +2464,12 @@
       </data-member>
       <data-member access='public' layout-offset-in-bits='544'>
         <var-decl name='data_wr_pool_size' type-id='8f92235e' visibility='default' filepath='nvmf.h' line='112' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='min_kato' type-id='8f92235e' visibility='default' filepath='nvmf.h' line='114' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='608'>
+        <var-decl name='kas' type-id='149c6638' visibility='default' filepath='nvmf.h' line='116' column='1'/>
       </data-member>
     </class-decl>
     <class-decl name='spdk_nvmf_transport_poll_group' is-struct='yes' visibility='default' size-in-bits='512' filepath='nvmf_transport.h' line='192' column='1' hash='ae52307fba93e38f' id='824683eb'>
@@ -3908,10 +3914,10 @@
     <typedef-decl name='spdk_iobuf_get_cb' type-id='86c1c05e' size-in-bits='64' filepath='thread.h' line='1110' column='1' hash='fd7a63c0c6c822c4' id='8b006695'/>
     <typedef-decl name='spdk_nvmf_custom_cmd_hdlr' type-id='49c57a50' size-in-bits='64' filepath='nvmf_cmd.h' line='110' column='1' hash='fd7a63c0c6c822c4' id='04b256a8'/>
     <typedef-decl name='spdk_nvmf_nvme_passthru_cmd_cb' type-id='9adf71f5' size-in-bits='64' filepath='nvmf_cmd.h' line='139' column='1' hash='fd7a63c0c6c822c4' id='e4580111'/>
-    <typedef-decl name='spdk_nvmf_poll_group_destroy_done_fn' type-id='82328a76' size-in-bits='64' filepath='nvmf.h' line='338' column='1' hash='fd7a63c0c6c822c4' id='c58e4e5b'/>
+    <typedef-decl name='spdk_nvmf_poll_group_destroy_done_fn' type-id='82328a76' size-in-bits='64' filepath='nvmf.h' line='342' column='1' hash='fd7a63c0c6c822c4' id='c58e4e5b'/>
     <typedef-decl name='spdk_nvmf_state_change_done' type-id='82328a76' size-in-bits='64' filepath='nvmf_transport.h' line='143' column='1' hash='fd7a63c0c6c822c4' id='bafe66ec'/>
-    <typedef-decl name='spdk_nvmf_transport_create_done_cb' type-id='c9474215' size-in-bits='64' filepath='nvmf.h' line='1302' column='1' hash='fd7a63c0c6c822c4' id='f5dcf84c'/>
-    <typedef-decl name='spdk_nvmf_transport_destroy_done_cb' type-id='61359e15' size-in-bits='64' filepath='nvmf.h' line='1323' column='1' hash='fd7a63c0c6c822c4' id='4d534154'/>
+    <typedef-decl name='spdk_nvmf_transport_create_done_cb' type-id='c9474215' size-in-bits='64' filepath='nvmf.h' line='1306' column='1' hash='fd7a63c0c6c822c4' id='f5dcf84c'/>
+    <typedef-decl name='spdk_nvmf_transport_destroy_done_cb' type-id='61359e15' size-in-bits='64' filepath='nvmf.h' line='1327' column='1' hash='fd7a63c0c6c822c4' id='4d534154'/>
     <typedef-decl name='spdk_nvmf_transport_qpair_fini_cb' type-id='61359e15' size-in-bits='64' filepath='nvmf_transport.h' line='278' column='1' hash='fd7a63c0c6c822c4' id='f3756df1'/>
     <typedef-decl name='uint16_t' type-id='253c2d2a' size-in-bits='16' filepath='stdint-uintn.h' line='25' column='1' hash='d7723bb93a30b11d' id='149c6638'/>
     <typedef-decl name='uint32_t' type-id='62f1140c' size-in-bits='32' filepath='stdint-uintn.h' line='26' column='1' hash='e66b43f97c38e87a' id='8f92235e'/>
@@ -4836,11 +4842,11 @@
       <parameter type-id='5f953c61' name='req' filepath='ctrlr.c' line='5168' column='1'/>
       <return type-id='5f953c61'/>
     </function-decl>
-    <class-decl name='spdk_nvmf_tgt' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='nvmf_internal.h' line='51' column='1' id='d37dc7a7'/>
-    <class-decl name='spdk_nvmf_subsystem_poll_group' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='nvmf_internal.h' line='137' column='1' id='e1824565'/>
-    <class-decl name='spdk_nvmf_ns' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='nvmf_internal.h' line='158' column='1' id='9ebe04f3'/>
-    <class-decl name='spdk_nvmf_ctrlr' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='nvmf_internal.h' line='214' column='1' id='dde78329'/>
-    <class-decl name='spdk_nvmf_subsystem' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='nvmf_internal.h' line='284' column='1' id='16ee3ce3'/>
+    <class-decl name='spdk_nvmf_tgt' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='nvmf_internal.h' line='56' column='1' id='d37dc7a7'/>
+    <class-decl name='spdk_nvmf_subsystem_poll_group' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='nvmf_internal.h' line='142' column='1' id='e1824565'/>
+    <class-decl name='spdk_nvmf_ns' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='nvmf_internal.h' line='163' column='1' id='9ebe04f3'/>
+    <class-decl name='spdk_nvmf_ctrlr' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='nvmf_internal.h' line='219' column='1' id='dde78329'/>
+    <class-decl name='spdk_nvmf_subsystem' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='nvmf_internal.h' line='289' column='1' id='16ee3ce3'/>
     <type-decl name='void' id='48b5725f'/>
     <pointer-type-def type-id='48b5725f' id='eaa32e2f'/>
     <function-type size-in-bits='64' hash='0cc5c06e996d3c8b' id='4489eba4'>
@@ -5042,15 +5048,15 @@
     <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='2048' hash='b1acd4e4c2ca8eab' id='d1617432'>
       <subrange length='256' lower-bound='0' upper-bound='255' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='5cb16198282e86c6' id='36e5b9fa'/>
     </array-type-def>
-    <class-decl name='spdk_nvmf_referral_opts' is-struct='yes' visibility='default' size-in-bits='4608' filepath='nvmf.h' line='187' column='1' hash='719c8f6a6db957e9' id='355ea368'>
+    <class-decl name='spdk_nvmf_referral_opts' is-struct='yes' visibility='default' size-in-bits='4608' filepath='nvmf.h' line='191' column='1' hash='719c8f6a6db957e9' id='355ea368'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='size' type-id='b59d7dce' visibility='default' filepath='nvmf.h' line='189' column='1'/>
+        <var-decl name='size' type-id='b59d7dce' visibility='default' filepath='nvmf.h' line='193' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='trid' type-id='8712472c' visibility='default' filepath='nvmf.h' line='191' column='1'/>
+        <var-decl name='trid' type-id='8712472c' visibility='default' filepath='nvmf.h' line='195' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='4576'>
-        <var-decl name='secure_channel' type-id='c894953d' visibility='default' filepath='nvmf.h' line='193' column='1'/>
+        <var-decl name='secure_channel' type-id='c894953d' visibility='default' filepath='nvmf.h' line='197' column='1'/>
       </data-member>
     </class-decl>
     <class-decl name='spdk_nvmf_target_opts' is-struct='yes' visibility='default' size-in-bits='2304' filepath='nvmf.h' line='58' column='1' hash='f58096369998f5f3' id='73987b48'>
@@ -5076,10 +5082,10 @@
         <var-decl name='dhchap_dhgroups' type-id='8f92235e' visibility='default' filepath='nvmf.h' line='65' column='1'/>
       </data-member>
     </class-decl>
-    <typedef-decl name='spdk_nvmf_tgt_add_transport_done_fn' type-id='82328a76' size-in-bits='64' filepath='nvmf.h' line='1400' column='1' hash='fd7a63c0c6c822c4' id='96982900'/>
-    <typedef-decl name='spdk_nvmf_tgt_destroy_done_fn' type-id='2922fb19' size-in-bits='64' filepath='nvmf.h' line='228' column='1' id='50edf907'/>
-    <typedef-decl name='spdk_nvmf_tgt_pause_polling_cb_fn' type-id='82328a76' size-in-bits='64' filepath='nvmf.h' line='1421' column='1' hash='fd7a63c0c6c822c4' id='73fe11ac'/>
-    <typedef-decl name='spdk_nvmf_tgt_resume_polling_cb_fn' type-id='82328a76' size-in-bits='64' filepath='nvmf.h' line='1441' column='1' hash='fd7a63c0c6c822c4' id='fc31803b'/>
+    <typedef-decl name='spdk_nvmf_tgt_add_transport_done_fn' type-id='82328a76' size-in-bits='64' filepath='nvmf.h' line='1404' column='1' hash='fd7a63c0c6c822c4' id='96982900'/>
+    <typedef-decl name='spdk_nvmf_tgt_destroy_done_fn' type-id='2922fb19' size-in-bits='64' filepath='nvmf.h' line='232' column='1' id='50edf907'/>
+    <typedef-decl name='spdk_nvmf_tgt_pause_polling_cb_fn' type-id='82328a76' size-in-bits='64' filepath='nvmf.h' line='1425' column='1' hash='fd7a63c0c6c822c4' id='73fe11ac'/>
+    <typedef-decl name='spdk_nvmf_tgt_resume_polling_cb_fn' type-id='82328a76' size-in-bits='64' filepath='nvmf.h' line='1445' column='1' hash='fd7a63c0c6c822c4' id='fc31803b'/>
     <qualified-type-def type-id='355ea368' const='yes' hash='b4c670268fca1b68' id='242b92a7'/>
     <pointer-type-def type-id='242b92a7' size-in-bits='64' hash='d6cde2831cfe3d09' id='7d97b3f7'/>
     <pointer-type-def type-id='73987b48' size-in-bits='64' hash='3338a7d1037803b3' id='cb0b0f5e'/>
@@ -6122,8 +6128,8 @@
     <pointer-type-def type-id='eb9f9168' size-in-bits='64' id='e2b914ce'/>
     <class-decl name='_compat_ibv_port_attr' is-struct='yes' visibility='default' is-declaration-only='yes' id='eb9f9168'/>
     <var-decl name='g_trace_file' type-id='ddda0722' visibility='default' filepath='trace.h' line='149' column='1' elf-symbol-id='g_trace_file'/>
-    <function-decl name='spdk_nvmf_rdma_init_hooks' mangled-name='spdk_nvmf_rdma_init_hooks' filepath='rdma.c' line='5016' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_rdma_init_hooks' hash='35fc4d71f626f1e5'>
-      <parameter type-id='bbb9af9a' name='hooks' filepath='rdma.c' line='5016' column='1'/>
+    <function-decl name='spdk_nvmf_rdma_init_hooks' mangled-name='spdk_nvmf_rdma_init_hooks' filepath='rdma.c' line='5019' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_rdma_init_hooks' hash='35fc4d71f626f1e5'>
+      <parameter type-id='bbb9af9a' name='hooks' filepath='rdma.c' line='5019' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
     <function-type size-in-bits='64' hash='e2de7284790ffb56' id='a45c24ce'>
@@ -6317,126 +6323,126 @@
         <var-decl name='_unused2' type-id='664ac0b7' visibility='default' filepath='struct_FILE.h' line='98' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_nvmf_host_opts' is-struct='yes' visibility='default' size-in-bits='256' filepath='nvmf.h' line='620' column='1' hash='be7a57e3f8035087' id='2ff4743d'>
+    <class-decl name='spdk_nvmf_host_opts' is-struct='yes' visibility='default' size-in-bits='256' filepath='nvmf.h' line='624' column='1' hash='be7a57e3f8035087' id='2ff4743d'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='size' type-id='b59d7dce' visibility='default' filepath='nvmf.h' line='622' column='1'/>
+        <var-decl name='size' type-id='b59d7dce' visibility='default' filepath='nvmf.h' line='626' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='params' type-id='3ee1fff1' visibility='default' filepath='nvmf.h' line='624' column='1'/>
+        <var-decl name='params' type-id='3ee1fff1' visibility='default' filepath='nvmf.h' line='628' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='dhchap_key' type-id='f004afe7' visibility='default' filepath='nvmf.h' line='626' column='1'/>
+        <var-decl name='dhchap_key' type-id='f004afe7' visibility='default' filepath='nvmf.h' line='630' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='dhchap_ctrlr_key' type-id='f004afe7' visibility='default' filepath='nvmf.h' line='628' column='1'/>
+        <var-decl name='dhchap_ctrlr_key' type-id='f004afe7' visibility='default' filepath='nvmf.h' line='632' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_nvmf_listener_opts' is-struct='yes' visibility='default' size-in-bits='192' filepath='nvmf.h' line='773' column='1' hash='489ef2238ba86f02' id='d75f90d3'>
+    <class-decl name='spdk_nvmf_listener_opts' is-struct='yes' visibility='default' size-in-bits='192' filepath='nvmf.h' line='777' column='1' hash='489ef2238ba86f02' id='d75f90d3'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='opts_size' type-id='b59d7dce' visibility='default' filepath='nvmf.h' line='780' column='1'/>
+        <var-decl name='opts_size' type-id='b59d7dce' visibility='default' filepath='nvmf.h' line='784' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='secure_channel' type-id='c894953d' visibility='default' filepath='nvmf.h' line='783' column='1'/>
+        <var-decl name='secure_channel' type-id='c894953d' visibility='default' filepath='nvmf.h' line='787' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='72'>
-        <var-decl name='reserved1' type-id='d3490169' visibility='default' filepath='nvmf.h' line='786' column='1'/>
+        <var-decl name='reserved1' type-id='d3490169' visibility='default' filepath='nvmf.h' line='790' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='96'>
-        <var-decl name='ana_state' type-id='78649e32' visibility='default' filepath='nvmf.h' line='789' column='1'/>
+        <var-decl name='ana_state' type-id='78649e32' visibility='default' filepath='nvmf.h' line='793' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='sock_impl' type-id='26a90f95' visibility='default' filepath='nvmf.h' line='792' column='1'/>
+        <var-decl name='sock_impl' type-id='26a90f95' visibility='default' filepath='nvmf.h' line='796' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_nvmf_ns_opts' is-struct='yes' visibility='default' size-in-bits='584' filepath='nvmf.h' line='998' column='1' hash='da1993c06a77e06f' id='f4e8c8a2'>
+    <class-decl name='spdk_nvmf_ns_opts' is-struct='yes' visibility='default' size-in-bits='584' filepath='nvmf.h' line='1002' column='1' hash='da1993c06a77e06f' id='f4e8c8a2'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='nsid' type-id='8f92235e' visibility='default' filepath='nvmf.h' line='1004' column='1'/>
+        <var-decl name='nsid' type-id='8f92235e' visibility='default' filepath='nvmf.h' line='1008' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='32'>
-        <var-decl name='nguid' type-id='fa9986a5' visibility='default' filepath='nvmf.h' line='1011' column='1'/>
+        <var-decl name='nguid' type-id='fa9986a5' visibility='default' filepath='nvmf.h' line='1015' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='160'>
-        <var-decl name='eui64' type-id='13339fda' visibility='default' filepath='nvmf.h' line='1018' column='1'/>
+        <var-decl name='eui64' type-id='13339fda' visibility='default' filepath='nvmf.h' line='1022' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='224'>
-        <var-decl name='uuid' type-id='429c70d3' visibility='default' filepath='nvmf.h' line='1025' column='1'/>
+        <var-decl name='uuid' type-id='429c70d3' visibility='default' filepath='nvmf.h' line='1029' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='352'>
-        <var-decl name='reserved44' type-id='d351502e' visibility='default' filepath='nvmf.h' line='1028' column='1'/>
+        <var-decl name='reserved44' type-id='d351502e' visibility='default' filepath='nvmf.h' line='1032' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='384'>
-        <var-decl name='opts_size' type-id='b59d7dce' visibility='default' filepath='nvmf.h' line='1036' column='1'/>
+        <var-decl name='opts_size' type-id='b59d7dce' visibility='default' filepath='nvmf.h' line='1040' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='448'>
-        <var-decl name='anagrpid' type-id='8f92235e' visibility='default' filepath='nvmf.h' line='1043' column='1'/>
+        <var-decl name='anagrpid' type-id='8f92235e' visibility='default' filepath='nvmf.h' line='1047' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='480'>
-        <var-decl name='no_auto_visible' type-id='c894953d' visibility='default' filepath='nvmf.h' line='1050' column='1'/>
+        <var-decl name='no_auto_visible' type-id='c894953d' visibility='default' filepath='nvmf.h' line='1054' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='488'>
-        <var-decl name='reserved61' type-id='d3490169' visibility='default' filepath='nvmf.h' line='1053' column='1'/>
+        <var-decl name='reserved61' type-id='d3490169' visibility='default' filepath='nvmf.h' line='1057' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='512'>
-        <var-decl name='transport_specific' type-id='3ee1fff1' visibility='default' filepath='nvmf.h' line='1062' column='1'/>
+        <var-decl name='transport_specific' type-id='3ee1fff1' visibility='default' filepath='nvmf.h' line='1066' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='576'>
-        <var-decl name='hide_metadata' type-id='c894953d' visibility='default' filepath='nvmf.h' line='1067' column='1'/>
+        <var-decl name='hide_metadata' type-id='c894953d' visibility='default' filepath='nvmf.h' line='1071' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_nvmf_ns_reservation_ops' is-struct='yes' visibility='default' size-in-bits='192' filepath='nvmf.h' line='1550' column='1' hash='ea55747c58656ba7' id='e85b1771'>
+    <class-decl name='spdk_nvmf_ns_reservation_ops' is-struct='yes' visibility='default' size-in-bits='192' filepath='nvmf.h' line='1554' column='1' hash='ea55747c58656ba7' id='e85b1771'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='is_ptpl_capable' type-id='2b10d6ee' visibility='default' filepath='nvmf.h' line='1552' column='1'/>
+        <var-decl name='is_ptpl_capable' type-id='2b10d6ee' visibility='default' filepath='nvmf.h' line='1556' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='update' type-id='08baf1ea' visibility='default' filepath='nvmf.h' line='1557' column='1'/>
+        <var-decl name='update' type-id='08baf1ea' visibility='default' filepath='nvmf.h' line='1561' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='load' type-id='d97ecb5f' visibility='default' filepath='nvmf.h' line='1562' column='1'/>
+        <var-decl name='load' type-id='d97ecb5f' visibility='default' filepath='nvmf.h' line='1566' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_nvmf_registrant_info' is-struct='yes' visibility='default' size-in-bits='384' filepath='nvmf.h' line='1534' column='1' hash='da32860ae7e3ec65' id='13a92c56'>
+    <class-decl name='spdk_nvmf_registrant_info' is-struct='yes' visibility='default' size-in-bits='384' filepath='nvmf.h' line='1538' column='1' hash='da32860ae7e3ec65' id='13a92c56'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='rkey' type-id='9c313c2d' visibility='default' filepath='nvmf.h' line='1535' column='1'/>
+        <var-decl name='rkey' type-id='9c313c2d' visibility='default' filepath='nvmf.h' line='1539' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='host_uuid' type-id='12e4ade3' visibility='default' filepath='nvmf.h' line='1536' column='1'/>
+        <var-decl name='host_uuid' type-id='12e4ade3' visibility='default' filepath='nvmf.h' line='1540' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_nvmf_reservation_info' is-struct='yes' visibility='default' size-in-bits='6848' filepath='nvmf.h' line='1539' column='1' hash='93c379426bee4d4c' id='c2c219b7'>
+    <class-decl name='spdk_nvmf_reservation_info' is-struct='yes' visibility='default' size-in-bits='6848' filepath='nvmf.h' line='1543' column='1' hash='93c379426bee4d4c' id='c2c219b7'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='crkey' type-id='9c313c2d' visibility='default' filepath='nvmf.h' line='1540' column='1'/>
+        <var-decl name='crkey' type-id='9c313c2d' visibility='default' filepath='nvmf.h' line='1544' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='rtype' type-id='b96825af' visibility='default' filepath='nvmf.h' line='1541' column='1'/>
+        <var-decl name='rtype' type-id='b96825af' visibility='default' filepath='nvmf.h' line='1545' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='72'>
-        <var-decl name='ptpl_activated' type-id='b96825af' visibility='default' filepath='nvmf.h' line='1542' column='1'/>
+        <var-decl name='ptpl_activated' type-id='b96825af' visibility='default' filepath='nvmf.h' line='1546' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='80'>
-        <var-decl name='bdev_uuid' type-id='12e4ade3' visibility='default' filepath='nvmf.h' line='1543' column='1'/>
+        <var-decl name='bdev_uuid' type-id='12e4ade3' visibility='default' filepath='nvmf.h' line='1547' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='376'>
-        <var-decl name='holder_uuid' type-id='12e4ade3' visibility='default' filepath='nvmf.h' line='1544' column='1'/>
+        <var-decl name='holder_uuid' type-id='12e4ade3' visibility='default' filepath='nvmf.h' line='1548' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='672'>
-        <var-decl name='reserved' type-id='d3490169' visibility='default' filepath='nvmf.h' line='1545' column='1'/>
+        <var-decl name='reserved' type-id='d3490169' visibility='default' filepath='nvmf.h' line='1549' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='696'>
-        <var-decl name='num_regs' type-id='b96825af' visibility='default' filepath='nvmf.h' line='1546' column='1'/>
+        <var-decl name='num_regs' type-id='b96825af' visibility='default' filepath='nvmf.h' line='1550' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='704'>
-        <var-decl name='registrants' type-id='9f28377b' visibility='default' filepath='nvmf.h' line='1547' column='1'/>
+        <var-decl name='registrants' type-id='9f28377b' visibility='default' filepath='nvmf.h' line='1551' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_nvmf_subsystem_key_opts' is-struct='yes' visibility='default' size-in-bits='192' filepath='nvmf.h' line='657' column='1' hash='42d480ba82288b3d' id='68357182'>
+    <class-decl name='spdk_nvmf_subsystem_key_opts' is-struct='yes' visibility='default' size-in-bits='192' filepath='nvmf.h' line='661' column='1' hash='42d480ba82288b3d' id='68357182'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='size' type-id='b59d7dce' visibility='default' filepath='nvmf.h' line='659' column='1'/>
+        <var-decl name='size' type-id='b59d7dce' visibility='default' filepath='nvmf.h' line='663' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='dhchap_key' type-id='f004afe7' visibility='default' filepath='nvmf.h' line='661' column='1'/>
+        <var-decl name='dhchap_key' type-id='f004afe7' visibility='default' filepath='nvmf.h' line='665' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='dhchap_ctrlr_key' type-id='f004afe7' visibility='default' filepath='nvmf.h' line='663' column='1'/>
+        <var-decl name='dhchap_ctrlr_key' type-id='f004afe7' visibility='default' filepath='nvmf.h' line='667' column='1'/>
       </data-member>
     </class-decl>
     <class-decl name='spdk_uuid' is-struct='yes' visibility='default' size-in-bits='128' filepath='uuid.h' line='21' column='1' hash='ad18e2956698a415' id='429c70d3'>
@@ -6448,10 +6454,10 @@
     <typedef-decl name='_IO_lock_t' type-id='48b5725f' filepath='struct_FILE.h' line='43' column='1' id='bb4788fa'/>
     <typedef-decl name='__off64_t' type-id='95e97e5f' size-in-bits='64' filepath='types.h' line='153' column='1' hash='b119fe0931d2ee10' id='724e4de6'/>
     <typedef-decl name='__off_t' type-id='95e97e5f' size-in-bits='64' filepath='types.h' line='152' column='1' hash='b119fe0931d2ee10' id='79989e9c'/>
-    <typedef-decl name='nvmf_subsystem_destroy_cb' type-id='61359e15' size-in-bits='64' filepath='nvmf.h' line='447' column='1' hash='fd7a63c0c6c822c4' id='9f45345a'/>
-    <typedef-decl name='spdk_nvmf_subsystem_state_change_done' type-id='6e5bcb48' size-in-bits='64' filepath='nvmf.h' line='476' column='1' hash='fd7a63c0c6c822c4' id='52e42410'/>
+    <typedef-decl name='nvmf_subsystem_destroy_cb' type-id='61359e15' size-in-bits='64' filepath='nvmf.h' line='451' column='1' hash='fd7a63c0c6c822c4' id='9f45345a'/>
+    <typedef-decl name='spdk_nvmf_subsystem_state_change_done' type-id='6e5bcb48' size-in-bits='64' filepath='nvmf.h' line='480' column='1' hash='fd7a63c0c6c822c4' id='52e42410'/>
     <typedef-decl name='spdk_nvmf_subtype_t' type-id='6b55363d' size-in-bits='32' alignment-in-bits='32' filepath='subsystem.c' line='2486' column='1' hash='6f32703f2e1ecf4a' id='47c4102a'/>
-    <typedef-decl name='spdk_nvmf_tgt_subsystem_listen_done_fn' type-id='82328a76' size-in-bits='64' filepath='nvmf.h' line='185' column='1' hash='fd7a63c0c6c822c4' id='896f998c'/>
+    <typedef-decl name='spdk_nvmf_tgt_subsystem_listen_done_fn' type-id='82328a76' size-in-bits='64' filepath='nvmf.h' line='189' column='1' hash='fd7a63c0c6c822c4' id='896f998c'/>
     <union-decl name='__anonymous_union__' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='uuid.h' line='22' column='1' hash='83563518080289b9#22' id='ac5ab5aa'>
       <data-member access='public'>
         <var-decl name='raw' type-id='fa9986a5' visibility='default' filepath='uuid.h' line='23' column='1'/>
@@ -6497,8 +6503,8 @@
     <class-decl name='_IO_wide_data' is-struct='yes' visibility='default' is-declaration-only='yes' id='79bd3751'/>
     <class-decl name='spdk_bdev' is-struct='yes' visibility='default' is-declaration-only='yes' id='f6507fdf'/>
     <class-decl name='spdk_key' is-struct='yes' visibility='default' is-declaration-only='yes' id='1bef703f'/>
-    <class-decl name='spdk_nvmf_host' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='nvmf_internal.h' line='88' column='1' id='431afefa'/>
-    <class-decl name='spdk_nvmf_subsystem_listener' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='nvmf_internal.h' line='95' column='1' id='44c819c4'/>
+    <class-decl name='spdk_nvmf_host' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='nvmf_internal.h' line='93' column='1' id='431afefa'/>
+    <class-decl name='spdk_nvmf_subsystem_listener' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='nvmf_internal.h' line='100' column='1' id='44c819c4'/>
     <function-decl name='spdk_nvmf_subsystem_create' mangled-name='spdk_nvmf_subsystem_create' filepath='subsystem.c' line='219' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_subsystem_create' hash='268ac1a50e367ac5'>
       <parameter type-id='690b38d2' name='tgt' filepath='subsystem.c' line='219' column='1'/>
       <parameter type-id='80f4b756' name='nqn' filepath='subsystem.c' line='220' column='1'/>
@@ -6963,15 +6969,15 @@
   </abi-instr>
   <abi-instr address-size='64' path='transport.c' language='LANG_C11'>
     <typedef-decl name='spdk_nvme_transport_type_t' type-id='8cd337c8' size-in-bits='32' alignment-in-bits='32' filepath='nvme.h' line='481' column='1' hash='a773cdff5c729a70' id='05a5443f'/>
-    <qualified-type-def type-id='72315d04' const='yes' hash='b826503a726ee57d' id='7c6611c1'/>
-    <pointer-type-def type-id='7c6611c1' size-in-bits='64' hash='6e86f248e7586835' id='bfae34f1'/>
+    <qualified-type-def type-id='72315d04' const='yes' hash='e527709fe3a30da7' id='7c6611c1'/>
+    <pointer-type-def type-id='7c6611c1' size-in-bits='64' hash='ad777eecf82f3017' id='bfae34f1'/>
     <pointer-type-def type-id='16ee3ce3' size-in-bits='64' id='777df246'/>
     <pointer-type-def type-id='d37dc7a7' size-in-bits='64' id='690b38d3'/>
     <function-decl name='spdk_nvmf_transport_register' mangled-name='spdk_nvmf_transport_register' filepath='transport.c' line='43' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_transport_register' hash='338663b0a03dd5dd'>
       <parameter type-id='2d76de85' name='ops' filepath='transport.c' line='43' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_get_transport_opts' mangled-name='spdk_nvmf_get_transport_opts' filepath='transport.c' line='66' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_get_transport_opts' hash='eb48fb7cb7b203a4'>
+    <function-decl name='spdk_nvmf_get_transport_opts' mangled-name='spdk_nvmf_get_transport_opts' filepath='transport.c' line='66' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_get_transport_opts' hash='721454d852ebe140'>
       <parameter type-id='8003131d' name='transport' filepath='transport.c' line='66' column='1'/>
       <return type-id='bfae34f1'/>
     </function-decl>
@@ -6983,68 +6989,68 @@
       <parameter type-id='8003131d' name='transport' filepath='transport.c' line='120' column='1'/>
       <return type-id='80f4b756'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_transport_create_async' mangled-name='spdk_nvmf_transport_create_async' filepath='transport.c' line='325' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_transport_create_async' hash='8d4783357558b234'>
-      <parameter type-id='80f4b756' name='transport_name' filepath='transport.c' line='325' column='1'/>
-      <parameter type-id='a30dfc92' name='opts' filepath='transport.c' line='325' column='1'/>
-      <parameter type-id='f5dcf84c' name='cb_fn' filepath='transport.c' line='326' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='transport.c' line='326' column='1'/>
+    <function-decl name='spdk_nvmf_transport_create_async' mangled-name='spdk_nvmf_transport_create_async' filepath='transport.c' line='341' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_transport_create_async' hash='8d4783357558b234'>
+      <parameter type-id='80f4b756' name='transport_name' filepath='transport.c' line='341' column='1'/>
+      <parameter type-id='a30dfc92' name='opts' filepath='transport.c' line='341' column='1'/>
+      <parameter type-id='f5dcf84c' name='cb_fn' filepath='transport.c' line='342' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='transport.c' line='342' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_transport_create' mangled-name='spdk_nvmf_transport_create' filepath='transport.c' line='340' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_transport_create' hash='2562d14836d4192c'>
-      <parameter type-id='80f4b756' name='transport_name' filepath='transport.c' line='340' column='1'/>
-      <parameter type-id='a30dfc92' name='opts' filepath='transport.c' line='340' column='1'/>
+    <function-decl name='spdk_nvmf_transport_create' mangled-name='spdk_nvmf_transport_create' filepath='transport.c' line='356' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_transport_create' hash='2562d14836d4192c'>
+      <parameter type-id='80f4b756' name='transport_name' filepath='transport.c' line='356' column='1'/>
+      <parameter type-id='a30dfc92' name='opts' filepath='transport.c' line='356' column='1'/>
       <return type-id='8003131d'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_transport_get_first' mangled-name='spdk_nvmf_transport_get_first' filepath='transport.c' line='352' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_transport_get_first' hash='11aa637e471f736d'>
-      <parameter type-id='690b38d3' name='tgt' filepath='transport.c' line='352' column='1'/>
+    <function-decl name='spdk_nvmf_transport_get_first' mangled-name='spdk_nvmf_transport_get_first' filepath='transport.c' line='368' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_transport_get_first' hash='11aa637e471f736d'>
+      <parameter type-id='690b38d3' name='tgt' filepath='transport.c' line='368' column='1'/>
       <return type-id='8003131d'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_transport_get_next' mangled-name='spdk_nvmf_transport_get_next' filepath='transport.c' line='358' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_transport_get_next' hash='440a840f992290af'>
-      <parameter type-id='8003131d' name='transport' filepath='transport.c' line='358' column='1'/>
+    <function-decl name='spdk_nvmf_transport_get_next' mangled-name='spdk_nvmf_transport_get_next' filepath='transport.c' line='374' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_transport_get_next' hash='440a840f992290af'>
+      <parameter type-id='8003131d' name='transport' filepath='transport.c' line='374' column='1'/>
       <return type-id='8003131d'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_transport_destroy' mangled-name='spdk_nvmf_transport_destroy' filepath='transport.c' line='364' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_transport_destroy' hash='86e4a0326b5a80d3'>
+    <function-decl name='spdk_nvmf_transport_destroy' mangled-name='spdk_nvmf_transport_destroy' filepath='transport.c' line='380' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_transport_destroy' hash='86e4a0326b5a80d3'>
       <parameter type-id='8003131d'/>
       <parameter type-id='4d534154'/>
       <parameter type-id='eaa32e2f'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_transport_listen' mangled-name='spdk_nvmf_transport_listen' filepath='transport.c' line='399' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_transport_listen' hash='9f5fe0047cb852b0'>
+    <function-decl name='spdk_nvmf_transport_listen' mangled-name='spdk_nvmf_transport_listen' filepath='transport.c' line='415' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_transport_listen' hash='9f5fe0047cb852b0'>
       <parameter type-id='8003131d'/>
       <parameter type-id='7e9611b1'/>
       <parameter type-id='320252e0'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_transport_stop_listen' mangled-name='spdk_nvmf_transport_stop_listen' filepath='transport.c' line='438' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_transport_stop_listen' hash='4b551da78d6cf9ac'>
-      <parameter type-id='8003131d' name='transport' filepath='transport.c' line='438' column='1'/>
-      <parameter type-id='7e9611b1' name='trid' filepath='transport.c' line='439' column='1'/>
+    <function-decl name='spdk_nvmf_transport_stop_listen' mangled-name='spdk_nvmf_transport_stop_listen' filepath='transport.c' line='454' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_transport_stop_listen' hash='4b551da78d6cf9ac'>
+      <parameter type-id='8003131d' name='transport' filepath='transport.c' line='454' column='1'/>
+      <parameter type-id='7e9611b1' name='trid' filepath='transport.c' line='455' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_transport_stop_listen_async' mangled-name='spdk_nvmf_transport_stop_listen_async' filepath='transport.c' line='536' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_transport_stop_listen_async' hash='51857310fe2ad34c'>
-      <parameter type-id='8003131d' name='transport' filepath='transport.c' line='536' column='1'/>
-      <parameter type-id='7e9611b1' name='trid' filepath='transport.c' line='537' column='1'/>
-      <parameter type-id='777df246' name='subsystem' filepath='transport.c' line='538' column='1'/>
-      <parameter type-id='896f998c' name='cb_fn' filepath='transport.c' line='539' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='transport.c' line='540' column='1'/>
+    <function-decl name='spdk_nvmf_transport_stop_listen_async' mangled-name='spdk_nvmf_transport_stop_listen_async' filepath='transport.c' line='552' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_transport_stop_listen_async' hash='51857310fe2ad34c'>
+      <parameter type-id='8003131d' name='transport' filepath='transport.c' line='552' column='1'/>
+      <parameter type-id='7e9611b1' name='trid' filepath='transport.c' line='553' column='1'/>
+      <parameter type-id='777df246' name='subsystem' filepath='transport.c' line='554' column='1'/>
+      <parameter type-id='896f998c' name='cb_fn' filepath='transport.c' line='555' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='transport.c' line='556' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_transport_opts_init' mangled-name='spdk_nvmf_transport_opts_init' filepath='transport.c' line='826' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_transport_opts_init' hash='47371c66958df0a7'>
-      <parameter type-id='80f4b756' name='transport_name' filepath='transport.c' line='826' column='1'/>
-      <parameter type-id='a30dfc92' name='opts' filepath='transport.c' line='827' column='1'/>
-      <parameter type-id='b59d7dce' name='opts_size' filepath='transport.c' line='827' column='1'/>
+    <function-decl name='spdk_nvmf_transport_opts_init' mangled-name='spdk_nvmf_transport_opts_init' filepath='transport.c' line='842' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_transport_opts_init' hash='47371c66958df0a7'>
+      <parameter type-id='80f4b756' name='transport_name' filepath='transport.c' line='842' column='1'/>
+      <parameter type-id='a30dfc92' name='opts' filepath='transport.c' line='843' column='1'/>
+      <parameter type-id='b59d7dce' name='opts_size' filepath='transport.c' line='843' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_request_free_buffers' mangled-name='spdk_nvmf_request_free_buffers' filepath='transport.c' line='859' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_request_free_buffers' hash='acd2458c63a36a91'>
-      <parameter type-id='5f953c61' name='req' filepath='transport.c' line='859' column='1'/>
-      <parameter type-id='264c437b' name='group' filepath='transport.c' line='860' column='1'/>
-      <parameter type-id='8003131d' name='transport' filepath='transport.c' line='861' column='1'/>
+    <function-decl name='spdk_nvmf_request_free_buffers' mangled-name='spdk_nvmf_request_free_buffers' filepath='transport.c' line='877' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_request_free_buffers' hash='acd2458c63a36a91'>
+      <parameter type-id='5f953c61' name='req' filepath='transport.c' line='877' column='1'/>
+      <parameter type-id='264c437b' name='group' filepath='transport.c' line='878' column='1'/>
+      <parameter type-id='8003131d' name='transport' filepath='transport.c' line='879' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_request_get_buffers' mangled-name='spdk_nvmf_request_get_buffers' filepath='transport.c' line='970' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_request_get_buffers' hash='b570413418bb50e4'>
-      <parameter type-id='5f953c61' name='req' filepath='transport.c' line='970' column='1'/>
-      <parameter type-id='264c437b' name='group' filepath='transport.c' line='971' column='1'/>
-      <parameter type-id='8003131d' name='transport' filepath='transport.c' line='972' column='1'/>
-      <parameter type-id='8f92235e' name='length' filepath='transport.c' line='973' column='1'/>
+    <function-decl name='spdk_nvmf_request_get_buffers' mangled-name='spdk_nvmf_request_get_buffers' filepath='transport.c' line='988' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_request_get_buffers' hash='b570413418bb50e4'>
+      <parameter type-id='5f953c61' name='req' filepath='transport.c' line='988' column='1'/>
+      <parameter type-id='264c437b' name='group' filepath='transport.c' line='989' column='1'/>
+      <parameter type-id='8003131d' name='transport' filepath='transport.c' line='990' column='1'/>
+      <parameter type-id='8f92235e' name='length' filepath='transport.c' line='991' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
   </abi-instr>

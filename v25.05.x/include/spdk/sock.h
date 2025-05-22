@@ -44,9 +44,7 @@ struct spdk_sock_request {
 	void	(*cb_fn)(void *cb_arg, int err);
 	void				*cb_arg;
 
-	/**
-	 * These fields are used by the socket layer and should not be modified
-	 */
+	/* These fields are used by the socket layer and should not be modified. */
 	struct __sock_request_internal {
 		TAILQ_ENTRY(spdk_sock_request)	link;
 
@@ -59,13 +57,18 @@ struct spdk_sock_request {
 
 		uint32_t			offset;
 
-		/* Indicate if the whole req or part of it is sent with zerocopy */
-		bool				is_zcopy;
+		/* Last zero-copy sendmsg index. */
+		uint32_t			zcopy_idx;
+
+		/* Indicate if the whole req or part of it is pending zerocopy completion. */
+		bool pending_zcopy;
 	} internal;
 
 	int				iovcnt;
 	/* struct iovec			iov[]; */
 };
+
+SPDK_STATIC_ASSERT(sizeof(struct spdk_sock_request) == 64, "Incorrect size.");
 
 #define SPDK_SOCK_REQUEST_IOV(req, i) ((struct iovec *)(((uint8_t *)req + sizeof(struct spdk_sock_request)) + (sizeof(struct iovec) * i)))
 
@@ -413,22 +416,26 @@ int spdk_sock_flush(struct spdk_sock *sock);
 /**
  * Receive a message from the given socket.
  *
+ * On failure check errno matching EAGAIN to determine failure is retryable.
+ *
  * \param sock Socket to receive message.
  * \param buf Pointer to a buffer to hold the data.
  * \param len Length of the buffer.
  *
- * \return the length of the received message on success, -1 on failure.
+ * \return the length of the received message on success, -1 on failure with errno set.
  */
 ssize_t spdk_sock_recv(struct spdk_sock *sock, void *buf, size_t len);
 
 /**
  * Write message to the given socket from the I/O vector array.
  *
+ * On failure check errno matching EAGAIN to determine failure is retryable.
+ *
  * \param sock Socket to write to.
  * \param iov I/O vector.
  * \param iovcnt Number of I/O vectors in the array.
  *
- * \return the length of written message on success, -1 on failure.
+ * \return the length of written message on success, -1 on failure with errno set.
  */
 ssize_t spdk_sock_writev(struct spdk_sock *sock, struct iovec *iov, int iovcnt);
 
@@ -468,6 +475,8 @@ ssize_t spdk_sock_readv(struct spdk_sock *sock, struct iovec *iov, int iovcnt);
  *
  * This code path will only work if the recvbuf is disabled. To disable
  * the recvbuf, call spdk_sock_set_recvbuf with a size of 0.
+ *
+ * On failure check errno matching EAGAIN to determine failure is retryable.
  *
  * \param sock Socket to receive from.
  * \param buf Populated with the next portion of the stream
@@ -617,6 +626,9 @@ int spdk_sock_group_poll_count(struct spdk_sock_group *group, int max_events);
 
 /**
  * Close all registered sockets of the group and then remove the group.
+ *
+ * If any sockets were added to the group by \ref spdk_sock_group_add_sock
+ * these must be removed first by using \ref spdk_sock_group_remove_sock.
  *
  * \param group Group to close.
  *

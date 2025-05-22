@@ -2,7 +2,7 @@
   <elf-needed>
     <dependency name='libspdk_log.so.7.1'/>
     <dependency name='libspdk_util.so.10.1'/>
-    <dependency name='libspdk_json.so.6.0'/>
+    <dependency name='libspdk_json.so.6.1'/>
     <dependency name='libspdk_jsonrpc.so.6.0'/>
     <dependency name='libspdk_rpc.so.7.0'/>
     <dependency name='libspdk_bdev.so.17.0'/>
@@ -15,6 +15,7 @@
   </elf-needed>
   <elf-function-symbols>
     <elf-symbol name='spdk_bdev_nvme_create' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_bdev_nvme_delete' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
     <elf-symbol name='spdk_bdev_nvme_get_default_ctrlr_opts' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
     <elf-symbol name='spdk_bdev_nvme_get_opts' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
     <elf-symbol name='spdk_bdev_nvme_set_multipath_policy' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
@@ -353,17 +354,17 @@
     <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='320' hash='e7f9696e246a3049' id='36c46961'>
       <subrange length='40' lower-bound='0' upper-bound='39' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='6281bd35fbce8744' id='8f80b239'/>
     </array-type-def>
-    <enum-decl name='spdk_bdev_nvme_multipath_policy' size-in-bits='32' alignment-in-bits='32' filepath='nvme.h' line='22' column='1' hash='8952fa27524a38cd' id='76fda5ef'>
+    <enum-decl name='spdk_bdev_nvme_multipath_policy' size-in-bits='32' alignment-in-bits='32' filepath='nvme.h' line='23' column='1' hash='8952fa27524a38cd' id='76fda5ef'>
       <underlying-type type-id='9cac1fee'/>
       <enumerator name='BDEV_NVME_MP_POLICY_ACTIVE_PASSIVE' value='0'/>
       <enumerator name='BDEV_NVME_MP_POLICY_ACTIVE_ACTIVE' value='1'/>
     </enum-decl>
-    <enum-decl name='spdk_bdev_nvme_multipath_selector' size-in-bits='32' alignment-in-bits='32' filepath='nvme.h' line='27' column='1' hash='ed7e32bd9345fb45' id='c526c38c'>
+    <enum-decl name='spdk_bdev_nvme_multipath_selector' size-in-bits='32' alignment-in-bits='32' filepath='nvme.h' line='28' column='1' hash='ed7e32bd9345fb45' id='c526c38c'>
       <underlying-type type-id='9cac1fee'/>
       <enumerator name='BDEV_NVME_MP_SELECTOR_ROUND_ROBIN' value='1'/>
       <enumerator name='BDEV_NVME_MP_SELECTOR_QUEUE_DEPTH' value='2'/>
     </enum-decl>
-    <enum-decl name='spdk_bdev_timeout_action' size-in-bits='32' alignment-in-bits='32' filepath='nvme.h' line='52' column='1' hash='d32e1d12e6b37915' id='9d786c01'>
+    <enum-decl name='spdk_bdev_timeout_action' size-in-bits='32' alignment-in-bits='32' filepath='nvme.h' line='55' column='1' hash='d32e1d12e6b37915' id='9d786c01'>
       <underlying-type type-id='9cac1fee'/>
       <enumerator name='SPDK_BDEV_NVME_TIMEOUT_ACTION_NONE' value='0'/>
       <enumerator name='SPDK_BDEV_NVME_TIMEOUT_ACTION_RESET' value='1'/>
@@ -448,146 +449,146 @@
         <var-decl name='__list' type-id='518fb49c' visibility='default' filepath='struct_mutex.h' line='36' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_bdev_nvme_ctrlr_opts' is-struct='yes' visibility='default' size-in-bits='448' filepath='nvme.h' line='32' column='1' hash='b70247dd63075cc8' id='833b22ed'>
+    <class-decl name='spdk_bdev_nvme_ctrlr_opts' is-struct='yes' visibility='default' size-in-bits='448' filepath='nvme.h' line='33' column='1' hash='b70247dd63075cc8' id='833b22ed'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='prchk_flags' type-id='8f92235e' visibility='default' filepath='nvme.h' line='33' column='1'/>
+        <var-decl name='prchk_flags' type-id='8f92235e' visibility='default' filepath='nvme.h' line='34' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='32'>
-        <var-decl name='ctrlr_loss_timeout_sec' type-id='3ff5601b' visibility='default' filepath='nvme.h' line='34' column='1'/>
+        <var-decl name='ctrlr_loss_timeout_sec' type-id='3ff5601b' visibility='default' filepath='nvme.h' line='35' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='reconnect_delay_sec' type-id='8f92235e' visibility='default' filepath='nvme.h' line='35' column='1'/>
+        <var-decl name='reconnect_delay_sec' type-id='8f92235e' visibility='default' filepath='nvme.h' line='36' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='96'>
-        <var-decl name='fast_io_fail_timeout_sec' type-id='8f92235e' visibility='default' filepath='nvme.h' line='36' column='1'/>
+        <var-decl name='fast_io_fail_timeout_sec' type-id='8f92235e' visibility='default' filepath='nvme.h' line='37' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='from_discovery_service' type-id='c894953d' visibility='default' filepath='nvme.h' line='37' column='1'/>
+        <var-decl name='from_discovery_service' type-id='c894953d' visibility='default' filepath='nvme.h' line='38' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='psk' type-id='80f4b756' visibility='default' filepath='nvme.h' line='38' column='1'/>
+        <var-decl name='psk' type-id='80f4b756' visibility='default' filepath='nvme.h' line='39' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='dhchap_key' type-id='80f4b756' visibility='default' filepath='nvme.h' line='39' column='1'/>
+        <var-decl name='dhchap_key' type-id='80f4b756' visibility='default' filepath='nvme.h' line='40' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='320'>
-        <var-decl name='dhchap_ctrlr_key' type-id='80f4b756' visibility='default' filepath='nvme.h' line='40' column='1'/>
+        <var-decl name='dhchap_ctrlr_key' type-id='80f4b756' visibility='default' filepath='nvme.h' line='41' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='384'>
-        <var-decl name='allow_unrecognized_csi' type-id='c894953d' visibility='default' filepath='nvme.h' line='46' column='1'/>
+        <var-decl name='allow_unrecognized_csi' type-id='c894953d' visibility='default' filepath='nvme.h' line='47' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='392'>
-        <var-decl name='multipath' type-id='c894953d' visibility='default' filepath='nvme.h' line='49' column='1'/>
+        <var-decl name='multipath' type-id='c894953d' visibility='default' filepath='nvme.h' line='50' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_bdev_nvme_opts' is-struct='yes' visibility='default' size-in-bits='1024' filepath='nvme.h' line='58' column='1' hash='26ca276e2443c247' id='739bc403'>
+    <class-decl name='spdk_bdev_nvme_opts' is-struct='yes' visibility='default' size-in-bits='1024' filepath='nvme.h' line='61' column='1' hash='26ca276e2443c247' id='739bc403'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='opts_size' type-id='b59d7dce' visibility='default' filepath='nvme.h' line='65' column='1'/>
+        <var-decl name='opts_size' type-id='b59d7dce' visibility='default' filepath='nvme.h' line='68' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='action_on_timeout' type-id='9d786c01' visibility='default' filepath='nvme.h' line='66' column='1'/>
+        <var-decl name='action_on_timeout' type-id='9d786c01' visibility='default' filepath='nvme.h' line='69' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='96'>
-        <var-decl name='keep_alive_timeout_ms' type-id='8f92235e' visibility='default' filepath='nvme.h' line='67' column='1'/>
+        <var-decl name='keep_alive_timeout_ms' type-id='8f92235e' visibility='default' filepath='nvme.h' line='70' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='timeout_us' type-id='9c313c2d' visibility='default' filepath='nvme.h' line='68' column='1'/>
+        <var-decl name='timeout_us' type-id='9c313c2d' visibility='default' filepath='nvme.h' line='71' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='timeout_admin_us' type-id='9c313c2d' visibility='default' filepath='nvme.h' line='69' column='1'/>
+        <var-decl name='timeout_admin_us' type-id='9c313c2d' visibility='default' filepath='nvme.h' line='72' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='transport_retry_count' type-id='8f92235e' visibility='default' filepath='nvme.h' line='71' column='1'/>
+        <var-decl name='transport_retry_count' type-id='8f92235e' visibility='default' filepath='nvme.h' line='74' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='288'>
-        <var-decl name='arbitration_burst' type-id='8f92235e' visibility='default' filepath='nvme.h' line='72' column='1'/>
+        <var-decl name='arbitration_burst' type-id='8f92235e' visibility='default' filepath='nvme.h' line='75' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='320'>
-        <var-decl name='low_priority_weight' type-id='8f92235e' visibility='default' filepath='nvme.h' line='73' column='1'/>
+        <var-decl name='low_priority_weight' type-id='8f92235e' visibility='default' filepath='nvme.h' line='76' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='352'>
-        <var-decl name='medium_priority_weight' type-id='8f92235e' visibility='default' filepath='nvme.h' line='74' column='1'/>
+        <var-decl name='medium_priority_weight' type-id='8f92235e' visibility='default' filepath='nvme.h' line='77' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='384'>
-        <var-decl name='high_priority_weight' type-id='8f92235e' visibility='default' filepath='nvme.h' line='75' column='1'/>
+        <var-decl name='high_priority_weight' type-id='8f92235e' visibility='default' filepath='nvme.h' line='78' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='416'>
-        <var-decl name='io_queue_requests' type-id='8f92235e' visibility='default' filepath='nvme.h' line='76' column='1'/>
+        <var-decl name='io_queue_requests' type-id='8f92235e' visibility='default' filepath='nvme.h' line='79' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='448'>
-        <var-decl name='nvme_adminq_poll_period_us' type-id='9c313c2d' visibility='default' filepath='nvme.h' line='77' column='1'/>
+        <var-decl name='nvme_adminq_poll_period_us' type-id='9c313c2d' visibility='default' filepath='nvme.h' line='80' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='512'>
-        <var-decl name='nvme_ioq_poll_period_us' type-id='9c313c2d' visibility='default' filepath='nvme.h' line='78' column='1'/>
+        <var-decl name='nvme_ioq_poll_period_us' type-id='9c313c2d' visibility='default' filepath='nvme.h' line='81' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='576'>
-        <var-decl name='delay_cmd_submit' type-id='c894953d' visibility='default' filepath='nvme.h' line='79' column='1'/>
+        <var-decl name='delay_cmd_submit' type-id='c894953d' visibility='default' filepath='nvme.h' line='82' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='584'>
-        <var-decl name='reserved73' type-id='d3490169' visibility='default' filepath='nvme.h' line='81' column='1'/>
+        <var-decl name='reserved73' type-id='d3490169' visibility='default' filepath='nvme.h' line='84' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='608'>
-        <var-decl name='bdev_retry_count' type-id='3ff5601b' visibility='default' filepath='nvme.h' line='83' column='1'/>
+        <var-decl name='bdev_retry_count' type-id='3ff5601b' visibility='default' filepath='nvme.h' line='86' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='640'>
-        <var-decl name='ctrlr_loss_timeout_sec' type-id='3ff5601b' visibility='default' filepath='nvme.h' line='84' column='1'/>
+        <var-decl name='ctrlr_loss_timeout_sec' type-id='3ff5601b' visibility='default' filepath='nvme.h' line='87' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='672'>
-        <var-decl name='reconnect_delay_sec' type-id='8f92235e' visibility='default' filepath='nvme.h' line='85' column='1'/>
+        <var-decl name='reconnect_delay_sec' type-id='8f92235e' visibility='default' filepath='nvme.h' line='88' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='704'>
-        <var-decl name='fast_io_fail_timeout_sec' type-id='8f92235e' visibility='default' filepath='nvme.h' line='86' column='1'/>
+        <var-decl name='fast_io_fail_timeout_sec' type-id='8f92235e' visibility='default' filepath='nvme.h' line='89' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='736'>
-        <var-decl name='transport_ack_timeout' type-id='b96825af' visibility='default' filepath='nvme.h' line='87' column='1'/>
+        <var-decl name='transport_ack_timeout' type-id='b96825af' visibility='default' filepath='nvme.h' line='90' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='744'>
-        <var-decl name='disable_auto_failback' type-id='c894953d' visibility='default' filepath='nvme.h' line='88' column='1'/>
+        <var-decl name='disable_auto_failback' type-id='c894953d' visibility='default' filepath='nvme.h' line='91' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='752'>
-        <var-decl name='generate_uuids' type-id='c894953d' visibility='default' filepath='nvme.h' line='89' column='1'/>
+        <var-decl name='generate_uuids' type-id='c894953d' visibility='default' filepath='nvme.h' line='92' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='760'>
-        <var-decl name='transport_tos' type-id='b96825af' visibility='default' filepath='nvme.h' line='91' column='1'/>
+        <var-decl name='transport_tos' type-id='b96825af' visibility='default' filepath='nvme.h' line='94' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='768'>
-        <var-decl name='nvme_error_stat' type-id='c894953d' visibility='default' filepath='nvme.h' line='92' column='1'/>
+        <var-decl name='nvme_error_stat' type-id='c894953d' visibility='default' filepath='nvme.h' line='95' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='776'>
-        <var-decl name='io_path_stat' type-id='c894953d' visibility='default' filepath='nvme.h' line='93' column='1'/>
+        <var-decl name='io_path_stat' type-id='c894953d' visibility='default' filepath='nvme.h' line='96' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='784'>
-        <var-decl name='allow_accel_sequence' type-id='c894953d' visibility='default' filepath='nvme.h' line='94' column='1'/>
+        <var-decl name='allow_accel_sequence' type-id='c894953d' visibility='default' filepath='nvme.h' line='97' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='792'>
-        <var-decl name='reserved99' type-id='0f44e2af' visibility='default' filepath='nvme.h' line='96' column='1'/>
+        <var-decl name='reserved99' type-id='0f44e2af' visibility='default' filepath='nvme.h' line='99' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='800'>
-        <var-decl name='rdma_srq_size' type-id='8f92235e' visibility='default' filepath='nvme.h' line='97' column='1'/>
+        <var-decl name='rdma_srq_size' type-id='8f92235e' visibility='default' filepath='nvme.h' line='100' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='832'>
-        <var-decl name='rdma_max_cq_size' type-id='8f92235e' visibility='default' filepath='nvme.h' line='98' column='1'/>
+        <var-decl name='rdma_max_cq_size' type-id='8f92235e' visibility='default' filepath='nvme.h' line='101' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='864'>
-        <var-decl name='rdma_cm_event_timeout_ms' type-id='149c6638' visibility='default' filepath='nvme.h' line='99' column='1'/>
+        <var-decl name='rdma_cm_event_timeout_ms' type-id='149c6638' visibility='default' filepath='nvme.h' line='102' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='880'>
-        <var-decl name='reserved110' type-id='0f4b9e74' visibility='default' filepath='nvme.h' line='101' column='1'/>
+        <var-decl name='reserved110' type-id='0f4b9e74' visibility='default' filepath='nvme.h' line='104' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='896'>
-        <var-decl name='dhchap_digests' type-id='8f92235e' visibility='default' filepath='nvme.h' line='102' column='1'/>
+        <var-decl name='dhchap_digests' type-id='8f92235e' visibility='default' filepath='nvme.h' line='105' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='928'>
-        <var-decl name='dhchap_dhgroups' type-id='8f92235e' visibility='default' filepath='nvme.h' line='103' column='1'/>
+        <var-decl name='dhchap_dhgroups' type-id='8f92235e' visibility='default' filepath='nvme.h' line='106' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='960'>
-        <var-decl name='rdma_umr_per_io' type-id='c894953d' visibility='default' filepath='nvme.h' line='104' column='1'/>
+        <var-decl name='rdma_umr_per_io' type-id='c894953d' visibility='default' filepath='nvme.h' line='107' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='968'>
-        <var-decl name='reserved121' type-id='d3490169' visibility='default' filepath='nvme.h' line='106' column='1'/>
+        <var-decl name='reserved121' type-id='d3490169' visibility='default' filepath='nvme.h' line='109' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='992'>
-        <var-decl name='tcp_connect_timeout_ms' type-id='8f92235e' visibility='default' filepath='nvme.h' line='107' column='1'/>
+        <var-decl name='tcp_connect_timeout_ms' type-id='8f92235e' visibility='default' filepath='nvme.h' line='110' column='1'/>
       </data-member>
     </class-decl>
     <class-decl name='spdk_nvme_ctrlr_opts' is-struct='yes' visibility='default' size-in-bits='6848' filepath='nvme.h' line='49' column='1' hash='d4f437bc8a6db7ec' id='388558d7'>
@@ -853,6 +854,7 @@
     <typedef-decl name='pthread_mutex_t' type-id='70681f9b' size-in-bits='320' filepath='pthreadtypes.h' line='72' column='1' id='7a6844eb'/>
     <typedef-decl name='size_t' type-id='f0981eeb' size-in-bits='64' filepath='stddef.h' line='214' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
     <typedef-decl name='spdk_bdev_nvme_create_cb' type-id='db87700c' size-in-bits='64' filepath='nvme.h' line='19' column='1' hash='fd7a63c0c6c822c4' id='b08e707e'/>
+    <typedef-decl name='spdk_bdev_nvme_delete_cb' type-id='82328a76' size-in-bits='64' filepath='nvme.h' line='21' column='1' hash='fd7a63c0c6c822c4' id='cdcd7e57'/>
     <typedef-decl name='spdk_bdev_nvme_set_multipath_policy_cb' type-id='82328a76' size-in-bits='64' filepath='nvme.h' line='20' column='1' hash='fd7a63c0c6c822c4' id='63fb8c7a'/>
     <typedef-decl name='uint16_t' type-id='253c2d2a' size-in-bits='16' filepath='stdint-uintn.h' line='25' column='1' hash='d7723bb93a30b11d' id='149c6638'/>
     <typedef-decl name='uint32_t' type-id='62f1140c' size-in-bits='32' filepath='stdint-uintn.h' line='26' column='1' hash='e66b43f97c38e87a' id='8f92235e'/>
@@ -923,42 +925,52 @@
     <pointer-type-def type-id='a6dc9de4' size-in-bits='64' hash='f13879d37c217898' id='ddda0722'/>
     <pointer-type-def type-id='2922fb19' size-in-bits='64' hash='fd7a63c0c6c822c4' id='82328a76'/>
     <pointer-type-def type-id='1c3f0d03' size-in-bits='64' hash='fd7a63c0c6c822c4' id='db87700c'/>
+    <qualified-type-def type-id='a34176a0' const='yes' id='d03cef33'/>
+    <pointer-type-def type-id='d03cef33' size-in-bits='64' id='e8ec645b'/>
     <pointer-type-def type-id='1bef703f' size-in-bits='64' id='f004afe7'/>
     <pointer-type-def type-id='ef0f6b10' size-in-bits='64' id='f8fcfe66'/>
     <class-decl name='spdk_key' is-struct='yes' visibility='default' is-declaration-only='yes' id='1bef703f'/>
     <class-decl name='spdk_thread' is-struct='yes' visibility='default' is-declaration-only='yes' id='ef0f6b10'/>
-    <var-decl name='g_trace_file' type-id='ddda0722' visibility='default' filepath='trace.h' line='149' column='1' elf-symbol-id='g_trace_file'/>
-    <function-decl name='spdk_bdev_nvme_set_multipath_policy' mangled-name='spdk_bdev_nvme_set_multipath_policy' filepath='bdev_nvme.c' line='5514' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_nvme_set_multipath_policy' hash='7f5284566b5409ea'>
-      <parameter type-id='80f4b756' name='name' filepath='bdev_nvme.c' line='5514' column='1'/>
-      <parameter type-id='76fda5ef' name='policy' filepath='bdev_nvme.c' line='5514' column='1'/>
-      <parameter type-id='c526c38c' name='selector' filepath='bdev_nvme.c' line='5515' column='1'/>
-      <parameter type-id='8f92235e' name='rr_min_io' filepath='bdev_nvme.c' line='5515' column='1'/>
-      <parameter type-id='63fb8c7a' name='cb_fn' filepath='bdev_nvme.c' line='5516' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev_nvme.c' line='5516' column='1'/>
+    <function-decl name='spdk_bdev_nvme_set_multipath_policy' mangled-name='spdk_bdev_nvme_set_multipath_policy' filepath='bdev_nvme.c' line='5531' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_nvme_set_multipath_policy' hash='7f5284566b5409ea'>
+      <parameter type-id='80f4b756' name='name' filepath='bdev_nvme.c' line='5531' column='1'/>
+      <parameter type-id='76fda5ef' name='policy' filepath='bdev_nvme.c' line='5531' column='1'/>
+      <parameter type-id='c526c38c' name='selector' filepath='bdev_nvme.c' line='5532' column='1'/>
+      <parameter type-id='8f92235e' name='rr_min_io' filepath='bdev_nvme.c' line='5532' column='1'/>
+      <parameter type-id='63fb8c7a' name='cb_fn' filepath='bdev_nvme.c' line='5533' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='bdev_nvme.c' line='5533' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_nvme_get_default_ctrlr_opts' mangled-name='spdk_bdev_nvme_get_default_ctrlr_opts' filepath='bdev_nvme.c' line='6019' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_nvme_get_default_ctrlr_opts' hash='3403cfc9180f9306'>
-      <parameter type-id='a8e3c59d' name='opts' filepath='bdev_nvme.c' line='6019' column='1'/>
+    <function-decl name='spdk_bdev_nvme_get_default_ctrlr_opts' mangled-name='spdk_bdev_nvme_get_default_ctrlr_opts' filepath='bdev_nvme.c' line='6036' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_nvme_get_default_ctrlr_opts' hash='3403cfc9180f9306'>
+      <parameter type-id='a8e3c59d' name='opts' filepath='bdev_nvme.c' line='6036' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_nvme_get_opts' mangled-name='spdk_bdev_nvme_get_opts' filepath='bdev_nvme.c' line='6148' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_nvme_get_opts' hash='50853b21e208dd09'>
-      <parameter type-id='27d5b803' name='opts' filepath='bdev_nvme.c' line='6148' column='1'/>
-      <parameter type-id='b59d7dce' name='opts_size' filepath='bdev_nvme.c' line='6148' column='1'/>
+    <function-decl name='spdk_bdev_nvme_get_opts' mangled-name='spdk_bdev_nvme_get_opts' filepath='bdev_nvme.c' line='6165' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_nvme_get_opts' hash='50853b21e208dd09'>
+      <parameter type-id='27d5b803' name='opts' filepath='bdev_nvme.c' line='6165' column='1'/>
+      <parameter type-id='b59d7dce' name='opts_size' filepath='bdev_nvme.c' line='6165' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_bdev_nvme_set_opts' mangled-name='spdk_bdev_nvme_set_opts' filepath='bdev_nvme.c' line='6232' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_nvme_set_opts' hash='d72216885f4b6ad0'>
-      <parameter type-id='4cb2206e' name='opts' filepath='bdev_nvme.c' line='6232' column='1'/>
+    <function-decl name='spdk_bdev_nvme_set_opts' mangled-name='spdk_bdev_nvme_set_opts' filepath='bdev_nvme.c' line='6249' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_nvme_set_opts' hash='d72216885f4b6ad0'>
+      <parameter type-id='4cb2206e' name='opts' filepath='bdev_nvme.c' line='6249' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_bdev_nvme_create' mangled-name='spdk_bdev_nvme_create' filepath='bdev_nvme.c' line='6677' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_nvme_create' hash='838f8467be9a3834'>
-      <parameter type-id='6f56757a' name='trid' filepath='bdev_nvme.c' line='6677' column='1'/>
-      <parameter type-id='80f4b756' name='base_name' filepath='bdev_nvme.c' line='6678' column='1'/>
-      <parameter type-id='7d3cd834' name='names' filepath='bdev_nvme.c' line='6679' column='1'/>
-      <parameter type-id='8f92235e' name='count' filepath='bdev_nvme.c' line='6680' column='1'/>
-      <parameter type-id='b08e707e' name='cb_fn' filepath='bdev_nvme.c' line='6681' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_ctx' filepath='bdev_nvme.c' line='6682' column='1'/>
-      <parameter type-id='f5423aff' name='drv_opts' filepath='bdev_nvme.c' line='6683' column='1'/>
-      <parameter type-id='a8e3c59d' name='bdev_opts' filepath='bdev_nvme.c' line='6684' column='1'/>
+    <function-decl name='spdk_bdev_nvme_create' mangled-name='spdk_bdev_nvme_create' filepath='bdev_nvme.c' line='6694' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_nvme_create' hash='838f8467be9a3834'>
+      <parameter type-id='6f56757a' name='trid' filepath='bdev_nvme.c' line='6694' column='1'/>
+      <parameter type-id='80f4b756' name='base_name' filepath='bdev_nvme.c' line='6695' column='1'/>
+      <parameter type-id='7d3cd834' name='names' filepath='bdev_nvme.c' line='6696' column='1'/>
+      <parameter type-id='8f92235e' name='count' filepath='bdev_nvme.c' line='6697' column='1'/>
+      <parameter type-id='b08e707e' name='cb_fn' filepath='bdev_nvme.c' line='6698' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_ctx' filepath='bdev_nvme.c' line='6699' column='1'/>
+      <parameter type-id='f5423aff' name='drv_opts' filepath='bdev_nvme.c' line='6700' column='1'/>
+      <parameter type-id='a8e3c59d' name='bdev_opts' filepath='bdev_nvme.c' line='6701' column='1'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <type-decl name='void' id='48b5725f'/>
+    <var-decl name='g_trace_file' type-id='ddda0722' visibility='default' filepath='trace.h' line='149' column='1' elf-symbol-id='g_trace_file'/>
+    <function-decl name='spdk_bdev_nvme_delete' mangled-name='spdk_bdev_nvme_delete' filepath='bdev_nvme.c' line='7020' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_nvme_delete' hash='047f7d52c3765ece'>
+      <parameter type-id='80f4b756' name='name' filepath='bdev_nvme.c' line='7020' column='1'/>
+      <parameter type-id='e8ec645b' name='path_id' filepath='bdev_nvme.c' line='7020' column='1'/>
+      <parameter type-id='cdcd7e57' name='delete_cb' filepath='bdev_nvme.c' line='7021' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_ctx' filepath='bdev_nvme.c' line='7021' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
     <class-decl name='nvme_bdev_ctrlrs' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='bdev_nvme.h' line='19' column='1' id='a4fd6fcc'/>
@@ -966,7 +978,7 @@
     <var-decl name='g_bdev_nvme_mutex' type-id='7a6844eb' visibility='default' filepath='bdev_nvme.h' line='21' column='1'/>
     <var-decl name='g_bdev_nvme_module_finish' type-id='c894953d' visibility='default' filepath='bdev_nvme.h' line='22' column='1'/>
     <var-decl name='g_bdev_nvme_init_thread' type-id='f8fcfe66' visibility='default' filepath='bdev_nvme.h' line='23' column='1'/>
-    <type-decl name='void' id='48b5725f'/>
+    <class-decl name='spdk_nvme_path_id' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='bdev_nvme.h' line='78' column='1' id='a34176a0'/>
     <pointer-type-def type-id='48b5725f' id='eaa32e2f'/>
     <function-type size-in-bits='64' hash='388da3fa973fde78' id='2922fb19'>
       <parameter type-id='eaa32e2f'/>
