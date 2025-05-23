@@ -407,9 +407,15 @@ int spdk_sock_close(struct spdk_sock **sock);
 /**
  * Flush a socket from data gathered in previous writev_async calls.
  *
+ * On failure check errno matching EAGAIN to determine failure is retryable.
+ *
+ * It is not recommended to rely on the number of bytes returned on success.
+ * This behavior is deprecated and will be removed in 25.09 release, function
+ * will return 0 on success instead.
+ *
  * \param sock Socket to flush.
  *
- * \return number of bytes sent on success, -1 (with errno set) on failure
+ * \return number of bytes sent on success, -1 on failure with errno set.
  */
 int spdk_sock_flush(struct spdk_sock *sock);
 

@@ -145,18 +145,18 @@
         <var-decl name='iov_len' type-id='b59d7dce' visibility='default' filepath='struct_iovec.h' line='29' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='spdk_bdev_io_wait_entry' is-struct='yes' visibility='default' size-in-bits='320' filepath='bdev.h' line='2111' column='1' hash='35379864373f4bb6' id='56e41d71'>
+    <class-decl name='spdk_bdev_io_wait_entry' is-struct='yes' visibility='default' size-in-bits='320' filepath='bdev.h' line='2116' column='1' hash='35379864373f4bb6' id='56e41d71'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='bdev' type-id='7b7cfb3d' visibility='default' filepath='bdev.h' line='2112' column='1'/>
+        <var-decl name='bdev' type-id='7b7cfb3d' visibility='default' filepath='bdev.h' line='2117' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='cb_fn' type-id='065af103' visibility='default' filepath='bdev.h' line='2113' column='1'/>
+        <var-decl name='cb_fn' type-id='065af103' visibility='default' filepath='bdev.h' line='2118' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='cb_arg' type-id='eaa32e2f' visibility='default' filepath='bdev.h' line='2114' column='1'/>
+        <var-decl name='cb_arg' type-id='eaa32e2f' visibility='default' filepath='bdev.h' line='2119' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='link' type-id='e7f43f72' visibility='default' filepath='bdev.h' line='2115' column='1'/>
+        <var-decl name='link' type-id='e7f43f72' visibility='default' filepath='bdev.h' line='2120' column='1'/>
       </data-member>
     </class-decl>
     <class-decl name='spdk_scsi_task' is-struct='yes' visibility='default' size-in-bits='2048' filepath='scsi.h' line='65' column='1' hash='f6a24d870dc730d3' id='806d5c76'>
@@ -239,12 +239,12 @@
         <var-decl name='bdev_io_wait' type-id='56e41d71' visibility='default' filepath='scsi.h' line='114' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__1' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='bdev.h' line='2115' column='1' hash='1d6be5d923ee5c29' id='e7f43f72'>
+    <class-decl name='__anonymous_struct__1' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='bdev.h' line='2120' column='1' hash='1d6be5d923ee5c29' id='e7f43f72'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='tqe_next' type-id='2c737c29' visibility='default' filepath='bdev.h' line='2115' column='1'/>
+        <var-decl name='tqe_next' type-id='2c737c29' visibility='default' filepath='bdev.h' line='2120' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='tqe_prev' type-id='fccc38b9' visibility='default' filepath='bdev.h' line='2115' column='1'/>
+        <var-decl name='tqe_prev' type-id='fccc38b9' visibility='default' filepath='bdev.h' line='2120' column='1'/>
       </data-member>
     </class-decl>
     <class-decl name='__anonymous_struct__' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='scsi.h' line='111' column='1' hash='85e46d78443cb673#2' id='e7f43f73'>
@@ -260,7 +260,7 @@
     <typedef-decl name='__uint64_t' type-id='f0981eed' size-in-bits='64' filepath='types.h' line='45' column='1' hash='8fdc5eea2983a729' id='8910171f'/>
     <typedef-decl name='__uint8_t' type-id='002ac4a6' size-in-bits='8' filepath='types.h' line='38' column='1' hash='6ebac62b3366db68' id='c51d6389'/>
     <typedef-decl name='size_t' type-id='f0981eed' size-in-bits='64' filepath='stddef.h' line='214' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
-    <typedef-decl name='spdk_bdev_io_wait_cb' type-id='61359e15' size-in-bits='64' filepath='bdev.h' line='2106' column='1' hash='fd7a63c0c6c822c4' id='065af103'/>
+    <typedef-decl name='spdk_bdev_io_wait_cb' type-id='61359e15' size-in-bits='64' filepath='bdev.h' line='2111' column='1' hash='fd7a63c0c6c822c4' id='065af103'/>
     <typedef-decl name='spdk_scsi_dev_destruct_cb_t' type-id='82328a76' size-in-bits='64' filepath='scsi.h' line='123' column='1' hash='fd7a63c0c6c822c4' id='d48d236f'/>
     <typedef-decl name='spdk_scsi_task_cpl' type-id='9db61bb0' size-in-bits='64' filepath='scsi.h' line='62' column='1' hash='fd7a63c0c6c822c4' id='06438a61'/>
     <typedef-decl name='spdk_scsi_task_free' type-id='9db61bb0' size-in-bits='64' filepath='scsi.h' line='63' column='1' hash='fd7a63c0c6c822c4' id='4d4c0ac2'/>

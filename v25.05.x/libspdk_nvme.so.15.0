@@ -7430,8 +7430,8 @@
     <pointer-type-def type-id='eb9f9168' size-in-bits='64' id='e2b914ce'/>
     <class-decl name='_compat_ibv_port_attr' is-struct='yes' visibility='default' is-declaration-only='yes' id='eb9f9168'/>
     <var-decl name='g_spdk_nvme_transport_opts' type-id='39a1fcbf' visibility='default' filepath='nvme_internal.h' line='38' column='1'/>
-    <function-decl name='spdk_nvme_rdma_init_hooks' mangled-name='spdk_nvme_rdma_init_hooks' filepath='nvme_rdma.c' line='3645' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_rdma_init_hooks' hash='35fc4d71f626f1e5'>
-      <parameter type-id='bbb9af9a' name='hooks' filepath='nvme_rdma.c' line='3645' column='1'/>
+    <function-decl name='spdk_nvme_rdma_init_hooks' mangled-name='spdk_nvme_rdma_init_hooks' filepath='nvme_rdma.c' line='3632' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_rdma_init_hooks' hash='35fc4d71f626f1e5'>
+      <parameter type-id='bbb9af9a' name='hooks' filepath='nvme_rdma.c' line='3632' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
     <function-type size-in-bits='64' hash='e2de7284790ffb56' id='a45c24ce'>
