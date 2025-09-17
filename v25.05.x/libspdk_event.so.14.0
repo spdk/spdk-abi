@@ -1306,98 +1306,98 @@
     <class-decl name='spdk_ring' is-struct='yes' visibility='default' is-declaration-only='yes' id='f749e2ba'/>
     <var-decl name='g_trace_file' type-id='ddda0722' visibility='default' filepath='trace.h' line='149' column='1' elf-symbol-id='g_trace_file'/>
     <class-decl name='spdk_lw_thread' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='event_internal.h' line='17' column='1' id='69d037f6'/>
-    <function-decl name='spdk_scheduler_set' mangled-name='spdk_scheduler_set' filepath='reactor.c' line='82' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_scheduler_set' hash='e9ea91a7eab8302c'>
-      <parameter type-id='80f4b756' name='name' filepath='reactor.c' line='1568' column='1'/>
+    <function-decl name='spdk_scheduler_set' mangled-name='spdk_scheduler_set' filepath='reactor.c' line='83' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_scheduler_set' hash='e9ea91a7eab8302c'>
+      <parameter type-id='80f4b756' name='name' filepath='reactor.c' line='1579' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_scheduler_get' mangled-name='spdk_scheduler_get' filepath='reactor.c' line='130' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_scheduler_get' hash='9ea28a93727822e9'>
+    <function-decl name='spdk_scheduler_get' mangled-name='spdk_scheduler_get' filepath='reactor.c' line='131' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_scheduler_get' hash='9ea28a93727822e9'>
       <return type-id='c4221ffd'/>
     </function-decl>
-    <function-decl name='spdk_scheduler_get_period' mangled-name='spdk_scheduler_get_period' filepath='reactor.c' line='136' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_scheduler_get_period' hash='e0055d99adb0e173'>
+    <function-decl name='spdk_scheduler_get_period' mangled-name='spdk_scheduler_get_period' filepath='reactor.c' line='137' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_scheduler_get_period' hash='e0055d99adb0e173'>
       <return type-id='9c313c2d'/>
     </function-decl>
-    <function-decl name='spdk_scheduler_set_period' mangled-name='spdk_scheduler_set_period' filepath='reactor.c' line='142' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_scheduler_set_period' hash='e0055d99adb0e173'>
-      <parameter type-id='9c313c2d' name='period' filepath='reactor.c' line='142' column='1'/>
+    <function-decl name='spdk_scheduler_set_period' mangled-name='spdk_scheduler_set_period' filepath='reactor.c' line='143' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_scheduler_set_period' hash='e0055d99adb0e173'>
+      <parameter type-id='9c313c2d' name='period' filepath='reactor.c' line='143' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_scheduler_register' mangled-name='spdk_scheduler_register' filepath='reactor.c' line='149' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_scheduler_register' hash='9ea28a93727822e9'>
-      <parameter type-id='c4221ffd' name='scheduler' filepath='reactor.c' line='149' column='1'/>
+    <function-decl name='spdk_scheduler_register' mangled-name='spdk_scheduler_register' filepath='reactor.c' line='150' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_scheduler_register' hash='9ea28a93727822e9'>
+      <parameter type-id='c4221ffd' name='scheduler' filepath='reactor.c' line='150' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_scheduler_get_scheduling_lcore' mangled-name='spdk_scheduler_get_scheduling_lcore' filepath='reactor.c' line='161' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_scheduler_get_scheduling_lcore' hash='2bb88322482ae81c'>
+    <function-decl name='spdk_scheduler_get_scheduling_lcore' mangled-name='spdk_scheduler_get_scheduling_lcore' filepath='reactor.c' line='162' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_scheduler_get_scheduling_lcore' hash='2bb88322482ae81c'>
       <return type-id='8f92235e'/>
     </function-decl>
-    <function-decl name='spdk_scheduler_set_scheduling_lcore' mangled-name='spdk_scheduler_set_scheduling_lcore' filepath='reactor.c' line='167' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_scheduler_set_scheduling_lcore' hash='79745b8d969ff31b'>
-      <parameter type-id='8f92235e' name='core' filepath='reactor.c' line='167' column='1'/>
+    <function-decl name='spdk_scheduler_set_scheduling_lcore' mangled-name='spdk_scheduler_set_scheduling_lcore' filepath='reactor.c' line='168' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_scheduler_set_scheduling_lcore' hash='79745b8d969ff31b'>
+      <parameter type-id='8f92235e' name='core' filepath='reactor.c' line='168' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_reactor_get' mangled-name='spdk_reactor_get' filepath='reactor.c' line='246' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_reactor_get' hash='0723800d0c4dc11d'>
-      <parameter type-id='8f92235e' name='lcore' filepath='reactor.c' line='246' column='1'/>
+    <function-decl name='spdk_reactor_get' mangled-name='spdk_reactor_get' filepath='reactor.c' line='247' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_reactor_get' hash='0723800d0c4dc11d'>
+      <parameter type-id='8f92235e' name='lcore' filepath='reactor.c' line='247' column='1'/>
       <return type-id='cbc6eb1c'/>
     </function-decl>
-    <function-decl name='spdk_reactors_init' mangled-name='spdk_reactors_init' filepath='reactor.c' line='276' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_reactors_init' hash='b6a97d07f8261bc0'>
-      <parameter type-id='b59d7dce' name='msg_mempool_size' filepath='reactor.c' line='276' column='1'/>
+    <function-decl name='spdk_reactors_init' mangled-name='spdk_reactors_init' filepath='reactor.c' line='277' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_reactors_init' hash='b6a97d07f8261bc0'>
+      <parameter type-id='b59d7dce' name='msg_mempool_size' filepath='reactor.c' line='277' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_reactors_fini' mangled-name='spdk_reactors_fini' filepath='reactor.c' line='341' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_reactors_fini' hash='7f32ffea222edbe7'>
+    <function-decl name='spdk_reactors_fini' mangled-name='spdk_reactors_fini' filepath='reactor.c' line='342' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_reactors_fini' hash='7f32ffea222edbe7'>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_reactor_set_interrupt_mode' mangled-name='spdk_reactor_set_interrupt_mode' filepath='reactor.c' line='477' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_reactor_set_interrupt_mode' hash='792a1ffdc6b189dc'>
-      <parameter type-id='8f92235e' name='lcore' filepath='reactor.c' line='477' column='1'/>
-      <parameter type-id='c894953d' name='new_in_interrupt' filepath='reactor.c' line='477' column='1'/>
-      <parameter type-id='472c805e' name='cb_fn' filepath='reactor.c' line='478' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='reactor.c' line='478' column='1'/>
+    <function-decl name='spdk_reactor_set_interrupt_mode' mangled-name='spdk_reactor_set_interrupt_mode' filepath='reactor.c' line='478' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_reactor_set_interrupt_mode' hash='792a1ffdc6b189dc'>
+      <parameter type-id='8f92235e' name='lcore' filepath='reactor.c' line='478' column='1'/>
+      <parameter type-id='c894953d' name='new_in_interrupt' filepath='reactor.c' line='478' column='1'/>
+      <parameter type-id='472c805e' name='cb_fn' filepath='reactor.c' line='479' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='reactor.c' line='479' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_event_allocate' mangled-name='spdk_event_allocate' filepath='reactor.c' line='532' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_event_allocate' hash='620f4693405860d0'>
-      <parameter type-id='8f92235e' name='lcore' filepath='reactor.c' line='532' column='1'/>
-      <parameter type-id='10517ed6' name='fn' filepath='reactor.c' line='532' column='1'/>
-      <parameter type-id='eaa32e2f' name='arg1' filepath='reactor.c' line='532' column='1'/>
-      <parameter type-id='eaa32e2f' name='arg2' filepath='reactor.c' line='532' column='1'/>
+    <function-decl name='spdk_event_allocate' mangled-name='spdk_event_allocate' filepath='reactor.c' line='533' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_event_allocate' hash='620f4693405860d0'>
+      <parameter type-id='8f92235e' name='lcore' filepath='reactor.c' line='533' column='1'/>
+      <parameter type-id='10517ed6' name='fn' filepath='reactor.c' line='533' column='1'/>
+      <parameter type-id='eaa32e2f' name='arg1' filepath='reactor.c' line='533' column='1'/>
+      <parameter type-id='eaa32e2f' name='arg2' filepath='reactor.c' line='533' column='1'/>
       <return type-id='8b2f776e'/>
     </function-decl>
-    <function-decl name='spdk_event_call' mangled-name='spdk_event_call' filepath='reactor.c' line='557' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_event_call' hash='376cf9d3def2f4df'>
-      <parameter type-id='8b2f776e' name='event' filepath='reactor.c' line='557' column='1'/>
+    <function-decl name='spdk_event_call' mangled-name='spdk_event_call' filepath='reactor.c' line='558' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_event_call' hash='376cf9d3def2f4df'>
+      <parameter type-id='8b2f776e' name='event' filepath='reactor.c' line='558' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_framework_enable_context_switch_monitor' mangled-name='spdk_framework_enable_context_switch_monitor' filepath='reactor.c' line='671' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_framework_enable_context_switch_monitor' hash='c7c710e908194b91'>
-      <parameter type-id='c894953d' name='enable' filepath='reactor.c' line='671' column='1'/>
+    <function-decl name='spdk_framework_enable_context_switch_monitor' mangled-name='spdk_framework_enable_context_switch_monitor' filepath='reactor.c' line='672' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_framework_enable_context_switch_monitor' hash='c7c710e908194b91'>
+      <parameter type-id='c894953d' name='enable' filepath='reactor.c' line='672' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_framework_context_switch_monitor_enabled' mangled-name='spdk_framework_context_switch_monitor_enabled' filepath='reactor.c' line='681' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_framework_context_switch_monitor_enabled' hash='c7c710e908194b91'>
+    <function-decl name='spdk_framework_context_switch_monitor_enabled' mangled-name='spdk_framework_context_switch_monitor_enabled' filepath='reactor.c' line='682' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_framework_context_switch_monitor_enabled' hash='c7c710e908194b91'>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_app_parse_core_mask' mangled-name='spdk_app_parse_core_mask' filepath='reactor.c' line='1074' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_app_parse_core_mask' hash='b154a3ef56eb0eb4'>
-      <parameter type-id='80f4b756' name='mask' filepath='reactor.c' line='1074' column='1'/>
-      <parameter type-id='d5319498' name='cpumask' filepath='reactor.c' line='1074' column='1'/>
+    <function-decl name='spdk_app_parse_core_mask' mangled-name='spdk_app_parse_core_mask' filepath='reactor.c' line='1075' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_app_parse_core_mask' hash='b154a3ef56eb0eb4'>
+      <parameter type-id='80f4b756' name='mask' filepath='reactor.c' line='1075' column='1'/>
+      <parameter type-id='d5319498' name='cpumask' filepath='reactor.c' line='1075' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_app_get_core_mask' mangled-name='spdk_app_get_core_mask' filepath='reactor.c' line='1091' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_app_get_core_mask' hash='22d8a5d442207f43'>
+    <function-decl name='spdk_app_get_core_mask' mangled-name='spdk_app_get_core_mask' filepath='reactor.c' line='1092' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_app_get_core_mask' hash='22d8a5d442207f43'>
       <return type-id='75291c35'/>
     </function-decl>
-    <function-decl name='spdk_reactors_start' mangled-name='spdk_reactors_start' filepath='reactor.c' line='1097' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_reactors_start' hash='7f32ffea222edbe7'>
+    <function-decl name='spdk_reactors_start' mangled-name='spdk_reactors_start' filepath='reactor.c' line='1098' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_reactors_start' hash='7f32ffea222edbe7'>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_reactors_stop' mangled-name='spdk_reactors_stop' filepath='reactor.c' line='1171' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_reactors_stop' hash='7f32ffea222edbe7'>
+    <function-decl name='spdk_reactors_stop' mangled-name='spdk_reactors_stop' filepath='reactor.c' line='1172' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_reactors_stop' hash='7f32ffea222edbe7'>
       <parameter type-id='eaa32e2f'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_for_each_reactor' mangled-name='spdk_for_each_reactor' filepath='reactor.c' line='1419' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_for_each_reactor' hash='e7946129631a25a2'>
-      <parameter type-id='10517ed6' name='fn' filepath='reactor.c' line='1419' column='1'/>
-      <parameter type-id='eaa32e2f' name='arg1' filepath='reactor.c' line='1419' column='1'/>
-      <parameter type-id='eaa32e2f' name='arg2' filepath='reactor.c' line='1419' column='1'/>
-      <parameter type-id='10517ed6' name='cpl' filepath='reactor.c' line='1419' column='1'/>
+    <function-decl name='spdk_for_each_reactor' mangled-name='spdk_for_each_reactor' filepath='reactor.c' line='1430' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_for_each_reactor' hash='e7946129631a25a2'>
+      <parameter type-id='10517ed6' name='fn' filepath='reactor.c' line='1430' column='1'/>
+      <parameter type-id='eaa32e2f' name='arg1' filepath='reactor.c' line='1430' column='1'/>
+      <parameter type-id='eaa32e2f' name='arg2' filepath='reactor.c' line='1430' column='1'/>
+      <parameter type-id='10517ed6' name='cpl' filepath='reactor.c' line='1430' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_governor_set' mangled-name='spdk_governor_set' filepath='reactor.c' line='1568' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_governor_set' hash='e9ea91a7eab8302c'>
-      <parameter type-id='80f4b756' name='name' filepath='reactor.c' line='1568' column='1'/>
+    <function-decl name='spdk_governor_set' mangled-name='spdk_governor_set' filepath='reactor.c' line='1579' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_governor_set' hash='e9ea91a7eab8302c'>
+      <parameter type-id='80f4b756' name='name' filepath='reactor.c' line='1579' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_governor_get' mangled-name='spdk_governor_get' filepath='reactor.c' line='1603' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_governor_get' hash='3e6c4606b0180498'>
+    <function-decl name='spdk_governor_get' mangled-name='spdk_governor_get' filepath='reactor.c' line='1614' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_governor_get' hash='3e6c4606b0180498'>
       <return type-id='c8ac65e0'/>
     </function-decl>
-    <function-decl name='spdk_governor_register' mangled-name='spdk_governor_register' filepath='reactor.c' line='1609' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_governor_register' hash='3e6c4606b0180498'>
-      <parameter type-id='c8ac65e0' name='governor' filepath='reactor.c' line='1609' column='1'/>
+    <function-decl name='spdk_governor_register' mangled-name='spdk_governor_register' filepath='reactor.c' line='1620' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_governor_register' hash='3e6c4606b0180498'>
+      <parameter type-id='c8ac65e0' name='governor' filepath='reactor.c' line='1620' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
     <function-type size-in-bits='64' hash='526d675145c2bfa7' id='62443e49'>

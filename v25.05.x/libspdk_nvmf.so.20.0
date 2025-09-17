@@ -4767,79 +4767,79 @@
       <parameter type-id='c894953d' name='commit' filepath='ctrlr.c' line='4497' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_request_free' mangled-name='spdk_nvmf_request_free' filepath='ctrlr.c' line='4664' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_request_free' hash='e53de630653f1118'>
+    <function-decl name='spdk_nvmf_request_free' mangled-name='spdk_nvmf_request_free' filepath='ctrlr.c' line='4666' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_request_free' hash='e53de630653f1118'>
       <parameter type-id='5f953c61'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_request_complete' mangled-name='spdk_nvmf_request_complete' filepath='ctrlr.c' line='4797' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_request_complete' hash='e53de630653f1118'>
+    <function-decl name='spdk_nvmf_request_complete' mangled-name='spdk_nvmf_request_complete' filepath='ctrlr.c' line='4808' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_request_complete' hash='e53de630653f1118'>
       <parameter type-id='5f953c61'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_request_exec' mangled-name='spdk_nvmf_request_exec' filepath='ctrlr.c' line='4930' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_request_exec' hash='ee79c4f043eb2cbb'>
+    <function-decl name='spdk_nvmf_request_exec' mangled-name='spdk_nvmf_request_exec' filepath='ctrlr.c' line='4941' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_request_exec' hash='ee79c4f043eb2cbb'>
       <parameter type-id='5f953c61'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_request_get_dif_ctx' mangled-name='spdk_nvmf_request_get_dif_ctx' filepath='ctrlr.c' line='4993' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_request_get_dif_ctx' hash='3be45a087052d441'>
-      <parameter type-id='5f953c61' name='req' filepath='ctrlr.c' line='4993' column='1'/>
-      <parameter type-id='a3141401' name='dif_ctx' filepath='ctrlr.c' line='4993' column='1'/>
+    <function-decl name='spdk_nvmf_request_get_dif_ctx' mangled-name='spdk_nvmf_request_get_dif_ctx' filepath='ctrlr.c' line='5004' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_request_get_dif_ctx' hash='3be45a087052d441'>
+      <parameter type-id='5f953c61' name='req' filepath='ctrlr.c' line='5004' column='1'/>
+      <parameter type-id='a3141401' name='dif_ctx' filepath='ctrlr.c' line='5004' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_set_custom_admin_cmd_hdlr' mangled-name='spdk_nvmf_set_custom_admin_cmd_hdlr' filepath='ctrlr.c' line='5018' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_set_custom_admin_cmd_hdlr' hash='c5a0e6261fbc2b55'>
-      <parameter type-id='b96825af' name='opc' filepath='ctrlr.c' line='5018' column='1'/>
-      <parameter type-id='04b256a8' name='hdlr' filepath='ctrlr.c' line='5018' column='1'/>
+    <function-decl name='spdk_nvmf_set_custom_admin_cmd_hdlr' mangled-name='spdk_nvmf_set_custom_admin_cmd_hdlr' filepath='ctrlr.c' line='5029' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_set_custom_admin_cmd_hdlr' hash='c5a0e6261fbc2b55'>
+      <parameter type-id='b96825af' name='opc' filepath='ctrlr.c' line='5029' column='1'/>
+      <parameter type-id='04b256a8' name='hdlr' filepath='ctrlr.c' line='5029' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_set_passthru_admin_cmd' mangled-name='spdk_nvmf_set_passthru_admin_cmd' filepath='ctrlr.c' line='5084' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_set_passthru_admin_cmd' hash='ee384b01051e7279'>
-      <parameter type-id='b96825af' name='opc' filepath='ctrlr.c' line='5084' column='1'/>
-      <parameter type-id='8f92235e' name='forward_nsid' filepath='ctrlr.c' line='5084' column='1'/>
+    <function-decl name='spdk_nvmf_set_passthru_admin_cmd' mangled-name='spdk_nvmf_set_passthru_admin_cmd' filepath='ctrlr.c' line='5095' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_set_passthru_admin_cmd' hash='ee384b01051e7279'>
+      <parameter type-id='b96825af' name='opc' filepath='ctrlr.c' line='5095' column='1'/>
+      <parameter type-id='8f92235e' name='forward_nsid' filepath='ctrlr.c' line='5095' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_request_get_bdev' mangled-name='spdk_nvmf_request_get_bdev' filepath='ctrlr.c' line='5091' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_request_get_bdev' hash='6512c7d8bf7eb1df'>
-      <parameter type-id='8f92235e' name='nsid' filepath='ctrlr.c' line='5091' column='1'/>
-      <parameter type-id='5f953c61' name='req' filepath='ctrlr.c' line='5091' column='1'/>
-      <parameter type-id='7cbf4535' name='bdev' filepath='ctrlr.c' line='5092' column='1'/>
-      <parameter type-id='3ecde4cf' name='desc' filepath='ctrlr.c' line='5092' column='1'/>
-      <parameter type-id='a1c658d4' name='ch' filepath='ctrlr.c' line='5092' column='1'/>
+    <function-decl name='spdk_nvmf_request_get_bdev' mangled-name='spdk_nvmf_request_get_bdev' filepath='ctrlr.c' line='5102' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_request_get_bdev' hash='6512c7d8bf7eb1df'>
+      <parameter type-id='8f92235e' name='nsid' filepath='ctrlr.c' line='5102' column='1'/>
+      <parameter type-id='5f953c61' name='req' filepath='ctrlr.c' line='5102' column='1'/>
+      <parameter type-id='7cbf4535' name='bdev' filepath='ctrlr.c' line='5103' column='1'/>
+      <parameter type-id='3ecde4cf' name='desc' filepath='ctrlr.c' line='5103' column='1'/>
+      <parameter type-id='a1c658d4' name='ch' filepath='ctrlr.c' line='5103' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_request_get_ctrlr' mangled-name='spdk_nvmf_request_get_ctrlr' filepath='ctrlr.c' line='5117' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_request_get_ctrlr' hash='ee79c4f043eb2cbb'>
-      <parameter type-id='5f953c61' name='req' filepath='ctrlr.c' line='5117' column='1'/>
+    <function-decl name='spdk_nvmf_request_get_ctrlr' mangled-name='spdk_nvmf_request_get_ctrlr' filepath='ctrlr.c' line='5128' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_request_get_ctrlr' hash='ee79c4f043eb2cbb'>
+      <parameter type-id='5f953c61' name='req' filepath='ctrlr.c' line='5128' column='1'/>
       <return type-id='ba88e9a1'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_request_get_cmd' mangled-name='spdk_nvmf_request_get_cmd' filepath='ctrlr.c' line='5122' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_request_get_cmd' hash='82834359670903ba'>
-      <parameter type-id='5f953c61' name='req' filepath='ctrlr.c' line='5122' column='1'/>
+    <function-decl name='spdk_nvmf_request_get_cmd' mangled-name='spdk_nvmf_request_get_cmd' filepath='ctrlr.c' line='5133' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_request_get_cmd' hash='82834359670903ba'>
+      <parameter type-id='5f953c61' name='req' filepath='ctrlr.c' line='5133' column='1'/>
       <return type-id='538b928d'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_request_get_response' mangled-name='spdk_nvmf_request_get_response' filepath='ctrlr.c' line='5127' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_request_get_response' hash='88b331b7cb79370a'>
-      <parameter type-id='5f953c61' name='req' filepath='ctrlr.c' line='5127' column='1'/>
+    <function-decl name='spdk_nvmf_request_get_response' mangled-name='spdk_nvmf_request_get_response' filepath='ctrlr.c' line='5138' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_request_get_response' hash='88b331b7cb79370a'>
+      <parameter type-id='5f953c61' name='req' filepath='ctrlr.c' line='5138' column='1'/>
       <return type-id='25e0c706'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_request_get_subsystem' mangled-name='spdk_nvmf_request_get_subsystem' filepath='ctrlr.c' line='5132' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_request_get_subsystem' hash='ee79c4f043eb2cbb'>
-      <parameter type-id='5f953c61' name='req' filepath='ctrlr.c' line='5132' column='1'/>
+    <function-decl name='spdk_nvmf_request_get_subsystem' mangled-name='spdk_nvmf_request_get_subsystem' filepath='ctrlr.c' line='5143' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_request_get_subsystem' hash='ee79c4f043eb2cbb'>
+      <parameter type-id='5f953c61' name='req' filepath='ctrlr.c' line='5143' column='1'/>
       <return type-id='777df243'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_request_copy_from_buf' mangled-name='spdk_nvmf_request_copy_from_buf' filepath='ctrlr.c' line='5138' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_request_copy_from_buf' hash='b710699d8fdd4e30'>
-      <parameter type-id='5f953c61' name='req' filepath='ctrlr.c' line='5148' column='1'/>
-      <parameter type-id='eaa32e2f' name='buf' filepath='ctrlr.c' line='5149' column='1'/>
-      <parameter type-id='b59d7dce' name='buflen' filepath='ctrlr.c' line='5149' column='1'/>
+    <function-decl name='spdk_nvmf_request_copy_from_buf' mangled-name='spdk_nvmf_request_copy_from_buf' filepath='ctrlr.c' line='5149' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_request_copy_from_buf' hash='b710699d8fdd4e30'>
+      <parameter type-id='5f953c61' name='req' filepath='ctrlr.c' line='5159' column='1'/>
+      <parameter type-id='eaa32e2f' name='buf' filepath='ctrlr.c' line='5160' column='1'/>
+      <parameter type-id='b59d7dce' name='buflen' filepath='ctrlr.c' line='5160' column='1'/>
       <return type-id='b59d7dce'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_request_copy_to_buf' mangled-name='spdk_nvmf_request_copy_to_buf' filepath='ctrlr.c' line='5148' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_request_copy_to_buf' hash='b710699d8fdd4e30'>
-      <parameter type-id='5f953c61' name='req' filepath='ctrlr.c' line='5148' column='1'/>
-      <parameter type-id='eaa32e2f' name='buf' filepath='ctrlr.c' line='5149' column='1'/>
-      <parameter type-id='b59d7dce' name='buflen' filepath='ctrlr.c' line='5149' column='1'/>
+    <function-decl name='spdk_nvmf_request_copy_to_buf' mangled-name='spdk_nvmf_request_copy_to_buf' filepath='ctrlr.c' line='5159' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_request_copy_to_buf' hash='b710699d8fdd4e30'>
+      <parameter type-id='5f953c61' name='req' filepath='ctrlr.c' line='5159' column='1'/>
+      <parameter type-id='eaa32e2f' name='buf' filepath='ctrlr.c' line='5160' column='1'/>
+      <parameter type-id='b59d7dce' name='buflen' filepath='ctrlr.c' line='5160' column='1'/>
       <return type-id='b59d7dce'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_ctrlr_get_subsystem' mangled-name='spdk_nvmf_ctrlr_get_subsystem' filepath='ctrlr.c' line='5157' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_ctrlr_get_subsystem' hash='7f32ffea222edbe7'>
-      <parameter type-id='ba88e9a1' name='ctrlr' filepath='ctrlr.c' line='5157' column='1'/>
+    <function-decl name='spdk_nvmf_ctrlr_get_subsystem' mangled-name='spdk_nvmf_ctrlr_get_subsystem' filepath='ctrlr.c' line='5168' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_ctrlr_get_subsystem' hash='7f32ffea222edbe7'>
+      <parameter type-id='ba88e9a1' name='ctrlr' filepath='ctrlr.c' line='5168' column='1'/>
       <return type-id='777df243'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_ctrlr_get_id' mangled-name='spdk_nvmf_ctrlr_get_id' filepath='ctrlr.c' line='5163' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_ctrlr_get_id' hash='a123d258525fc45e'>
-      <parameter type-id='ba88e9a1' name='ctrlr' filepath='ctrlr.c' line='5163' column='1'/>
+    <function-decl name='spdk_nvmf_ctrlr_get_id' mangled-name='spdk_nvmf_ctrlr_get_id' filepath='ctrlr.c' line='5174' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_ctrlr_get_id' hash='a123d258525fc45e'>
+      <parameter type-id='ba88e9a1' name='ctrlr' filepath='ctrlr.c' line='5174' column='1'/>
       <return type-id='149c6638'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_request_get_req_to_abort' mangled-name='spdk_nvmf_request_get_req_to_abort' filepath='ctrlr.c' line='5168' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_request_get_req_to_abort' hash='f73a08db171bfdad'>
-      <parameter type-id='5f953c61' name='req' filepath='ctrlr.c' line='5168' column='1'/>
+    <function-decl name='spdk_nvmf_request_get_req_to_abort' mangled-name='spdk_nvmf_request_get_req_to_abort' filepath='ctrlr.c' line='5179' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_request_get_req_to_abort' hash='f73a08db171bfdad'>
+      <parameter type-id='5f953c61' name='req' filepath='ctrlr.c' line='5179' column='1'/>
       <return type-id='5f953c61'/>
     </function-decl>
     <class-decl name='spdk_nvmf_tgt' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='nvmf_internal.h' line='56' column='1' id='d37dc7a7'/>
@@ -6128,8 +6128,8 @@
     <pointer-type-def type-id='eb9f9168' size-in-bits='64' id='e2b914ce'/>
     <class-decl name='_compat_ibv_port_attr' is-struct='yes' visibility='default' is-declaration-only='yes' id='eb9f9168'/>
     <var-decl name='g_trace_file' type-id='ddda0722' visibility='default' filepath='trace.h' line='149' column='1' elf-symbol-id='g_trace_file'/>
-    <function-decl name='spdk_nvmf_rdma_init_hooks' mangled-name='spdk_nvmf_rdma_init_hooks' filepath='rdma.c' line='5019' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_rdma_init_hooks' hash='35fc4d71f626f1e5'>
-      <parameter type-id='bbb9af9a' name='hooks' filepath='rdma.c' line='5019' column='1'/>
+    <function-decl name='spdk_nvmf_rdma_init_hooks' mangled-name='spdk_nvmf_rdma_init_hooks' filepath='rdma.c' line='5033' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_rdma_init_hooks' hash='35fc4d71f626f1e5'>
+      <parameter type-id='bbb9af9a' name='hooks' filepath='rdma.c' line='5033' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
     <function-type size-in-bits='64' hash='e2de7284790ffb56' id='a45c24ce'>
