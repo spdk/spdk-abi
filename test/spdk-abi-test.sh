@@ -26,13 +26,7 @@ for branch in $(ls $rootdir | grep -Eo "${tag_pattern}\.x"); do
 			exit 1
 		fi
 	done
-	# We need need the --release option to run the check_so_deps test, which was only added in
-	# 2dc96f6e2 ("test/check_so_deps: add option to specify release").  It was added in the
-	# v24.09 release, so this check can be removed once we don't support anything older than
-	# that.
-	if git -C "$repodir" merge-base --is-ancestor 2dc96f6e2 HEAD; then
-		(cd "$repodir"; "$repodir/test/make/check_so_deps.sh" --spdk-abi-path="$rootdir" \
-			--release="$tag")
-	fi
+	(cd "$repodir"; "$repodir/test/make/check_so_deps.sh" --spdk-abi-path="$rootdir" \
+		--release="$tag")
 	echo "Veryfing $tag completed - success"
 done
