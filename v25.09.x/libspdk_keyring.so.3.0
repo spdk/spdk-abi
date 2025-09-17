@@ -1,0 +1,251 @@
+<abi-corpus version='2.4' soname='libspdk_keyring.so.3.0'>
+  <elf-needed>
+    <dependency name='libspdk_log.so.8.0'/>
+    <dependency name='libspdk_util.so.11.0'/>
+    <dependency name='libspdk_json.so.7.0'/>
+    <dependency name='libspdk_jsonrpc.so.7.0'/>
+    <dependency name='libspdk_rpc.so.8.0'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+  <elf-function-symbols>
+    <elf-symbol name='spdk_key_dup' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_key_get_ctx' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_key_get_key' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_key_get_module' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_key_get_name' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_keyring_add_key' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_keyring_cleanup' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_keyring_for_each_key' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_keyring_get_key' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_keyring_init' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_keyring_put_key' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_keyring_register_module' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_keyring_remove_key' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+    <elf-symbol name='spdk_keyring_write_config' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='yes'/>
+  </elf-function-symbols>
+  <undefined-elf-function-symbols>
+    <elf-symbol name='__assert_fail' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__cxa_finalize' type='func-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='calloc' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='free' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='pthread_mutex_init' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='pthread_mutex_lock' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='pthread_mutex_unlock' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='pthread_mutexattr_destroy' version='GLIBC_2.34' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='pthread_mutexattr_init' version='GLIBC_2.34' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='pthread_mutexattr_settype' version='GLIBC_2.34' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_array_begin' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_array_end' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_named_bool' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_named_int32' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_named_string' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_object_begin' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_object_end' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_jsonrpc_begin_result' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_jsonrpc_end_result' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_log' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_log_register_flag' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_rpc_register_method' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_strerror' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='strchr' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='strcmp' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='strdup' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+  </undefined-elf-function-symbols>
+  <undefined-elf-variable-symbols>
+    <elf-symbol name='_ITM_deregisterTMCloneTable' type='no-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='_ITM_registerTMCloneTable' type='no-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__gmon_start__' type='no-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+  </undefined-elf-variable-symbols>
+  <abi-instr address-size='64' path='keyring.c' language='LANG_C11'>
+    <type-decl name='char' size-in-bits='8' hash='65b2d157027b431a' id='a84c031d'/>
+    <type-decl name='int' size-in-bits='32' hash='09d17c08f594edc7' id='95e97e5e'/>
+    <class-decl name='spdk_key_opts' is-struct='yes' visibility='default' size-in-bits='256' filepath='keyring_module.h' line='19' column='1' hash='9aabb821a393351b' id='c38ad15e'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='size' type-id='b59d7dce' visibility='default' filepath='keyring_module.h' line='21' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='name' type-id='80f4b756' visibility='default' filepath='keyring_module.h' line='23' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='module' type-id='5d18184c' visibility='default' filepath='keyring_module.h' line='25' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='ctx' type-id='eaa32e2f' visibility='default' filepath='keyring_module.h' line='27' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_keyring_module' is-struct='yes' visibility='default' size-in-bits='768' filepath='keyring_module.h' line='49' column='1' hash='f0f0d705cb0744ce' id='d6593646'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='80f4b756' visibility='default' filepath='keyring_module.h' line='51' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='init' type-id='65e3965a' visibility='default' filepath='keyring_module.h' line='54' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='cleanup' type-id='c640490b' visibility='default' filepath='keyring_module.h' line='56' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='write_config' type-id='46bc0678' visibility='default' filepath='keyring_module.h' line='58' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='256'>
+        <var-decl name='probe_key' type-id='290c62d5' visibility='default' filepath='keyring_module.h' line='63' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='320'>
+        <var-decl name='add_key' type-id='bd0e0c5c' visibility='default' filepath='keyring_module.h' line='65' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='384'>
+        <var-decl name='remove_key' type-id='c66dcb21' visibility='default' filepath='keyring_module.h' line='67' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='448'>
+        <var-decl name='get_key' type-id='748001d9' visibility='default' filepath='keyring_module.h' line='69' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='512'>
+        <var-decl name='get_ctx_size' type-id='b9ed7d93' visibility='default' filepath='keyring_module.h' line='71' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='576'>
+        <var-decl name='dump_info' type-id='146295d8' visibility='default' filepath='keyring_module.h' line='76' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='640'>
+        <var-decl name='tailq' type-id='e7f43f72' visibility='default' filepath='keyring_module.h' line='78' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='keyring_module.h' line='78' column='1' hash='a6e9ee5256eccc7c' id='e7f43f72'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqe_next' type-id='5d18184c' visibility='default' filepath='keyring_module.h' line='78' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqe_prev' type-id='f2ee6892' visibility='default' filepath='keyring_module.h' line='78' column='1'/>
+      </data-member>
+    </class-decl>
+    <typedef-decl name='__uint32_t' type-id='f0981eeb' size-in-bits='32' filepath='types.h' line='42' column='1' hash='e66b43f97c38e87a' id='62f1140c'/>
+    <typedef-decl name='size_t' type-id='f0981eec' size-in-bits='64' filepath='stddef.h' line='214' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
+    <typedef-decl name='uint32_t' type-id='62f1140c' size-in-bits='32' filepath='stdint-uintn.h' line='26' column='1' hash='e66b43f97c38e87a' id='8f92235e'/>
+    <type-decl name='unsigned int' size-in-bits='32' hash='e66b43f97c38e87a' id='f0981eeb'/>
+    <type-decl name='unsigned long int' size-in-bits='64' hash='8fdc5eea2983a729#2' id='f0981eec'/>
+    <qualified-type-def type-id='a84c031d' const='yes' hash='3e50fd33f9bb78d9' id='9b45d938'/>
+    <pointer-type-def type-id='9b45d938' size-in-bits='64' hash='c44743f354f6a443' id='80f4b756'/>
+    <qualified-type-def type-id='c38ad15e' const='yes' hash='6f50a30a5cb34d0f' id='2c3bb9b5'/>
+    <pointer-type-def type-id='2c3bb9b5' size-in-bits='64' hash='f21145c0a9efb2d4' id='4105354d'/>
+    <pointer-type-def type-id='5113b296' size-in-bits='64' hash='fd7a63c0c6c822c4' id='290c62d5'/>
+    <pointer-type-def type-id='8f88f819' size-in-bits='64' hash='fd7a63c0c6c822c4' id='bd0e0c5c'/>
+    <pointer-type-def type-id='d94b591a' size-in-bits='64' hash='fd7a63c0c6c822c4' id='748001d9'/>
+    <pointer-type-def type-id='b39d85cf' size-in-bits='64' hash='fd7a63c0c6c822c4' id='65e3965a'/>
+    <pointer-type-def type-id='977df01c' size-in-bits='64' hash='fd7a63c0c6c822c4' id='b9ed7d93'/>
+    <pointer-type-def type-id='d6593646' size-in-bits='64' hash='77de6c9c67aee01b' id='5d18184c'/>
+    <pointer-type-def type-id='5d18184c' size-in-bits='64' hash='678abd9b8c4bfc96' id='f2ee6892'/>
+    <pointer-type-def type-id='9ed8cfeb' size-in-bits='64' hash='fd7a63c0c6c822c4' id='46bc0678'/>
+    <pointer-type-def type-id='9654e774' size-in-bits='64' hash='fd7a63c0c6c822c4' id='c66dcb21'/>
+    <pointer-type-def type-id='2fa02eb9' size-in-bits='64' hash='fd7a63c0c6c822c4' id='146295d8'/>
+    <pointer-type-def type-id='30a82da4' size-in-bits='64' hash='fd7a63c0c6c822c4' id='c640490b'/>
+    <pointer-type-def type-id='a520f706' size-in-bits='64' hash='fd7a63c0c6c822c4' id='91df11ad'/>
+    <pointer-type-def type-id='2ae61988' size-in-bits='64' id='b8e14bfe'/>
+    <pointer-type-def type-id='1bef703f' size-in-bits='64' id='f004afe7'/>
+    <pointer-type-def type-id='33ed5a01' size-in-bits='64' id='a3289589'/>
+    <class-decl name='spdk_json_write_ctx' is-struct='yes' visibility='default' is-declaration-only='yes' id='2ae61988'/>
+    <class-decl name='spdk_key' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='keyring.c' line='12' column='1' id='1bef703f'/>
+    <class-decl name='spdk_keyring' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='keyring.c' line='21' column='1' id='33ed5a01'/>
+    <function-decl name='spdk_keyring_add_key' mangled-name='spdk_keyring_add_key' filepath='keyring.c' line='90' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_keyring_add_key' hash='b0988684974dc2ae'>
+      <parameter type-id='4105354d' name='opts' filepath='keyring.c' line='90' column='1'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_keyring_remove_key' mangled-name='spdk_keyring_remove_key' filepath='keyring.c' line='154' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_keyring_remove_key' hash='78e0447aec66f785'>
+      <parameter type-id='80f4b756' name='name' filepath='keyring.c' line='154' column='1'/>
+      <parameter type-id='5d18184c' name='module' filepath='keyring.c' line='154' column='1'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_keyring_get_key' mangled-name='spdk_keyring_get_key' filepath='keyring.c' line='215' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_keyring_get_key' hash='53885bde0aa65efe'>
+      <parameter type-id='80f4b756' name='name' filepath='keyring.c' line='215' column='1'/>
+      <return type-id='f004afe7'/>
+    </function-decl>
+    <function-decl name='spdk_keyring_put_key' mangled-name='spdk_keyring_put_key' filepath='keyring.c' line='236' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_keyring_put_key' hash='7f32ffea222edbe7'>
+      <parameter type-id='f004afe7'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_key_dup' mangled-name='spdk_key_dup' filepath='keyring.c' line='253' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_key_dup' hash='7f32ffea222edbe7'>
+      <parameter type-id='f004afe7' name='key' filepath='keyring.c' line='253' column='1'/>
+      <return type-id='f004afe7'/>
+    </function-decl>
+    <function-decl name='spdk_key_get_name' mangled-name='spdk_key_get_name' filepath='keyring.c' line='263' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_key_get_name' hash='53885bde0aa65efe'>
+      <parameter type-id='f004afe7' name='key' filepath='keyring.c' line='263' column='1'/>
+      <return type-id='80f4b756'/>
+    </function-decl>
+    <function-decl name='spdk_key_get_key' mangled-name='spdk_key_get_key' filepath='keyring.c' line='269' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_key_get_key' hash='d628501fd2223339'>
+      <parameter type-id='f004afe7'/>
+      <parameter type-id='eaa32e2f'/>
+      <parameter type-id='95e97e5e'/>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_key_get_ctx' mangled-name='spdk_key_get_ctx' filepath='keyring.c' line='281' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_key_get_ctx' hash='7f32ffea222edbe7'>
+      <parameter type-id='f004afe7' name='key' filepath='keyring.c' line='281' column='1'/>
+      <return type-id='eaa32e2f'/>
+    </function-decl>
+    <function-decl name='spdk_key_get_module' mangled-name='spdk_key_get_module' filepath='keyring.c' line='288' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_key_get_module' hash='d1572245736e3441'>
+      <parameter type-id='f004afe7' name='key' filepath='keyring.c' line='288' column='1'/>
+      <return type-id='5d18184c'/>
+    </function-decl>
+    <function-decl name='spdk_keyring_write_config' mangled-name='spdk_keyring_write_config' filepath='keyring.c' line='294' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_keyring_write_config' hash='7f32ffea222edbe7'>
+      <parameter type-id='b8e14bfe'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_keyring_for_each_key' mangled-name='spdk_keyring_for_each_key' filepath='keyring.c' line='306' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_keyring_for_each_key' hash='078894c14acfc4d3'>
+      <parameter type-id='a3289589' name='keyring' filepath='keyring.c' line='306' column='1'/>
+      <parameter type-id='eaa32e2f' name='ctx' filepath='keyring.c' line='307' column='1'/>
+      <parameter type-id='91df11ad' name='fn' filepath='keyring.c' line='307' column='1'/>
+      <parameter type-id='8f92235e' name='flags' filepath='keyring.c' line='307' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_keyring_register_module' mangled-name='spdk_keyring_register_module' filepath='keyring.c' line='326' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_keyring_register_module' hash='d1572245736e3441'>
+      <parameter type-id='5d18184c' name='module' filepath='keyring.c' line='326' column='1'/>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <function-decl name='spdk_keyring_init' mangled-name='spdk_keyring_init' filepath='keyring.c' line='348' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_keyring_init' hash='388da3fa973fde78'>
+      <return type-id='95e97e5e'/>
+    </function-decl>
+    <function-decl name='spdk_keyring_cleanup' mangled-name='spdk_keyring_cleanup' filepath='keyring.c' line='410' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_keyring_cleanup' hash='7f32ffea222edbe7'>
+      <return type-id='48b5725f'/>
+    </function-decl>
+    <type-decl name='void' id='48b5725f'/>
+    <pointer-type-def type-id='48b5725f' id='eaa32e2f'/>
+    <function-type size-in-bits='64' hash='e9ea91a7eab8302c' id='5113b296'>
+      <parameter type-id='80f4b756'/>
+      <return type-id='95e97e5e'/>
+    </function-type>
+    <function-type size-in-bits='64' hash='388da3fa973fde78' id='8f88f819'>
+      <parameter type-id='f004afe7'/>
+      <parameter type-id='eaa32e2f'/>
+      <return type-id='95e97e5e'/>
+    </function-type>
+    <function-type size-in-bits='64' hash='d628501fd2223339' id='d94b591a'>
+      <parameter type-id='f004afe7'/>
+      <parameter type-id='eaa32e2f'/>
+      <parameter type-id='95e97e5e'/>
+      <return type-id='95e97e5e'/>
+    </function-type>
+    <function-type size-in-bits='64' hash='388da3fa973fde78' id='b39d85cf'>
+      <return type-id='95e97e5e'/>
+    </function-type>
+    <function-type size-in-bits='64' hash='e0055d99adb0e173' id='977df01c'>
+      <return type-id='b59d7dce'/>
+    </function-type>
+    <function-type size-in-bits='64' hash='7f32ffea222edbe7' id='9ed8cfeb'>
+      <parameter type-id='b8e14bfe'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+    <function-type size-in-bits='64' hash='7f32ffea222edbe7' id='9654e774'>
+      <parameter type-id='f004afe7'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+    <function-type size-in-bits='64' hash='7f32ffea222edbe7' id='2fa02eb9'>
+      <parameter type-id='f004afe7'/>
+      <parameter type-id='b8e14bfe'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+    <function-type size-in-bits='64' hash='7f32ffea222edbe7' id='30a82da4'>
+      <return type-id='48b5725f'/>
+    </function-type>
+    <function-type size-in-bits='64' hash='7f32ffea222edbe7' id='a520f706'>
+      <parameter type-id='eaa32e2f'/>
+      <parameter type-id='f004afe7'/>
+      <return type-id='48b5725f'/>
+    </function-type>
+  </abi-instr>
+</abi-corpus>

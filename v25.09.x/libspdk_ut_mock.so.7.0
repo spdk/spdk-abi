@@ -1,0 +1,212 @@
+<abi-corpus version='2.4' soname='libspdk_ut_mock.so.7.0'>
+  <elf-needed>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+  <undefined-elf-function-symbols>
+    <elf-symbol name='__cxa_finalize' version='GLIBC_2.2.5' is-default-version='yes' type='func-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='free' version='GLIBC_2.2.5' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='strcmp' version='GLIBC_2.2.5' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+  </undefined-elf-function-symbols>
+  <undefined-elf-variable-symbols>
+    <elf-symbol name='_ITM_deregisterTMCloneTable' type='no-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='_ITM_registerTMCloneTable' type='no-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__gmon_start__' type='no-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__real_calloc' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__real_pthread_mutex_init' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__real_pthread_mutexattr_init' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__real_recvmsg' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__real_sendmsg' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__real_writev' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+  </undefined-elf-variable-symbols>
+  <abi-instr address-size='64' path='mock.c' language='LANG_C11'>
+    <type-decl name='bool' size-in-bits='8' hash='5ba96bb22f4237fb' id='c894953d'/>
+    <type-decl name='char' size-in-bits='8' hash='65b2d157027b431a' id='a84c031d'/>
+    <type-decl name='int' size-in-bits='32' hash='09d17c08f594edc7' id='95e97e5e'/>
+    <type-decl name='long int' size-in-bits='64' hash='b119fe0931d2ee10#2' id='95e97e5f'/>
+    <class-decl name='ut_mqe_calloc' is-struct='yes' visibility='default' size-in-bits='192' filepath='mock.h' line='146' column='1' hash='be7650a9e055f46f' id='8730c7b5'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='val' type-id='eaa32e2f' visibility='default' filepath='mock.h' line='146' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='link' type-id='e7f43f72' visibility='default' filepath='mock.h' line='146' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='ut_mqe_pthread_mutex_init' is-struct='yes' visibility='default' size-in-bits='192' filepath='mock.h' line='148' column='1' hash='eb1d07f126ec3874' id='6cd39edc'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='val' type-id='95e97e5e' visibility='default' filepath='mock.h' line='148' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='link' type-id='e7f43f73' visibility='default' filepath='mock.h' line='148' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='ut_mqe_pthread_mutexattr_init' is-struct='yes' visibility='default' size-in-bits='192' filepath='mock.h' line='151' column='1' hash='6218cc20b5dfe92b' id='f0b6b5e9'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='val' type-id='95e97e5e' visibility='default' filepath='mock.h' line='151' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='link' type-id='e7f43f74' visibility='default' filepath='mock.h' line='151' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='ut_mqe_recvmsg' is-struct='yes' visibility='default' size-in-bits='192' filepath='mock.h' line='154' column='1' hash='b5e37e505cab871b' id='68cf04f8'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='val' type-id='79a0948f' visibility='default' filepath='mock.h' line='154' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='link' type-id='e7f43f75' visibility='default' filepath='mock.h' line='154' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='ut_mqe_sendmsg' is-struct='yes' visibility='default' size-in-bits='192' filepath='mock.h' line='156' column='1' hash='878588246ba72217' id='abfb0ad2'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='val' type-id='79a0948f' visibility='default' filepath='mock.h' line='156' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='link' type-id='e7f43f76' visibility='default' filepath='mock.h' line='156' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='ut_mqe_writev' is-struct='yes' visibility='default' size-in-bits='192' filepath='mock.h' line='158' column='1' hash='8a168e1a62141b19' id='fa994560'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='val' type-id='79a0948f' visibility='default' filepath='mock.h' line='158' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='link' type-id='e7f43f77' visibility='default' filepath='mock.h' line='158' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='ut_mqh_calloc' is-struct='yes' visibility='default' size-in-bits='128' filepath='mock.h' line='146' column='1' hash='3ad25e2371e67f5d' id='1b7abefc'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqh_first' type-id='47574c75' visibility='default' filepath='mock.h' line='146' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqh_last' type-id='ad6d398d' visibility='default' filepath='mock.h' line='146' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='ut_mqh_pthread_mutex_init' is-struct='yes' visibility='default' size-in-bits='128' filepath='mock.h' line='148' column='1' hash='b2404c215f5cfe1e' id='7ffaf2e5'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqh_first' type-id='d1301e9a' visibility='default' filepath='mock.h' line='148' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqh_last' type-id='fec04f10' visibility='default' filepath='mock.h' line='148' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='ut_mqh_pthread_mutexattr_init' is-struct='yes' visibility='default' size-in-bits='128' filepath='mock.h' line='151' column='1' hash='51b9085e31ebfe9c' id='0d7ddfb4'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqh_first' type-id='f9913cd1' visibility='default' filepath='mock.h' line='151' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqh_last' type-id='daa2ff21' visibility='default' filepath='mock.h' line='151' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='ut_mqh_recvmsg' is-struct='yes' visibility='default' size-in-bits='128' filepath='mock.h' line='154' column='1' hash='95dc322718dff669' id='6cf032e7'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqh_first' type-id='d511658e' visibility='default' filepath='mock.h' line='154' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqh_last' type-id='0e63012c' visibility='default' filepath='mock.h' line='154' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='ut_mqh_sendmsg' is-struct='yes' visibility='default' size-in-bits='128' filepath='mock.h' line='156' column='1' hash='351b892484f5f96e' id='27b5b1bd'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqh_first' type-id='d7ecc0f0' visibility='default' filepath='mock.h' line='156' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqh_last' type-id='c3b3972e' visibility='default' filepath='mock.h' line='156' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='ut_mqh_writev' is-struct='yes' visibility='default' size-in-bits='128' filepath='mock.h' line='158' column='1' hash='fcf605fa98db3620' id='767203dd'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqh_first' type-id='bbc77b46' visibility='default' filepath='mock.h' line='158' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqh_last' type-id='07074b04' visibility='default' filepath='mock.h' line='158' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='mock.h' line='146' column='1' hash='afd9dcabed3b92b2' id='e7f43f72'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqe_next' type-id='47574c75' visibility='default' filepath='mock.h' line='146' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqe_prev' type-id='ad6d398d' visibility='default' filepath='mock.h' line='146' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__1' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='mock.h' line='148' column='1' hash='bf79b8db9f2a09a0#2' id='e7f43f73'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqe_next' type-id='d1301e9a' visibility='default' filepath='mock.h' line='148' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqe_prev' type-id='fec04f10' visibility='default' filepath='mock.h' line='148' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__2' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='mock.h' line='151' column='1' hash='1135bd22bd3c95e5#3' id='e7f43f74'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqe_next' type-id='f9913cd1' visibility='default' filepath='mock.h' line='151' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqe_prev' type-id='daa2ff21' visibility='default' filepath='mock.h' line='151' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__3' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='mock.h' line='154' column='1' hash='487a3cdba889ee8b#4' id='e7f43f75'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqe_next' type-id='d511658e' visibility='default' filepath='mock.h' line='154' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqe_prev' type-id='0e63012c' visibility='default' filepath='mock.h' line='154' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__4' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='mock.h' line='156' column='1' hash='1286c068d41c988f#5' id='e7f43f76'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqe_next' type-id='d7ecc0f0' visibility='default' filepath='mock.h' line='156' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqe_prev' type-id='c3b3972e' visibility='default' filepath='mock.h' line='156' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__5' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='mock.h' line='158' column='1' hash='1b48c70b7fb0d3ff#6' id='e7f43f77'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='tqe_next' type-id='bbc77b46' visibility='default' filepath='mock.h' line='158' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tqe_prev' type-id='07074b04' visibility='default' filepath='mock.h' line='158' column='1'/>
+      </data-member>
+    </class-decl>
+    <typedef-decl name='__ssize_t' type-id='95e97e5f' size-in-bits='64' filepath='types.h' line='194' column='1' hash='b119fe0931d2ee10' id='41060289'/>
+    <typedef-decl name='ssize_t' type-id='41060289' size-in-bits='64' filepath='stdio.h' line='78' column='1' hash='b119fe0931d2ee10' id='79a0948f'/>
+    <pointer-type-def type-id='a84c031d' size-in-bits='64' hash='e533f42d1dd4942c' id='26a90f95'/>
+    <pointer-type-def type-id='8730c7b5' size-in-bits='64' hash='cfd5e93c7f87487a' id='47574c75'/>
+    <pointer-type-def type-id='47574c75' size-in-bits='64' hash='2c37b5d52cb4454d' id='ad6d398d'/>
+    <pointer-type-def type-id='6cd39edc' size-in-bits='64' hash='cd1e7d6babca572c' id='d1301e9a'/>
+    <pointer-type-def type-id='d1301e9a' size-in-bits='64' hash='a203f0e7f09fbcf6' id='fec04f10'/>
+    <pointer-type-def type-id='f0b6b5e9' size-in-bits='64' hash='1d5d2a4d8dc06a42' id='f9913cd1'/>
+    <pointer-type-def type-id='f9913cd1' size-in-bits='64' hash='42df96c083c592d3' id='daa2ff21'/>
+    <pointer-type-def type-id='68cf04f8' size-in-bits='64' hash='70672d17ef0ce50b' id='d511658e'/>
+    <pointer-type-def type-id='d511658e' size-in-bits='64' hash='77e2b0cfcfda7aa4' id='0e63012c'/>
+    <pointer-type-def type-id='abfb0ad2' size-in-bits='64' hash='a691f2d1e8a9e4d7' id='d7ecc0f0'/>
+    <pointer-type-def type-id='d7ecc0f0' size-in-bits='64' hash='b6cd5a2fdecdfabc' id='c3b3972e'/>
+    <pointer-type-def type-id='fa994560' size-in-bits='64' hash='5729031853594dc8' id='bbc77b46'/>
+    <pointer-type-def type-id='bbc77b46' size-in-bits='64' hash='84dc19e1fe2eaec9' id='07074b04'/>
+    <pointer-type-def type-id='30a82da4' size-in-bits='64' hash='fd7a63c0c6c822c4' id='c640490b'/>
+    <var-decl name='ut_calloc_mocked' type-id='c894953d' visibility='default' filepath='mock.h' line='146' column='1'/>
+    <var-decl name='ut_mqh_calloc' type-id='1b7abefc' visibility='default' filepath='mock.h' line='146' column='1'/>
+    <var-decl name='ut_pthread_mutex_init_mocked' type-id='c894953d' visibility='default' filepath='mock.h' line='148' column='1'/>
+    <var-decl name='ut_pthread_mutex_init' type-id='95e97e5e' visibility='default' filepath='mock.h' line='148' column='1'/>
+    <var-decl name='ut_mqh_pthread_mutex_init' type-id='7ffaf2e5' visibility='default' filepath='mock.h' line='148' column='1'/>
+    <var-decl name='ut_pthread_mutexattr_init_mocked' type-id='c894953d' visibility='default' filepath='mock.h' line='151' column='1'/>
+    <var-decl name='ut_pthread_mutexattr_init' type-id='95e97e5e' visibility='default' filepath='mock.h' line='151' column='1'/>
+    <var-decl name='ut_mqh_pthread_mutexattr_init' type-id='0d7ddfb4' visibility='default' filepath='mock.h' line='151' column='1'/>
+    <var-decl name='ut_recvmsg_mocked' type-id='c894953d' visibility='default' filepath='mock.h' line='154' column='1'/>
+    <var-decl name='ut_recvmsg' type-id='79a0948f' visibility='default' filepath='mock.h' line='154' column='1'/>
+    <var-decl name='ut_mqh_recvmsg' type-id='6cf032e7' visibility='default' filepath='mock.h' line='154' column='1'/>
+    <var-decl name='ut_sendmsg_mocked' type-id='c894953d' visibility='default' filepath='mock.h' line='156' column='1'/>
+    <var-decl name='ut_sendmsg' type-id='79a0948f' visibility='default' filepath='mock.h' line='156' column='1'/>
+    <var-decl name='ut_mqh_sendmsg' type-id='27b5b1bd' visibility='default' filepath='mock.h' line='156' column='1'/>
+    <var-decl name='ut_writev_mocked' type-id='c894953d' visibility='default' filepath='mock.h' line='158' column='1'/>
+    <var-decl name='ut_writev' type-id='79a0948f' visibility='default' filepath='mock.h' line='158' column='1'/>
+    <var-decl name='ut_mqh_writev' type-id='767203dd' visibility='default' filepath='mock.h' line='158' column='1'/>
+    <var-decl name='g_unlink_path' type-id='26a90f95' visibility='default' filepath='mock.h' line='161' column='1'/>
+    <type-decl name='void' id='48b5725f'/>
+    <var-decl name='g_unlink_callback' type-id='c640490b' visibility='default' filepath='mock.h' line='162' column='1'/>
+    <pointer-type-def type-id='48b5725f' id='eaa32e2f'/>
+    <var-decl name='ut_calloc' type-id='eaa32e2f' visibility='default' filepath='mock.h' line='146' column='1'/>
+    <function-type size-in-bits='64' hash='7f32ffea222edbe7' id='30a82da4'>
+      <return type-id='48b5725f'/>
+    </function-type>
+  </abi-instr>
+</abi-corpus>

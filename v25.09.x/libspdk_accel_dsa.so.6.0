@@ -1,0 +1,238 @@
+<abi-corpus version='2.4' soname='libspdk_accel_dsa.so.6.0'>
+  <elf-needed>
+    <dependency name='libspdk_log.so.8.0'/>
+    <dependency name='libspdk_util.so.11.0'/>
+    <dependency name='libspdk_idxd.so.13.0'/>
+    <dependency name='libspdk_thread.so.12.0'/>
+    <dependency name='libspdk_json.so.7.0'/>
+    <dependency name='libspdk_jsonrpc.so.7.0'/>
+    <dependency name='libspdk_rpc.so.8.0'/>
+    <dependency name='libspdk_accel.so.17.0'/>
+    <dependency name='libspdk_trace.so.12.0'/>
+    <dependency name='libc.so.6'/>
+  </elf-needed>
+  <undefined-elf-function-symbols>
+    <elf-symbol name='__assert_fail' version='GLIBC_2.2.5' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__cxa_finalize' version='GLIBC_2.2.5' is-default-version='yes' type='func-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='_spdk_trace_record' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='calloc' version='GLIBC_2.2.5' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='free' version='GLIBC_2.2.5' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='memcmp' version='GLIBC_2.2.5' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='pthread_mutex_lock' version='GLIBC_2.2.5' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='pthread_mutex_unlock' version='GLIBC_2.2.5' is-default-version='yes' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_accel_module_finish' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_accel_module_list_add' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_accel_task_complete' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_dif_verify' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_dif_verify_copy' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_dix_verify' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_get_io_channel' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_get_thread' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_idxd_detach' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_idxd_get_channel' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_idxd_get_socket' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_idxd_probe' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_idxd_process_events' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_idxd_put_channel' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_idxd_set_config' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_idxd_submit_compare' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_idxd_submit_copy' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_idxd_submit_copy_crc32c' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_idxd_submit_crc32c' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_idxd_submit_dif_check' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_idxd_submit_dif_insert' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_idxd_submit_dif_strip' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_idxd_submit_dix_generate' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_idxd_submit_dualcast' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_idxd_submit_fill' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_io_channel_from_ctx' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_io_device_register' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_io_device_unregister' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_iobuf_channel_fini' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_iobuf_channel_init' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_iobuf_get' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_iobuf_put' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_iobuf_register_module' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_decode_bool' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_decode_object' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_named_bool' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_named_object_begin' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_named_string' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_object_begin' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_json_write_object_end' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_jsonrpc_send_bool_response' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_jsonrpc_send_error_response' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_log' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_log_register_flag' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_poller_register_named' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_poller_unregister' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_rpc_register_alias_deprecated' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_rpc_register_method' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_strerror' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_thread_send_msg' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_trace_add_register_fn' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_trace_register_description' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+  </undefined-elf-function-symbols>
+  <undefined-elf-variable-symbols>
+    <elf-symbol name='_ITM_deregisterTMCloneTable' type='no-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='_ITM_registerTMCloneTable' type='no-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='__gmon_start__' type='no-type' binding='weak-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='g_trace_file' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_env_get_current_core' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_env_get_numa_id' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_iommu_is_enabled' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+  </undefined-elf-variable-symbols>
+  <abi-instr address-size='64' path='accel_dsa.c' language='LANG_C11'>
+    <type-decl name='char' size-in-bits='8' hash='65b2d157027b431a' id='a84c031d'/>
+    <array-type-def dimensions='2' type-id='a84c031d' size-in-bits='131072' hash='3c5916f897c0fccc' id='2afe1b7d'>
+      <subrange length='1024' lower-bound='0' upper-bound='1023' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='3d55c71eae25bbb8' id='c60446f8'/>
+      <subrange length='16' lower-bound='0' upper-bound='15' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='6c35b1e999eba398' id='848d0938'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='112' hash='32c03ac42667596f' id='f01a039e'>
+      <subrange length='14' lower-bound='0' upper-bound='13' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='73cf96c2d1f03103' id='48882d96'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='192' hash='fff287cef34a1a32' id='6653bb13'>
+      <subrange length='24' lower-bound='0' upper-bound='23' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='e7b8d3aa178b54e4' id='fdd3342b'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='e60ad0bd' size-in-bits='1024' hash='60ed9848ccb7031f' id='b82d72d1'>
+      <subrange length='8' lower-bound='0' upper-bound='7' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='6e87a8ff484907ad' id='56e0c0b1'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='0bd4cb79' size-in-bits='4096' hash='0f079d7129c3e1e4' id='9fd81fb6'>
+      <subrange length='256' lower-bound='0' upper-bound='255' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='5cb16198282e86c6' id='36e5b9fa'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='9de25536' size-in-bits='4096' hash='1ca77a0af0acdbdb' id='42417227'>
+      <subrange length='256' lower-bound='0' upper-bound='255' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='5cb16198282e86c6' id='36e5b9fa'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='40439314' size-in-bits='1945600' hash='7c0b354302af8747' id='4ee141dd'>
+      <subrange length='1280' lower-bound='0' upper-bound='1279' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='7da7205683a200f5' id='33dc94fc'/>
+    </array-type-def>
+    <class-decl name='spdk_trace_argument' is-struct='yes' visibility='default' size-in-bits='128' filepath='trace.h' line='76' column='1' hash='80b9ee8812159e6b' id='e60ad0bd'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='f01a039e' visibility='default' filepath='trace.h' line='77' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='112'>
+        <var-decl name='type' type-id='b96825af' visibility='default' filepath='trace.h' line='78' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='120'>
+        <var-decl name='size' type-id='b96825af' visibility='default' filepath='trace.h' line='79' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_trace_file' is-struct='yes' visibility='default' size-in-bits='2151936' filepath='trace.h' line='125' column='1' hash='8233947ec35f6520' id='a6dc9de4'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='file_size' type-id='9c313c2d' visibility='default' filepath='trace.h' line='126' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='tsc_rate' type-id='9c313c2d' visibility='default' filepath='trace.h' line='127' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='tpoint_mask' type-id='38ce06c2' visibility='default' filepath='trace.h' line='128' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1408'>
+        <var-decl name='tname' type-id='2afe1b7d' visibility='default' filepath='trace.h' line='129' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='132480'>
+        <var-decl name='owner_type' type-id='42417227' visibility='default' filepath='trace.h' line='130' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='136576'>
+        <var-decl name='object' type-id='9fd81fb6' visibility='default' filepath='trace.h' line='131' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='140672'>
+        <var-decl name='tpoint' type-id='4ee141dd' visibility='default' filepath='trace.h' line='132' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2086272'>
+        <var-decl name='num_owners' type-id='149c6638' visibility='default' filepath='trace.h' line='134' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2086288'>
+        <var-decl name='owner_description_size' type-id='149c6638' visibility='default' filepath='trace.h' line='135' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2086304'>
+        <var-decl name='reserved' type-id='d351502e' visibility='default' filepath='trace.h' line='136' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2086336'>
+        <var-decl name='lcore_history_offsets' type-id='4dee7a71' visibility='default' filepath='trace.h' line='139' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2151872'>
+        <var-decl name='owner_offset' type-id='9c313c2d' visibility='default' filepath='trace.h' line='142' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='2151936'>
+        <var-decl name='data' type-id='048fe7bc' visibility='default' filepath='trace.h' line='147' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_trace_object' is-struct='yes' visibility='default' size-in-bits='16' filepath='trace.h' line='59' column='1' hash='4cb7e9f800eb3922' id='0bd4cb79'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='type' type-id='b96825af' visibility='default' filepath='trace.h' line='60' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='8'>
+        <var-decl name='id_prefix' type-id='a84c031d' visibility='default' filepath='trace.h' line='61' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_trace_owner_type' is-struct='yes' visibility='default' size-in-bits='16' filepath='trace.h' line='45' column='1' hash='3a844a43fe71e62c' id='9de25536'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='type' type-id='b96825af' visibility='default' filepath='trace.h' line='46' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='8'>
+        <var-decl name='id_prefix' type-id='a84c031d' visibility='default' filepath='trace.h' line='47' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='spdk_trace_tpoint' is-struct='yes' visibility='default' size-in-bits='1520' filepath='trace.h' line='82' column='1' hash='6811ef216b2d907d' id='40439314'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='name' type-id='6653bb13' visibility='default' filepath='trace.h' line='83' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='tpoint_id' type-id='149c6638' visibility='default' filepath='trace.h' line='84' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='208'>
+        <var-decl name='owner_type' type-id='b96825af' visibility='default' filepath='trace.h' line='85' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='216'>
+        <var-decl name='object_type' type-id='b96825af' visibility='default' filepath='trace.h' line='86' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='224'>
+        <var-decl name='new_object' type-id='b96825af' visibility='default' filepath='trace.h' line='87' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='232'>
+        <var-decl name='num_args' type-id='b96825af' visibility='default' filepath='trace.h' line='88' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='240'>
+        <var-decl name='args' type-id='b82d72d1' visibility='default' filepath='trace.h' line='89' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1264'>
+        <var-decl name='related_objects' type-id='4cb10997' visibility='default' filepath='trace.h' line='94' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='__anonymous_struct__' is-struct='yes' visibility='default' size-in-bits='16' is-anonymous='yes' filepath='trace.h' line='91' column='1' hash='674f82d2e91b52ab' id='e7f43f72'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='object_type' type-id='b96825af' visibility='default' filepath='trace.h' line='92' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='8'>
+        <var-decl name='arg_index' type-id='b96825af' visibility='default' filepath='trace.h' line='93' column='1'/>
+      </data-member>
+    </class-decl>
+    <array-type-def dimensions='1' type-id='e7f43f72' size-in-bits='256' hash='835df774c3307f8b' id='4cb10997'>
+      <subrange length='16' lower-bound='0' upper-bound='15' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='6c35b1e999eba398' id='848d0938'/>
+    </array-type-def>
+    <typedef-decl name='__uint16_t' type-id='f0981eec' size-in-bits='16' filepath='types.h' line='40' column='1' hash='d7723bb93a30b11d' id='253c2d2a'/>
+    <typedef-decl name='__uint64_t' type-id='f0981eeb' size-in-bits='64' filepath='types.h' line='45' column='1' hash='8fdc5eea2983a729' id='8910171f'/>
+    <typedef-decl name='__uint8_t' type-id='002ac4a6' size-in-bits='8' filepath='types.h' line='38' column='1' hash='6ebac62b3366db68' id='c51d6389'/>
+    <typedef-decl name='uint16_t' type-id='253c2d2a' size-in-bits='16' filepath='stdint-uintn.h' line='25' column='1' hash='d7723bb93a30b11d' id='149c6638'/>
+    <typedef-decl name='uint64_t' type-id='8910171f' size-in-bits='64' filepath='stdint-uintn.h' line='27' column='1' hash='8fdc5eea2983a729' id='9c313c2d'/>
+    <typedef-decl name='uint8_t' type-id='c51d6389' size-in-bits='8' filepath='stdint-uintn.h' line='24' column='1' hash='6ebac62b3366db68' id='b96825af'/>
+    <array-type-def dimensions='1' type-id='9c313c2d' size-in-bits='65536' hash='837662ad0a66648a' id='4dee7a71'>
+      <subrange length='1024' lower-bound='0' upper-bound='1023' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='3d55c71eae25bbb8' id='c60446f8'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='9c313c2d' size-in-bits='1280' hash='2c6ebbabf2c1ee95' id='38ce06c2'>
+      <subrange length='20' lower-bound='0' upper-bound='19' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='1ca9e41140ea49be' id='fdca39cf'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='32' hash='7df313b77e5f7cf4' id='d351502e'>
+      <subrange length='4' lower-bound='0' upper-bound='3' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='cee611f4a73e486c' id='16fe7105'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='b96825af' size-in-bits='unknown' hash='953f9801eb087566' id='048fe7bc'>
+      <subrange length='unknown' lower-bound='0' upper-bound='0' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='eba0a2b392137dcb' id='031f2035'/>
+    </array-type-def>
+    <type-decl name='unsigned char' size-in-bits='8' hash='6ebac62b3366db68' id='002ac4a6'/>
+    <type-decl name='unsigned long int' size-in-bits='64' hash='8fdc5eea2983a729' id='f0981eeb'/>
+    <type-decl name='unsigned short int' size-in-bits='16' hash='d7723bb93a30b11d#2' id='f0981eec'/>
+    <pointer-type-def type-id='a6dc9de4' size-in-bits='64' hash='f13879d37c217898' id='ddda0722'/>
+    <var-decl name='g_trace_file' type-id='ddda0722' visibility='default' filepath='trace.h' line='149' column='1' elf-symbol-id='g_trace_file'/>
+  </abi-instr>
+</abi-corpus>
