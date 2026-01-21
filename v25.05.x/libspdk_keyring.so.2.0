@@ -117,7 +117,7 @@
       </data-member>
     </class-decl>
     <typedef-decl name='__uint32_t' type-id='f0981eeb' size-in-bits='32' filepath='types.h' line='42' column='1' hash='e66b43f97c38e87a' id='62f1140c'/>
-    <typedef-decl name='size_t' type-id='f0981eec' size-in-bits='64' filepath='stddef.h' line='214' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
+    <typedef-decl name='size_t' type-id='f0981eec' size-in-bits='64' filepath='stddef.h' line='229' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
     <typedef-decl name='uint32_t' type-id='62f1140c' size-in-bits='32' filepath='stdint-uintn.h' line='26' column='1' hash='e66b43f97c38e87a' id='8f92235e'/>
     <type-decl name='unsigned int' size-in-bits='32' hash='e66b43f97c38e87a' id='f0981eeb'/>
     <type-decl name='unsigned long int' size-in-bits='64' hash='8fdc5eea2983a729#2' id='f0981eec'/>

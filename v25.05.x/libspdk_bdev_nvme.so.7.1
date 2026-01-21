@@ -852,7 +852,7 @@
     <typedef-decl name='__uint8_t' type-id='002ac4a6' size-in-bits='8' filepath='types.h' line='38' column='1' hash='6ebac62b3366db68' id='c51d6389'/>
     <typedef-decl name='int32_t' type-id='33f57a65' size-in-bits='32' filepath='stdint-intn.h' line='26' column='1' hash='09d17c08f594edc7' id='3ff5601b'/>
     <typedef-decl name='pthread_mutex_t' type-id='70681f9b' size-in-bits='320' filepath='pthreadtypes.h' line='72' column='1' id='7a6844eb'/>
-    <typedef-decl name='size_t' type-id='f0981eeb' size-in-bits='64' filepath='stddef.h' line='214' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
+    <typedef-decl name='size_t' type-id='f0981eeb' size-in-bits='64' filepath='stddef.h' line='229' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
     <typedef-decl name='spdk_bdev_nvme_create_cb' type-id='db87700c' size-in-bits='64' filepath='nvme.h' line='19' column='1' hash='fd7a63c0c6c822c4' id='b08e707e'/>
     <typedef-decl name='spdk_bdev_nvme_delete_cb' type-id='82328a76' size-in-bits='64' filepath='nvme.h' line='21' column='1' hash='fd7a63c0c6c822c4' id='cdcd7e57'/>
     <typedef-decl name='spdk_bdev_nvme_set_multipath_policy_cb' type-id='82328a76' size-in-bits='64' filepath='nvme.h' line='20' column='1' hash='fd7a63c0c6c822c4' id='63fb8c7a'/>
@@ -931,6 +931,7 @@
     <pointer-type-def type-id='ef0f6b10' size-in-bits='64' id='f8fcfe66'/>
     <class-decl name='spdk_key' is-struct='yes' visibility='default' is-declaration-only='yes' id='1bef703f'/>
     <class-decl name='spdk_thread' is-struct='yes' visibility='default' is-declaration-only='yes' id='ef0f6b10'/>
+    <var-decl name='g_trace_file' type-id='ddda0722' visibility='default' filepath='trace.h' line='149' column='1' elf-symbol-id='g_trace_file'/>
     <function-decl name='spdk_bdev_nvme_set_multipath_policy' mangled-name='spdk_bdev_nvme_set_multipath_policy' filepath='bdev_nvme.c' line='5531' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_nvme_set_multipath_policy' hash='7f5284566b5409ea'>
       <parameter type-id='80f4b756' name='name' filepath='bdev_nvme.c' line='5531' column='1'/>
       <parameter type-id='76fda5ef' name='policy' filepath='bdev_nvme.c' line='5531' column='1'/>
@@ -964,8 +965,6 @@
       <parameter type-id='a8e3c59d' name='bdev_opts' filepath='bdev_nvme.c' line='6701' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <type-decl name='void' id='48b5725f'/>
-    <var-decl name='g_trace_file' type-id='ddda0722' visibility='default' filepath='trace.h' line='149' column='1' elf-symbol-id='g_trace_file'/>
     <function-decl name='spdk_bdev_nvme_delete' mangled-name='spdk_bdev_nvme_delete' filepath='bdev_nvme.c' line='7020' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_bdev_nvme_delete' hash='047f7d52c3765ece'>
       <parameter type-id='80f4b756' name='name' filepath='bdev_nvme.c' line='7020' column='1'/>
       <parameter type-id='e8ec645b' name='path_id' filepath='bdev_nvme.c' line='7020' column='1'/>
@@ -974,11 +973,8 @@
       <return type-id='95e97e5e'/>
     </function-decl>
     <class-decl name='nvme_bdev_ctrlrs' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='bdev_nvme.h' line='19' column='1' id='a4fd6fcc'/>
-    <var-decl name='g_nvme_bdev_ctrlrs' type-id='a4fd6fcc' visibility='default' filepath='bdev_nvme.h' line='20' column='1'/>
-    <var-decl name='g_bdev_nvme_mutex' type-id='7a6844eb' visibility='default' filepath='bdev_nvme.h' line='21' column='1'/>
-    <var-decl name='g_bdev_nvme_module_finish' type-id='c894953d' visibility='default' filepath='bdev_nvme.h' line='22' column='1'/>
-    <var-decl name='g_bdev_nvme_init_thread' type-id='f8fcfe66' visibility='default' filepath='bdev_nvme.h' line='23' column='1'/>
     <class-decl name='spdk_nvme_path_id' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='bdev_nvme.h' line='78' column='1' id='a34176a0'/>
+    <type-decl name='void' id='48b5725f'/>
     <pointer-type-def type-id='48b5725f' id='eaa32e2f'/>
     <function-type size-in-bits='64' hash='388da3fa973fde78' id='2922fb19'>
       <parameter type-id='eaa32e2f'/>
@@ -991,7 +987,5 @@
       <parameter type-id='95e97e5e'/>
       <return type-id='48b5725f'/>
     </function-type>
-  </abi-instr>
-  <abi-instr address-size='64' path='bdev_nvme_rpc.c' language='LANG_C11'>
   </abi-instr>
 </abi-corpus>

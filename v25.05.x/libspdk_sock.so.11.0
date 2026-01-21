@@ -213,12 +213,12 @@
         <var-decl name='iov_len' type-id='b59d7dce' visibility='default' filepath='struct_iovec.h' line='29' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='sockaddr' is-struct='yes' visibility='default' size-in-bits='128' filepath='socket.h' line='183' column='1' hash='17b889f8dd08e00f' id='5221b18a'>
+    <class-decl name='sockaddr' is-struct='yes' visibility='default' size-in-bits='128' filepath='socket.h' line='184' column='1' hash='17b889f8dd08e00f' id='5221b18a'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='sa_family' type-id='376fda66' visibility='default' filepath='socket.h' line='185' column='1'/>
+        <var-decl name='sa_family' type-id='376fda66' visibility='default' filepath='socket.h' line='186' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='16'>
-        <var-decl name='sa_data' type-id='f01a039e' visibility='default' filepath='socket.h' line='186' column='1'/>
+        <var-decl name='sa_data' type-id='f01a039e' visibility='default' filepath='socket.h' line='187' column='1'/>
       </data-member>
     </class-decl>
     <class-decl name='spdk_net_impl' is-struct='yes' visibility='default' size-in-bits='2048' filepath='sock_module.h' line='78' column='1' hash='a12aa83178ab19de' id='7828460a'>
@@ -598,7 +598,7 @@
     <typedef-decl name='int32_t' type-id='33f57a65' size-in-bits='32' filepath='stdint-intn.h' line='26' column='1' hash='09d17c08f594edc7' id='3ff5601b'/>
     <typedef-decl name='pthread_mutex_t' type-id='70681f9b' size-in-bits='320' filepath='pthreadtypes.h' line='72' column='1' id='7a6844eb'/>
     <typedef-decl name='sa_family_t' type-id='f0981eed' size-in-bits='16' filepath='sockaddr.h' line='28' column='1' hash='d7723bb93a30b11d' id='376fda66'/>
-    <typedef-decl name='size_t' type-id='f0981eeb' size-in-bits='64' filepath='stddef.h' line='214' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
+    <typedef-decl name='size_t' type-id='f0981eeb' size-in-bits='64' filepath='stddef.h' line='229' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
     <typedef-decl name='socklen_t' type-id='83f97a0a' size-in-bits='32' filepath='socket.h' line='33' column='1' hash='e66b43f97c38e87a' id='6b2697b0'/>
     <typedef-decl name='spdk_interrupt_fn' type-id='c04372aa' size-in-bits='64' filepath='thread.h' line='843' column='1' hash='fd7a63c0c6c822c4' id='d841131b'/>
     <typedef-decl name='spdk_sock_cb' type-id='674c7299' size-in-bits='64' filepath='sock.h' line='559' column='1' hash='fd7a63c0c6c822c4' id='f24fbecd'/>

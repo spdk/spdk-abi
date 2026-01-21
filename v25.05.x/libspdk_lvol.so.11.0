@@ -401,7 +401,7 @@
     <typedef-decl name='__uint32_t' type-id='f0981eec' size-in-bits='32' filepath='types.h' line='42' column='1' hash='e66b43f97c38e87a' id='62f1140c'/>
     <typedef-decl name='__uint64_t' type-id='f0981eeb' size-in-bits='64' filepath='types.h' line='45' column='1' hash='8fdc5eea2983a729' id='8910171f'/>
     <typedef-decl name='__uint8_t' type-id='002ac4a6' size-in-bits='8' filepath='types.h' line='38' column='1' hash='6ebac62b3366db68' id='c51d6389'/>
-    <typedef-decl name='size_t' type-id='f0981eeb' size-in-bits='64' filepath='stddef.h' line='214' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
+    <typedef-decl name='size_t' type-id='f0981eeb' size-in-bits='64' filepath='stddef.h' line='229' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
     <typedef-decl name='spdk_blob_id' type-id='9c313c2d' size-in-bits='64' filepath='blob.h' line='43' column='1' hash='8fdc5eea2983a729' id='533eb244'/>
     <typedef-decl name='spdk_blob_shallow_copy_status' type-id='f76b72b0' size-in-bits='64' filepath='blob.h' line='159' column='1' hash='fd7a63c0c6c822c4' id='8d6c4ea0'/>
     <typedef-decl name='spdk_bs_dev_cpl' type-id='03ca1b4b' size-in-bits='64' filepath='blob.h' line='118' column='1' hash='fd7a63c0c6c822c4' id='7683f572'/>

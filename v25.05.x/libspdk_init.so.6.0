@@ -129,8 +129,8 @@
     <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='8' hash='f7aed1c6cc6e7b3c' id='89feb1ec'>
       <subrange length='1' lower-bound='0' upper-bound='0' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='eba0a2b392137dcb' id='52f813b4'/>
     </array-type-def>
-    <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='160' hash='99641d293d1da856' id='664ac0b7'>
-      <subrange length='20' lower-bound='0' upper-bound='19' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='1ca9e41140ea49be' id='fdca39cf'/>
+    <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='64' hash='e1c8b625c73024c4' id='8e100159'>
+      <subrange length='8' lower-bound='0' upper-bound='7' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='6e87a8ff484907ad' id='56e0c0b1'/>
     </array-type-def>
     <enum-decl name='spdk_log_level' size-in-bits='32' alignment-in-bits='32' filepath='log.h' line='90' column='1' hash='f54503d906878e62' id='4271cbce'>
       <underlying-type type-id='9cac1fee'/>
@@ -142,93 +142,102 @@
       <enumerator name='SPDK_LOG_DEBUG' value='4'/>
     </enum-decl>
     <type-decl name='signed char' size-in-bits='8' hash='3c595c3350588f18' id='28577a57'/>
-    <class-decl name='_IO_FILE' is-struct='yes' visibility='default' size-in-bits='1728' filepath='struct_FILE.h' line='49' column='1' hash='54bf40f701b4847a' id='ec1ed955'>
+    <class-decl name='_IO_FILE' is-struct='yes' visibility='default' size-in-bits='1728' filepath='struct_FILE.h' line='51' column='1' hash='dedab36ee0ea6582' id='ec1ed955'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='_flags' type-id='95e97e5e' visibility='default' filepath='struct_FILE.h' line='51' column='1'/>
+        <var-decl name='_flags' type-id='95e97e5e' visibility='default' filepath='struct_FILE.h' line='53' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='_IO_read_ptr' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='54' column='1'/>
+        <var-decl name='_IO_read_ptr' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='56' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='_IO_read_end' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='55' column='1'/>
+        <var-decl name='_IO_read_end' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='57' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='_IO_read_base' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='56' column='1'/>
+        <var-decl name='_IO_read_base' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='58' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='_IO_write_base' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='57' column='1'/>
+        <var-decl name='_IO_write_base' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='59' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='320'>
-        <var-decl name='_IO_write_ptr' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='58' column='1'/>
+        <var-decl name='_IO_write_ptr' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='60' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='384'>
-        <var-decl name='_IO_write_end' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='59' column='1'/>
+        <var-decl name='_IO_write_end' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='61' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='448'>
-        <var-decl name='_IO_buf_base' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='60' column='1'/>
+        <var-decl name='_IO_buf_base' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='62' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='512'>
-        <var-decl name='_IO_buf_end' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='61' column='1'/>
+        <var-decl name='_IO_buf_end' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='63' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='576'>
-        <var-decl name='_IO_save_base' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='64' column='1'/>
+        <var-decl name='_IO_save_base' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='66' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='640'>
-        <var-decl name='_IO_backup_base' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='65' column='1'/>
+        <var-decl name='_IO_backup_base' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='67' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='704'>
-        <var-decl name='_IO_save_end' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='66' column='1'/>
+        <var-decl name='_IO_save_end' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='68' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='768'>
-        <var-decl name='_markers' type-id='e4c6fa61' visibility='default' filepath='struct_FILE.h' line='68' column='1'/>
+        <var-decl name='_markers' type-id='e4c6fa61' visibility='default' filepath='struct_FILE.h' line='70' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='832'>
-        <var-decl name='_chain' type-id='dca988a5' visibility='default' filepath='struct_FILE.h' line='70' column='1'/>
+        <var-decl name='_chain' type-id='dca988a5' visibility='default' filepath='struct_FILE.h' line='72' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='896'>
-        <var-decl name='_fileno' type-id='95e97e5e' visibility='default' filepath='struct_FILE.h' line='72' column='1'/>
+        <var-decl name='_fileno' type-id='95e97e5e' visibility='default' filepath='struct_FILE.h' line='74' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='928'>
-        <var-decl name='_flags2' type-id='95e97e5e' visibility='default' filepath='struct_FILE.h' line='73' column='1'/>
+        <var-decl name='_flags2' type-id='95e97e5e' visibility='default' filepath='struct_FILE.h' line='75' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='952'>
+        <var-decl name='_short_backupbuf' type-id='89feb1ec' visibility='default' filepath='struct_FILE.h' line='77' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='960'>
-        <var-decl name='_old_offset' type-id='79989e9c' visibility='default' filepath='struct_FILE.h' line='74' column='1'/>
+        <var-decl name='_old_offset' type-id='79989e9c' visibility='default' filepath='struct_FILE.h' line='78' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1024'>
-        <var-decl name='_cur_column' type-id='f0981eec' visibility='default' filepath='struct_FILE.h' line='77' column='1'/>
+        <var-decl name='_cur_column' type-id='f0981eec' visibility='default' filepath='struct_FILE.h' line='81' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1040'>
-        <var-decl name='_vtable_offset' type-id='28577a57' visibility='default' filepath='struct_FILE.h' line='78' column='1'/>
+        <var-decl name='_vtable_offset' type-id='28577a57' visibility='default' filepath='struct_FILE.h' line='82' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1048'>
-        <var-decl name='_shortbuf' type-id='89feb1ec' visibility='default' filepath='struct_FILE.h' line='79' column='1'/>
+        <var-decl name='_shortbuf' type-id='89feb1ec' visibility='default' filepath='struct_FILE.h' line='83' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1088'>
-        <var-decl name='_lock' type-id='cecf4ea7' visibility='default' filepath='struct_FILE.h' line='81' column='1'/>
+        <var-decl name='_lock' type-id='cecf4ea7' visibility='default' filepath='struct_FILE.h' line='85' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1152'>
-        <var-decl name='_offset' type-id='724e4de6' visibility='default' filepath='struct_FILE.h' line='89' column='1'/>
+        <var-decl name='_offset' type-id='724e4de6' visibility='default' filepath='struct_FILE.h' line='93' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1216'>
-        <var-decl name='_codecvt' type-id='570f8c59' visibility='default' filepath='struct_FILE.h' line='91' column='1'/>
+        <var-decl name='_codecvt' type-id='570f8c59' visibility='default' filepath='struct_FILE.h' line='95' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1280'>
-        <var-decl name='_wide_data' type-id='c65a1f29' visibility='default' filepath='struct_FILE.h' line='92' column='1'/>
+        <var-decl name='_wide_data' type-id='c65a1f29' visibility='default' filepath='struct_FILE.h' line='96' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1344'>
-        <var-decl name='_freeres_list' type-id='dca988a5' visibility='default' filepath='struct_FILE.h' line='93' column='1'/>
+        <var-decl name='_freeres_list' type-id='dca988a5' visibility='default' filepath='struct_FILE.h' line='97' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1408'>
-        <var-decl name='_freeres_buf' type-id='eaa32e2f' visibility='default' filepath='struct_FILE.h' line='94' column='1'/>
+        <var-decl name='_freeres_buf' type-id='eaa32e2f' visibility='default' filepath='struct_FILE.h' line='98' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1472'>
-        <var-decl name='__pad5' type-id='b59d7dce' visibility='default' filepath='struct_FILE.h' line='95' column='1'/>
+        <var-decl name='_prevchain' type-id='ede1f91d' visibility='default' filepath='struct_FILE.h' line='99' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1536'>
-        <var-decl name='_mode' type-id='95e97e5e' visibility='default' filepath='struct_FILE.h' line='96' column='1'/>
+        <var-decl name='_mode' type-id='95e97e5e' visibility='default' filepath='struct_FILE.h' line='100' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1568'>
-        <var-decl name='_unused2' type-id='664ac0b7' visibility='default' filepath='struct_FILE.h' line='98' column='1'/>
+        <var-decl name='_unused3' type-id='95e97e5e' visibility='default' filepath='struct_FILE.h' line='102' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1600'>
+        <var-decl name='_total_written' type-id='8910171f' visibility='default' filepath='struct_FILE.h' line='104' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1664'>
+        <var-decl name='_unused2' type-id='8e100159' visibility='default' filepath='struct_FILE.h' line='109' column='1'/>
       </data-member>
     </class-decl>
     <class-decl name='spdk_rpc_opts' is-struct='yes' visibility='default' size-in-bits='192' filepath='init.h' line='28' column='1' hash='fcae86e74f800296' id='9f4e83f2'>
@@ -243,15 +252,17 @@
       </data-member>
     </class-decl>
     <typedef-decl name='FILE' type-id='ec1ed955' size-in-bits='1728' filepath='FILE.h' line='7' column='1' id='aa12d1ba'/>
-    <typedef-decl name='_IO_lock_t' type-id='48b5725f' filepath='struct_FILE.h' line='43' column='1' id='bb4788fa'/>
+    <typedef-decl name='_IO_lock_t' type-id='48b5725f' filepath='struct_FILE.h' line='45' column='1' id='bb4788fa'/>
     <typedef-decl name='__off64_t' type-id='95e97e5f' size-in-bits='64' filepath='types.h' line='153' column='1' hash='b119fe0931d2ee10' id='724e4de6'/>
     <typedef-decl name='__off_t' type-id='95e97e5f' size-in-bits='64' filepath='types.h' line='152' column='1' hash='b119fe0931d2ee10' id='79989e9c'/>
-    <typedef-decl name='size_t' type-id='f0981eeb' size-in-bits='64' filepath='stddef.h' line='214' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
+    <typedef-decl name='__uint64_t' type-id='f0981eeb' size-in-bits='64' filepath='types.h' line='45' column='1' hash='8fdc5eea2983a729' id='8910171f'/>
+    <typedef-decl name='size_t' type-id='f0981eeb' size-in-bits='64' filepath='stddef.h' line='229' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
     <type-decl name='unnamed-enum-underlying-type-32' size-in-bits='32' alignment-in-bits='32' is-anonymous='yes' hash='5181a58e665b3619' id='9cac1fee'/>
     <type-decl name='unsigned long int' size-in-bits='64' hash='8fdc5eea2983a729' id='f0981eeb'/>
     <type-decl name='unsigned short int' size-in-bits='16' hash='d7723bb93a30b11d#2' id='f0981eec'/>
     <pointer-type-def type-id='aa12d1ba' size-in-bits='64' hash='4cdc26b379a5c62d' id='822cd80b'/>
     <pointer-type-def type-id='ec1ed955' size-in-bits='64' hash='071f36dcbe00ad00' id='dca988a5'/>
+    <pointer-type-def type-id='dca988a5' size-in-bits='64' hash='e8c018048121152c' id='ede1f91d'/>
     <pointer-type-def type-id='a84c031d' size-in-bits='64' hash='e533f42d1dd4942c' id='26a90f95'/>
     <qualified-type-def type-id='9f4e83f2' const='yes' hash='4b192778ea13fcd7' id='e36863d9'/>
     <pointer-type-def type-id='e36863d9' size-in-bits='64' hash='1002a08dd7b62eb7' id='f0555789'/>

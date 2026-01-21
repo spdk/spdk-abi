@@ -251,7 +251,7 @@
     <typedef-decl name='__uint64_t' type-id='f0981eeb' size-in-bits='64' filepath='types.h' line='45' column='1' hash='8fdc5eea2983a729' id='8910171f'/>
     <typedef-decl name='__uint8_t' type-id='002ac4a6' size-in-bits='8' filepath='types.h' line='38' column='1' hash='6ebac62b3366db68' id='c51d6389'/>
     <typedef-decl name='loff_t' type-id='00c9d214' size-in-bits='64' filepath='types.h' line='42' column='1' hash='b119fe0931d2ee10' id='69bf7bee'/>
-    <typedef-decl name='size_t' type-id='f0981eeb' size-in-bits='64' filepath='stddef.h' line='214' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
+    <typedef-decl name='size_t' type-id='f0981eeb' size-in-bits='64' filepath='stddef.h' line='229' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
     <typedef-decl name='spdk_vfu_access_cb' type-id='950a5802' size-in-bits='64' filepath='vfu_target.h' line='77' column='1' hash='fd7a63c0c6c822c4' id='82c8d56f'/>
     <typedef-decl name='spdk_vfu_fini_cb' type-id='c640490b' size-in-bits='64' filepath='vfu_target.h' line='27' column='1' hash='fd7a63c0c6c822c4' id='2c76d06d'/>
     <typedef-decl name='spdk_vfu_init_cb' type-id='67912dc2' size-in-bits='64' filepath='vfu_target.h' line='21' column='1' hash='fd7a63c0c6c822c4' id='c88628db'/>

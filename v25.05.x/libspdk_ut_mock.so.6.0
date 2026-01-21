@@ -183,28 +183,8 @@
     <pointer-type-def type-id='fa994560' size-in-bits='64' hash='5729031853594dc8' id='bbc77b46'/>
     <pointer-type-def type-id='bbc77b46' size-in-bits='64' hash='84dc19e1fe2eaec9' id='07074b04'/>
     <pointer-type-def type-id='30a82da4' size-in-bits='64' hash='fd7a63c0c6c822c4' id='c640490b'/>
-    <var-decl name='ut_calloc_mocked' type-id='c894953d' visibility='default' filepath='mock.h' line='146' column='1'/>
-    <var-decl name='ut_mqh_calloc' type-id='1b7abefc' visibility='default' filepath='mock.h' line='146' column='1'/>
-    <var-decl name='ut_pthread_mutex_init_mocked' type-id='c894953d' visibility='default' filepath='mock.h' line='148' column='1'/>
-    <var-decl name='ut_pthread_mutex_init' type-id='95e97e5e' visibility='default' filepath='mock.h' line='148' column='1'/>
-    <var-decl name='ut_mqh_pthread_mutex_init' type-id='7ffaf2e5' visibility='default' filepath='mock.h' line='148' column='1'/>
-    <var-decl name='ut_pthread_mutexattr_init_mocked' type-id='c894953d' visibility='default' filepath='mock.h' line='151' column='1'/>
-    <var-decl name='ut_pthread_mutexattr_init' type-id='95e97e5e' visibility='default' filepath='mock.h' line='151' column='1'/>
-    <var-decl name='ut_mqh_pthread_mutexattr_init' type-id='0d7ddfb4' visibility='default' filepath='mock.h' line='151' column='1'/>
-    <var-decl name='ut_recvmsg_mocked' type-id='c894953d' visibility='default' filepath='mock.h' line='154' column='1'/>
-    <var-decl name='ut_recvmsg' type-id='79a0948f' visibility='default' filepath='mock.h' line='154' column='1'/>
-    <var-decl name='ut_mqh_recvmsg' type-id='6cf032e7' visibility='default' filepath='mock.h' line='154' column='1'/>
-    <var-decl name='ut_sendmsg_mocked' type-id='c894953d' visibility='default' filepath='mock.h' line='156' column='1'/>
-    <var-decl name='ut_sendmsg' type-id='79a0948f' visibility='default' filepath='mock.h' line='156' column='1'/>
-    <var-decl name='ut_mqh_sendmsg' type-id='27b5b1bd' visibility='default' filepath='mock.h' line='156' column='1'/>
-    <var-decl name='ut_writev_mocked' type-id='c894953d' visibility='default' filepath='mock.h' line='158' column='1'/>
-    <var-decl name='ut_writev' type-id='79a0948f' visibility='default' filepath='mock.h' line='158' column='1'/>
-    <var-decl name='ut_mqh_writev' type-id='767203dd' visibility='default' filepath='mock.h' line='158' column='1'/>
-    <var-decl name='g_unlink_path' type-id='26a90f95' visibility='default' filepath='mock.h' line='161' column='1'/>
     <type-decl name='void' id='48b5725f'/>
-    <var-decl name='g_unlink_callback' type-id='c640490b' visibility='default' filepath='mock.h' line='162' column='1'/>
     <pointer-type-def type-id='48b5725f' id='eaa32e2f'/>
-    <var-decl name='ut_calloc' type-id='eaa32e2f' visibility='default' filepath='mock.h' line='146' column='1'/>
     <function-type size-in-bits='64' hash='7f32ffea222edbe7' id='30a82da4'>
       <return type-id='48b5725f'/>
     </function-type>

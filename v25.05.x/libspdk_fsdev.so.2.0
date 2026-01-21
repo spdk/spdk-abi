@@ -963,7 +963,7 @@
     <typedef-decl name='mode_t' type-id='e1c52942' size-in-bits='32' filepath='types.h' line='69' column='1' hash='e66b43f97c38e87a' id='d50d396c'/>
     <typedef-decl name='off_t' type-id='79989e9c' size-in-bits='64' filepath='stdio.h' line='64' column='1' hash='b119fe0931d2ee10' id='ad707ada'/>
     <typedef-decl name='pthread_spinlock_t' type-id='e024ff18' size-in-bits='32' filepath='pthreadtypes.h' line='103' column='1' hash='ae69415523d5e788' id='6d44fa69'/>
-    <typedef-decl name='size_t' type-id='f0981eeb' size-in-bits='64' filepath='stddef.h' line='214' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
+    <typedef-decl name='size_t' type-id='f0981eeb' size-in-bits='64' filepath='stddef.h' line='229' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
     <typedef-decl name='spdk_fsdev_event_cb_t' type-id='e37e36e9' size-in-bits='64' filepath='fsdev.h' line='40' column='1' hash='fd7a63c0c6c822c4' id='f5bf2e9f'/>
     <typedef-decl name='spdk_fsdev_fini_cb' type-id='61359e15' size-in-bits='64' filepath='fsdev.h' line='140' column='1' hash='fd7a63c0c6c822c4' id='c17a5d68'/>
     <typedef-decl name='spdk_fsdev_init_cb' type-id='82328a76' size-in-bits='64' filepath='fsdev.h' line='133' column='1' hash='fd7a63c0c6c822c4' id='94168d2e'/>

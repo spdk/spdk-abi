@@ -111,7 +111,7 @@
         <var-decl name='iov_len' type-id='b59d7dce' visibility='default' filepath='struct_iovec.h' line='29' column='1'/>
       </data-member>
     </class-decl>
-    <typedef-decl name='size_t' type-id='f0981eeb' size-in-bits='64' filepath='stddef.h' line='214' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
+    <typedef-decl name='size_t' type-id='f0981eeb' size-in-bits='64' filepath='stddef.h' line='229' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
     <typedef-decl name='spdk_fuse_dispatcher_create_cpl_cb' type-id='0037bba1' size-in-bits='64' filepath='fuse_dispatcher.h' line='35' column='1' hash='fd7a63c0c6c822c4' id='ae98e07f'/>
     <typedef-decl name='spdk_fuse_dispatcher_delete_cpl_cb' type-id='82328a76' size-in-bits='64' filepath='fuse_dispatcher.h' line='51' column='1' hash='fd7a63c0c6c822c4' id='7dae0f62'/>
     <typedef-decl name='spdk_fuse_dispatcher_event_cb' type-id='190f5837' size-in-bits='64' filepath='fuse_dispatcher.h' line='66' column='1' hash='fd7a63c0c6c822c4' id='6278b06f'/>

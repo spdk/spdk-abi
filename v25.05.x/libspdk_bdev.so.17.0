@@ -2483,7 +2483,7 @@
     <typedef-decl name='int8_t' type-id='2171a512' size-in-bits='8' filepath='stdint-intn.h' line='24' column='1' hash='3c595c3350588f18' id='ee31ee44'/>
     <typedef-decl name='lba_range_tailq_t' type-id='088b1745' size-in-bits='128' filepath='bdev_module.h' line='423' column='1' id='905ae936'/>
     <typedef-decl name='pthread_spinlock_t' type-id='e024ff18' size-in-bits='32' filepath='pthreadtypes.h' line='103' column='1' hash='ae69415523d5e788' id='6d44fa69'/>
-    <typedef-decl name='size_t' type-id='f0981eeb' size-in-bits='64' filepath='stddef.h' line='214' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
+    <typedef-decl name='size_t' type-id='f0981eeb' size-in-bits='64' filepath='stddef.h' line='229' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
     <typedef-decl name='spdk_bdev_event_cb_t' type-id='78d860eb' size-in-bits='64' filepath='bdev.h' line='74' column='1' hash='fd7a63c0c6c822c4' id='3de10a34'/>
     <typedef-decl name='spdk_bdev_fini_cb' type-id='61359e15' size-in-bits='64' filepath='bdev.h' line='364' column='1' hash='fd7a63c0c6c822c4' id='c0b39e85'/>
     <typedef-decl name='spdk_bdev_for_each_channel_done' type-id='63befa86' size-in-bits='64' filepath='bdev.h' line='2384' column='1' hash='fd7a63c0c6c822c4' id='6877d703'/>

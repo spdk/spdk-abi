@@ -156,7 +156,6 @@
     <pointer-type-def type-id='3c911ce9' size-in-bits='64' id='22584491'/>
     <class-decl name='ocf_ctx' is-struct='yes' visibility='default' is-declaration-only='yes' id='3c911ce9'/>
     <typedef-decl name='ocf_ctx_t' type-id='22584491' size-in-bits='64' filepath='ocf_types.h' line='39' column='1' id='702ffe05'/>
-    <var-decl name='vbdev_ocf_ctx' type-id='702ffe05' visibility='default' filepath='ctx.h' line='13' column='1'/>
   </abi-instr>
   <abi-instr address-size='64' path='vbdev_ocf.c' language='LANG_C11'>
     <pointer-type-def type-id='3c911cea' size-in-bits='64' id='22584492'/>
