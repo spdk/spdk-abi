@@ -609,114 +609,114 @@
       <parameter type-id='57e3d1ac' name='detach_ctx' filepath='nvme.c' line='206' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_nvme_probe' mangled-name='spdk_nvme_probe' filepath='nvme.c' line='869' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_probe' hash='80bf9e73d159049a'>
-      <parameter type-id='7e9611b1' name='trid' filepath='nvme.c' line='869' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_ctx' filepath='nvme.c' line='869' column='1'/>
-      <parameter type-id='abc0b7d8' name='probe_cb' filepath='nvme.c' line='870' column='1'/>
-      <parameter type-id='196479c9' name='attach_cb' filepath='nvme.c' line='870' column='1'/>
-      <parameter type-id='b978a222' name='remove_cb' filepath='nvme.c' line='871' column='1'/>
+    <function-decl name='spdk_nvme_probe' mangled-name='spdk_nvme_probe' filepath='nvme.c' line='859' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_probe' hash='80bf9e73d159049a'>
+      <parameter type-id='7e9611b1' name='trid' filepath='nvme.c' line='859' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_ctx' filepath='nvme.c' line='859' column='1'/>
+      <parameter type-id='abc0b7d8' name='probe_cb' filepath='nvme.c' line='860' column='1'/>
+      <parameter type-id='196479c9' name='attach_cb' filepath='nvme.c' line='860' column='1'/>
+      <parameter type-id='b978a222' name='remove_cb' filepath='nvme.c' line='861' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_probe_ext' mangled-name='spdk_nvme_probe_ext' filepath='nvme.c' line='877' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_probe_ext' hash='b27e4554929c0a85'>
-      <parameter type-id='7e9611b1' name='trid' filepath='nvme.c' line='877' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_ctx' filepath='nvme.c' line='877' column='1'/>
-      <parameter type-id='abc0b7d8' name='probe_cb' filepath='nvme.c' line='878' column='1'/>
-      <parameter type-id='196479c9' name='attach_cb' filepath='nvme.c' line='878' column='1'/>
-      <parameter type-id='499fb374' name='attach_fail_cb' filepath='nvme.c' line='879' column='1'/>
-      <parameter type-id='b978a222' name='remove_cb' filepath='nvme.c' line='879' column='1'/>
+    <function-decl name='spdk_nvme_probe_ext' mangled-name='spdk_nvme_probe_ext' filepath='nvme.c' line='867' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_probe_ext' hash='b27e4554929c0a85'>
+      <parameter type-id='7e9611b1' name='trid' filepath='nvme.c' line='867' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_ctx' filepath='nvme.c' line='867' column='1'/>
+      <parameter type-id='abc0b7d8' name='probe_cb' filepath='nvme.c' line='868' column='1'/>
+      <parameter type-id='196479c9' name='attach_cb' filepath='nvme.c' line='868' column='1'/>
+      <parameter type-id='499fb374' name='attach_fail_cb' filepath='nvme.c' line='869' column='1'/>
+      <parameter type-id='b978a222' name='remove_cb' filepath='nvme.c' line='869' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_connect' mangled-name='spdk_nvme_connect' filepath='nvme.c' line='979' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_connect' hash='0448ca1c8eab64e4'>
-      <parameter type-id='7e9611b1' name='trid' filepath='nvme.c' line='979' column='1'/>
-      <parameter type-id='69be0b8c' name='opts' filepath='nvme.c' line='980' column='1'/>
-      <parameter type-id='b59d7dce' name='opts_size' filepath='nvme.c' line='980' column='1'/>
+    <function-decl name='spdk_nvme_connect' mangled-name='spdk_nvme_connect' filepath='nvme.c' line='969' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_connect' hash='0448ca1c8eab64e4'>
+      <parameter type-id='7e9611b1' name='trid' filepath='nvme.c' line='969' column='1'/>
+      <parameter type-id='69be0b8c' name='opts' filepath='nvme.c' line='970' column='1'/>
+      <parameter type-id='b59d7dce' name='opts_size' filepath='nvme.c' line='970' column='1'/>
       <return type-id='0d7532a2'/>
     </function-decl>
-    <function-decl name='spdk_nvme_trid_populate_transport' mangled-name='spdk_nvme_trid_populate_transport' filepath='nvme.c' line='1023' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_trid_populate_transport' hash='0014900cc9fc140a'>
-      <parameter type-id='6f56757a' name='trid' filepath='nvme.c' line='1023' column='1'/>
-      <parameter type-id='8cd337c8' name='trtype' filepath='nvme.c' line='1024' column='1'/>
+    <function-decl name='spdk_nvme_trid_populate_transport' mangled-name='spdk_nvme_trid_populate_transport' filepath='nvme.c' line='1013' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_trid_populate_transport' hash='0014900cc9fc140a'>
+      <parameter type-id='6f56757a' name='trid' filepath='nvme.c' line='1013' column='1'/>
+      <parameter type-id='8cd337c8' name='trtype' filepath='nvme.c' line='1014' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_nvme_transport_id_populate_trstring' mangled-name='spdk_nvme_transport_id_populate_trstring' filepath='nvme.c' line='1057' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_transport_id_populate_trstring' hash='d88304c328bd8e19'>
-      <parameter type-id='6f56757a' name='trid' filepath='nvme.c' line='1221' column='1'/>
-      <parameter type-id='80f4b756' name='str' filepath='nvme.c' line='1221' column='1'/>
+    <function-decl name='spdk_nvme_transport_id_populate_trstring' mangled-name='spdk_nvme_transport_id_populate_trstring' filepath='nvme.c' line='1047' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_transport_id_populate_trstring' hash='d88304c328bd8e19'>
+      <parameter type-id='6f56757a' name='trid' filepath='nvme.c' line='1211' column='1'/>
+      <parameter type-id='80f4b756' name='str' filepath='nvme.c' line='1211' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_transport_id_parse_trtype' mangled-name='spdk_nvme_transport_id_parse_trtype' filepath='nvme.c' line='1084' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_transport_id_parse_trtype' hash='cf6fd13f42fd9da3'>
-      <parameter type-id='8035fbf9' name='trtype' filepath='nvme.c' line='1084' column='1'/>
-      <parameter type-id='80f4b756' name='str' filepath='nvme.c' line='1084' column='1'/>
+    <function-decl name='spdk_nvme_transport_id_parse_trtype' mangled-name='spdk_nvme_transport_id_parse_trtype' filepath='nvme.c' line='1074' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_transport_id_parse_trtype' hash='cf6fd13f42fd9da3'>
+      <parameter type-id='8035fbf9' name='trtype' filepath='nvme.c' line='1074' column='1'/>
+      <parameter type-id='80f4b756' name='str' filepath='nvme.c' line='1074' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_transport_id_trtype_str' mangled-name='spdk_nvme_transport_id_trtype_str' filepath='nvme.c' line='1107' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_transport_id_trtype_str' hash='a6b21d1322afaa23'>
-      <parameter type-id='8cd337c8' name='trtype' filepath='nvme.c' line='1107' column='1'/>
+    <function-decl name='spdk_nvme_transport_id_trtype_str' mangled-name='spdk_nvme_transport_id_trtype_str' filepath='nvme.c' line='1097' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_transport_id_trtype_str' hash='a6b21d1322afaa23'>
+      <parameter type-id='8cd337c8' name='trtype' filepath='nvme.c' line='1097' column='1'/>
       <return type-id='80f4b756'/>
     </function-decl>
-    <function-decl name='spdk_nvme_transport_id_parse_adrfam' mangled-name='spdk_nvme_transport_id_parse_adrfam' filepath='nvme.c' line='1128' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_transport_id_parse_adrfam' hash='aa1db65819a7d1c8'>
-      <parameter type-id='a85c83ff' name='adrfam' filepath='nvme.c' line='1128' column='1'/>
-      <parameter type-id='80f4b756' name='str' filepath='nvme.c' line='1128' column='1'/>
+    <function-decl name='spdk_nvme_transport_id_parse_adrfam' mangled-name='spdk_nvme_transport_id_parse_adrfam' filepath='nvme.c' line='1118' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_transport_id_parse_adrfam' hash='aa1db65819a7d1c8'>
+      <parameter type-id='a85c83ff' name='adrfam' filepath='nvme.c' line='1118' column='1'/>
+      <parameter type-id='80f4b756' name='str' filepath='nvme.c' line='1118' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_transport_id_adrfam_str' mangled-name='spdk_nvme_transport_id_adrfam_str' filepath='nvme.c' line='1149' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_transport_id_adrfam_str' hash='b5f01304c9062a4e'>
-      <parameter type-id='72aef3b2' name='adrfam' filepath='nvme.c' line='1149' column='1'/>
+    <function-decl name='spdk_nvme_transport_id_adrfam_str' mangled-name='spdk_nvme_transport_id_adrfam_str' filepath='nvme.c' line='1139' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_transport_id_adrfam_str' hash='b5f01304c9062a4e'>
+      <parameter type-id='72aef3b2' name='adrfam' filepath='nvme.c' line='1139' column='1'/>
       <return type-id='80f4b756'/>
     </function-decl>
-    <function-decl name='spdk_nvme_transport_id_parse' mangled-name='spdk_nvme_transport_id_parse' filepath='nvme.c' line='1221' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_transport_id_parse' hash='d88304c328bd8e19'>
-      <parameter type-id='6f56757a' name='trid' filepath='nvme.c' line='1221' column='1'/>
-      <parameter type-id='80f4b756' name='str' filepath='nvme.c' line='1221' column='1'/>
+    <function-decl name='spdk_nvme_transport_id_parse' mangled-name='spdk_nvme_transport_id_parse' filepath='nvme.c' line='1211' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_transport_id_parse' hash='d88304c328bd8e19'>
+      <parameter type-id='6f56757a' name='trid' filepath='nvme.c' line='1211' column='1'/>
+      <parameter type-id='80f4b756' name='str' filepath='nvme.c' line='1211' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_host_id_parse' mangled-name='spdk_nvme_host_id_parse' filepath='nvme.c' line='1315' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_host_id_parse' hash='18f6e4d8c93be987'>
-      <parameter type-id='4b0091b7' name='hostid' filepath='nvme.c' line='1315' column='1'/>
-      <parameter type-id='80f4b756' name='str' filepath='nvme.c' line='1315' column='1'/>
+    <function-decl name='spdk_nvme_host_id_parse' mangled-name='spdk_nvme_host_id_parse' filepath='nvme.c' line='1305' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_host_id_parse' hash='18f6e4d8c93be987'>
+      <parameter type-id='4b0091b7' name='hostid' filepath='nvme.c' line='1305' column='1'/>
+      <parameter type-id='80f4b756' name='str' filepath='nvme.c' line='1305' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_transport_id_compare' mangled-name='spdk_nvme_transport_id_compare' filepath='nvme.c' line='1382' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_transport_id_compare' hash='ddd40dde69ccd642'>
-      <parameter type-id='7e9611b1' name='trid1' filepath='nvme.c' line='1382' column='1'/>
-      <parameter type-id='7e9611b1' name='trid2' filepath='nvme.c' line='1383' column='1'/>
+    <function-decl name='spdk_nvme_transport_id_compare' mangled-name='spdk_nvme_transport_id_compare' filepath='nvme.c' line='1372' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_transport_id_compare' hash='ddd40dde69ccd642'>
+      <parameter type-id='7e9611b1' name='trid1' filepath='nvme.c' line='1372' column='1'/>
+      <parameter type-id='7e9611b1' name='trid2' filepath='nvme.c' line='1373' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_prchk_flags_parse' mangled-name='spdk_nvme_prchk_flags_parse' filepath='nvme.c' line='1435' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_prchk_flags_parse' hash='e93b08feb1771e16'>
-      <parameter type-id='90421557' name='prchk_flags' filepath='nvme.c' line='1435' column='1'/>
-      <parameter type-id='80f4b756' name='str' filepath='nvme.c' line='1435' column='1'/>
+    <function-decl name='spdk_nvme_prchk_flags_parse' mangled-name='spdk_nvme_prchk_flags_parse' filepath='nvme.c' line='1425' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_prchk_flags_parse' hash='e93b08feb1771e16'>
+      <parameter type-id='90421557' name='prchk_flags' filepath='nvme.c' line='1425' column='1'/>
+      <parameter type-id='80f4b756' name='str' filepath='nvme.c' line='1425' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_prchk_flags_str' mangled-name='spdk_nvme_prchk_flags_str' filepath='nvme.c' line='1470' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_prchk_flags_str' hash='cf5212e813271279'>
-      <parameter type-id='8f92235e' name='prchk_flags' filepath='nvme.c' line='1470' column='1'/>
+    <function-decl name='spdk_nvme_prchk_flags_str' mangled-name='spdk_nvme_prchk_flags_str' filepath='nvme.c' line='1460' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_prchk_flags_str' hash='cf5212e813271279'>
+      <parameter type-id='8f92235e' name='prchk_flags' filepath='nvme.c' line='1460' column='1'/>
       <return type-id='80f4b756'/>
     </function-decl>
-    <function-decl name='spdk_nvme_scan_attached' mangled-name='spdk_nvme_scan_attached' filepath='nvme.c' line='1488' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_scan_attached' hash='92fc56849108da7b'>
-      <parameter type-id='7e9611b1' name='trid' filepath='nvme.c' line='1488' column='1'/>
+    <function-decl name='spdk_nvme_scan_attached' mangled-name='spdk_nvme_scan_attached' filepath='nvme.c' line='1478' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_scan_attached' hash='92fc56849108da7b'>
+      <parameter type-id='7e9611b1' name='trid' filepath='nvme.c' line='1478' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_probe_async' mangled-name='spdk_nvme_probe_async' filepath='nvme.c' line='1514' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_probe_async' hash='ba018a83f2dcb5bf'>
+    <function-decl name='spdk_nvme_probe_async' mangled-name='spdk_nvme_probe_async' filepath='nvme.c' line='1504' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_probe_async' hash='ba018a83f2dcb5bf'>
+      <parameter type-id='7e9611b1' name='trid' filepath='nvme.c' line='1504' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_ctx' filepath='nvme.c' line='1505' column='1'/>
+      <parameter type-id='abc0b7d8' name='probe_cb' filepath='nvme.c' line='1506' column='1'/>
+      <parameter type-id='196479c9' name='attach_cb' filepath='nvme.c' line='1507' column='1'/>
+      <parameter type-id='b978a222' name='remove_cb' filepath='nvme.c' line='1508' column='1'/>
+      <return type-id='75dd38a1'/>
+    </function-decl>
+    <function-decl name='spdk_nvme_probe_async_ext' mangled-name='spdk_nvme_probe_async_ext' filepath='nvme.c' line='1514' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_probe_async_ext' hash='4df624541fd6a25e'>
       <parameter type-id='7e9611b1' name='trid' filepath='nvme.c' line='1514' column='1'/>
       <parameter type-id='eaa32e2f' name='cb_ctx' filepath='nvme.c' line='1515' column='1'/>
       <parameter type-id='abc0b7d8' name='probe_cb' filepath='nvme.c' line='1516' column='1'/>
       <parameter type-id='196479c9' name='attach_cb' filepath='nvme.c' line='1517' column='1'/>
-      <parameter type-id='b978a222' name='remove_cb' filepath='nvme.c' line='1518' column='1'/>
+      <parameter type-id='499fb374' name='attach_fail_cb' filepath='nvme.c' line='1518' column='1'/>
+      <parameter type-id='b978a222' name='remove_cb' filepath='nvme.c' line='1519' column='1'/>
       <return type-id='75dd38a1'/>
     </function-decl>
-    <function-decl name='spdk_nvme_probe_async_ext' mangled-name='spdk_nvme_probe_async_ext' filepath='nvme.c' line='1524' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_probe_async_ext' hash='4df624541fd6a25e'>
-      <parameter type-id='7e9611b1' name='trid' filepath='nvme.c' line='1524' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_ctx' filepath='nvme.c' line='1525' column='1'/>
-      <parameter type-id='abc0b7d8' name='probe_cb' filepath='nvme.c' line='1526' column='1'/>
-      <parameter type-id='196479c9' name='attach_cb' filepath='nvme.c' line='1527' column='1'/>
-      <parameter type-id='499fb374' name='attach_fail_cb' filepath='nvme.c' line='1528' column='1'/>
-      <parameter type-id='b978a222' name='remove_cb' filepath='nvme.c' line='1529' column='1'/>
-      <return type-id='75dd38a1'/>
-    </function-decl>
-    <function-decl name='spdk_nvme_probe_poll_async' mangled-name='spdk_nvme_probe_poll_async' filepath='nvme.c' line='1556' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_probe_poll_async' hash='388da3fa973fde78'>
-      <parameter type-id='75dd38a1' name='probe_ctx' filepath='nvme.c' line='1556' column='1'/>
+    <function-decl name='spdk_nvme_probe_poll_async' mangled-name='spdk_nvme_probe_poll_async' filepath='nvme.c' line='1546' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_probe_poll_async' hash='388da3fa973fde78'>
+      <parameter type-id='75dd38a1' name='probe_ctx' filepath='nvme.c' line='1546' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_connect_async' mangled-name='spdk_nvme_connect_async' filepath='nvme.c' line='1598' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_connect_async' hash='6c08dc590a1c924f'>
-      <parameter type-id='7e9611b1' name='trid' filepath='nvme.c' line='1598' column='1'/>
-      <parameter type-id='69be0b8c' name='opts' filepath='nvme.c' line='1599' column='1'/>
-      <parameter type-id='196479c9' name='attach_cb' filepath='nvme.c' line='1600' column='1'/>
+    <function-decl name='spdk_nvme_connect_async' mangled-name='spdk_nvme_connect_async' filepath='nvme.c' line='1588' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_connect_async' hash='6c08dc590a1c924f'>
+      <parameter type-id='7e9611b1' name='trid' filepath='nvme.c' line='1588' column='1'/>
+      <parameter type-id='69be0b8c' name='opts' filepath='nvme.c' line='1589' column='1'/>
+      <parameter type-id='196479c9' name='attach_cb' filepath='nvme.c' line='1590' column='1'/>
       <return type-id='75dd38a1'/>
     </function-decl>
-    <class-decl name='spdk_nvme_detach_ctx' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='nvme_internal.h' line='1181' column='1' id='0e876556'/>
-    <class-decl name='spdk_nvme_probe_ctx' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='nvme_internal.h' line='1185' column='1' id='a394da29'/>
+    <class-decl name='spdk_nvme_detach_ctx' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='nvme_internal.h' line='1191' column='1' id='0e876556'/>
+    <class-decl name='spdk_nvme_probe_ctx' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='nvme_internal.h' line='1195' column='1' id='a394da29'/>
     <function-type size-in-bits='64' hash='ab490e2751f744bf' id='242fa1d8'>
       <parameter type-id='eaa32e2f'/>
       <parameter type-id='7e9611b1'/>
@@ -741,7 +741,7 @@
       <return type-id='95e97e5e'/>
     </function-type>
     <function-type size-in-bits='64' hash='388da3fa973fde78' id='6fe2b829'>
-      <parameter type-id='75dd38a1' name='probe_ctx' filepath='nvme.c' line='1556' column='1'/>
+      <parameter type-id='75dd38a1' name='probe_ctx' filepath='nvme.c' line='1546' column='1'/>
       <return type-id='95e97e5e'/>
     </function-type>
     <function-type size-in-bits='64' hash='7f32ffea222edbe7' id='2131c8e5'>
@@ -2936,310 +2936,310 @@
       <parameter type-id='5ca7f949' name='qpair' filepath='nvme_ctrlr.c' line='590' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_is_failed' mangled-name='spdk_nvme_ctrlr_is_failed' filepath='nvme_ctrlr.c' line='1084' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_is_failed' hash='c7c710e908194b91'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5516' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_is_failed' mangled-name='spdk_nvme_ctrlr_is_failed' filepath='nvme_ctrlr.c' line='1076' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_is_failed' hash='c7c710e908194b91'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5488' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_fail' mangled-name='spdk_nvme_ctrlr_fail' filepath='nvme_ctrlr.c' line='1122' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_fail' hash='7f32ffea222edbe7'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5260' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_fail' mangled-name='spdk_nvme_ctrlr_fail' filepath='nvme_ctrlr.c' line='1114' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_fail' hash='7f32ffea222edbe7'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5232' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_disconnect' mangled-name='spdk_nvme_ctrlr_disconnect' filepath='nvme_ctrlr.c' line='1766' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_disconnect' hash='388da3fa973fde78'>
+    <function-decl name='spdk_nvme_ctrlr_disconnect' mangled-name='spdk_nvme_ctrlr_disconnect' filepath='nvme_ctrlr.c' line='1758' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_disconnect' hash='388da3fa973fde78'>
       <parameter type-id='0d7532a2' name='ctrlr' filepath='nvme.c' line='108' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_reconnect_async' mangled-name='spdk_nvme_ctrlr_reconnect_async' filepath='nvme_ctrlr.c' line='1778' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_reconnect_async' hash='7f32ffea222edbe7'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5260' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_reconnect_async' mangled-name='spdk_nvme_ctrlr_reconnect_async' filepath='nvme_ctrlr.c' line='1770' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_reconnect_async' hash='7f32ffea222edbe7'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5232' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_reconnect_poll_async' mangled-name='spdk_nvme_ctrlr_reconnect_poll_async' filepath='nvme_ctrlr.c' line='1822' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_reconnect_poll_async' hash='388da3fa973fde78'>
+    <function-decl name='spdk_nvme_ctrlr_reconnect_poll_async' mangled-name='spdk_nvme_ctrlr_reconnect_poll_async' filepath='nvme_ctrlr.c' line='1814' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_reconnect_poll_async' hash='388da3fa973fde78'>
       <parameter type-id='0d7532a2' name='ctrlr' filepath='nvme.c' line='108' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_reset' mangled-name='spdk_nvme_ctrlr_reset' filepath='nvme_ctrlr.c' line='1940' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_reset' hash='388da3fa973fde78'>
+    <function-decl name='spdk_nvme_ctrlr_reset' mangled-name='spdk_nvme_ctrlr_reset' filepath='nvme_ctrlr.c' line='1932' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_reset' hash='388da3fa973fde78'>
       <parameter type-id='0d7532a2' name='ctrlr' filepath='nvme.c' line='108' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_reset_subsystem' mangled-name='spdk_nvme_ctrlr_reset_subsystem' filepath='nvme_ctrlr.c' line='1980' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_reset_subsystem' hash='388da3fa973fde78'>
+    <function-decl name='spdk_nvme_ctrlr_reset_subsystem' mangled-name='spdk_nvme_ctrlr_reset_subsystem' filepath='nvme_ctrlr.c' line='1972' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_reset_subsystem' hash='388da3fa973fde78'>
       <parameter type-id='0d7532a2' name='ctrlr' filepath='nvme.c' line='108' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_set_trid' mangled-name='spdk_nvme_ctrlr_set_trid' filepath='nvme_ctrlr.c' line='2006' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_set_trid' hash='09c2209575068ab4'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='2006' column='1'/>
-      <parameter type-id='6f56757a' name='trid' filepath='nvme_ctrlr.c' line='2006' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_set_trid' mangled-name='spdk_nvme_ctrlr_set_trid' filepath='nvme_ctrlr.c' line='1998' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_set_trid' hash='09c2209575068ab4'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='1998' column='1'/>
+      <parameter type-id='6f56757a' name='trid' filepath='nvme_ctrlr.c' line='1998' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_set_remove_cb' mangled-name='spdk_nvme_ctrlr_set_remove_cb' filepath='nvme_ctrlr.c' line='2035' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_set_remove_cb' hash='5695f5ce05a4c55f'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='2035' column='1'/>
-      <parameter type-id='b978a222' name='remove_cb' filepath='nvme_ctrlr.c' line='2036' column='1'/>
-      <parameter type-id='eaa32e2f' name='remove_ctx' filepath='nvme_ctrlr.c' line='2036' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_set_remove_cb' mangled-name='spdk_nvme_ctrlr_set_remove_cb' filepath='nvme_ctrlr.c' line='2027' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_set_remove_cb' hash='5695f5ce05a4c55f'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='2027' column='1'/>
+      <parameter type-id='b978a222' name='remove_cb' filepath='nvme_ctrlr.c' line='2028' column='1'/>
+      <parameter type-id='eaa32e2f' name='remove_ctx' filepath='nvme_ctrlr.c' line='2028' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_set_keys' mangled-name='spdk_nvme_ctrlr_set_keys' filepath='nvme_ctrlr.c' line='2049' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_set_keys' hash='e2544592d240406b'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='2049' column='1'/>
-      <parameter type-id='15653b1b' name='opts' filepath='nvme_ctrlr.c' line='2049' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_set_keys' mangled-name='spdk_nvme_ctrlr_set_keys' filepath='nvme_ctrlr.c' line='2041' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_set_keys' hash='e2544592d240406b'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='2041' column='1'/>
+      <parameter type-id='15653b1b' name='opts' filepath='nvme_ctrlr.c' line='2041' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_is_nssr_supported' mangled-name='spdk_nvme_ctrlr_is_nssr_supported' filepath='nvme_ctrlr.c' line='4582' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_is_nssr_supported' hash='c7c710e908194b91'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5516' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_is_nssr_supported' mangled-name='spdk_nvme_ctrlr_is_nssr_supported' filepath='nvme_ctrlr.c' line='4570' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_is_nssr_supported' hash='c7c710e908194b91'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5488' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_process_admin_completions' mangled-name='spdk_nvme_ctrlr_process_admin_completions' filepath='nvme_ctrlr.c' line='4593' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_process_admin_completions' hash='388da3fa973fde78'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5603' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_process_admin_completions' mangled-name='spdk_nvme_ctrlr_process_admin_completions' filepath='nvme_ctrlr.c' line='4581' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_process_admin_completions' hash='388da3fa973fde78'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5567' column='1'/>
       <return type-id='3ff5601b'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_get_data' mangled-name='spdk_nvme_ctrlr_get_data' filepath='nvme_ctrlr.c' line='4640' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_data' hash='94a9fde81bfb470d'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4640' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_get_data' mangled-name='spdk_nvme_ctrlr_get_data' filepath='nvme_ctrlr.c' line='4628' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_data' hash='94a9fde81bfb470d'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4628' column='1'/>
       <return type-id='a99c31d6'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_get_regs_csts' mangled-name='spdk_nvme_ctrlr_get_regs_csts' filepath='nvme_ctrlr.c' line='4645' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_regs_csts' hash='7f32ffea222edbe7'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4645' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_get_regs_csts' mangled-name='spdk_nvme_ctrlr_get_regs_csts' filepath='nvme_ctrlr.c' line='4633' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_regs_csts' hash='7f32ffea222edbe7'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4633' column='1'/>
       <return type-id='f62d2dc3'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_get_regs_cc' mangled-name='spdk_nvme_ctrlr_get_regs_cc' filepath='nvme_ctrlr.c' line='4655' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_regs_cc' hash='7f32ffea222edbe7'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4655' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_get_regs_cc' mangled-name='spdk_nvme_ctrlr_get_regs_cc' filepath='nvme_ctrlr.c' line='4643' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_regs_cc' hash='7f32ffea222edbe7'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4643' column='1'/>
       <return type-id='f0fcbcb4'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_get_regs_cap' mangled-name='spdk_nvme_ctrlr_get_regs_cap' filepath='nvme_ctrlr.c' line='4665' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_regs_cap' hash='7f32ffea222edbe7'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4665' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_get_regs_cap' mangled-name='spdk_nvme_ctrlr_get_regs_cap' filepath='nvme_ctrlr.c' line='4653' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_regs_cap' hash='7f32ffea222edbe7'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4653' column='1'/>
       <return type-id='007005ee'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_get_regs_vs' mangled-name='spdk_nvme_ctrlr_get_regs_vs' filepath='nvme_ctrlr.c' line='4670' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_regs_vs' hash='7f32ffea222edbe7'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4670' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_get_regs_vs' mangled-name='spdk_nvme_ctrlr_get_regs_vs' filepath='nvme_ctrlr.c' line='4658' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_regs_vs' hash='7f32ffea222edbe7'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4658' column='1'/>
       <return type-id='900beaa3'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_get_regs_cmbsz' mangled-name='spdk_nvme_ctrlr_get_regs_cmbsz' filepath='nvme_ctrlr.c' line='4675' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_regs_cmbsz' hash='7f32ffea222edbe7'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4675' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_get_regs_cmbsz' mangled-name='spdk_nvme_ctrlr_get_regs_cmbsz' filepath='nvme_ctrlr.c' line='4663' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_regs_cmbsz' hash='7f32ffea222edbe7'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4663' column='1'/>
       <return type-id='bde1820f'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_get_regs_pmrcap' mangled-name='spdk_nvme_ctrlr_get_regs_pmrcap' filepath='nvme_ctrlr.c' line='4686' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_regs_pmrcap' hash='7f32ffea222edbe7'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4686' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_get_regs_pmrcap' mangled-name='spdk_nvme_ctrlr_get_regs_pmrcap' filepath='nvme_ctrlr.c' line='4674' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_regs_pmrcap' hash='7f32ffea222edbe7'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4674' column='1'/>
       <return type-id='e61e4ac5'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_get_regs_bpinfo' mangled-name='spdk_nvme_ctrlr_get_regs_bpinfo' filepath='nvme_ctrlr.c' line='4697' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_regs_bpinfo' hash='7f32ffea222edbe7'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4697' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_get_regs_bpinfo' mangled-name='spdk_nvme_ctrlr_get_regs_bpinfo' filepath='nvme_ctrlr.c' line='4685' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_regs_bpinfo' hash='7f32ffea222edbe7'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4685' column='1'/>
       <return type-id='9e9f6fb8'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_get_pmrsz' mangled-name='spdk_nvme_ctrlr_get_pmrsz' filepath='nvme_ctrlr.c' line='4709' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_pmrsz' hash='e0055d99adb0e173'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5591' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_get_pmrsz' mangled-name='spdk_nvme_ctrlr_get_pmrsz' filepath='nvme_ctrlr.c' line='4697' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_pmrsz' hash='e0055d99adb0e173'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5555' column='1'/>
       <return type-id='9c313c2d'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_get_num_ns' mangled-name='spdk_nvme_ctrlr_get_num_ns' filepath='nvme_ctrlr.c' line='4715' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_num_ns' hash='2bb88322482ae81c'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4736' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_get_num_ns' mangled-name='spdk_nvme_ctrlr_get_num_ns' filepath='nvme_ctrlr.c' line='4703' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_num_ns' hash='2bb88322482ae81c'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4724' column='1'/>
       <return type-id='8f92235e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_is_active_ns' mangled-name='spdk_nvme_ctrlr_is_active_ns' filepath='nvme_ctrlr.c' line='4721' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_is_active_ns' hash='79745b8d969ff31b'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4721' column='1'/>
-      <parameter type-id='8f92235e' name='nsid' filepath='nvme_ctrlr.c' line='4721' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_is_active_ns' mangled-name='spdk_nvme_ctrlr_is_active_ns' filepath='nvme_ctrlr.c' line='4709' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_is_active_ns' hash='79745b8d969ff31b'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4709' column='1'/>
+      <parameter type-id='8f92235e' name='nsid' filepath='nvme_ctrlr.c' line='4709' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_get_first_active_ns' mangled-name='spdk_nvme_ctrlr_get_first_active_ns' filepath='nvme_ctrlr.c' line='4736' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_first_active_ns' hash='2bb88322482ae81c'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4736' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_get_first_active_ns' mangled-name='spdk_nvme_ctrlr_get_first_active_ns' filepath='nvme_ctrlr.c' line='4724' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_first_active_ns' hash='2bb88322482ae81c'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4724' column='1'/>
       <return type-id='8f92235e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_get_next_active_ns' mangled-name='spdk_nvme_ctrlr_get_next_active_ns' filepath='nvme_ctrlr.c' line='4757' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_next_active_ns' hash='0389e499374a3f97'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4757' column='1'/>
-      <parameter type-id='8f92235e' name='prev_nsid' filepath='nvme_ctrlr.c' line='4757' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_get_next_active_ns' mangled-name='spdk_nvme_ctrlr_get_next_active_ns' filepath='nvme_ctrlr.c' line='4745' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_next_active_ns' hash='0389e499374a3f97'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4745' column='1'/>
+      <parameter type-id='8f92235e' name='prev_nsid' filepath='nvme_ctrlr.c' line='4745' column='1'/>
       <return type-id='8f92235e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_get_ns' mangled-name='spdk_nvme_ctrlr_get_ns' filepath='nvme_ctrlr.c' line='4780' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_ns' hash='2bb88322482ae81c'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4780' column='1'/>
-      <parameter type-id='8f92235e' name='nsid' filepath='nvme_ctrlr.c' line='4780' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_get_ns' mangled-name='spdk_nvme_ctrlr_get_ns' filepath='nvme_ctrlr.c' line='4768' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_ns' hash='2bb88322482ae81c'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4768' column='1'/>
+      <parameter type-id='8f92235e' name='nsid' filepath='nvme_ctrlr.c' line='4768' column='1'/>
       <return type-id='663c4b46'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_get_pci_device' mangled-name='spdk_nvme_ctrlr_get_pci_device' filepath='nvme_ctrlr.c' line='4813' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_pci_device' hash='c152b797b087b0d8'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4813' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_get_pci_device' mangled-name='spdk_nvme_ctrlr_get_pci_device' filepath='nvme_ctrlr.c' line='4801' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_pci_device' hash='c152b797b087b0d8'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4801' column='1'/>
       <return type-id='efc5406b'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_get_numa_id' mangled-name='spdk_nvme_ctrlr_get_numa_id' filepath='nvme_ctrlr.c' line='4827' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_numa_id' hash='388da3fa973fde78'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5603' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_get_numa_id' mangled-name='spdk_nvme_ctrlr_get_numa_id' filepath='nvme_ctrlr.c' line='4815' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_numa_id' hash='388da3fa973fde78'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5567' column='1'/>
       <return type-id='3ff5601b'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_get_id' mangled-name='spdk_nvme_ctrlr_get_id' filepath='nvme_ctrlr.c' line='4837' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_id' hash='a123d258525fc45e'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4837' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_get_id' mangled-name='spdk_nvme_ctrlr_get_id' filepath='nvme_ctrlr.c' line='4825' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_id' hash='a123d258525fc45e'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4825' column='1'/>
       <return type-id='149c6638'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_get_max_xfer_size' mangled-name='spdk_nvme_ctrlr_get_max_xfer_size' filepath='nvme_ctrlr.c' line='4843' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_max_xfer_size' hash='2bb88322482ae81c'>
-      <parameter type-id='ba7cf15f' name='ctrlr' filepath='nvme_ctrlr.c' line='4843' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_get_max_xfer_size' mangled-name='spdk_nvme_ctrlr_get_max_xfer_size' filepath='nvme_ctrlr.c' line='4831' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_max_xfer_size' hash='2bb88322482ae81c'>
+      <parameter type-id='ba7cf15f' name='ctrlr' filepath='nvme_ctrlr.c' line='4831' column='1'/>
       <return type-id='8f92235e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_get_max_sges' mangled-name='spdk_nvme_ctrlr_get_max_sges' filepath='nvme_ctrlr.c' line='4849' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_max_sges' hash='a123d258525fc45e'>
-      <parameter type-id='ba7cf15f' name='ctrlr' filepath='nvme_ctrlr.c' line='4849' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_get_max_sges' mangled-name='spdk_nvme_ctrlr_get_max_sges' filepath='nvme_ctrlr.c' line='4837' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_max_sges' hash='a123d258525fc45e'>
+      <parameter type-id='ba7cf15f' name='ctrlr' filepath='nvme_ctrlr.c' line='4837' column='1'/>
       <return type-id='149c6638'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_register_aer_callback' mangled-name='spdk_nvme_ctrlr_register_aer_callback' filepath='nvme_ctrlr.c' line='4859' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_register_aer_callback' hash='5695f5ce05a4c55f'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4859' column='1'/>
-      <parameter type-id='8565ca96' name='aer_cb_fn' filepath='nvme_ctrlr.c' line='4860' column='1'/>
-      <parameter type-id='eaa32e2f' name='aer_cb_arg' filepath='nvme_ctrlr.c' line='4861' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_register_aer_callback' mangled-name='spdk_nvme_ctrlr_register_aer_callback' filepath='nvme_ctrlr.c' line='4847' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_register_aer_callback' hash='5695f5ce05a4c55f'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4847' column='1'/>
+      <parameter type-id='8565ca96' name='aer_cb_fn' filepath='nvme_ctrlr.c' line='4848' column='1'/>
+      <parameter type-id='eaa32e2f' name='aer_cb_arg' filepath='nvme_ctrlr.c' line='4849' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_disable_read_changed_ns_list_log_page' mangled-name='spdk_nvme_ctrlr_disable_read_changed_ns_list_log_page' filepath='nvme_ctrlr.c' line='4877' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_disable_read_changed_ns_list_log_page' hash='7f32ffea222edbe7'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5260' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_disable_read_changed_ns_list_log_page' mangled-name='spdk_nvme_ctrlr_disable_read_changed_ns_list_log_page' filepath='nvme_ctrlr.c' line='4865' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_disable_read_changed_ns_list_log_page' hash='7f32ffea222edbe7'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5232' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_register_timeout_callback' mangled-name='spdk_nvme_ctrlr_register_timeout_callback' filepath='nvme_ctrlr.c' line='4883' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_register_timeout_callback' hash='3aa907ea60dd12ba'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4883' column='1'/>
-      <parameter type-id='9c313c2d' name='timeout_io_us' filepath='nvme_ctrlr.c' line='4884' column='1'/>
-      <parameter type-id='9c313c2d' name='timeout_admin_us' filepath='nvme_ctrlr.c' line='4884' column='1'/>
-      <parameter type-id='818cfb43' name='cb_fn' filepath='nvme_ctrlr.c' line='4885' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='nvme_ctrlr.c' line='4885' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_register_timeout_callback' mangled-name='spdk_nvme_ctrlr_register_timeout_callback' filepath='nvme_ctrlr.c' line='4871' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_register_timeout_callback' hash='3aa907ea60dd12ba'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4871' column='1'/>
+      <parameter type-id='9c313c2d' name='timeout_io_us' filepath='nvme_ctrlr.c' line='4872' column='1'/>
+      <parameter type-id='9c313c2d' name='timeout_admin_us' filepath='nvme_ctrlr.c' line='4872' column='1'/>
+      <parameter type-id='818cfb43' name='cb_fn' filepath='nvme_ctrlr.c' line='4873' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='nvme_ctrlr.c' line='4873' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_is_log_page_supported' mangled-name='spdk_nvme_ctrlr_is_log_page_supported' filepath='nvme_ctrlr.c' line='4905' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_is_log_page_supported' hash='d5e141ff0e52545d'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4913' column='1'/>
-      <parameter type-id='b96825af' name='feature_code' filepath='nvme_ctrlr.c' line='4913' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_is_log_page_supported' mangled-name='spdk_nvme_ctrlr_is_log_page_supported' filepath='nvme_ctrlr.c' line='4893' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_is_log_page_supported' hash='d5e141ff0e52545d'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4901' column='1'/>
+      <parameter type-id='b96825af' name='feature_code' filepath='nvme_ctrlr.c' line='4901' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_is_feature_supported' mangled-name='spdk_nvme_ctrlr_is_feature_supported' filepath='nvme_ctrlr.c' line='4913' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_is_feature_supported' hash='d5e141ff0e52545d'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4913' column='1'/>
-      <parameter type-id='b96825af' name='feature_code' filepath='nvme_ctrlr.c' line='4913' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_is_feature_supported' mangled-name='spdk_nvme_ctrlr_is_feature_supported' filepath='nvme_ctrlr.c' line='4901' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_is_feature_supported' hash='d5e141ff0e52545d'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4901' column='1'/>
+      <parameter type-id='b96825af' name='feature_code' filepath='nvme_ctrlr.c' line='4901' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_attach_ns' mangled-name='spdk_nvme_ctrlr_attach_ns' filepath='nvme_ctrlr.c' line='4921' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_attach_ns' hash='56a63776cd492f08'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4971' column='1'/>
-      <parameter type-id='8f92235e' name='nsid' filepath='nvme_ctrlr.c' line='4971' column='1'/>
-      <parameter type-id='c829039d' name='payload' filepath='nvme_ctrlr.c' line='4972' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_attach_ns' mangled-name='spdk_nvme_ctrlr_attach_ns' filepath='nvme_ctrlr.c' line='4909' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_attach_ns' hash='56a63776cd492f08'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4955' column='1'/>
+      <parameter type-id='8f92235e' name='nsid' filepath='nvme_ctrlr.c' line='4955' column='1'/>
+      <parameter type-id='c829039d' name='payload' filepath='nvme_ctrlr.c' line='4956' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_detach_ns' mangled-name='spdk_nvme_ctrlr_detach_ns' filepath='nvme_ctrlr.c' line='4971' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_detach_ns' hash='56a63776cd492f08'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4971' column='1'/>
-      <parameter type-id='8f92235e' name='nsid' filepath='nvme_ctrlr.c' line='4971' column='1'/>
-      <parameter type-id='c829039d' name='payload' filepath='nvme_ctrlr.c' line='4972' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_detach_ns' mangled-name='spdk_nvme_ctrlr_detach_ns' filepath='nvme_ctrlr.c' line='4955' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_detach_ns' hash='56a63776cd492f08'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4955' column='1'/>
+      <parameter type-id='8f92235e' name='nsid' filepath='nvme_ctrlr.c' line='4955' column='1'/>
+      <parameter type-id='c829039d' name='payload' filepath='nvme_ctrlr.c' line='4956' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_create_ns' mangled-name='spdk_nvme_ctrlr_create_ns' filepath='nvme_ctrlr.c' line='5009' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_create_ns' hash='e4d92b4b45f935f9'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5009' column='1'/>
-      <parameter type-id='4b4afe0d' name='payload' filepath='nvme_ctrlr.c' line='5009' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_create_ns' mangled-name='spdk_nvme_ctrlr_create_ns' filepath='nvme_ctrlr.c' line='4989' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_create_ns' hash='e4d92b4b45f935f9'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4989' column='1'/>
+      <parameter type-id='4b4afe0d' name='payload' filepath='nvme_ctrlr.c' line='4989' column='1'/>
       <return type-id='8f92235e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_delete_ns' mangled-name='spdk_nvme_ctrlr_delete_ns' filepath='nvme_ctrlr.c' line='5046' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_delete_ns' hash='6668baab5275d4c5'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5046' column='1'/>
-      <parameter type-id='8f92235e' name='nsid' filepath='nvme_ctrlr.c' line='5046' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_delete_ns' mangled-name='spdk_nvme_ctrlr_delete_ns' filepath='nvme_ctrlr.c' line='5026' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_delete_ns' hash='6668baab5275d4c5'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5026' column='1'/>
+      <parameter type-id='8f92235e' name='nsid' filepath='nvme_ctrlr.c' line='5026' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_format' mangled-name='spdk_nvme_ctrlr_format' filepath='nvme_ctrlr.c' line='5082' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_format' hash='5f07b1f746584c77'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5082' column='1'/>
-      <parameter type-id='8f92235e' name='nsid' filepath='nvme_ctrlr.c' line='5082' column='1'/>
-      <parameter type-id='80e5734e' name='format' filepath='nvme_ctrlr.c' line='5083' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_format' mangled-name='spdk_nvme_ctrlr_format' filepath='nvme_ctrlr.c' line='5058' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_format' hash='5f07b1f746584c77'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5058' column='1'/>
+      <parameter type-id='8f92235e' name='nsid' filepath='nvme_ctrlr.c' line='5058' column='1'/>
+      <parameter type-id='80e5734e' name='format' filepath='nvme_ctrlr.c' line='5059' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_update_firmware' mangled-name='spdk_nvme_ctrlr_update_firmware' filepath='nvme_ctrlr.c' line='5116' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_update_firmware' hash='f457f8cf6c4c3048'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5116' column='1'/>
-      <parameter type-id='eaa32e2f' name='payload' filepath='nvme_ctrlr.c' line='5116' column='1'/>
-      <parameter type-id='8f92235e' name='size' filepath='nvme_ctrlr.c' line='5116' column='1'/>
-      <parameter type-id='95e97e5e' name='slot' filepath='nvme_ctrlr.c' line='5117' column='1'/>
-      <parameter type-id='0009b8fa' name='commit_action' filepath='nvme_ctrlr.c' line='5117' column='1'/>
-      <parameter type-id='d18635a1' name='completion_status' filepath='nvme_ctrlr.c' line='5117' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_update_firmware' mangled-name='spdk_nvme_ctrlr_update_firmware' filepath='nvme_ctrlr.c' line='5088' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_update_firmware' hash='f457f8cf6c4c3048'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5088' column='1'/>
+      <parameter type-id='eaa32e2f' name='payload' filepath='nvme_ctrlr.c' line='5088' column='1'/>
+      <parameter type-id='8f92235e' name='size' filepath='nvme_ctrlr.c' line='5088' column='1'/>
+      <parameter type-id='95e97e5e' name='slot' filepath='nvme_ctrlr.c' line='5089' column='1'/>
+      <parameter type-id='0009b8fa' name='commit_action' filepath='nvme_ctrlr.c' line='5089' column='1'/>
+      <parameter type-id='d18635a1' name='completion_status' filepath='nvme_ctrlr.c' line='5089' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_reserve_cmb' mangled-name='spdk_nvme_ctrlr_reserve_cmb' filepath='nvme_ctrlr.c' line='5223' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_reserve_cmb' hash='388da3fa973fde78'>
+    <function-decl name='spdk_nvme_ctrlr_reserve_cmb' mangled-name='spdk_nvme_ctrlr_reserve_cmb' filepath='nvme_ctrlr.c' line='5195' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_reserve_cmb' hash='388da3fa973fde78'>
       <parameter type-id='0d7532a2' name='ctrlr' filepath='nvme.c' line='108' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_map_cmb' mangled-name='spdk_nvme_ctrlr_map_cmb' filepath='nvme_ctrlr.c' line='5248' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_map_cmb' hash='dd52aedfbd7a23ba'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5292' column='1'/>
-      <parameter type-id='78c01427' name='size' filepath='nvme_ctrlr.c' line='5292' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_map_cmb' mangled-name='spdk_nvme_ctrlr_map_cmb' filepath='nvme_ctrlr.c' line='5220' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_map_cmb' hash='dd52aedfbd7a23ba'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5264' column='1'/>
+      <parameter type-id='78c01427' name='size' filepath='nvme_ctrlr.c' line='5264' column='1'/>
       <return type-id='eaa32e2f'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_unmap_cmb' mangled-name='spdk_nvme_ctrlr_unmap_cmb' filepath='nvme_ctrlr.c' line='5260' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_unmap_cmb' hash='7f32ffea222edbe7'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5260' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_unmap_cmb' mangled-name='spdk_nvme_ctrlr_unmap_cmb' filepath='nvme_ctrlr.c' line='5232' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_unmap_cmb' hash='7f32ffea222edbe7'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5232' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_enable_pmr' mangled-name='spdk_nvme_ctrlr_enable_pmr' filepath='nvme_ctrlr.c' line='5268' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_enable_pmr' hash='388da3fa973fde78'>
+    <function-decl name='spdk_nvme_ctrlr_enable_pmr' mangled-name='spdk_nvme_ctrlr_enable_pmr' filepath='nvme_ctrlr.c' line='5240' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_enable_pmr' hash='388da3fa973fde78'>
       <parameter type-id='0d7532a2' name='ctrlr' filepath='nvme.c' line='108' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_disable_pmr' mangled-name='spdk_nvme_ctrlr_disable_pmr' filepath='nvme_ctrlr.c' line='5280' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_disable_pmr' hash='388da3fa973fde78'>
+    <function-decl name='spdk_nvme_ctrlr_disable_pmr' mangled-name='spdk_nvme_ctrlr_disable_pmr' filepath='nvme_ctrlr.c' line='5252' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_disable_pmr' hash='388da3fa973fde78'>
       <parameter type-id='0d7532a2' name='ctrlr' filepath='nvme.c' line='108' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_map_pmr' mangled-name='spdk_nvme_ctrlr_map_pmr' filepath='nvme_ctrlr.c' line='5292' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_map_pmr' hash='dd52aedfbd7a23ba'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5292' column='1'/>
-      <parameter type-id='78c01427' name='size' filepath='nvme_ctrlr.c' line='5292' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_map_pmr' mangled-name='spdk_nvme_ctrlr_map_pmr' filepath='nvme_ctrlr.c' line='5264' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_map_pmr' hash='dd52aedfbd7a23ba'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5264' column='1'/>
+      <parameter type-id='78c01427' name='size' filepath='nvme_ctrlr.c' line='5264' column='1'/>
       <return type-id='eaa32e2f'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_unmap_pmr' mangled-name='spdk_nvme_ctrlr_unmap_pmr' filepath='nvme_ctrlr.c' line='5304' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_unmap_pmr' hash='388da3fa973fde78'>
+    <function-decl name='spdk_nvme_ctrlr_unmap_pmr' mangled-name='spdk_nvme_ctrlr_unmap_pmr' filepath='nvme_ctrlr.c' line='5276' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_unmap_pmr' hash='388da3fa973fde78'>
       <parameter type-id='0d7532a2' name='ctrlr' filepath='nvme.c' line='108' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_read_boot_partition_start' mangled-name='spdk_nvme_ctrlr_read_boot_partition_start' filepath='nvme_ctrlr.c' line='5316' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_read_boot_partition_start' hash='9b5e3cc521d97890'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5316' column='1'/>
-      <parameter type-id='eaa32e2f' name='payload' filepath='nvme_ctrlr.c' line='5316' column='1'/>
-      <parameter type-id='8f92235e' name='bprsz' filepath='nvme_ctrlr.c' line='5317' column='1'/>
-      <parameter type-id='8f92235e' name='bprof' filepath='nvme_ctrlr.c' line='5317' column='1'/>
-      <parameter type-id='8f92235e' name='bpid' filepath='nvme_ctrlr.c' line='5317' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_read_boot_partition_start' mangled-name='spdk_nvme_ctrlr_read_boot_partition_start' filepath='nvme_ctrlr.c' line='5288' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_read_boot_partition_start' hash='9b5e3cc521d97890'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5288' column='1'/>
+      <parameter type-id='eaa32e2f' name='payload' filepath='nvme_ctrlr.c' line='5288' column='1'/>
+      <parameter type-id='8f92235e' name='bprsz' filepath='nvme_ctrlr.c' line='5289' column='1'/>
+      <parameter type-id='8f92235e' name='bprof' filepath='nvme_ctrlr.c' line='5289' column='1'/>
+      <parameter type-id='8f92235e' name='bpid' filepath='nvme_ctrlr.c' line='5289' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_read_boot_partition_poll' mangled-name='spdk_nvme_ctrlr_read_boot_partition_poll' filepath='nvme_ctrlr.c' line='5374' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_read_boot_partition_poll' hash='388da3fa973fde78'>
+    <function-decl name='spdk_nvme_ctrlr_read_boot_partition_poll' mangled-name='spdk_nvme_ctrlr_read_boot_partition_poll' filepath='nvme_ctrlr.c' line='5346' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_read_boot_partition_poll' hash='388da3fa973fde78'>
       <parameter type-id='0d7532a2' name='ctrlr' filepath='nvme.c' line='108' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_write_boot_partition' mangled-name='spdk_nvme_ctrlr_write_boot_partition' filepath='nvme_ctrlr.c' line='5481' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_write_boot_partition' hash='fc5663b0df16d09d'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5481' column='1'/>
-      <parameter type-id='eaa32e2f' name='payload' filepath='nvme_ctrlr.c' line='5482' column='1'/>
-      <parameter type-id='8f92235e' name='size' filepath='nvme_ctrlr.c' line='5482' column='1'/>
-      <parameter type-id='8f92235e' name='bpid' filepath='nvme_ctrlr.c' line='5482' column='1'/>
-      <parameter type-id='766930c6' name='cb_fn' filepath='nvme_ctrlr.c' line='5483' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='nvme_ctrlr.c' line='5483' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_write_boot_partition' mangled-name='spdk_nvme_ctrlr_write_boot_partition' filepath='nvme_ctrlr.c' line='5453' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_write_boot_partition' hash='fc5663b0df16d09d'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5453' column='1'/>
+      <parameter type-id='eaa32e2f' name='payload' filepath='nvme_ctrlr.c' line='5454' column='1'/>
+      <parameter type-id='8f92235e' name='size' filepath='nvme_ctrlr.c' line='5454' column='1'/>
+      <parameter type-id='8f92235e' name='bpid' filepath='nvme_ctrlr.c' line='5454' column='1'/>
+      <parameter type-id='766930c6' name='cb_fn' filepath='nvme_ctrlr.c' line='5455' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='nvme_ctrlr.c' line='5455' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_is_discovery' mangled-name='spdk_nvme_ctrlr_is_discovery' filepath='nvme_ctrlr.c' line='5507' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_is_discovery' hash='c7c710e908194b91'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5516' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_is_discovery' mangled-name='spdk_nvme_ctrlr_is_discovery' filepath='nvme_ctrlr.c' line='5479' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_is_discovery' hash='c7c710e908194b91'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5488' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_is_fabrics' mangled-name='spdk_nvme_ctrlr_is_fabrics' filepath='nvme_ctrlr.c' line='5516' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_is_fabrics' hash='c7c710e908194b91'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5516' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_is_fabrics' mangled-name='spdk_nvme_ctrlr_is_fabrics' filepath='nvme_ctrlr.c' line='5488' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_is_fabrics' hash='c7c710e908194b91'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5488' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_security_receive' mangled-name='spdk_nvme_ctrlr_security_receive' filepath='nvme_ctrlr.c' line='5524' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_security_receive' hash='cf62e500fba69dec'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5557' column='1'/>
-      <parameter type-id='b96825af' name='secp' filepath='nvme_ctrlr.c' line='5557' column='1'/>
-      <parameter type-id='149c6638' name='spsp' filepath='nvme_ctrlr.c' line='5558' column='1'/>
-      <parameter type-id='b96825af' name='nssf' filepath='nvme_ctrlr.c' line='5558' column='1'/>
-      <parameter type-id='eaa32e2f' name='payload' filepath='nvme_ctrlr.c' line='5558' column='1'/>
-      <parameter type-id='b59d7dce' name='size' filepath='nvme_ctrlr.c' line='5558' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_security_receive' mangled-name='spdk_nvme_ctrlr_security_receive' filepath='nvme_ctrlr.c' line='5496' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_security_receive' hash='cf62e500fba69dec'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5525' column='1'/>
+      <parameter type-id='b96825af' name='secp' filepath='nvme_ctrlr.c' line='5525' column='1'/>
+      <parameter type-id='149c6638' name='spsp' filepath='nvme_ctrlr.c' line='5526' column='1'/>
+      <parameter type-id='b96825af' name='nssf' filepath='nvme_ctrlr.c' line='5526' column='1'/>
+      <parameter type-id='eaa32e2f' name='payload' filepath='nvme_ctrlr.c' line='5526' column='1'/>
+      <parameter type-id='b59d7dce' name='size' filepath='nvme_ctrlr.c' line='5526' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_security_send' mangled-name='spdk_nvme_ctrlr_security_send' filepath='nvme_ctrlr.c' line='5557' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_security_send' hash='cf62e500fba69dec'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5557' column='1'/>
-      <parameter type-id='b96825af' name='secp' filepath='nvme_ctrlr.c' line='5557' column='1'/>
-      <parameter type-id='149c6638' name='spsp' filepath='nvme_ctrlr.c' line='5558' column='1'/>
-      <parameter type-id='b96825af' name='nssf' filepath='nvme_ctrlr.c' line='5558' column='1'/>
-      <parameter type-id='eaa32e2f' name='payload' filepath='nvme_ctrlr.c' line='5558' column='1'/>
-      <parameter type-id='b59d7dce' name='size' filepath='nvme_ctrlr.c' line='5558' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_security_send' mangled-name='spdk_nvme_ctrlr_security_send' filepath='nvme_ctrlr.c' line='5525' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_security_send' hash='cf62e500fba69dec'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5525' column='1'/>
+      <parameter type-id='b96825af' name='secp' filepath='nvme_ctrlr.c' line='5525' column='1'/>
+      <parameter type-id='149c6638' name='spsp' filepath='nvme_ctrlr.c' line='5526' column='1'/>
+      <parameter type-id='b96825af' name='nssf' filepath='nvme_ctrlr.c' line='5526' column='1'/>
+      <parameter type-id='eaa32e2f' name='payload' filepath='nvme_ctrlr.c' line='5526' column='1'/>
+      <parameter type-id='b59d7dce' name='size' filepath='nvme_ctrlr.c' line='5526' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_get_flags' mangled-name='spdk_nvme_ctrlr_get_flags' filepath='nvme_ctrlr.c' line='5591' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_flags' hash='e0055d99adb0e173'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5591' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_get_flags' mangled-name='spdk_nvme_ctrlr_get_flags' filepath='nvme_ctrlr.c' line='5555' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_flags' hash='e0055d99adb0e173'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5555' column='1'/>
       <return type-id='9c313c2d'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_get_transport_id' mangled-name='spdk_nvme_ctrlr_get_transport_id' filepath='nvme_ctrlr.c' line='5597' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_transport_id' hash='a7650a2733365fe7'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5597' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_get_transport_id' mangled-name='spdk_nvme_ctrlr_get_transport_id' filepath='nvme_ctrlr.c' line='5561' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_transport_id' hash='a7650a2733365fe7'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5561' column='1'/>
       <return type-id='7e9611b1'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_alloc_qid' mangled-name='spdk_nvme_ctrlr_alloc_qid' filepath='nvme_ctrlr.c' line='5603' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_alloc_qid' hash='388da3fa973fde78'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5603' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_alloc_qid' mangled-name='spdk_nvme_ctrlr_alloc_qid' filepath='nvme_ctrlr.c' line='5567' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_alloc_qid' hash='388da3fa973fde78'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5567' column='1'/>
       <return type-id='3ff5601b'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_free_qid' mangled-name='spdk_nvme_ctrlr_free_qid' filepath='nvme_ctrlr.c' line='5622' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_free_qid' hash='a123d258525fc45e'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5622' column='1'/>
-      <parameter type-id='149c6638' name='qid' filepath='nvme_ctrlr.c' line='5622' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_free_qid' mangled-name='spdk_nvme_ctrlr_free_qid' filepath='nvme_ctrlr.c' line='5586' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_free_qid' hash='a123d258525fc45e'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5586' column='1'/>
+      <parameter type-id='149c6638' name='qid' filepath='nvme_ctrlr.c' line='5586' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_get_memory_domains' mangled-name='spdk_nvme_ctrlr_get_memory_domains' filepath='nvme_ctrlr.c' line='5636' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_memory_domains' hash='d628501fd2223339'>
-      <parameter type-id='ba7cf15f' name='ctrlr' filepath='nvme_ctrlr.c' line='5636' column='1'/>
-      <parameter type-id='1fc0b044' name='domains' filepath='nvme_ctrlr.c' line='5637' column='1'/>
-      <parameter type-id='95e97e5e' name='array_size' filepath='nvme_ctrlr.c' line='5637' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_get_memory_domains' mangled-name='spdk_nvme_ctrlr_get_memory_domains' filepath='nvme_ctrlr.c' line='5600' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_get_memory_domains' hash='d628501fd2223339'>
+      <parameter type-id='ba7cf15f' name='ctrlr' filepath='nvme_ctrlr.c' line='5600' column='1'/>
+      <parameter type-id='1fc0b044' name='domains' filepath='nvme_ctrlr.c' line='5601' column='1'/>
+      <parameter type-id='95e97e5e' name='array_size' filepath='nvme_ctrlr.c' line='5601' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ctrlr_authenticate' mangled-name='spdk_nvme_ctrlr_authenticate' filepath='nvme_ctrlr.c' line='5643' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_authenticate' hash='a7f99494147764a8'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5643' column='1'/>
-      <parameter type-id='283aeba5' name='cb_fn' filepath='nvme_ctrlr.c' line='5644' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_ctx' filepath='nvme_ctrlr.c' line='5644' column='1'/>
+    <function-decl name='spdk_nvme_ctrlr_authenticate' mangled-name='spdk_nvme_ctrlr_authenticate' filepath='nvme_ctrlr.c' line='5607' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_authenticate' hash='a7f99494147764a8'>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5607' column='1'/>
+      <parameter type-id='283aeba5' name='cb_fn' filepath='nvme_ctrlr.c' line='5608' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_ctx' filepath='nvme_ctrlr.c' line='5608' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
     <class-decl name='spdk_nvme_ns' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='nvme_internal.h' line='566' column='1' id='2e8e7df0'/>
-    <class-decl name='nvme_driver' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='nvme_internal.h' line='1218' column='1' id='7528a00e'/>
+    <class-decl name='nvme_driver' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='nvme_internal.h' line='1228' column='1' id='7528a00e'/>
     <function-type size-in-bits='64' hash='35f9072fdd1fcb6c' id='d8ef6f95'>
       <parameter type-id='efc5406b'/>
       <parameter type-id='8f92235e'/>
@@ -3269,9 +3269,9 @@
       <return type-id='48b5725f'/>
     </function-type>
     <function-type size-in-bits='64' hash='d628501fd2223339' id='a1468699'>
-      <parameter type-id='ba7cf15f' name='ctrlr' filepath='nvme_ctrlr.c' line='5636' column='1'/>
-      <parameter type-id='1fc0b044' name='domains' filepath='nvme_ctrlr.c' line='5637' column='1'/>
-      <parameter type-id='95e97e5e' name='array_size' filepath='nvme_ctrlr.c' line='5637' column='1'/>
+      <parameter type-id='ba7cf15f' name='ctrlr' filepath='nvme_ctrlr.c' line='5600' column='1'/>
+      <parameter type-id='1fc0b044' name='domains' filepath='nvme_ctrlr.c' line='5601' column='1'/>
+      <parameter type-id='95e97e5e' name='array_size' filepath='nvme_ctrlr.c' line='5601' column='1'/>
       <return type-id='95e97e5e'/>
     </function-type>
     <function-type size-in-bits='64' hash='388da3fa973fde78' id='c476bfbf'>
@@ -3284,11 +3284,11 @@
       <return type-id='95e97e5e'/>
     </function-type>
     <function-type size-in-bits='64' hash='a123d258525fc45e' id='dcba7d19'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4837' column='1'/>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4825' column='1'/>
       <return type-id='149c6638'/>
     </function-type>
     <function-type size-in-bits='64' hash='2bb88322482ae81c' id='934d7c13'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4736' column='1'/>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='4724' column='1'/>
       <return type-id='8f92235e'/>
     </function-type>
     <function-type size-in-bits='64' hash='7f32ffea222edbe7' id='29ea6f2d'>
@@ -3301,8 +3301,8 @@
       <return type-id='48b5725f'/>
     </function-type>
     <function-type size-in-bits='64' hash='dd52aedfbd7a23ba' id='55dbe107'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5292' column='1'/>
-      <parameter type-id='78c01427' name='size' filepath='nvme_ctrlr.c' line='5292' column='1'/>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5264' column='1'/>
+      <parameter type-id='78c01427' name='size' filepath='nvme_ctrlr.c' line='5264' column='1'/>
       <return type-id='eaa32e2f'/>
     </function-type>
   </abi-instr>
@@ -4616,7 +4616,7 @@
       <return type-id='95e97e5e'/>
     </function-decl>
     <class-decl name='spdk_nvme_qpair' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='nvme_internal.h' line='459' column='1' id='7718a4aa'/>
-    <class-decl name='spdk_nvme_ctrlr' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='nvme_internal.h' line='1015' column='1' id='30a17994'/>
+    <class-decl name='spdk_nvme_ctrlr' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='nvme_internal.h' line='1025' column='1' id='30a17994'/>
     <type-decl name='void' id='48b5725f'/>
     <pointer-type-def type-id='48b5725f' id='eaa32e2f'/>
     <function-type size-in-bits='64' hash='e6968c2e2cf25faf' id='82ce344b'>
@@ -4634,7 +4634,7 @@
   <abi-instr address-size='64' path='nvme_ctrlr_ocssd_cmd.c' language='LANG_C11'>
     <pointer-type-def type-id='30a17994' size-in-bits='64' id='0d7532a5'/>
     <function-decl name='spdk_nvme_ctrlr_is_ocssd_supported' mangled-name='spdk_nvme_ctrlr_is_ocssd_supported' filepath='nvme_ctrlr_ocssd_cmd.c' line='10' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ctrlr_is_ocssd_supported' hash='c7c710e908194b91'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5516' column='1'/>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5488' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
     <function-decl name='spdk_nvme_ocssd_ctrlr_cmd_geometry' mangled-name='spdk_nvme_ocssd_ctrlr_cmd_geometry' filepath='nvme_ctrlr_ocssd_cmd.c' line='41' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ocssd_ctrlr_cmd_geometry' hash='fc5663b0df16d09d'>
@@ -4658,7 +4658,7 @@
       <return type-id='95e97e5e'/>
     </function-decl>
     <function-decl name='spdk_nvme_cuse_update_namespaces' mangled-name='spdk_nvme_cuse_update_namespaces' filepath='nvme_cuse.c' line='1497' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_cuse_update_namespaces' hash='7f32ffea222edbe7'>
-      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5260' column='1'/>
+      <parameter type-id='0d7532a3' name='ctrlr' filepath='nvme_ctrlr.c' line='5232' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
     <function-decl name='spdk_nvme_cuse_get_ctrlr_name' mangled-name='spdk_nvme_cuse_get_ctrlr_name' filepath='nvme_cuse.c' line='1503' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_cuse_get_ctrlr_name' hash='5545c35e70edba50'>
@@ -4909,7 +4909,7 @@
         <var-decl name='reserved' type-id='b96825af' visibility='default' filepath='nvme_spec.h' line='3044' column='1'/>
       </data-member>
     </class-decl>
-    <typedef-decl name='spdk_nvme_dealloc_logical_block_read_value_t' type-id='d59d4727' size-in-bits='32' alignment-in-bits='32' filepath='nvme_ns.c' line='426' column='1' hash='b1377115f0093aff' id='80b8ce90'/>
+    <typedef-decl name='spdk_nvme_dealloc_logical_block_read_value_t' type-id='d59d4727' size-in-bits='32' alignment-in-bits='32' filepath='nvme_ns.c' line='410' column='1' hash='b1377115f0093aff' id='80b8ce90'/>
     <array-type-def dimensions='1' type-id='b96825af' size-in-bits='30624' hash='a8d123aee729b102' id='b082307f'>
       <subrange length='3828' lower-bound='0' upper-bound='3827' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='2428eaee50e58a33' id='073d93e2'/>
     </array-type-def>
@@ -4930,100 +4930,100 @@
     <pointer-type-def type-id='61222049' size-in-bits='64' id='4bb8fbd9'/>
     <pointer-type-def type-id='30a17994' size-in-bits='64' id='0d7532a8'/>
     <pointer-type-def type-id='2e8e7df0' size-in-bits='64' id='663c4b47'/>
-    <function-decl name='spdk_nvme_ns_get_id' mangled-name='spdk_nvme_ns_get_id' filepath='nvme_ns.c' line='305' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_id' hash='2bb88322482ae81c'>
-      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='443' column='1'/>
+    <function-decl name='spdk_nvme_ns_get_id' mangled-name='spdk_nvme_ns_get_id' filepath='nvme_ns.c' line='289' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_id' hash='2bb88322482ae81c'>
+      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='427' column='1'/>
       <return type-id='8f92235e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ns_is_active' mangled-name='spdk_nvme_ns_is_active' filepath='nvme_ns.c' line='311' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_is_active' hash='c7c710e908194b91'>
-      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='391' column='1'/>
+    <function-decl name='spdk_nvme_ns_is_active' mangled-name='spdk_nvme_ns_is_active' filepath='nvme_ns.c' line='295' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_is_active' hash='c7c710e908194b91'>
+      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='375' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ns_get_ctrlr' mangled-name='spdk_nvme_ns_get_ctrlr' filepath='nvme_ns.c' line='333' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_ctrlr' hash='7f32ffea222edbe7'>
-      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='333' column='1'/>
+    <function-decl name='spdk_nvme_ns_get_ctrlr' mangled-name='spdk_nvme_ns_get_ctrlr' filepath='nvme_ns.c' line='317' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_ctrlr' hash='7f32ffea222edbe7'>
+      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='317' column='1'/>
       <return type-id='0d7532a8'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ns_get_max_io_xfer_size' mangled-name='spdk_nvme_ns_get_max_io_xfer_size' filepath='nvme_ns.c' line='339' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_max_io_xfer_size' hash='2bb88322482ae81c'>
-      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='443' column='1'/>
+    <function-decl name='spdk_nvme_ns_get_max_io_xfer_size' mangled-name='spdk_nvme_ns_get_max_io_xfer_size' filepath='nvme_ns.c' line='323' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_max_io_xfer_size' hash='2bb88322482ae81c'>
+      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='427' column='1'/>
       <return type-id='8f92235e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ns_get_sector_size' mangled-name='spdk_nvme_ns_get_sector_size' filepath='nvme_ns.c' line='345' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_sector_size' hash='2bb88322482ae81c'>
-      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='443' column='1'/>
+    <function-decl name='spdk_nvme_ns_get_sector_size' mangled-name='spdk_nvme_ns_get_sector_size' filepath='nvme_ns.c' line='329' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_sector_size' hash='2bb88322482ae81c'>
+      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='427' column='1'/>
       <return type-id='8f92235e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ns_get_extended_sector_size' mangled-name='spdk_nvme_ns_get_extended_sector_size' filepath='nvme_ns.c' line='351' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_extended_sector_size' hash='2bb88322482ae81c'>
-      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='443' column='1'/>
+    <function-decl name='spdk_nvme_ns_get_extended_sector_size' mangled-name='spdk_nvme_ns_get_extended_sector_size' filepath='nvme_ns.c' line='335' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_extended_sector_size' hash='2bb88322482ae81c'>
+      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='427' column='1'/>
       <return type-id='8f92235e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ns_get_num_sectors' mangled-name='spdk_nvme_ns_get_num_sectors' filepath='nvme_ns.c' line='357' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_num_sectors' hash='e0055d99adb0e173'>
-      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='363' column='1'/>
+    <function-decl name='spdk_nvme_ns_get_num_sectors' mangled-name='spdk_nvme_ns_get_num_sectors' filepath='nvme_ns.c' line='341' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_num_sectors' hash='e0055d99adb0e173'>
+      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='347' column='1'/>
       <return type-id='9c313c2d'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ns_get_size' mangled-name='spdk_nvme_ns_get_size' filepath='nvme_ns.c' line='363' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_size' hash='e0055d99adb0e173'>
-      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='363' column='1'/>
+    <function-decl name='spdk_nvme_ns_get_size' mangled-name='spdk_nvme_ns_get_size' filepath='nvme_ns.c' line='347' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_size' hash='e0055d99adb0e173'>
+      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='347' column='1'/>
       <return type-id='9c313c2d'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ns_get_flags' mangled-name='spdk_nvme_ns_get_flags' filepath='nvme_ns.c' line='369' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_flags' hash='2bb88322482ae81c'>
-      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='443' column='1'/>
+    <function-decl name='spdk_nvme_ns_get_flags' mangled-name='spdk_nvme_ns_get_flags' filepath='nvme_ns.c' line='353' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_flags' hash='2bb88322482ae81c'>
+      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='427' column='1'/>
       <return type-id='8f92235e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ns_get_pi_type' mangled-name='spdk_nvme_ns_get_pi_type' filepath='nvme_ns.c' line='375' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_pi_type' hash='cd93e59940b99658'>
-      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='375' column='1'/>
+    <function-decl name='spdk_nvme_ns_get_pi_type' mangled-name='spdk_nvme_ns_get_pi_type' filepath='nvme_ns.c' line='359' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_pi_type' hash='cd93e59940b99658'>
+      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='359' column='1'/>
       <return type-id='b5f5d02e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ns_get_pi_format' mangled-name='spdk_nvme_ns_get_pi_format' filepath='nvme_ns.c' line='380' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_pi_format' hash='adc79403f7fc65fd'>
-      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='380' column='1'/>
+    <function-decl name='spdk_nvme_ns_get_pi_format' mangled-name='spdk_nvme_ns_get_pi_format' filepath='nvme_ns.c' line='364' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_pi_format' hash='adc79403f7fc65fd'>
+      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='364' column='1'/>
       <return type-id='917b93bd'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ns_supports_extended_lba' mangled-name='spdk_nvme_ns_supports_extended_lba' filepath='nvme_ns.c' line='385' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_supports_extended_lba' hash='c7c710e908194b91'>
-      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='391' column='1'/>
+    <function-decl name='spdk_nvme_ns_supports_extended_lba' mangled-name='spdk_nvme_ns_supports_extended_lba' filepath='nvme_ns.c' line='369' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_supports_extended_lba' hash='c7c710e908194b91'>
+      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='375' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ns_supports_compare' mangled-name='spdk_nvme_ns_supports_compare' filepath='nvme_ns.c' line='391' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_supports_compare' hash='c7c710e908194b91'>
-      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='391' column='1'/>
+    <function-decl name='spdk_nvme_ns_supports_compare' mangled-name='spdk_nvme_ns_supports_compare' filepath='nvme_ns.c' line='375' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_supports_compare' hash='c7c710e908194b91'>
+      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='375' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ns_get_md_size' mangled-name='spdk_nvme_ns_get_md_size' filepath='nvme_ns.c' line='397' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_md_size' hash='2bb88322482ae81c'>
-      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='443' column='1'/>
+    <function-decl name='spdk_nvme_ns_get_md_size' mangled-name='spdk_nvme_ns_get_md_size' filepath='nvme_ns.c' line='381' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_md_size' hash='2bb88322482ae81c'>
+      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='427' column='1'/>
       <return type-id='8f92235e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ns_get_format_index' mangled-name='spdk_nvme_ns_get_format_index' filepath='nvme_ns.c' line='403' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_format_index' hash='81eb9c3a8900c68e'>
-      <parameter type-id='419a8888' name='nsdata' filepath='nvme_ns.c' line='403' column='1'/>
+    <function-decl name='spdk_nvme_ns_get_format_index' mangled-name='spdk_nvme_ns_get_format_index' filepath='nvme_ns.c' line='387' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_format_index' hash='81eb9c3a8900c68e'>
+      <parameter type-id='419a8888' name='nsdata' filepath='nvme_ns.c' line='387' column='1'/>
       <return type-id='8f92235e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ns_get_data' mangled-name='spdk_nvme_ns_get_data' filepath='nvme_ns.c' line='413' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_data' hash='bcdb87dbb193700a'>
-      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='413' column='1'/>
+    <function-decl name='spdk_nvme_ns_get_data' mangled-name='spdk_nvme_ns_get_data' filepath='nvme_ns.c' line='397' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_data' hash='bcdb87dbb193700a'>
+      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='397' column='1'/>
       <return type-id='419a8888'/>
     </function-decl>
-    <function-decl name='spdk_nvme_nvm_ns_get_data' mangled-name='spdk_nvme_nvm_ns_get_data' filepath='nvme_ns.c' line='419' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_nvm_ns_get_data' hash='aea604eca01711a8'>
-      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='419' column='1'/>
+    <function-decl name='spdk_nvme_nvm_ns_get_data' mangled-name='spdk_nvme_nvm_ns_get_data' filepath='nvme_ns.c' line='403' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_nvm_ns_get_data' hash='aea604eca01711a8'>
+      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='403' column='1'/>
       <return type-id='60a804b0'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ns_get_dealloc_logical_block_read_value' mangled-name='spdk_nvme_ns_get_dealloc_logical_block_read_value' filepath='nvme_ns.c' line='429' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_dealloc_logical_block_read_value' hash='b5e602a84acc0656'>
-      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='430' column='1'/>
+    <function-decl name='spdk_nvme_ns_get_dealloc_logical_block_read_value' mangled-name='spdk_nvme_ns_get_dealloc_logical_block_read_value' filepath='nvme_ns.c' line='413' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_dealloc_logical_block_read_value' hash='b5e602a84acc0656'>
+      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='414' column='1'/>
       <return type-id='80b8ce90'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ns_get_optimal_io_boundary' mangled-name='spdk_nvme_ns_get_optimal_io_boundary' filepath='nvme_ns.c' line='443' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_optimal_io_boundary' hash='2bb88322482ae81c'>
-      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='443' column='1'/>
+    <function-decl name='spdk_nvme_ns_get_optimal_io_boundary' mangled-name='spdk_nvme_ns_get_optimal_io_boundary' filepath='nvme_ns.c' line='427' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_optimal_io_boundary' hash='2bb88322482ae81c'>
+      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='427' column='1'/>
       <return type-id='8f92235e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ns_get_nguid' mangled-name='spdk_nvme_ns_get_nguid' filepath='nvme_ns.c' line='484' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_nguid' hash='1efa72116040adbf'>
-      <parameter type-id='4bb8fbd9' name='ns' filepath='nvme_ns.c' line='484' column='1'/>
+    <function-decl name='spdk_nvme_ns_get_nguid' mangled-name='spdk_nvme_ns_get_nguid' filepath='nvme_ns.c' line='468' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_nguid' hash='1efa72116040adbf'>
+      <parameter type-id='4bb8fbd9' name='ns' filepath='nvme_ns.c' line='468' column='1'/>
       <return type-id='9f7200cf'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ns_get_uuid' mangled-name='spdk_nvme_ns_get_uuid' filepath='nvme_ns.c' line='501' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_uuid' hash='fdfd7cbec252e66f'>
-      <parameter type-id='4bb8fbd9' name='ns' filepath='nvme_ns.c' line='501' column='1'/>
+    <function-decl name='spdk_nvme_ns_get_uuid' mangled-name='spdk_nvme_ns_get_uuid' filepath='nvme_ns.c' line='485' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_uuid' hash='fdfd7cbec252e66f'>
+      <parameter type-id='4bb8fbd9' name='ns' filepath='nvme_ns.c' line='485' column='1'/>
       <return type-id='c2482856'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ns_get_csi' mangled-name='spdk_nvme_ns_get_csi' filepath='nvme_ns.c' line='546' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_csi' hash='2cd732104b8f52fa'>
-      <parameter type-id='4bb8fbd9' name='ns' filepath='nvme_ns.c' line='546' column='1'/>
+    <function-decl name='spdk_nvme_ns_get_csi' mangled-name='spdk_nvme_ns_get_csi' filepath='nvme_ns.c' line='530' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_csi' hash='2cd732104b8f52fa'>
+      <parameter type-id='4bb8fbd9' name='ns' filepath='nvme_ns.c' line='530' column='1'/>
       <return type-id='fac3fed3'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ns_get_ana_group_id' mangled-name='spdk_nvme_ns_get_ana_group_id' filepath='nvme_ns.c' line='602' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_ana_group_id' hash='2bb88322482ae81c'>
-      <parameter type-id='4bb8fbd9' name='ns' filepath='nvme_ns.c' line='602' column='1'/>
+    <function-decl name='spdk_nvme_ns_get_ana_group_id' mangled-name='spdk_nvme_ns_get_ana_group_id' filepath='nvme_ns.c' line='586' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_ana_group_id' hash='2bb88322482ae81c'>
+      <parameter type-id='4bb8fbd9' name='ns' filepath='nvme_ns.c' line='586' column='1'/>
       <return type-id='8f92235e'/>
     </function-decl>
-    <function-decl name='spdk_nvme_ns_get_ana_state' mangled-name='spdk_nvme_ns_get_ana_state' filepath='nvme_ns.c' line='608' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_ana_state' hash='bbe57592add13035'>
-      <parameter type-id='4bb8fbd9' name='ns' filepath='nvme_ns.c' line='608' column='1'/>
+    <function-decl name='spdk_nvme_ns_get_ana_state' mangled-name='spdk_nvme_ns_get_ana_state' filepath='nvme_ns.c' line='592' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_ns_get_ana_state' hash='bbe57592add13035'>
+      <parameter type-id='4bb8fbd9' name='ns' filepath='nvme_ns.c' line='592' column='1'/>
       <return type-id='78649e32'/>
     </function-decl>
   </abi-instr>
@@ -8516,23 +8516,23 @@
       <return type-id='700655fa'/>
     </function-decl>
     <function-decl name='spdk_nvme_zns_ns_get_zone_size_sectors' mangled-name='spdk_nvme_zns_ns_get_zone_size_sectors' filepath='nvme_zns.c' line='16' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_zns_ns_get_zone_size_sectors' hash='e0055d99adb0e173'>
-      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='363' column='1'/>
+      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='347' column='1'/>
       <return type-id='9c313c2d'/>
     </function-decl>
     <function-decl name='spdk_nvme_zns_ns_get_zone_size' mangled-name='spdk_nvme_zns_ns_get_zone_size' filepath='nvme_zns.c' line='28' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_zns_ns_get_zone_size' hash='e0055d99adb0e173'>
-      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='363' column='1'/>
+      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='347' column='1'/>
       <return type-id='9c313c2d'/>
     </function-decl>
     <function-decl name='spdk_nvme_zns_ns_get_num_zones' mangled-name='spdk_nvme_zns_ns_get_num_zones' filepath='nvme_zns.c' line='34' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_zns_ns_get_num_zones' hash='e0055d99adb0e173'>
-      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='363' column='1'/>
+      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='347' column='1'/>
       <return type-id='9c313c2d'/>
     </function-decl>
     <function-decl name='spdk_nvme_zns_ns_get_max_open_zones' mangled-name='spdk_nvme_zns_ns_get_max_open_zones' filepath='nvme_zns.c' line='40' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_zns_ns_get_max_open_zones' hash='2bb88322482ae81c'>
-      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='443' column='1'/>
+      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='427' column='1'/>
       <return type-id='8f92235e'/>
     </function-decl>
     <function-decl name='spdk_nvme_zns_ns_get_max_active_zones' mangled-name='spdk_nvme_zns_ns_get_max_active_zones' filepath='nvme_zns.c' line='48' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_zns_ns_get_max_active_zones' hash='2bb88322482ae81c'>
-      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='443' column='1'/>
+      <parameter type-id='663c4b47' name='ns' filepath='nvme_ns.c' line='427' column='1'/>
       <return type-id='8f92235e'/>
     </function-decl>
     <function-decl name='spdk_nvme_zns_ctrlr_get_data' mangled-name='spdk_nvme_zns_ctrlr_get_data' filepath='nvme_zns.c' line='56' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_zns_ctrlr_get_data' hash='7d439335c61a1593'>
@@ -8540,7 +8540,7 @@
       <return type-id='2cf849c0'/>
     </function-decl>
     <function-decl name='spdk_nvme_zns_ctrlr_get_max_zone_append_size' mangled-name='spdk_nvme_zns_ctrlr_get_max_zone_append_size' filepath='nvme_zns.c' line='62' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_zns_ctrlr_get_max_zone_append_size' hash='2bb88322482ae81c'>
-      <parameter type-id='ba7cf15f' name='ctrlr' filepath='nvme_ctrlr.c' line='4843' column='1'/>
+      <parameter type-id='ba7cf15f' name='ctrlr' filepath='nvme_ctrlr.c' line='4831' column='1'/>
       <return type-id='8f92235e'/>
     </function-decl>
     <function-decl name='spdk_nvme_zns_zone_append' mangled-name='spdk_nvme_zns_zone_append' filepath='nvme_zns.c' line='68' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvme_zns_zone_append' hash='f55e4d9c00321c27'>

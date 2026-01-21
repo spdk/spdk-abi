@@ -221,7 +221,6 @@
     <elf-symbol name='__rte_mempool_trace_ops_dequeue_bulk' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='__rte_mempool_trace_ops_enqueue_bulk' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='__rte_mempool_trace_put_bulk' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
-    <elf-symbol name='__rte_panic' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='__rte_trace_mem_per_thread_alloc' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='optind' type='object-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='per_lcore__lcore_id' type='tls-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
@@ -423,7 +422,7 @@
     <typedef-decl name='__off_t' type-id='95e97e5f' size-in-bits='64' filepath='types.h' line='152' column='1' hash='b119fe0931d2ee10' id='79989e9c'/>
     <typedef-decl name='__uint32_t' type-id='f0981eed' size-in-bits='32' filepath='types.h' line='42' column='1' hash='e66b43f97c38e87a' id='62f1140c'/>
     <typedef-decl name='__uint64_t' type-id='f0981eeb' size-in-bits='64' filepath='types.h' line='45' column='1' hash='8fdc5eea2983a729' id='8910171f'/>
-    <typedef-decl name='rte_trace_point_t' type-id='9c313c2d' size-in-bits='64' filepath='rte_trace_point.h' line='37' column='1' hash='8fdc5eea2983a729' id='d2dae1c9'/>
+    <typedef-decl name='rte_trace_point_t' type-id='9c313c2d' size-in-bits='64' filepath='rte_trace_point.h' line='38' column='1' hash='8fdc5eea2983a729' id='d2dae1c9'/>
     <typedef-decl name='size_t' type-id='f0981eeb' size-in-bits='64' filepath='stddef.h' line='229' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
     <typedef-decl name='spdk_mempool_mem_cb_t' type-id='9208d9db' size-in-bits='64' filepath='env.h' line='341' column='1' id='e8857a9b'/>
     <typedef-decl name='spdk_mempool_obj_cb_t' type-id='84941752' size-in-bits='64' filepath='env.h' line='333' column='1' id='69ad4ac3'/>
@@ -687,7 +686,7 @@
     <var-decl name='rte_delay_us' type-id='084eae43' visibility='default' filepath='rte_cycles.h' line='142' column='1' elf-symbol-id='rte_delay_us'/>
     <var-decl name='per_lcore__lcore_id' type-id='f0981eed' visibility='default' filepath='rte_lcore.h' line='28' column='1' elf-symbol-id='per_lcore__lcore_id'/>
     <pointer-type-def type-id='48b5725f' id='eaa32e2f'/>
-    <var-decl name='per_lcore_trace_mem' type-id='eaa32e2f' visibility='default' filepath='rte_trace_point.h' line='314' column='1' elf-symbol-id='per_lcore_trace_mem'/>
+    <var-decl name='per_lcore_trace_mem' type-id='eaa32e2f' visibility='default' filepath='rte_trace_point.h' line='317' column='1' elf-symbol-id='per_lcore_trace_mem'/>
     <function-type size-in-bits='64' hash='832927d81271bf3d' id='9208d9db'>
       <parameter type-id='564ba9df'/>
       <parameter type-id='eaa32e2f'/>
