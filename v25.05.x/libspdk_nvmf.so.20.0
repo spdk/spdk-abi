@@ -6609,8 +6609,8 @@
       <return type-id='95e97e5e'/>
     </function-decl>
     <function-decl name='spdk_nvmf_subsystem_set_allow_any_host' mangled-name='spdk_nvmf_subsystem_set_allow_any_host' filepath='subsystem.c' line='1245' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_subsystem_set_allow_any_host' hash='a79502d22727be06'>
-      <parameter type-id='777df245' name='subsystem' filepath='subsystem.c' line='3750' column='1'/>
-      <parameter type-id='c894953d' name='ana_reporting' filepath='subsystem.c' line='3751' column='1'/>
+      <parameter type-id='777df245' name='subsystem' filepath='subsystem.c' line='3755' column='1'/>
+      <parameter type-id='c894953d' name='ana_reporting' filepath='subsystem.c' line='3756' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
     <function-decl name='spdk_nvmf_subsystem_get_allow_any_host' mangled-name='spdk_nvmf_subsystem_get_allow_any_host' filepath='subsystem.c' line='1262' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_subsystem_get_allow_any_host' hash='c7c710e908194b91'>
@@ -6684,7 +6684,7 @@
       <return type-id='48b5725f'/>
     </function-decl>
     <function-decl name='spdk_nvmf_subsystem_any_listener_allowed' mangled-name='spdk_nvmf_subsystem_any_listener_allowed' filepath='subsystem.c' line='1679' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_subsystem_any_listener_allowed' hash='c7c710e908194b91'>
-      <parameter type-id='777df245' name='subsystem' filepath='subsystem.c' line='3914' column='1'/>
+      <parameter type-id='777df245' name='subsystem' filepath='subsystem.c' line='3919' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
     <function-decl name='spdk_nvmf_subsystem_remove_ns' mangled-name='spdk_nvmf_subsystem_remove_ns' filepath='subsystem.c' line='1755' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_subsystem_remove_ns' hash='6668baab5275d4c5'>
@@ -6787,37 +6787,37 @@
       <parameter type-id='4dfad097' name='subsystem' filepath='subsystem.c' line='2617' column='1'/>
       <return type-id='149c6638'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_set_custom_ns_reservation_ops' mangled-name='spdk_nvmf_set_custom_ns_reservation_ops' filepath='subsystem.c' line='3744' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_set_custom_ns_reservation_ops' hash='433e05072e210c0f'>
-      <parameter type-id='19ac4492' name='ops' filepath='subsystem.c' line='3744' column='1'/>
+    <function-decl name='spdk_nvmf_set_custom_ns_reservation_ops' mangled-name='spdk_nvmf_set_custom_ns_reservation_ops' filepath='subsystem.c' line='3749' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_set_custom_ns_reservation_ops' hash='433e05072e210c0f'>
+      <parameter type-id='19ac4492' name='ops' filepath='subsystem.c' line='3749' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_subsystem_set_ana_reporting' mangled-name='spdk_nvmf_subsystem_set_ana_reporting' filepath='subsystem.c' line='3750' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_subsystem_set_ana_reporting' hash='a79502d22727be06'>
-      <parameter type-id='777df245' name='subsystem' filepath='subsystem.c' line='3750' column='1'/>
-      <parameter type-id='c894953d' name='ana_reporting' filepath='subsystem.c' line='3751' column='1'/>
+    <function-decl name='spdk_nvmf_subsystem_set_ana_reporting' mangled-name='spdk_nvmf_subsystem_set_ana_reporting' filepath='subsystem.c' line='3755' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_subsystem_set_ana_reporting' hash='a79502d22727be06'>
+      <parameter type-id='777df245' name='subsystem' filepath='subsystem.c' line='3755' column='1'/>
+      <parameter type-id='c894953d' name='ana_reporting' filepath='subsystem.c' line='3756' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_subsystem_get_ana_reporting' mangled-name='spdk_nvmf_subsystem_get_ana_reporting' filepath='subsystem.c' line='3763' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_subsystem_get_ana_reporting' hash='c7c710e908194b91'>
-      <parameter type-id='777df245' name='subsystem' filepath='subsystem.c' line='3914' column='1'/>
+    <function-decl name='spdk_nvmf_subsystem_get_ana_reporting' mangled-name='spdk_nvmf_subsystem_get_ana_reporting' filepath='subsystem.c' line='3768' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_subsystem_get_ana_reporting' hash='c7c710e908194b91'>
+      <parameter type-id='777df245' name='subsystem' filepath='subsystem.c' line='3919' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_subsystem_set_ana_state' mangled-name='spdk_nvmf_subsystem_set_ana_state' filepath='subsystem.c' line='3811' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_subsystem_set_ana_state' hash='79b6ce8abfb0f423'>
-      <parameter type-id='777df245' name='subsystem' filepath='subsystem.c' line='3811' column='1'/>
-      <parameter type-id='7e9611b1' name='trid' filepath='subsystem.c' line='3812' column='1'/>
-      <parameter type-id='78649e32' name='ana_state' filepath='subsystem.c' line='3813' column='1'/>
-      <parameter type-id='8f92235e' name='anagrpid' filepath='subsystem.c' line='3813' column='1'/>
-      <parameter type-id='896f998c' name='cb_fn' filepath='subsystem.c' line='3814' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='subsystem.c' line='3814' column='1'/>
+    <function-decl name='spdk_nvmf_subsystem_set_ana_state' mangled-name='spdk_nvmf_subsystem_set_ana_state' filepath='subsystem.c' line='3816' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_subsystem_set_ana_state' hash='79b6ce8abfb0f423'>
+      <parameter type-id='777df245' name='subsystem' filepath='subsystem.c' line='3816' column='1'/>
+      <parameter type-id='7e9611b1' name='trid' filepath='subsystem.c' line='3817' column='1'/>
+      <parameter type-id='78649e32' name='ana_state' filepath='subsystem.c' line='3818' column='1'/>
+      <parameter type-id='8f92235e' name='anagrpid' filepath='subsystem.c' line='3818' column='1'/>
+      <parameter type-id='896f998c' name='cb_fn' filepath='subsystem.c' line='3819' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='subsystem.c' line='3819' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_subsystem_get_ana_state' mangled-name='spdk_nvmf_subsystem_get_ana_state' filepath='subsystem.c' line='3884' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_subsystem_get_ana_state' hash='3818c798d8d820b2'>
-      <parameter type-id='777df245' name='subsystem' filepath='subsystem.c' line='3884' column='1'/>
-      <parameter type-id='7e9611b1' name='trid' filepath='subsystem.c' line='3885' column='1'/>
-      <parameter type-id='8f92235e' name='anagrpid' filepath='subsystem.c' line='3886' column='1'/>
-      <parameter type-id='675901dd' name='ana_state' filepath='subsystem.c' line='3887' column='1'/>
+    <function-decl name='spdk_nvmf_subsystem_get_ana_state' mangled-name='spdk_nvmf_subsystem_get_ana_state' filepath='subsystem.c' line='3889' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_subsystem_get_ana_state' hash='3818c798d8d820b2'>
+      <parameter type-id='777df245' name='subsystem' filepath='subsystem.c' line='3889' column='1'/>
+      <parameter type-id='7e9611b1' name='trid' filepath='subsystem.c' line='3890' column='1'/>
+      <parameter type-id='8f92235e' name='anagrpid' filepath='subsystem.c' line='3891' column='1'/>
+      <parameter type-id='675901dd' name='ana_state' filepath='subsystem.c' line='3892' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_nvmf_subsystem_is_discovery' mangled-name='spdk_nvmf_subsystem_is_discovery' filepath='subsystem.c' line='3914' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_subsystem_is_discovery' hash='c7c710e908194b91'>
-      <parameter type-id='777df245' name='subsystem' filepath='subsystem.c' line='3914' column='1'/>
+    <function-decl name='spdk_nvmf_subsystem_is_discovery' mangled-name='spdk_nvmf_subsystem_is_discovery' filepath='subsystem.c' line='3919' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_nvmf_subsystem_is_discovery' hash='c7c710e908194b91'>
+      <parameter type-id='777df245' name='subsystem' filepath='subsystem.c' line='3919' column='1'/>
       <return type-id='c894953d'/>
     </function-decl>
     <function-type size-in-bits='64' hash='c7c710e908194b91' id='884c81ef'>
