@@ -622,7 +622,7 @@
     <typedef-decl name='__uint64_t' type-id='f0981eeb' size-in-bits='64' filepath='types.h' line='45' column='1' hash='8fdc5eea2983a729' id='8910171f'/>
     <typedef-decl name='__uint8_t' type-id='002ac4a6' size-in-bits='8' filepath='types.h' line='38' column='1' hash='6ebac62b3366db68' id='c51d6389'/>
     <typedef-decl name='pthread_spinlock_t' type-id='e024ff18' size-in-bits='32' filepath='pthreadtypes.h' line='103' column='1' hash='ae69415523d5e788' id='6d44fa69'/>
-    <typedef-decl name='size_t' type-id='f0981eeb' size-in-bits='64' filepath='stddef.h' line='214' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
+    <typedef-decl name='size_t' type-id='f0981eeb' size-in-bits='64' filepath='stddef.h' line='229' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
     <typedef-decl name='spdk_channel_for_each_cpl' type-id='2f4d5fde' size-in-bits='64' filepath='thread.h' line='171' column='1' hash='fd7a63c0c6c822c4' id='38c48f04'/>
     <typedef-decl name='spdk_channel_msg' type-id='71711fbd' size-in-bits='64' filepath='thread.h' line='163' column='1' hash='fd7a63c0c6c822c4' id='fce5caf0'/>
     <typedef-decl name='spdk_interrupt_fn' type-id='c04372aa' size-in-bits='64' filepath='thread.h' line='857' column='1' hash='fd7a63c0c6c822c4' id='d841131b'/>

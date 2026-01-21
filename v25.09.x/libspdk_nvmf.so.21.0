@@ -3930,7 +3930,7 @@
     <typedef-decl name='int32_t' type-id='33f57a65' size-in-bits='32' filepath='stdint-intn.h' line='26' column='1' hash='09d17c08f594edc7' id='3ff5601b'/>
     <typedef-decl name='int8_t' type-id='2171a512' size-in-bits='8' filepath='stdint-intn.h' line='24' column='1' hash='3c595c3350588f18' id='ee31ee44'/>
     <typedef-decl name='pthread_mutex_t' type-id='70681f9b' size-in-bits='320' filepath='pthreadtypes.h' line='72' column='1' id='7a6844eb'/>
-    <typedef-decl name='size_t' type-id='f0981eeb' size-in-bits='64' filepath='stddef.h' line='214' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
+    <typedef-decl name='size_t' type-id='f0981eeb' size-in-bits='64' filepath='stddef.h' line='229' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
     <typedef-decl name='spdk_bdev_io_wait_cb' type-id='61359e15' size-in-bits='64' filepath='bdev.h' line='2170' column='1' hash='fd7a63c0c6c822c4' id='065af103'/>
     <typedef-decl name='spdk_iobuf_buffer_stailq_t' type-id='79110b08' size-in-bits='128' filepath='thread.h' line='1138' column='1' id='306e7691'/>
     <typedef-decl name='spdk_iobuf_entry_stailq_t' type-id='ce92b0c6' size-in-bits='128' filepath='thread.h' line='1137' column='1' id='da6a25d9'/>
@@ -5265,18 +5265,18 @@
     <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='512' hash='ea93b43678875247' id='59daf3ef'>
       <subrange length='64' lower-bound='0' upper-bound='63' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='6066f2053fe47763' id='b10be967'/>
     </array-type-def>
-    <enum-decl name='ibv_atomic_cap' size-in-bits='32' alignment-in-bits='32' filepath='verbs.h' line='154' column='1' hash='f1dd2fd97ff56b28' id='b830f00a'>
+    <enum-decl name='ibv_atomic_cap' size-in-bits='32' alignment-in-bits='32' filepath='verbs.h' line='155' column='1' hash='f1dd2fd97ff56b28' id='b830f00a'>
       <underlying-type type-id='9cac1fee'/>
       <enumerator name='IBV_ATOMIC_NONE' value='0'/>
       <enumerator name='IBV_ATOMIC_HCA' value='1'/>
       <enumerator name='IBV_ATOMIC_GLOB' value='2'/>
     </enum-decl>
-    <enum-decl name='ibv_mw_type' size-in-bits='32' alignment-in-bits='32' filepath='verbs.h' line='675' column='1' hash='1e502da018b719fd' id='1795416d'>
+    <enum-decl name='ibv_mw_type' size-in-bits='32' alignment-in-bits='32' filepath='verbs.h' line='680' column='1' hash='1e502da018b719fd' id='1795416d'>
       <underlying-type type-id='9cac1fee'/>
       <enumerator name='IBV_MW_TYPE_1' value='1'/>
       <enumerator name='IBV_MW_TYPE_2' value='2'/>
     </enum-decl>
-    <enum-decl name='ibv_node_type' size-in-bits='32' alignment-in-bits='32' filepath='verbs.h' line='94' column='1' hash='0798f637ec3a6020' id='0267f9f9'>
+    <enum-decl name='ibv_node_type' size-in-bits='32' alignment-in-bits='32' filepath='verbs.h' line='95' column='1' hash='0798f637ec3a6020' id='0267f9f9'>
       <underlying-type type-id='9cac1fee'/>
       <enumerator name='IBV_NODE_UNKNOWN' value='-1'/>
       <enumerator name='IBV_NODE_CA' value='1'/>
@@ -5287,7 +5287,7 @@
       <enumerator name='IBV_NODE_USNIC_UDP' value='6'/>
       <enumerator name='IBV_NODE_UNSPECIFIED' value='7'/>
     </enum-decl>
-    <enum-decl name='ibv_qp_state' size-in-bits='32' alignment-in-bits='32' filepath='verbs.h' line='1047' column='1' hash='5e1c640041e25c15' id='002258df'>
+    <enum-decl name='ibv_qp_state' size-in-bits='32' alignment-in-bits='32' filepath='verbs.h' line='1052' column='1' hash='5e1c640041e25c15' id='002258df'>
       <underlying-type type-id='9cac1fee'/>
       <enumerator name='IBV_QPS_RESET' value='0'/>
       <enumerator name='IBV_QPS_INIT' value='1'/>
@@ -5298,7 +5298,7 @@
       <enumerator name='IBV_QPS_ERR' value='6'/>
       <enumerator name='IBV_QPS_UNKNOWN' value='7'/>
     </enum-decl>
-    <enum-decl name='ibv_qp_type' size-in-bits='32' alignment-in-bits='32' filepath='verbs.h' line='898' column='1' hash='ff1f55ab3695427f' id='d412ad8a'>
+    <enum-decl name='ibv_qp_type' size-in-bits='32' alignment-in-bits='32' filepath='verbs.h' line='903' column='1' hash='ff1f55ab3695427f' id='d412ad8a'>
       <underlying-type type-id='9cac1fee'/>
       <enumerator name='IBV_QPT_RC' value='2'/>
       <enumerator name='IBV_QPT_UC' value='3'/>
@@ -5308,7 +5308,7 @@
       <enumerator name='IBV_QPT_XRC_RECV' value='10'/>
       <enumerator name='IBV_QPT_DRIVER' value='255'/>
     </enum-decl>
-    <enum-decl name='ibv_transport_type' size-in-bits='32' alignment-in-bits='32' filepath='verbs.h' line='105' column='1' hash='464c8270e5bd2a32' id='b31d4ee6'>
+    <enum-decl name='ibv_transport_type' size-in-bits='32' alignment-in-bits='32' filepath='verbs.h' line='106' column='1' hash='464c8270e5bd2a32' id='b31d4ee6'>
       <underlying-type type-id='9cac1fee'/>
       <enumerator name='IBV_TRANSPORT_UNKNOWN' value='-1'/>
       <enumerator name='IBV_TRANSPORT_IB' value='0'/>
@@ -5317,7 +5317,7 @@
       <enumerator name='IBV_TRANSPORT_USNIC_UDP' value='3'/>
       <enumerator name='IBV_TRANSPORT_UNSPECIFIED' value='4'/>
     </enum-decl>
-    <enum-decl name='ibv_wc_opcode' size-in-bits='32' alignment-in-bits='32' filepath='verbs.h' line='510' column='1' hash='5a1a4af6a43459ba' id='e20702a5'>
+    <enum-decl name='ibv_wc_opcode' size-in-bits='32' alignment-in-bits='32' filepath='verbs.h' line='515' column='1' hash='5a1a4af6a43459ba' id='e20702a5'>
       <underlying-type type-id='9cac1fee'/>
       <enumerator name='IBV_WC_SEND' value='0'/>
       <enumerator name='IBV_WC_RDMA_WRITE' value='1'/>
@@ -5340,7 +5340,7 @@
       <enumerator name='IBV_WC_DRIVER2' value='136'/>
       <enumerator name='IBV_WC_DRIVER3' value='137'/>
     </enum-decl>
-    <enum-decl name='ibv_wc_status' size-in-bits='32' alignment-in-bits='32' filepath='verbs.h' line='482' column='1' hash='a38663d5844b130f' id='f7f54079'>
+    <enum-decl name='ibv_wc_status' size-in-bits='32' alignment-in-bits='32' filepath='verbs.h' line='487' column='1' hash='a38663d5844b130f' id='f7f54079'>
       <underlying-type type-id='9cac1fee'/>
       <enumerator name='IBV_WC_SUCCESS' value='0'/>
       <enumerator name='IBV_WC_LOC_LEN_ERR' value='1'/>
@@ -5367,7 +5367,7 @@
       <enumerator name='IBV_WC_TM_ERR' value='22'/>
       <enumerator name='IBV_WC_TM_RNDV_INCOMPLETE' value='23'/>
     </enum-decl>
-    <enum-decl name='ibv_wr_opcode' size-in-bits='32' alignment-in-bits='32' filepath='verbs.h' line='1100' column='1' hash='7d66aab96a7d6da3' id='e884e4f8'>
+    <enum-decl name='ibv_wr_opcode' size-in-bits='32' alignment-in-bits='32' filepath='verbs.h' line='1105' column='1' hash='7d66aab96a7d6da3' id='e884e4f8'>
       <underlying-type type-id='9cac1fee'/>
       <enumerator name='IBV_WR_RDMA_WRITE' value='0'/>
       <enumerator name='IBV_WR_RDMA_WRITE_WITH_IMM' value='1'/>
@@ -5385,7 +5385,7 @@
       <enumerator name='IBV_WR_ATOMIC_WRITE' value='15'/>
     </enum-decl>
     <type-decl name='long long int' size-in-bits='64' hash='5ae7f9eec1fc43d6#3' id='95e97e61'/>
-    <class-decl name='__pthread_cond_s' is-struct='yes' visibility='default' size-in-bits='384' filepath='thread-shared-types.h' line='94' column='1' hash='43a1381a173277af' id='c987b47c'>
+    <class-decl name='__pthread_cond_s' is-struct='yes' visibility='default' size-in-bits='384' filepath='thread-shared-types.h' line='94' column='1' hash='d9e2565ba80dd9b7' id='c987b47c'>
       <data-member access='public' layout-offset-in-bits='0'>
         <var-decl name='__wseq' type-id='f3b40860' visibility='default' filepath='thread-shared-types.h' line='96' column='1'/>
       </data-member>
@@ -5393,579 +5393,582 @@
         <var-decl name='__g1_start' type-id='f3b40860' visibility='default' filepath='thread-shared-types.h' line='97' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='__g_refs' type-id='0d532ec1' visibility='default' filepath='thread-shared-types.h' line='98' column='1'/>
+        <var-decl name='__g_size' type-id='0d532ec1' visibility='default' filepath='thread-shared-types.h' line='98' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='__g_size' type-id='0d532ec1' visibility='default' filepath='thread-shared-types.h' line='99' column='1'/>
+        <var-decl name='__g1_orig_size' type-id='f0981eec' visibility='default' filepath='thread-shared-types.h' line='99' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='224'>
+        <var-decl name='__wrefs' type-id='f0981eec' visibility='default' filepath='thread-shared-types.h' line='100' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='__g1_orig_size' type-id='f0981eec' visibility='default' filepath='thread-shared-types.h' line='100' column='1'/>
-      </data-member>
-      <data-member access='public' layout-offset-in-bits='288'>
-        <var-decl name='__wrefs' type-id='f0981eec' visibility='default' filepath='thread-shared-types.h' line='101' column='1'/>
+        <var-decl name='__g_signals' type-id='0d532ec1' visibility='default' filepath='thread-shared-types.h' line='101' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='320'>
-        <var-decl name='__g_signals' type-id='0d532ec1' visibility='default' filepath='thread-shared-types.h' line='102' column='1'/>
+        <var-decl name='__unused_initialized_1' type-id='f0981eec' visibility='default' filepath='thread-shared-types.h' line='102' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='352'>
+        <var-decl name='__unused_initialized_2' type-id='f0981eec' visibility='default' filepath='thread-shared-types.h' line='103' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='_ibv_device_ops' is-struct='yes' visibility='default' size-in-bits='128' filepath='verbs.h' line='1963' column='1' hash='929ef15b8515ff3b' id='f904f53f'>
+    <class-decl name='_ibv_device_ops' is-struct='yes' visibility='default' size-in-bits='128' filepath='verbs.h' line='1976' column='1' hash='929ef15b8515ff3b' id='f904f53f'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='_dummy1' type-id='bc46f1a7' visibility='default' filepath='verbs.h' line='1964' column='1'/>
+        <var-decl name='_dummy1' type-id='bc46f1a7' visibility='default' filepath='verbs.h' line='1977' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='_dummy2' type-id='21495b24' visibility='default' filepath='verbs.h' line='1965' column='1'/>
+        <var-decl name='_dummy2' type-id='21495b24' visibility='default' filepath='verbs.h' line='1978' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='ibv_ah' is-struct='yes' visibility='default' size-in-bits='192' filepath='verbs.h' line='1690' column='1' hash='39207e80dbd73d75' id='37442b88'>
+    <class-decl name='ibv_ah' is-struct='yes' visibility='default' size-in-bits='192' filepath='verbs.h' line='1702' column='1' hash='39207e80dbd73d75' id='37442b88'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='context' type-id='1aaec10e' visibility='default' filepath='verbs.h' line='1691' column='1'/>
+        <var-decl name='context' type-id='1aaec10e' visibility='default' filepath='verbs.h' line='1703' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='pd' type-id='18028d25' visibility='default' filepath='verbs.h' line='1692' column='1'/>
+        <var-decl name='pd' type-id='18028d25' visibility='default' filepath='verbs.h' line='1704' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='handle' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1693' column='1'/>
+        <var-decl name='handle' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1705' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='ibv_comp_channel' is-struct='yes' visibility='default' size-in-bits='128' filepath='verbs.h' line='1497' column='1' hash='7e7d5b36db313088' id='7ef9d0c2'>
+    <class-decl name='ibv_comp_channel' is-struct='yes' visibility='default' size-in-bits='128' filepath='verbs.h' line='1509' column='1' hash='7e7d5b36db313088' id='7ef9d0c2'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='context' type-id='1aaec10e' visibility='default' filepath='verbs.h' line='1498' column='1'/>
+        <var-decl name='context' type-id='1aaec10e' visibility='default' filepath='verbs.h' line='1510' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='fd' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='1499' column='1'/>
+        <var-decl name='fd' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='1511' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='96'>
-        <var-decl name='refcnt' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='1500' column='1'/>
+        <var-decl name='refcnt' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='1512' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='ibv_context' is-struct='yes' visibility='default' size-in-bits='2624' filepath='verbs.h' line='2031' column='1' hash='211e7853ac60e8ea' id='47b432f8'>
+    <class-decl name='ibv_context' is-struct='yes' visibility='default' size-in-bits='2624' filepath='verbs.h' line='2044' column='1' hash='211e7853ac60e8ea' id='47b432f8'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='device' type-id='e658b277' visibility='default' filepath='verbs.h' line='2032' column='1'/>
+        <var-decl name='device' type-id='e658b277' visibility='default' filepath='verbs.h' line='2045' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='ops' type-id='f348463b' visibility='default' filepath='verbs.h' line='2033' column='1'/>
+        <var-decl name='ops' type-id='f348463b' visibility='default' filepath='verbs.h' line='2046' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='2112'>
-        <var-decl name='cmd_fd' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='2034' column='1'/>
+        <var-decl name='cmd_fd' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='2047' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='2144'>
-        <var-decl name='async_fd' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='2035' column='1'/>
+        <var-decl name='async_fd' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='2048' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='2176'>
-        <var-decl name='num_comp_vectors' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='2036' column='1'/>
+        <var-decl name='num_comp_vectors' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='2049' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='2240'>
-        <var-decl name='mutex' type-id='7a6844eb' visibility='default' filepath='verbs.h' line='2037' column='1'/>
+        <var-decl name='mutex' type-id='7a6844eb' visibility='default' filepath='verbs.h' line='2050' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='2560'>
-        <var-decl name='abi_compat' type-id='eaa32e2f' visibility='default' filepath='verbs.h' line='2038' column='1'/>
+        <var-decl name='abi_compat' type-id='eaa32e2f' visibility='default' filepath='verbs.h' line='2051' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='ibv_context_ops' is-struct='yes' visibility='default' size-in-bits='2048' filepath='verbs.h' line='1988' column='1' hash='809971fbb34577c2' id='f348463b'>
+    <class-decl name='ibv_context_ops' is-struct='yes' visibility='default' size-in-bits='2048' filepath='verbs.h' line='2001' column='1' hash='809971fbb34577c2' id='f348463b'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='_compat_query_device' type-id='51aecc0b' visibility='default' filepath='verbs.h' line='1989' column='1'/>
+        <var-decl name='_compat_query_device' type-id='51aecc0b' visibility='default' filepath='verbs.h' line='2002' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='_compat_query_port' type-id='aacf4b85' visibility='default' filepath='verbs.h' line='1991' column='1'/>
+        <var-decl name='_compat_query_port' type-id='aacf4b85' visibility='default' filepath='verbs.h' line='2004' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='_compat_alloc_pd' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='1994' column='1'/>
+        <var-decl name='_compat_alloc_pd' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2007' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='_compat_dealloc_pd' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='1995' column='1'/>
+        <var-decl name='_compat_dealloc_pd' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2008' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='_compat_reg_mr' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='1996' column='1'/>
+        <var-decl name='_compat_reg_mr' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2009' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='320'>
-        <var-decl name='_compat_rereg_mr' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='1997' column='1'/>
+        <var-decl name='_compat_rereg_mr' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2010' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='384'>
-        <var-decl name='_compat_dereg_mr' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='1998' column='1'/>
+        <var-decl name='_compat_dereg_mr' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2011' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='448'>
-        <var-decl name='alloc_mw' type-id='5141a3fe' visibility='default' filepath='verbs.h' line='1999' column='1'/>
+        <var-decl name='alloc_mw' type-id='5141a3fe' visibility='default' filepath='verbs.h' line='2012' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='512'>
-        <var-decl name='bind_mw' type-id='d4fc6013' visibility='default' filepath='verbs.h' line='2000' column='1'/>
+        <var-decl name='bind_mw' type-id='d4fc6013' visibility='default' filepath='verbs.h' line='2013' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='576'>
-        <var-decl name='dealloc_mw' type-id='b3f1f6f0' visibility='default' filepath='verbs.h' line='2002' column='1'/>
+        <var-decl name='dealloc_mw' type-id='b3f1f6f0' visibility='default' filepath='verbs.h' line='2015' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='640'>
-        <var-decl name='_compat_create_cq' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2003' column='1'/>
+        <var-decl name='_compat_create_cq' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2016' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='704'>
-        <var-decl name='poll_cq' type-id='675226d1' visibility='default' filepath='verbs.h' line='2004' column='1'/>
+        <var-decl name='poll_cq' type-id='675226d1' visibility='default' filepath='verbs.h' line='2017' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='768'>
-        <var-decl name='req_notify_cq' type-id='eae3d669' visibility='default' filepath='verbs.h' line='2005' column='1'/>
+        <var-decl name='req_notify_cq' type-id='eae3d669' visibility='default' filepath='verbs.h' line='2018' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='832'>
-        <var-decl name='_compat_cq_event' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2006' column='1'/>
+        <var-decl name='_compat_cq_event' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2019' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='896'>
-        <var-decl name='_compat_resize_cq' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2007' column='1'/>
+        <var-decl name='_compat_resize_cq' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2020' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='960'>
-        <var-decl name='_compat_destroy_cq' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2008' column='1'/>
+        <var-decl name='_compat_destroy_cq' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2021' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1024'>
-        <var-decl name='_compat_create_srq' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2009' column='1'/>
+        <var-decl name='_compat_create_srq' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2022' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1088'>
-        <var-decl name='_compat_modify_srq' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2010' column='1'/>
+        <var-decl name='_compat_modify_srq' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2023' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1152'>
-        <var-decl name='_compat_query_srq' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2011' column='1'/>
+        <var-decl name='_compat_query_srq' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2024' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1216'>
-        <var-decl name='_compat_destroy_srq' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2012' column='1'/>
+        <var-decl name='_compat_destroy_srq' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2025' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1280'>
-        <var-decl name='post_srq_recv' type-id='eb6c86ae' visibility='default' filepath='verbs.h' line='2013' column='1'/>
+        <var-decl name='post_srq_recv' type-id='eb6c86ae' visibility='default' filepath='verbs.h' line='2026' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1344'>
-        <var-decl name='_compat_create_qp' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2016' column='1'/>
+        <var-decl name='_compat_create_qp' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2029' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1408'>
-        <var-decl name='_compat_query_qp' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2017' column='1'/>
+        <var-decl name='_compat_query_qp' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2030' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1472'>
-        <var-decl name='_compat_modify_qp' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2018' column='1'/>
+        <var-decl name='_compat_modify_qp' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2031' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1536'>
-        <var-decl name='_compat_destroy_qp' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2019' column='1'/>
+        <var-decl name='_compat_destroy_qp' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2032' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1600'>
-        <var-decl name='post_send' type-id='ff73ecdf' visibility='default' filepath='verbs.h' line='2020' column='1'/>
+        <var-decl name='post_send' type-id='ff73ecdf' visibility='default' filepath='verbs.h' line='2033' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1664'>
-        <var-decl name='post_recv' type-id='bd006c7b' visibility='default' filepath='verbs.h' line='2022' column='1'/>
+        <var-decl name='post_recv' type-id='bd006c7b' visibility='default' filepath='verbs.h' line='2035' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1728'>
-        <var-decl name='_compat_create_ah' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2024' column='1'/>
+        <var-decl name='_compat_create_ah' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2037' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1792'>
-        <var-decl name='_compat_destroy_ah' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2025' column='1'/>
+        <var-decl name='_compat_destroy_ah' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2038' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1856'>
-        <var-decl name='_compat_attach_mcast' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2026' column='1'/>
+        <var-decl name='_compat_attach_mcast' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2039' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1920'>
-        <var-decl name='_compat_detach_mcast' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2027' column='1'/>
+        <var-decl name='_compat_detach_mcast' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2040' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1984'>
-        <var-decl name='_compat_async_event' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2028' column='1'/>
+        <var-decl name='_compat_async_event' type-id='22c4a77b' visibility='default' filepath='verbs.h' line='2041' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='ibv_cq' is-struct='yes' visibility='default' size-in-bits='1024' filepath='verbs.h' line='1503' column='1' hash='ef5a0cd599069885' id='2c489765'>
+    <class-decl name='ibv_cq' is-struct='yes' visibility='default' size-in-bits='1024' filepath='verbs.h' line='1515' column='1' hash='ef5a0cd599069885' id='2c489765'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='context' type-id='1aaec10e' visibility='default' filepath='verbs.h' line='1504' column='1'/>
+        <var-decl name='context' type-id='1aaec10e' visibility='default' filepath='verbs.h' line='1516' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='channel' type-id='f54ea160' visibility='default' filepath='verbs.h' line='1505' column='1'/>
+        <var-decl name='channel' type-id='f54ea160' visibility='default' filepath='verbs.h' line='1517' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='cq_context' type-id='eaa32e2f' visibility='default' filepath='verbs.h' line='1506' column='1'/>
+        <var-decl name='cq_context' type-id='eaa32e2f' visibility='default' filepath='verbs.h' line='1518' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='handle' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1507' column='1'/>
+        <var-decl name='handle' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1519' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='224'>
-        <var-decl name='cqe' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='1508' column='1'/>
+        <var-decl name='cqe' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='1520' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='mutex' type-id='7a6844eb' visibility='default' filepath='verbs.h' line='1510' column='1'/>
+        <var-decl name='mutex' type-id='7a6844eb' visibility='default' filepath='verbs.h' line='1522' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='576'>
-        <var-decl name='cond' type-id='62fab762' visibility='default' filepath='verbs.h' line='1511' column='1'/>
+        <var-decl name='cond' type-id='62fab762' visibility='default' filepath='verbs.h' line='1523' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='960'>
-        <var-decl name='comp_events_completed' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1512' column='1'/>
+        <var-decl name='comp_events_completed' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1524' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='992'>
-        <var-decl name='async_events_completed' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1513' column='1'/>
+        <var-decl name='async_events_completed' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1525' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='ibv_device' is-struct='yes' visibility='default' size-in-bits='5312' filepath='verbs.h' line='1973' column='1' hash='a291f69f67247112' id='a91fc35f'>
+    <class-decl name='ibv_device' is-struct='yes' visibility='default' size-in-bits='5312' filepath='verbs.h' line='1986' column='1' hash='a291f69f67247112' id='a91fc35f'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='_ops' type-id='f904f53f' visibility='default' filepath='verbs.h' line='1974' column='1'/>
+        <var-decl name='_ops' type-id='f904f53f' visibility='default' filepath='verbs.h' line='1987' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='node_type' type-id='0267f9f9' visibility='default' filepath='verbs.h' line='1975' column='1'/>
+        <var-decl name='node_type' type-id='0267f9f9' visibility='default' filepath='verbs.h' line='1988' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='160'>
-        <var-decl name='transport_type' type-id='b31d4ee6' visibility='default' filepath='verbs.h' line='1976' column='1'/>
+        <var-decl name='transport_type' type-id='b31d4ee6' visibility='default' filepath='verbs.h' line='1989' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='name' type-id='59daf3ef' visibility='default' filepath='verbs.h' line='1978' column='1'/>
+        <var-decl name='name' type-id='59daf3ef' visibility='default' filepath='verbs.h' line='1991' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='704'>
-        <var-decl name='dev_name' type-id='59daf3ef' visibility='default' filepath='verbs.h' line='1980' column='1'/>
+        <var-decl name='dev_name' type-id='59daf3ef' visibility='default' filepath='verbs.h' line='1993' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1216'>
-        <var-decl name='dev_path' type-id='d1617432' visibility='default' filepath='verbs.h' line='1982' column='1'/>
+        <var-decl name='dev_path' type-id='d1617432' visibility='default' filepath='verbs.h' line='1995' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='3264'>
-        <var-decl name='ibdev_path' type-id='d1617432' visibility='default' filepath='verbs.h' line='1984' column='1'/>
+        <var-decl name='ibdev_path' type-id='d1617432' visibility='default' filepath='verbs.h' line='1997' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='ibv_device_attr' is-struct='yes' visibility='default' size-in-bits='1856' filepath='verbs.h' line='181' column='1' hash='eb1b80e818d601fe' id='57df2883'>
+    <class-decl name='ibv_device_attr' is-struct='yes' visibility='default' size-in-bits='1856' filepath='verbs.h' line='182' column='1' hash='eb1b80e818d601fe' id='57df2883'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='fw_ver' type-id='59daf3ef' visibility='default' filepath='verbs.h' line='182' column='1'/>
+        <var-decl name='fw_ver' type-id='59daf3ef' visibility='default' filepath='verbs.h' line='183' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='512'>
-        <var-decl name='node_guid' type-id='0899c7ad' visibility='default' filepath='verbs.h' line='183' column='1'/>
+        <var-decl name='node_guid' type-id='0899c7ad' visibility='default' filepath='verbs.h' line='184' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='576'>
-        <var-decl name='sys_image_guid' type-id='0899c7ad' visibility='default' filepath='verbs.h' line='184' column='1'/>
+        <var-decl name='sys_image_guid' type-id='0899c7ad' visibility='default' filepath='verbs.h' line='185' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='640'>
-        <var-decl name='max_mr_size' type-id='9c313c2d' visibility='default' filepath='verbs.h' line='185' column='1'/>
+        <var-decl name='max_mr_size' type-id='9c313c2d' visibility='default' filepath='verbs.h' line='186' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='704'>
-        <var-decl name='page_size_cap' type-id='9c313c2d' visibility='default' filepath='verbs.h' line='186' column='1'/>
+        <var-decl name='page_size_cap' type-id='9c313c2d' visibility='default' filepath='verbs.h' line='187' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='768'>
-        <var-decl name='vendor_id' type-id='8f92235e' visibility='default' filepath='verbs.h' line='187' column='1'/>
+        <var-decl name='vendor_id' type-id='8f92235e' visibility='default' filepath='verbs.h' line='188' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='800'>
-        <var-decl name='vendor_part_id' type-id='8f92235e' visibility='default' filepath='verbs.h' line='188' column='1'/>
+        <var-decl name='vendor_part_id' type-id='8f92235e' visibility='default' filepath='verbs.h' line='189' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='832'>
-        <var-decl name='hw_ver' type-id='8f92235e' visibility='default' filepath='verbs.h' line='189' column='1'/>
+        <var-decl name='hw_ver' type-id='8f92235e' visibility='default' filepath='verbs.h' line='190' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='864'>
-        <var-decl name='max_qp' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='190' column='1'/>
+        <var-decl name='max_qp' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='191' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='896'>
-        <var-decl name='max_qp_wr' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='191' column='1'/>
+        <var-decl name='max_qp_wr' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='192' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='928'>
-        <var-decl name='device_cap_flags' type-id='f0981eec' visibility='default' filepath='verbs.h' line='192' column='1'/>
+        <var-decl name='device_cap_flags' type-id='f0981eec' visibility='default' filepath='verbs.h' line='193' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='960'>
-        <var-decl name='max_sge' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='193' column='1'/>
+        <var-decl name='max_sge' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='194' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='992'>
-        <var-decl name='max_sge_rd' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='194' column='1'/>
+        <var-decl name='max_sge_rd' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='195' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1024'>
-        <var-decl name='max_cq' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='195' column='1'/>
+        <var-decl name='max_cq' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='196' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1056'>
-        <var-decl name='max_cqe' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='196' column='1'/>
+        <var-decl name='max_cqe' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='197' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1088'>
-        <var-decl name='max_mr' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='197' column='1'/>
+        <var-decl name='max_mr' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='198' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1120'>
-        <var-decl name='max_pd' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='198' column='1'/>
+        <var-decl name='max_pd' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='199' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1152'>
-        <var-decl name='max_qp_rd_atom' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='199' column='1'/>
+        <var-decl name='max_qp_rd_atom' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='200' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1184'>
-        <var-decl name='max_ee_rd_atom' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='200' column='1'/>
+        <var-decl name='max_ee_rd_atom' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='201' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1216'>
-        <var-decl name='max_res_rd_atom' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='201' column='1'/>
+        <var-decl name='max_res_rd_atom' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='202' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1248'>
-        <var-decl name='max_qp_init_rd_atom' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='202' column='1'/>
+        <var-decl name='max_qp_init_rd_atom' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='203' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1280'>
-        <var-decl name='max_ee_init_rd_atom' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='203' column='1'/>
+        <var-decl name='max_ee_init_rd_atom' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='204' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1312'>
-        <var-decl name='atomic_cap' type-id='b830f00a' visibility='default' filepath='verbs.h' line='204' column='1'/>
+        <var-decl name='atomic_cap' type-id='b830f00a' visibility='default' filepath='verbs.h' line='205' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1344'>
-        <var-decl name='max_ee' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='205' column='1'/>
+        <var-decl name='max_ee' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='206' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1376'>
-        <var-decl name='max_rdd' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='206' column='1'/>
+        <var-decl name='max_rdd' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='207' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1408'>
-        <var-decl name='max_mw' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='207' column='1'/>
+        <var-decl name='max_mw' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='208' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1440'>
-        <var-decl name='max_raw_ipv6_qp' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='208' column='1'/>
+        <var-decl name='max_raw_ipv6_qp' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='209' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1472'>
-        <var-decl name='max_raw_ethy_qp' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='209' column='1'/>
+        <var-decl name='max_raw_ethy_qp' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='210' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1504'>
-        <var-decl name='max_mcast_grp' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='210' column='1'/>
+        <var-decl name='max_mcast_grp' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='211' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1536'>
-        <var-decl name='max_mcast_qp_attach' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='211' column='1'/>
+        <var-decl name='max_mcast_qp_attach' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='212' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1568'>
-        <var-decl name='max_total_mcast_qp_attach' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='212' column='1'/>
+        <var-decl name='max_total_mcast_qp_attach' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='213' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1600'>
-        <var-decl name='max_ah' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='213' column='1'/>
+        <var-decl name='max_ah' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='214' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1632'>
-        <var-decl name='max_fmr' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='214' column='1'/>
+        <var-decl name='max_fmr' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='215' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1664'>
-        <var-decl name='max_map_per_fmr' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='215' column='1'/>
+        <var-decl name='max_map_per_fmr' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='216' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1696'>
-        <var-decl name='max_srq' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='216' column='1'/>
+        <var-decl name='max_srq' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='217' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1728'>
-        <var-decl name='max_srq_wr' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='217' column='1'/>
+        <var-decl name='max_srq_wr' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='218' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1760'>
-        <var-decl name='max_srq_sge' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='218' column='1'/>
+        <var-decl name='max_srq_sge' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='219' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1792'>
-        <var-decl name='max_pkeys' type-id='149c6638' visibility='default' filepath='verbs.h' line='219' column='1'/>
+        <var-decl name='max_pkeys' type-id='149c6638' visibility='default' filepath='verbs.h' line='220' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1808'>
-        <var-decl name='local_ca_ack_delay' type-id='b96825af' visibility='default' filepath='verbs.h' line='220' column='1'/>
+        <var-decl name='local_ca_ack_delay' type-id='b96825af' visibility='default' filepath='verbs.h' line='221' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1816'>
-        <var-decl name='phys_port_cnt' type-id='b96825af' visibility='default' filepath='verbs.h' line='221' column='1'/>
+        <var-decl name='phys_port_cnt' type-id='b96825af' visibility='default' filepath='verbs.h' line='222' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='ibv_mr' is-struct='yes' visibility='default' size-in-bits='384' filepath='verbs.h' line='665' column='1' hash='aefb7430c054efc5' id='29622a92'>
+    <class-decl name='ibv_mr' is-struct='yes' visibility='default' size-in-bits='384' filepath='verbs.h' line='670' column='1' hash='aefb7430c054efc5' id='29622a92'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='context' type-id='1aaec10e' visibility='default' filepath='verbs.h' line='666' column='1'/>
+        <var-decl name='context' type-id='1aaec10e' visibility='default' filepath='verbs.h' line='671' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='pd' type-id='18028d25' visibility='default' filepath='verbs.h' line='667' column='1'/>
+        <var-decl name='pd' type-id='18028d25' visibility='default' filepath='verbs.h' line='672' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='addr' type-id='eaa32e2f' visibility='default' filepath='verbs.h' line='668' column='1'/>
+        <var-decl name='addr' type-id='eaa32e2f' visibility='default' filepath='verbs.h' line='673' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='length' type-id='b59d7dce' visibility='default' filepath='verbs.h' line='669' column='1'/>
+        <var-decl name='length' type-id='b59d7dce' visibility='default' filepath='verbs.h' line='674' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='handle' type-id='8f92235e' visibility='default' filepath='verbs.h' line='670' column='1'/>
+        <var-decl name='handle' type-id='8f92235e' visibility='default' filepath='verbs.h' line='675' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='288'>
-        <var-decl name='lkey' type-id='8f92235e' visibility='default' filepath='verbs.h' line='671' column='1'/>
+        <var-decl name='lkey' type-id='8f92235e' visibility='default' filepath='verbs.h' line='676' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='320'>
-        <var-decl name='rkey' type-id='8f92235e' visibility='default' filepath='verbs.h' line='672' column='1'/>
+        <var-decl name='rkey' type-id='8f92235e' visibility='default' filepath='verbs.h' line='677' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='ibv_mw' is-struct='yes' visibility='default' size-in-bits='256' filepath='verbs.h' line='680' column='1' hash='ea4ac1ee8e8c9c58' id='266225d9'>
+    <class-decl name='ibv_mw' is-struct='yes' visibility='default' size-in-bits='256' filepath='verbs.h' line='685' column='1' hash='ea4ac1ee8e8c9c58' id='266225d9'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='context' type-id='1aaec10e' visibility='default' filepath='verbs.h' line='681' column='1'/>
+        <var-decl name='context' type-id='1aaec10e' visibility='default' filepath='verbs.h' line='686' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='pd' type-id='18028d25' visibility='default' filepath='verbs.h' line='682' column='1'/>
+        <var-decl name='pd' type-id='18028d25' visibility='default' filepath='verbs.h' line='687' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='rkey' type-id='8f92235e' visibility='default' filepath='verbs.h' line='683' column='1'/>
+        <var-decl name='rkey' type-id='8f92235e' visibility='default' filepath='verbs.h' line='688' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='160'>
-        <var-decl name='handle' type-id='8f92235e' visibility='default' filepath='verbs.h' line='684' column='1'/>
+        <var-decl name='handle' type-id='8f92235e' visibility='default' filepath='verbs.h' line='689' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='type' type-id='1795416d' visibility='default' filepath='verbs.h' line='685' column='1'/>
+        <var-decl name='type' type-id='1795416d' visibility='default' filepath='verbs.h' line='690' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='ibv_mw_bind' is-struct='yes' visibility='default' size-in-bits='384' filepath='verbs.h' line='1232' column='1' hash='407a99f5616f0a45' id='6e768691'>
+    <class-decl name='ibv_mw_bind' is-struct='yes' visibility='default' size-in-bits='384' filepath='verbs.h' line='1244' column='1' hash='407a99f5616f0a45' id='6e768691'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='wr_id' type-id='9c313c2d' visibility='default' filepath='verbs.h' line='1233' column='1'/>
+        <var-decl name='wr_id' type-id='9c313c2d' visibility='default' filepath='verbs.h' line='1245' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='send_flags' type-id='f0981eec' visibility='default' filepath='verbs.h' line='1234' column='1'/>
+        <var-decl name='send_flags' type-id='f0981eec' visibility='default' filepath='verbs.h' line='1246' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='bind_info' type-id='fab191d2' visibility='default' filepath='verbs.h' line='1235' column='1'/>
+        <var-decl name='bind_info' type-id='fab191d2' visibility='default' filepath='verbs.h' line='1247' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='ibv_mw_bind_info' is-struct='yes' visibility='default' size-in-bits='256' filepath='verbs.h' line='622' column='1' hash='ba30d93fb11315d3' id='fab191d2'>
+    <class-decl name='ibv_mw_bind_info' is-struct='yes' visibility='default' size-in-bits='256' filepath='verbs.h' line='627' column='1' hash='ba30d93fb11315d3' id='fab191d2'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='mr' type-id='bf381eb0' visibility='default' filepath='verbs.h' line='623' column='1'/>
+        <var-decl name='mr' type-id='bf381eb0' visibility='default' filepath='verbs.h' line='628' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='addr' type-id='9c313c2d' visibility='default' filepath='verbs.h' line='624' column='1'/>
+        <var-decl name='addr' type-id='9c313c2d' visibility='default' filepath='verbs.h' line='629' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='length' type-id='9c313c2d' visibility='default' filepath='verbs.h' line='625' column='1'/>
+        <var-decl name='length' type-id='9c313c2d' visibility='default' filepath='verbs.h' line='630' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='mw_access_flags' type-id='f0981eec' visibility='default' filepath='verbs.h' line='626' column='1'/>
+        <var-decl name='mw_access_flags' type-id='f0981eec' visibility='default' filepath='verbs.h' line='631' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='ibv_pd' is-struct='yes' visibility='default' size-in-bits='128' filepath='verbs.h' line='629' column='1' hash='1177bc85e0d72b08' id='391f5dd5'>
+    <class-decl name='ibv_pd' is-struct='yes' visibility='default' size-in-bits='128' filepath='verbs.h' line='634' column='1' hash='1177bc85e0d72b08' id='391f5dd5'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='context' type-id='1aaec10e' visibility='default' filepath='verbs.h' line='630' column='1'/>
+        <var-decl name='context' type-id='1aaec10e' visibility='default' filepath='verbs.h' line='635' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='handle' type-id='8f92235e' visibility='default' filepath='verbs.h' line='631' column='1'/>
+        <var-decl name='handle' type-id='8f92235e' visibility='default' filepath='verbs.h' line='636' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='ibv_qp' is-struct='yes' visibility='default' size-in-bits='1280' filepath='verbs.h' line='1278' column='1' hash='66b93f988fdbfeaf' id='1f1cf650'>
+    <class-decl name='ibv_qp' is-struct='yes' visibility='default' size-in-bits='1280' filepath='verbs.h' line='1290' column='1' hash='66b93f988fdbfeaf' id='1f1cf650'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='context' type-id='1aaec10e' visibility='default' filepath='verbs.h' line='1279' column='1'/>
+        <var-decl name='context' type-id='1aaec10e' visibility='default' filepath='verbs.h' line='1291' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='qp_context' type-id='eaa32e2f' visibility='default' filepath='verbs.h' line='1280' column='1'/>
+        <var-decl name='qp_context' type-id='eaa32e2f' visibility='default' filepath='verbs.h' line='1292' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='pd' type-id='18028d25' visibility='default' filepath='verbs.h' line='1281' column='1'/>
+        <var-decl name='pd' type-id='18028d25' visibility='default' filepath='verbs.h' line='1293' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='send_cq' type-id='d6ed2b75' visibility='default' filepath='verbs.h' line='1282' column='1'/>
+        <var-decl name='send_cq' type-id='d6ed2b75' visibility='default' filepath='verbs.h' line='1294' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='recv_cq' type-id='d6ed2b75' visibility='default' filepath='verbs.h' line='1283' column='1'/>
+        <var-decl name='recv_cq' type-id='d6ed2b75' visibility='default' filepath='verbs.h' line='1295' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='320'>
-        <var-decl name='srq' type-id='a323be6f' visibility='default' filepath='verbs.h' line='1284' column='1'/>
+        <var-decl name='srq' type-id='a323be6f' visibility='default' filepath='verbs.h' line='1296' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='384'>
-        <var-decl name='handle' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1285' column='1'/>
+        <var-decl name='handle' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1297' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='416'>
-        <var-decl name='qp_num' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1286' column='1'/>
+        <var-decl name='qp_num' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1298' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='448'>
-        <var-decl name='state' type-id='002258df' visibility='default' filepath='verbs.h' line='1287' column='1'/>
+        <var-decl name='state' type-id='002258df' visibility='default' filepath='verbs.h' line='1299' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='480'>
-        <var-decl name='qp_type' type-id='d412ad8a' visibility='default' filepath='verbs.h' line='1288' column='1'/>
+        <var-decl name='qp_type' type-id='d412ad8a' visibility='default' filepath='verbs.h' line='1300' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='512'>
-        <var-decl name='mutex' type-id='7a6844eb' visibility='default' filepath='verbs.h' line='1290' column='1'/>
+        <var-decl name='mutex' type-id='7a6844eb' visibility='default' filepath='verbs.h' line='1302' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='832'>
-        <var-decl name='cond' type-id='62fab762' visibility='default' filepath='verbs.h' line='1291' column='1'/>
+        <var-decl name='cond' type-id='62fab762' visibility='default' filepath='verbs.h' line='1303' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1216'>
-        <var-decl name='events_completed' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1292' column='1'/>
+        <var-decl name='events_completed' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1304' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='ibv_recv_wr' is-struct='yes' visibility='default' size-in-bits='256' filepath='verbs.h' line='1196' column='1' hash='a95f692e91de41fe' id='a761d757'>
+    <class-decl name='ibv_recv_wr' is-struct='yes' visibility='default' size-in-bits='256' filepath='verbs.h' line='1208' column='1' hash='a95f692e91de41fe' id='a761d757'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='wr_id' type-id='9c313c2d' visibility='default' filepath='verbs.h' line='1197' column='1'/>
+        <var-decl name='wr_id' type-id='9c313c2d' visibility='default' filepath='verbs.h' line='1209' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='next' type-id='c6e38adf' visibility='default' filepath='verbs.h' line='1198' column='1'/>
+        <var-decl name='next' type-id='c6e38adf' visibility='default' filepath='verbs.h' line='1210' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='sg_list' type-id='e3920c40' visibility='default' filepath='verbs.h' line='1199' column='1'/>
+        <var-decl name='sg_list' type-id='e3920c40' visibility='default' filepath='verbs.h' line='1211' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='num_sge' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='1200' column='1'/>
+        <var-decl name='num_sge' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='1212' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='ibv_send_wr' is-struct='yes' visibility='default' size-in-bits='1024' filepath='verbs.h' line='1146' column='1' hash='6cc905512001fc83' id='84e3f871'>
+    <class-decl name='ibv_send_wr' is-struct='yes' visibility='default' size-in-bits='1024' filepath='verbs.h' line='1158' column='1' hash='6cc905512001fc83' id='84e3f871'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='wr_id' type-id='9c313c2d' visibility='default' filepath='verbs.h' line='1147' column='1'/>
+        <var-decl name='wr_id' type-id='9c313c2d' visibility='default' filepath='verbs.h' line='1159' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='next' type-id='ce6e7e09' visibility='default' filepath='verbs.h' line='1148' column='1'/>
+        <var-decl name='next' type-id='ce6e7e09' visibility='default' filepath='verbs.h' line='1160' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='sg_list' type-id='e3920c40' visibility='default' filepath='verbs.h' line='1149' column='1'/>
+        <var-decl name='sg_list' type-id='e3920c40' visibility='default' filepath='verbs.h' line='1161' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='num_sge' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='1150' column='1'/>
+        <var-decl name='num_sge' type-id='95e97e5e' visibility='default' filepath='verbs.h' line='1162' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='224'>
-        <var-decl name='opcode' type-id='e884e4f8' visibility='default' filepath='verbs.h' line='1151' column='1'/>
+        <var-decl name='opcode' type-id='e884e4f8' visibility='default' filepath='verbs.h' line='1163' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='send_flags' type-id='f0981eec' visibility='default' filepath='verbs.h' line='1152' column='1'/>
+        <var-decl name='send_flags' type-id='f0981eec' visibility='default' filepath='verbs.h' line='1164' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='288'>
         <var-decl name='' type-id='ac5ab5a5' visibility='default'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='320'>
-        <var-decl name='wr' type-id='ac5ab5a6' visibility='default' filepath='verbs.h' line='1176' column='1'/>
+        <var-decl name='wr' type-id='ac5ab5a6' visibility='default' filepath='verbs.h' line='1188' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='576'>
-        <var-decl name='qp_type' type-id='ac5ab5a7' visibility='default' filepath='verbs.h' line='1181' column='1'/>
+        <var-decl name='qp_type' type-id='ac5ab5a7' visibility='default' filepath='verbs.h' line='1193' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='640'>
         <var-decl name='' type-id='ac5ab5a8' visibility='default'/>
       </data-member>
     </class-decl>
-    <class-decl name='ibv_sge' is-struct='yes' visibility='default' size-in-bits='128' filepath='verbs.h' line='1140' column='1' hash='eedc047e9f13b066' id='0c925402'>
+    <class-decl name='ibv_sge' is-struct='yes' visibility='default' size-in-bits='128' filepath='verbs.h' line='1147' column='1' hash='eedc047e9f13b066' id='0c925402'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='addr' type-id='9c313c2d' visibility='default' filepath='verbs.h' line='1141' column='1'/>
+        <var-decl name='addr' type-id='9c313c2d' visibility='default' filepath='verbs.h' line='1148' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='length' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1142' column='1'/>
+        <var-decl name='length' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1149' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='96'>
-        <var-decl name='lkey' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1143' column='1'/>
+        <var-decl name='lkey' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1150' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='ibv_srq' is-struct='yes' visibility='default' size-in-bits='1024' filepath='verbs.h' line='1238' column='1' hash='14ec4fd7aaf7d39f' id='0cc1b237'>
+    <class-decl name='ibv_srq' is-struct='yes' visibility='default' size-in-bits='1024' filepath='verbs.h' line='1250' column='1' hash='14ec4fd7aaf7d39f' id='0cc1b237'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='context' type-id='1aaec10e' visibility='default' filepath='verbs.h' line='1239' column='1'/>
+        <var-decl name='context' type-id='1aaec10e' visibility='default' filepath='verbs.h' line='1251' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='srq_context' type-id='eaa32e2f' visibility='default' filepath='verbs.h' line='1240' column='1'/>
+        <var-decl name='srq_context' type-id='eaa32e2f' visibility='default' filepath='verbs.h' line='1252' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='pd' type-id='18028d25' visibility='default' filepath='verbs.h' line='1241' column='1'/>
+        <var-decl name='pd' type-id='18028d25' visibility='default' filepath='verbs.h' line='1253' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='handle' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1242' column='1'/>
+        <var-decl name='handle' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1254' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='mutex' type-id='7a6844eb' visibility='default' filepath='verbs.h' line='1244' column='1'/>
+        <var-decl name='mutex' type-id='7a6844eb' visibility='default' filepath='verbs.h' line='1256' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='576'>
-        <var-decl name='cond' type-id='62fab762' visibility='default' filepath='verbs.h' line='1245' column='1'/>
+        <var-decl name='cond' type-id='62fab762' visibility='default' filepath='verbs.h' line='1257' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='960'>
-        <var-decl name='events_completed' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1246' column='1'/>
+        <var-decl name='events_completed' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1258' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='ibv_wc' is-struct='yes' visibility='default' size-in-bits='384' filepath='verbs.h' line='586' column='1' hash='ae9909c06560043b' id='322a8bc3'>
+    <class-decl name='ibv_wc' is-struct='yes' visibility='default' size-in-bits='384' filepath='verbs.h' line='591' column='1' hash='ae9909c06560043b' id='322a8bc3'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='wr_id' type-id='9c313c2d' visibility='default' filepath='verbs.h' line='587' column='1'/>
+        <var-decl name='wr_id' type-id='9c313c2d' visibility='default' filepath='verbs.h' line='592' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='status' type-id='f7f54079' visibility='default' filepath='verbs.h' line='588' column='1'/>
+        <var-decl name='status' type-id='f7f54079' visibility='default' filepath='verbs.h' line='593' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='96'>
-        <var-decl name='opcode' type-id='e20702a5' visibility='default' filepath='verbs.h' line='589' column='1'/>
+        <var-decl name='opcode' type-id='e20702a5' visibility='default' filepath='verbs.h' line='594' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='vendor_err' type-id='8f92235e' visibility='default' filepath='verbs.h' line='590' column='1'/>
+        <var-decl name='vendor_err' type-id='8f92235e' visibility='default' filepath='verbs.h' line='595' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='160'>
-        <var-decl name='byte_len' type-id='8f92235e' visibility='default' filepath='verbs.h' line='591' column='1'/>
+        <var-decl name='byte_len' type-id='8f92235e' visibility='default' filepath='verbs.h' line='596' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
         <var-decl name='' type-id='ac5ab5a9' visibility='default'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='224'>
-        <var-decl name='qp_num' type-id='8f92235e' visibility='default' filepath='verbs.h' line='599' column='1'/>
+        <var-decl name='qp_num' type-id='8f92235e' visibility='default' filepath='verbs.h' line='604' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='src_qp' type-id='8f92235e' visibility='default' filepath='verbs.h' line='600' column='1'/>
+        <var-decl name='src_qp' type-id='8f92235e' visibility='default' filepath='verbs.h' line='605' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='288'>
-        <var-decl name='wc_flags' type-id='f0981eec' visibility='default' filepath='verbs.h' line='601' column='1'/>
+        <var-decl name='wc_flags' type-id='f0981eec' visibility='default' filepath='verbs.h' line='606' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='320'>
-        <var-decl name='pkey_index' type-id='149c6638' visibility='default' filepath='verbs.h' line='602' column='1'/>
+        <var-decl name='pkey_index' type-id='149c6638' visibility='default' filepath='verbs.h' line='607' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='336'>
-        <var-decl name='slid' type-id='149c6638' visibility='default' filepath='verbs.h' line='603' column='1'/>
+        <var-decl name='slid' type-id='149c6638' visibility='default' filepath='verbs.h' line='608' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='352'>
-        <var-decl name='sl' type-id='b96825af' visibility='default' filepath='verbs.h' line='604' column='1'/>
+        <var-decl name='sl' type-id='b96825af' visibility='default' filepath='verbs.h' line='609' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='360'>
-        <var-decl name='dlid_path_bits' type-id='b96825af' visibility='default' filepath='verbs.h' line='605' column='1'/>
+        <var-decl name='dlid_path_bits' type-id='b96825af' visibility='default' filepath='verbs.h' line='610' column='1'/>
       </data-member>
     </class-decl>
     <class-decl name='spdk_nvme_rdma_hooks' is-struct='yes' visibility='default' size-in-bits='192' filepath='nvme.h' line='4448' column='1' hash='ed31e7eae2c5f2b3' id='b43759ec'>
@@ -5979,53 +5982,53 @@
         <var-decl name='put_rkey' type-id='87945afe' visibility='default' filepath='nvme.h' line='4477' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__3' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='verbs.h' line='1171' column='1' hash='8761ce0eef99abca' id='e7f43fe0'>
+    <class-decl name='__anonymous_struct__3' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='verbs.h' line='1183' column='1' hash='8761ce0eef99abca' id='e7f43fe0'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='ah' type-id='f3cfd12e' visibility='default' filepath='verbs.h' line='1172' column='1'/>
+        <var-decl name='ah' type-id='f3cfd12e' visibility='default' filepath='verbs.h' line='1184' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='remote_qpn' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1173' column='1'/>
+        <var-decl name='remote_qpn' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1185' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='96'>
-        <var-decl name='remote_qkey' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1174' column='1'/>
+        <var-decl name='remote_qkey' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1186' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__5' is-struct='yes' visibility='default' size-in-bits='384' is-anonymous='yes' filepath='verbs.h' line='1183' column='1' hash='0290ce98877bfa4f#2' id='e7f43fe1'>
+    <class-decl name='__anonymous_struct__5' is-struct='yes' visibility='default' size-in-bits='384' is-anonymous='yes' filepath='verbs.h' line='1195' column='1' hash='0290ce98877bfa4f#2' id='e7f43fe1'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='mw' type-id='a13133b1' visibility='default' filepath='verbs.h' line='1184' column='1'/>
+        <var-decl name='mw' type-id='a13133b1' visibility='default' filepath='verbs.h' line='1196' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='rkey' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1185' column='1'/>
+        <var-decl name='rkey' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1197' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='bind_info' type-id='fab191d2' visibility='default' filepath='verbs.h' line='1186' column='1'/>
+        <var-decl name='bind_info' type-id='fab191d2' visibility='default' filepath='verbs.h' line='1198' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__4' is-struct='yes' visibility='default' size-in-bits='32' is-anonymous='yes' filepath='verbs.h' line='1178' column='1' hash='360bcdbc3feb7b83#71' id='e7f43fe2'>
+    <class-decl name='__anonymous_struct__4' is-struct='yes' visibility='default' size-in-bits='32' is-anonymous='yes' filepath='verbs.h' line='1190' column='1' hash='360bcdbc3feb7b83#71' id='e7f43fe2'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='remote_srqn' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1179' column='1'/>
+        <var-decl name='remote_srqn' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1191' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__1' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='verbs.h' line='1161' column='1' hash='c7cec20a01d07f64#84' id='e7f43fe3'>
+    <class-decl name='__anonymous_struct__1' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='verbs.h' line='1173' column='1' hash='c7cec20a01d07f64#84' id='e7f43fe3'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='remote_addr' type-id='9c313c2d' visibility='default' filepath='verbs.h' line='1162' column='1'/>
+        <var-decl name='remote_addr' type-id='9c313c2d' visibility='default' filepath='verbs.h' line='1174' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='rkey' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1163' column='1'/>
+        <var-decl name='rkey' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1175' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__2' is-struct='yes' visibility='default' size-in-bits='256' is-anonymous='yes' filepath='verbs.h' line='1165' column='1' hash='2be62bc9c6160b8c#85' id='e7f43fe4'>
+    <class-decl name='__anonymous_struct__2' is-struct='yes' visibility='default' size-in-bits='256' is-anonymous='yes' filepath='verbs.h' line='1177' column='1' hash='2be62bc9c6160b8c#85' id='e7f43fe4'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='remote_addr' type-id='9c313c2d' visibility='default' filepath='verbs.h' line='1166' column='1'/>
+        <var-decl name='remote_addr' type-id='9c313c2d' visibility='default' filepath='verbs.h' line='1178' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='compare_add' type-id='9c313c2d' visibility='default' filepath='verbs.h' line='1167' column='1'/>
+        <var-decl name='compare_add' type-id='9c313c2d' visibility='default' filepath='verbs.h' line='1179' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='swap' type-id='9c313c2d' visibility='default' filepath='verbs.h' line='1168' column='1'/>
+        <var-decl name='swap' type-id='9c313c2d' visibility='default' filepath='verbs.h' line='1180' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='rkey' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1169' column='1'/>
+        <var-decl name='rkey' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1181' column='1'/>
       </data-member>
     </class-decl>
     <class-decl name='__anonymous_struct__' is-struct='yes' visibility='default' size-in-bits='64' is-anonymous='yes' filepath='atomic_wide_counter.h' line='28' column='1' hash='6fe24ea039e73fed#117' id='e7f43fe5'>
@@ -6036,15 +6039,15 @@
         <var-decl name='__high' type-id='f0981eec' visibility='default' filepath='atomic_wide_counter.h' line='31' column='1'/>
       </data-member>
     </class-decl>
-    <class-decl name='__anonymous_struct__6' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='verbs.h' line='1188' column='1' hash='3c6955a740d400ff#118' id='e7f43fe6'>
+    <class-decl name='__anonymous_struct__6' is-struct='yes' visibility='default' size-in-bits='128' is-anonymous='yes' filepath='verbs.h' line='1200' column='1' hash='3c6955a740d400ff#118' id='e7f43fe6'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='hdr' type-id='eaa32e2f' visibility='default' filepath='verbs.h' line='1189' column='1'/>
+        <var-decl name='hdr' type-id='eaa32e2f' visibility='default' filepath='verbs.h' line='1201' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='hdr_sz' type-id='149c6638' visibility='default' filepath='verbs.h' line='1190' column='1'/>
+        <var-decl name='hdr_sz' type-id='149c6638' visibility='default' filepath='verbs.h' line='1202' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='80'>
-        <var-decl name='mss' type-id='149c6638' visibility='default' filepath='verbs.h' line='1191' column='1'/>
+        <var-decl name='mss' type-id='149c6638' visibility='default' filepath='verbs.h' line='1203' column='1'/>
       </data-member>
     </class-decl>
     <typedef-decl name='__atomic_wide_counter' type-id='613ce450' size-in-bits='64' filepath='atomic_wide_counter.h' line='33' column='1' id='f3b40860'/>
@@ -6072,44 +6075,44 @@
         <var-decl name='__align' type-id='95e97e61' visibility='default' filepath='pthreadtypes.h' line='79' column='1'/>
       </data-member>
     </union-decl>
-    <union-decl name='__anonymous_union__1' visibility='default' size-in-bits='32' is-anonymous='yes' filepath='verbs.h' line='1156' column='1' hash='a2f9385dda19bb22' id='ac5ab5a5'>
+    <union-decl name='__anonymous_union__1' visibility='default' size-in-bits='32' is-anonymous='yes' filepath='verbs.h' line='1168' column='1' hash='a2f9385dda19bb22' id='ac5ab5a5'>
       <data-member access='public'>
-        <var-decl name='imm_data' type-id='78a133c2' visibility='default' filepath='verbs.h' line='1157' column='1'/>
+        <var-decl name='imm_data' type-id='78a133c2' visibility='default' filepath='verbs.h' line='1169' column='1'/>
       </data-member>
       <data-member access='public'>
-        <var-decl name='invalidate_rkey' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1158' column='1'/>
-      </data-member>
-    </union-decl>
-    <union-decl name='__anonymous_union__' visibility='default' size-in-bits='32' is-anonymous='yes' filepath='verbs.h' line='595' column='1' hash='9bd76fed17f2c9b0#2' id='ac5ab5a9'>
-      <data-member access='public'>
-        <var-decl name='imm_data' type-id='78a133c2' visibility='default' filepath='verbs.h' line='596' column='1'/>
-      </data-member>
-      <data-member access='public'>
-        <var-decl name='invalidated_rkey' type-id='8f92235e' visibility='default' filepath='verbs.h' line='597' column='1'/>
+        <var-decl name='invalidate_rkey' type-id='8f92235e' visibility='default' filepath='verbs.h' line='1170' column='1'/>
       </data-member>
     </union-decl>
-    <union-decl name='__anonymous_union__4' visibility='default' size-in-bits='384' is-anonymous='yes' filepath='verbs.h' line='1182' column='1' hash='79deba4685c38429#4' id='ac5ab5a8'>
+    <union-decl name='__anonymous_union__' visibility='default' size-in-bits='32' is-anonymous='yes' filepath='verbs.h' line='600' column='1' hash='9bd76fed17f2c9b0#2' id='ac5ab5a9'>
       <data-member access='public'>
-        <var-decl name='bind_mw' type-id='e7f43fe1' visibility='default' filepath='verbs.h' line='1187' column='1'/>
+        <var-decl name='imm_data' type-id='78a133c2' visibility='default' filepath='verbs.h' line='601' column='1'/>
       </data-member>
       <data-member access='public'>
-        <var-decl name='tso' type-id='e7f43fe6' visibility='default' filepath='verbs.h' line='1192' column='1'/>
-      </data-member>
-    </union-decl>
-    <union-decl name='__anonymous_union__3' visibility='default' size-in-bits='32' is-anonymous='yes' filepath='verbs.h' line='1177' column='1' hash='59bf261b13aedbfa#6' id='ac5ab5a7'>
-      <data-member access='public'>
-        <var-decl name='xrc' type-id='e7f43fe2' visibility='default' filepath='verbs.h' line='1180' column='1'/>
+        <var-decl name='invalidated_rkey' type-id='8f92235e' visibility='default' filepath='verbs.h' line='602' column='1'/>
       </data-member>
     </union-decl>
-    <union-decl name='__anonymous_union__2' visibility='default' size-in-bits='256' is-anonymous='yes' filepath='verbs.h' line='1160' column='1' hash='14423a372ddeb3ce#8' id='ac5ab5a6'>
+    <union-decl name='__anonymous_union__4' visibility='default' size-in-bits='384' is-anonymous='yes' filepath='verbs.h' line='1194' column='1' hash='79deba4685c38429#4' id='ac5ab5a8'>
       <data-member access='public'>
-        <var-decl name='rdma' type-id='e7f43fe3' visibility='default' filepath='verbs.h' line='1164' column='1'/>
+        <var-decl name='bind_mw' type-id='e7f43fe1' visibility='default' filepath='verbs.h' line='1199' column='1'/>
       </data-member>
       <data-member access='public'>
-        <var-decl name='atomic' type-id='e7f43fe4' visibility='default' filepath='verbs.h' line='1170' column='1'/>
+        <var-decl name='tso' type-id='e7f43fe6' visibility='default' filepath='verbs.h' line='1204' column='1'/>
+      </data-member>
+    </union-decl>
+    <union-decl name='__anonymous_union__3' visibility='default' size-in-bits='32' is-anonymous='yes' filepath='verbs.h' line='1189' column='1' hash='59bf261b13aedbfa#6' id='ac5ab5a7'>
+      <data-member access='public'>
+        <var-decl name='xrc' type-id='e7f43fe2' visibility='default' filepath='verbs.h' line='1192' column='1'/>
+      </data-member>
+    </union-decl>
+    <union-decl name='__anonymous_union__2' visibility='default' size-in-bits='256' is-anonymous='yes' filepath='verbs.h' line='1172' column='1' hash='14423a372ddeb3ce#8' id='ac5ab5a6'>
+      <data-member access='public'>
+        <var-decl name='rdma' type-id='e7f43fe3' visibility='default' filepath='verbs.h' line='1176' column='1'/>
       </data-member>
       <data-member access='public'>
-        <var-decl name='ud' type-id='e7f43fe0' visibility='default' filepath='verbs.h' line='1175' column='1'/>
+        <var-decl name='atomic' type-id='e7f43fe4' visibility='default' filepath='verbs.h' line='1182' column='1'/>
+      </data-member>
+      <data-member access='public'>
+        <var-decl name='ud' type-id='e7f43fe0' visibility='default' filepath='verbs.h' line='1187' column='1'/>
       </data-member>
     </union-decl>
     <array-type-def dimensions='1' type-id='f0981eec' size-in-bits='64' hash='27faccd2350aa96c' id='0d532ec1'>
@@ -6245,11 +6248,11 @@
     <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='8' hash='f7aed1c6cc6e7b3c' id='89feb1ec'>
       <subrange length='1' lower-bound='0' upper-bound='0' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='eba0a2b392137dcb' id='52f813b4'/>
     </array-type-def>
-    <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='160' hash='99641d293d1da856' id='664ac0b7'>
-      <subrange length='20' lower-bound='0' upper-bound='19' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='1ca9e41140ea49be' id='fdca39cf'/>
-    </array-type-def>
     <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='296' hash='b19eb571bf2f8fa1' id='12e4ade3'>
       <subrange length='37' lower-bound='0' upper-bound='36' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='6b8954b69042919f' id='aa6426fb'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='64' hash='e1c8b625c73024c4' id='8e100159'>
+      <subrange length='8' lower-bound='0' upper-bound='7' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='6e87a8ff484907ad' id='56e0c0b1'/>
     </array-type-def>
     <enum-decl name='spdk_nvmf_subtype' size-in-bits='32' alignment-in-bits='32' filepath='nvmf_spec.h' line='136' column='1' hash='6f32703f2e1ecf4a' id='6b55363d'>
       <underlying-type type-id='9cac1fee'/>
@@ -6260,93 +6263,102 @@
     <array-type-def dimensions='1' type-id='13a92c56' size-in-bits='6144' hash='050ad050979477ed' id='9f28377b'>
       <subrange length='16' lower-bound='0' upper-bound='15' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='6c35b1e999eba398' id='848d0938'/>
     </array-type-def>
-    <class-decl name='_IO_FILE' is-struct='yes' visibility='default' size-in-bits='1728' filepath='struct_FILE.h' line='49' column='1' hash='54bf40f701b4847a' id='ec1ed955'>
+    <class-decl name='_IO_FILE' is-struct='yes' visibility='default' size-in-bits='1728' filepath='struct_FILE.h' line='51' column='1' hash='dedab36ee0ea6582' id='ec1ed955'>
       <data-member access='public' layout-offset-in-bits='0'>
-        <var-decl name='_flags' type-id='95e97e5e' visibility='default' filepath='struct_FILE.h' line='51' column='1'/>
+        <var-decl name='_flags' type-id='95e97e5e' visibility='default' filepath='struct_FILE.h' line='53' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='64'>
-        <var-decl name='_IO_read_ptr' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='54' column='1'/>
+        <var-decl name='_IO_read_ptr' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='56' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='128'>
-        <var-decl name='_IO_read_end' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='55' column='1'/>
+        <var-decl name='_IO_read_end' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='57' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='192'>
-        <var-decl name='_IO_read_base' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='56' column='1'/>
+        <var-decl name='_IO_read_base' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='58' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='256'>
-        <var-decl name='_IO_write_base' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='57' column='1'/>
+        <var-decl name='_IO_write_base' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='59' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='320'>
-        <var-decl name='_IO_write_ptr' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='58' column='1'/>
+        <var-decl name='_IO_write_ptr' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='60' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='384'>
-        <var-decl name='_IO_write_end' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='59' column='1'/>
+        <var-decl name='_IO_write_end' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='61' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='448'>
-        <var-decl name='_IO_buf_base' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='60' column='1'/>
+        <var-decl name='_IO_buf_base' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='62' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='512'>
-        <var-decl name='_IO_buf_end' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='61' column='1'/>
+        <var-decl name='_IO_buf_end' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='63' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='576'>
-        <var-decl name='_IO_save_base' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='64' column='1'/>
+        <var-decl name='_IO_save_base' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='66' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='640'>
-        <var-decl name='_IO_backup_base' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='65' column='1'/>
+        <var-decl name='_IO_backup_base' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='67' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='704'>
-        <var-decl name='_IO_save_end' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='66' column='1'/>
+        <var-decl name='_IO_save_end' type-id='26a90f95' visibility='default' filepath='struct_FILE.h' line='68' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='768'>
-        <var-decl name='_markers' type-id='e4c6fa61' visibility='default' filepath='struct_FILE.h' line='68' column='1'/>
+        <var-decl name='_markers' type-id='e4c6fa61' visibility='default' filepath='struct_FILE.h' line='70' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='832'>
-        <var-decl name='_chain' type-id='dca988a5' visibility='default' filepath='struct_FILE.h' line='70' column='1'/>
+        <var-decl name='_chain' type-id='dca988a5' visibility='default' filepath='struct_FILE.h' line='72' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='896'>
-        <var-decl name='_fileno' type-id='95e97e5e' visibility='default' filepath='struct_FILE.h' line='72' column='1'/>
+        <var-decl name='_fileno' type-id='95e97e5e' visibility='default' filepath='struct_FILE.h' line='74' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='928'>
-        <var-decl name='_flags2' type-id='95e97e5e' visibility='default' filepath='struct_FILE.h' line='73' column='1'/>
+        <var-decl name='_flags2' type-id='95e97e5e' visibility='default' filepath='struct_FILE.h' line='75' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='952'>
+        <var-decl name='_short_backupbuf' type-id='89feb1ec' visibility='default' filepath='struct_FILE.h' line='77' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='960'>
-        <var-decl name='_old_offset' type-id='79989e9c' visibility='default' filepath='struct_FILE.h' line='74' column='1'/>
+        <var-decl name='_old_offset' type-id='79989e9c' visibility='default' filepath='struct_FILE.h' line='78' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1024'>
-        <var-decl name='_cur_column' type-id='f0981eed' visibility='default' filepath='struct_FILE.h' line='77' column='1'/>
+        <var-decl name='_cur_column' type-id='f0981eed' visibility='default' filepath='struct_FILE.h' line='81' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1040'>
-        <var-decl name='_vtable_offset' type-id='28577a57' visibility='default' filepath='struct_FILE.h' line='78' column='1'/>
+        <var-decl name='_vtable_offset' type-id='28577a57' visibility='default' filepath='struct_FILE.h' line='82' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1048'>
-        <var-decl name='_shortbuf' type-id='89feb1ec' visibility='default' filepath='struct_FILE.h' line='79' column='1'/>
+        <var-decl name='_shortbuf' type-id='89feb1ec' visibility='default' filepath='struct_FILE.h' line='83' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1088'>
-        <var-decl name='_lock' type-id='cecf4ea7' visibility='default' filepath='struct_FILE.h' line='81' column='1'/>
+        <var-decl name='_lock' type-id='cecf4ea7' visibility='default' filepath='struct_FILE.h' line='85' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1152'>
-        <var-decl name='_offset' type-id='724e4de6' visibility='default' filepath='struct_FILE.h' line='89' column='1'/>
+        <var-decl name='_offset' type-id='724e4de6' visibility='default' filepath='struct_FILE.h' line='93' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1216'>
-        <var-decl name='_codecvt' type-id='570f8c59' visibility='default' filepath='struct_FILE.h' line='91' column='1'/>
+        <var-decl name='_codecvt' type-id='570f8c59' visibility='default' filepath='struct_FILE.h' line='95' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1280'>
-        <var-decl name='_wide_data' type-id='c65a1f29' visibility='default' filepath='struct_FILE.h' line='92' column='1'/>
+        <var-decl name='_wide_data' type-id='c65a1f29' visibility='default' filepath='struct_FILE.h' line='96' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1344'>
-        <var-decl name='_freeres_list' type-id='dca988a5' visibility='default' filepath='struct_FILE.h' line='93' column='1'/>
+        <var-decl name='_freeres_list' type-id='dca988a5' visibility='default' filepath='struct_FILE.h' line='97' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1408'>
-        <var-decl name='_freeres_buf' type-id='eaa32e2f' visibility='default' filepath='struct_FILE.h' line='94' column='1'/>
+        <var-decl name='_freeres_buf' type-id='eaa32e2f' visibility='default' filepath='struct_FILE.h' line='98' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1472'>
-        <var-decl name='__pad5' type-id='b59d7dce' visibility='default' filepath='struct_FILE.h' line='95' column='1'/>
+        <var-decl name='_prevchain' type-id='ede1f91d' visibility='default' filepath='struct_FILE.h' line='99' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1536'>
-        <var-decl name='_mode' type-id='95e97e5e' visibility='default' filepath='struct_FILE.h' line='96' column='1'/>
+        <var-decl name='_mode' type-id='95e97e5e' visibility='default' filepath='struct_FILE.h' line='100' column='1'/>
       </data-member>
       <data-member access='public' layout-offset-in-bits='1568'>
-        <var-decl name='_unused2' type-id='664ac0b7' visibility='default' filepath='struct_FILE.h' line='98' column='1'/>
+        <var-decl name='_unused3' type-id='95e97e5e' visibility='default' filepath='struct_FILE.h' line='102' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1600'>
+        <var-decl name='_total_written' type-id='8910171f' visibility='default' filepath='struct_FILE.h' line='104' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='1664'>
+        <var-decl name='_unused2' type-id='8e100159' visibility='default' filepath='struct_FILE.h' line='109' column='1'/>
       </data-member>
     </class-decl>
     <class-decl name='spdk_nvmf_host_opts' is-struct='yes' visibility='default' size-in-bits='256' filepath='nvmf.h' line='624' column='1' hash='be7a57e3f8035087' id='2ff4743d'>
@@ -6477,7 +6489,7 @@
       </data-member>
     </class-decl>
     <typedef-decl name='FILE' type-id='ec1ed955' size-in-bits='1728' filepath='FILE.h' line='7' column='1' id='aa12d1ba'/>
-    <typedef-decl name='_IO_lock_t' type-id='48b5725f' filepath='struct_FILE.h' line='43' column='1' id='bb4788fa'/>
+    <typedef-decl name='_IO_lock_t' type-id='48b5725f' filepath='struct_FILE.h' line='45' column='1' id='bb4788fa'/>
     <typedef-decl name='__off64_t' type-id='95e97e5f' size-in-bits='64' filepath='types.h' line='153' column='1' hash='b119fe0931d2ee10' id='724e4de6'/>
     <typedef-decl name='__off_t' type-id='95e97e5f' size-in-bits='64' filepath='types.h' line='152' column='1' hash='b119fe0931d2ee10' id='79989e9c'/>
     <typedef-decl name='nvmf_subsystem_destroy_cb' type-id='61359e15' size-in-bits='64' filepath='nvmf.h' line='451' column='1' hash='fd7a63c0c6c822c4' id='9f45345a'/>
@@ -6491,6 +6503,7 @@
     </union-decl>
     <pointer-type-def type-id='aa12d1ba' size-in-bits='64' hash='4cdc26b379a5c62d' id='822cd80b'/>
     <pointer-type-def type-id='ec1ed955' size-in-bits='64' hash='071f36dcbe00ad00' id='dca988a5'/>
+    <pointer-type-def type-id='dca988a5' size-in-bits='64' hash='e8c018048121152c' id='ede1f91d'/>
     <pointer-type-def type-id='884c81ef' size-in-bits='64' hash='fd7a63c0c6c822c4' id='2b10d6ee'/>
     <qualified-type-def type-id='f4e8c8a2' const='yes' hash='e5b0077e990b5d2f' id='c38fc0b5'/>
     <pointer-type-def type-id='c38fc0b5' size-in-bits='64' hash='e73de533a6bfecf3' id='7a4c3a4d'/>

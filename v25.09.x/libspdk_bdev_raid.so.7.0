@@ -295,8 +295,5 @@
     <pointer-type-def type-id='a6dc9de4' size-in-bits='64' hash='f13879d37c217898' id='ddda0722'/>
     <var-decl name='g_trace_file' type-id='ddda0722' visibility='default' filepath='trace.h' line='149' column='1' elf-symbol-id='g_trace_file'/>
     <class-decl name='raid_all_tailq' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='bdev_raid.h' line='259' column='1' id='db7aa6cf'/>
-    <var-decl name='g_raid_bdev_list' type-id='db7aa6cf' visibility='default' filepath='bdev_raid.h' line='261' column='1'/>
-  </abi-instr>
-  <abi-instr address-size='64' path='bdev_raid_rpc.c' language='LANG_C11'>
   </abi-instr>
 </abi-corpus>

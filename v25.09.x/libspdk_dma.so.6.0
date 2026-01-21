@@ -115,7 +115,7 @@
       </data-member>
     </class-decl>
     <typedef-decl name='__uint32_t' type-id='f0981eeb' size-in-bits='32' filepath='types.h' line='42' column='1' hash='e66b43f97c38e87a' id='62f1140c'/>
-    <typedef-decl name='size_t' type-id='f0981eec' size-in-bits='64' filepath='stddef.h' line='214' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
+    <typedef-decl name='size_t' type-id='f0981eec' size-in-bits='64' filepath='stddef.h' line='229' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
     <typedef-decl name='spdk_dma_device_type_t' type-id='26ce2e0f' size-in-bits='32' alignment-in-bits='32' filepath='dma.c' line='191' column='1' hash='462d48cc2e989cbf' id='a130b758'/>
     <typedef-decl name='spdk_memory_domain_data_cpl_cb' type-id='82328a76' size-in-bits='64' filepath='dma.h' line='53' column='1' hash='fd7a63c0c6c822c4' id='de59bad4'/>
     <typedef-decl name='spdk_memory_domain_invalidate_data_cb' type-id='60de251e' size-in-bits='64' filepath='dma.h' line='191' column='1' hash='fd7a63c0c6c822c4' id='d7e37058'/>

@@ -661,7 +661,7 @@
     <typedef-decl name='__uint64_t' type-id='f0981eeb' size-in-bits='64' filepath='types.h' line='45' column='1' hash='8fdc5eea2983a729' id='8910171f'/>
     <typedef-decl name='__uint8_t' type-id='002ac4a6' size-in-bits='8' filepath='types.h' line='38' column='1' hash='6ebac62b3366db68' id='c51d6389'/>
     <typedef-decl name='int16_t' type-id='03896e23' size-in-bits='16' filepath='stdint-intn.h' line='25' column='1' hash='6c2352eccdcd3eea' id='23bd8cb5'/>
-    <typedef-decl name='size_t' type-id='f0981eeb' size-in-bits='64' filepath='stddef.h' line='214' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
+    <typedef-decl name='size_t' type-id='f0981eeb' size-in-bits='64' filepath='stddef.h' line='229' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
     <typedef-decl name='spdk_accel_completion_cb' type-id='82328a76' size-in-bits='64' filepath='accel.h' line='73' column='1' hash='fd7a63c0c6c822c4' id='e2a47d34'/>
     <typedef-decl name='spdk_accel_fini_cb' type-id='61359e15' size-in-bits='64' filepath='accel.h' line='80' column='1' hash='fd7a63c0c6c822c4' id='e5aecfa2'/>
     <typedef-decl name='spdk_accel_sequence_get_buf_cb' type-id='302d4f9a' size-in-bits='64' filepath='accel_module.h' line='348' column='1' hash='fd7a63c0c6c822c4' id='4208e346'/>
