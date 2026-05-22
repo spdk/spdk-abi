@@ -113,6 +113,8 @@
     <elf-symbol name='spdk_jsonrpc_send_bool_response' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='spdk_jsonrpc_send_error_response' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='spdk_log' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_log_deprecated' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_log_deprecation_register' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='spdk_log_register_flag' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='spdk_rpc_register_method' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='spdk_strerror' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
@@ -874,126 +876,126 @@
       <parameter type-id='7fb90480'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_sock_recv_next' mangled-name='spdk_sock_recv_next' filepath='sock.c' line='862' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_recv_next' hash='6c28bebd2c530ff8'>
+    <function-decl name='spdk_sock_recv_next' mangled-name='spdk_sock_recv_next' filepath='sock.c' line='866' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_recv_next' hash='6c28bebd2c530ff8'>
       <parameter type-id='2301d53e'/>
       <parameter type-id='63e171df'/>
       <parameter type-id='63e171df'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_flush' mangled-name='spdk_sock_flush' filepath='sock.c' line='876' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_flush' hash='cc74777c3fbeff21'>
+    <function-decl name='spdk_sock_flush' mangled-name='spdk_sock_flush' filepath='sock.c' line='882' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_flush' hash='cc74777c3fbeff21'>
       <parameter type-id='2301d53e'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_set_recvlowat' mangled-name='spdk_sock_set_recvlowat' filepath='sock.c' line='886' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_set_recvlowat' hash='3f279d9050d6463b'>
+    <function-decl name='spdk_sock_set_recvlowat' mangled-name='spdk_sock_set_recvlowat' filepath='sock.c' line='892' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_set_recvlowat' hash='3f279d9050d6463b'>
       <parameter type-id='2301d53e'/>
       <parameter type-id='95e97e5e'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_set_recvbuf' mangled-name='spdk_sock_set_recvbuf' filepath='sock.c' line='892' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_set_recvbuf' hash='3f279d9050d6463b'>
+    <function-decl name='spdk_sock_set_recvbuf' mangled-name='spdk_sock_set_recvbuf' filepath='sock.c' line='898' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_set_recvbuf' hash='3f279d9050d6463b'>
       <parameter type-id='2301d53e'/>
       <parameter type-id='95e97e5e'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_set_sendbuf' mangled-name='spdk_sock_set_sendbuf' filepath='sock.c' line='898' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_set_sendbuf' hash='3f279d9050d6463b'>
+    <function-decl name='spdk_sock_set_sendbuf' mangled-name='spdk_sock_set_sendbuf' filepath='sock.c' line='904' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_set_sendbuf' hash='3f279d9050d6463b'>
       <parameter type-id='2301d53e'/>
       <parameter type-id='95e97e5e'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_is_ipv6' mangled-name='spdk_sock_is_ipv6' filepath='sock.c' line='904' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_is_ipv6' hash='34d9a0c759949cd1'>
+    <function-decl name='spdk_sock_is_ipv6' mangled-name='spdk_sock_is_ipv6' filepath='sock.c' line='910' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_is_ipv6' hash='34d9a0c759949cd1'>
       <parameter type-id='2301d53e'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_sock_is_ipv4' mangled-name='spdk_sock_is_ipv4' filepath='sock.c' line='910' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_is_ipv4' hash='34d9a0c759949cd1'>
+    <function-decl name='spdk_sock_is_ipv4' mangled-name='spdk_sock_is_ipv4' filepath='sock.c' line='916' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_is_ipv4' hash='34d9a0c759949cd1'>
       <parameter type-id='2301d53e'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_sock_is_connected' mangled-name='spdk_sock_is_connected' filepath='sock.c' line='916' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_is_connected' hash='34d9a0c759949cd1'>
+    <function-decl name='spdk_sock_is_connected' mangled-name='spdk_sock_is_connected' filepath='sock.c' line='922' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_is_connected' hash='34d9a0c759949cd1'>
       <parameter type-id='2301d53e'/>
       <return type-id='c894953d'/>
     </function-decl>
-    <function-decl name='spdk_sock_group_create' mangled-name='spdk_sock_group_create' filepath='sock.c' line='929' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_create' hash='40bd5704c862927f'>
-      <parameter type-id='eaa32e2f' name='ctx' filepath='sock.c' line='929' column='1'/>
+    <function-decl name='spdk_sock_group_create' mangled-name='spdk_sock_group_create' filepath='sock.c' line='935' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_create' hash='40bd5704c862927f'>
+      <parameter type-id='eaa32e2f' name='ctx' filepath='sock.c' line='935' column='1'/>
       <return type-id='becb7f9a'/>
     </function-decl>
-    <function-decl name='spdk_sock_group_get_ctx' mangled-name='spdk_sock_group_get_ctx' filepath='sock.c' line='984' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_get_ctx' hash='40bd5704c862927f'>
-      <parameter type-id='becb7f9a' name='group' filepath='sock.c' line='984' column='1'/>
+    <function-decl name='spdk_sock_group_get_ctx' mangled-name='spdk_sock_group_get_ctx' filepath='sock.c' line='990' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_get_ctx' hash='40bd5704c862927f'>
+      <parameter type-id='becb7f9a' name='group' filepath='sock.c' line='990' column='1'/>
       <return type-id='eaa32e2f'/>
     </function-decl>
-    <function-decl name='spdk_sock_group_add_sock' mangled-name='spdk_sock_group_add_sock' filepath='sock.c' line='994' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_add_sock' hash='2da3a9fbf4d9289a'>
-      <parameter type-id='becb7f9a' name='group' filepath='sock.c' line='994' column='1'/>
-      <parameter type-id='2301d53e' name='sock' filepath='sock.c' line='994' column='1'/>
-      <parameter type-id='f24fbecd' name='cb_fn' filepath='sock.c' line='995' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='sock.c' line='995' column='1'/>
+    <function-decl name='spdk_sock_group_add_sock' mangled-name='spdk_sock_group_add_sock' filepath='sock.c' line='1004' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_add_sock' hash='2da3a9fbf4d9289a'>
+      <parameter type-id='becb7f9a' name='group' filepath='sock.c' line='1004' column='1'/>
+      <parameter type-id='2301d53e' name='sock' filepath='sock.c' line='1004' column='1'/>
+      <parameter type-id='f24fbecd' name='cb_fn' filepath='sock.c' line='1005' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='sock.c' line='1005' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_group_remove_sock' mangled-name='spdk_sock_group_remove_sock' filepath='sock.c' line='1029' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_remove_sock' hash='d6fc16123b286b6a'>
-      <parameter type-id='becb7f9a' name='group' filepath='sock.c' line='1029' column='1'/>
-      <parameter type-id='2301d53e' name='sock' filepath='sock.c' line='1029' column='1'/>
+    <function-decl name='spdk_sock_group_remove_sock' mangled-name='spdk_sock_group_remove_sock' filepath='sock.c' line='1043' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_remove_sock' hash='d6fc16123b286b6a'>
+      <parameter type-id='becb7f9a' name='group' filepath='sock.c' line='1043' column='1'/>
+      <parameter type-id='2301d53e' name='sock' filepath='sock.c' line='1043' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_group_provide_buf' mangled-name='spdk_sock_group_provide_buf' filepath='sock.c' line='1053' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_provide_buf' hash='49bbe457031a8031'>
-      <parameter type-id='becb7f9a' name='group' filepath='sock.c' line='1053' column='1'/>
-      <parameter type-id='eaa32e2f' name='buf' filepath='sock.c' line='1053' column='1'/>
-      <parameter type-id='b59d7dce' name='len' filepath='sock.c' line='1053' column='1'/>
-      <parameter type-id='eaa32e2f' name='ctx' filepath='sock.c' line='1053' column='1'/>
+    <function-decl name='spdk_sock_group_provide_buf' mangled-name='spdk_sock_group_provide_buf' filepath='sock.c' line='1071' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_provide_buf' hash='49bbe457031a8031'>
+      <parameter type-id='becb7f9a' name='group' filepath='sock.c' line='1071' column='1'/>
+      <parameter type-id='eaa32e2f' name='buf' filepath='sock.c' line='1071' column='1'/>
+      <parameter type-id='b59d7dce' name='len' filepath='sock.c' line='1071' column='1'/>
+      <parameter type-id='eaa32e2f' name='ctx' filepath='sock.c' line='1071' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_group_get_buf' mangled-name='spdk_sock_group_get_buf' filepath='sock.c' line='1067' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_get_buf' hash='01da71c6b2dda30a'>
-      <parameter type-id='becb7f9a' name='group' filepath='sock.c' line='1067' column='1'/>
-      <parameter type-id='63e171df' name='buf' filepath='sock.c' line='1067' column='1'/>
-      <parameter type-id='63e171df' name='ctx' filepath='sock.c' line='1067' column='1'/>
+    <function-decl name='spdk_sock_group_get_buf' mangled-name='spdk_sock_group_get_buf' filepath='sock.c' line='1091' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_get_buf' hash='01da71c6b2dda30a'>
+      <parameter type-id='becb7f9a' name='group' filepath='sock.c' line='1091' column='1'/>
+      <parameter type-id='63e171df' name='buf' filepath='sock.c' line='1091' column='1'/>
+      <parameter type-id='63e171df' name='ctx' filepath='sock.c' line='1091' column='1'/>
       <return type-id='b59d7dce'/>
     </function-decl>
-    <function-decl name='spdk_sock_group_poll' mangled-name='spdk_sock_group_poll' filepath='sock.c' line='1084' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_poll' hash='3fdfee453fa38939'>
-      <parameter type-id='becb7f9a' name='group' filepath='sock.c' line='1418' column='1'/>
+    <function-decl name='spdk_sock_group_poll' mangled-name='spdk_sock_group_poll' filepath='sock.c' line='1169' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_poll' hash='3fdfee453fa38939'>
+      <parameter type-id='becb7f9a' name='group' filepath='sock.c' line='1455' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_group_poll_count' mangled-name='spdk_sock_group_poll_count' filepath='sock.c' line='1117' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_poll_count' hash='8b0e59cf2d42871b'>
-      <parameter type-id='becb7f9a' name='group' filepath='sock.c' line='1117' column='1'/>
-      <parameter type-id='95e97e5e' name='max_events' filepath='sock.c' line='1117' column='1'/>
+    <function-decl name='spdk_sock_group_poll_count' mangled-name='spdk_sock_group_poll_count' filepath='sock.c' line='1179' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_poll_count' hash='8b0e59cf2d42871b'>
+      <parameter type-id='becb7f9a' name='group' filepath='sock.c' line='1179' column='1'/>
+      <parameter type-id='95e97e5e' name='max_events' filepath='sock.c' line='1179' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_group_close' mangled-name='spdk_sock_group_close' filepath='sock.c' line='1149' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_close' hash='ab37db0abe66efc6'>
-      <parameter type-id='0a5a0210' name='_group' filepath='sock.c' line='1149' column='1'/>
+    <function-decl name='spdk_sock_group_close' mangled-name='spdk_sock_group_close' filepath='sock.c' line='1186' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_close' hash='ab37db0abe66efc6'>
+      <parameter type-id='0a5a0210' name='_group' filepath='sock.c' line='1186' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_net_impl_get_by_name' mangled-name='spdk_net_impl_get_by_name' filepath='sock.c' line='1191' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_net_impl_get_by_name' hash='c21771596c1607a7'>
-      <parameter type-id='80f4b756' name='impl_name' filepath='sock.c' line='1191' column='1'/>
+    <function-decl name='spdk_net_impl_get_by_name' mangled-name='spdk_net_impl_get_by_name' filepath='sock.c' line='1228' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_net_impl_get_by_name' hash='c21771596c1607a7'>
+      <parameter type-id='80f4b756' name='impl_name' filepath='sock.c' line='1228' column='1'/>
       <return type-id='5dabfc38'/>
     </function-decl>
-    <function-decl name='spdk_sock_impl_get_opts' mangled-name='spdk_sock_impl_get_opts' filepath='sock.c' line='1206' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_impl_get_opts' hash='6fe5ede215605a74'>
-      <parameter type-id='80f4b756' name='impl_name' filepath='sock.c' line='1206' column='1'/>
-      <parameter type-id='276545ec' name='opts' filepath='sock.c' line='1206' column='1'/>
-      <parameter type-id='78c01427' name='len' filepath='sock.c' line='1206' column='1'/>
+    <function-decl name='spdk_sock_impl_get_opts' mangled-name='spdk_sock_impl_get_opts' filepath='sock.c' line='1243' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_impl_get_opts' hash='6fe5ede215605a74'>
+      <parameter type-id='80f4b756' name='impl_name' filepath='sock.c' line='1243' column='1'/>
+      <parameter type-id='276545ec' name='opts' filepath='sock.c' line='1243' column='1'/>
+      <parameter type-id='78c01427' name='len' filepath='sock.c' line='1243' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_impl_set_opts' mangled-name='spdk_sock_impl_set_opts' filepath='sock.c' line='1227' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_impl_set_opts' hash='a620be05f335d011'>
-      <parameter type-id='80f4b756' name='impl_name' filepath='sock.c' line='1227' column='1'/>
-      <parameter type-id='9d126465' name='opts' filepath='sock.c' line='1227' column='1'/>
-      <parameter type-id='b59d7dce' name='len' filepath='sock.c' line='1228' column='1'/>
+    <function-decl name='spdk_sock_impl_set_opts' mangled-name='spdk_sock_impl_set_opts' filepath='sock.c' line='1264' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_impl_set_opts' hash='a620be05f335d011'>
+      <parameter type-id='80f4b756' name='impl_name' filepath='sock.c' line='1264' column='1'/>
+      <parameter type-id='9d126465' name='opts' filepath='sock.c' line='1264' column='1'/>
+      <parameter type-id='b59d7dce' name='len' filepath='sock.c' line='1265' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_write_config_json' mangled-name='spdk_sock_write_config_json' filepath='sock.c' line='1249' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_write_config_json' hash='7f32ffea222edbe7'>
-      <parameter type-id='b8e14bfe' name='w' filepath='sock.c' line='1249' column='1'/>
+    <function-decl name='spdk_sock_write_config_json' mangled-name='spdk_sock_write_config_json' filepath='sock.c' line='1286' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_write_config_json' hash='7f32ffea222edbe7'>
+      <parameter type-id='b8e14bfe' name='w' filepath='sock.c' line='1286' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_net_impl_register' mangled-name='spdk_net_impl_register' filepath='sock.c' line='1300' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_net_impl_register' hash='1d78f7d481d9278d'>
-      <parameter type-id='5dabfc38' name='impl' filepath='sock.c' line='1300' column='1'/>
+    <function-decl name='spdk_net_impl_register' mangled-name='spdk_net_impl_register' filepath='sock.c' line='1337' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_net_impl_register' hash='1d78f7d481d9278d'>
+      <parameter type-id='5dabfc38' name='impl' filepath='sock.c' line='1337' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_sock_initialize' mangled-name='spdk_sock_initialize' filepath='sock.c' line='1321' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_initialize' hash='7e1bea31d19e6646'>
+    <function-decl name='spdk_sock_initialize' mangled-name='spdk_sock_initialize' filepath='sock.c' line='1358' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_initialize' hash='7e1bea31d19e6646'>
       <parameter type-id='620a7168'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_set_default_impl' mangled-name='spdk_sock_set_default_impl' filepath='sock.c' line='1379' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_set_default_impl' hash='e9ea91a7eab8302c'>
-      <parameter type-id='80f4b756' name='impl_name' filepath='sock.c' line='1379' column='1'/>
+    <function-decl name='spdk_sock_set_default_impl' mangled-name='spdk_sock_set_default_impl' filepath='sock.c' line='1416' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_set_default_impl' hash='e9ea91a7eab8302c'>
+      <parameter type-id='80f4b756' name='impl_name' filepath='sock.c' line='1416' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
-    <function-decl name='spdk_sock_get_default_impl' mangled-name='spdk_sock_get_default_impl' filepath='sock.c' line='1408' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_get_default_impl' hash='53885bde0aa65efe'>
+    <function-decl name='spdk_sock_get_default_impl' mangled-name='spdk_sock_get_default_impl' filepath='sock.c' line='1445' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_get_default_impl' hash='53885bde0aa65efe'>
       <return type-id='80f4b756'/>
     </function-decl>
-    <function-decl name='spdk_sock_group_get_interruptfd' mangled-name='spdk_sock_group_get_interruptfd' filepath='sock.c' line='1418' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_get_interruptfd' hash='3fdfee453fa38939'>
-      <parameter type-id='becb7f9a' name='group' filepath='sock.c' line='1418' column='1'/>
+    <function-decl name='spdk_sock_group_get_interruptfd' mangled-name='spdk_sock_group_get_interruptfd' filepath='sock.c' line='1455' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_sock_group_get_interruptfd' hash='3fdfee453fa38939'>
+      <parameter type-id='becb7f9a' name='group' filepath='sock.c' line='1455' column='1'/>
       <return type-id='95e97e5e'/>
     </function-decl>
     <type-decl name='void' id='48b5725f'/>

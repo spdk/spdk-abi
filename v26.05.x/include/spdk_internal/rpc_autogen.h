@@ -921,6 +921,18 @@ rpc_decode_dpdk_cryptodev_driver(const struct spdk_json_val *val, void *out)
 /* Embedded objects section */
 
 
+extern struct spdk_deprecation *_deprecated_nvmf_namespace_hide_metadata;
+
+
+static inline int
+rpc_decode_hide_metadata(const struct spdk_json_val *val, void *out)
+{
+	SPDK_LOG_DEPRECATED(nvmf_namespace_hide_metadata);
+	return spdk_json_decode_bool(val, out);
+}
+
+
+
 struct rpc_bdev_nvme_multipath_opts {
 	enum rpc_bdev_nvme_multipath_policy policy;
 	enum rpc_bdev_nvme_multipath_selector selector;
