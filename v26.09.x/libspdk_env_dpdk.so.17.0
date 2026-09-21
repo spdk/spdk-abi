@@ -232,10 +232,14 @@
     <elf-symbol name='rte_bus_probe' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='rte_bus_scan' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='rte_delay_us' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_dev_bus' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_dev_devargs' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='rte_dev_event_callback_register' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='rte_dev_event_callback_unregister' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='rte_dev_iterator_init' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='rte_dev_iterator_next' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_dev_name' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='rte_dev_numa_node' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='rte_devargs_insert' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='rte_devargs_parse' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='rte_dump_physmem_layout' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>

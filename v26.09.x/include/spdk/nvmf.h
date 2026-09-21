@@ -96,13 +96,12 @@ struct spdk_nvmf_transport_opts {
 	uint32_t	in_capsule_data_size;
 	/* used to calculate mdts */
 	uint32_t	max_io_size;
-	uint32_t	io_unit_size;
+	/* Reserved bytes 12-15. */
+	uint8_t         reserved12[4];
 	uint32_t	max_aq_depth;
-	uint32_t	num_shared_buffers;
-	union {
-		uint32_t	buf_cache_size;
-		uint32_t	iobuf_small_cache_size;
-	};
+	/* Reserved bytes 20-23. */
+	uint8_t		reserved20[4];
+	uint32_t	iobuf_small_cache_size;
 	bool		dif_insert_or_strip;
 	bool		disable_command_passthru;
 
@@ -1282,6 +1281,8 @@ struct spdk_nvmf_ns_opts {
 
 	/**
 	 * Enable hide_metadata option to the bdev.
+	 * For bdevs with metadata, a DIF-enabled transport forces this option on.
+	 * A DIF-disabled transport rejects namespaces requesting this option.
 	 */
 	bool hide_metadata;
 } __attribute__((packed));

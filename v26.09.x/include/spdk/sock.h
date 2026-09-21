@@ -196,7 +196,7 @@ struct spdk_sock_impl_opts {
 /**
  * Spdk socket initialization options.
  *
- * A pointer to this structure will be used by spdk_sock_listen_ext() or spdk_sock_connect_ext() to
+ * A pointer to this structure will be used by spdk_sock_listen() or spdk_sock_connect() to
  * allow the user to request non-default options on the socket.
  */
 struct spdk_sock_opts {
@@ -257,8 +257,13 @@ struct spdk_sock_opts {
 	 * Time in msec to wait until connection is done (0 = no timeout).
 	 */
 	uint32_t connect_timeout;
+
+	/**
+	 * The sock implementation to use, such as "posix", or NULL for default.
+	 */
+	const char *impl_name;
 };
-SPDK_STATIC_ASSERT(sizeof(struct spdk_sock_opts) == 56, "Incorrect size");
+SPDK_STATIC_ASSERT(sizeof(struct spdk_sock_opts) == 64, "Incorrect size");
 
 /**
  * Options for the socket library.
@@ -339,37 +344,9 @@ int spdk_sock_getaddr(struct spdk_sock *sock, char *saddr, int slen, uint16_t *s
 const char *spdk_sock_get_impl_name(struct spdk_sock *sock);
 
 /**
- * Create a socket using the specific sock implementation, connect the socket
- * to the specified address and port (of the server), and then return the socket.
- * This function is used by client.
- *
- * \param ip IP address of the server.
- * \param port Port number of the server.
- * \param impl_name The sock implementation to use, such as "posix", or NULL for default.
- *
- * \return a pointer to the connected socket on success, or NULL on failure.
- */
-struct spdk_sock *spdk_sock_connect(const char *ip, int port, const char *impl_name);
-
-/**
- * Create a socket using the specific sock implementation, connect the socket
- * to the specified address and port (of the server), and then return the socket.
- * This function is used by client.
- *
- * \param ip IP address of the server.
- * \param port Port number of the server.
- * \param impl_name The sock implementation to use, such as "posix", or NULL for default.
- * \param opts The sock option pointer provided by the user which should not be NULL pointer.
- *
- * \return a pointer to the connected socket on success, or NULL on failure.
- */
-struct spdk_sock *spdk_sock_connect_ext(const char *ip, int port, const char *impl_name,
-					struct spdk_sock_opts *opts);
-
-/**
  * Signature for callback function invoked when a connection is completed.
  *
- * \param cb_arg Context specified by \ref spdk_sock_connect_async.
+ * \param cb_arg Context specified by \ref spdk_sock_connect.
  * \param status 0 on success, negative errno value on failure.
  */
 typedef void (*spdk_sock_connect_cb_fn)(void *cb_arg, int status);
@@ -379,25 +356,24 @@ typedef void (*spdk_sock_connect_cb_fn)(void *cb_arg, int status);
  * to the specified address and port (of the server), and then return the socket.
  * This function is used by client.
  *
- * Not every function with sock object on the interface is allowed if the conncection is not
- * established. In order to determine connection status use \p cb_fn. Functions taking sock
- * object as an input may return EAGAIN to indicate connection is in progress or other
- * errno values if connection failed.
+ * The connection is always established asynchronously. The socket is returned before the
+ * connection completes, and \p cb_fn reports the outcome. Not every function taking a sock
+ * object is allowed before the connection is established; such functions may return EAGAIN
+ * to indicate the connection is still in progress, or another errno value if it failed.
  *
- * Callback function \p cb_fn is invoked only if this function returns a non-NULL value.
- * If async connect is not supported by the \p impl_name specified then NULL is returned.
+ * Callback function \p cb_fn is invoked only if this function returns a non-NULL value, and
+ * never before this function has returned.
  *
  * \param ip IP address of the server.
  * \param port Port number of the server.
- * \param impl_name The sock implementation to use, such as "posix", or NULL for default.
  * \param opts The sock option pointer provided by the user which should not be NULL pointer.
  * \param cb_fn Callback function invoked when the connection attempt is completed. (optional)
  * \param cb_arg Argument passed to callback function. (optional)
  *
  * \return a pointer to the socket on success, or NULL on failure.
  */
-struct spdk_sock *spdk_sock_connect_async(const char *ip, int port, const char *impl_name,
-		struct spdk_sock_opts *opts, spdk_sock_connect_cb_fn cb_fn, void *cb_arg);
+struct spdk_sock *spdk_sock_connect(const char *ip, int port, struct spdk_sock_opts *opts,
+				    spdk_sock_connect_cb_fn cb_fn, void *cb_arg);
 
 /**
  * Create a socket using the specific sock implementation, bind the socket to
@@ -406,26 +382,11 @@ struct spdk_sock *spdk_sock_connect_async(const char *ip, int port, const char *
  *
  * \param ip IP address to listen on.
  * \param port Port number.
- * \param impl_name The sock implementation to use, such as "posix", or NULL for default.
- *
- * \return a pointer to the listened socket on success, or NULL on failure.
- */
-struct spdk_sock *spdk_sock_listen(const char *ip, int port, const char *impl_name);
-
-/**
- * Create a socket using the specific sock implementation, bind the socket to
- * the specified address and port and listen on the socket, and then return the socket.
- * This function is used by server.
- *
- * \param ip IP address to listen on.
- * \param port Port number.
- * \param impl_name The sock implementation to use, such as "posix", or NULL for default.
  * \param opts The sock option pointer provided by the user, which should not be NULL pointer.
  *
  * \return a pointer to the listened socket on success, or NULL on failure.
  */
-struct spdk_sock *spdk_sock_listen_ext(const char *ip, int port, const char *impl_name,
-				       struct spdk_sock_opts *opts);
+struct spdk_sock *spdk_sock_listen(const char *ip, int port, struct spdk_sock_opts *opts);
 
 /**
  * Accept a new connection from a client on the specified socket and return a
@@ -436,6 +397,17 @@ struct spdk_sock *spdk_sock_listen_ext(const char *ip, int port, const char *imp
  * \return a pointer to the accepted socket on success, or NULL on failure.
  */
 struct spdk_sock *spdk_sock_accept(struct spdk_sock *sock);
+
+/**
+ * Change the user context callback argument passed to spdk_sock_cb for this socket.
+ *
+ * This is intended for attaching per-connection state to a newly accepted socket. If the
+ * socket will be added to a socket group, set the user context before adding it.
+ *
+ * \param sock The socket to change the callback argument for.
+ * \param user_ctx The new callback argument to set.
+ */
+void spdk_sock_set_user_ctx(struct spdk_sock *sock, void *user_ctx);
 
 /**
  * Gets the name of the network interface of the local port for the socket.
@@ -526,33 +498,6 @@ void spdk_sock_writev_async(struct spdk_sock *sock, struct spdk_sock_request *re
 ssize_t spdk_sock_readv(struct spdk_sock *sock, struct iovec *iov, int iovcnt);
 
 /**
- * Receive the next portion of the stream from the socket.
- *
- * A buffer provided to this socket's group's pool using
- * spdk_sock_group_provide_buf() will contain the data and be
- * returned in *buf.
- *
- * Note that the amount of data in buf is determined entirely by
- * the sock layer. You cannot request to receive only a limited
- * amount here. You simply get whatever the next portion of the stream
- * is, as determined by the sock module. You can place an upper limit
- * on the size of the buffer since these buffers are originally
- * provided to the group through spdk_sock_group_provide_buf().
- *
- * This code path will only work if the recvbuf is disabled. To disable
- * the recvbuf, call spdk_sock_set_recvbuf with a size of 0.
- *
- * On failure check rc matching -EAGAIN to determine failure is retryable.
- *
- * \param sock Socket to receive from.
- * \param buf Populated with the next portion of the stream
- * \param ctx Returned context pointer from when the buffer was provided.
- *
- * \return On success, the length of the buffer placed into buf, negative errno value on failure.
- */
-int spdk_sock_recv_next(struct spdk_sock *sock, void **buf, void **ctx);
-
-/**
  * Set the value used to specify the low water mark (in bytes) for this socket.
  *
  * \param sock Socket to set for.
@@ -614,21 +559,31 @@ bool spdk_sock_is_ipv4(struct spdk_sock *sock);
 bool spdk_sock_is_connected(struct spdk_sock *sock);
 
 /**
- * Callback function for spdk_sock_group_add_sock().
+ * Callback function for spdk_sock_group_opts.
  *
- * \param arg Argument for the callback function.
+ * \param arg Socket argument for the callback function.
  * \param group Socket group.
  * \param sock Socket.
  */
 typedef void (*spdk_sock_cb)(void *arg, struct spdk_sock_group *group, struct spdk_sock *sock);
 
+struct spdk_sock_group_opts {
+	/** Size of this structure */
+	size_t		size;
+	/** User context. Can be NULL */
+	void		*ctx;
+	/** Callback function for when sockets have new data to receive. Required. */
+	spdk_sock_cb	rx_cb;
+};
+
 /**
- * Create a new socket group with user provided pointer
+ * Create a new socket group.
  *
- * \param ctx the context provided by user.
+ * \param opts Socket group options. This is required and may not be NULL.
+ *
  * \return a pointer to the created group on success, or NULL on failure.
  */
-struct spdk_sock_group *spdk_sock_group_create(void *ctx);
+struct spdk_sock_group *spdk_sock_group_create(const struct spdk_sock_group_opts *opts);
 
 /**
  * Get the ctx of the sock group
@@ -644,13 +599,11 @@ void *spdk_sock_group_get_ctx(struct spdk_sock_group *sock_group);
  *
  * \param group Socket group.
  * \param sock Socket to add.
- * \param cb_fn Called when the operation completes.
  * \param cb_arg Argument passed to the callback function.
  *
  * \return 0 on success, negative errno value on failure.
  */
-int spdk_sock_group_add_sock(struct spdk_sock_group *group, struct spdk_sock *sock,
-			     spdk_sock_cb cb_fn, void *cb_arg);
+int spdk_sock_group_add_sock(struct spdk_sock_group *group, struct spdk_sock *sock, void *cb_arg);
 
 /**
  * Remove a socket from the group.
@@ -661,19 +614,6 @@ int spdk_sock_group_add_sock(struct spdk_sock_group *group, struct spdk_sock *so
  * \return 0 on success, negative errno value on failure.
  */
 int spdk_sock_group_remove_sock(struct spdk_sock_group *group, struct spdk_sock *sock);
-
-/**
- * Provides a buffer to the group to be used in its receive pool.
- * See spdk_sock_recv_next() for more details.
- *
- * \param group Socket group.
- * \param buf Pointer the buffer provided.
- * \param len Length of the buffer.
- * \param ctx Pointer that will be returned in spdk_sock_recv_next()
- *
- * \return 0 on success, negative errno value on failure.
- */
-int spdk_sock_group_provide_buf(struct spdk_sock_group *group, void *buf, size_t len, void *ctx);
 
 /**
  * Poll incoming events for each registered socket.

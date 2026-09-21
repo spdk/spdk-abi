@@ -1002,14 +1002,6 @@ rpc_decode_dpdk_cryptodev_driver(const struct spdk_json_val *val, void *out)
 /* Embedded objects section */
 
 
-static inline int
-rpc_decode_hide_metadata(const struct spdk_json_val *val, void *out)
-{
-	struct spdk_deprecation *dep = spdk_log_deprecation_find_by_tag("nvmf_namespace_hide_metadata");
-	spdk_log_deprecated(dep, __FILE__, __LINE__, __func__);
-	return spdk_json_decode_bool(val, out);
-}
-
 
 
 struct rpc_bdev_nvme_multipath_opts {
@@ -1174,7 +1166,6 @@ struct rpc_nvmf_namespace {
 	char * ptpl_file;
 	uint32_t anagrpid;
 	bool no_auto_visible;
-	bool hide_metadata;
 };
 
 static const struct spdk_json_object_decoder rpc_nvmf_namespace_decoders[] = {
@@ -1186,7 +1177,6 @@ static const struct spdk_json_object_decoder rpc_nvmf_namespace_decoders[] = {
 	{"ptpl_file", offsetof(struct rpc_nvmf_namespace, ptpl_file), spdk_json_decode_string, true},
 	{"anagrpid", offsetof(struct rpc_nvmf_namespace, anagrpid), spdk_json_decode_uint32, true},
 	{"no_auto_visible", offsetof(struct rpc_nvmf_namespace, no_auto_visible), spdk_json_decode_bool, true},
-	{"hide_metadata", offsetof(struct rpc_nvmf_namespace, hide_metadata), rpc_decode_hide_metadata, true},
 };
 
 static inline int
@@ -1654,30 +1644,6 @@ rpc_decode_nvmf_discovery_filters(const struct spdk_json_val *val, void *out)
 
 /* RPC objects section */
 
-
-static inline int
-rpc_decode_io_unit_size(const struct spdk_json_val *val, void *out)
-{
-	struct spdk_deprecation *dep = spdk_log_deprecation_find_by_tag("nvmf_create_transport_io_unit_size");
-	spdk_log_deprecated(dep, __FILE__, __LINE__, __func__);
-	return spdk_json_decode_uint32(val, out);
-}
-
-static inline int
-rpc_decode_num_shared_buffers(const struct spdk_json_val *val, void *out)
-{
-	struct spdk_deprecation *dep = spdk_log_deprecation_find_by_tag("nvmf_create_transport_num_shared_buffers");
-	spdk_log_deprecated(dep, __FILE__, __LINE__, __func__);
-	return spdk_json_decode_uint32(val, out);
-}
-
-static inline int
-rpc_decode_buf_cache_size(const struct spdk_json_val *val, void *out)
-{
-	struct spdk_deprecation *dep = spdk_log_deprecation_find_by_tag("nvmf_create_transport_buf_cache_size");
-	spdk_log_deprecated(dep, __FILE__, __LINE__, __func__);
-	return spdk_json_decode_uint32(val, out);
-}
 
 static inline int
 rpc_decode_discovery_filter(const struct spdk_json_val *val, void *out)
@@ -2919,6 +2885,60 @@ free_rpc_bdev_ocf_flush_status_heap(struct rpc_bdev_ocf_flush_status_ctx *req)
 
 static const struct spdk_json_object_decoder rpc_bdev_ocf_flush_status_decoders[] = {
 	{"name", offsetof(struct rpc_bdev_ocf_flush_status_ctx, name), spdk_json_decode_string, false},
+};
+
+struct rpc_bdev_kvmalloc_create_ctx {
+	char * name;
+	struct spdk_uuid uuid;
+	uint32_t max_key_size;
+	uint32_t max_value_size;
+	uint32_t optimal_value_granularity;
+	int32_t numa_id;
+	struct spdk_jsonrpc_request *request;
+};
+
+static inline void
+free_rpc_bdev_kvmalloc_create(struct rpc_bdev_kvmalloc_create_ctx *req)
+{
+	free(req->name);
+}
+
+static inline void
+free_rpc_bdev_kvmalloc_create_heap(struct rpc_bdev_kvmalloc_create_ctx *req)
+{
+	free_rpc_bdev_kvmalloc_create(req);
+	free(req);
+}
+
+static const struct spdk_json_object_decoder rpc_bdev_kvmalloc_create_decoders[] = {
+	{"name", offsetof(struct rpc_bdev_kvmalloc_create_ctx, name), spdk_json_decode_string, true},
+	{"uuid", offsetof(struct rpc_bdev_kvmalloc_create_ctx, uuid), spdk_json_decode_uuid, true},
+	{"max_key_size", offsetof(struct rpc_bdev_kvmalloc_create_ctx, max_key_size), spdk_json_decode_uint32, true},
+	{"max_value_size", offsetof(struct rpc_bdev_kvmalloc_create_ctx, max_value_size), spdk_json_decode_uint32, true},
+	{"optimal_value_granularity", offsetof(struct rpc_bdev_kvmalloc_create_ctx, optimal_value_granularity), spdk_json_decode_uint32, true},
+	{"numa_id", offsetof(struct rpc_bdev_kvmalloc_create_ctx, numa_id), spdk_json_decode_int32, true},
+};
+
+struct rpc_bdev_kvmalloc_delete_ctx {
+	char * name;
+	struct spdk_jsonrpc_request *request;
+};
+
+static inline void
+free_rpc_bdev_kvmalloc_delete(struct rpc_bdev_kvmalloc_delete_ctx *req)
+{
+	free(req->name);
+}
+
+static inline void
+free_rpc_bdev_kvmalloc_delete_heap(struct rpc_bdev_kvmalloc_delete_ctx *req)
+{
+	free_rpc_bdev_kvmalloc_delete(req);
+	free(req);
+}
+
+static const struct spdk_json_object_decoder rpc_bdev_kvmalloc_delete_decoders[] = {
+	{"name", offsetof(struct rpc_bdev_kvmalloc_delete_ctx, name), spdk_json_decode_string, false},
 };
 
 struct rpc_bdev_malloc_create_ctx {
@@ -5308,10 +5328,7 @@ struct rpc_nvmf_create_transport_ctx {
 	uint16_t max_io_qpairs_per_ctrlr;
 	uint32_t in_capsule_data_size;
 	uint32_t max_io_size;
-	uint32_t io_unit_size;
 	uint32_t max_aq_depth;
-	uint32_t num_shared_buffers;
-	uint32_t buf_cache_size;
 	uint32_t iobuf_small_cache_size;
 	uint32_t iobuf_large_cache_size;
 	bool zcopy;
@@ -5360,10 +5377,7 @@ static const struct spdk_json_object_decoder rpc_nvmf_create_transport_decoders[
 	{"max_io_qpairs_per_ctrlr", offsetof(struct rpc_nvmf_create_transport_ctx, max_io_qpairs_per_ctrlr), spdk_json_decode_uint16, true},
 	{"in_capsule_data_size", offsetof(struct rpc_nvmf_create_transport_ctx, in_capsule_data_size), spdk_json_decode_uint32, true},
 	{"max_io_size", offsetof(struct rpc_nvmf_create_transport_ctx, max_io_size), spdk_json_decode_uint32, true},
-	{"io_unit_size", offsetof(struct rpc_nvmf_create_transport_ctx, io_unit_size), rpc_decode_io_unit_size, true},
 	{"max_aq_depth", offsetof(struct rpc_nvmf_create_transport_ctx, max_aq_depth), spdk_json_decode_uint32, true},
-	{"num_shared_buffers", offsetof(struct rpc_nvmf_create_transport_ctx, num_shared_buffers), rpc_decode_num_shared_buffers, true},
-	{"buf_cache_size", offsetof(struct rpc_nvmf_create_transport_ctx, buf_cache_size), rpc_decode_buf_cache_size, true},
 	{"iobuf_small_cache_size", offsetof(struct rpc_nvmf_create_transport_ctx, iobuf_small_cache_size), spdk_json_decode_uint32, true},
 	{"iobuf_large_cache_size", offsetof(struct rpc_nvmf_create_transport_ctx, iobuf_large_cache_size), spdk_json_decode_uint32, true},
 	{"zcopy", offsetof(struct rpc_nvmf_create_transport_ctx, zcopy), spdk_json_decode_bool, true},

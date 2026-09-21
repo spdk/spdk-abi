@@ -85,8 +85,6 @@
     <elf-symbol name='spdk_pipe_writer_get_buffer' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='spdk_read_sysfs_attribute_uint32' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='spdk_sock_close' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
-    <elf-symbol name='spdk_sock_group_get_buf' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
-    <elf-symbol name='spdk_sock_group_provide_buf' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='spdk_sock_map_cleanup' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='spdk_sock_map_find_free' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='spdk_sock_map_insert' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>

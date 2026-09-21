@@ -154,6 +154,7 @@
     <elf-symbol name='spdk_scsi_task_set_data' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='spdk_sock_accept' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='spdk_sock_close' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
+    <elf-symbol name='spdk_sock_get_default_opts' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='spdk_sock_getaddr' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='spdk_sock_group_add_sock' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
     <elf-symbol name='spdk_sock_group_close' type='func-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
@@ -386,18 +387,18 @@
     <pointer-type-def type-id='2ae61988' size-in-bits='64' id='b8e14bfe'/>
     <class-decl name='spdk_json_write_ctx' is-struct='yes' visibility='default' is-declaration-only='yes' id='2ae61988'/>
     <class-decl name='spdk_iscsi_opts' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='iscsi.h' line='294' column='1' id='eaef6ed4'/>
-    <function-decl name='spdk_iscsi_init' mangled-name='spdk_iscsi_init' filepath='iscsi_subsystem.c' line='1129' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iscsi_init' hash='5695f5ce05a4c55f'>
-      <parameter type-id='0050bed1' name='cb_fn' filepath='iscsi_subsystem.c' line='1129' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='iscsi_subsystem.c' line='1129' column='1'/>
+    <function-decl name='spdk_iscsi_init' mangled-name='spdk_iscsi_init' filepath='iscsi_subsystem.c' line='1134' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iscsi_init' hash='5695f5ce05a4c55f'>
+      <parameter type-id='0050bed1' name='cb_fn' filepath='iscsi_subsystem.c' line='1134' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='iscsi_subsystem.c' line='1134' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_iscsi_fini' mangled-name='spdk_iscsi_fini' filepath='iscsi_subsystem.c' line='1151' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iscsi_fini' hash='5695f5ce05a4c55f'>
-      <parameter type-id='1e2fc96f' name='cb_fn' filepath='iscsi_subsystem.c' line='1151' column='1'/>
-      <parameter type-id='eaa32e2f' name='cb_arg' filepath='iscsi_subsystem.c' line='1151' column='1'/>
+    <function-decl name='spdk_iscsi_fini' mangled-name='spdk_iscsi_fini' filepath='iscsi_subsystem.c' line='1156' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iscsi_fini' hash='5695f5ce05a4c55f'>
+      <parameter type-id='1e2fc96f' name='cb_fn' filepath='iscsi_subsystem.c' line='1156' column='1'/>
+      <parameter type-id='eaa32e2f' name='cb_arg' filepath='iscsi_subsystem.c' line='1156' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
-    <function-decl name='spdk_iscsi_config_json' mangled-name='spdk_iscsi_config_json' filepath='iscsi_subsystem.c' line='1345' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iscsi_config_json' hash='7f32ffea222edbe7'>
-      <parameter type-id='b8e14bfe' name='w' filepath='iscsi_subsystem.c' line='1345' column='1'/>
+    <function-decl name='spdk_iscsi_config_json' mangled-name='spdk_iscsi_config_json' filepath='iscsi_subsystem.c' line='1350' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='spdk_iscsi_config_json' hash='7f32ffea222edbe7'>
+      <parameter type-id='b8e14bfe' name='w' filepath='iscsi_subsystem.c' line='1350' column='1'/>
       <return type-id='48b5725f'/>
     </function-decl>
     <function-type size-in-bits='64' hash='7f32ffea222edbe7' id='c5c76c9c'>

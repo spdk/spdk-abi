@@ -42,7 +42,6 @@ struct spdk_sock {
 	struct spdk_sock_request	*read_req;
 	int				queued_iovcnt;
 	int				cb_cnt;
-	spdk_sock_cb			cb_fn;
 	void				*cb_arg;
 	struct {
 		uint8_t		closed		: 1;
@@ -51,17 +50,11 @@ struct spdk_sock {
 	struct spdk_sock_impl_opts	impl_opts;
 };
 
-struct spdk_sock_group_provided_buf {
-	size_t						len;
-	void						*ctx;
-	STAILQ_ENTRY(spdk_sock_group_provided_buf)	link;
-};
-
 struct spdk_sock_group {
 	STAILQ_HEAD(, spdk_sock_group_impl)	group_impls;
-	STAILQ_HEAD(, spdk_sock_group_provided_buf) pool;
 	struct spdk_fd_group			*fgrp;
 	void					*ctx;
+	spdk_sock_cb				rx_cb;
 };
 
 struct spdk_sock_group_impl {
@@ -84,9 +77,8 @@ struct spdk_net_impl {
 		       int clen, uint16_t *cport);
 	const char *(*get_interface_name)(struct spdk_sock *sock);
 	int32_t (*get_numa_id)(struct spdk_sock *sock);
-	struct spdk_sock *(*connect)(const char *ip, int port, struct spdk_sock_opts *opts);
-	struct spdk_sock *(*connect_async)(const char *ip, int port, struct spdk_sock_opts *opts,
-					   spdk_sock_connect_cb_fn cb_fn, void *cb_arg);
+	struct spdk_sock *(*connect)(const char *ip, int port, struct spdk_sock_opts *opts,
+				     spdk_sock_connect_cb_fn cb_fn, void *cb_arg);
 	struct spdk_sock *(*listen)(const char *ip, int port, struct spdk_sock_opts *opts);
 	struct spdk_sock *(*accept)(struct spdk_sock *sock);
 	int (*close)(struct spdk_sock *sock);
@@ -94,7 +86,6 @@ struct spdk_net_impl {
 	ssize_t (*readv)(struct spdk_sock *sock, struct iovec *iov, int iovcnt);
 	ssize_t (*writev)(struct spdk_sock *sock, struct iovec *iov, int iovcnt);
 
-	int (*recv_next)(struct spdk_sock *sock, void **buf, void **ctx);
 	void (*writev_async)(struct spdk_sock *sock, struct spdk_sock_request *req);
 	void (*readv_async)(struct spdk_sock *sock, struct spdk_sock_request *req);
 	int (*flush)(struct spdk_sock *sock);
@@ -138,8 +129,6 @@ static void __attribute__((constructor)) net_impl_register_default_##name(void) 
 	spdk_net_impl_register(impl); \
 	spdk_sock_set_default_impl(SPDK_STRINGIFY(name)); \
 }
-
-size_t spdk_sock_group_get_buf(struct spdk_sock_group *group, void **buf, void **ctx);
 
 static inline void
 spdk_sock_request_queue(struct spdk_sock *sock, struct spdk_sock_request *req)
