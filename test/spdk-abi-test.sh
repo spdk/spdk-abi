@@ -16,6 +16,10 @@ git clone --recursive "https://github.com/spdk/spdk" "$repodir"
 for branch in $(ls $rootdir | grep -Eo "${tag_pattern}\.x"); do
 	tag="${branch%*.x}"
 
+	# make clean can fail with the config.mk of the previous release
+	git -C "$repodir" clean -ffdxq
+	git -C "$repodir" submodule --quiet foreach --recursive git clean -ffdxq
+
 	# Generate XML files and check if they differ from the user uploaded
 	$rootdir/generate_xml_abi.sh -t "$tag" -x "$rootdir/${branch}_test" \
 		--spdk-path="$repodir" --force-build --force-checkout="$(< "$rootdir/$branch/revision")"
