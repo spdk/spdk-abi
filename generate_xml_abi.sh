@@ -150,9 +150,10 @@ if [[ -d "$xml_dir" ]]; then
 fi
 
 # Copy headers from spdk/include to spdk-abi that are necessary for abidiff
+# include/linux defines struct vring, which struct virtqueue embeds
 # Skip config.h that is created during configure
 mkdir -p "$xml_dir/include/"
-cp -r "$spdk_dir/include/"{spdk,spdk_internal} "$xml_dir/include/"
+cp -r "$spdk_dir/include/"{spdk,spdk_internal,linux} "$xml_dir/include/"
 rm -f "$xml_dir/include/spdk/config.h"
 
 echo "$(gitc rev-parse HEAD)" > "$xml_dir/revision"
