@@ -120,8 +120,7 @@ if $force_build; then
 	SPDK_TEST_VFIOUSER=1
 	SPDK_TEST_XNVME=1
 
-	# Set output_dir variable before sourcing autotest_common.sh, to prevent creation of that directory.
-	rootdir="$spdk_dir" output_dir=none source $spdk_dir/test/common/autotest_common.sh
+	rootdir="$spdk_dir" source $spdk_dir/test/common/autotest_common.sh
 	config_params=$(get_config_params)
 	config_params=$(echo $config_params | sed 's/--enable-coverage//g')
 	config_params+=" --without-fio --disable-tests --disable-unit-tests --disable-apps --disable-examples"
