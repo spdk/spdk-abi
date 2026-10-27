@@ -118,6 +118,9 @@
     <elf-symbol name='spdk_zmalloc' type='no-type' binding='global-binding' visibility='default-visibility' is-defined='no'/>
   </undefined-elf-variable-symbols>
   <abi-instr address-size='64' path='virtio.c' language='LANG_C11'>
+    <array-type-def dimensions='1' type-id='b7a93b96' size-in-bits='unknown' hash='ced40a9cea653ab8' id='5f759053'>
+      <subrange length='unknown' lower-bound='0' upper-bound='0' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='eba0a2b392137dcb' id='031f2035'/>
+    </array-type-def>
     <type-decl name='bool' size-in-bits='8' hash='5ba96bb22f4237fb' id='c894953d'/>
     <type-decl name='char' size-in-bits='8' hash='65b2d157027b431a' id='a84c031d'/>
     <array-type-def dimensions='1' type-id='a84c031d' size-in-bits='320' hash='e7f9696e246a3049' id='36c46961'>
@@ -313,12 +316,76 @@
         <var-decl name='ndescs' type-id='149c6638' visibility='default' filepath='virtio.h' line='106' column='1'/>
       </data-member>
     </class-decl>
+    <class-decl name='vring' is-struct='yes' visibility='default' size-in-bits='256' filepath='virtio_ring.h' line='122' column='1' hash='0ba6f441cd01fb7f' id='83eac9f7'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='num' type-id='f0981eec' visibility='default' filepath='virtio_ring.h' line='123' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='desc' type-id='a5e666e1' visibility='default' filepath='virtio_ring.h' line='125' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='128'>
+        <var-decl name='avail' type-id='79c5fcaf' visibility='default' filepath='virtio_ring.h' line='127' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='192'>
+        <var-decl name='used' type-id='00f2075d' visibility='default' filepath='virtio_ring.h' line='129' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='vring_avail' is-struct='yes' visibility='default' size-in-bits='32' filepath='virtio_ring.h' line='102' column='1' hash='e9771df707e6b851' id='b3f6da27'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='flags' type-id='b7a93b96' visibility='default' filepath='virtio_ring.h' line='103' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='16'>
+        <var-decl name='idx' type-id='b7a93b96' visibility='default' filepath='virtio_ring.h' line='104' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='ring' type-id='5f759053' visibility='default' filepath='virtio_ring.h' line='105' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='vring_desc' is-struct='yes' visibility='default' size-in-bits='128' filepath='virtio_ring.h' line='91' column='1' hash='8f455ece898ac5fa' id='f0783229'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='addr' type-id='b7a6fcff' visibility='default' filepath='virtio_ring.h' line='93' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='64'>
+        <var-decl name='len' type-id='43ae9528' visibility='default' filepath='virtio_ring.h' line='95' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='96'>
+        <var-decl name='flags' type-id='b7a93b96' visibility='default' filepath='virtio_ring.h' line='97' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='112'>
+        <var-decl name='next' type-id='b7a93b96' visibility='default' filepath='virtio_ring.h' line='99' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='vring_used' is-struct='yes' visibility='default' size-in-bits='32' filepath='virtio_ring.h' line='116' column='1' hash='a031057c4a7055d1' id='83e62d3d'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='flags' type-id='b7a93b96' visibility='default' filepath='virtio_ring.h' line='117' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='16'>
+        <var-decl name='idx' type-id='b7a93b96' visibility='default' filepath='virtio_ring.h' line='118' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='ring' type-id='59d36c99' visibility='default' filepath='virtio_ring.h' line='119' column='1'/>
+      </data-member>
+    </class-decl>
+    <class-decl name='vring_used_elem' is-struct='yes' visibility='default' size-in-bits='64' filepath='virtio_ring.h' line='109' column='1' hash='e63b71cef01246f3' id='f1f6cfe9'>
+      <data-member access='public' layout-offset-in-bits='0'>
+        <var-decl name='id' type-id='43ae9528' visibility='default' filepath='virtio_ring.h' line='111' column='1'/>
+      </data-member>
+      <data-member access='public' layout-offset-in-bits='32'>
+        <var-decl name='len' type-id='43ae9528' visibility='default' filepath='virtio_ring.h' line='113' column='1'/>
+      </data-member>
+    </class-decl>
     <typedef-decl name='__int32_t' type-id='95e97e5e' size-in-bits='32' filepath='types.h' line='41' column='1' hash='09d17c08f594edc7' id='33f57a65'/>
     <typedef-decl name='__pthread_list_t' type-id='0e01899c' size-in-bits='128' filepath='thread-shared-types.h' line='55' column='1' id='518fb49c'/>
+    <typedef-decl name='__u16' type-id='f0981eed' size-in-bits='16' filepath='int-ll64.h' line='24' column='1' hash='d7723bb93a30b11d' id='d315442e'/>
+    <typedef-decl name='__u32' type-id='f0981eec' size-in-bits='32' filepath='int-ll64.h' line='27' column='1' hash='e66b43f97c38e87a' id='3f1a6b60'/>
+    <typedef-decl name='__u64' type-id='f0981eee' size-in-bits='64' filepath='int-ll64.h' line='31' column='1' hash='ebdfc4685a1e82df' id='d3130597'/>
     <typedef-decl name='__uint16_t' type-id='f0981eed' size-in-bits='16' filepath='types.h' line='40' column='1' hash='d7723bb93a30b11d' id='253c2d2a'/>
     <typedef-decl name='__uint32_t' type-id='f0981eec' size-in-bits='32' filepath='types.h' line='42' column='1' hash='e66b43f97c38e87a' id='62f1140c'/>
     <typedef-decl name='__uint64_t' type-id='f0981eeb' size-in-bits='64' filepath='types.h' line='45' column='1' hash='8fdc5eea2983a729' id='8910171f'/>
     <typedef-decl name='__uint8_t' type-id='002ac4a6' size-in-bits='8' filepath='types.h' line='38' column='1' hash='6ebac62b3366db68' id='c51d6389'/>
+    <typedef-decl name='__virtio16' type-id='d315442e' size-in-bits='16' filepath='virtio_types.h' line='42' column='1' hash='d7723bb93a30b11d' id='b7a93b96'/>
+    <typedef-decl name='__virtio32' type-id='3f1a6b60' size-in-bits='32' filepath='virtio_types.h' line='43' column='1' hash='e66b43f97c38e87a' id='43ae9528'/>
+    <typedef-decl name='__virtio64' type-id='d3130597' size-in-bits='64' filepath='virtio_types.h' line='44' column='1' hash='ebdfc4685a1e82df' id='b7a6fcff'/>
     <typedef-decl name='int32_t' type-id='33f57a65' size-in-bits='32' filepath='stdint-intn.h' line='26' column='1' hash='09d17c08f594edc7' id='3ff5601b'/>
     <typedef-decl name='pthread_mutex_t' type-id='70681f9b' size-in-bits='320' filepath='pthreadtypes.h' line='72' column='1' id='7a6844eb'/>
     <typedef-decl name='size_t' type-id='f0981eeb' size-in-bits='64' filepath='stddef.h' line='229' column='1' hash='8fdc5eea2983a729' id='b59d7dce'/>
@@ -341,8 +408,12 @@
     <type-decl name='unsigned char' size-in-bits='8' hash='6ebac62b3366db68' id='002ac4a6'/>
     <type-decl name='unsigned int' size-in-bits='32' hash='e66b43f97c38e87a' id='f0981eec'/>
     <type-decl name='unsigned long int' size-in-bits='64' hash='8fdc5eea2983a729#2' id='f0981eeb'/>
-    <type-decl name='unsigned short int' size-in-bits='16' hash='d7723bb93a30b11d#3' id='f0981eed'/>
+    <type-decl name='unsigned long long int' size-in-bits='64' hash='ebdfc4685a1e82df#3' id='f0981eee'/>
+    <type-decl name='unsigned short int' size-in-bits='16' hash='d7723bb93a30b11d#4' id='f0981eed'/>
     <array-type-def dimensions='1' type-id='fb448689' size-in-bits='unknown' hash='e565df1b1f44afe5' id='f3c55529'>
+      <subrange length='unknown' lower-bound='0' upper-bound='0' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='eba0a2b392137dcb' id='031f2035'/>
+    </array-type-def>
+    <array-type-def dimensions='1' type-id='f1f6cfe9' size-in-bits='unknown' hash='9e268937d3f1ff4f' id='59d36c99'>
       <subrange length='unknown' lower-bound='0' upper-bound='0' type-id='f0981eeb' size-in-bits='64' is-anonymous='yes' hash='eba0a2b392137dcb' id='031f2035'/>
     </array-type-def>
     <pointer-type-def type-id='0e01899c' size-in-bits='64' hash='b83eb2deac70d470' id='4d98cd5a'/>
@@ -369,11 +440,13 @@
     <pointer-type-def type-id='e080bc24' size-in-bits='64' hash='fd7a63c0c6c822c4' id='b77463c3'/>
     <pointer-type-def type-id='0282c3dd' size-in-bits='64' hash='fd7a63c0c6c822c4' id='c4980c58'/>
     <pointer-type-def type-id='eaa32e2f' size-in-bits='64' hash='473a9667a2856e32' id='63e171df'/>
+    <pointer-type-def type-id='b3f6da27' size-in-bits='64' hash='25185ab3fa483f26' id='79c5fcaf'/>
+    <pointer-type-def type-id='f0783229' size-in-bits='64' hash='15a9f7522db6bf1a' id='a5e666e1'/>
+    <pointer-type-def type-id='83e62d3d' size-in-bits='64' hash='d0ded5f553322982' id='00f2075d'/>
     <pointer-type-def type-id='2ae61988' size-in-bits='64' id='b8e14bfe'/>
     <pointer-type-def type-id='ef0f6b10' size-in-bits='64' id='f8fcfe66'/>
     <class-decl name='spdk_json_write_ctx' is-struct='yes' visibility='default' is-declaration-only='yes' id='2ae61988'/>
     <class-decl name='spdk_thread' is-struct='yes' visibility='default' is-declaration-only='yes' id='ef0f6b10'/>
-    <class-decl name='vring' is-struct='yes' visibility='default' is-declaration-only='yes' filepath='virtio_ring.h' line='122' column='1' id='83eac9f7'/>
     <function-decl name='virtio_dev_construct' mangled-name='virtio_dev_construct' filepath='virtio.c' line='230' column='1' visibility='default' binding='global' size-in-bits='64' elf-symbol-id='virtio_dev_construct' hash='7c6f93aa84e5b25a'>
       <parameter type-id='c4ba6c30' name='vdev' filepath='virtio.c' line='230' column='1'/>
       <parameter type-id='80f4b756' name='name' filepath='virtio.c' line='230' column='1'/>
